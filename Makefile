@@ -3,6 +3,9 @@ all: Just-Halberds.pdf
 clean:
 	rm -f *.html *.pdf
 
+upload: Just-Halberds.pdf
+	scp -P 882 $< alexschroeder.ch:alexschroeder.ch/pdfs/
+
 %.pdf: %.html %.css
 	weasyprint $< $@
 

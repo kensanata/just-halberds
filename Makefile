@@ -1,4 +1,4 @@
-all: just-halberds.pdf
+all: Just-Halberds.pdf
 
 clean:
 	rm -f *.html *.pdf

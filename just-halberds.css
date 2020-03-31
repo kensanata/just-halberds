@@ -1,0 +1,58 @@
+html { hyphens: auto }
+body {
+    font-family: "fbb", "Palatino";
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: justify;
+}
+@media screen {
+  body {
+    max-width: 80ex;
+  }
+}
+img {
+    margin-top: -10%;
+    width: 80%;
+}
+h1 {
+    font-family: "Gill Sans", "Gillus ADF", "Helvetica";
+    font-size: 32pt;
+    line-height: 40pt;
+    font-weight: normal;
+    font-style: normal;
+    text-align: right;
+    width: 50%;
+    margin-top: 10%;
+    margin-right: 20%;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+h2 {
+    font-size: 24pt;
+    line-height: 30pt;
+    font-weight: normal;
+    font-style: italic;
+}
+h3 {
+    font-size: 14pt;
+    line-height: 16pt;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* page numbers: set it to zero on the first page and don't show it,
+   thus the second page has the page number 1. */
+@page :first {
+    counter-reset: page;
+    @bottom-center {
+	content: "";
+    }
+}
+@page {
+    @bottom-center {
+	content: counter(page);
+    }
+}
+/* bookmarks, table of contents */
+h1, h3 { bookmark-level: none }

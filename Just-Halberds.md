@@ -2,7 +2,7 @@
 
 # Just Halberds
 
-<img class="title" src="just-halberds.png" />
+<p class="title"><img src="just-halberds.png" /></p>
 
 ## What is this?
 
@@ -53,7 +53,7 @@ something new and unexpected happens.
 When you roll your dice, add one for every profession, skill and
 special ability that applies. If you're Fo Pi, the fist-fighting
 fire-mage shooting fireballs from your palms (profession: fire-mage;
-skill: fist-fighting; special ability: fireball) then you might get
+skill: fist-fighting; special ability: fireball) then you might get to
 add one for being a fire-mage and one for shooting fireball in a
 fight.
 
@@ -65,7 +65,8 @@ three if the boss is wielding a magic mace.
 The effect of your actions are going to be decided by the referee.
 Feel free to negotiate, but don't overdo it. Keep the game flowing and
 roll with the punches. I promise it's going to be an entertaining game
-even if and specially if you have to suffer the occasional setback.
+even if – and specially if – you have to suffer the occasional
+setback.
 
 ## Hits
 
@@ -102,37 +103,33 @@ When you're rolling dice, the losing side usually takes damage:
 
 ## Initiative
 
-Whoever says they begin, has the initiative. Fo Pi the fire-mage is
-fighting alongside two other mages against five orcs. They surprised
-the orcs and so Fo Pi gets to say what they do. They have the
-initiative because that's what is happening in the story.
+Whoever acts first has the initiative. When you land a hit, you keep
+the initiative and determine who goes next. This continues until the
+defenders get a better result.
 
-When you land a hit, you keep the initiative and can determine who
-goes next. This continues until the orcs get a better result. Now the
-tables are turned! The orcs have the initiative. They are going to
-grapple Fo Pi. They get to add one to their roll because they're tough
-and Fo Pi probably just gets to add one to their roll for their
-fist-fighting skill as it's hard to imagine how they would use their
-fire-magic and their fireball in such a situation. And as long as the
-orcs roll better, they can keep doing that.
+Example: Fo Pi the fire-mage is fighting some orcs. The orcs are
+surprised and so Fo Pi's player gets to say what Fo Pi does. Fo Pi is
+going to fireball the orcs. If Fo Pi misses, the orcs get the
+initiative. They decide to grapple Fo Pi. Thus, the side with
+initiative determines what gets used in the attack and this constrains
+what the defenders can use. It's hard to imagine how one would use
+fire-magic and fireballs against a bunch of grappling orcs.
 
 ## Agreeing on special effects
 
-You can use special abilities to get a +1 when rolling your dice, as
-described above. In addition to that, they have special effects. The
-exact effects are determined at the table.
+You can use special abilities to get add one when rolling your dice,
+as described above. In addition to that, they have special effects.
+The exact effects are determined at the table.
 
 Let us return to Fo Pi, the fist-fighting fire-mage shooting a
 fireball at five orcs. You roll a seven and add two, so your result is
 nine. The orcs roll six and add one because they're tough warriors.
-There is a difference of two. What does it mean?
+There is a difference of two. What does it mean? There's an explosion.
+Fire is everywhere. The orcs are flying through the air. One of them
+doesn't get back up. They're dead.
 
-There's an explosion. Fire is everywhere. The five orcs are thrown in
-all directions. One of them doesn't get back up. It's dead.
-
-Fo Pi's player might have thought that the fireball would kill them
-all and challenged the result. Here's why I think one dead is good
-enough:
+Fo Pi's player might think that the fireball ought to kill them all
+and challenges the result. Here's why I think one dead is good enough:
 
 - The difference between the two results was small. It's worth one
   hit. Orcs have one hit in my game. One dead is fair.

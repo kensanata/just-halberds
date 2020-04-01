@@ -50,21 +50,22 @@ indicates how hard it was. If the player rolls higher, they win; if
 the referee rolls higher, they fail; if they roll the same number,
 something new and unexpected happens.
 
-When you roll you dice, add one for every profession, skill and
+When you roll your dice, add one for every profession, skill and
 special ability that applies. If you're Fo Pi, the fist-fighting
 fire-mage shooting fireballs from your palms (profession: fire-mage;
-skill: fist-fighting; special ability: fireball) then you might get a
-+1 for being a fire-mage and a +1 for shooting fireball in a fight.
+skill: fist-fighting; special ability: fireball) then you might get
+add one for being a fire-mage and one for shooting fireball in a
+fight.
 
-Similarly, the referee might add +1 to the roll if you're fighting
+Similarly, the referee might add one to the roll if you're fighting
 orcs in melee because that's what they're good at, or the referee
-might even add +2 to the roll if you're fighting the orc boss.
+might even add two to the roll if you're fighting the orc boss, or
+three if the boss is wielding a magic mace.
 
 The effect of your actions are going to be decided by the referee.
 Feel free to negotiate, but don't overdo it. Keep the game flowing and
-roll with the punches. Please, don't argue too much. I promise it's
-going to be an entertaining game even if you have to suffer the
-occasional setback.
+roll with the punches. I promise it's going to be an entertaining game
+even if and specially if you have to suffer the occasional setback.
 
 ## Hits
 
@@ -127,17 +128,18 @@ nine. The orcs roll six and add one because they're tough warriors.
 There is a difference of two. What does it mean?
 
 There's an explosion. Fire is everywhere. The five orcs are thrown in
-all directions. One of them doesn't get back up. It's dead because
-orcs just have one hit in my game.
+all directions. One of them doesn't get back up. It's dead.
 
 Fo Pi's player might have thought that the fireball would kill them
 all and challenged the result. Here's why I think one dead is good
 enough:
 
-- The difference between the two results was small. One hit is enough.
+- The difference between the two results was small. It's worth one
+  hit. Orcs have one hit in my game. One dead is fair.
 
 - Fo Pi is a newbie mage. A mighty fire-mage might have collected many
-  more powerful spells: wall of fire, hellfire.
+  more powerful spells: wall of fire, hellfire. The fireball having a
+  minor effect is appropriate.
 
 - I'm picturing Fo Pi's fireball like a simple ball of fire, about as
   powerful as a superb kick from a distance.

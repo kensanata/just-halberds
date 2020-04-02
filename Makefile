@@ -3,15 +3,14 @@ all: Just-Halberds.pdf
 clean:
 	rm -f *.html *.pdf
 
-upload: Just-Halberds.pdf
-	scp -P 882 $< alexschroeder.ch:alexschroeder.ch/pdfs/
+upload: Just-Halberds.pdf Helle-Barden.pdf
+	scp -P 882 $^ alexschroeder.ch:alexschroeder.ch/pdfs/
 
 %.pdf: %.html %.css
 	weasyprint $< $@
 
-
-%.html: %.html.tmp prefix suffix
-	cat prefix $< suffix > $@
+%.html: %-prefix %.html.tmp suffix
+	cat $^ > $@
 
 %.html.tmp: %.md
 	python3 -m markdown \

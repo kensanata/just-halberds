@@ -78,7 +78,8 @@ Rückschlägen, wird das Spiel spannend. Versprochen!
 
 Jede Person hat drei Leben.
 
-- Leichte Rüstung gibt ein zusätzliches Leben, dafür kann man nicht zaubern
+- Leichte Rüstung gibt ein zusätzliches Leben, dafür kann man nicht
+  zaubern
 
 - Schwere Rüstung gibt zwei zusätzliche Leben, dafür kann man weder
   zaubern, schleichen, klettern, rennen oder schwimmen.
@@ -158,3 +159,34 @@ und Dieben? Gibt es denn andere Grenzen für Flammenkugeln? Einigt euch
 am Tisch und spielt weiter. Stellt sich das nächste Mal wieder diese
 Frage, werdet ihr euch an eure Entscheidung erinnern und dann gibt es
 keine Diskussion mehr.
+
+## Wie gut sind die Gegner?
+
+Ich schätze das immer von Fall zu Fall ein. Wenn sie die Initiative
+haben, greifen Gegner mit guten Werten an: Schläger haben +0,
+trainierte oder gefährliche Gegner haben +1, Spezialisten haben +2,
+nur spezielle Gegner haben +3. Haben sie eine magische Waffe? +4.
+
+Haben die Spieler die Initiative und greifen auf eine Art an, welche
+eine Schwäche der Gegner ausnützt, dann verteidigen sie sich mit einem
+Wert, der um eins oder zwei unter ihrem Angriffswert liegt. Ghule
+beispielsweise, sind gefährliche Leichenfresser. Sie haben +1 wegen
+ihrer scharfen Zähne und langen Nägel. Trifft man sie unter der Erde
+in der Dunkelheit an, haben sie +2 weil eine Aura der Angst sie
+umgibt. Gegen Feuermagie haben sie aber nur +0.
+
+## Wieviele Leben haben Gegner?
+
+Ich orientiere mich grob an bekannten D&D Monstern:
+
+* ♡ Elfen, Froschlinge, Goblins, Halblinge, Menschen, Orks, Zwerge
+* ♡♡ Echsenmenschen, Ghule, Hyänenmenschen, Pferde, Wölfe
+* ♡♡♡ Waldschratte, Harpien, Riesenaffen, Wildschweine
+* ♡♡♡♡ Bären, Doppelgänger, Medusen, Werwölfe, Zentauren
+* ♡♡♡♡♡ Höllenhunde, Löwen, Mumien
+* ♡♡♡♡♡♡ Basilisken, Chimären, Krokodile, Minotauren, Trolle
+* ♡♡♡♡♡♡♡ Nagas
+* ♡♡♡♡♡♡♡♡ Dämone, Salamander
+* ♡♡♡♡♡♡♡♡♡ Rakshasa, Vampire
+* ♡♡♡♡♡♡♡♡♡♡ Drachen, Riesen
+

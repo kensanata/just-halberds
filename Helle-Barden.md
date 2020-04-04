@@ -172,21 +172,42 @@ eine Schwäche der Gegner ausnützt, dann verteidigen sie sich mit einem
 Wert, der um eins oder zwei unter ihrem Angriffswert liegt. Ghule
 beispielsweise, sind gefährliche Leichenfresser. Sie haben +1 wegen
 ihrer scharfen Zähne und langen Nägel. Trifft man sie unter der Erde
-in der Dunkelheit an, haben sie +2 weil eine Aura der Angst sie
+in der Dunkelheit an, haben sie +2, weil eine Aura der Angst sie
 umgibt. Gegen Feuermagie haben sie aber nur +0.
 
-## Wieviele Leben haben Gegner?
+## Beispielgegner aus meiner Kampagne
 
-Ich orientiere mich grob an bekannten D&D Monstern:
+* Banditen ♡, +1 beim Drohen und Erpressen
+* Barden ♡, +2 beim Singen und Geschichtenerzählen, sonst +1
+* Basilisken ♡♡♡♡♡♡, +3 mit ihrer Giftaura
+* Bären ♡♡♡, +1 im Nahkampf, +2 wenn sie verletzt sind
+* Beamten ♡, +1 im Umgang mit Formularen und Vorschriften
+* Diebe ♡, +1 beim Schleichen und Klauen
+* Drachen ♡♡♡♡♡♡♡♡♡♡, +3 mit ihrem *Drachenodem*, +2 im Nahkampf
+* Dämone ♡♡♡♡♡♡♡♡, +2 im Nahkampf, oft aber +3 mit einer *Flammenwaffe*
+* Echsenmenschen ♡♡, +1 beim Geschichtenerzählen
+* Elfen ♡, +1 als Krieger, +2 wenn sie ihre *Bezauberung* einsetzen
+* Feldherr ♡♡♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
+* Froschlinge ♡, +1 beim Sprungangriff
+* Ghule ♡♡, +1 beim Nahkampf, +2 beim lähmenden Nahkampf unter der Erde
+* Harpien ♡♡♡, +2 wenn sie ihre *Bezauberung* einsetzen
+* Helden ♡♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
+* Hexen ♡♡♡♡♡, +2 wenn sie ihre *Bezauberung* einsetzen oder *Flüche* schleudern
+* Höllenhunde ♡♡♡♡♡, +1 im Nahkampf, +2 mit ihrem *Feueratem*
+* Medusen ♡♡♡♡, +2 mit ihrer sanften Stimme, +3 mit ihren Schlangenhaaren
+* Minotauren ♡♡♡♡♡♡, +2 in ihrem Labyrinth
+* Mumien ♡♡♡♡♡, +2 mit ihrer trockenen Stimme, -1 gegen Wasser
+* Nagas ♡♡♡♡♡♡♡, +3 mit ihrem *Flammenmeer* oder ihrer *Bezauberung*, sonst +2
+* Orks ♡, +1 wenn Gewalt gebraucht wird und beim Umgang mit Eisen
+* Riesen ♡♡♡♡♡♡♡♡♡♡, +3 wenn sie ihre Grösse ins Spiel bringen können, sonst +1
+* Ritter ♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
+* Spione ♡, +2 beim Fälschen, Lügen, Schleichen, Verkleiden, sonst +1
+* Trolle ♡♡♡♡♡♡, +3 solange sie mit beiden Füssen auf dem Boden stehen
+* Vampire ♡♡♡♡♡♡♡♡♡, +2 im Kampf, +3 mit ihrer *Stimme*
+* Wachen ♡♡♡, +0, mit leichter Rüstung und Schild
+* Werwölfe ♡♡♡♡, +2 in ihrer wilden Gestalt
+* Wildschweine ♡♡♡, +1 im Nahkampf
+* Wölfe und Kriegshunde ♡♡, +0 aber einfach hart im Nehmen
+* Zwerge ♡♡♡♡, +2 im Umgang mit Stein, sonst +1, mit schwerer Rüstung und Schild
 
-* ♡ Elfen, Froschlinge, Goblins, Halblinge, Menschen, Orks, Zwerge
-* ♡♡ Echsenmenschen, Ghule, Hyänenmenschen, Pferde, Wölfe
-* ♡♡♡ Waldschratte, Harpien, Riesenaffen, Wildschweine
-* ♡♡♡♡ Bären, Doppelgänger, Medusen, Werwölfe, Zentauren
-* ♡♡♡♡♡ Höllenhunde, Löwen, Mumien
-* ♡♡♡♡♡♡ Basilisken, Chimären, Krokodile, Minotauren, Trolle
-* ♡♡♡♡♡♡♡ Nagas
-* ♡♡♡♡♡♡♡♡ Dämone, Salamander
-* ♡♡♡♡♡♡♡♡♡ Rakshasa, Vampire
-* ♡♡♡♡♡♡♡♡♡♡ Drachen, Riesen
 

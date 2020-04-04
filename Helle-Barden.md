@@ -179,7 +179,7 @@ umgibt. Gegen Feuermagie haben sie aber nur +0.
 
 * Banditen ♡, +1 beim Drohen und Erpressen
 * Barden ♡, +2 beim Singen und Geschichtenerzählen, sonst +1
-* Basilisken ♡♡♡♡♡♡, +3 mit ihrer Giftaura
+* Basilisken ♡♡♡♡♡♡, +3 mit ihrer *Giftausdünstung*
 * Bären ♡♡♡, +1 im Nahkampf, +2 wenn sie verletzt sind
 * Beamten ♡, +1 im Umgang mit Formularen und Vorschriften
 * Diebe ♡, +1 beim Schleichen und Klauen
@@ -210,4 +210,21 @@ umgibt. Gegen Feuermagie haben sie aber nur +0.
 * Wölfe und Kriegshunde ♡♡, +0 aber einfach hart im Nehmen
 * Zwerge ♡♡♡♡, +2 im Umgang mit Stein, sonst +1, mit schwerer Rüstung und Schild
 
+<div style="break-after: page"></div>
 
+## Beispielzaubersprüche aus meiner Kampagne
+
+* *Bezauberung*, macht jemanden zu einem Freund (was nachher aber zu Ekel führt)
+* *Drachenodem*, brennt ein ganzes Dorf nieder, wer nicht fliehen kann muss sterben
+* *Eiszapfen*, trifft einen Gegner in Sichtweite, braucht Wasserquelle
+* *Feueratem*, setzt einen Gegner im Nahkampf in Brand
+* *Feuerkugel*, trifft einen Gegner in Sichtweite, verursacht eine kleine Explosion
+* *Flammenmeer*, setzt die ganze Umgebung in Flammen, wer bleibt erleidet Schaden
+* *Flammenwaffe*, verwandelt eine normale Waffe in eine magische Flammenwaffe +1
+* *Fluch*, führt zu Atemnot und Erstickungsangst
+* *Giftausdünstung*, vergiftet ein ganzes Dorf, wer nicht fliehen kann muss sterben
+* *Mit Tieren reden*, erlaubt die Unterhaltung mit den Tieren
+* *Steinhagel*, Steine bombardieren einen Gegner in Sichtweite, braucht kleine Steine
+* *Stimme*, zwingt jemanden zu einer Handlung
+* *Strömung*, kontrolliert die Luft in Sichtweite (Geruch, Sporen, Gift)
+* *Welle*, schwemmt Gegner weg, braucht eine Wasserquelle

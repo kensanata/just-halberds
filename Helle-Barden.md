@@ -177,6 +177,11 @@ umgibt. Gegen Feuermagie haben sie aber nur +0.
 
 ## Beispielgegner aus meiner Kampagne
 
+Wie man in untenstehender Liste sieht, geht es nicht immer nur um das
+Kämpfen. Beamte versuchen, anderen Leuten Steine in den Weg zu legen,
+Barden verstricken sie ihn Streitgespräche, Diebe beklauen sie, Spione
+verraten sie, und so weiter.
+
 * Banditen ♡, +1 beim Drohen und Erpressen
 * Barden ♡, +2 beim Singen und Geschichtenerzählen, sonst +1
 * Basilisken ♡♡♡♡♡♡, +3 mit ihrer *Giftausdünstung*
@@ -228,3 +233,30 @@ umgibt. Gegen Feuermagie haben sie aber nur +0.
 * *Stimme*, zwingt jemanden zu einer Handlung
 * *Strömung*, kontrolliert die Luft in Sichtweite (Geruch, Sporen, Gift)
 * *Welle*, schwemmt Gegner weg, braucht eine Wasserquelle
+
+<div style="break-after: page"></div>
+
+## Notizen aus der Kampagne von Marionline
+
+<div class="next"></div>
+<img class="portrait" src="images/adlige-w.png">
+
+Adelige
+Lady ♡, +1 Klatsch und Tratsch, +1 Etikette oder Intriegen
+
+<div class="next"></div>
+<img class="portrait" src="images/soldat-w.png">
+
+Ein einfacher Soldat, bzw eine Soldatin, geübt im Umgang mit einem
+Degen.
+
+Einfacher Soldat ♡♡, +1 bei Kämpfen mit Degen
+
+<div class="next"></div>
+<img class="portrait" src="images/sergeant-w.png">
+
+Sie darf als Sergeant die andern Soldaten etwas herumkommandieren -
+weil kein anderer da ist, der das könnte. Man beachte die
+Schulterdekoration!
+
+Soldaten (Sergant) ♡♡♡, +2 bei Kämpfen, +1 Anführen

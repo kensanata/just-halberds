@@ -16,4 +16,5 @@ upload: Just-Halberds.pdf Helle-Barden.pdf
 	python3 -m markdown \
 		--extension=markdown.extensions.tables \
 		--extension markdown.extensions.smarty \
+		--extension markdown.extensions.attr_list \
 		--file=$@ $<

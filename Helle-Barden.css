@@ -11,11 +11,25 @@ body {
   }
 }
 .title {
-    text-align: center;
+    position: relative;
+    left: 50px;
+    top: -100px;
+    margin-bottom: -100px;
+    z-index: -10;
 }
 img {
-    margin-top: -10%;
     width: 80%;
+}
+.portrait {
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 200px;
+    display: block;
+    float: left;
+}
+.next {
+    clear: left;
 }
 h1 {
     font-family: "IM FELL English SC";

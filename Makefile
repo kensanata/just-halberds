@@ -1,10 +1,10 @@
-all: Just-Halberds.pdf
+all: Just-Halberds.pdf Helle-Barden.pdf
 
 clean:
 	rm -f *.html *.pdf
 
 upload: Just-Halberds.pdf Helle-Barden.pdf
-	scp -P 882 $^ alexschroeder.ch:alexschroeder.ch/pdfs/
+	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 
 %.pdf: %.html %.css
 	weasyprint $< $@

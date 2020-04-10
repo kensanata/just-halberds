@@ -52,10 +52,10 @@ something new and unexpected happens.
 
 When you roll your dice, add one for every profession, skill and
 special ability that applies. If you're Fo Pi, the fist-fighting
-fire-mage shooting fireballs from your palms (profession: fire-mage;
-skill: fist-fighting; special ability: fireball) then you might get to
-add one for being a fire-mage and one for shooting fireball in a
-fight.
+fire-mage shooting fire bolts from your palms (profession:
+*fire-mage*; skill: *fist-fighting*; special ability: *fire bolt*)
+then you might get to add one for being a fire-mage and one for
+shooting a fire bolt in a fight.
 
 Similarly, the referee might add one to the roll if you're fighting
 orcs in melee because that's what they're good at, or the referee
@@ -109,11 +109,11 @@ defenders get a better result.
 
 Example: Fo Pi the fire-mage is fighting some orcs. The orcs are
 surprised and so Fo Pi's player gets to say what Fo Pi does. Fo Pi is
-going to fireball the orcs. If Fo Pi misses, the orcs get the
+going to fire bolt the orcs. If Fo Pi misses, the orcs get the
 initiative. They decide to grapple Fo Pi. Thus, the side with
 initiative determines what gets used in the attack and this constrains
 what the defenders can use. It's hard to imagine how one would use
-fire-magic and fireballs against a bunch of grappling orcs.
+fire-magic and fire bolts against a bunch of grappling orcs.
 
 ## Agreeing on special effects
 
@@ -121,29 +121,137 @@ You can use special abilities to get add one when rolling your dice,
 as described above. In addition to that, they have special effects.
 The exact effects are determined at the table.
 
-Let us return to Fo Pi, the fist-fighting fire-mage shooting a
-fireball at five orcs. You roll a seven and add two, so your result is
+Let us return to Fo Pi, the fist-fighting fire-mage shooting a fire
+bolt at five orcs. You roll a seven and add two, so your result is
 nine. The orcs roll six and add one because they're tough warriors.
-There is a difference of two. What does it mean? There's an explosion.
-Fire is everywhere. The orcs are flying through the air. One of them
-doesn't get back up. They're dead.
+There is a difference of two. What does it mean? There's an clap;
+there's fore; an orc is flying backwards. He's not getting back up.
+He's dead.
 
-Fo Pi's player might think that the fireball ought to kill them all
+Fo Pi's player might think that the fire bolt ought to kill them all
 and challenges the result. Here's why I think one dead is good enough:
 
 - The difference between the two results was small. It's worth one
   hit. Orcs have one hit in my game. One dead is fair.
 
 - Fo Pi is a newbie mage. A mighty fire-mage might have collected many
-  more powerful spells: wall of fire, hellfire. The fireball having a
+  more powerful spells: wall of fire, hellfire. The fire bolt having a
   minor effect is appropriate.
 
-- I'm picturing Fo Pi's fireball like a simple ball of fire, about as
+- I'm picturing Fo Pi's fire bolt like a simple bolt of fire, about as
   powerful as a superb kick from a distance.
   
 If players argue that they think it should be a huge explosion
 instead, ask the other people at the table. Do they think that's fair?
 How about the players of fighters and thieves, do they agree? Is there
-some other limit on the use of fireballs? Agree on what the special
+some other limit on the use of fire bolts? Agree on what the special
 effect does and continue playing. The next time you run into a similar
 situation, you'll remember and there won't be a discussion.
+
+## How good are opponents?
+
+It depends. When they have the initiative, opponents attack with their
+strong abilities. Don't add anything for thugs, add one for dangerous
+opponents, add two for people with special training, add *three* for
+bosses, maybe (rarely!) add *four* if they have a magic weapon.
+
+When players have the initiative and attack the opponents' weak spots,
+don't add as much.
+
+When fighting ghouls in their underground tunnels, for example, they
+project an aura of fear, in addition to being dangerous with the sharp
+teeth and their long nails: add two. If players use fire spells
+against them, don't add anything to their roll. They aren't good at
+defending against it.
+
+## Example opponents from my campaign
+
+As you can see in the list below, it's not always about fighting.
+Bureaucrats make life difficult for you, bards make fun of you,
+bandits blackmail you. When looking at the numbers below, remember
+that this is their best skill. If bandits add one when threatening
+people, they probably don't add anything when you beat them up. When
+boars add one when charging, they probably don't add anything when in
+melee.
+
+* bandits ♡, +1 when threatening, blackmailing, ambushing, hiding
+* bards ♡, +2 when singing and dancing, telling stories and mocking people
+* basilisks ♡♡♡♡♡♡, +3 due to their *poisonous miasma*
+* bears ♡♡♡, +2 when they are hurt or defending their young
+* boars ♡♡♡, +2 when charging into melee
+* bureaucrats ♡, +1 when using forms and prescriptions
+* demons ♡♡♡♡♡♡♡♡, +3 with their *flaming weapon*
+* dragons ♡♡♡♡♡♡♡♡♡♡, +3 with their *dragon breath*
+* dwarves ♡♡♡♡, +2 when handling stone, with heavy armour and a shield
+* elves ♡, +2 when using their *charm*
+* frogling ♡, +1 in the first round when jumping
+* general ♡♡♡♡♡♡♡, +2 when at war, with heavy armour and a shield
+* ghouls ♡♡, +2 when underground and using their *aura of fear*
+* giants ♡♡♡♡♡♡♡♡♡♡, +3 when they can use their size
+* guards ♡♡♡, +0, with light armour and a shield
+* harpies ♡♡♡, +2 when using their *charm*
+* hellhounds ♡♡♡♡♡, +2 with their *fire breath*
+* heroes ♡♡♡♡♡♡, +2, with heavy armour and a shield
+* knights ♡♡♡♡♡, +2, with heavy armour and a shield
+* lizard people ♡♡, +1 when telling stories
+* medusas ♡♡♡♡, +2 with their soft voice, +3 with their petrifying snake hair
+* minotaurs ♡♡♡♡♡♡, +2 in their labyrinth
+* mummies ♡♡♡♡♡, +2 with their dry voice, -1 when faced with water
+* nagas ♡♡♡♡♡♡♡, +3 with their *sea of flames* and their *charm*
+* orks ♡, +1 when using violence or handling iron
+* spies ♡, +2 when forging, lying, sneaking, or disguising themselves
+* thieves ♡, +1 when sneaking, climbing, and stealing
+* trolls ♡♡♡♡♡♡, +3 as long they stand on solid ground
+* vampires ♡♡♡♡♡♡♡♡♡, +3 with their power of *domination*
+* werewolves ♡♡♡♡, +2 in their wild shape
+* witches ♡♡♡♡♡, +2 when using their *charm* and throwing their *curses*
+* wolves and wardogs ♡♡, +0 but tough
+
+## Some spells from my campaign
+
+These spells are based on the monster list above and control over the
+four elements. A ☆ marks the more powerful spells. Learning them
+should be a reward from somebody in the game.
+
+* *air bending* controls the air flow in your vicinity (smell, spores, poison)
+* *aura of fear* ☆ prevents opponents nearby from acting against you
+* *charm* makes others act like your best friends using your voice (and revulsion, later)
+* *domination* ☆ forces an opponent to obey your orders (and pure hatred, later)
+* *dragon breath* ☆ burns down an entire village; anybody who cannot run must die
+* *fire ball* ☆ causes a small explosion on a surface you can see, throwing people around
+* *fire bolt* hits an opponent you can see and sets things on fire
+* *fire breath* ☆ sets somebody nearby on fire, dealing continuous damage
+* *flaming weapon* turns an ordinary weapon into a flaming +1 weapon, for a fight
+* *hail of stones* raises nearby pebbles and stones and throws them at a target
+* *icicle* hits an opponent you can see but needs water to turn into ice
+* *poisonous miasma* ☆ poisons an entire village and those that cannot leave must die
+* *sea of flames* sets everything around you on fire, dealing damage to all who stay
+* *strangulation* lifts somebody up and keeps hurting them
+* *talk to animals* enables you to speak to all the animals around you
+* *wave* requires a source of water and magnifies it in order to wash away anything
+
+Perhaps it's more interesting to consider how I adjudicate some of the
+spells.
+
+Spells that can conceivably deal damage, deal damage. A spell like
+*wave* washes away opponents when the difference is five or more, or
+if the opponent is out of hits.
+
+Spells that enable something subsequent effect need to either happen
+before combat, like the *flaming weapon*, or require the initiative,
+not doing anything, and therefore losing the initiative without an
+opposed roll.
+
+Spells that affect multiple people at the same time involve all of
+them rolling their dice and comparing their result to the result of
+the spell-caster. So when Fo Pi casts a *fire ball* all the orcs in
+the target area need roll. If they roll less than the fire-mage, they
+take damage.
+
+Spells that only have a special effect like *charm* can still have an
+effect based on the difference of the roll: one or two is the bare
+minimum, like the victim agreeing to some course of action and being
+reluctant about it. Three or four is the full effect, like the victim
+being charmed and doing the thing like a friend would. Five or more is
+a decisive effect, like the victim being a loyal friend for a day or a
+week, depending on how gullible they are.

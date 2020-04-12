@@ -10,7 +10,7 @@ upload: Just-Halberds.pdf Helle-Barden.pdf
 	weasyprint $< $@
 
 %.html: %-prefix %.html.tmp suffix
-	cat $^ > $@
+	cat $^ | sed 's/YYYY-MM-DD/$(shell date -I)/' > $@
 
 %.html.tmp: %.md
 	python3 -m markdown \

@@ -55,12 +55,14 @@ special ability that applies. If you're Fo Pi, the fist-fighting
 fire-mage shooting fire bolts from your palms (profession:
 *fire-mage*; skill: *fist-fighting*; special ability: *fire bolt*)
 then you might get to add one for being a fire-mage and one for
-shooting a fire bolt in a fight.
+shooting a fire bolt in a fight. When the orcs are grappling you,
+however, you might just get to add one for fist-fighting.
 
-Similarly, the referee might add one to the roll if you're fighting
-orcs in melee because that's what they're good at, or the referee
-might even add two to the roll if you're fighting the orc boss, or
-three if the boss is wielding a magic mace.
+Similarly, the referee might add one to the roll if you're punching
+the orcs, or the referee might even add two to the roll if you're
+fighting their boss, or even three if the boss is wielding a magic
+mace; or the referee might add nothing at all to the roll if they're
+being hit by fire bolts because they don't know how to deal with it.
 
 The effect of your actions are going to be decided by the referee.
 Feel free to negotiate, but don't overdo it. Keep the game flowing and
@@ -90,8 +92,8 @@ When you're rolling dice, the losing side usually takes damage:
 
 - If the difference is big (say three or four), this is two hits.
 
-- If the difference was huge (five or more), apply extra effects if
-  you have special abilities, or make it three hits.
+- If the difference is huge (five or more), this is three hits. Apply
+  extra effects if possible.
 
 - If you're down to two hits, you've taken a beating.
 
@@ -112,21 +114,22 @@ surprised and so Fo Pi's player gets to say what Fo Pi does. Fo Pi is
 going to fire bolt the orcs. If Fo Pi misses, the orcs get the
 initiative. They decide to grapple Fo Pi. Thus, the side with
 initiative determines what gets used in the attack and this constrains
-what the defenders can use. It's hard to imagine how one would use
+what gets used in the defence. It's hard to imagine how one would use
 fire-magic and fire bolts against a bunch of grappling orcs.
 
-## Agreeing on special effects
+## Agreeing on results
 
-You can use special abilities to get add one when rolling your dice,
-as described above. In addition to that, they have special effects.
-The exact effects are determined at the table.
+When rolling dice, the profession, skill and special abilities used by
+both sides don't just add to the rolls, they also determine what
+happens in the game. The exact results are determined at the table.
 
 Let us return to Fo Pi, the fist-fighting fire-mage shooting a fire
 bolt at five orcs. You roll a seven and add two, so your result is
-nine. The orcs roll six and add one because they're tough warriors.
-There is a difference of two. What does it mean? There's an clap;
-there's fore; an orc is flying backwards. He's not getting back up.
-He's dead.
+nine. The orcs also roll a seven but don't get to add anything because
+they hate magic. There is a difference of two. What does it mean?
+
+*There's an clap; there's fore; an orc is flying backwards. He's not
+getting back up. He's dead.*
 
 Fo Pi's player might think that the fire bolt ought to kill them all
 and challenges the result. Here's why I think one dead is good enough:
@@ -134,13 +137,13 @@ and challenges the result. Here's why I think one dead is good enough:
 - The difference between the two results was small. It's worth one
   hit. Orcs have one hit in my game. One dead is fair.
 
-- Fo Pi is a newbie mage. A mighty fire-mage might have collected many
-  more powerful spells: wall of fire, hellfire. The fire bolt having a
-  minor effect is appropriate.
+- Fo Pi is a newbie mage. A mighty fire-mage might have used a more
+  powerful spell like a fire ball. The fire bolt having a minor effect
+  is appropriate.
 
 - I'm picturing Fo Pi's fire bolt like a simple bolt of fire, about as
   powerful as a superb kick from a distance.
-  
+
 If players argue that they think it should be a huge explosion
 instead, ask the other people at the table. Do they think that's fair?
 How about the players of fighters and thieves, do they agree? Is there
@@ -168,11 +171,10 @@ defending against it.
 
 As you can see in the list below, it's not always about fighting.
 Bureaucrats make life difficult for you, bards make fun of you,
-bandits blackmail you. When looking at the numbers below, remember
-that this is their best skill. If bandits add one when threatening
-people, they probably don't add anything when you beat them up. When
-boars add one when charging, they probably don't add anything when in
-melee.
+bandits blackmail you. When looking at the numbers, remember that this
+is their best skill. If bandits add one when threatening people, they
+probably don't add anything when you beat them up. When boars add one
+as they charge, they probably don't add anything when in melee.
 
 * bandits ♡, +1 when threatening, blackmailing, ambushing, hiding
 * bards ♡, +2 when singing and dancing, telling stories and mocking people
@@ -207,13 +209,14 @@ melee.
 * witches ♡♡♡♡♡, +2 when using their *charm* and throwing their *curses*
 * wolves and wardogs ♡♡, +0 but tough
 
-## Some spells from my campaign
+## Example spells from my campaign
 
-These spells are based on the monster list above and control over the
-four elements. A ☆ marks the more powerful spells. Learning them
-should be a reward from somebody in the game.
+These spells are based on the monster list above and some elemental
+magic. A ☆ marks the more powerful spells. Learning them should be a
+reward from somebody in the game.
 
 * *air bending* controls the air flow in your vicinity (smell, spores, poison)
+* *air surf* allows you to surf through the air for a few minutes
 * *aura of fear* ☆ prevents opponents nearby from acting against you
 * *charm* makes others act like your best friends using your voice (and revulsion, later)
 * *domination* ☆ forces an opponent to obey your orders (and pure hatred, later)
@@ -233,25 +236,28 @@ should be a reward from somebody in the game.
 Perhaps it's more interesting to consider how I adjudicate some of the
 spells.
 
-Spells that can conceivably deal damage, deal damage. A spell like
-*wave* washes away opponents when the difference is five or more, or
-if the opponent is out of hits.
+Spells that change what willing targets can do just work, like *air surf*.
 
-Spells that enable something subsequent effect need to either happen
-before combat, like the *flaming weapon*, or require the initiative,
-not doing anything, and therefore losing the initiative without an
-opposed roll.
+Spells that change what unwilling targets can do, like *charm*, have
+an effect based on the difference of the roll: one or two is the bare
+minimum, like the victim agreeing to some course of action and being
+reluctant about it; three or four is the full effect, like the victim
+being charmed and doing the thing like a friend would; five or more is
+a decisive effect, like the victim being a loyal friend for a day or a
+week, depending on how gullible they are.
+
+Spells that can conceivably deal damage, deal damage. A spell like
+*wave* bashes an opponent, dealing damage, and washes them away when
+the difference is five or more, or if the opponent is out of hits.
+
+Spells that don't deal damage require you to have and lose the
+initiative (no roll required) when used in combat, like the *flaming
+weapon*. It's better to cast these spells before combat begins,
+obviously.
 
 Spells that affect multiple people at the same time involve all of
 them rolling their dice and comparing their result to the result of
-the spell-caster. So when Fo Pi casts a *fire ball* all the orcs in
-the target area need roll. If they roll less than the fire-mage, they
+the magic user. So when Fo Pi casts a *fire ball*, all the orcs in the
+target area need to roll. If they roll less than the fire-mage, they
 take damage.
 
-Spells that only have a special effect like *charm* can still have an
-effect based on the difference of the roll: one or two is the bare
-minimum, like the victim agreeing to some course of action and being
-reluctant about it. Three or four is the full effect, like the victim
-being charmed and doing the thing like a friend would. Five or more is
-a decisive effect, like the victim being a loyal friend for a day or a
-week, depending on how gullible they are.

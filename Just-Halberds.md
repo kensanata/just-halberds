@@ -264,3 +264,12 @@ them rolling their dice and comparing their result to the result of
 the spell caster. So when Fo Pi casts a *fire ball*, all the orcs in the
 target area need to roll. If they roll less than the fire-mage, they
 take damage.
+
+## Other example special abilities from my campaign
+
+Not everybody is a spell caster. What sort of special abilities do
+they have?
+
+* *guard* allows you to protect another person and rolling in their
+  stead
+* *hardy* is the consequence of enduring many defeats: add one ♡

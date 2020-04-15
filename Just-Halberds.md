@@ -7,11 +7,11 @@
 ## What is this?
 
 This is a super simple role-playing game using just two six sided dice
-(2d6). One person is the referee (you?) and your friends play people
-in an imagined world. The referee imagines the setting and the
-situations these imaginary people come across, your friends say how
-the people they are playing react, the referee says how the setting
-reacts, and on it goes. The story of these people is your story.
+(2d6). One person is the referee (you?) and your friends play
+characters in an imagined world. The referee imagines the setting and
+the situations these characters come across, your friends say how the
+characters they are playing react, the referee says how the setting
+reacts, and on it goes. The story of these characters is your story.
 
 The dice come into play when something of consequence is going to
 happen and you want to leave the outcome to chance. Whenever people
@@ -24,23 +24,24 @@ Each player needs to make a character in the game. This is the person
 they control.
 
 1. a name
-2. a profession
-3. a skill
+2. an occupation
+3. a particular skill
 4. a special ability
 
-A profession is something anybody could have learned in their youth:
-tinker, tailor, soldier, spy. A skill is something could learn as part
-of their adventuring life style: sword fighting, hunting, fishing. A
-special ability is something you could learn from a master in the
-game: a spell, a special technique.
+An occupation is something general that anybody can do. What did you
+do before embarking on adventure? A tinker, a tailor, a soldier, a
+spy? A particular skill is something you have trained well and that
+other people know you for: sword fighting, hunting, singing. A special
+ability is something you have learned from a master in the game: a
+spell, a special technique.
 
-After every game session, the referee might add a new skill or a new
-special ability to one of the characters. If you kept trying to ride a
-horse, you might the riding skill. If you kept trying to punch people,
-you might learn the boxing skill. If you asked the elves to teach how
-to sing their songs, you might get the special ability to sing songs
-of sadness. If you asked the treasure hunter to teach you a new spell,
-you might get the new special ability to shoot icicles.
+After every game session, the referee may pick one character and grant
+them a new skill or a new special ability, depending on the events
+that took place. If you kept trying to punch people, you might have
+learned the boxing skill. If you asked the elves to teach you a song,
+you might get the special ability to sing their song of sadness. If
+you asked the treasure hunter to teach you a new spell, you might
+learn how to shoot icicles from your fingertips.
 
 ## Rolling dice
 
@@ -59,10 +60,10 @@ shooting a fire bolt in a fight. When the orcs are grappling you,
 however, you might just get to add one for fist-fighting.
 
 Similarly, the referee might add one to the roll if you're punching
-the orcs, or the referee might even add two to the roll if you're
-fighting their boss, or even three if the boss is wielding a magic
-mace; or the referee might add nothing at all to the roll if they're
-being hit by fire bolts because they don't know how to deal with it.
+the orcs, or the referee might add two to the roll if you're fighting
+their boss, or even three if the boss is wielding a magic mace; or the
+referee might add nothing at all to the roll if they're being hit by
+fire bolts because they don't know how to deal with it.
 
 The effect of your actions are going to be decided by the referee.
 Feel free to negotiate, but don't overdo it. Keep the game flowing and
@@ -72,7 +73,7 @@ setback.
 
 ## Hits
 
-Every character can take three hits.
+Character are heroes. They can take three hits.
 
 - Light armour grant an extra hit but prevent spell casting.
 
@@ -82,7 +83,7 @@ Every character can take three hits.
 - A shield grants an extra hit and also prevents spell casting,
   sneaking, climbing, running, and swimming.
 
-Thus, a magic user without armour can take three hits. A thief in
+Thus, a spell caster without armour can take three hits. A thief in
 light armour can take four hits. A warrior in full gear can take six
 hits.
 
@@ -114,8 +115,8 @@ surprised and so Fo Pi's player gets to say what Fo Pi does. Fo Pi is
 going to fire bolt the orcs. If Fo Pi misses, the orcs get the
 initiative. They decide to grapple Fo Pi. Thus, the side with
 initiative determines what gets used in the attack and this constrains
-what gets used in the defence. It's hard to imagine how one would use
-fire-magic and fire bolts against a bunch of grappling orcs.
+what gets used in the defence. Fire-magic and fire bolts are not going
+to be of much use against a bunch of grappling orcs, for example.
 
 ## Agreeing on results
 
@@ -128,7 +129,7 @@ bolt at five orcs. You roll a seven and add two, so your result is
 nine. The orcs also roll a seven but don't get to add anything because
 they hate magic. There is a difference of two. What does it mean?
 
-*There's an clap; there's fore; an orc is flying backwards. He's not
+*There's an clap; there's fire; an orc is flying backwards. He's not
 getting back up. He's dead.*
 
 Fo Pi's player might think that the fire bolt ought to kill them all
@@ -174,22 +175,25 @@ Bureaucrats make life difficult for you, bards make fun of you,
 bandits blackmail you. When looking at the numbers, remember that this
 is their best skill. If bandits add one when threatening people, they
 probably don't add anything when you beat them up. When boars add one
-as they charge, they probably don't add anything when in melee.
+as they charge, they probably don't add anything when they're engaged.
+
+In the list below, regular people have one hit where as terrible
+monsters have up to ten hits. Prepare for a long fight!
 
 * bandits ♡, +1 when threatening, blackmailing, ambushing, hiding
 * bards ♡, +2 when singing and dancing, telling stories and mocking people
 * basilisks ♡♡♡♡♡♡, +3 due to their *poisonous miasma*
 * bears ♡♡♡, +2 when they are hurt or defending their young
-* boars ♡♡♡, +2 when charging into melee
+* boars ♡♡♡, +2 when charging into a fight
 * bureaucrats ♡, +1 when using forms and prescriptions
 * demons ♡♡♡♡♡♡♡♡, +3 with their *flaming weapon*
-* dragons ♡♡♡♡♡♡♡♡♡♡, +3 with their *dragon breath*
+* dragons ♡♡♡♡♡♡♡♡♡♡, +6 with their *dragon breath*
 * dwarves ♡♡♡♡, +2 when handling stone, with heavy armour and a shield
 * elves ♡, +2 when using their *charm*
-* frogling ♡, +1 in the first round when jumping
-* general ♡♡♡♡♡♡♡, +2 when at war, with heavy armour and a shield
+* froglings ♡, +1 in the first round when jumping
+* general ♡♡♡♡♡♡♡, +3 when at war, with heavy armour and a shield
 * ghouls ♡♡, +2 when underground and using their *aura of fear*
-* giants ♡♡♡♡♡♡♡♡♡♡, +3 when they can use their size
+* giants ♡♡♡♡♡♡♡♡♡♡, +5 when they can use their size
 * guards ♡♡♡, +0, with light armour and a shield
 * harpies ♡♡♡, +2 when using their *charm*
 * hellhounds ♡♡♡♡♡, +2 with their *fire breath*
@@ -257,7 +261,6 @@ obviously.
 
 Spells that affect multiple people at the same time involve all of
 them rolling their dice and comparing their result to the result of
-the magic user. So when Fo Pi casts a *fire ball*, all the orcs in the
+the spell caster. So when Fo Pi casts a *fire ball*, all the orcs in the
 target area need to roll. If they roll less than the fire-mage, they
 take damage.
-

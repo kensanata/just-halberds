@@ -9,7 +9,8 @@ upload: Just-Halberds.pdf Helle-Barden.pdf
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 
 watch:
-	inotifywait -q -e close_write -m . | \
+	@echo Regenerating PDFs whenever the .md files get saved...
+	@inotifywait -q -e close_write -m . | \
 	while read -r d e f; do \
 	  if [[ "$${f,,}" == *\.md ]]; then \
 	    make "$${f%md}pdf"; \

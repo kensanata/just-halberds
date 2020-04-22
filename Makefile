@@ -3,7 +3,7 @@ SHELL=/bin/bash
 all: Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 
 clean:
-	rm -f *.html *.pdf
+	rm -f *.html *.pdf *.data
 
 upload: Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
@@ -38,8 +38,10 @@ watch:
 %.pdf: %.svg
 	inkscape --without-gui --export-area-page --file=$< --export-pdf=$@
 
-2d6-distribution.ps:
-	@echo Use Emacs and calc
+2d6-distribution.data:
+	for i in 1 2 3 4 5 6; do for j in 1 2 3 4 5 6; do echo $$(( $$i+$$j )); done; done > $@
 
-2d6-distribution.png: 2d6-distribution.ps
-	convert -rotate 90 -background white -alpha deactivate 2d6-distribution.ps 2d6-distribution.png
+2d6-distribution.png: 2d6-distribution.plot 2d6-distribution.data
+	gnuplot $< > $@
+
+2d6-Math.pdf: 2d6-distribution.png

@@ -25,11 +25,9 @@ bottom left to the top right. Anyway, here are the counts:
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|
 | 1 | 2 | 3 | 4 | 5 | 6 | 5 | 4 |  3 |  2 |  1 |
 
-And this is the graph:
+And this is the histogram:
 
 ![A triangle.](2d6-distribution.png)
-
-It looks like a triangle, not like a bell curve.
 
 ## The odds of beating an opponent
 
@@ -89,9 +87,9 @@ All we care about is if one party is adding more than the other.
 
 Here's the result:
 
-|  +0 |  +1 |  +2 |  +3 |  +4 |  +5 |  +6 |  +7 |  +8 |   +9 |  +10 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:----:|
-| 44% | 56% | 66% | 76% | 84% | 90% | 95% | 97% | 99% | 100% | 100% |
+|  +0 |  +1 |  +2 |  +3 |  +4 |  +5 |  +6 |  +7 |  +8 |    +9 |   +10 |  +11 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:-----:|:-----:|:----:|
+| 44% | 56% | 66% | 76% | 84% | 90% | 95% | 97% | 99% | ≅100% | ≅100% | 100% |
 
 You can verify this on anydice.com. If you enter `output 2d6+3 > 2d6`
 and click on the *Calculate* button, this is the result:

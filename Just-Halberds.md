@@ -265,7 +265,7 @@ the spell caster. So when Fo Pi casts a *fire ball*, all the orcs in the
 target area need to roll. If they roll less than the fire-mage, they
 take damage.
 
-## Other example special abilities from my campaign
+## What about fighters in my campaign?
 
 Not everybody is a spell caster. What sort of special abilities do
 they have?
@@ -273,3 +273,56 @@ they have?
 * *guard* allows you to protect another person and rolling in their
   stead
 * *hardy* is the consequence of enduring many defeats: add one ♡
+
+The ability to *guard* others makes sure that fighters play an
+important role in combat. People like to nominate them when they have
+the initiative because they are hard hitters, and when people get
+attacked, fighters can guard them. Thus, they get to roll often in a
+fight, as is appropriate.
+
+The only problem is how to balance the spotlight. But isn't that
+always true? If the fighters are sidelining spell casters and bards
+and thieves, then there are various options.
+
+* Tell the player: "not again!" Roll your eyes and ask other people at
+  the table whether anybody would like to volunteer.
+
+* Tell all the players that if they don't want the fighters to fight
+  so much they should avoid fights. Make sure your players know about
+  alternatives.
+
+Then again, if the other players aren't complaining, then there's no
+problem. ☺
+
+<div style="break-after: always"></div>
+
+## Death
+
+If you want to add more risk to the game, you might want to make it
+deadlier for the characters. As it's not difficult to get difference
+of four in a hit, dropping an unarmoured character below zero hits in
+one blow, feel free to use the following *Death & Dismemberment*
+table. Whenever somebody drops to zero hits, and any time they are hit
+thereafter, let them roll 2d6.
+
+ 2d6 | Result
+:---:|-------
+ 2 |instant death: beheaded or similar
+ 3 |fatal wound and death at the end of the fight: pierced lung, cracked spine or similar
+ 4 |loose a limb; roll 1d4: 1 – sword arm, 2 – shield arm, 3, 4 – leg; death can be averted by applying a tourniquet or cauterising the wound with fire
+ 5–6 |broken bone; roll 1d4: 1 – sword arm, 2 – shield arm, 3 – leg, 4 – rib; healing takes 2d4+9 weeks (sessions)
+ 7–8 |unconscious for the rest of the fight
+ 9 |stunned: at -1 for the rest of the fight
+ 10 |knocked down: at -1 until you spend the initiative to get up
+ 11 |you can take it!
+ 12 |adrenalin rush! Get back one ♡
+
+Spells to go along with this table:
+
+* *raise dead* ☆ draws the recently departed soul back into a body
+* *regeneration* ☆ allows bones to mend and limbs to regrow
+
+Personally, I prefer players to quest for artificial arms and legs,
+bargain with devils for the souls of the departed and to grow new
+bodies for their dead comrades in vats. It all depends on the kind of
+campaign you want.

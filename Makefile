@@ -12,10 +12,11 @@ watch:
 	@echo Regenerating PDFs whenever the .md or .css files get saved...
 	@inotifywait -q -e close_write -m . | \
 	while read -r d e f; do \
-	  if [[ "$${f,,}" == *\.md ]]; then \
-	    make "$${f%md}pdf"; \
-	  elif [[ "$${f,,}" == *\.css ]]; then \
-	    make "$${f%css}pdf"; \
+	  if [[ "$${f,,}" == *\.md \
+	     || "$${f,,}" == *\.css \
+	     || "$${f,,}" == *\.data \
+	     || "$${f,,}" == *\.plot ]]; then \
+	    make; \
 	  fi; \
         done
 
@@ -39,9 +40,38 @@ watch:
 	inkscape --without-gui --export-area-page --file=$< --export-pdf=$@
 
 2d6-distribution.data:
-	for i in 1 2 3 4 5 6; do for j in 1 2 3 4 5 6; do echo $$(( $$i+$$j )); done; done > $@
+	for i in {1..6}; do \
+	  for j in {1..6}; do \
+	    echo $$(( $$i+$$j )); \
+	  done; \
+	done > $@
 
-2d6-distribution.png: 2d6-distribution.plot 2d6-distribution.data
+%.png: %.plot %.data
 	gnuplot $< > $@
 
-2d6-Math.pdf: 2d6-distribution.png
+2d6-target.data:
+	for i in {1..6}; do \
+	  for j in {1..6}; do \
+	    n=$$(( $$i+$$j )); \
+	    for k in $$(seq 2 $$n); do \
+	      echo $$k; \
+	    done; \
+	  done; \
+	done > $@
+
+2d6-beating.data:
+	for m in {-10..11}; do \
+	  for i1 in {1..6}; do \
+	    for j1 in {1..6}; do \
+	      for i2 in {1..6}; do \
+		for j2 in {1..6}; do \
+		  if [[ $$(( $$i1+$$j1+$$m )) -gt $$(( $$i2+$$j2 )) ]]; then \
+		    echo $$m; \
+		  fi; \
+		done; \
+	      done; \
+	    done; \
+	  done; \
+	done > $@
+
+2d6-Math.pdf: 2d6-distribution.png 2d6-target.png 2d6-beating.png

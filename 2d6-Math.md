@@ -3,7 +3,7 @@
 I need to understand the math behind 2d6 rolling and so I decided to
 write it up in a way that does not require advanced math.
 
-## The bell curve
+## The distribution of 2d6
 
 Let's start with a table with all the possible results of the two dice
 and their sums.
@@ -19,7 +19,7 @@ and their sums.
 
 Now, let's count how often the various sums show up. I like how the
 numbers form diagonal "lines". Check out 7, for example: from the
-bottom left to the top right. Anyway, here are the counts:
+bottom left to the top right. Anyway, here are the occurrences:
 
 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|
@@ -27,19 +27,64 @@ bottom left to the top right. Anyway, here are the counts:
 
 And this is the histogram:
 
-![A triangle.](2d6-distribution.png)
+![The 2d6 distribution](2d6-distribution.png)
+
+## The odds of reaching a target number
+
+What are the odds of rolling a number or more? We can simply sum the
+occurrences of all the results that satisfy our requirements and
+compare that sum to total number of possible rolls: 6×6=36.
+
+This is the same table as before. It shows the result of one person
+rolling 2d6, and the occurrences of each result. Thus, to compute the
+odds of rolling a 9 or more simply means adding up the highlighted
+numbers: 6, thus the chances of rolling a 10 or higher is 6:36, i.e.
+1:6 or about 17%.
+
+| 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |  10 |  11 |  12 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:---:|:---:|:---:|
+| 1 | 2 | 3 | 4 | 5 | 6 | 5 | 4 |  3¡ |  2¡ |  1¡ |
+
+In Traveller, the target number is usually an 8, and people add their
+difficulty modifier to it. For our purposes, we just subtract from the
+target number. Thus, to determine the odds of rolling a 7 with 2d6 we
+add up the highlighted numbers: 21:36, i.e. 7/12 or about 58%.
+
+| 2 | 3 | 4 | 5 | 6 |  7 |  8 |  9 |  10 |  11 |  12 |
+|:-:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|:---:|:---:|:---:|
+| 1 | 2 | 3 | 4 | 5 | 6¡ | 5¡ | 4¡ |  3¡ |  2¡ |  1¡ |
+
+Actually, we can compute this for all the results and simply list our
+chances of reaching a target number using 2d6.
+
+|    2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |   10 |  11 |  12 | 13 |
+|:----:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:---:|:---:|:--:|
+| 100% | 97% | 92% | 83% | 72% | 58% | 42% | 28% |  17% |  8% |  3% | 0% |
+
+You can verify this on anydice.com. If you enter `loop N over
+{2..13}{output 2d6 >= N named "Rolling [N] or higher"}` and click on
+the *Calculate* button, you get two results for each target number: 0
+are your chances of not making it, 1 are your chances of making it.
+
+And his is the visualisation of the numbers above. As the target
+number goes up, your chances go down.
+
+![2d6 vs. a target number](2d6-target.png)
 
 ## The odds of beating an opponent
 
 What are the odds of beating your opponent, if you both roll +0? Let's
-do another table. This time we're comparing the two 2d6 rolls. We'll
-record how many such results we are seeing. That is, we multiply the
-numbers from the table above: if we're comparing the result of 4 vs. 6
-for example, we'll record 3×5=15, because of all the possible rolls
-for the first two dice we're getting a four exactly three times, and
-we're getting a six exactly five times. Once we have those numbers, we
-can simply add up the numbers where one roll beats the other and
-compare that to the total number of possible rolls: 6×6×6×6=1296.
+do another table. This time we multiply the numbers from the table
+above with how often they occur. If we're comparing the result of 4
+vs. 6 for example, we'll record 3×5=15. A result 4 appears 3× and a
+result of 6 appears 5×, so together they appear 15×. Once we have
+these numbers, we add up the numbers where one roll beats the other
+and compare the sum to the total number of possible rolls:
+6×6×6×6=1296.
+
+The table shows the results of two people rolling 2d6, in rows and
+columns, respectively. Adding up the highlighted numbers: 576, thus
+the chances of beating somebody else is 576:1296 or about 44%.
 
 |    |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  11  |  12 |
 |:--:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---:|
@@ -54,9 +99,6 @@ compare that to the total number of possible rolls: 6×6×6×6=1296.
 | 10 |   3¡ |   6¡ |   9¡ |  12¡ |  15¡ |  18¡ |  15¡ |  12¡ |   9  |   6  |   3 |
 | 11 |   2¡ |   4¡ |   6¡ |   8¡ |  10¡ |  12¡ |  10¡ |   8¡ |   6¡ |   4  |   2 |
 | 12 |   1¡ |   2¡ |   3¡ |   4¡ |   5¡ |   6¡ |   5¡ |   4¡ |   3¡ |   2¡ |   1 |
-
-Adding up the highlighted numbers: 576, thus the chances of beating
-somebody else is 576:1296 or about 44%.
 
 What if you have a +1 advantage? Just add one more diagonal:
 576+146=722, so your odds are now 722:1296 or about 56%.
@@ -75,28 +117,31 @@ What if you have a +1 advantage? Just add one more diagonal:
 | 11 |   2¡ |   4¡ |   6¡ |   8¡ |  10¡ |  12¡ |  10¡ |   8¡ |   6¡ |   4¡ |   2  |
 | 12 |   1¡ |   2¡ |   3¡ |   4¡ |   5¡ |   6¡ |   5¡ |   4¡ |   3¡ |   2¡ |   1¡ |
 
-## Summary
-
 OK, so now we know how to compute the odds of winning opposed 2d6
-rolls taking into account a bonus difference: find the appropriate
-triangle starting at the bottom-left and sum up all the numbers in
-that triangle, and compare that to the total number (1296).
-
-Why a bonus difference? If both add the same bonus, there's no effect.
-All we care about is if one party is adding more than the other.
+rolls taking into account an advantage: find the appropriate triangle
+starting at the bottom-left and sum up all the numbers in that
+triangle, and compare that to the total number (1296).
 
 Here's the result:
 
 |  +0 |  +1 |  +2 |  +3 |  +4 |  +5 |  +6 |  +7 |  +8 |    +9 |   +10 |  +11 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:-----:|:-----:|:----:|
-| 44% | 56% | 66% | 76% | 84% | 90% | 95% | 97% | 99% | ≅100% | ≅100% | 100% |
+| 44% | 56% | 66% | 76% | 84% | 90% | 95% | 97% | 99% | 99.6% | 99.9% | 100% |
 
-You can verify this on anydice.com. If you enter `output 2d6+3 > 2d6`
-and click on the *Calculate* button, this is the result:
+What about the reverse? When you have a penalty, the situation is
+reversed: you can look up the chance of your opponent winning with
+your penalty being their bonus. Thus, if your penalty is -1, their
+chance of winning is 56%. Remember, however, that nobody wins when you
+both get the same result. Therefore, your chance of winning with a
+penalty is worse: it's 100-66=34%.
 
-| # |  %    |
-|:-:|:-----:|
-| 0 | 23.92 |
-| 1 | 76.08 |
+You can verify this on anydice.com. If you enter `loop N over
+{-11..11}{output 2d6-2d6<N named "with modifier [N]"}` and click on the
+*Calculate* button, you get two results for each target number: 0 are
+your chances of not making it, 1 are your chances of making it.
 
-In the table above, that's 76%.
+And his is the visualisation of the numbers above. As the advantage
+goes up, your chances go up.
+
+![2d6 + bonus vs. 2d6](2d6-beating.png)
+

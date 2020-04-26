@@ -182,43 +182,44 @@ Kämpfen. Beamte versuchen, anderen Leuten Steine in den Weg zu legen,
 Barden verstricken sie ihn Streitgespräche, Diebe beklauen sie, Spione
 verraten sie, und so weiter.
 
-* Banditen ♡, +1 beim Drohen und Erpressen
-* Barden ♡, +2 beim Singen und Geschichtenerzählen, sonst +1
+* Banditen ♡, +1 beim Drohen und Erpressen, Hinterhalten und Verstecken
+* Barden ♡, +2 beim Singen und Geschichtenerzählen, beim Spotten und Tanzen
 * Basilisken ♡♡♡♡♡♡, +3 mit ihrer *Giftausdünstung*
-* Bären ♡♡♡, +1 im Nahkampf, +2 wenn sie verletzt sind
+* Bären ♡♡♡, +2 wenn sie verletzt sind oder Frischlinge verteidigen
 * Beamten ♡, +1 im Umgang mit Formularen und Vorschriften
 * Diebe ♡, +1 beim Schleichen und Klauen
-* Drachen ♡♡♡♡♡♡♡♡♡♡, +3 mit ihrem *Drachenodem*, +2 im Nahkampf
-* Dämone ♡♡♡♡♡♡♡♡, +2 im Nahkampf, oft aber +3 mit einer *Flammenwaffe*
+* Drachen ♡♡♡♡♡♡♡♡♡♡, +6 mit ihrem *Drachenodem*
+* Dämone ♡♡♡♡♡♡♡♡, +3 mit einer *Flammenwaffe*
 * Echsenmenschen ♡♡, +1 beim Geschichtenerzählen
-* Elfen ♡, +1 als Krieger, +2 wenn sie ihre *Bezauberung* einsetzen
+* Elfen ♡, +2 wenn sie ihre *Bezauberung* einsetzen
 * Feldherr ♡♡♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
 * Froschlinge ♡, +1 beim Sprungangriff
-* Ghule ♡♡, +1 beim Nahkampf, +2 beim lähmenden Nahkampf unter der Erde
+* Ghule ♡♡, +2 beim lähmenden Nahkampf unter der Erde mit ihrer *Angst Aura*
 * Harpien ♡♡♡, +2 wenn sie ihre *Bezauberung* einsetzen
 * Helden ♡♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
 * Hexen ♡♡♡♡♡, +2 wenn sie ihre *Bezauberung* einsetzen oder *Flüche* schleudern
-* Höllenhunde ♡♡♡♡♡, +1 im Nahkampf, +2 mit ihrem *Feueratem*
+* Höllenhunde ♡♡♡♡♡, +2 mit ihrem *Feueratem*
 * Medusen ♡♡♡♡, +2 mit ihrer sanften Stimme, +3 mit ihren Schlangenhaaren
 * Minotauren ♡♡♡♡♡♡, +2 in ihrem Labyrinth
 * Mumien ♡♡♡♡♡, +2 mit ihrer trockenen Stimme, -1 gegen Wasser
-* Nagas ♡♡♡♡♡♡♡, +3 mit ihrem *Flammenmeer* oder ihrer *Bezauberung*, sonst +2
+* Nagas ♡♡♡♡♡♡♡, +3 mit ihrem *Flammenmeer* oder ihrer *Bezauberung*
 * Orks ♡, +1 wenn Gewalt gebraucht wird und beim Umgang mit Eisen
-* Riesen ♡♡♡♡♡♡♡♡♡♡, +3 wenn sie ihre Grösse ins Spiel bringen können, sonst +1
+* Riesen ♡♡♡♡♡♡♡♡♡♡, +3 wenn sie ihre Grösse ins Spiel bringen können
 * Ritter ♡♡♡♡♡, +2, mit schwerer Rüstung und Schild
-* Spione ♡, +2 beim Fälschen, Lügen, Schleichen, Verkleiden, sonst +1
+* Spione ♡, +2 beim Fälschen, Lügen, Schleichen, Verkleiden
 * Trolle ♡♡♡♡♡♡, +3 solange sie mit beiden Füssen auf dem Boden stehen
 * Vampire ♡♡♡♡♡♡♡♡♡, +2 im Kampf, +3 mit ihrer *Stimme*
 * Wachen ♡♡♡, +0, mit leichter Rüstung und Schild
 * Werwölfe ♡♡♡♡, +2 in ihrer wilden Gestalt
-* Wildschweine ♡♡♡, +1 im Nahkampf
+* Wildschweine ♡♡♡, +2 im Sturmangriff
 * Wölfe und Kriegshunde ♡♡, +0 aber einfach hart im Nehmen
-* Zwerge ♡♡♡♡, +2 im Umgang mit Stein, sonst +1, mit schwerer Rüstung und Schild
+* Zwerge ♡♡♡♡, +2 im Umgang mit Stein, mit schwerer Rüstung und Schild
 
 <div style="break-after: page"></div>
 
 ## Beispielzaubersprüche aus meiner Kampagne
 
+* *Angst Aura*, verhindert, dass Feinde sich nähern können
 * *Bezauberung*, macht jemanden zu einem Freund (was nachher aber zu Ekel führt)
 * *Drachenodem*, brennt ein ganzes Dorf nieder, wer nicht fliehen kann muss sterben
 * *Eiszapfen*, trifft einen Gegner in Sichtweite, braucht Wasserquelle

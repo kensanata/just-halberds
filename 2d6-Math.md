@@ -66,7 +66,7 @@ You can verify this on anydice.com. If you enter `loop N over
 the *Calculate* button, you get two results for each target number: 0
 are your chances of not making it, 1 are your chances of making it.
 
-And his is the visualisation of the numbers above. As the target
+And this is the visualisation of the numbers above. As the target
 number goes up, your chances go down.
 
 ![2d6 vs. a target number](2d6-target.png)
@@ -140,7 +140,7 @@ You can verify this on anydice.com. If you enter `loop N over
 *Calculate* button, you get two results for each target number: 0 are
 your chances of not making it, 1 are your chances of making it.
 
-And his is the visualisation of the numbers above. As the advantage
+And this is the visualisation of the numbers above. As the advantage
 goes up, your chances go up.
 
 ![2d6 + bonus vs. 2d6](2d6-beating.png)

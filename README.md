@@ -1,3 +1,7 @@
+# Helmbarten
+
+A short and simple 2d6 system, inspired by Traveller, in German.
+
 # Just Halberds
 
 This is my short and simple 2d6 system, inspired by

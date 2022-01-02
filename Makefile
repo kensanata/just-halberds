@@ -1,11 +1,11 @@
 SHELL=/bin/bash
 
-all: Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
+all: Helmbarten.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 
 clean:
 	rm -f *.html *.pdf *.data
 
-upload: Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
+upload: Helmbarten.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 
 watch:

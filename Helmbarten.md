@@ -27,8 +27,8 @@ deinen Charakter. Diesen werden wir jetzt gemeinsam erschaffen.
 
 Zuerst wählst du deinen Namen, dann würfelst du deine Attribute aus.
 Du hast sechs Attribute: Kraft, Geschick, Ausdauer, Intelligenz,
-Bildung, und Status. Würfel zwei sechsseitige Würfel für jedes
-Attribute, zähle das Resultat zusammen (kurz: 2W6), und notiere es.
+Bildung, und Status. Würfle zwei sechsseitige Würfel für jedes
+Attribut, zähle sie zusammen (kurz: 2W6) und notiere es.
 
 > Beispiel: Alex nennt seinen Charakter Arthur und würfelt 8 8 7 9 10
 > 8; Berta nennt ihren Charakter Brunhilde und würfelt 10 6 9 5 4 4.
@@ -39,7 +39,7 @@ Vorgehen ist immer gleich: Aufnahmeprüfung, Talente lernen,
 Schicksalsschläge, 4 Jahre älter werden, und dann musst du
 entscheiden, ob dein Charakter das vier weitere Jahre macht, oder ein
 Jahr verwendet, um die Karriere zu wechseln, oder dein Charakter
-bereit für das Abenteuererleben ist.
+bereit für das Abenteurerleben ist.
 
 Je nach Karriere sind andere Attribute von Vorteil. Söldner brauchen
 Kraft oder Ausdauer, Magier brauchen Intelligenz oder Bildung, und
@@ -47,11 +47,11 @@ Taugenichts brauchen Geschick oder Status.
 
 Wenn dein Charakter die Aufnahme für die gewünschte Karriere nicht
 schafft, kann die Karriere nicht mehr gewählt werden. Steht keine
-Karriere mehr zur Auswahl, fängt das Abenteuerleben an: würfel auf der
+Karriere mehr zur Auswahl, fängt das Abenteurerleben an: würfle auf der
 Belohnungstabelle für jede Karriere!
 
 Eine Karriere dauert vier Jahre. Wähle jedes Jahr eine der Tabellen
-deiner Karriere und würfel 1W6. Schreibe dir das Talent mit Wert 1
+deiner Karriere und würfle 1W6. Schreibe dir das Talent mit Wert 1
 auf, oder erhöhe den Wert, falls du das Talent ein weiteres Mal
 lernst. Wenn du „Kämpfen“ lernst, wähle stattdessen eine Waffe:
 Messer, Spiess, Helmbarte, Degen, Bogen, Lanze.
@@ -59,7 +59,7 @@ Messer, Spiess, Helmbarte, Degen, Bogen, Lanze.
 Mit jeder Karriere, die dein Charakter gemacht hat, wird die Chance
 höher, dass ein Schicksalsschlag deinen Charakter trifft. Deswegen
 macht es durchaus Sinn, irgendwann mit der Charaktererschaffung
-aufzuhören und mit dem Abenteuererleben anzufangen.
+aufzuhören und mit dem Abenteurerleben anzufangen.
 
 Wenn dein Charakter 36 oder älter ist, musst du am Ende deiner
 Karriere schauen, ob der körperliche Verfall seinen Lauf nimmt. Fällt
@@ -76,13 +76,13 @@ ein Attribut auf null, stirbt der Charakter.
 
 ## Söldner Karriere
 
-**Aufnahme**: Würfel 2W6 ≤ Kraft oder Ausdauer (deine Wahl).
+**Aufnahme**: Würfle 2W6 ≤ Kraft oder Ausdauer (deine Wahl).
 
 > Beispiel: Berta wählt Kraft und würfelt 2. Brunhilde ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Söldner und lernst jedes Jahr etwas.
-Wähle jedes Jahr eine der folgenden Tabellen und würfel 1W6. Die
+Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6. Die
 Tabelle „Reiter“ und „Offizier“ darfst du nur wählen, wenn dein
 Charakter 20 oder älter ist.
 
@@ -99,22 +99,22 @@ Charakter 20 oder älter ist.
 > gibt Taktik-1, Rennen-1, Brauen-1 und Bürokratie-1. Kämpfen hat
 > Brunhilde nicht gelernt…
 
-**Schicksalsschlag**: Würfel 2W6 + Anzahl bisheriger Karrieren ≤ Kraft
+**Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤ Kraft
 oder Ausdauer (deine Wahl) um den Folgen zu entgehen. Anderenfalls
 bestimmst du die Folgen mit 1W6.
 
 1. Todfeind: Der Feldzug war ein Erfolg. Drei Tage lang hast du mit
    geplündert. Die Überlebenden werden dir deine Taten nie verzeihen.
 2. Belagerung: Die Mangelernährung hat dich frühzeitig altern lassen.
-   Würfel auf der Alterungstabelle.
+   Würfle auf der Alterungstabelle.
 3. Feldzug: Du bist in einen Hinterhalt geraten und schwer verletzt
-   worden. Würfel auf der Alterungstabelle.
+   worden. Würfle auf der Alterungstabelle.
 4. Erlahmt: Nach einem Unfall ist es nie wieder so geworden wie
    früher. Die Söldnerkarriere ist dir von nun an verwehrt.
 5. Gefangenschaft: Der Feldzug war ein Fiasko. Du wurdest gefangen
-   genommen. Würfel auf der Alterungstabelle. Würfel 2W6 + Anzahl
+   genommen. Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl
    Karrieren ≤ Kraft oder Ausdauer (deine Wahl) um zu entkommen.
-   Gelingt dies nicht, vergehen weitere vier Jahre. Würfel wieder auf
+   Gelingt dies nicht, vergehen weitere vier Jahre. Würfle wieder auf
    der Alterungstabelle und versuche nochmal – bis du es schaffst,
    oder stirbst.
 6. Verschollen: Der Feldzug war ein grosser Fehler. Die Armee wurde
@@ -127,14 +127,14 @@ bestimmst du die Folgen mit 1W6.
 
 ## Magier Karriere
 
-**Aufnahme**: Würfel 2W6 ≤ Intelligenz oder Bildung (deine Wahl).
+**Aufnahme**: Würfle 2W6 ≤ Intelligenz oder Bildung (deine Wahl).
 Du lernst automatisch Schrift-1.
 
 > Beispiel: Alex wählt Bildung und würfelt 9. Arthur ist (knapp)
 > aufgenommen!
 
 Du verbringst vier Jahre als Magier und lernst jedes Jahr etwas.
-Wähle jedes Jahr eine der folgenden Tabellen und würfel 1W6.
+Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6.
 
 | 1W6  | Aggressiv | Passiv  | Manipulativ | Transgressiv     |
 |:----:|----------:|--------:|------------:|-----------------:|
@@ -148,14 +148,14 @@ Wähle jedes Jahr eine der folgenden Tabellen und würfel 1W6.
 > Beispiel: Alex wählt 2× Aggresiv, 2× Manipulativ, und würfelt 5 3 5
 > 2, gibt Sturm-1, Wasser-1, Tiere-1 und Singen-1. Und Schrift-1!
 
-**Schicksalsschlag**: Würfel 2W6 + Anzahl bisheriger Karrieren ≤
+**Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
 Intelligenz oder Bildung (deine Wahl) um den Folgen zu entgehen.
 Anderenfalls bestimmst du die Folgen mit 1W6.
 
 1. Todfeind: Du hast einen Mitschüler blossgestellt. Das wird man dir
    nie verzeihen.
 2. Fehlschlag: Das Experiment ging schief und die Energie hat einen
-   Weg durch deinen Körper gefunden. Würfel auf der Alterungstabelle.
+   Weg durch deinen Körper gefunden. Würfle auf der Alterungstabelle.
 3. Grenzüberschreitung: Die Forschung hat dich an Orte geführt, die
    man nicht wieder ungesehen machen kann. Ein Dämon hat dich
    *gesehen* und wird dich finden.
@@ -163,9 +163,9 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    getraut, hast fast den Verstand verloren. Die Magierkarriere ist
    dir von nun an verwehrt.
 5. Verloren: Du bist in fremden Welten unterwegs gewesen und hast dich
-   dort verloren. Würfel auf der Alterungstabelle. Würfel 2W6 + Anzahl
+   dort verloren. Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl
    Karrieren ≤ Intelligenz oder Bildung (deine Wahl) um den Weg zurück
-   zu finden. Gelingt dies nicht, vergehen weitere vier Jahre. Würfel
+   zu finden. Gelingt dies nicht, vergehen weitere vier Jahre. Würfle
    wieder auf der Alterungstabelle und versuche es nochmal – bis du es
    schaffst, oder stirbst.
 6. Ein Opfer: Der Riss zwischen den Ebenen war zu gross, die Energie
@@ -179,14 +179,14 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
 
 ## Taugenichts Karriere
 
-**Aufnahme**: Würfel 2W6 ≤ Geschick oder Status (deine Wahl).
+**Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl).
 
 > Beispiel: Arthur wechselt Karriere (nun ist er 21 Jahre alt) und
 > will Taugenichts werden. Alex wählt Status und würfelt 7. Arthur ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Taugenichts und lernst jedes Jahr etwas.
-Wähle jedes Jahr eine der folgenden Tabellen und würfel 1W6.
+Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6.
 
 | 1W6 | Dieb       | Schläger | Lügner     | Mörder    |
 |:---:|-----------:|---------:|-----------:|----------:|
@@ -200,11 +200,11 @@ Wähle jedes Jahr eine der folgenden Tabellen und würfel 1W6.
 > Beispiel: Alex wählt 1× Dieb, 3× Schläger, und würfelt 6 2 2 6, gibt
 > Knacken-1, Brauen-2, Tüfteln-1.
 
-**Schicksalsschlag**: Würfel 2W6 + Anzahl bisheriger Karrieren ≤
+**Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
 Intelligenz oder Bildung (deine Wahl) um den Folgen zu entgehen.
 Anderenfalls bestimmst du die Folgen mit 1W6.
 
-**Schicksalsschlag**: Würfel 2W6 + Anzahl bisheriger Karrieren ≤
+**Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
 Geschick oder Status (deine Wahl) um den Folgen zu entgehen.
 Anderenfalls bestimmst du die Folgen mit 1W6.
 
@@ -220,9 +220,9 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    kennt dein Gesicht und sie haben dir dein Ohr zerschnitten. Die
    Taugenichtskarriere ist dir von nun an verwehrt.
 5. Gefangenschaft: Der Plan ist aufgeflogen. Du wurdest gefasst.
-   Würfel auf der Alterungstabelle. Würfel 2W6 + Anzahl Karrieren ≤
+   Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl Karrieren ≤
    Kraft oder Ausdauer (deine Wahl) um zu entkommen. Gelingt dies
-   nicht, vergehen weitere vier Jahre. Würfel wieder auf der
+   nicht, vergehen weitere vier Jahre. Würfle wieder auf der
    Alterungstabelle und versuche nochmal – bis du es schaffst, oder
    stirbst.
 6. Verschollen: Der Feldzug war ein grosser Fehler. Die Armee wurde
@@ -278,8 +278,8 @@ Ein paar Stichworte zu den einzelnen Talenten.
 
 ## Belohnung
 
-Bevor du mit dem Abenteuererleben beginnst, gibt es noch eine
-Belohnung. Würfel für jede Karriere auf der entsprechenden Tabelle.
+Bevor du mit dem Abenteurerleben beginnst, gibt es noch eine
+Belohnung. Würfle für jede Karriere auf der entsprechenden Tabelle.
 
 | 1W6 | Söldner       | Magier        | Taugenichts   |
 |:---:|--------------:|--------------:|--------------:|
@@ -304,7 +304,7 @@ Notfalls handelt es sich um die folgenden drei:
 **Gefährte**: Ein junger Mensch, welcher keine Karrieren gemacht hat,
 oder ein intelligentes Tier wie eine Katze, eine Eule, oder ein Rabe.
 Falls es ein Mensch ist, gib deinem Gefährten oder deiner Gefährtin
-einen Namen und würfel die sechs Attribute aus (je 2W6 für Kraft,
+einen Namen und würfle die sechs Attribute aus (je 2W6 für Kraft,
 Geschick, Ausdauer, Intelligenz, Bildung, und Status).
 
 **Hund**: Ein treuer Gefährte, welcher gefüttert werden muss. Schaden
@@ -325,18 +325,18 @@ beizubringen. Benenne deine Gönnerin oder deinen Gönner.
 in deiner Bande oder in der Verwaltung. Benenne deine Gönnerin oder
 deinen Gönner.
 
-## Abenteuererleben
+## Abenteurerleben
 
 Willst du etwas tun, dessen Ausgang unsicher ist, einige dich mit der
 Spielleitung auf ein Attribut und ein etwaiges Talent, welches den
-Ausgang beeinflussen könnte. Würfel 2W6 ≤ Attribut + Talent, um
+Ausgang beeinflussen könnte. Würfle 2W6 ≤ Attribut + Talent, um
 Erfolg zu haben.
 
 Wenn du erfolgreich angreifst, verursachst du 2W6 Schaden, ausser du
 verwendest eine Helmbarte. Diese verursacht 3W6 Schaden.
 
 Wirst du zum ersten Mal im Kampf getroffen, musst du den Schaden von
-einem zufällig bestimmten physischen Attribute abziehen. Würfel 1W6:
+einem zufällig bestimmten physischen Attribute abziehen. Würfle 1W6:
 1–2 ist Kraft, 3–4 ist Geschick, 5–6 ist Ausdauer. Bei allen weiteren
 Treffern, darfst du die Trefferwürfel selber auf die drei physischen
 Attribute verteilen. Einen etwaigen Übertrag musst du von einem

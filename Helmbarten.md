@@ -34,14 +34,14 @@ Attribut, zähle sie zusammen (kurz: 2W6) und notiere es.
 > 8; Berta nennt ihren Charakter Brunhilde und würfelt 10 6 9 5 4 4.
 
 Dein Charakter ist nun 16 Jahre alt. Nun wählst du eine erste
-Karriere. Zur Auswahl stehen Söldner, Magier, oder Taugenichts. Das
+Karriere. Zur Auswahl stehen Krieger, Magier, oder Taugenichts. Das
 Vorgehen ist immer gleich: Aufnahmeprüfung, Talente lernen,
 Schicksalsschläge, 4 Jahre älter werden, und dann musst du
 entscheiden, ob dein Charakter das vier weitere Jahre macht, oder ein
 Jahr verwendet, um die Karriere zu wechseln, oder dein Charakter
 bereit für das Abenteurerleben ist.
 
-Je nach Karriere sind andere Attribute von Vorteil. Söldner brauchen
+Je nach Karriere sind andere Attribute von Vorteil. Krieger brauchen
 Kraft oder Ausdauer, Magier brauchen Intelligenz oder Bildung, und
 Taugenichts brauchen Geschick oder Status.
 
@@ -74,14 +74,15 @@ ein Attribut auf null, stirbt der Charakter.
 | 5   |  Glück gehabt!   |
 | 6   |  Glück gehabt!   |
 
-## Söldner Karriere
+## Krieger Karriere
 
-**Aufnahme**: Würfle 2W6 ≤ Kraft oder Ausdauer (deine Wahl).
+**Aufnahme**: Würfle 2W6 ≤ Kraft oder Ausdauer (deine Wahl). Du lernst
+automatisch Kämpfen-1.
 
-> Beispiel: Berta wählt Kraft und würfelt 2. Brunhilde ist
+> Beispiel: Brunhilde hat Kraft 10 und Berta würfelt 2. Brunhilde ist
 > aufgenommen!
 
-Du verbringst vier Jahre als Söldner und lernst jedes Jahr etwas.
+Du verbringst vier Jahre als Krieger und lernst jedes Jahr etwas.
 Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6. Die
 Tabelle „Reiter“ und „Offizier“ darfst du nur wählen, wenn dein
 Charakter 20 oder älter ist.
@@ -96,8 +97,7 @@ Charakter 20 oder älter ist.
 |   6  |Kämpfen   |Kämpfen    |Kämpfen     |Kämpfen     |
 
 > Beispiel: Berta wählt 2× Söldner, 2× Wache, und würfelt 3 2 5 1,
-> gibt Taktik-1, Rennen-1, Brauen-1 und Bürokratie-1. Kämpfen hat
-> Brunhilde nicht gelernt…
+> gibt Taktik-1, Rennen-1, Brauen-1 und Bürokratie-1. Und Kämpfen-1!
 
 **Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤ Kraft
 oder Ausdauer (deine Wahl) um den Folgen zu entgehen. Anderenfalls
@@ -110,7 +110,7 @@ bestimmst du die Folgen mit 1W6.
 3. Feldzug: Du bist in einen Hinterhalt geraten und schwer verletzt
    worden. Würfle auf der Alterungstabelle.
 4. Erlahmt: Nach einem Unfall ist es nie wieder so geworden wie
-   früher. Die Söldnerkarriere ist dir von nun an verwehrt.
+   früher. Die Kriegerkarriere ist dir von nun an verwehrt.
 5. Gefangenschaft: Der Feldzug war ein Fiasko. Du wurdest gefangen
    genommen. Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl
    Karrieren ≤ Kraft oder Ausdauer (deine Wahl) um zu entkommen.
@@ -121,7 +121,7 @@ bestimmst du die Folgen mit 1W6.
    zerschlagen. Die Fliehenden wurden niedergeritten. Man hat dich nie
    wieder gesehen.
 
-> Beispiel: Berta würfelt 4 und Brunhilde erleidet keinen
+> Beispiel: Berta würfelt 4+0 und Brunhilde erleidet keinen
 > Schicksalsschlag. Brunhilde ist nun 20 Jahre alt. Auf der
 > Alterungstabelle muss noch nicht gewürfelt werden.
 
@@ -130,7 +130,7 @@ bestimmst du die Folgen mit 1W6.
 **Aufnahme**: Würfle 2W6 ≤ Intelligenz oder Bildung (deine Wahl).
 Du lernst automatisch Schrift-1.
 
-> Beispiel: Alex wählt Bildung und würfelt 9. Arthur ist (knapp)
+> Beispiel: Arthur hat Bildung 9 und Alex würfelt 9. Arthur ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Magier und lernst jedes Jahr etwas.
@@ -146,7 +146,7 @@ Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6.
 |   6  |Kämpfen    |Brauen   |Schrift      |Weltenwandel      |
 
 > Beispiel: Alex wählt 2× Aggresiv, 2× Manipulativ, und würfelt 5 3 5
-> 2, gibt Sturm-1, Wasser-1, Tiere-1 und Singen-1. Und Schrift-1!
+> 2, gibt Sturm-1, Wasser-1, Menschen-1 und Singen-1. Und Schrift-1!
 
 **Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
 Intelligenz oder Bildung (deine Wahl) um den Folgen zu entgehen.
@@ -164,16 +164,16 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    dir von nun an verwehrt.
 5. Verloren: Du bist in fremden Welten unterwegs gewesen und hast dich
    dort verloren. Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl
-   Karrieren ≤ Intelligenz oder Bildung (deine Wahl) um den Weg zurück
-   zu finden. Gelingt dies nicht, vergehen weitere vier Jahre. Würfle
-   wieder auf der Alterungstabelle und versuche es nochmal – bis du es
-   schaffst, oder stirbst.
+   Karrieren ≤ Intelligenz oder Bildung (deine Wahl), um den Weg
+   zurück zu finden. Gelingt dies nicht, vergehen weitere vier Jahre.
+   Würfle wieder auf der Alterungstabelle und versuche es nochmal –
+   bis du es schaffst oder stirbst.
 6. Ein Opfer: Der Riss zwischen den Ebenen war zu gross, die Energie
    unkontrollierbar, deine Freunde waren fast verloren – doch dann
    hast du dich geopfert. Wer den Ort kennt, weiss wo man dich finden
    kann, doch deine Schreie sind nichts für schwache Nerven.
 
-> Beispiel: Alex würfelt 4 und Arthur erleidet keinen
+> Beispiel: Alex würfelt 4+0 und Arthur erleidet keinen
 > Schicksalsschlag. Arthur ist nun 20 Jahre alt. Auf der
 > Alterungstabelle muss noch nicht gewürfelt werden.
 
@@ -182,8 +182,8 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
 **Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl).
 
 > Beispiel: Arthur wechselt Karriere (nun ist er 21 Jahre alt) und
-> will Taugenichts werden. Alex wählt Status und würfelt 7. Arthur ist
-> aufgenommen!
+> will Taugenichts werden; er hat Status 10 und Alex würfelt 7. Arthur
+> ist aufgenommen!
 
 Du verbringst vier Jahre als Taugenichts und lernst jedes Jahr etwas.
 Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6.
@@ -197,37 +197,35 @@ Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6.
 |  5  |Ablenken    |Taktik    |Reden       |Benehmen   |
 |  6  |Knacken     |Singen    |Handeln     |Tüfteln    |
 
-> Beispiel: Alex wählt 1× Dieb, 3× Schläger, und würfelt 6 2 2 6, gibt
+> Beispiel: Alex wählt 1× Dieb, 3× Mörder, und würfelt 6 2 2 6, gibt
 > Knacken-1, Brauen-2, Tüfteln-1.
-
-**Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
-Intelligenz oder Bildung (deine Wahl) um den Folgen zu entgehen.
-Anderenfalls bestimmst du die Folgen mit 1W6.
 
 **Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤
 Geschick oder Status (deine Wahl) um den Folgen zu entgehen.
 Anderenfalls bestimmst du die Folgen mit 1W6.
 
-1. Todfeind: Du hast deinen Rivalen gedemütigt und vertrieben. Das
-   wird er oder sie dir nie verzeihen.
+1. Todfeind: Du hast deinen Rivalen gedemütigt. Das wird er oder sie
+   dir nie verzeihen.
 2. Schulden: Dein Plan ist nicht aufgegangen. Im Gegenteil, man hat
-   dich ausgetrickst und nun schuldest du jemandem mehr Geld als du je
-   zurück zahlen werden kannst.
-3. Reingezogen: Du hast Hilfe von Leuten angenommen, die nun immer
-   mehr von dir wollen. Du hast dich immer weiter verstrickt und nun
-   schuldest du ihnen mehr als nur einen Gefallen.
+   dich ausgetrickst und nun schuldest du jemandem mehr Geld, als du
+   je zurück zahlen kannst.
+3. Reingezogen: Du hast Hilfe von Leuten angenommen, dich immer weiter
+   verstrickt und nun schuldest du ihnen mehr als nur einen Gefallen.
 4. Erwischt: Man hat dich erwischt und an den Pranger gestellt. Jeder
-   kennt dein Gesicht und sie haben dir dein Ohr zerschnitten. Die
-   Taugenichtskarriere ist dir von nun an verwehrt.
+   kennt dein Gesicht. Die Taugenichtskarriere ist dir von nun an
+   verwehrt.
 5. Gefangenschaft: Der Plan ist aufgeflogen. Du wurdest gefasst.
    Würfle auf der Alterungstabelle. Würfle 2W6 + Anzahl Karrieren ≤
    Kraft oder Ausdauer (deine Wahl) um zu entkommen. Gelingt dies
    nicht, vergehen weitere vier Jahre. Würfle wieder auf der
-   Alterungstabelle und versuche nochmal – bis du es schaffst, oder
+   Alterungstabelle und versuche es nochmal – bis du es schaffst oder
    stirbst.
-6. Verschollen: Der Feldzug war ein grosser Fehler. Die Armee wurde
-   zerschlagen. Die Fliehenden wurden niedergeritten. Man hat dich nie
-   wieder gesehen.
+6. Verschwunden: Es kam zum Bandenkrieg und du bist verschwunden. Es
+   heisst, die Strassenhunde sind fett geworden, dieses Jahr. 
+
+> Beispiel: Alex würfelt 8+1, da er bereits eine Karriere als Magier
+> hinter sich hat. Arthur erleidet keinen Schicksalsschlag und ist nun
+> 25 Jahre alt.
 
 ## Talente
 
@@ -236,8 +234,8 @@ Ein paar Stichworte zu den einzelnen Talenten.
 **Augen**: Magie, welche die Fernsicht oder die wahre Sicht erlaubt.
 **Bauen**: Bauen von Häusern, Burgen, Belagerungsmaschinen, das Graben von Gruben und Schächten.
 **Benehmen**: Wie benimmt man sich in edler Gesellschaft.
-**Bezaubern**: Magie, welches Menschen gefügig macht und ihre Gefühle kontrolliert.
-**Brauen**: Bier brauen, Kräutertee zusammenstellen, Zaubertränke brauen.
+**Bezaubern**: Magie, welche Menschen gefügig macht, ihre Gefühle kontrolliert.
+**Brauen**: Bier brauen, Kräutertee zusammenstellen, Zaubertränke brauen, Gift mischen.
 **Bürokratie**: Ein Verständnis für jeden Verwaltungsapparat und die Menschen, die dort arbeiten.
 **Diplomatie**: Das Aushandeln von Verträgen, das Vermeiden von Gewalt, das Stiften von Frieden.
 **Disziplin**: Die Kontrolle über Menschengruppen und sich selber entgegen dem natürlichen Instinkt.
@@ -254,13 +252,13 @@ Ein paar Stichworte zu den einzelnen Talenten.
 **Knacken**: Das Öffnen von Schlössern und Türen.
 **Kultur**: Ein Verständnis für Legenden, Malereien, Lieder, Sitten und Gebräuche fremder Länder.
 **Kämpfen**: Der Umgang mit den Waffen und das Töten.
-**Luft**: Magie, welche mit Wind, Fortbewegung, und Geräuschen zu tun hat.
-**Menschen**: Magie, die mit den Menschen und ihren Gedanken und Gefühlen zu tun hat.
+**Luft**: Magie, welche mit Wind, Fortbewegung und Geräuschen zu tun hat.
+**Menschen**: Magie, mit der man Gedanken und Gefühle der Menschen lesen kann.
 **Nekromantie**: Magie, welche die Wiederbelebung und den Kontakt mit den Toten erlaubt.
 **Pflanzen**: Magie, welche mit Pflanzen und ihrem Wachstum zu tun hat.
 **Prügeln**: Die waffenlose Gewalt, das Androhen und das Zufügen von Schmerzen.
 **Reden**: Das Überzeugen mit wohl gewählten Worten.
-**Reiten**: Das Reiten auf Tieren, meistens von Pferden.
+**Reiten**: Das Reiten auf Tieren, meist Pferde.
 **Rennen**: Langstreckenlauf, Kurzstreckenlauf, Ansturm.
 **Schlaf**: Magie, welche mit dem Schlaf und der Ohnmacht zu tun hat.
 **Schleichen**: Das leise Bewegen und das Verstecken.
@@ -281,7 +279,7 @@ Ein paar Stichworte zu den einzelnen Talenten.
 Bevor du mit dem Abenteurerleben beginnst, gibt es noch eine
 Belohnung. Würfle für jede Karriere auf der entsprechenden Tabelle.
 
-| 1W6 | Söldner       | Magier        | Taugenichts   |
+| 1W6 | Krieger       | Magier        | Taugenichts   |
 |:---:|--------------:|--------------:|--------------:|
 | 1   |Intelligenz +1 |Intelligenz +2 |Intelligenz +1 |
 | 2   |Bildung +2     |Bildung + 1    |Bildung +2     |
@@ -336,16 +334,16 @@ Wenn du erfolgreich angreifst, verursachst du 2W6 Schaden, ausser du
 verwendest eine Helmbarte. Diese verursacht 3W6 Schaden.
 
 Wirst du zum ersten Mal im Kampf getroffen, musst du den Schaden von
-einem zufällig bestimmten physischen Attribute abziehen. Würfle 1W6:
+einem zufällig bestimmten physischen Attribut abziehen. Würfle 1W6:
 1–2 ist Kraft, 3–4 ist Geschick, 5–6 ist Ausdauer. Bei allen weiteren
 Treffern, darfst du die Trefferwürfel selber auf die drei physischen
 Attribute verteilen. Einen etwaigen Übertrag musst du von einem
 anderen physischen Attribut abziehen.
 
 > Beispiel: Brunhilde hat Kraft 10, Geschick 6, Ausdauer 9. Sie wird
-> zum ersten Mal getroffen und muss 9 Schaden abziehen. Berta würfelt
-> eine 1, also muss Brunhilde 9 von Kraft (10-9=1) abzuziehen. Sie
-> wird nicht ohnmächtig! Beim zweiten Mal muss sie 2+6 Treffer
+> zum ersten Mal getroffen und muss 4+5=9 Schaden abziehen. Berta
+> würfelt eine 1, also muss Brunhilde 9 von Kraft (10-9=1) abziehen.
+> Sie wird nicht ohnmächtig! Beim zweiten Mal muss sie 2+6=8 Treffer
 > abziehen und entscheidet sich, 2 vom Geschick (6-2=4) und 6 von der
 > Ausdauer (9-6=3) abzuziehen. Jetzt wird es knapp…
 
@@ -358,20 +356,23 @@ behandelt wirst, bist du in 30min wieder fit, ansonsten dauert die
 Erholung 3 Tage.
 
 > Nach einer Behandlung durch den Feldscher erholen sich Brunhildes
-> Attribute auf Kraft 5, Geschick 5, Ausdauer 6.
+> Attribute auf Kraft 1+4½=5, Geschick 4+1=5, Ausdauer 3+3=6.
 
 Sinken zwei deiner Attribute auf 0, bist du schwer verwundet und
 brichst ohnmächtig zusammen. Du wachst erst in 3h wieder auf und nur
 die Attribute auf 0 erholen sich auf 1. Mit einem Feldscher-3 oder
 einem Heiler-3 kannst du dich in einem Lazarett in 5W6 Tagen erholen,
-anderenfalls stirbst du.
+andernfalls stirbst du.
 
 Sinken drei deiner Attribute auf 0, stirbst du.
 
-Bei Tieren steht die erste Zahl für die Anzahl Treffer, welche sie
+Bei Tieren steht die erste Zahl für die Anzahl Punkte, welche sie
 einstecken können, bevor sie ohnmächtig werden. Die zweite Zahl steht
-für die Anzahl Treffer, welche sie darüber hinaus einstecken können,
+für die Anzahl Punkte, welche sie darüber hinaus einstecken können,
 bevor sie sterben.
+
+> Arthurs Hund Tix hat 3W6/2W6 Treffer. Alex würfelt 1+4+5=10 und
+> 5+2=7 und notiert 10/7 für den Hund.
 
 ## Lesematerial
 

@@ -466,7 +466,7 @@ am Tisch einigt und das Ergebnis aufschreibt.
 
 Nicht alle Magietalente sind gleich stark, oder gleich nützlich. Auch
 damit muss man leben können. Gewisse Magietalente eigenen sich für
-ruhige Spieler, für Druiden, Barden, Heiler.
+Druiden, Barden, Heiler.
 
 Es gibt kein Talent für Beschwörungen: stattdessen soll man dies mit
 einem Tor auf eine andere Ebene, oder als Weltenwandel gehandhabt
@@ -476,6 +476,10 @@ zwingen.
 In meinen Spielen ist die Bezauberung immer eine gewalttätige Sache:
 es ist ekelerregend und revoltierend, wenn man zu Dingen gezwungen
 wird.
+
+Es ist nicht möglich die Zukunft vorherzusehen. Das würde Spieler und
+Spielerinnen entmündigen. Ein Rollenspiel ist keine Sage, das
+Schicksal ist nicht vorherbestimmt.
 
 ## Kämpfe
 

@@ -306,10 +306,10 @@ einen Namen und würfle die sechs Attribute aus (je 2W6 für Kraft,
 Geschick, Ausdauer, Intelligenz, Bildung, und Status).
 
 **Hund**: Ein treuer Gefährte, welcher gefüttert werden muss. Schaden
-2W6; Treffer 3W6/2W6.
+2W6; Ausdauer 3W6; Leben 2W6.
 
 **Pferd**: Ein treues Reittier, welches gepflegt und gefüttert werden
-muss. Schaden 3W6; Treffer 6W6/3W6.
+muss. Schaden 3W6; Ausdauer 6W6; Leben 3W6.
 
 **Land**: Ein Stück Land in der Wildnis, welches dir zugesprochen
 wurde. Die Inbesitznahme des Landes ist allerdings dir überlassen.
@@ -331,7 +331,8 @@ Ausgang beeinflussen könnte. Würfle 2W6 ≤ Attribut + Talent, um
 Erfolg zu haben.
 
 Wenn du erfolgreich angreifst, verursachst du 2W6 Schaden, ausser du
-verwendest eine Helmbarte. Diese verursacht 3W6 Schaden.
+verwendest eine Helmbarte. Diese verursacht 3W6 Schaden. Du kannst in
+einem Kampf nur so oft angreifen, wie du Ausdauer hast.
 
 Wirst du zum ersten Mal im Kampf getroffen, musst du den Schaden von
 einem zufällig bestimmten physischen Attribut abziehen. Würfle 1W6:
@@ -366,13 +367,62 @@ andernfalls stirbst du.
 
 Sinken drei deiner Attribute auf 0, stirbst du.
 
-Bei Tieren steht die erste Zahl für die Anzahl Punkte, welche sie
-einstecken können, bevor sie ohnmächtig werden. Die zweite Zahl steht
-für die Anzahl Punkte, welche sie darüber hinaus einstecken können,
-bevor sie sterben.
+Für allen anderen Lebewesen gibt es anstatt der bekannten sechs
+Attribute nur Ausdauer und Leben. Sinkt die Ausdauer auf 0, werden sie
+ohnmächtig; sinkt das Leben auf 0, sterben sie.
 
-> Arthurs Hund Tix hat 3W6/2W6 Treffer. Alex würfelt 1+4+5=10 und
-> 5+2=7 und notiert 10/7 für den Hund.
+> Arthurs Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt 1+4+5=10
+> und 5+2=7 und notiert 10/7 für den Hund.
+
+## Gegner
+
+Alle weiteren Kapitel in diesem Buch sind für die Spielleitung
+bestimmt. Also für dich!
+
+Menschen lassen sich mit den bekannten sechs Attributen abbilden. Du
+darf diese frei bestimmen oder sie auswürfeln (2W6). Talente werden
+ebenso frei bestimmt (oft 1 oder 2).
+
+Monster und Tiere haben zwei zusätzliche Charakteristiken, die ihr
+Verhalten beschreiben: Angriff und Flucht. Bei einer Begegnung würfelt
+die Spielleitung aus, ob sie angreifen (2W6 ≤ Angriff), und falls sie
+nicht angreifen, ob sie fliehen (2W6 ≤ Flucht).
+
+Für jede Welt werden die Werte etwas anders sein. Folgende Übersicht
+kann man verwenden, wenn die Welt neu ist.
+
+| 1W6 | Gegner       | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
+|:---:|-------------:|:-------:|:--------:|:-----:|:-------:|-------:|:------:|
+| 1   | Nachtlinge   | 2W6     | 1W6      | 1W6   | 1W6+4   | 1W6+3  | 2W6    |
+| 2   | Raubtiere    | 2W6     | 3W6      | 2W6   | 1W6+5   | 1W6+2  | 2W6    |
+| 3   | Untote       | 2W6     | 3W6      | 4W6   | 1W6+6   | 1W6+0  | 2W6    |
+| 4   | Reittiere    | 3W6     | 6W6      | 3W6   | 1W6+4   | 1W6+2  | 1W6    |
+| 5   | Riesen       | 4W6     | 8W6      | 4W6   | 1W6+3   | 1W6+0  | 1W6    |
+| 6   | Drachen      | 6W6     | 10W6     | 5W6   | 1W6+2   | 1W6+0  | 1      |
+
+Mach dir Notizen, wenn du etwas auswürfelst, und bleibe dabei!
+
+> Beispiel: Claudia macht die Spielleitung und braucht Goblins, die
+> auf Riesenspinnen reiten, welche die Vorhut überfallen. Sie
+> verwendet die Zeile der Nachtlinge und der Reittiere. Goblins:
+> Schaden-3, Ausdauer-1, Leben-5, Angriff-5, Flucht-4, Anzahl-7.
+> Riesenspinnen: Schaden-15, Ausdauer-16, Leben-12, Angriff-9,
+> Flucht-7, gleich viele Riesenspinnen wie Goblins. In dieser Welt
+> sind Goblins eher harmlose Gegner, die auf fürchterlichen
+> Riesenspinnen reiten.
+
+Wie in jedem guten Film wird die kommende Gefahr immer deutlich
+angekündigt, so dass die Spieler und Spielerinnen selber entscheiden
+können, ob sie sich auf einen Kampf einlassen wollen.
+
+> Beispiel: Claudia beschreibt, wie sich die wagengrossen Schatten
+> durch das Unterholz schieben, ihr beissende Geruch sich ausbreitet
+> und die Tiere im Stall in Panik toben.
+
+Wenn es geht, sollen die Spieler und Spielerinnen würfeln, nicht die
+Spielleitung. Wollen sie beispielsweise den Gegnern in einen
+Hinterhalt locken, oder einen Hinterhalt zu bemerken, soll in beiden
+Fällen jemand gegen Intelligenz + Taktik würfeln.
 
 ## Lesematerial
 

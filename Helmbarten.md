@@ -387,8 +387,9 @@ ebenso frei bestimmt (oft 1 oder 2).
 
 Monster und Tiere haben zwei zusätzliche Charakteristiken, die ihr
 Verhalten beschreiben: Angriff und Flucht. Bei einer Begegnung würfelt
-die Spielleitung aus, ob sie angreifen (2W6 ≤ Angriff), und falls sie
-nicht angreifen, ob sie fliehen (2W6 ≤ Flucht).
+die Spielleitung aus, ob sie angreifen (2W6 ≤ Angriff), falls ja, ob
+sie treffen (ebenfalls 2W6 ≤ Angriff), und falls nein, ob sie fliehen
+(2W6 ≤ Flucht).
 
 Für jede Welt werden die Werte etwas anders sein. Folgende Übersicht
 kann man verwenden, wenn die Welt neu ist.
@@ -456,6 +457,17 @@ heute nicht mehr verwenden.
 > dies der erste Zauberspruch des Tages war. Es regnet, da 10 ≤ 10.
 > Nun folgt ein Kettenblitz: Alex würfelt 5+1=6 und 6 ≤ 10. Damit sind
 > fünf Goblins erledigt.
+
+## Kämpfe
+
+Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,
+zaubern, oder sonst etwas tun. Alle Beteiligten kündigen ihre Aktion
+an, würfeln, und werten aus. Alles passiert gleichzeitig.
+
+> Beispiel: Arthur zaubert den Kettenblitz und er ist durch den Regen
+> geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit
+> dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6, und
+> 6 ≰ 5: verfehlt!
 
 ## Lesematerial
 

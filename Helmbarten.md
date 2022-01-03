@@ -79,7 +79,7 @@ ein Attribut auf null, stirbt der Charakter.
 **Aufnahme**: Würfle 2W6 ≤ Kraft oder Ausdauer (deine Wahl). Du lernst
 automatisch Kämpfen-1.
 
-> Beispiel: Brunhilde hat Kraft 10 und Berta würfelt 2. Brunhilde ist
+> Beispiel: Brunhilde hat Kraft-10 und Berta würfelt 2. Brunhilde ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Krieger und lernst jedes Jahr etwas.
@@ -130,7 +130,7 @@ bestimmst du die Folgen mit 1W6.
 **Aufnahme**: Würfle 2W6 ≤ Intelligenz oder Bildung (deine Wahl).
 Du lernst automatisch Schrift-1.
 
-> Beispiel: Arthur hat Bildung 9 und Alex würfelt 9. Arthur ist
+> Beispiel: Arthur hat Bildung-9 und Alex würfelt 9. Arthur ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Magier und lernst jedes Jahr etwas.
@@ -182,7 +182,7 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
 **Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl).
 
 > Beispiel: Arthur wechselt Karriere (nun ist er 21 Jahre alt) und
-> will Taugenichts werden; er hat Status 10 und Alex würfelt 7. Arthur
+> will Taugenichts werden; er hat Status-10 und Alex würfelt 7. Arthur
 > ist aufgenommen!
 
 Du verbringst vier Jahre als Taugenichts und lernst jedes Jahr etwas.
@@ -288,9 +288,9 @@ Belohnung. Würfle für jede Karriere auf der entsprechenden Tabelle.
 | 5   |Pferd          |Gefährte       |Hund           |
 | 6   |Land           |Lehrstuhl      |Posten         |
 
-> Arthur hat zwei Karrieren gemacht, 1× Magier und 1× Taugenichts.
-> Alex würfelt 4 5, gibt eine Mitgliedschaft in einem Geheimbund und
-> einen Hund.
+> Beispiel: Arthur hat zwei Karrieren gemacht, 1× Magier und 1×
+> Taugenichts. Alex würfelt 4 5, gibt eine Mitgliedschaft in einem
+> Geheimbund und einen Hund.
 
 **Geheimbund**: Die Spielleitung stellt drei Bunde zur Auswahl.
 Notfalls handelt es sich um die folgenden drei:
@@ -326,9 +326,10 @@ deinen Gönner.
 ## Abenteurerleben
 
 Willst du etwas tun, dessen Ausgang unsicher ist, einige dich mit der
-Spielleitung auf ein Attribut und ein etwaiges Talent, welches den
-Ausgang beeinflussen könnte. Würfle 2W6 ≤ Attribut + Talent, um
-Erfolg zu haben.
+Spielleitung auf ein Attribut und ein Talent, sofern es ein passendes
+Talent gibt. Würfle 2W6 ≤ Attribut + Talent, um Erfolg zu haben. Ist
+es sehr schwer, musst du möglicherweise 3W6 ≤ Attribut + Talent
+würfeln.
 
 Wenn du erfolgreich angreifst, verursachst du 2W6 Schaden, ausser du
 verwendest eine Helmbarte. Diese verursacht 3W6 Schaden. Du kannst in
@@ -341,7 +342,7 @@ Treffern, darfst du die Trefferwürfel selber auf die drei physischen
 Attribute verteilen. Einen etwaigen Übertrag musst du von einem
 anderen physischen Attribut abziehen.
 
-> Beispiel: Brunhilde hat Kraft 10, Geschick 6, Ausdauer 9. Sie wird
+> Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9. Sie wird
 > zum ersten Mal getroffen und muss 4+5=9 Schaden abziehen. Berta
 > würfelt eine 1, also muss Brunhilde 9 von Kraft (10-9=1) abziehen.
 > Sie wird nicht ohnmächtig! Beim zweiten Mal muss sie 2+6=8 Treffer
@@ -356,8 +357,9 @@ Betrages (runde ab). Wenn du von einem Feldscher oder einem Heiler
 behandelt wirst, bist du in 30min wieder fit, ansonsten dauert die
 Erholung 3 Tage.
 
-> Nach einer Behandlung durch den Feldscher erholen sich Brunhildes
-> Attribute auf Kraft 1+4½=5, Geschick 4+1=5, Ausdauer 3+3=6.
+> Beispiel: Nach einer Behandlung durch den Feldscher erholen sich
+> Brunhildes Attribute auf Kraft 1+4½=5, Geschick 4+1=5, Ausdauer
+> 3+3=6.
 
 Sinken zwei deiner Attribute auf 0, bist du schwer verwundet und
 brichst ohnmächtig zusammen. Du wachst erst in 3h wieder auf und nur
@@ -371,8 +373,8 @@ Für allen anderen Lebewesen gibt es anstatt der bekannten sechs
 Attribute nur Ausdauer und Leben. Sinkt die Ausdauer auf 0, werden sie
 ohnmächtig; sinkt das Leben auf 0, sterben sie.
 
-> Arthurs Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt 1+4+5=10
-> und 5+2=7 und notiert 10/7 für den Hund.
+> Beispiel: Arthurs Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt
+> 1+4+5=10 und 5+2=7 und notiert 10/7 für den Hund.
 
 ## Gegner
 
@@ -400,7 +402,7 @@ kann man verwenden, wenn die Welt neu ist.
 | 5   | Riesen       | 4W6     | 8W6      | 4W6   | 1W6+3   | 1W6+0  | 1W6    |
 | 6   | Drachen      | 6W6     | 10W6     | 5W6   | 1W6+2   | 1W6+0  | 1      |
 
-Mach dir Notizen, wenn du etwas auswürfelst, und bleibe dabei!
+Notiere dir, wenn du etwas auswürfelst und bleibe dabei!
 
 > Beispiel: Claudia macht die Spielleitung und braucht Goblins, die
 > auf Riesenspinnen reiten, welche die Vorhut überfallen. Sie
@@ -421,8 +423,39 @@ können, ob sie sich auf einen Kampf einlassen wollen.
 
 Wenn es geht, sollen die Spieler und Spielerinnen würfeln, nicht die
 Spielleitung. Wollen sie beispielsweise den Gegnern in einen
-Hinterhalt locken, oder einen Hinterhalt zu bemerken, soll in beiden
+Hinterhalt locken, oder einen Hinterhalt bemerken, soll in beiden
 Fällen jemand gegen Intelligenz + Taktik würfeln.
+
+## Magie
+
+Genau so wie du dir langsam einen Fundus von Gegnern erarbeitest,
+musst du mit den Spielern und Spielerinnen ein Verständnis erarbeiten,
+wie stark die Magie in etwa ist.
+
+> Beispiel: Wieviele Goblins kann Arthur mit einem Blitz erledigen?
+> Alex und Claudia einigen sich darauf, dass ein Blitz eine
+> Riesenspinne samt Reiter treffen kann und beiden je 5W6 Schaden
+> macht, oder dass ein Kettenblitz fünf Goblins erwischt und ihnen je
+> 2W6 Schaden macht.
+
+Auch hier gilt: Notiere dir, was ihr etwas aushandelt und bleibt
+dabei!
+
+> **Blitzschlag**: trifft einen Gegner und was er trägt für je 5W6 Schaden  
+> **Kettenblitz**: trifft bis zu 5 Gegner für je 2W6 Schaden
+
+Da Zaubersprüche stärker als Waffenangriffe sind, sollte man nicht
+beliebig viele davon zaubern können. Mit jedem Zauberspruch steigt das
+Risiko der Erschöpfung. Deswegen gilt beim Zaubern die abgewandelte
+Regel: Würfle 2W6 + Anzahl heutiger Zaubersprüche ≤ Attribut + Talent,
+um Erfolg zu haben. Wenn der Wurf fehlschlägt, lässt sich das Talent
+heute nicht mehr verwenden.
+
+> Beispiel: Arthur zaubert Regen herbei, für Sichtschutz. Er hat
+> Bildung-9, Wasser-1, macht in der Summe 10. Alex würfelt 10 + 0, da
+> dies der erste Zauberspruch des Tages war. Es regnet, da 10 ≤ 10.
+> Nun folgt ein Kettenblitz: Alex würfelt 5+1=6 und 6 ≤ 10. Damit sind
+> fünf Goblins erledigt.
 
 ## Lesematerial
 

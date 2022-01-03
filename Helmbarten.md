@@ -458,6 +458,25 @@ heute nicht mehr verwenden.
 > Nun folgt ein Kettenblitz: Alex würfelt 5+1=6 und 6 ≤ 10. Damit sind
 > fünf Goblins erledigt.
 
+Die Magie führt immer wieder zu Diskussionen. Das muss man mögen –
+oder sonst lässt man die Magier Karriere lieber weg. Wie lange kann
+man unter Wasser atmen? Kann man unter Wasser zaubern? Was passiert,
+wenn man unter Wasser einen Blitz zaubert? Wichtig ist, dass man sich
+am Tisch einigt und das Ergebnis aufschreibt.
+
+Nicht alle Magietalente sind gleich stark, oder gleich nützlich. Auch
+damit muss man leben können. Gewisse Magietalente eigenen sich für
+ruhige Spieler, für Druiden, Barden, Heiler.
+
+Es gibt kein Talent für Beschwörungen: stattdessen soll man dies mit
+einem Tor auf eine andere Ebene, oder als Weltenwandel gehandhabt
+werden. Jeden Dämon muss man selber unterjochen und zu seinen Taten
+zwingen.
+
+In meinen Spielen ist die Bezauberung immer eine gewalttätige Sache:
+es ist ekelerregend und revoltierend, wenn man zu Dingen gezwungen
+wird.
+
 ## Kämpfe
 
 Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,

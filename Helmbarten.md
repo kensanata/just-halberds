@@ -515,6 +515,42 @@ sehr wichtig werden.
 Der Schrecken des Krieges (1521), von Urs Graf
 {: .pic }
 
+## Weltenbau
+
+Die Welt baut man am besten dort aus, wo die Charaktere sich
+engagieren. Wenn sie nach Norden gehen, wird dort angebaut. Wenn sie
+sich für Bibliotheken interessieren, werden Bücher und Bibliothekare
+wichtig. Wenn sie sich für Geschichte interessieren, werden alte
+Schriften und Ruinen wichtig.
+
+Das Spiel bietet keine „Belohnung“ im Sinne von Machtgewinn. Geld zu
+finden lohnt sich nicht, es gibt keine spezielle Ausrüstung zu kaufen,
+keine Erfahrungspunkte zu gewinnen. Auch deswegen ist es wichtig,
+herauszufinden, was die Spieler und Spielerinnen interessiert. Ein
+tragisches Ende? Eine Liebesgeschichte? Der Besitz einer Burg? Zum
+Ritter geschlagen zu werden? Eine Bande übernehmen? Die Welt zu
+bereisen? Und dann fügt man Helfer, Konkurrenten, Schurken und
+Unruhestifter zur Welt hinzu. Diese Reibung schärft das Profil. Hier
+sehen wir, was unsere Charaktere für Menschen sind.
+
+Konkret empfehle ich, ein Dutzend Personen auszuarbeiten. Alle haben
+einen Namen, Attribute, ein paar Talente, und gehen einer Tätigkeit
+nach. Drei von ihnen gehört zu je einem Geheimbund, drei gehören zu je
+einem Tempel, drei gehören zu je einer Burg, und drei gehören zu je
+einer Magierschule. Alle diese Organisationen haben einen Namen und
+ein Hauptquartier. Und sowohl Personen als auch Organisationen wollen
+je drei Dinge und bieten je drei Belohnungen. Wenn sich die Wünsche
+zum Teil überschneiden und widersprechen, um so besser.
+
+| 1W6 | Tätigkeit    | Geheimbund              | Götter | Dämonen    |
+|:---:|--------------|-------------------------|--------|------------|
+| 1   | Ritter       | Miliz der Pyramide      | Odin   | Set        |
+| 2   | Barde        | Silver Schreiberlinge   | Freya  | Orcus      |
+| 3   | Dieb         | Pentarchen des Kreises  | Thor   | Pazuzu     |
+| 4   | Magier       | Schüler der Geschichte  | Mitra  | Nergal     |
+| 5   | Bibliothekar | Diener des Bewusstseins | Marduk | Hel        |
+| 6   | Händler      | Kooperation der Ordnung | Ishtar | Tsathoggua |
+
 ## Lesematerial
 
 [Die Schweizer: Reisläufer aus den

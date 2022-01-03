@@ -485,8 +485,31 @@ an, würfeln, und werten aus. Alles passiert gleichzeitig.
 
 > Beispiel: Arthur zaubert den Kettenblitz und er ist durch den Regen
 > geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit
-> dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6, und
+> dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6 – und
 > 6 ≰ 5: verfehlt!
+
+Krieg ist schrecklich. Es ist kein Problem, wenn kaum gekämpft wird.
+In gewissen Rollenspielen ist das Kämpfen ein grosser Teil des Spiels.
+In diesem Spiel liegt nach einer Runde schon vielleicht schon die
+Hälfte der Beteiligten am Boden.
+
+> Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Kämpfen-1.
+> Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
+> den Fersen. Sie stellt sich dem Kampf. Erste Runde: Berta würfelt 6
+> und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6, ein Treffer für
+> die Goblins, da 5 ≤ 5. Es ist die erste Runde, also entscheidet der
+> Zufall, welches Attribut Brunhilde reduzieren werden muss: Berta
+> würfelt eine 4, d.h. Geschick. Claudia würfelt 5, so dass Brunhilde
+> nur um einen Punkt bei Sinnen bleibt, da 6-5=1. Einer der Goblins
+> stirbt (da Ausdauer-1), doch der andere steht noch.
+
+Wird mittels Taktik ein Vorteil erreicht, ist das Resultat oft eine
+Überraschungsrunde, wo der Gegner nicht zurückschlagen kann. Das kann
+sehr wichtig werden.
+
+![Schrecken des Krieges (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
+Der Schrecken des Krieges (1521), von Urs Graf
+{: .pic }
 
 ## Lesematerial
 

@@ -1,8 +1,22 @@
-# Helmbarten
+# Small Role-Playing Games
+
+These all use a two-step process to create PDF files: write Markdown
+and convert it to HTML using Python’s Markdown module; convert the
+HTML and a dedicated CSS to PDF using WeasyPrint.
+
+You can find the PDF files online:
+
+* [Helmbarten](https://alexschroeder.ch/pdfs/Helmbarten.pdf)
+* [2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf)
+* [Just Halberds](https://alexschroeder.ch/pdfs/Just-Halberds.pdf)
+* [Helle Barden](https://alexschroeder.ch/pdfs/Helle-Barden.pdf)
+* [To Rob a Witch](https://alexschroeder.ch/pdfs/To-Rob-A-Witch.pdf)
+
+## Helmbarten
 
 A short and simple 2d6 system, inspired by Traveller, in German.
 
-# Just Halberds
+## Just Halberds
 
 This is my short and simple 2d6 system, inspired by
 Norbert G. Matausch's
@@ -13,6 +27,19 @@ and very simple *Dungeon World* alternatives like
 [World of Dungeons](https://alexschroeder.ch/pdfs/World%20of%20Dungeons%20(black%20&%20white).pdf)
 (including
 [the German translation of World of Dungeons](https://alexschroeder.ch/pdfs/Wold%20of%20Dungeons%20(Deutsch).pdf)).
+
+## 2d6 Math
+
+Some explanations to make 2d6 Math more approachable.
+
+## To Rob a Witch
+
+A small adventure, originally written for B/X D&D and similar games,
+for use with *Just Halberds*.
+
+## Helle Barden
+
+A German translation of *Just Halberds*.
 
 ## Dependencies
 

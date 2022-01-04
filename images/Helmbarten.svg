@@ -523,7 +523,7 @@
     <g><text text-anchor="middle" x="1500.0" y="588.9" font-size="20pt" dy="5px" stroke="white" stroke-width="5pt">Rothorn</text><text text-anchor="middle" x="1500.0" y="588.9" font-size="20pt" dy="5px">Rothorn</text></g>
     <g><text text-anchor="middle" x="1500.0" y="935.3" font-size="20pt" dy="5px" stroke="white" stroke-width="5pt">Klingenstein</text><text text-anchor="middle" x="1500.0" y="935.3" font-size="20pt" dy="5px">Klingenstein</text></g>
   </g>
-<text x="50" y="-15" font-size="15pt" fill="#999999"><a style="fill:#8888ff" xlink:href="http://www.busygamemaster.com/">Gnomeyland SVG Map Icons</a> Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019. This work is licensed under the <a style="fill:#8888ff" xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</text>
+<text x="50" y="-40" font-size="15pt" fill="#999999"><a style="fill:#8888ff" xlink:href="http://www.busygamemaster.com/">Gnomeyland SVG Map Icons</a> Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.</text><text x="50" y="-15" font-size="15pt" fill="#999999">This work is licensed under the <a style="fill:#8888ff" xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</text>
 <!-- Source
 0101 green trees thorp
 0102 green forest
@@ -631,6 +631,7 @@
 0302-0303 trail
 0606-0405 trail
 include gnomeyland.txt
+license <text x="50" y="-40" font-size="15pt" fill="#999999"><a style="fill:#8888ff" xlink:href="http://www.busygamemaster.com/">Gnomeyland SVG Map Icons</a> Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.</text><text x="50" y="-15" font-size="15pt" fill="#999999">This work is licensed under the <a style="fill:#8888ff" xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</text>
 
 -->
 </svg>

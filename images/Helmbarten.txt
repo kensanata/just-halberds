@@ -104,3 +104,4 @@
 0302-0303 trail
 0606-0405 trail
 include gnomeyland.txt
+license <text x="50" y="-40" font-size="15pt" fill="#999999"><a style="fill:#8888ff" xlink:href="http://www.busygamemaster.com/">Gnomeyland SVG Map Icons</a> Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.</text><text x="50" y="-15" font-size="15pt" fill="#999999">This work is licensed under the <a style="fill:#8888ff" xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</text>

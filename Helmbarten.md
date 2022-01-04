@@ -686,6 +686,15 @@ verwandeln kann. Es gehört zum Hort von Schattenspeier.
 befindet sich der Kelch der Erlösung, von Set gesegnet, mit dem man
 Wasser zu Gift verwandeln kann.
 
+## Karte
+
+Eine Karte finde ich sehr stimmungsvoll, muss aber nicht zwingend
+sein.
+
+![Karte](images/Helmbarten.png)
+Die Weltkarte für den Anfang
+{: .pic }
+
 ## Lesematerial
 
 [Die Schweizer: Reisläufer aus den

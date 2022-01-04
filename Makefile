@@ -36,6 +36,11 @@ watch:
 %.md.tmp: %.md
 	sed 's/¡/{: .highlight}/g' < $< > $@
 
+Helmbarten.pdf: images/Helmbarten.png
+
+images/%.png: images/%.svg
+	inkscape --without-gui --export-area-page --file=$< --export-png=$@
+
 %.pdf: %.svg
 	inkscape --without-gui --export-area-page --file=$< --export-pdf=$@
 

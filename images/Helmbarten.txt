@@ -20,7 +20,7 @@
 0304 green forest
 0305 green fir-forest cliff1 cliff2
 0306 light-grey mountain cliff1 cliff2 cliff3 cliff4
-0307 green firs thorp
+0307 green firs thorp "Hintertal"
 0308 grey swamp2 chaos "Rabenwarte"
 0401 dark-grey swamp
 0402 green forest
@@ -43,7 +43,7 @@
 0603 green firs thorp "Dunkelkeller"
 0604 light-green grass
 0605 green forest
-0606 green firs thorp
+0606 green firs thorp "Bärenau"
 0607 green fir-forest
 0608 light-grey forest-hill cliff2
 0701 green fir-forest

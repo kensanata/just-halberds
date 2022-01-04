@@ -598,7 +598,7 @@ Herrschers und seines Reiches. Namen sind wichtig!
 
 | 1W6 | Was     | Wozu                | Wer hat es erfunden?                      |
 |:---:|---------|---------------------|-------------------------------------------|
-| 1   | Ring    | der Unsichtbarkeit  | der dunklen Herrschers                    |
+| 1   | Ring    | der Unsichtbarkeit  | der Herrschers der Nacht                  |
 | 2   | Schwert | der Unbesiegbarkeit | die Herrin vom See                        |
 | 3   | Krone   | der Macht           | der erste Richter                         |
 | 4   | Speer   | des Zerstörung      | aus den letzten Tagen des Reichs          |
@@ -606,11 +606,13 @@ Herrschers und seines Reiches. Namen sind wichtig!
 | 6   | Kelch   | der Erlösung        | (eine oder einer der Götter oder Dämonen) |
 
 All diese Dinge werden festgehalten und führen hoffentlich auch gleich
-zu Querverbindungen und Inspirationen.
+zu Querverbindungen und Inspirationen. Im nächsten Kapitel hat es den
+Anfang einer solchen Ausgangslage – fertig schreiben musst du sie
+allerdings selber!
 
 ## Beispiel
 
-**Brunmund** der Magier von Dunkelkeller ist Fleischmagier und
+① **Brunmund** der Magier von Dunkelkeller ist Fleischmagier und
 Wolfsmensch, wild, frei, ungebildet: Kraft-7, Geschick-10, Ausdauer-7,
 Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-3,
 Tiere-2, Nekromantie-2, ein Wasser-1, Pflanzen-1, Singen-1, Schrift-1.
@@ -620,71 +622,104 @@ Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe Getrud
 vom Katzenberg. Sein Wald wird von riesigen Wölfen verteidigt, auf
 denen Schattenelfen reiten.
 
-**Wolf**
+**Wolf** … Erstellen wie ein Raubtier.
 
-**Schattenelf**
+**Schattenelf** … Erstellen wie ein Nachtling.
 
-**Amalggund** der Baron von Falkenstein … Auch er liebt die Hexe
-Gertrud vom Katzenberg. Seine Tochter Inge wird vom Riesen Eiszahn
-gefangen gehalten.
+② **Amalggund** der Baron von Falkenstein. Attribute auswürfeln. Je
+eine handvoll Würfel auf den verschiedenen Kriegertabellen. Auch er
+liebt die Hexe Gertrud vom Katzenberg. Seine Tochter Inge wird vom
+Riesen Eiszahn gefangen gehalten. Gerne würde er ihren Retter zum
+Ritter oder zur Rittern der Burg Rifenstein machen.
 
-**Gertrud** die Hexe vom Katzenberg …
+③ **Gertrud** die Hexe vom Katzenberg … Je eine handvoll Würfel auf
+den verschiedenen Magiertabellen. Will die Pentarchen des Kreises
+aufdecken und beseitigen. Sucht das Buch der Macht. Wird von
+Raubkatzen beschützt.
 
-**Theudetrud** ist eine der fünf Pentarchen des Kreises, einem
-Geheimbund von Magiern, welche sich der Aufrechterhaltung des ewigen
-Friedens verschworen haben.
+**Panther** … Erstellen wie ein Raubtier.
 
-**Hildegard** von der Rabenwarte ist Hohepriesterin des Pazuzu,
+④ **Theudetrud** von Bärenau ist eine der fünf Pentarchen des Kreises,
+einem Geheimbund von Magiern, welche sich der Aufrechterhaltung des
+ewigen Friedens verschworen haben. Entsprechend gibt sie sich
+natürlich nicht als Magierin zu erkennen sondern führt ein Doppelleben
+als Bierbrauerin für die umliegenden Güter. Sie sucht ebenfalls das
+Buch der Macht. Aus ihrer Sicht gilt es, auch die Drachen zu schützen,
+denn sonst wird sich alles ändern.
+
+⑤ **Hildegard** von der Rabenwarte ist Hohepriesterin des Pazuzu,
 geschützt von einem verfluchten Nebel über dem grossen Sumpf, in dem
-sich der Drache Pesthauch umher treibt.
+sich der Drache Pesthauch umher treibt. Sie hat das Buch der Macht und
+damit hat sie den grossen Sumpf zu einer tödlichen Falle gemacht. Will
+jemanden bei Gertrud einschleusen, um Einfluss zu gewinnen.
 
-**Pesthauch**
+**Pesthauch** ist ein Drache im grossen Sumpf, der Hildegard
+verfallen.
 
 **Eiszahn** ist der Riese vom Bösberg … Er hält die schöne Inge von
 Falkenstein gefangen. Jede Nacht streifen die toten Büsser über seinen
 Gletscher.
 
-**Tote Büsser**
+**Tote Büsser** … Klagende Untote, barfuss auf dem Eis.
 
-**Feuervater** ist der Riese vom Rothorn
+**Feuervater** ist der Riese vom Rothorn. Ein mächtiger
+Klingenschmied. Er hat damals das Schwert der Osrica geschmiedet.
+Diesen Fehler möchte er nicht wiederholen.
 
-**Chlodogunda** ist die Feldherrin von Klingenstein, zurückgekehrt aus
-dem Krieg in fernen Ländern, um in Besitz zu nehmen, was ihr
+⑥ **Chlodogunda** ist die Feldherrin von Klingenstein, zurückgekehrt
+aus dem Krieg in fernen Ländern, um in Besitz zu nehmen, was ihr
 vermeintlich gehört. Sie ist umgeben von einer Hunderschaft von
-Reisläufern. Der Anführer ihrer Nachhut ist Siegbert.
+Reisläufern. Der Anführer ihrer Nachhut ist Siegbert. Sie will das
+Schwert der Osrica finden.
 
-**Reisläufer**
+**Reisläufer** … Söldner. Krieger mit Hellebarden: Schaden-3W6,
+Ausdauer-9, Leben-9, Angriff-9, Flucht-5, Anzahl: 10.
 
-**Gyso** von den Federn ist Vorsitzender der Silbernen
+⑦ **Gyso** von den Federn ist Vorsitzender der Silbernen
 Schreiberlingen, einer Geheimbund von Chronisten und Gelehrten, die
 Bücher kopieren und das Wissen alter Zeiten durch diese dunklen Jahre
-retten wollen. Er will das Buch … von …
+retten wollen. Er will das Buch der Macht, welches der dunkle
+Herrscher vor seinem Ende noch geschrieben hat.
 
-**Siegbert** gehört dem Geheimbund „Miliz der Pyramide“ an, dem sich
+⑧ **Siegbert** gehört dem Geheimbund „Miliz der Pyramide“ an, dem sich
 Söldner angeschlossen haben, die auf den Feldzügen gegen die
 Steppenreiter das Wüstenland erreicht haben, und dort die alten
-Pyramiden gesehen haben.
+Pyramiden gesehen haben. Im stünde wohl der Sinn nach einer Heirat. Er
+lässt sich leicht von der Macht verführen. Gerne würde er sich ein
+Schwert schmieden lassen, so wie Osrica eines hatte.
 
-**Frieda** vom Himmelturm ist die Hohepriesterin des Marduk in
+⑨ **Frieda** vom Himmelturm ist die Hohepriesterin des Marduk in
 Midgard. Marduk schützt die Menschen vor den Monstern, und deswegen
 ist ihr grösster Wunsch die drei Drachen getötet zu wissen: Pesthauch,
 Frostatem, und Schattenspeier.
 
-**Frostatem** ist der Drache der Isenspitze.
+**Frostatem** ist der Drache der Isenspitze. In seinem Hort liegt das
+Schwert der Osrica.
 
-**Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim, und die
-Geliebte der Vuldetrada.
+⑩ **Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim, und
+die Geliebte der Vuldetrada. Ihr Chor ist gleichzeitig auch eine
+Schule für Diplomatie, Menschenkenntnis, Illusionsmagie, und vieles
+mehr.
 
-**Vuldetrada** ist die Baronin vom Schloss Farnheim, reich und ledig.
+⑪ **Vuldetrada** ist die Baronin vom Schloss Farnheim, reich und
+ledig.
 
-**Gundobad** ist Ritter von Rifenau, und würde gerne Vuldetrada
-heiraten. Doch bis jetzt ist kläglich gescheitert. Er besässe gerne
+⑫ **Gundobad** ist Ritter von Rifenau, und würde gerne Vuldetrada
+heiraten. Doch bis jetzt ist er kläglich gescheitert. Er besässe gerne
 den Kelch der Erlösung, von Set gesegnet, mit dem man Wasser zu Gift
 verwandeln kann. Es gehört zum Hort von Schattenspeier.
 
 **Schattenspeier** ist der Drache vom Finstermoor. In seinem Hort
 befindet sich der Kelch der Erlösung, von Set gesegnet, mit dem man
 Wasser zu Gift verwandeln kann.
+
+Und irgendwann heisst es natürlich: Spielen! Spielerkontakt wirkt
+Wunder. Erst so erfährst du, ob die Spieler sich für die Drachen, die
+Riesen, die Geschichte von Osrica, das Buch der Macht, den Kampf gegen
+Hildegard oder gegen Chlodogunda suchen, ob sie Amalggund helfen, oder
+selber im Hintertal ein Herrschaft errichten wollen.
+
+Man kann nicht alles vorbereiten. Irgendwann muss es los gehen.
 
 ## Karte
 

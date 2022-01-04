@@ -612,13 +612,17 @@ zu Querverbindungen und Inspirationen.
 
 **Brunmund** der Magier von Dunkelkeller ist Fleischmagier und
 Wolfsmensch, wild, frei, ungebildet: Kraft-7, Geschick-10, Ausdauer-7,
-Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-1,
-Tiere-1, Nekromantie-1, ein Wasser-1, Pflanzen-1, Tiere-1, Singen-1,
-Schrift-1. Er begehrt den Ring der Unsichtbarkeit des Riesen Eiszahn
-vom Bösberg, den Osrica einmal getragen hat. Er möchte, dass Amalggund
-von Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe
-Getrud vom Katzenberg. Sein Wald wird von riesigen Wölfen verteidigt,
-auf denen Schattenelfen reiten.
+Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-3,
+Tiere-2, Nekromantie-2, ein Wasser-1, Pflanzen-1, Singen-1, Schrift-1.
+Er begehrt den Ring der Unsichtbarkeit des Riesen Eiszahn vom Bösberg,
+den Osrica einmal getragen hat. Er möchte, dass Amalggund von
+Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe Getrud
+vom Katzenberg. Sein Wald wird von riesigen Wölfen verteidigt, auf
+denen Schattenelfen reiten.
+
+**Wolf**
+
+**Schattenelf**
 
 **Amalggund** der Baron von Falkenstein … Auch er liebt die Hexe
 Gertrud vom Katzenberg. Seine Tochter Inge wird vom Riesen Eiszahn
@@ -626,16 +630,61 @@ gefangen gehalten.
 
 **Gertrud** die Hexe vom Katzenberg …
 
-**Theudetrud** ist eine der fünf Pentarchen des Kreises, eines Zirkels
-von Magiern, welche sich der Aufrechterhaltung des ewigen Friedens
-verschworen haben.
+**Theudetrud** ist eine der fünf Pentarchen des Kreises, einem
+Geheimbund von Magiern, welche sich der Aufrechterhaltung des ewigen
+Friedens verschworen haben.
 
 **Hildegard** von der Rabenwarte ist Hohepriesterin des Pazuzu,
 geschützt von einem verfluchten Nebel über dem grossen Sumpf, in dem
 sich der Drache Pesthauch umher treibt.
 
-**Eiszahn** der Riese vom Bösberg … Er hält die schöne Inge von
-Falkenstein gefangen.
+**Pesthauch**
+
+**Eiszahn** ist der Riese vom Bösberg … Er hält die schöne Inge von
+Falkenstein gefangen. Jede Nacht streifen die toten Büsser über seinen
+Gletscher.
+
+**Tote Büsser**
+
+**Feuervater** ist der Riese vom Rothorn
+
+**Chlodogunda** ist die Feldherrin von Klingenstein, zurückgekehrt aus
+dem Krieg in fernen Ländern, um in Besitz zu nehmen, was ihr
+vermeintlich gehört. Sie ist umgeben von einer Hunderschaft von
+Reisläufern. Der Anführer ihrer Nachhut ist Siegbert.
+
+**Reisläufer**
+
+**Gyso** von den Federn ist Vorsitzender der Silbernen
+Schreiberlingen, einer Geheimbund von Chronisten und Gelehrten, die
+Bücher kopieren und das Wissen alter Zeiten durch diese dunklen Jahre
+retten wollen. Er will das Buch … von …
+
+**Siegbert** gehört dem Geheimbund „Miliz der Pyramide“ an, dem sich
+Söldner angeschlossen haben, die auf den Feldzügen gegen die
+Steppenreiter das Wüstenland erreicht haben, und dort die alten
+Pyramiden gesehen haben.
+
+**Frieda** vom Himmelturm ist die Hohepriesterin des Marduk in
+Midgard. Marduk schützt die Menschen vor den Monstern, und deswegen
+ist ihr grösster Wunsch die drei Drachen getötet zu wissen: Pesthauch,
+Frostatem, und Schattenspeier.
+
+**Frostatem** ist der Drache der Isenspitze.
+
+**Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim, und die
+Geliebte der Vuldetrada.
+
+**Vuldetrada** ist die Baronin vom Schloss Farnheim, reich und ledig.
+
+**Gundobad** ist Ritter von Rifenau, und würde gerne Vuldetrada
+heiraten. Doch bis jetzt ist kläglich gescheitert. Er besässe gerne
+den Kelch der Erlösung, von Set gesegnet, mit dem man Wasser zu Gift
+verwandeln kann. Es gehört zum Hort von Schattenspeier.
+
+**Schattenspeier** ist der Drache vom Finstermoor. In seinem Hort
+befindet sich der Kelch der Erlösung, von Set gesegnet, mit dem man
+Wasser zu Gift verwandeln kann.
 
 ## Lesematerial
 

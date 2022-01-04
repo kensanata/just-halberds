@@ -30,7 +30,7 @@ Du hast sechs Attribute: Kraft, Geschick, Ausdauer, Intelligenz,
 Bildung, und Status. Würfle zwei sechsseitige Würfel für jedes
 Attribut, zähle sie zusammen (kurz: 2W6) und notiere es.
 
-> Beispiel: Alex nennt seinen Charakter Arthur und würfelt 8 8 7 9 10
+> Beispiel: Alex nennt seinen Charakter Adalric und würfelt 8 8 7 9 10
 > 8; Berta nennt ihren Charakter Brunhilde und würfelt 10 6 9 5 4 4.
 
 Dein Charakter ist nun 16 Jahre alt. Nun wählst du eine erste
@@ -130,7 +130,7 @@ bestimmst du die Folgen mit 1W6.
 **Aufnahme**: Würfle 2W6 ≤ Intelligenz oder Bildung (deine Wahl).
 Du lernst automatisch Schrift-1.
 
-> Beispiel: Arthur hat Bildung-9 und Alex würfelt 9. Arthur ist
+> Beispiel: Adalric hat Bildung-9 und Alex würfelt 9. Adalric ist
 > aufgenommen!
 
 Du verbringst vier Jahre als Magier und lernst jedes Jahr etwas.
@@ -173,16 +173,16 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    hast du dich geopfert. Wer den Ort kennt, weiss wo man dich finden
    kann, doch deine Schreie sind nichts für schwache Nerven.
 
-> Beispiel: Alex würfelt 4+0 und Arthur erleidet keinen
-> Schicksalsschlag. Arthur ist nun 20 Jahre alt. Auf der
+> Beispiel: Alex würfelt 4+0 und Adalric erleidet keinen
+> Schicksalsschlag. Adalric ist nun 20 Jahre alt. Auf der
 > Alterungstabelle muss noch nicht gewürfelt werden.
 
 ## Taugenichts Karriere
 
 **Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl).
 
-> Beispiel: Arthur wechselt Karriere (nun ist er 21 Jahre alt) und
-> will Taugenichts werden; er hat Status-10 und Alex würfelt 7. Arthur
+> Beispiel: Adalric wechselt Karriere (nun ist er 21 Jahre alt) und
+> will Taugenichts werden; er hat Status-10 und Alex würfelt 7. Adalric
 > ist aufgenommen!
 
 Du verbringst vier Jahre als Taugenichts und lernst jedes Jahr etwas.
@@ -224,7 +224,7 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    heisst, die Strassenhunde sind fett geworden, dieses Jahr. 
 
 > Beispiel: Alex würfelt 8+1, da er bereits eine Karriere als Magier
-> hinter sich hat. Arthur erleidet keinen Schicksalsschlag und ist nun
+> hinter sich hat. Adalric erleidet keinen Schicksalsschlag und ist nun
 > 25 Jahre alt.
 
 ## Talente
@@ -288,7 +288,7 @@ Belohnung. Würfle für jede Karriere auf der entsprechenden Tabelle.
 | 5   |Pferd          |Gefährte       |Hund           |
 | 6   |Land           |Lehrstuhl      |Posten         |
 
-> Beispiel: Arthur hat zwei Karrieren gemacht, 1× Magier und 1×
+> Beispiel: Adalric hat zwei Karrieren gemacht, 1× Magier und 1×
 > Taugenichts. Alex würfelt 4 5, gibt eine Mitgliedschaft in einem
 > Geheimbund und einen Hund.
 
@@ -373,7 +373,7 @@ Für allen anderen Lebewesen gibt es anstatt der bekannten sechs
 Attribute nur Ausdauer und Leben. Sinkt die Ausdauer auf 0, werden sie
 ohnmächtig; sinkt das Leben auf 0, sterben sie.
 
-> Beispiel: Arthurs Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt
+> Beispiel: Adalrics Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt
 > 1+4+5=10 und 5+2=7 und notiert 10/7 für den Hund.
 
 ## Gegner
@@ -433,7 +433,7 @@ Genau so wie du dir langsam einen Fundus von Gegnern erarbeitest,
 musst du mit den Spielern und Spielerinnen ein Verständnis erarbeiten,
 wie stark die Magie in etwa ist.
 
-> Beispiel: Wieviele Goblins kann Arthur mit einem Blitz erledigen?
+> Beispiel: Wieviele Goblins kann Adalric mit einem Blitz erledigen?
 > Alex und Claudia einigen sich darauf, dass ein Blitz eine
 > Riesenspinne samt Reiter treffen kann und beiden je 5W6 Schaden
 > macht, oder dass ein Kettenblitz fünf Goblins erwischt und ihnen je
@@ -452,7 +452,7 @@ Regel: Würfle 2W6 + Anzahl heutiger Zaubersprüche ≤ Attribut + Talent,
 um Erfolg zu haben. Wenn der Wurf fehlschlägt, lässt sich das Talent
 heute nicht mehr verwenden.
 
-> Beispiel: Arthur zaubert Regen herbei, für Sichtschutz. Er hat
+> Beispiel: Adalric zaubert Regen herbei, für Sichtschutz. Er hat
 > Bildung-9, Wasser-1, macht in der Summe 10. Alex würfelt 10 + 0, da
 > dies der erste Zauberspruch des Tages war. Es regnet, da 10 ≤ 10.
 > Nun folgt ein Kettenblitz: Alex würfelt 5+1=6 und 6 ≤ 10. Damit sind
@@ -487,7 +487,7 @@ Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,
 zaubern, oder sonst etwas tun. Alle Beteiligten kündigen ihre Aktion
 an, würfeln, und werten aus. Alles passiert gleichzeitig.
 
-> Beispiel: Arthur zaubert den Kettenblitz und er ist durch den Regen
+> Beispiel: Adalric zaubert den Kettenblitz und er ist durch den Regen
 > geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit
 > dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6 – und
 > 6 ≰ 5: verfehlt!

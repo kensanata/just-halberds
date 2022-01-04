@@ -4,7 +4,7 @@
 0104 green fir-forest cliff1
 0105 light-grey forest-hill cliff2
 0106 light-grey mountain
-0107 white mountain law
+0107 white mountain law "Himmelturm"
 0108 white mountains cliff2 cliff3
 0201 green forest
 0202 dark-grey swamp "Finstermoor"

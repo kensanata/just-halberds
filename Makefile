@@ -38,6 +38,9 @@ watch:
 
 Helmbarten.pdf: images/Helmbarten.png
 
+images/Helmbarten.svg: images/Helmbarten.txt
+	text-mapper < $< > $@
+
 images/%.png: images/%.svg
 	inkscape --without-gui --export-area-page --file=$< --export-png=$@
 

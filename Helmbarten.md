@@ -542,17 +542,107 @@ ein Hauptquartier. Und sowohl Personen als auch Organisationen wollen
 je drei Dinge und bieten je drei Belohnungen. Wenn sich die Wünsche
 zum Teil überschneiden und widersprechen, um so besser.
 
-| 1W6 | Tätigkeit    | Geheimbund              | Götter | Dämonen    |
-|:---:|--------------|-------------------------|--------|------------|
-| 1   | Ritter       | Miliz der Pyramide      | Odin   | Set        |
-| 2   | Barde        | Silver Schreiberlinge   | Freya  | Orcus      |
-| 3   | Dieb         | Pentarchen des Kreises  | Thor   | Pazuzu     |
-| 4   | Magier       | Schüler der Geschichte  | Mitra  | Nergal     |
-| 5   | Bibliothekar | Diener des Bewusstseins | Marduk | Hel        |
-| 6   | Händler      | Kooperation der Ordnung | Ishtar | Tsathoggua |
+| 1W6 | Tätigkeit    | Geheimbund              | Götter | Dämonen |
+|:---:|--------------|-------------------------|--------|---------|
+| 1   | Ritter       | Miliz der Pyramide      | Odin   | Set     |
+| 2   | Barde        | Silberne Schreiberlinge | Freya  | Orcus   |
+| 3   | Dieb         | Pentarchen des Kreises  | Thor   | Pazuzu  |
+| 4   | Magier       | Schüler der Geschichte  | Mitra  | Nergal  |
+| 5   | Bibliothekar | Diener des Bewusstseins | Marduk | Hel     |
+| 6   | Händler      | Kooperation der Ordnung | Ishtar | Zathogg |
+
+Dörfer werden nach der schützenden Festung benannt; mit den folgenden
+Tabellen sind die ersten paar Namen schnell generiert.
+
+| 1W6 | Burg 1   | Burg 2   | Burg 3  | Magie 1  | Magie 2 | Magie 3 |
+|:---:|----------|----------|---------|----------|---------|---------|
+| 1   | Schauen- | Falken-  | -burg   | Hexen-   | Feuer-  | -turm   |
+| 2   | Alten-   | Farn-    | -berg   | Raben-   | Toten-  | -warte  |
+| 3   | Bären-   | Froh-    | -fels   | Teufels- | Tempel- | -stein  |
+| 4   | Neuen-   | Klingen- | -stein  | Finster- | Hohen-  | -wald   |
+| 5   | Guten-   | Ram-     | -zwinge | Dunkel-  | Himmel- | -keller |
+| 6   | Sternen- | Rifen-   | -au     | Eis-     | Katzen- | -feste  |
+
+Für die Namen von Personen suche ich mir gerne eine Namenslisten für
+Babies online und verwende diese dann für meine Welt. Hier ein paar
+Tabellen für fränkisch angehauchte Namen. Gerne auch mit -o, -a oder
+-e am Ende, oder vertauscht (Chlodobert, Theudebald, Hildebart,
+Gertrud).
+
+| 1W6 | Name 1 | Name 2  | Name 3 | Name 4 | Name 5 | Name 6 |
+|:---:|--------|---------|--------|--------|--------|--------|
+| 1   | Adal-  | Chlodo- | -ger   | -burg  | Ada    | Chloe  |
+| 2   | Amal-  | Charde- | -man   | -gard  | Berta  | Gregor |
+| 3   | Bald-  | Gunde-  | -mund  | -gund  | Gyso   | Frieda |
+| 4   | Bert-  | Os-     | -ric   | -hild  | Dodo   | Siggo  |
+| 5   | Brun-  | Sigi-   | -hard  | -lind  | Hilde  | Ardo   |
+| 6   | Ger-   | Theude- | -sind  | -trud  | Inge   | Gisela |
+
+Intelligente Monster und Berge sollten auch Namen haben. Für Riesen
+und Drachen nehme ich gerne Namen, die auf Naturgewalten hindeuten.
+
+| 1W6 | Name 1    | Drachen | Riesen   | Berg 1   | Berg 2  |
+|:---:|-----------|---------|----------|----------|---------|
+| 1   | Eis-      | -rachen | -hammer  | Nadel-   | -berg   |
+| 2   | Frost-    | -atem   | -schmied | Bös-     | -horn   |
+| 3   | Feuer-    | -speier | -macher  | Scheid-  | -egg    |
+| 4   | Gift-     | -nadel  | -vater   | Finster- | -höhe   |
+| 5   | Pest-     | -hauch  | -mutter  | Rot-     | -flue   |
+| 6   | Schatten- | -rauch  | -zahn    | Isen-    | -spitze |
+
+Schätze, welche diese Personen, Riesen und Drachen möglichweise haben,
+und die sie sich gegenseitig abluchsen wollen. Hierfür sollte man sich
+noch zwei oder drei wichtige Personen aus der Vergangenheit ausdenken:
+Propheten, Heldinnen, und so weiter; sowie den Namen eines dunklen
+Herrschers und seines Reiches. Namen sind wichtig!
+
+| 1W6 | Was     | Wozu                | Wer hat es erfunden?                      |
+|:---:|---------|---------------------|-------------------------------------------|
+| 1   | Ring    | der Unsichtbarkeit  | der dunklen Herrschers                    |
+| 2   | Schwert | der Unbesiegbarkeit | die Herrin vom See                        |
+| 3   | Krone   | der Macht           | der erste Richter                         |
+| 4   | Speer   | des Zerstörung      | aus den letzten Tagen des Reichs          |
+| 5   | Buch    | des Heiligen        | (eine bekannte Person)                    |
+| 6   | Kelch   | der Erlösung        | (eine oder einer der Götter oder Dämonen) |
+
+All diese Dinge werden festgehalten und führen hoffentlich auch gleich
+zu Querverbindungen und Inspirationen.
+
+## Beispiel
+
+**Brunmund** der Magier von Dunkelkeller ist Fleischmagier und
+Wolfsmensch, wild, frei, ungebildet: Kraft-7, Geschick-10, Ausdauer-7,
+Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-1,
+Tiere-1, Nekromantie-1, ein Wasser-1, Pflanzen-1, Tiere-1, Singen-1,
+Schrift-1. Er begehrt den Ring der Unsichtbarkeit des Riesen Eiszahn
+vom Bösberg, den Osrica einmal getragen hat. Er möchte, dass Amalggund
+von Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe
+Getrud vom Katzenberg. Sein Wald wird von riesigen Wölfen verteidigt,
+auf denen Schattenelfen reiten.
+
+**Amalggund** der Baron von Falkenstein … Auch er liebt die Hexe
+Gertrud vom Katzenberg. Seine Tochter Inge wird vom Riesen Eiszahn
+gefangen gehalten.
+
+**Gertrud** die Hexe vom Katzenberg …
+
+**Theudetrud** ist eine der fünf Pentarchen des Kreises, eines Zirkels
+von Magiern, welche sich der Aufrechterhaltung des ewigen Friedens
+verschworen haben.
+
+**Hildegard** von der Rabenwarte ist Hohepriesterin des Pazuzu,
+geschützt von einem verfluchten Nebel über dem grossen Sumpf, in dem
+sich der Drache Pesthauch umher treibt.
+
+**Eiszahn** der Riese vom Bösberg … Er hält die schöne Inge von
+Falkenstein gefangen.
 
 ## Lesematerial
 
 [Die Schweizer: Reisläufer aus den
 Alpen](http://www.kriegsreisende.de/voelker/schweizer.htm), von Frank
 Westenfelder.
+
+[Stammliste der
+Merowinger](https://de.wikipedia.org/wiki/Stammliste_der_Merowinger),
+auf Wikipedia, für die Personennamen.

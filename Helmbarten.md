@@ -542,14 +542,14 @@ ein Hauptquartier. Und sowohl Personen als auch Organisationen wollen
 je drei Dinge und bieten je drei Belohnungen. Wenn sich die Wünsche
 zum Teil überschneiden und widersprechen, um so besser.
 
-| 1W6 | Tätigkeit    | Geheimbund              | Götter | Dämonen |
-|:---:|--------------|-------------------------|--------|---------|
-| 1   | Ritter       | Miliz der Pyramide      | Odin   | Set     |
-| 2   | Barde        | Silberne Schreiberlinge | Freya  | Orcus   |
-| 3   | Dieb         | Pentarchen des Kreises  | Thor   | Pazuzu  |
-| 4   | Magier       | Schüler der Geschichte  | Mitra  | Nergal  |
-| 5   | Bibliothekar | Diener des Bewusstseins | Marduk | Hel     |
-| 6   | Händler      | Kooperation der Ordnung | Ishtar | Zathogg |
+| 1W6 | Tätigkeit    | Geheimbund 1   | Geheimbund 2     | Götter | Dämonen  |
+|:---:|--------------|----------------|------------------|--------|----------|
+| 1   | Ritter       | Miliz          | der Pyramide     | Odin   | Set      |
+| 2   | Barde        | Schreiberlinge | des Mondes       | Freya  | Orcus    |
+| 3   | Dieb         | Pentarchen     | des Kreises      | Thor   | Pazuzu   |
+| 4   | Magier       | Schüler        | der Geschichte   | Mitra  | Nergal   |
+| 5   | Bibliothekar | Diener         | des Bewusstseins | Marduk | Hel      |
+| 6   | Händler      | Kooperation    | der Ordnung      | Ishtar | Zathogga |
 
 Dörfer werden nach der schützenden Festung benannt; mit den folgenden
 Tabellen sind die ersten paar Namen schnell generiert.

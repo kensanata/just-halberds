@@ -738,4 +738,9 @@ Westenfelder.
 
 [Stammliste der
 Merowinger](https://de.wikipedia.org/wiki/Stammliste_der_Merowinger),
-auf Wikipedia, für die Personennamen.
+auf Wikipedia, für die Personennamen. [Frankish
+Names](https://www.s-gabriel.org/names/guntram/franks.htm), sehr kurz,
+von Guntram von Wolkenstein.
+
+[Text Mapper](https://campaignwiki.org/text-mapper/), um Karten zu
+erstellen.

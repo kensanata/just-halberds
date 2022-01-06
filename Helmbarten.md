@@ -681,12 +681,12 @@ Bücher kopieren und das Wissen alter Zeiten durch diese dunklen Jahre
 retten wollen. Er will das Buch der Macht, welches der dunkle
 Herrscher vor seinem Ende noch geschrieben hat.
 
-⑧ **Siegbert** gehört dem Geheimbund „Miliz der Pyramide“ an, dem sich
-Söldner angeschlossen haben, die auf den Feldzügen gegen die
-Steppenreiter das Wüstenland erreicht haben, und dort die alten
-Pyramiden gesehen haben. Im stünde wohl der Sinn nach einer Heirat. Er
-lässt sich leicht von der Macht verführen. Gerne würde er sich ein
-Schwert schmieden lassen, so wie Osrica eines hatte.
+⑧ **Siegbert** gehört der „Miliz der Pyramide“ an, einem Geheimbund
+der Söldner, die auf den Feldzügen gegen die Steppenreiter das
+Wüstenland erreicht haben, und dort die alten Pyramiden gesehen haben.
+Ihm stünde wohl der Sinn nach einer Heirat. Er lässt sich leicht von
+der Macht verführen. Gerne würde er sich ein Schwert schmieden lassen,
+so wie Osrica eines hatte.
 
 ⑨ **Frieda** vom Himmelturm ist die Hohepriesterin des Marduk in
 Midgard. Marduk schützt die Menschen vor den Monstern, und deswegen

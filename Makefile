@@ -1,12 +1,14 @@
 SHELL=/bin/bash
 
-all: Helmbarten.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
+all: Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 
 clean:
 	rm -f *.html *.pdf *.data
 
-upload: Helmbarten.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
+upload: Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
+	(echo ""; tail -n +2 images/Farnthal.svg) | \
+	~/bin/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
 
 watch:
 	@echo Regenerating PDFs whenever the .md or .css files get saved...

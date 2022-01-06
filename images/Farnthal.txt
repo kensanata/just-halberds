@@ -1,0 +1,111 @@
+0101 green trees thorp
+0102 green forest
+0103 green forest
+0104 green fir-forest cliff1
+0105 light-grey forest-hill cliff2
+0106 light-grey mountain
+0107 white mountain law "Himmelturm"
+0108 white mountains cliff2 cliff3
+0201 green forest
+0202 dark-grey swamp "Finstermoor"
+0203 green forest
+0204 green trees thorp "Rifenau"
+0205 light-grey forest-hill cliff1
+0206 light-grey mountain dry cliff3
+0207 light-grey mountain cliff2 cliff3
+0208 light-grey mountain cliff2
+0301 light-green bushes
+0302 green trees village "Falkenstein"
+0303 green trees thorp "Vorderthal"
+0304 green forest
+0305 green fir-forest cliff1 cliff2
+0306 light-grey mountain cliff1 cliff2 cliff3 cliff4
+0307 green firs thorp "Hinterthal"
+0308 grey swamp2 chaos "Rabenwarte"
+0401 dark-grey swamp
+0402 green forest
+0403 green forest
+0404 water
+0405 light-soil large-town port cliff1 "Schloss Farnheim"
+0406 green fir-forest
+0407 grey swamp
+0408 light-grey mountain cliff0 cliff1
+0501 green fir-forest
+0502 light-grey forest-hill cliff0 cliff4 cliff5 "Katzenberg"
+0503 green forest
+0504 green forest cliff5
+0505 green forest cliff0
+0506 green fir-forest
+0507 grey swamp
+0508 light-grey forest-hill
+0601 green fir-forest
+0602 light-green fir-forest cliff5
+0603 green firs thorp "Dunkelkeller"
+0604 light-green grass
+0605 green forest
+0606 green firs thorp "Bärenau"
+0607 green fir-forest
+0608 light-grey forest-hill cliff2
+0701 green fir-forest
+0702 light-grey mountain dry cliff0 cliff1
+0703 dust grass cliff4
+0704 light-green grass
+0705 light-green grass
+0706 green forest
+0707 green fir-forest
+0708 green forest
+0801 white mountain cliff0 cliff2
+0802 light-grey mountain dry cliff4
+0803 green fir-forest
+0804 green firs thorp "Totenthurm"
+0805 green forest
+0806 light-green bushes
+0807 green forest
+0808 green forest
+0901 light-grey forest-hill
+0902 white mountains cliff1 cliff2 cliff4 cliff5 "Bösberg"
+0903 light-grey mountain dry cliff5
+0904 light-green fir-forest cliff4
+0905 green forest
+0906 green trees thorp "Gutenfurt"
+0907 green forest
+0908 light-green grass
+1001 light-grey mountain
+1002 white mountains cliff1 cliff5 "Isenspitze"
+1003 white mountains cliff0 cliff4 cliff5 "Rothorn"
+1004 light-grey mountain cliff4 cliff5
+1005 green trees town "Klingenstein"
+1006 green forest
+1007 green forest
+1008 light-green grass
+0404-0304-0204-0203-0103-0002 canyon
+0901-1000 river
+0608-0906-0805 river
+1004-1006-0805-0706-0404 river
+0106-0105-0204-0203-0103-0002 river
+0404-0304-0204-0203-0103-0002 river
+0205-0204-0203-0103-0002 river
+1001-0901-1000 river
+0502-0401-0302-0202-0102-0001 river
+0306-0405-0404-0304-0204-0203-0103-0002 river
+0408-0407-0507-0406-0405-0404-0304-0204-0203-0103-0002 river
+0208-0308-0407-0507-0406-0405-0404-0304-0204-0203-0103-0002 river
+0207-0308-0407-0507-0406-0405-0404-0304-0204-0203-0103-0002 river
+other <text x="0" y="0" font-size="20pt" fill="white" transform="rotate(-30) translate(-50,1350)">Würm</text>
+0508-0507-0406-0405-0404-0304-0204-0203-0103-0002 river
+0603-0303 trail
+0107-0405 trail
+0804-1005 trail
+0405-0403-0303 trail
+0307-0405 trail
+0204-0304-0303 trail
+0101-0303 trail
+1005-0906 trail
+0308-0405 trail
+0302-0303 trail
+0606-0405 trail
+other <text x="1000" y="1025" font-size="20pt" fill="white">Farnweg</text>
+0906-0606 trail
+include gnomeyland.txt
+url https://campaignwiki.org/wiki/Helmbarten/
+license <text x="50" y="-40" font-size="15pt" fill="#999999"><a style="fill:#8888ff" xlink:href="http://www.busygamemaster.com/">Gnomeyland SVG Map Icons</a> Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.</text><text x="50" y="-15" font-size="15pt" fill="#999999">This work is licensed under the <a style="fill:#8888ff" xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</text>

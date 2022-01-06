@@ -38,6 +38,8 @@ watch:
 %.md.tmp: %.md
 	sed 's/¡/{: .highlight}/g' < $< > $@
 
+Farnthal.pdf: images/Farnthal.png
+
 Helmbarten.pdf: images/Helmbarten.png
 
 images/Helmbarten.svg: images/Helmbarten.txt

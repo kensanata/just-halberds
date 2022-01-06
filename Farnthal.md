@@ -97,7 +97,9 @@ etwas ablesen.
 
 Wisigarde mag Gundobad nicht und würde ihn gerne los werden. Wer sich
 mit ihr also gut stellen will, hilft ihr, Vuldetrada davon zu
-überzeugen, dass Gundobad ein Selbstmordkommando übernimmt.
+überzeugen, dass Gundobad ein Selbstmordkommando übernimmt. Gundobad
+will mehr über den Kelch erfahren. Wer ihm dabei hilft, Wisigarde zu
+überstimmen, stellt sich bei ihm gut. Beides geht nicht.
 
 > Wisigarde sagt: “Gundobad, der Widerling, ist zu Besuch. Wie sehr
 > ich mir doch wünschte, er würde sich für das Tal nützlich machen.
@@ -114,7 +116,31 @@ mit ihr also gut stellen will, hilft ihr, Vuldetrada davon zu
 > Gegenzug auftragen, in meinem Namen zum Himmelturm aufzusteigen und
 > meiner Cousine Frieda meine Grüsse zu überbringen.”
 
+Und am Ende noch ein Schuss ins Blaue. Vielleicht passiert ja im
+Himmelturm etwas interessantes? Da muss ich noch Gegner vorbereiten.
+Banditen!
+
 ## Was fehlt?
+
+**Banditen**… Menschen fehlen auf der Monster Tabelle! So etwas in der
+Art:
+
+| 1W6 |        Gegner | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
+|:---:|--------------:|:-------:|:--------:|:-----:|:-------:|-------:|:------:|
+| 1   |        Bauern | 2W6     | 2W6      | 2W6   | 1W6     |  1W6+5 | 2W6    |
+| 2   |      Banditen | 2W6     | 2W6      | 2W6   | 1W6+3   |    1W6 | 3W6    |
+| 4   | Steppenreiter | 2W6     | 1W6+4    | 2W6   | 1W6+5   |  1W6+2 | 3W6    |
+| 3   | Hellebardiere | 3W6     | 1W6+5    | 2W6   | 1W6+4   |  1W6+1 | 2W6    |
+| 5   |        Ritter | 3W6     | 1W6+6    | 2W6   | 1W6+5   |  1W6+1 | 1W6    |
+| 6   |        Mörder | 2W6     | 2W6      | 1W+6  | 1W6+6   |    1W6 | 1W6    |
+
+Für die Banditen auf Weg zum Himmelturm soll gelten: Schaden-7,
+Ausdauer-7, Leben-10, Angriff-7, Flucht-5, Anzahl-9. Ihr Anführer ist
+**Adalgard** Kraft-5, Geschick-10, Ausdauer-2, Intelligenz-5,
+Bildung-7, Status-6, Kämpfen-2, Taktik-2, Feldscher-2, Schleichen-1,
+Bauen-1, Benehmen-1. Hier habe ich einfach ein paar Talente
+ausgewürfelt. Wie man sieht, hätte es auch gepasst, wenn Adalgard
+einfach überall einen Wert von 2 hat.
 
 Wenn ich mir die Tabelle der Tätigkeiten anschaue, stelle ich fest,
 dass es in meiner Liste der Personen keine Diebe gibt! Ob wohl eines

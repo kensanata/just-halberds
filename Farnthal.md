@@ -57,6 +57,82 @@ Meine Lieblinge tauchen halt auch immer wieder auf, weil sie mir
 geläufig sind. Wem also die Zwölfgötter von Aventurien geläufiger
 sind, oder wer seinen eigenen Pantheon aufgestellt hat, kein Problem.
 
+Generell halte ich es auch mit einer einfachen Faustregel: Die Götter
+der Ordnung und ihre Tempel findet man in den Bergen, in der Nähe vom
+ewigen Eis, nahe am Himmel und der Sonne, in weiss und blau. Die
+Dämonen des Chaos hingegen leben in den Sümpfen, bei den Mücken,
+Krokodilen, dem Fieber, wo man sich benommen durch den Schlamm kämpft
+und wo die Blutegel auf uns warten.
+
 ## Ausgangslage
 
-Wo soll das Spiel beginnen?
+Wo soll das Spiel beginnen? Im grössten Ort, also auf Schloss
+Farnheim. Das gibt uns schon mal zwei Personen, Vuldetrada und
+Wisigarde. Also fange ich mal mit einer kleinen Beschreibung des Ortes
+auf der Wiki an. Der Fluss hat neuerdings einen Namen.
+
+> Das Schloss steht weit oberhalb des Farnsees. Ein steiler Weg führt
+> neben dem Wasserfall der Würm hinab zum See. Unten hat es einen
+> kleinen Hafen für die Fischer, und den Fährmann, der Reisende zur
+> Strasse nach Falkenstein führt.
+
+Die Beschreibung der Damen ist aus dem Regelwerk kopiert:
+
+> **Vuldetrada** ist die Baronin vom Schloss Farnheim, reich und
+> ledig.
+>
+> **Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim, und
+> die Geliebte der Vuldetrada. Ihr Chor ist gleichzeitig auch eine
+> Schule für Diplomatie, Menschenkenntnis, Illusionsmagie, und vieles
+> mehr.
+
+Wen könnte ich noch auf der Burg haben? Nochmal die Beschreibungen
+durchgelesen und finde den Gundobad, der Vuldetrada heiraten will.
+
+> **Gundobad** ist Ritter von Rifenau und zu Besuch.
+
+Damit ich schnell was zur Hand habe, schreibe ich gerne ein oder zwei
+Sätze direkter Rede auf. Wenn ich ins Rotieren komme, kann ich einfach
+etwas ablesen.
+
+Wisigarde mag Gundobad nicht und würde ihn gerne los werden. Wer sich
+mit ihr also gut stellen will, hilft ihr, Vuldetrada davon zu
+überzeugen, dass Gundobad ein Selbstmordkommando übernimmt.
+
+> Wisigarde sagt: “Gundobad, der Widerling, ist zu Besuch. Wie sehr
+> ich mir doch wünschte, er würde sich für das Tal nützlich machen.
+> Soll er doch den Drachen von der Rabenwarte erschlagen! Das wäre
+> eine That, eines Ritters würdig!”
+> 
+> Gundobad sagt: “Holde Vuldetrada, euer Ruhm und euer Reichtum sind
+> ohnegleichen. Vor allem heisst es, dass Wisigarde aber die schönste
+> Sängerin in diesem Land sei, und ihr Wissen die Geschichte der
+> ganzen Menschheit umfasst! Darum bitte ich euch, lasst Wisigarde das
+> Lied vom Kelch der Erlösung singen!”
+> 
+> Vuldetrada sagt: “Nun denn, so sei es. Doch euch will ich im
+> Gegenzug auftragen, in meinem Namen zum Himmelturm aufzusteigen und
+> meiner Cousine Frieda meine Grüsse zu überbringen.”
+
+## Was fehlt?
+
+Wenn ich mir die Tabelle der Tätigkeiten anschaue, stelle ich fest,
+dass es in meiner Liste der Personen keine Diebe gibt! Ob wohl eines
+der drei Geheimbunde eine Diebesgilde ist? Vielleicht eher nicht. Ob
+eine der zwölf Personen Oberhaupt einer Diebesgilde ist?
+
+Ausserdem habe ich drei Drachen aber nur zwei Riesen. Wo ist er
+dritte? Und natürlich fehlen noch sonstige Feinde. Und Freunde.
+Quellgeister, Elfen, Banditen, eine zweite Bande von Söldnern…
+
+Aber… vielleicht ist einer der Riesen der Chef einer Diebesgilde? Der
+Dieb mit den längsten Fingern, König Langfinger vom Berg! Und von
+welchem Berg? Der Berg von 08.01 ist noch unbesetzt, aber alle Berge
+daneben sind schon besetzt: Bösberg hat einen Riesen, Isenspitze einen
+Drachen, Rothorn wieder einen Riesen… Vielleicht ist der dritte Riese
+nicht auf der Karte! Entweder bei 05.09 im Süden, oder irgendwo im
+Westen, Tal aufwärts. Oder in der mythischen Unterwelt!
+
+Mal schauen was am ersten Spielabend passiert, wofür sich meine
+Spielerin interessiert. Dort will ich mehr vorbereiten, alles andere
+lasse ich sein.

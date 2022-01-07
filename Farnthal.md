@@ -125,7 +125,7 @@ Banditen!
 **Banditen**… Menschen fehlen auf der Monster Tabelle! So etwas in der
 Art:
 
-| 1W6 |        Gegner | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
+| 1W6 |      Menschen | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
 |:---:|--------------:|:-------:|:--------:|:-----:|:-------:|-------:|:------:|
 | 1   |        Bauern | 2W6     | 2W6      | 2W6   | 1W6     |  1W6+5 | 2W6    |
 | 2   |      Banditen | 2W6     | 2W6      | 2W6   | 1W6+3   |    1W6 | 3W6    |
@@ -134,7 +134,7 @@ Art:
 | 5   |        Ritter | 3W6     | 1W6+6    | 2W6   | 1W6+5   |  1W6+1 | 1W6    |
 | 6   |        Mörder | 2W6     | 2W6      | 1W+6  | 1W6+6   |    1W6 | 1W6    |
 
-Für die Banditen auf Weg zum Himmelturm soll gelten: Schaden-7,
+Für die **Banditen** auf Weg zum Himmelturm soll gelten: Schaden-7,
 Ausdauer-7, Leben-10, Angriff-7, Flucht-5, Anzahl-9. Ihr Anführer ist
 **Adalgard** Kraft-5, Geschick-10, Ausdauer-2, Intelligenz-5,
 Bildung-7, Status-6, Kämpfen-2, Taktik-2, Feldscher-2, Schleichen-1,
@@ -144,21 +144,31 @@ einfach überall einen Wert von 2 hat.
 
 Wenn ich mir die Tabelle der Tätigkeiten anschaue, stelle ich fest,
 dass es in meiner Liste der Personen keine Diebe gibt! Ob wohl eines
-der drei Geheimbunde eine Diebesgilde ist? Vielleicht eher nicht. Ob
-eine der zwölf Personen Oberhaupt einer Diebesgilde ist?
+der drei Geheimbunde eine Diebesgilde ist? Vielleicht eher nicht.
 
-Ausserdem habe ich drei Drachen aber nur zwei Riesen. Wo ist er
-dritte? Und natürlich fehlen noch sonstige Feinde. Und Freunde.
-Quellgeister, Elfen, Banditen, eine zweite Bande von Söldnern…
+Ich habe drei Drachen aber nur zwei Riesen. Wo ist er dritte?
+Vielleicht ist er der Chef einer Diebesgilde? Der Dieb mit den
+längsten Fingern, König Langfinger vom Berg! Und von welchem Berg? Der
+Berg von 08.01 ist noch unbesetzt, aber alle Berge daneben sind schon
+besetzt: Bösberg hat einen Riesen, Isenspitze einen Drachen, Rothorn
+wieder einen Riesen… Vielleicht ist der dritte Riese nicht auf der
+Karte! Entweder bei 05.09 im Süden, oder irgendwo im Westen, Tal
+aufwärts. Oder in der mythischen Unterwelt! König Langfinger vom
+Unterberg!
 
-Aber… vielleicht ist einer der Riesen der Chef einer Diebesgilde? Der
-Dieb mit den längsten Fingern, König Langfinger vom Berg! Und von
-welchem Berg? Der Berg von 08.01 ist noch unbesetzt, aber alle Berge
-daneben sind schon besetzt: Bösberg hat einen Riesen, Isenspitze einen
-Drachen, Rothorn wieder einen Riesen… Vielleicht ist der dritte Riese
-nicht auf der Karte! Entweder bei 05.09 im Süden, oder irgendwo im
-Westen, Tal aufwärts. Oder in der mythischen Unterwelt!
+Bleiben wir mal bei den Goblins und Riesenspinnen aus den Helmbarten
+Regeln und denken uns noch vier weitere aus.
 
-Mal schauen was am ersten Spielabend passiert, wofür sich meine
-Spielerin interessiert. Dort will ich mehr vorbereiten, alles andere
-lasse ich sein.
+| 1W6 |        Gegner | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
+|:---:|--------------:|:-------:|:--------:|:-----:|:-------:|-------:|:------:|
+| 1   |       Goblins | 3       | 1        | 5     | 5       |      4 | 7      |
+| 2   | Riesenspinnen | 15      | 16       | 12    | 9       |      7 | 5      |
+| 3   |   Froschlinge | 4       | 4        | 1     | 6       |      5 | 9      |
+| 4   |    Nachtlinge | 9       | 6        | 7     | 4       |     10 | 8      |
+| 5   |     Bergwölfe | 4       | 14       | 2     | 10      |      5 | 7      |
+| 6   |   Tote Büsser | 7       | 5        | 20    | 12      |      4 | 11     |
+
+## Der erste Spielabend
+
+Mal schauen, wofür sich meine Spielerin interessiert. Dort will ich
+mehr vorbereiten, alles andere lasse ich sein.

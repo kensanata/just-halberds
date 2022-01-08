@@ -192,6 +192,12 @@ einem Geheimbund (nach einer kurzen Vorstellungsrunde der drei
 Optionen wählt sie die Pentarchen des Kreises und wird damit eine der
 fünf), und Bildung +1, was Bildung-12 bedeutet. Wahnsinn!
 
+Mir fällt auf, wie breit gestreut man ist, wenn man mal hier und mal
+da würfelt. Claudia wählt: Agressiv, 3× Passiv, 2×Manipulativ,
+Transgressiv, 2× Agressiv, Passive, Manipulativ, Transgressiv. Also
+eigentlich auf jeder Tabelle 3×. Ich sage ihr, dass ein Talent von 1
+gut genug ist, um damit einen Beruf aus zu üben.
+
 Wir schauen auf die Karte und ich erzähle, wer Theudetrud (Trudi) von
 Bärenau ist (die Anführerin des Geheimbundes), und wer die drei
 Drachen sind, welche sie zu schützen probieren, damit die
@@ -201,3 +207,71 @@ Frostatem von der Isenspitze, und Schattenspeier vom Finstermoor.
 Ausserdem erzähle ich, dass Trudi das Buch der Macht sucht, welches
 der letzte dunkle Herrscher geschrieben hat.
 
+Da wir schon auf die Karte schauen, stellt sich die Frage, woher
+Teriki denn kommt. Ich sage ihr, dass Chlodogunda Feldherrin von
+Klingenstein ist, und wenn sie dort daheim ist, dann wird das Spiel um
+den Konflikt zwischen Chlodogunda und Vuldetrada sein. Getrud ist die
+Hexe vom Katzenberg, welche versucht, die Pentarchen des Kreises zu
+finden und zu beseitigen. Wenn Teriki dort daheim ist, dann ist sie
+eine Doppelagentin! Super spannend, aber auch heikel! Amalgund ist
+der Baron von Falkenstein, einem grossen Dorf Richtung Talausgang.
+Oder sonst halt eines der kleinen Dörfer ohne Burg? Und so kommt
+Teriki aus Vorderthal, und das Spiel wird sich im Moment auch mehr um
+diese Gegend drehen. Passt!
+
+### Schloss Farnheim
+
+Teriki ist auf Schloss Farnheim und redet mit Wisigarde. Teriki war
+einmal ihre Schülerin, beschliessen wir. Wisigarde würde gerne den
+Gundabad, der im Moment auf Besuch ist, gegen den Drachen Pesthauch
+schicken will. So wäre er aus dem Weg – oder hätte sich wenigstens
+nützlich gemacht. Nur widerspricht das leider den Zielen der
+Pentarchen.
+
+Als sie mit Vuldetrada reden will, ist Gundabad schon bei ihr und sie
+streiten. Teriki will lauschen. Wir machen das so: Sie hört Gundabads
+Ansage, dann machen wir eine Probe auf Geschick und Schleichen (was
+Teriki nicht kann), und falls es gelingt, hört sie auch Vuldetradas
+Antwort. Die Probe gelingt und so hört sie, wie Gundabad das Lied vom
+Kelch der Erlösung hören will, und wie Vuldetrada ihn zu ihrer Cousine
+Frieda vom Himmelturm schicken will. Und Frieda ist Hohepriesterin von
+Marduk, welcher wiederum die Monster jagt, so dass zu vermuten steht,
+dass Frieda ebenfalls versuchen wird, Gundabad gegen den Drachen zu
+hetzen, da dieser ja ganz in der Nähe ist, was Teriki verhindern will.
+Claudia beschliesst, dass Teriki Gundabad begleiten wird.
+Ausgezeichnet! Sie will am Abendessen mit dabei sein. Ich verlange
+eine Status+Diplomatie Probe, welche bestanden wird. Sie ist
+willkommener Gast.
+
+Bleibt noch die Sache mit dem Lied. Mit Bildung 12 ist klar, dass
+Teriki weiss, dass der Kelch Wasser zu Gift verwandelt. Claudia sagt
+mir, dass sie nicht versteht, was an dem Kelch so toll sein soll.
+Ehrlicherweise verstehe ich es auch nicht. Ich denke an den
+Nibelungenring und an den Zwerg Alberich, den Wotan und Loge gefangen
+und beraubt haben, und wie der Zwerg sie und den Ring verflucht: „Wer
+ihn besitzt, den sehre die Sorge, und wer ihn nicht hat, den nage der
+Neid … So lang’ er lebt, sterb’ er lechzend dahin, des Ringes Herr als
+des Ringes Knecht!“ und so fange ich an, eine Geschichte zu spinnen:
+Der Kelch wurde vom Zwerg Angrim geschmiedet. Wer ihn besitzt, wird
+reich; Silber und Gold sind immer zum greifen nah. Von Angrim war der
+Kelch verflucht, nur wissen das viele nicht: Aus dem Kelch darf man
+nicht trinken. Doch wer sich gierig zeigt, den holt der Fluch ein. Sei
+es, weil der König zufällig in der Nähe ist, und verlangt, dass aus
+dem Kelch getrunken werde, oder aus sonst einem Grund: Am Ende trinkt
+man aus dem Kelch und ist des Todes. Der letzte bekannte Besitzer des
+Kelchs war der Grossvater von Amalgund von Falkenstein. Ich denke mir,
+das Teriki nicht gleich erfahren wird, wo der Kelch genau liegt.
+
+Wisigarde singt das Lied vom Kelch, und nun weiss auch Gundabad, dass
+der Kelch verflucht ist, und wer ihn zuletzt hatte. Ich mache
+deutlich, dass Gundabad nickt, als er vom Ende der früheren Besitzer
+hört. Teriki hakt nach und erfährt, dass Gundabad nur den ersten Teil
+des Liedes kannte, den bekannten Teil, wo erzählt wird, wie der Kelch
+reich macht. Der zweite Teil war ihm unbekannt.
+
+Das nächste Mal geht es weiter mit der Reise von Teriki und Gundabad
+in die Berge, zu Frieda und dem Himmelturm, an Banditen vorbei und in
+einen Marduk Tempel.
+
+Ich muss mit mal überlegen, was Wisigarde und Frieda für Talente
+haben.

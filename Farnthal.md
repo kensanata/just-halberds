@@ -170,5 +170,34 @@ Regeln und denken uns noch vier weitere aus.
 
 ## Der erste Spielabend
 
-Mal schauen, wofür sich meine Spielerin interessiert. Dort will ich
-mehr vorbereiten, alles andere lasse ich sein.
+Mal schauen, wofür sich Claudia (meine Spielerin) interessiert. Dort
+will ich mehr vorbereiten, alles andere lasse ich sein.
+
+Charaktererschaffung. Das erste Problem ist der Name. Wir würfeln und
+finden „Theuderica“ – genannt Teriki. Die Attribute: Kraft-5,
+Geschick-7, Ausdauer-9, Intelligenz-4, Bildung-11, Status-8. Sieht
+nach einer Magierin aus!
+
+Mit 16 fängt das Leben an. Die Talente: Luft-1, Brauen-2, Türen-1.
+Teriki hat Glück und es gibt keinen Schicksalsschlag. Mit 20 geht es
+weiter: Illusion-1, Diplomatie-1, Nekromantie-1, Messer-1, und wieder
+gibt es keinen Schicksalsschlag. Mit 24 noch einmal Magier sein:
+Feuer-1, Augen-1, Singen-1, Weltenwandeln-1. Und nun kommt es doch zu
+einem Schicksalsschlag, doch Teriki hat Glück und handelt sich nur
+eine Todfeind ein. Wir bestimmen später, wer es ist. Es ist Zeit für
+den Austritt – und die Belohnungen.
+
+Es gibt einen Gefährten (eine Krähe namens Rax), die Mitgliedschaft in
+einem Geheimbund (nach einer kurzen Vorstellungsrunde der drei
+Optionen wählt sie die Pentarchen des Kreises und wird damit eine der
+fünf), und Bildung +1, was Bildung-12 bedeutet. Wahnsinn!
+
+Wir schauen auf die Karte und ich erzähle, wer Theudetrud (Trudi) von
+Bärenau ist (die Anführerin des Geheimbundes), und wer die drei
+Drachen sind, welche sie zu schützen probieren, damit die
+Kriegstreiber dieser Welt zuhause bleiben: Pesthauch bei der
+Rabenwarte, wo Hildegard lebt, die Hohepriesterin des Pazuzu;
+Frostatem von der Isenspitze, und Schattenspeier vom Finstermoor.
+Ausserdem erzähle ich, dass Trudi das Buch der Macht sucht, welches
+der letzte dunkle Herrscher geschrieben hat.
+

@@ -617,7 +617,7 @@ Wolfsmensch, wild, frei, ungebildet: Kraft-7, Geschick-10, Ausdauer-7,
 Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-3,
 Tiere-2, Nekromantie-2, ein Wasser-1, Pflanzen-1, Singen-1, Schrift-1.
 Er begehrt den Ring der Unsichtbarkeit des Riesen Eiszahn vom Bösberg,
-den Osrica einmal getragen hat. Er möchte, dass Amalggund von
+den Osrica einmal getragen hat. Er möchte, dass Amalgund von
 Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe Getrud
 vom Katzenberg. Sein Wald wird von riesigen Wölfen verteidigt, auf
 denen Schattenelfen reiten.
@@ -626,7 +626,7 @@ denen Schattenelfen reiten.
 
 **Schattenelf** … Erstellen wie ein Nachtling.
 
-② **Amalggund** der Baron von Falkenstein. Attribute auswürfeln. Je
+② **Amalgund** der Baron von Falkenstein. Attribute auswürfeln. Je
 eine handvoll Würfel auf den verschiedenen Kriegertabellen. Auch er
 liebt die Hexe Gertrud vom Katzenberg. Seine Tochter Inge wird vom
 Riesen Eiszahn gefangen gehalten. Gerne würde er ihren Retter zum
@@ -716,7 +716,7 @@ Wasser zu Gift verwandeln kann.
 Und irgendwann heisst es natürlich: Spielen! Spielerkontakt wirkt
 Wunder. Erst so erfährst du, ob die Spieler sich für die Drachen, die
 Riesen, die Geschichte von Osrica, das Buch der Macht, den Kampf gegen
-Hildegard oder gegen Chlodogunda suchen, ob sie Amalggund helfen, oder
+Hildegard oder gegen Chlodogunda suchen, ob sie Amalgund helfen, oder
 selber im Hintertal ein Herrschaft errichten wollen.
 
 Man kann nicht alles vorbereiten. Irgendwann muss es los gehen.

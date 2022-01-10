@@ -46,8 +46,8 @@ function helmbartenCharakter() {
   }
 
   function dämon() {
-    return eins(['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle'])
-      + eins('der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds');
+    return eins(['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle']) + ' '
+      + eins(['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
   }
 
   function geschlecht() {
@@ -80,7 +80,7 @@ function helmbartenCharakter() {
   };
 
   t.talente_text = function () {
-    if (t.gestorben) { return 'keine Talente'; }
+    if (t.gestorben) { return ''; }
     return Object.keys(t.talente)
       .map(x => { return x + '-' + t.talente[x]})
       .sort()
@@ -182,7 +182,7 @@ function helmbartenCharakter() {
         break;
       }
       case 3: {
-        t.geschichte.push('Die Forschung hat mich an Orte geführt, die nie wieder vergisst.');
+        t.geschichte.push('Die Forschung hat mich an schreckliche Orte geführt.');
         let f = dämon();
         t.feinde.push(f);
         t.geschichte.push(`Der Dämon ${f} kennt meinen Namen und sucht mich. 😱`);
@@ -331,14 +331,15 @@ function helmbartenCharakter() {
 
   t.verloren = function(gestorben, entkommen) {
     t.alterung();
+    t.alter += 4;
     let jahre = 4;
     let w = würfel(2);
     let z = s[t.karriere].attribut(t);
     while (!t.gestorben && (w + t.karrieren > z)) {
       jahre += 4;
+      t.alter += 4;
       t.alterung();
     }
-    t.alter += jahre;
     if (t.gestorben) {
       t.geschichte.push(`Nach ${jahre} Jahren ${gestorben}`);
     } else {
@@ -347,29 +348,31 @@ function helmbartenCharakter() {
   };
 
   t.alterung = function() {
+    let faktor = t.alter < 60 ? 1 : 2;
+    let w = faktor == 1 ? "Etwas" : "Sehr viel";
     switch(würfel(1)) {
     case 1: {
-      t.attribute.kraft -= 1;
-      t.gestorben = t.gestorben || t.attribute.kraft == 0;
-      t.geschichte.push("Etwas schwächer geworden.");
+      t.attribute.kraft = Math.max(t.attribute.kraft - faktor, 0);
+      t.gestorben = t.gestorben || t.attribute.kraft <= 0;
+      t.geschichte.push(`${w} schwächer geworden.`);
       break;
     }
     case 2: {
-      t.attribute.geschick -= 1;
-      t.gestorben = t.gestorben || t.attribute.geschick == 0;
-      t.geschichte.push("Etwas ungeschickter geworden.");
+      t.attribute.geschick = Math.max(t.attribute.geschick - faktor, 0);
+      t.gestorben = t.gestorben || t.attribute.geschick <= 0;
+      t.geschichte.push(`${w} ungeschickter geworden.`);
       break;
     }
     case 3: {
-      t.attribute.ausdauer -= 1;
-      t.gestorben = t.gestorben || t.attribute.ausdauer == 0;
-      t.geschichte.push("Etwas mehr ausser Atem gekommen.");
+      t.attribute.ausdauer = Math.max(t.attribute.ausdauer - faktor, 0);
+      t.gestorben = t.gestorben || t.attribute.ausdauer <= 0;
+      t.geschichte.push(`${w} mehr ausser Atem gekommen.`);
       break;
     }
     case 4: {
-      t.attribute.intelligenz -= 1;
-      t.gestorben = t.gestorben || t.attribute.intelligenz == 0;
-      t.geschichte.push("Etwas vergesslicher geworden.");
+      t.attribute.intelligenz = Math.max(t.attribute.intelligenz - faktor, 0);
+      t.gestorben = t.gestorben || t.attribute.intelligenz <= 0;
+      t.geschichte.push(`${w} vergesslicher geworden.`);
       break;
     }
     }

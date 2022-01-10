@@ -31,7 +31,7 @@ function helmbartenCharakter() {
       }
     } else {
       let teil1 = ['Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude',
-                   'Childe', 'Chilpe', 'Clot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero'];
+                   'Childe', 'Chilpe', 'Clot', 'Crot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero', 'Dago'];
       if (geschlecht == '♀' && würfel(1) <= 4) {
         name = eins(teil1) + eins(['burg', 'gard', 'gund', 'hild', 'lind', 'trud', 'berga', 'fled']);
       } else {

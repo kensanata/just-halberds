@@ -2,7 +2,7 @@
 // © Alex Schröder 2022
 
 function helmbartenCharakter() {
-  
+
   function eins(a) {
     // Return random element of array a.
     let i = Math.floor(Math.random() * (a.length));
@@ -47,7 +47,7 @@ function helmbartenCharakter() {
     return eins(['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle'])
       + eins('der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds');
   }
-  
+
   function geschlecht() {
     return eins('♀♂');
   }
@@ -63,7 +63,7 @@ function helmbartenCharakter() {
     bildung: würfel(2),
     status: würfel(2),
   };
-  
+
   t.attribute_text = function () {
     // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
     return `Kraft-${t.attribute.kraft} Geschick-${t.attribute.geschick}`
@@ -87,7 +87,7 @@ function helmbartenCharakter() {
 
   /* s sind die Karrierendefinitionen */
   let s = {};
-  
+
   s.krieger = {
     name: 'Krieger',
     attribut: function(t) {
@@ -146,7 +146,7 @@ function helmbartenCharakter() {
       }
     }
   };
-  
+
   s.magier = {
     name: 'Magier',
     attribut: function(t) {
@@ -207,7 +207,7 @@ function helmbartenCharakter() {
       }
     }
   };
-  
+
   s.taugenichts = {
     name: 'Taugenichts',
     attribut: function(t) {
@@ -267,7 +267,7 @@ function helmbartenCharakter() {
       }
     }
   };
-  
+
   t.geschichte = [];
   t.alter = 16;
   t.geschlecht = geschlecht();
@@ -277,7 +277,7 @@ function helmbartenCharakter() {
   t.talente = [];
   t.verboten = [];
   t.feinde = [];
-  
+
   t.beste_karriere = function() {
     let beste;
     let bestes_attribut = 0;
@@ -291,16 +291,16 @@ function helmbartenCharakter() {
     if (beste) t.geschichte.push(s[beste].name + ' geworden.');
     return beste;
   };
-  
+
   t.karriere = t.beste_karriere();
   t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
-  
+
   t.neue_karriere = function() {
     t.alter += 1;
     t.verboten.push(t.karriere);
     t.karriere = t.beste_karriere();
   };
-  
+
   t.weitermachen = function() {
     if (t.gestorben || !t.karriere) {
       return false;
@@ -371,7 +371,7 @@ function helmbartenCharakter() {
     }
     }
   }
-  
+
   t.älter_werden = function() {
     if (t.gestorben) return;
     t.alter += 4;
@@ -379,13 +379,13 @@ function helmbartenCharakter() {
       t.alterung();
     };
   };
-  
+
   while(t.weitermachen()) {
     t.karriereschritt();
     t.schicksalsschlag();
     t.älter_werden();
   }
-  
+
   return (t.gestorben ? '† ' : '')
     + t.name
     + `    Alter: ${t.alter}`

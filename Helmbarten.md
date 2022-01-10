@@ -179,7 +179,8 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
 
 ## Taugenichts Karriere
 
-**Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl).
+**Aufnahme**: Würfle 2W6 ≤ Geschick oder Status (deine Wahl). Du
+lernst automatisch Rennen-1.
 
 > Beispiel: Adalric wechselt Karriere (nun ist er 21 Jahre alt) und
 > will Taugenichts werden; er hat Status-10 und Alex würfelt 7. Adalric

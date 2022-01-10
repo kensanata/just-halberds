@@ -392,8 +392,50 @@ function helmbartenCharakter() {
     t.älter_werden();
   }
 
+  t.bestes_talent = function() {
+    let bestes_talent;
+    let bester_wert = 0;
+    for (let talent of Object.keys(t.talente)) {
+      if (t.talente[talent] > bester_wert) {
+        bester_wert = t.talente[talent];
+        bestes_talent = talent;
+      }
+    }
+    if (bester_wert < 3) return undefined;
+    return bestes_talent;
+  };
+  
+  t.titel = function() {
+    let talent = t.bestes_talent();
+    if (!talent) return '';
+    let titel = {};
+    titel['♂'] = {
+      Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherr', Benehmen: 'Edelmann',
+      Bezaubern: 'Silberzunge', Brauen: 'Giftmischer', Bürokratie: '', Diplomatie: 'Diplomat', Disziplin:
+      'Drillx', Erde: 'Geomant', Feldscher: 'Arzt', Feuer: 'Pyromantiker', Fusion: 'Fleischmagier', Gestaltwandlung:
+      '', Handeln: 'Händler', Handwerk: 'Meister', Heilung: 'Heiler', Illusion: 'Illusionistin', Klettern:
+      '', Knacken: 'Einbrecher', Kultur: '', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Menschen: 'Menschenkenner',
+      Nekromantie: 'Nekromant', Pflanzen: '', Prügeln: 'Schläger', Reden: 'Redner', Reiten: 'Ritter',
+      Rennen: 'Läufer', Schlaf: '', Schleichen: 'Dieb', Schrift: 'Schreiber', Singen: 'Meistersänger',
+      Spionieren: 'Spion', Sturm: 'Sturmmagier', Taktik: 'Feldherr', Tiere: 'Tierflüsterer', Transmutation: 'Alchemist',
+      Tüfteln: 'Erfinder', Türen: '', Wasser: 'Aquantiker', Weltenwandel: 'Weltenwandler',
+    };
+    titel['♀'] = {
+      Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherrin', Benehmen: 'Edelfrau',
+      Bezaubern: 'Silberzunge', Brauen: 'Giftmischerin', Bürokratie: '', Diplomatie: 'Dipomatin', Disziplin:
+      '', Erde: 'Geomantin', Feldscher: 'Ärztin', Feuer: 'Pyromantikerin', Fusion: 'Fleischmagierin', Gestaltwandlung:
+      'Gestaltwandlerin', Handeln: 'Händlerin', Handwerk: 'Meister', Heilung: 'Heilerin', Illusion: 'Illusionistin', Klettern:
+      '', Knacken: 'Einbrecherin', Kultur: '', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Menschen: 'Menschenkennerin',
+      Nekromantie: 'Nekromantin', Pflanzen: '', Prügeln: 'Schlägerin', Reden: 'Rednerin', Reiten: 'Ritterin',
+      Rennen: 'Läuferin', Schlaf: '', Schleichen: 'Diebin', Schrift: 'Schreiberin', Singen: 'Meistersängerin',
+      Spionieren: 'Spionin', Sturm: 'Sturmmagierin', Taktik: 'Feldherrin', Tiere: 'Tierflüsterin', Transmutation: 'Alchemistin',
+      Tüfteln: 'Erfinderin', Türen: '', Wasser: 'Aquantikerin', Weltenwandel: 'Weltenwandlerin',
+    };
+    return titel[t.geschlecht][talent] + ' ';
+  }
+  
   return (t.gestorben ? '† ' : '')
-    + t.name
+    + t.titel() + t.name
     + `    Alter: ${t.alter}`
     + `    Karrieren: ${t.karrieren}\n`
     + t.attribute_text() + "\n"

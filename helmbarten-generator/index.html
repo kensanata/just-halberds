@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Helmbraten Charaktergenerator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="helmbarten.css">
+<script src="helmbarten.js"></script>
+</head>
+<body>
+
+<h1 id="noprintheader">Helmbarten Charaktergenerator</h1>
+<div id="noprintheader">
+<button type="button" onclick="generateCharacter()">Los!</button>
+<br/>
+<br/>
+Beispiel: 687B45 = 6 Kraft, 8 Geschick, 7 Ausdauer, 11 Intelligenz, 4 Bildung, 5 Status
+<br/>
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+</div>
+<hr>
+
+<div id="char"></div>
+
+<script>
+function generateCharacter(){
+	document.getElementById('char').innerHTML = helmbartenCharakter();
+}
+</script>
+</body>
+</html>

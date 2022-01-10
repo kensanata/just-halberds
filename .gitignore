@@ -1,4 +1,4 @@
-*.html
+./*.html
 *.pdf
 *.data
 2d6-*.png

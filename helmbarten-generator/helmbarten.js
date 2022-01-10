@@ -101,7 +101,7 @@ function helmbartenCharakter() {
     },
     gratis: 'Kämpfen',
     lernen: function(t) {
-      let gruppe = t.alter < 20 ? eins(['Söldner', 'Wache']) : eins(Object.keys(this.talente));
+      let gruppe = t.alter < 20 ? eins(['Söldner gewesen', 'Wache geschoben']) : eins(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
       t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;

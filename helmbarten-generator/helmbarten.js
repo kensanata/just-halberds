@@ -80,7 +80,7 @@ function helmbartenCharakter() {
   t.talente = [];
   t.lerne = function (talent) {
     t.talente[talent] = t.talente[talent] ? t.talente[talent] + 1 : 1;
-    t.geschichte.push(talent + ' gelernt.');
+    return talent;
   };
 
   t.talente_text = function () {
@@ -92,7 +92,7 @@ function helmbartenCharakter() {
       .join(', ')
       + "\n";
   }
-  
+
   /* s sind die Karrierendefinitionen */
   let s = {};
   s.krieger = {
@@ -109,13 +109,47 @@ function helmbartenCharakter() {
     lernen: function(t) {
       let gruppe = t.alter < 20 ? eins(['Söldner', 'Wache']) : eins(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
-      for (let i = 0, limite = 4; i < limite; i++) {
-        t.lerne(eins(this.talente[gruppe]));
-      }
+      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;
+    },
+    schicksalsschlag: function(t) {
+      switch(würfel(1)) {
+      case 1: {
+        t.geschichte.push('Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert. 😱');
+        t.geschichte.push(name(geschlecht()) + ' wird mir das nie verzeihen. 💀');
+        break;
+      }
+      case 2: {
+        t.geschichte.push('Die Belagerung war fürchterlich. Es gab nur wenig zu essen.');
+        t.alterung()
+        break;
+      }
+      case 3: {
+        t.geschichte.push('Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden.');
+        t.alterung()
+        break;
+      }
+      case 4: {
+        t.geschichte.push('Nach einem Unfall ist das Knie nie wieder so geworden wie früher.');
+        t.neue_karriere();
+        break;
+      }
+      case 5: {
+        t.geschichte.push('Der Feldzug war ein Fiasko.');
+        t.verloren('In Gefangenschaft nach {} Jahren verstorben',
+                   'Nach {} Jahren Gefangenschaft frei gekommen');
+        break;
+      }
+      case 6: {
+        t.geschichte.push('Der Feldzug war ein grosser Fehler. Die Armee wurde zerschlagen.');
+        t.geschichte.push('Die Fliehenden wurden niedergeritten. Verschollen.');
+        t.gestorben = true;
+        break;
+      }
+      }
     }
   };
-
+  
   t.geschichte = [];
   t.alter = 16;
   t.geschlecht = geschlecht();
@@ -123,30 +157,114 @@ function helmbartenCharakter() {
   t.karrieren = 0;
   t.gestorben = false;
   t.talente = [];
+  t.verboten = [];
   
   t.beste_karriere = function() {
     let beste;
     let bestes_attribut = 0;
     for (let karriere of Object.keys(s)) {
+      if (karriere in t.verboten) continue;
       let attribut = s[karriere].attribut(t);
       if (attribut > bestes_attribut) {
         beste = karriere;
       }
     }
+    if (beste) t.geschichte.push(s[beste].name + ' geworden.');
     return beste;
   };
   
-  let karriere = t.beste_karriere.call();
+  t.karriere = t.beste_karriere.call();
 
-  t.karriereschritt = function () {
+  t.neue_karriere = function() {
+    t.alter += 1;
+    t.verboten.push(t.karriere);
+    t.karriere = t.beste_karriere.call();
+  };
+  
+  t.weitermachen = function() {
+    if (t.gestorben || !t.karriere) {
+      return false;
+    }
+    if (würfel(1) < t.karrieren) {
+      t.geschichte.push("„Ich bin bereit für das Abenteuererleben!“");
+      return false;
+    }
+    return 1;
+  };
+
+  t.karriereschritt = function() {
     t.karrieren += 1;
     t.geschichte.push('--------------------------------------------');
     t.geschichte.push('Karriere ' + t.karrieren + ', Alter ' + t.alter);
-    s[karriere].lernen(t);
-    t.alter += 4;
+    s[t.karriere].lernen(t);
   };
 
-  t.karriereschritt();
+  t.schicksalsschlag = function() {
+    let w = würfel(2);
+    let z = s[t.karriere].attribut(t);
+    // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
+    if (w + t.karrieren > z) s[t.karriere].schicksalsschlag(t);
+  }
+
+  t.verloren = function(gestorben, entkommen) {
+    t.alterung();
+    let jahre = 4;
+    let w = würfel(2);
+    let z = s[t.karriere].attribut(t);
+    while (!t.gestorben && (w + t.karrieren > z)) {
+      jahre += 4;
+      t.alterung();
+    }
+    t.alter += jahre;
+    if (t.gestorben) {
+      t.geschichte.push(gestorben.replace('{}', jahre));
+    } else {
+      t.geschichte.push(entkommen.replace('{}', jahre));
+    }
+  };
+
+  t.alterung = function() {
+    switch(würfel(1)) {
+    case 1: {
+      t.attribute.kraft -= 1;
+      t.gestorben = t.gestorben || t.attribute.kraft == 0;
+      t.geschichte.push("Etwas schwächer geworden.");
+      break;
+    }
+    case 2: {
+      t.attribute.geschick -= 1;
+      t.gestorben = t.gestorben || t.attribute.geschick == 0;
+      t.geschichte.push("Etwas ungeschickter geworden.");
+      break;
+    }
+    case 3: {
+      t.attribute.ausdauer -= 1;
+      t.gestorben = t.gestorben || t.attribute.ausdauer == 0;
+      t.geschichte.push("Etwas mehr ausser Atem gekommen.");
+      break;
+    }
+    case 4: {
+      t.attribute.intelligenz -= 1;
+      t.gestorben = t.gestorben || t.attribute.intelligenz == 0;
+      t.geschichte.push("Etwas vergesslicher geworden.");
+      break;
+    }
+    }
+  }
+  
+  t.älter_werden = function() {
+    if (t.gestorben) return;
+    t.alter += 4;
+    if (t.alter >= 36) {
+      t.alterung();
+    };
+  };
+  
+  while(t.weitermachen()) {
+    t.karriereschritt();
+    t.schicksalsschlag();
+    t.älter_werden();
+  }
   
   return (t.gestorben ? '† ' : '')
     + t.name + '    ' + t.attribute_text() + '    Alter: ' + t.alter + "\n"

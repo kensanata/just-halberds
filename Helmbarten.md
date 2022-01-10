@@ -745,3 +745,5 @@ von Guntram von Wolkenstein.
 
 [Text Mapper](https://campaignwiki.org/text-mapper/), um Karten zu
 erstellen.
+
+[Helmbarten Charaktergenerator](https://campaignwiki.org/helmbarten/).

@@ -27,19 +27,21 @@ function helmbartenCharakter() {
       if (geschlecht == '♀') {
         name = eins(['Ada', 'Berta', 'Hilde', 'Inge', 'Chloe', 'Frieda', 'Gisela']);
       } else {
-        name = eins(['Gyso', 'Dodo', 'Gregor', 'Siggo', 'Ardo']);
+        name = eins(['Gyso', 'Dodo', 'Gregor', 'Siggo', 'Ardo', 'Gundobad']);
       }
     } else {
-      let teil1 = ['Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude'];
+      let teil1 = ['Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude',
+                   'Childe', 'Chilpe', 'Clot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero'];
       if (geschlecht == '♀' && würfel(1) <= 4) {
-        name = eins(teil1) + eins(['burg', 'gard', 'gund', 'hild', 'lind', 'trud']);
+        name = eins(teil1) + eins(['burg', 'gard', 'gund', 'hild', 'lind', 'trud', 'berga', 'fled']);
       } else {
-        name = eins(teil1) + eins(['ger', 'man', 'mund', 'ric', 'hard', 'sind']);
+        name = eins(teil1) + eins(['ger', 'man', 'mund', 'ric', 'hard', 'sind', 'mer', 'ald', 'tram', 'wech']);
         if (geschlecht == '♀') {
           name += eins(['a', 'e']);
         }
       }
     }
+    name = name.replaceAll('[ie]a', 'oa');
     return name;
   }
 

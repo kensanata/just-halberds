@@ -285,6 +285,7 @@ function helmbartenCharakter() {
       if (t.verboten.includes(karriere)) continue;
       let attribut = s[karriere].attribut(t);
       if (attribut > bestes_attribut) {
+        bestes_attribut = attribut;
         beste = karriere;
       }
     }

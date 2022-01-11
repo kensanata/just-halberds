@@ -129,10 +129,9 @@ function helmbartenCharakter() {
     schicksalsschlag: function(t) {
       switch(würfel(1)) {
       case 1: {
-        t.geschichte.push('Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert. 😱');
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`${f} wird mir das nie verzeihen. 😒`);
+        t.geschichte.push(`Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`);
         break;
       }
       case 2: {
@@ -158,8 +157,7 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.geschichte.push('Der Feldzug war ein grosser Fehler. Die Armee wurde zerschlagen.');
-        t.geschichte.push('Die Fliehenden wurden niedergeritten. Verschollen. 💀');
+        t.geschichte.push('Der Feldzug war ein grosser Fehler. Die Armee wurde zerschlagen. Die Fliehenden wurden niedergeritten. Ich blieb verschollen. 💀');
         t.gestorben = true;
         break;
       }
@@ -262,15 +260,15 @@ function helmbartenCharakter() {
         break;
       }
       case 2: {
-        t.geschichte.push('Der Plan ist nicht aufgegangen. Man hat mich ausgetrickst.');
-        t.geschichte.push('Ich schulde ' + name(geschlecht()) + ' mehr Geld als ich je zurückzahlen kann.');
+        let f = name(geschlecht());
+        t.feinde.push(f);
+        t.geschichte.push(`Der Plan ist nicht aufgegangen. Man hat mich ausgetrickst. Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`);
         break;
       }
       case 3: {
-        t.geschichte.push('Ich habe die Hilfe von falschen Freunden angenommen und mich immer weiter in ihre Sache verstricken lassen.');
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`);
+        t.geschichte.push(`Ich habe die Hilfe von falschen Freunden angenommen und mich immer weiter in ihre Sache verstricken lassen. Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`);
         break;
       }
       case 4: {
@@ -286,8 +284,7 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.geschichte.push('Es gab einen Bandenkrieg. Die Strassenhunde sind fett geworden.');
-        t.geschichte.push('Man hat mich nie mehr gesehen. 💀');
+        t.geschichte.push('Es gab einen Bandenkrieg. Die Strassenhunde sind fett geworden. Mich hat man nie wieder gesehen. 💀');
         t.gestorben = true;
         break;
       }

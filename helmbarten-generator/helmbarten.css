@@ -27,9 +27,11 @@ body {
     color: #fff;
     font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
     font-size: 12pt;
-    padding: 1em 4em 1em 4em;
+    margin: 1em;
+    margin-left: clamp(1ex, 5%, 4em);
+    hyphens: auto;
 }
 #char {
     white-space: pre-wrap;
-    width: 45em;
+    max-width: 45em;
 }

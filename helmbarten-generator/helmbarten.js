@@ -75,6 +75,15 @@ function helmbartenCharakter() {
 
   t.talente = [];
   t.lerne = function (talent) {
+    if (talent == 'Kämpfen') {
+      if (t.talente['Reiten']) {
+        talent = t.favorit = 'Lanze';
+      } else if (t.favorit) {
+        talent = t.favorit;
+      } else {
+        talent = t.favorit = s[t.karriere].waffe(t);
+      }
+    }
     t.talente[talent] = t.talente[talent] ? t.talente[talent] + 1 : 1;
     return talent;
   };
@@ -97,13 +106,22 @@ function helmbartenCharakter() {
     },
     talente: {
       'Söldner gewesen': ['Bauen', 'Rennen', 'Taktik', 'Feldscher', 'Handwerk', 'Kämpfen'],
-      'Wache geschoben': ['Bauen', 'Rennen', 'Taktik', 'Feldscher', 'Handwerk', 'Kämpfen'],
-      'Reiter gemacht': ['Bauen', 'Rennen', 'Taktik', 'Feldscher', 'Handwerk', 'Kämpfen'],
-      'Offizier gemacht': ['Bauen', 'Rennen', 'Taktik', 'Feldscher', 'Handwerk', 'Kämpfen'],
+      'Wache geschoben': ['Bürokratie', 'Disziplin', 'Bauen', 'Prügeln', 'Brauen', 'Kämpfen'],
+      'Reiter gemacht': ['Reiten', 'Singen', 'Taktik', 'Spionieren', 'Kultur', 'Kämpfen'],
+      'Offizier gemacht': ['Schrift', 'Bürokratie', 'Taktik', 'Diplomatie', 'Benehmen', 'Kämpfen'],
+    },
+    waffe: function(t) {
+      if (t.attribute.geschick > t.attribute.kraft) return 'Bogen';
+      return eins(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
     },
     gratis: 'Kämpfen',
     lernen: function(t) {
-      let gruppe = t.alter < 20 ? eins(['Söldner gewesen', 'Wache geschoben']) : eins(Object.keys(this.talente));
+      let gruppe;
+      if (t.alter < 20) {
+        gruppe = eins(['Söldner gewesen', 'Wache geschoben']);
+      } else if (t.attribute.status >= 8 || t.attribute.intelligenz >= 8) {
+        gruppe = eins(['Reiter gemacht', 'Offizier gemacht']);
+      } else { gruppe = eins(Object.keys(this.talente)); }
       t.geschichte.push("4 Jahre " + gruppe);
       t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;
@@ -159,6 +177,9 @@ function helmbartenCharakter() {
       'passive Magie studiert': ['Heilung', 'Schlaf', 'Augen', 'Türen', 'Pflanzen', 'Brauen'],
       'manipulative Magie studiert': ['Bezaubern', 'Singen', 'Diplomatie', 'Illusion', 'Menschen', 'Schrift'],
       'transgressive Magie studiert': ['Gestaltwandlung', 'Nekromantie', 'Transmutation', 'Fusion', 'Tiere', 'Weltenwandel'],
+    },
+    waffe: function(t) {
+      return 'Messer';
     },
     gratis: 'Schrift',
     lernen: function(t) {
@@ -221,6 +242,9 @@ function helmbartenCharakter() {
       'gelogen und betrogen': ['Kultur', 'Benehmen', 'Bürokratie', 'Schrift', 'Reden', 'Handeln'],
       'Mörder gewesen': ['Kämpfen', 'Brauen', 'Feldscher', 'Schleichen', 'Benehmen', 'Tüfteln'],
     },
+    waffe: function(t) {
+      return eins(['Messer', 'Degen']);
+    },
     gratis: 'Rennen',
     lernen: function(t) {
       let gruppe = eins(Object.keys(this.talente));
@@ -279,6 +303,7 @@ function helmbartenCharakter() {
   t.talente = [];
   t.verboten = [];
   t.feinde = [];
+  t.favorit = '';
 
   t.beste_karriere = function() {
     let beste;
@@ -309,7 +334,7 @@ function helmbartenCharakter() {
       return false;
     }
     if (würfel(1) < t.karrieren) {
-      t.geschichte.push("Ich bin bereit für das Abenteuererleben! 💚");
+      t.geschichte.push("Ich bin bereit für das Abenteurerleben! 💚");
       return false;
     }
     return 1;
@@ -348,7 +373,7 @@ function helmbartenCharakter() {
   };
 
   t.alterung = function() {
-    let faktor = t.alter < 60 ? 1 : 2;
+    let faktor = t.alter < 50 ? 1 : 2;
     let w = faktor == 1 ? "Etwas" : "Sehr viel";
     switch(würfel(1)) {
     case 1: {
@@ -410,26 +435,106 @@ function helmbartenCharakter() {
     if (!talent) return '';
     let titel = {};
     titel['♂'] = {
-      Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherr', Benehmen: 'Edelmann',
-      Bezaubern: 'Silberzunge', Brauen: 'Giftmischer', Bürokratie: '', Diplomatie: 'Diplomat', Disziplin:
-      'Drillx', Erde: 'Geomant', Feldscher: 'Arzt', Feuer: 'Pyromantiker', Fusion: 'Fleischmagier', Gestaltwandlung:
-      '', Handeln: 'Händler', Handwerk: 'Meister', Heilung: 'Heiler', Illusion: 'Illusionistin', Klettern:
-      '', Knacken: 'Einbrecher', Kultur: '', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Menschen: 'Menschenkenner',
-      Nekromantie: 'Nekromant', Pflanzen: '', Prügeln: 'Schläger', Reden: 'Redner', Reiten: 'Ritter',
-      Rennen: 'Läufer', Schlaf: '', Schleichen: 'Dieb', Schrift: 'Schreiber', Singen: 'Meistersänger',
-      Spionieren: 'Spion', Sturm: 'Sturmmagier', Taktik: 'Feldherr', Tiere: 'Tierflüsterer', Transmutation: 'Alchemist',
-      Tüfteln: 'Erfinder', Türen: '', Wasser: 'Aquantiker', Weltenwandel: 'Weltenwandler',
+      Ablenken: 'Taschendieb',
+      Augen: 'Seher',
+      Bauen: 'Bauherr',
+      Benehmen: 'Edelmann',
+      Bezaubern: 'Silberzunge',
+      Brauen: 'Giftmischer',
+      Bürokratie: 'Verwalter',
+      Diplomatie: 'Diplomat',
+      Disziplin: 'Drillmeister',
+      Erde: 'Geomant',
+      Feldscher: 'Arzt',
+      Feuer: 'Pyromantiker',
+      Fusion: 'Fleischmagier',
+      Gestaltwandlung: 'Gestaltwandler',
+      Handeln: 'Händler',
+      Handwerk: 'Meister',
+      Heilung: 'Heiler',
+      Illusion: 'Illusionistin',
+      Klettern: 'Kletterer',
+      Knacken: 'Einbrecher',
+      Kultur: 'Gelehrter',
+      Kämpfen: 'Reisläufer',
+      Luft: 'Aeromant',
+      Menschen: 'Menschenkenner',
+      Nekromantie: 'Nekromant',
+      Pflanzen: 'Botaniker',
+      Prügeln: 'Schläger',
+      Reden: 'Redner',
+      Reiten: 'Ritter',
+      Rennen: 'Läufer',
+      Schlaf: 'Somnolog',
+      Schleichen: 'Dieb',
+      Schrift: 'Schreiber',
+      Singen: 'Meistersänger',
+      Spionieren: 'Spion',
+      Sturm: 'Sturmmagier',
+      Taktik: 'Feldherr',
+      Tiere: 'Tierflüsterer',
+      Transmutation: 'Alchemist',
+      Tüfteln: 'Erfinder',
+      Türen: 'Portalmagier',
+      Wasser: 'Aquantiker',
+      Weltenwandel: 'Weltenwandler',
+      Messer: 'Messerstecher',
+      Spiess: 'Pikenier',
+      Halmbarte: 'Halbardier',
+      Degen: 'Fechtmeister',
+      Bogen: 'Bogenschütze',
+      Lanze: 'Ritter',
     };
     titel['♀'] = {
-      Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherrin', Benehmen: 'Edelfrau',
-      Bezaubern: 'Silberzunge', Brauen: 'Giftmischerin', Bürokratie: '', Diplomatie: 'Dipomatin', Disziplin:
-      '', Erde: 'Geomantin', Feldscher: 'Ärztin', Feuer: 'Pyromantikerin', Fusion: 'Fleischmagierin', Gestaltwandlung:
-      'Gestaltwandlerin', Handeln: 'Händlerin', Handwerk: 'Meister', Heilung: 'Heilerin', Illusion: 'Illusionistin', Klettern:
-      '', Knacken: 'Einbrecherin', Kultur: '', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Menschen: 'Menschenkennerin',
-      Nekromantie: 'Nekromantin', Pflanzen: '', Prügeln: 'Schlägerin', Reden: 'Rednerin', Reiten: 'Ritterin',
-      Rennen: 'Läuferin', Schlaf: '', Schleichen: 'Diebin', Schrift: 'Schreiberin', Singen: 'Meistersängerin',
-      Spionieren: 'Spionin', Sturm: 'Sturmmagierin', Taktik: 'Feldherrin', Tiere: 'Tierflüsterin', Transmutation: 'Alchemistin',
-      Tüfteln: 'Erfinderin', Türen: '', Wasser: 'Aquantikerin', Weltenwandel: 'Weltenwandlerin',
+      Ablenken: 'Taschendieb',
+      Augen: 'Seher',
+      Bauen: 'Bauherrin',
+      Benehmen: 'Edelfrau',
+      Bezaubern: 'Silberzunge',
+      Brauen: 'Giftmischerin',
+      Bürokratie: 'Verwalterin',
+      Diplomatie: 'Dipomatin',
+      Disziplin: 'Drillmeisterin',
+      Erde: 'Geomantin',
+      Feldscher: 'Ärztin',
+      Feuer: 'Pyromantikerin',
+      Fusion: 'Fleischmagierin',
+      Gestaltwandlung: 'Gestaltwandlerin',
+      Handeln: 'Händlerin',
+      Handwerk: 'Meister',
+      Heilung: 'Heilerin',
+      Illusion: 'Illusionistin',
+      Klettern: 'Kletterin',
+      Knacken: 'Einbrecherin',
+      Kultur: 'Gelehrte',
+      Kämpfen: 'Reisläuferin',
+      Luft: 'Aeromantin',
+      Menschen: 'Menschenkennerin',
+      Nekromantie: 'Nekromantin',
+      Pflanzen: 'Botanikerin',
+      Prügeln: 'Schlägerin',
+      Reden: 'Rednerin',
+      Reiten: 'Ritterin',
+      Rennen: 'Läuferin',
+      Schlaf: 'Somnologin',
+      Schleichen: 'Diebin',
+      Schrift: 'Schreiberin',
+      Singen: 'Meistersängerin',
+      Spionieren: 'Spionin',
+      Sturm: 'Sturmmagierin',
+      Taktik: 'Feldherrin',
+      Tiere: 'Tierflüsterin',
+      Transmutation: 'Alchemistin',
+      Tüfteln: 'Erfinderin',
+      Türen: 'Portalmagier',
+      Wasser: 'Aquantikerin',
+      Weltenwandel: 'Weltenwandlerin',
+      Messer: 'Messerstecherin',
+      Spiess: 'Pikeneuse',
+      Halmbarte: 'Halbardeuse',
+      Degen: 'Fechtmeisterin',
+      Bogen: 'Bogenschützin',
+      Lanze: 'Ritterin',
     };
     return titel[t.geschlecht][talent] + ' ';
   }
@@ -440,7 +545,7 @@ function helmbartenCharakter() {
     + `    Karrieren: ${t.karrieren}\n`
     + t.attribute_text() + "\n"
     + t.talente_text() + "\n"
-    + (t.feinde.length > 0 ? 'Feinde: ' + t.feinde.join(', ') + "\n" : '')
+    + (!t.gestorben && t.feinde.length > 0 ? 'Feinde: ' + t.feinde.join(', ') + "\n" : '')
     + "\n\n" + t.geschichte.join("\n") + "\n"
     ;
 } // End wrapper function helmbartenCharacter()

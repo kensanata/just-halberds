@@ -324,18 +324,17 @@ function helmbartenCharakter() {
   t.neue_karriere = function() {
     t.alter += 1;
     t.verboten.push(t.karriere);
-    t.karriere = t.beste_karriere();
+    t.karriere = undefined;
   };
 
   t.weitermachen = function() {
-    if (t.gestorben || !t.karriere) {
-      return false;
-    }
+    if (t.gestorben) return false;
     if (würfel(1) < t.karrieren) {
       t.geschichte.push("Ich bin bereit für das Abenteurerleben! 💚");
       return false;
     }
-    return 1;
+    if (!t.karriere) t.karriere = t.beste_karriere();
+    return t.karriere;
   };
 
   t.karriereschritt = function() {

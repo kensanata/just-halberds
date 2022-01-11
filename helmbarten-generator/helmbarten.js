@@ -3,13 +3,10 @@
 
 function helmbartenCharakter() {
 
-  function eins(a) {
-    // Return random element of array a.
-    let i = Math.floor(Math.random() * (a.length));
-    if (typeof a[i] === 'function') {
-      return a[i]();
-    }
-    return a[i];
+  function wähle(...arr) {
+    return arr
+      .map(a => a[Math.floor(Math.random() * (a.length))])
+      .join(' ');
   }
 
   function würfel(anzahl) {
@@ -25,19 +22,24 @@ function helmbartenCharakter() {
     if (würfel(1) <= 2) {
       // kurzer Name
       if (geschlecht == '♀') {
-        name = eins(['Ada', 'Berta', 'Hilde', 'Inge', 'Chloe', 'Frieda', 'Gisela']);
+        name = wähle(
+          [ 'Ada', 'Berta', 'Hilde', 'Inge', 'Chloe', 'Frieda', 'Gisela' ]);
       } else {
-        name = eins(['Gyso', 'Dodo', 'Gregor', 'Siggo', 'Ardo', 'Gundobad']);
+        name = wähle(
+          [ 'Gyso', 'Dodo', 'Gregor', 'Siggo', 'Ardo', 'Gundobad' ]);
       }
     } else {
-      let teil1 = ['Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude',
-                   'Childe', 'Chilpe', 'Clot', 'Crot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero', 'Dago'];
+      name = wähle(
+        [ 'Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude',
+          'Childe', 'Chilpe', 'Clot', 'Crot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero', 'Dago' ]);
       if (geschlecht == '♀' && würfel(1) <= 4) {
-        name = eins(teil1) + eins(['burg', 'gard', 'gund', 'hild', 'lind', 'trud', 'berga', 'fled']);
+        name += wähle(
+          [ 'burg', 'gard', 'gund', 'hild', 'lind', 'trud', 'berga', 'fled' ]);
       } else {
-        name = eins(teil1) + eins(['ger', 'man', 'mund', 'ric', 'hard', 'sind', 'mer', 'ald', 'tram', 'wech']);
+        name += wähle(
+          [ 'ger', 'man', 'mund', 'ric', 'hard', 'sind', 'mer', 'ald', 'tram', 'wech' ]);
         if (geschlecht == '♀') {
-          name += eins(['a', 'e']);
+          name += wähle(['a', 'e']);
         }
       }
     }
@@ -46,12 +48,13 @@ function helmbartenCharakter() {
   }
 
   function dämon() {
-    return eins(['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle']) + ' '
-      + eins(['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
+    return wähle(
+      ['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle'],
+      ['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
   }
 
   function geschlecht() {
-    return eins('♀♂');
+    return wähle('♀♂');
   }
 
   /* t ist der Charakter */
@@ -112,18 +115,18 @@ function helmbartenCharakter() {
     },
     waffe: function(t) {
       if (t.attribute.geschick > t.attribute.kraft) return 'Bogen';
-      return eins(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
+      return wähle(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
     },
     gratis: 'Kämpfen',
     lernen: function(t) {
       let gruppe;
       if (t.alter < 20) {
-        gruppe = eins(['Söldner gewesen', 'Wache geschoben']);
+        gruppe = wähle(['Söldner gewesen', 'Wache geschoben']);
       } else if (t.attribute.status >= 8 || t.attribute.intelligenz >= 8) {
-        gruppe = eins(['Reiter gemacht', 'Offizier gemacht']);
-      } else { gruppe = eins(Object.keys(this.talente)); }
+        gruppe = wähle(['Reiter gemacht', 'Offizier gemacht']);
+      } else { gruppe = wähle(Object.keys(this.talente)); }
       t.geschichte.push("4 Jahre " + gruppe);
-      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
+      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;
     },
     schicksalsschlag: function(t) {
@@ -133,58 +136,55 @@ function helmbartenCharakter() {
         let f = name(g);
         t.feinde.push(f);
         let p = g == '♀' ? `sie` : `er`;
-        t.geschichte.push(eins([
-          `Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`,
-          `Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. ${f} hat es überlebt, aber verziehen hat ${p} mir nie. 🙁`,
-        ]));
+        t.geschichte.push(wähle(
+          [ `Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`,
+            `Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. ${f} hat es überlebt, aber verziehen hat ${p} mir nie. 🙁`, ]));
         break;
       }
       case 2: {
-        t.geschichte.push(eins([
-          'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
-          'Nach der Niederlage haben wir uns monatelang versteckt, haben gelebt im Wald gelebt wie Tiere. 🙁',
-        ]));
+        t.geschichte.push(wähle(
+          [ 'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
+            'Nach der Niederlage haben wir uns monatelang versteckt, haben gelebt im Wald gelebt wie Tiere. 🙁', ]));
         t.alterung()
         break;
       }
       case 3: {
-        t.geschichte.push(eins([
-          'Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁',
-          'Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen. 🙁',
-        ]));
+        t.geschichte.push(wähle(
+          [ 'Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁',
+            'Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen. 🙁', ]));
         t.alterung()
         break;
       }
       case 4: {
-        t.geschichte.push(eins([
-          'Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥',
-          'Dann habe ich geheiratet. Das Söldnerleben war vorbei. 😁',
-          'Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁',
-        ]));
+        t.geschichte.push(wähle(
+          [ 'Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥',
+            'Dann habe ich geheiratet. Das Söldnerleben war vorbei. 😁',
+            'Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁', ]));
         t.neue_karriere();
         break;
       }
       case 5: {
         t.geschichte.push('Der Feldzug war ein Fiasko.');
-        let w = eins(['in einer Silbermine', 'auf einer Galeere', 'in einem Kerker', 'in der Arena']);
+        let w = wähle(
+          [ 'in einer Silbermine',
+            'auf einer Galeere',
+            'in einem Kerker',
+            'in der Arena', ]);
         t.verloren(`${w} verstorben. 💀`,
                    `${w} entkommen. 😌`);
         break;
       }
       case 6: {
-        t.geschichte.push(
-          eins([
-            'Der Feldzug war ein Fehler, unser Feldherr total ahnungslos.',
+        t.geschichte.push(wähle(
+          [ 'Der Feldzug war ein Fehler, unser Feldherr total ahnungslos.',
             'Der Feldzug war ein Fehler, unsere Feldherrin total ahnungslos.',
             'Wir sind ihnen ahnungslos in die Falle gegangen.',
-            'Wir gingen wie Vieh zum Schlachthof. Ahnungslos.']) + ' '
-            + eins([
-              'Ein blutiges Gemetzel. Es blieben nicht viele übrig.',
-              'Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.',
-              'Die Fliehenden wurden niedergeritten, kaum mehr zu erkennen.']) + ' '
-            + eins([
-              'Ich blieb verschollen. 💀',
-              'Man hat mich nie gefunden. 💀']));
+            'Wir gingen wie Vieh zum Schlachthof. Ahnungslos.'],
+          [ 'Ein blutiges Gemetzel. Es blieben nicht viele übrig.',
+            'Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.',
+            'Die Fliehenden wurden niedergeritten, kaum mehr zu erkennen.'],
+          [ 'Ich blieb verschollen. 💀',
+            'Man hat mich nie gefunden. 💀']));
         t.gestorben = true;
         break;
       }
@@ -208,9 +208,9 @@ function helmbartenCharakter() {
     },
     gratis: 'Schrift',
     lernen: function(t) {
-      let gruppe = eins(Object.keys(this.talente));
+      let gruppe = wähle(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
-      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
+      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;
     },
     schicksalsschlag: function(t) {
@@ -224,55 +224,47 @@ function helmbartenCharakter() {
         break;
       }
       case 2: {
-        t.geschichte.push(eins([
-          'Das Experiment ging schief und mich hat es getroffen. 🙁',
-          'Es war mein Fehler, und ich habe jahrelang dafür bezahlt. 🙁',
-        ]));
+        t.geschichte.push(wähle(
+          [ 'Das Experiment ging schief und mich hat es getroffen. 🙁',
+            'Es war mein Fehler, und ich habe jahrelang dafür bezahlt. 🙁', ]));
         t.alterung()
         break;
       }
       case 3: {
         let f = dämon();
         t.feinde.push(f);
-        t.geschichte.push(
-          eins([
-            'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
+        t.geschichte.push(wähle(
+          [ 'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
             'Ich habe in den Abgrund geschaut. Es war fürchterlich.',
-            'Die Forschung hat mich an schreckliche Orte geführt.',]) + ' '
-            + eins([
-              `Nun kennt der Dämon ${f} kennt meinen Namen und sucht mich. 😱`,
-              `Ich habe den Dämon ${f} verspottet. Das war ein grosser Fehler. 😱`,
-            ]));
+            'Die Forschung hat mich an schreckliche Orte geführt.', ],
+          [ `Nun kennt der Dämon ${f} kennt meinen Namen und sucht mich. 😱`,
+            `Ich habe den Dämon ${f} verspottet. Das war ein grosser Fehler. 😱`, ]));
         break;
       }
       case 4: {
-        t.geschichte.push(eins([
-          'Ich habe mich zu weit in den Raum zwischen den Welten vorgewagt und auf Yggdrasil fast den Verstand verloren. 😥',
-          'Ich war nicht mehr bereit, all die Opfer zu bringen. Strenge Disziplin, jeden Tag, jede Stunde. 😥',
-          'Ich wollte nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr. 😥',
-        ]));
+        t.geschichte.push(wähle(
+          [ 'Ich habe zwischen den Welten auf dem Weltenbaum Yggdrasil fast den Verstand verloren. 😥',
+            'Ich war nicht mehr bereit, all die Opfer zu bringen. Strenge Disziplin, jeden Tag, jede Stunde. 😥',
+            'Ich wollte nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr. 😥', ]));
         t.neue_karriere();
         break;
       }
       case 5: {
-        let w = eins(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+        let w = wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
         t.geschichte.push(`Ich habe mich in ${w} verirrt.`);
         t.verloren(`in ${w} verstorben. 💀`,
                    'Wanderung den Weg zurück nach Midgard gefunden. 😌');
         break;
       }
       case 6: {
-        let w = eins(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
-        t.geschichte.push(
-          eins([
-            'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
+        let w = wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+        t.geschichte.push(wähle(
+          [ 'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
             `Wir waren unterwegs nach ${w}, als plötzlich die Hölle los ging.`,
-            `Wir waren auf dem Rückweg von ${w}, als uns Yggradsil unter den Füssen weg brach.`, ]) + ' '
-            + eins([
-              'Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer. 💀',
-              'Und da habe ich einen Fehler gemacht. Die Macht war unkontrollierbar und hat mich verzehrt. 💀',
-              'Ich habe alles gegeben. Bin ausgebrannt, alt geworden. Ich habe es nicht mehr nach Hause geschafft. 💀'
-            ]));
+            `Wir waren auf dem Rückweg von ${w}, als uns Yggradsil unter den Füssen weg brach.`, ],
+          [ 'Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer. 💀',
+            'Und da habe ich einen Fehler gemacht. Die Macht war unkontrollierbar und hat mich verzehrt. 💀',
+            'Ich habe alles gegeben. Bin ausgebrannt, alt geworden. Ich habe es nicht mehr nach Hause geschafft. 💀', ]));
         t.gestorben = true;
         break;
       }
@@ -292,13 +284,13 @@ function helmbartenCharakter() {
       'Mörder gewesen': ['Kämpfen', 'Brauen', 'Feldscher', 'Schleichen', 'Benehmen', 'Tüfteln'],
     },
     waffe: function(t) {
-      return eins(['Messer', 'Degen']);
+      return wähle(['Messer', 'Degen']);
     },
     gratis: 'Rennen',
     lernen: function(t) {
-      let gruppe = eins(Object.keys(this.talente));
+      let gruppe = wähle(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
-      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(eins(this.talente[gruppe])) + ' gelernt.').join(" "));
+      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
       return;
     },
     schicksalsschlag: function(t) {
@@ -308,13 +300,19 @@ function helmbartenCharakter() {
         let f = name(g);
         t.feinde.push(f);
         let m = g == '♀' ? `meine Rivalin ${f}` : `meinen Rivalen ${f}`;
-        t.geschichte.push(`Ich habe ${m} gedemütigt. 😏`);
+        t.geschichte.push(wähle(
+          [ `Ich habe ${m} öffentlich gedemütigt. 😏`,
+            `Ich habe ${m} um viel Geld betrogen. 😏`,
+            `Ich habe ${m} an die Obrigkeit verraten. 😏`, ]));
         break;
       }
       case 2: {
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`Der Plan ist nicht aufgegangen. Man hat mich ausgetrickst. Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`);
+        t.geschichte.push(wähle(
+          [ 'Der Plan ist nicht aufgegangen.',
+            'Man hat mich ausgetrickst.', ],
+          [`Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`, ]));
         break;
       }
       case 3: {
@@ -330,7 +328,11 @@ function helmbartenCharakter() {
       }
       case 5: {
         t.geschichte.push(`Der Plan ist aufgeflogen. Ich wurde gefasst.`);
-        let w = eins(['in einer Silbermine', 'auf einer Galeere', 'in einem Kerker']);
+        let w = wähle(
+          [ 'in einer Silbermine',
+            'auf einer Galeere',
+            'in einem Kerker',
+            'in der Arena', ]);
         t.verloren(`${w} verstorben. 💀`,
                    `${w} entkommen. 😌`);
         break;

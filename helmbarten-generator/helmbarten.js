@@ -132,21 +132,21 @@ function helmbartenCharakter() {
         t.geschichte.push('Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert. 😱');
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`${f} wird mir das nie verzeihen. 💀`);
+        t.geschichte.push(`${f} wird mir das nie verzeihen. 😒`);
         break;
       }
       case 2: {
-        t.geschichte.push('Die Belagerung war fürchterlich. Es gab nur wenig zu essen.');
+        t.geschichte.push('Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁');
         t.alterung()
         break;
       }
       case 3: {
-        t.geschichte.push('Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden.');
+        t.geschichte.push('Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁');
         t.alterung()
         break;
       }
       case 4: {
-        t.geschichte.push('Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 🙁');
+        t.geschichte.push('Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥');
         t.neue_karriere();
         break;
       }
@@ -191,27 +191,26 @@ function helmbartenCharakter() {
     schicksalsschlag: function(t) {
       switch(würfel(1)) {
       case 1: {
-        t.geschichte.push('Ich habe einen Mitschüler blossgestellt. 😏');
-        let f = name(geschlecht());
+        let g = geschlecht()
+        let f = name(g);
         t.feinde.push(f);
-        t.geschichte.push(`${f} wird mir das nie verzeihen. 💀`);
+        let m = g == '♀' ? `meine Mitschülerin ${f}` : `meinen Mitschüler ${f}`;
+        t.geschichte.push(`Ich habe ${m} blossgestellt. 😏`);
         break;
       }
       case 2: {
-        t.geschichte.push('Das Experiment ging schief und es hat mich getroffen.');
+        t.geschichte.push('Das Experiment ging schief und es hat mich getroffen. 🙁');
         t.alterung()
         break;
       }
       case 3: {
-        t.geschichte.push('Die Forschung hat mich an schreckliche Orte geführt.');
         let f = dämon();
         t.feinde.push(f);
-        t.geschichte.push(`Der Dämon ${f} kennt meinen Namen und sucht mich. 😱`);
+        t.geschichte.push(`Die Forschung hat mich an schreckliche Orte geführt. Der Dämon ${f} kennt meinen Namen und sucht mich. 😱`);
         break;
       }
       case 4: {
-        t.geschichte.push('Ich habe mich zu weit in den Raum zwischen den Welten vorgewagt.');
-        t.geschichte.push('Ich habe fast auf Yggdrasil fast den Verstand verloren. 🙁');
+        t.geschichte.push('Ich habe mich zu weit in den Raum zwischen den Welten vorgewagt und auf Yggdrasil fast den Verstand verloren. 😥');
         t.neue_karriere();
         break;
       }
@@ -255,8 +254,11 @@ function helmbartenCharakter() {
     schicksalsschlag: function(t) {
       switch(würfel(1)) {
       case 1: {
-        t.geschichte.push('Ich habe einen Rivalen gedemütigt. 😏');
-        t.geschichte.push(name(geschlecht()) + ' wird mir das nie verzeihen. 💀');
+        let g = geschlecht()
+        let f = name(g);
+        t.feinde.push(f);
+        let m = g == '♀' ? `meine Rivalin ${f}` : `meinen Rivalen ${f}`;
+        t.geschichte.push(`Ich habe ${m} gedemütigt. 😏`);
         break;
       }
       case 2: {
@@ -268,12 +270,11 @@ function helmbartenCharakter() {
         t.geschichte.push('Ich habe die Hilfe von falschen Freunden angenommen und mich immer weiter in ihre Sache verstricken lassen.');
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`Nun schulde ich ${f} mehr als nur einen Gefallen.`);
+        t.geschichte.push(`Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`);
         break;
       }
       case 4: {
-        t.geschichte.push('Man hat mich erwischt und an den Pranger gestellt.');
-        t.geschichte.push('Jeder kennt mein Gesicht.');
+        t.geschichte.push('Man hat mich erwischt und an den Pranger gestellt. Jeder kennt mein Gesicht. 😥');
         t.neue_karriere();
         break;
       }
@@ -342,8 +343,7 @@ function helmbartenCharakter() {
 
   t.karriereschritt = function() {
     t.karrieren += 1;
-    t.geschichte.push('--------------------------------------------');
-    t.geschichte.push(`Karriere ${t.karrieren}, Alter ${t.alter}`);
+    t.geschichte.push(`<hr>Karriere ${t.karrieren}, Alter ${t.alter}`);
     s[t.karriere].lernen(t);
   };
 

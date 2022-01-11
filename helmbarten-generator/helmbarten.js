@@ -129,35 +129,62 @@ function helmbartenCharakter() {
     schicksalsschlag: function(t) {
       switch(würfel(1)) {
       case 1: {
-        let f = name(geschlecht());
+        let g = geschlecht();
+        let f = name(g);
         t.feinde.push(f);
-        t.geschichte.push(`Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`);
+        let p = g == '♀' ? `sie` : `er`;
+        t.geschichte.push(eins([
+          `Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`,
+          `Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. ${f} hat es überlebt, aber verziehen hat ${p} mir nie. 🙁`,
+        ]));
         break;
       }
       case 2: {
-        t.geschichte.push('Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁');
+        t.geschichte.push(eins([
+          'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
+          'Nach der Niederlage haben wir uns monatelang versteckt, haben gelebt im Wald gelebt wie Tiere. 🙁',
+        ]));
         t.alterung()
         break;
       }
       case 3: {
-        t.geschichte.push('Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁');
+        t.geschichte.push(eins([
+          'Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁',
+          'Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen. 🙁',
+        ]));
         t.alterung()
         break;
       }
       case 4: {
-        t.geschichte.push('Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥');
+        t.geschichte.push(eins([
+          'Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥',
+          'Dann habe ich geheiratet. Das Söldnerleben war vorbei. 😁',
+          'Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁',
+        ]));
         t.neue_karriere();
         break;
       }
       case 5: {
         t.geschichte.push('Der Feldzug war ein Fiasko.');
-        let w = eins(['in einer Silbermine', 'auf einer Galeere', 'in einem Kerker']);
+        let w = eins(['in einer Silbermine', 'auf einer Galeere', 'in einem Kerker', 'in der Arena']);
         t.verloren(`${w} verstorben. 💀`,
                    `${w} entkommen. 😌`);
         break;
       }
       case 6: {
-        t.geschichte.push('Der Feldzug war ein grosser Fehler. Die Armee wurde zerschlagen. Die Fliehenden wurden niedergeritten. Ich blieb verschollen. 💀');
+        t.geschichte.push(
+          eins([
+            'Der Feldzug war ein Fehler, unser Feldherr total ahnungslos.',
+            'Der Feldzug war ein Fehler, unsere Feldherrin total ahnungslos.',
+            'Wir sind ihnen ahnungslos in die Falle gegangen.',
+            'Wir gingen wie Vieh zum Schlachthof. Ahnungslos.']) + ' '
+            + eins([
+              'Ein blutiges Gemetzel. Es blieben nicht viele übrig.',
+              'Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.',
+              'Die Fliehenden wurden niedergeritten, kaum mehr zu erkennen.']) + ' '
+            + eins([
+              'Ich blieb verschollen. 💀',
+              'Man hat mich nie gefunden. 💀']));
         t.gestorben = true;
         break;
       }
@@ -197,18 +224,33 @@ function helmbartenCharakter() {
         break;
       }
       case 2: {
-        t.geschichte.push('Das Experiment ging schief und es hat mich getroffen. 🙁');
+        t.geschichte.push(eins([
+          'Das Experiment ging schief und mich hat es getroffen. 🙁',
+          'Es war mein Fehler, und ich habe jahrelang dafür bezahlt. 🙁',
+        ]));
         t.alterung()
         break;
       }
       case 3: {
         let f = dämon();
         t.feinde.push(f);
-        t.geschichte.push(`Die Forschung hat mich an schreckliche Orte geführt. Der Dämon ${f} kennt meinen Namen und sucht mich. 😱`);
+        t.geschichte.push(
+          eins([
+            'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
+            'Ich habe in den Abgrund geschaut. Es war fürchterlich.',
+            'Die Forschung hat mich an schreckliche Orte geführt.',]) + ' '
+            + eins([
+              `Nun kennt der Dämon ${f} kennt meinen Namen und sucht mich. 😱`,
+              `Ich habe den Dämon ${f} verspottet. Das war ein grosser Fehler. 😱`,
+            ]));
         break;
       }
       case 4: {
-        t.geschichte.push('Ich habe mich zu weit in den Raum zwischen den Welten vorgewagt und auf Yggdrasil fast den Verstand verloren. 😥');
+        t.geschichte.push(eins([
+          'Ich habe mich zu weit in den Raum zwischen den Welten vorgewagt und auf Yggdrasil fast den Verstand verloren. 😥',
+          'Ich war nicht mehr bereit, all die Opfer zu bringen. Strenge Disziplin, jeden Tag, jede Stunde. 😥',
+          'Ich wollte nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr. 😥',
+        ]));
         t.neue_karriere();
         break;
       }
@@ -220,7 +262,17 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.geschichte.push('Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück. Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer. 💀');
+        let w = eins(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+        t.geschichte.push(
+          eins([
+            'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
+            `Wir waren unterwegs nach ${w}, als plötzlich die Hölle los ging.`,
+            `Wir waren auf dem Rückweg von ${w}, als uns Yggradsil unter den Füssen weg brach.`, ]) + ' '
+            + eins([
+              'Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer. 💀',
+              'Und da habe ich einen Fehler gemacht. Die Macht war unkontrollierbar und hat mich verzehrt. 💀',
+              'Ich habe alles gegeben. Bin ausgebrannt, alt geworden. Ich habe es nicht mehr nach Hause geschafft. 💀'
+            ]));
         t.gestorben = true;
         break;
       }

@@ -144,7 +144,7 @@ function helmbartenCharakter() {
       case 2: {
         t.geschichte.push(wähle(
           [ 'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
-            'Nach der Niederlage haben wir uns monatelang versteckt, haben gelebt im Wald gelebt wie Tiere. 🙁', ]));
+            'Nach der Niederlage haben wir uns monatelang versteckt, haben im Wald gelebt wie Tiere. 🙁', ]));
         t.alterung()
         break;
       }
@@ -311,23 +311,36 @@ function helmbartenCharakter() {
         t.feinde.push(f);
         t.geschichte.push(wähle(
           [ 'Der Plan ist nicht aufgegangen.',
-            'Man hat mich ausgetrickst.', ],
-          [`Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`, ]));
+            'Man hat mich ausgetrickst.', ,
+            'Ich wurde ausmanövriert.', ],
+          [ `Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`,
+            `${f} hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen.`, ]));
         break;
       }
       case 3: {
         let f = name(geschlecht());
         t.feinde.push(f);
-        t.geschichte.push(`Ich habe die Hilfe von falschen Freunden angenommen und mich immer weiter in ihre Sache verstricken lassen. Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`);
+        t.geschichte.push(wähle(
+          [ 'Ich habe die Hilfe von falschen Freunden angenommen.',
+            'Ich liess mich von falschen Freunden blenden.',
+            'Ich habe mich auf falsche Freunde verlassen.', ],
+          [ `Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`,
+            `Jetzt habe ich mich bei ${f} tief verschuldet. 😒`, ]));
         break;
       }
       case 4: {
-        t.geschichte.push('Man hat mich erwischt und an den Pranger gestellt. Jeder kennt mein Gesicht. 😥');
+        t.geschichte.push(wähle(
+          [ 'Man hat mich erwischt und an den Pranger gestellt.',
+            'Ich wurde erwischt und durch die Strassen gejagt.',
+            'Ich liess mich erwischen und jetzt zahle ich den Preis.', ],
+          [ 'Jeder kennt mein Gesicht. 😥',
+            'Jeder erkennt in mir den Verbrecher. 😥',
+            'Mir traut niemand mehr. 😥', ]));
         t.neue_karriere();
         break;
       }
       case 5: {
-        t.geschichte.push(`Der Plan ist aufgeflogen. Ich wurde gefasst.`);
+        t.geschichte.push('Mein Plan ist aufgeflogen. Ich wurde gefasst.');
         let w = wähle(
           [ 'in einer Silbermine',
             'auf einer Galeere',
@@ -338,7 +351,15 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.geschichte.push('Es gab einen Bandenkrieg. Die Strassenhunde sind fett geworden. Mich hat man nie wieder gesehen. 💀');
+        t.geschichte.push(wähle(
+          [ 'Es gab einen Bandenkrieg.',
+            'Es gab einen Aufstand.',
+            'Die Meute machte mit uns kurzen Prozess.' ],
+          [ 'Die Strassenhunde sind fett geworden.',
+            'Die Bäume trugen damals seltsame Früchte.',
+            'Die Fische sind fett geworden.' ],
+          [ 'Mich hat man nie wieder gesehen. 💀',
+            'Ich blieb unauffindbar. 💀', ]));
         t.gestorben = true;
         break;
       }
@@ -467,10 +488,18 @@ function helmbartenCharakter() {
     t.älter_werden();
   }
 
+  function ungeordnet(a) {
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   t.bestes_talent = function() {
     let bestes_talent;
     let bester_wert = 0;
-    for (let talent of Object.keys(t.talente)) {
+    for (let talent of ungeordnet(Object.keys(t.talente))) {
       if (t.talente[talent] > bester_wert) {
         bester_wert = t.talente[talent];
         bestes_talent = talent;
@@ -479,116 +508,43 @@ function helmbartenCharakter() {
     if (bester_wert < 3) return undefined;
     return bestes_talent;
   };
-  
+
   t.titel = function() {
     let talent = t.bestes_talent();
     if (!talent) return '';
     let titel = {};
     titel['♂'] = {
-      Ablenken: 'Taschendieb',
-      Augen: 'Seher',
-      Bauen: 'Bauherr',
-      Benehmen: 'Edelmann',
-      Bezaubern: 'Silberzunge',
-      Brauen: 'Giftmischer',
-      Bürokratie: 'Verwalter',
-      Diplomatie: 'Diplomat',
-      Disziplin: 'Drillmeister',
-      Erde: 'Geomant',
-      Feldscher: 'Arzt',
-      Feuer: 'Pyromantiker',
-      Fusion: 'Fleischmagier',
-      Gestaltwandlung: 'Gestaltwandler',
-      Handeln: 'Händler',
-      Handwerk: 'Meister',
-      Heilung: 'Heiler',
-      Illusion: 'Illusionistin',
-      Klettern: 'Kletterer',
-      Knacken: 'Einbrecher',
-      Kultur: 'Gelehrter',
-      Kämpfen: 'Reisläufer',
-      Luft: 'Aeromant',
-      Menschen: 'Menschenkenner',
-      Nekromantie: 'Nekromant',
-      Pflanzen: 'Botaniker',
-      Prügeln: 'Schläger',
-      Reden: 'Redner',
-      Reiten: 'Ritter',
-      Rennen: 'Läufer',
-      Schlaf: 'Somnolog',
-      Schleichen: 'Dieb',
-      Schrift: 'Schreiber',
-      Singen: 'Meistersänger',
-      Spionieren: 'Spion',
-      Sturm: 'Sturmmagier',
-      Taktik: 'Feldherr',
-      Tiere: 'Tierflüsterer',
-      Transmutation: 'Alchemist',
-      Tüfteln: 'Erfinder',
-      Türen: 'Portalmagier',
-      Wasser: 'Aquantiker',
-      Weltenwandel: 'Weltenwandler',
-      Messer: 'Messerstecher',
-      Spiess: 'Pikenier',
-      Halmbarte: 'Halbardier',
-      Degen: 'Fechtmeister',
-      Bogen: 'Bogenschütze',
-      Lanze: 'Ritter',
-    };
+      Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherr', Benehmen: 'Edelmann',
+      Bezaubern: 'Silberzunge', Brauen: 'Giftmischer', Bürokratie: 'Verwalter', Diplomatie: 'Diplomat',
+      Disziplin: 'Drillmeister', Erde: 'Geomant', Feldscher: 'Arzt', Feuer: 'Pyromant',
+      Fusion: 'Fleischmagier', Gestaltwandlung: 'Gestaltwandler', Handeln: 'Händler', Handwerk: 'Meister',
+      Heilung: 'Heiler', Illusion: 'Illusionist', Klettern: 'Akrobat', Knacken: 'Einbrecher',
+      Kultur: 'Gelehrter', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Menschen: 'Menschenkenner',
+      Nekromantie: 'Nekromant', Pflanzen: 'Botaniker', Prügeln: 'Schläger', Reden: 'Redner',
+      Reiten: 'Reiter', Rennen: 'Läufer', Schlaf: 'Somnolog', Schleichen: 'Dieb',
+      Schrift: 'Schreiber', Singen: 'Meistersänger', Spionieren: 'Spion', Sturm: 'Sturmmagier',
+      Taktik: 'Feldherr', Tiere: 'Tierflüsterer', Transmutation: 'Alchemist', Tüfteln: 'Erfinder',
+      Türen: 'Portalmagier', Wasser: 'Aquamant', Weltenwandel: 'Weltenwandler', Messer: 'Messerstecher',
+      Spiess: 'Pikenier', Halmbarte: 'Halbardier', Degen: 'Fechtmeister', Bogen: 'Bogenschütze',
+      Lanze: 'Ritter', };
     titel['♀'] = {
-      Ablenken: 'Taschendieb',
-      Augen: 'Seher',
-      Bauen: 'Bauherrin',
-      Benehmen: 'Edelfrau',
-      Bezaubern: 'Silberzunge',
-      Brauen: 'Giftmischerin',
-      Bürokratie: 'Verwalterin',
-      Diplomatie: 'Dipomatin',
-      Disziplin: 'Drillmeisterin',
-      Erde: 'Geomantin',
-      Feldscher: 'Ärztin',
-      Feuer: 'Pyromantikerin',
-      Fusion: 'Fleischmagierin',
-      Gestaltwandlung: 'Gestaltwandlerin',
-      Handeln: 'Händlerin',
-      Handwerk: 'Meister',
-      Heilung: 'Heilerin',
-      Illusion: 'Illusionistin',
-      Klettern: 'Kletterin',
-      Knacken: 'Einbrecherin',
-      Kultur: 'Gelehrte',
-      Kämpfen: 'Reisläuferin',
-      Luft: 'Aeromantin',
-      Menschen: 'Menschenkennerin',
-      Nekromantie: 'Nekromantin',
-      Pflanzen: 'Botanikerin',
-      Prügeln: 'Schlägerin',
-      Reden: 'Rednerin',
-      Reiten: 'Ritterin',
-      Rennen: 'Läuferin',
-      Schlaf: 'Somnologin',
-      Schleichen: 'Diebin',
-      Schrift: 'Schreiberin',
-      Singen: 'Meistersängerin',
-      Spionieren: 'Spionin',
-      Sturm: 'Sturmmagierin',
-      Taktik: 'Feldherrin',
-      Tiere: 'Tierflüsterin',
-      Transmutation: 'Alchemistin',
-      Tüfteln: 'Erfinderin',
-      Türen: 'Portalmagier',
-      Wasser: 'Aquantikerin',
-      Weltenwandel: 'Weltenwandlerin',
-      Messer: 'Messerstecherin',
-      Spiess: 'Pikeneuse',
-      Halmbarte: 'Halbardeuse',
-      Degen: 'Fechtmeisterin',
-      Bogen: 'Bogenschützin',
+      Ablenken: 'Taschendiebin', Augen: 'Seherin', Bauen: 'Bauherrin', Benehmen: 'Edelfrau',
+      Bezaubern: 'Silberzunge', Brauen: 'Giftmischerin', Bürokratie: 'Verwalterin', Diplomatie: 'Diplomatin',
+      Disziplin: 'Drillmeister', Erde: 'Geomantin', Feldscher: 'Ärztin', Feuer: 'Pyromantin',
+      Fusion: 'Fleischmagierin', Gestaltwandlung: 'Gestaltwandlerin', Handeln: 'Händlerin', Handwerk: 'Meister',
+      Heilung: 'Heilerin', Illusion: 'Illusionistin', Klettern: 'Akrobatin', Knacken: 'Einbrecherin',
+      Kultur: 'Gelehrte', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Menschen: 'Menschenkennerin',
+      Nekromantie: 'Nekromantin', Pflanzen: 'Botanikerin', Prügeln: 'Schlägerin', Reden: 'Rednerin',
+      Reiten: 'Reiterin', Rennen: 'Läuferin', Schlaf: 'Somnologin', Schleichen: 'Diebin',
+      Schrift: 'Schreiberin', Singen: 'Meistersängerin', Spionieren: 'Spionin', Sturm: 'Sturmmagierin',
+      Taktik: 'Feldherrin', Tiere: 'Tierflüsterin', Transmutation: 'Alchemistin', Tüfteln: 'Erfinderin',
+      Türen: 'Portalmagier', Wasser: 'Aquamantin', Weltenwandel: 'Weltenwandlerin', Messer: 'Messerstecherin',
+      Spiess: 'Pikeneuse', Halmbarte: 'Halbardeuse', Degen: 'Fechtmeister', Bogen: 'Bogenschützin',
       Lanze: 'Ritterin',
     };
     return titel[t.geschlecht][talent] + ' ';
   }
-  
+
   return (t.gestorben ? '† ' : '')
     + t.titel() + t.name
     + `    Alter: ${t.alter}`

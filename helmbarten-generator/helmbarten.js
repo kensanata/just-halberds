@@ -9,6 +9,14 @@ function helmbartenCharakter() {
       .join(' ');
   }
 
+  function ungeordnet(a) {
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   function würfel(anzahl) {
     let total = 0;
     for (var i = 0; i < anzahl; i++) {
@@ -60,6 +68,19 @@ function helmbartenCharakter() {
   /* t ist der Charakter */
   let t = {};
 
+  t.geschichte = [];
+  t.alter = 16;
+  t.geschlecht = geschlecht();
+  t.name = name(t.geschlecht);
+  t.karrieren = 0;
+  t.gestorben = false;
+  t.belohnungen = [];
+  t.sonstiges = [];
+  t.talente = [];
+  t.verboten = [];
+  t.feinde = [];
+  t.favorit = '';
+
   t.attribute = {
     kraft: würfel(2),
     geschick: würfel(2),
@@ -73,7 +94,7 @@ function helmbartenCharakter() {
     // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
     return `Kraft-${t.attribute.kraft} Geschick-${t.attribute.geschick}`
       + ` Ausdauer-${t.attribute.ausdauer} Intelligenz-${t.attribute.intelligenz}`
-      + ` Bildung-${t.attribute.bildung} Status-${t.attribute.status}`;
+      + ` Bildung-${t.attribute.bildung} Status-${t.attribute.status}\n`;
   };
 
   t.talente = [];
@@ -96,7 +117,7 @@ function helmbartenCharakter() {
     return Object.keys(t.talente)
       .map(x => { return x + '-' + t.talente[x]})
       .sort()
-      .join(' ');
+      .join(' ') + "\n";
   }
 
   /* s sind die Karrierendefinitionen */
@@ -118,6 +139,40 @@ function helmbartenCharakter() {
       return wähle(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
     },
     gratis: 'Kämpfen',
+    belohnung: function(t) {
+      switch(würfel(1)) {
+      case 1: {
+        t.attribute.intelligenz += 1;
+        t.geschichte.push("Bin etwas schlauer geworden.");
+        break;
+      }
+      case 2: {
+        t.attribute.bildung += 2;
+        t.geschichte.push("Habe ziemlich dazu gelernt.");
+        break;
+      }
+      case 3: {
+        t.attribute.status += 1;
+        t.geschichte.push("Bin etwas aufgestiegen in der Welt.");
+        break;
+      }
+      case 4: {
+        t.sonstiges.push("Geheimbund");
+        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        break;
+      }
+      case 5: {
+        t.sonstiges.push("Pferd");
+        t.geschichte.push("Ich habe ein Pferd bekommen.");
+        break;
+      }
+      case 6: {
+        t.sonstiges.push("Land");
+        t.geschichte.push("Ich habe etwas Land zugewiesen bekommen.");
+        break;
+      }
+      }
+    },
     lernen: function(t) {
       let gruppe;
       if (t.alter < 20) {
@@ -207,6 +262,40 @@ function helmbartenCharakter() {
       return 'Messer';
     },
     gratis: 'Schrift',
+    belohnung: function(t) {
+      switch(würfel(1)) {
+      case 1: {
+        t.attribute.intelligenz += 2;
+        t.geschichte.push("Bin ziemlich schlauer geworden.");
+        break;
+      }
+      case 2: {
+        t.attribute.bildung += 1;
+        t.geschichte.push("Habe etwas dazu gelernt.");
+        break;
+      }
+      case 3: {
+        t.attribute.status += 2;
+        t.geschichte.push("Bin ziemlich aufgestiegen in der Welt.");
+        break;
+      }
+      case 4: {
+        t.sonstiges.push("Geheimbund");
+        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        break;
+      }
+      case 5: {
+        t.sonstiges.push("Gefährte");
+        t.geschichte.push("Ich habe einen treuen Gefährten bekommen.");
+        break;
+      }
+      case 6: {
+        t.sonstiges.push("Lehrstuhl");
+        t.geschichte.push("Ich habe einen Lehrstuhl bekommen.");
+        break;
+      }
+      }
+    },
     lernen: function(t) {
       let gruppe = wähle(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
@@ -287,6 +376,40 @@ function helmbartenCharakter() {
       return wähle(['Messer', 'Degen']);
     },
     gratis: 'Rennen',
+    belohnung: function(t) {
+      switch(würfel(1)) {
+      case 1: {
+        t.attribute.intelligenz += 1;
+        t.geschichte.push("Bin etwas schlauer geworden.");
+        break;
+      }
+      case 2: {
+        t.attribute.bildung += 2;
+        t.geschichte.push("Habe ziemlich dazu gelernt.");
+        break;
+      }
+      case 3: {
+        t.attribute.status += 2;
+        t.geschichte.push("Bin ziemlich aufgestiegen in der Welt.");
+        break;
+      }
+      case 4: {
+        t.sonstiges.push("Geheimbund");
+        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        break;
+      }
+      case 5: {
+        t.sonstiges.push("Hund");
+        t.geschichte.push("Ich habe einen Hund bekommen.");
+        break;
+      }
+      case 6: {
+        t.sonstiges.push("Posten");
+        t.geschichte.push("Ich habe einen sicheren Posten.");
+        break;
+      }
+      }
+    },
     lernen: function(t) {
       let gruppe = wähle(Object.keys(this.talente));
       t.geschichte.push("4 Jahre " + gruppe);
@@ -366,17 +489,6 @@ function helmbartenCharakter() {
       }
     }
   };
-
-  t.geschichte = [];
-  t.alter = 16;
-  t.geschlecht = geschlecht();
-  t.name = name(t.geschlecht);
-  t.karrieren = 0;
-  t.gestorben = false;
-  t.talente = [];
-  t.verboten = [];
-  t.feinde = [];
-  t.favorit = '';
 
   t.beste_karriere = function() {
     let beste_karriere;
@@ -493,20 +605,25 @@ function helmbartenCharakter() {
     };
   };
 
+  // Belohnungen sind callbacks, die gesammelt werden und am Ende ein Mal ausgeführt werden.
+  t.belohnung_merken = function() {
+    t.belohnungen.push(s[t.karriere].belohnung);
+  };
+
   while(t.weitermachen()) {
     t.karriereschritt();
+    t.belohnung_merken();
     t.schicksalsschlag();
     t.älter_werden();
   }
 
-  function ungeordnet(a) {
-    for(let i = a.length - 1; i > 0; i--){
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
+  t.belohnungen_erhalten = function() {
+    t.geschichte.push('<hr>Belohnungen');
+    t.belohnungen.forEach(x => x(t));
+  };
 
+  if (!t.gestorben) t.belohnungen_erhalten();
+  
   t.bestes_talent = function() {
     let bestes_talent;
     let bester_wert = 0;
@@ -554,14 +671,15 @@ function helmbartenCharakter() {
       Lanze: 'Ritterin',
     };
     return titel[t.geschlecht][talent] + ' ';
-  }
-
+  };
+  
   return (t.gestorben ? '† ' : '')
     + t.titel() + t.name
     + `    Alter: ${t.alter}`
     + `    Karrieren: ${t.karrieren}\n`
-    + t.attribute_text() + "\n"
-    + t.talente_text() + "\n"
+    + t.attribute_text()
+    + t.talente_text()
+    + (!t.gestorben && t.sonstiges.length > 0 ? 'Sonstiges: ' + t.sonstiges.join(', ') + "\n" : '')
     + (!t.gestorben && t.feinde.length > 0 ? 'Feinde: ' + t.feinde.join(', ') + "\n" : '')
     + "\n\n" + t.geschichte.join("\n") + "\n"
     ;

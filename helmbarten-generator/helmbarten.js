@@ -158,7 +158,7 @@ function helmbartenCharakter() {
       case 4: {
         t.geschichte.push(wähle(
           [ 'Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥',
-            'Dann habe ich geheiratet. Das Söldnerleben war vorbei. 😁',
+            'Dann habe ich geheiratet. Das Söldnerleben ist vorbei. 😁',
             'Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁', ]));
         t.neue_karriere();
         break;
@@ -243,7 +243,7 @@ function helmbartenCharakter() {
       }
       case 4: {
         t.geschichte.push(wähle(
-          [ 'Ich habe zwischen den Welten auf dem Weltenbaum Yggdrasil fast den Verstand verloren. 😥',
+          [ 'Ich habe auf dem Weltenbaum Yggdrasil fast den Verstand verloren. 😥',
             'Ich war nicht mehr bereit, all die Opfer zu bringen. Strenge Disziplin, jeden Tag, jede Stunde. 😥',
             'Ich wollte nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr. 😥', ]));
         t.neue_karriere();
@@ -253,7 +253,7 @@ function helmbartenCharakter() {
         let w = wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
         t.geschichte.push(`Ich habe mich in ${w} verirrt.`);
         t.verloren(`in ${w} verstorben. 💀`,
-                   'Wanderung den Weg zurück nach Midgard gefunden. 😌');
+                   'Wanderung habe ich den Weg zurück nach Midgard gefunden. 😌');
         break;
       }
       case 6: {
@@ -379,20 +379,32 @@ function helmbartenCharakter() {
   t.favorit = '';
 
   t.beste_karriere = function() {
-    let beste;
-    let bestes_attribut = 0;
-    for (let karriere of Object.keys(s)) {
+    let beste_karriere;
+    let bester_wert = 0;
+    for (let karriere of ungeordnet(Object.keys(s))) {
       if (t.verboten.includes(karriere)) continue;
-      let attribut = s[karriere].attribut(t);
-      if (attribut > bestes_attribut) {
-        bestes_attribut = attribut;
-        beste = karriere;
+      let wert = s[karriere].attribut(t);
+      if (wert > bester_wert) {
+        bester_wert = wert;
+        beste_karriere = karriere;
       }
     }
-    if (beste) t.geschichte.push(s[beste].name + ' geworden.');
-    return beste;
+    if (beste_karriere) t.geschichte.push(s[beste_karriere].name + ' geworden.');
+    return beste_karriere;
   };
 
+  t.bestes_attribut = function() {
+    let bestes_attribut;
+    let bester_wert = 0;
+    for (let attribut of ungeordnet(Object.keys(t.attribute))) {
+      if (t.attribute[attribut] > bester_wert) {
+        bestes_attribut = attribut;
+        bester_wert = t.attribute[attribut];
+      }
+    }
+    return bestes_attribut;
+  };
+  
   t.karriere = t.beste_karriere();
   t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
 
@@ -429,9 +441,7 @@ function helmbartenCharakter() {
     t.alterung();
     t.alter += 4;
     let jahre = 4;
-    let w = würfel(2);
-    let z = s[t.karriere].attribut(t);
-    while (!t.gestorben && (w + t.karrieren > z)) {
+    while (!t.gestorben && würfel(2) > t.bestes_attribut()) {
       jahre += 4;
       t.alter += 4;
       t.alterung();
@@ -440,6 +450,7 @@ function helmbartenCharakter() {
       t.geschichte.push(`Nach ${jahre} Jahren ${gestorben}`);
     } else {
       t.geschichte.push(`Nach ${jahre} Jahren ${entkommen}`);
+      t.neue_karriere();
     }
   };
 

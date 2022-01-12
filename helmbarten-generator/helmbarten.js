@@ -164,7 +164,7 @@ function helmbartenCharakter() {
         break;
       }
       case 5: {
-        t.geschichte.push('Der Feldzug war ein Fiasko.');
+        t.geschichte.push('Der Feldzug war ein Fiasko. Ich geriet in Gefangenschaft.');
         let w = wähle(
           [ 'in einer Silbermine',
             'auf einer Galeere',
@@ -182,7 +182,7 @@ function helmbartenCharakter() {
             'Wir gingen wie Vieh zum Schlachthof. Ahnungslos.'],
           [ 'Ein blutiges Gemetzel. Es blieben nicht viele übrig.',
             'Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.',
-            'Die Fliehenden wurden niedergeritten, kaum mehr zu erkennen.'],
+            'Die Fliehenden wurden niedergeritten. Die Leichen waren kaum mehr zu erkennen.'],
           [ 'Ich blieb verschollen. 💀',
             'Man hat mich nie gefunden. 💀']));
         t.gestorben = true;

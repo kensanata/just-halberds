@@ -387,6 +387,7 @@ function helmbartenCharakter() {
           break;
         }
         }
+        break;
       }
       case 6: {
         let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));

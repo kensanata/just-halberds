@@ -55,14 +55,21 @@ function helmbartenCharakter() {
     return name;
   }
 
+  function geschlecht() {
+    return wähle('♀♂');
+  }
+
   function dämon() {
     return wähle(
       ['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle'],
       ['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
   }
 
-  function geschlecht() {
-    return wähle('♀♂');
+  function geheimbund() {
+    let n = wähle(['Sieben', 'Neun', 'Elf', 'Zwölf', 'Dreizehn', 'Vierzehn', 'Einundzwanzig'])
+    return 'Mitglied ' + wähle(
+      ['der Getreuen', 'der Knechte', 'des Bundes', `der ${n}`, 'der Freunde', 'der Genossen', 'der Brüder und Schwestern'],
+      ['der Abendröte', 'des Morgengrauens', 'des Nebels', 'der Erneuerung', 'des Volkes', 'der Pyramide', 'der Drachen']);
   }
 
   /* t ist der Charakter */
@@ -157,8 +164,9 @@ function helmbartenCharakter() {
         break;
       }
       case 4: {
-        t.sonstiges.push("Geheimbund");
-        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        let g = geheimbund();
+        t.sonstiges.push(`${g}`);
+        t.geschichte.push(`Ich wurde ${g}.`);
         break;
       }
       case 5: {
@@ -280,8 +288,9 @@ function helmbartenCharakter() {
         break;
       }
       case 4: {
-        t.sonstiges.push("Geheimbund");
-        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        let g = geheimbund();
+        t.sonstiges.push(`${g}`);
+        t.geschichte.push(`Ich wurde ${g}.`);
         break;
       }
       case 5: {
@@ -394,8 +403,9 @@ function helmbartenCharakter() {
         break;
       }
       case 4: {
-        t.sonstiges.push("Geheimbund");
-        t.geschichte.push("Ich bin in einen Geheimbund aufgenommen worden.");
+        let g = geheimbund();
+        t.sonstiges.push(`${g}`);
+        t.geschichte.push(`Ich wurde ${g}.`);
         break;
       }
       case 5: {

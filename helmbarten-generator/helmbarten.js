@@ -94,6 +94,38 @@ function helmbartenCharakter() {
         'der Kerker', ]);
   }
 
+  function hund() {
+    let h = 'ein '
+        + wähle([ 'kläffender', 'aggressiver', 'bissiger', 'verspielter', 'fauler', 'jaulender', 'aktiver', 'wilder' ],
+                [ 'Hund', 'Strassenhund', 'Jagdhund', 'Wachhund', 'Schosshund', 'Hirtenhund', 'Spürhund' ]);
+    if (würfel(1) <= 3) h = h.replace(/^ein/, 'eine').replace(/r\b/, '').replace(/und$/, 'ündin');
+    return h;
+  }
+
+  function pferd() {
+    let p = 'ein '
+        + wähle([ 'stoischer', 'aggressiver', 'bissiger', 'verspielter', 'lahmer', 'freundlicher', 'aktiver' ])
+        + ' ';
+    if (würfel(1) <= 4) {
+      p += wähle([ 'Rappen', 'Schimmel', 'Hengst', 'Gaul', 'Klappergaul' ]);
+    } else {
+      p = p.replace(/r\b/, 's');
+      p += wähle([ 'Reitpferd', 'Kriegspferd' ]);
+    }
+    return p;
+  }
+
+  function gute() {
+    return wähle(['gutmütige', 'intelligente', 'freche', 'vorlaute', 'anhängliche', 'neugierige', 'ständig lästernde',
+                  'weise', 'vorsichtige', 'verspielte']);
+  }
+
+  function land() {
+    return wähle([ 'ein Waldfleck', 'ein Stück Wald mit Teich', 'ein karger Fels mit Burgruine',
+                   'ein verwaldetes Stück Weideland', 'ein versumpftes Stück Ackerland',
+                   'eine Burgruine voller Banditen' ]);
+  }
+  
   /* t ist der Charakter */
   let t = {};
 
@@ -196,12 +228,13 @@ function helmbartenCharakter() {
         break;
       }
       case 5: {
-        t.tiere.push("🐎 Pferd");
+        let p = pferd();
+        t.tiere.push(`🐎 ${p}`);
         t.geschichte.push("Ich habe ein Pferd bekommen.");
         break;
       }
       case 6: {
-        t.stellen.push("Land");
+        t.stellen.push(land());
         t.geschichte.push("Ich habe etwas Land zugewiesen bekommen.");
         break;
       }
@@ -323,17 +356,20 @@ function helmbartenCharakter() {
       case 5: {
         switch (würfel(1)) {
         case 1: {
-          t.tiere.push("🐦 intelligente Krähe");
+          let g = gute();
+          t.tiere.push(`🐦 eine ${g} Krähe`);
           t.geschichte.push("Ich habe eine Krähe adoptiert.");
           break;
         }
         case 2: {
-          t.tiere.push("🦉 intelligente Eule");
+          let g = gute();
+          t.tiere.push(`🦉 eine ${g} Eule`);
           t.geschichte.push("Ich habe eine Eule adoptiert.");
           break;
         }
         case 3: {
-          t.tiere.push("🐈 intelligente Katze");
+          let g = gute();
+          t.tiere.push(`🐈 eine ${g} Katze`);
           t.geschichte.push("Ich habe eine Katze adoptiert.");
           break;
         }
@@ -466,8 +502,8 @@ function helmbartenCharakter() {
         break;
       }
       case 5: {
-        t.tiere.push("🐕 Hund");
-        t.geschichte.push("Ich habe einen Hund bekommen.");
+        t.tiere.push("🐕 " + hund());
+        t.geschichte.push("Ich habe einen Hund adoptiert.");
         break;
       }
       case 6: {

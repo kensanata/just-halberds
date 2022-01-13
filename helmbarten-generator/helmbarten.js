@@ -74,9 +74,24 @@ function helmbartenCharakter() {
     let n = wähle(['Sieben', 'Neun', 'Elf', 'Zwölf', 'Dreizehn', 'Vierzehn', 'Einundzwanzig'])
     return wähle(
       [ 'Die Getreuen', 'Die Knechte', 'Der Bundes', `Die ${n}`, 'Die Freunde', 'Die Genossen', 'Die Brüder und Schwestern',
-        'Die Gesegneten'],
+        'Die Gesegneten', 'Die Gefährten', 'Die Gemeinschaft' ],
       [ 'der Abendröte', 'des Morgengrauens', 'des Nebels', 'der Erneuerung', 'des Volkes', 'der Pyramide', 'der Drachen',
-        `von ${w}`, 'vom Berg', 'vom See' ]);
+        `von ${w}`, 'vom Berg', 'vom See', 'des Krieges', 'des ewigen Friedens', 'der Revolution', 'vom Ende der Zeit' ]);
+  }
+
+  function posten(geschlecht) {
+    return wähle(
+      geschlecht == '♀'
+        ? [ 'Vorstand', 'Inspektorin', 'Geheimrätin', 'Delegierte', 'Vogt', 'Büttel', 'Ministerin', 'Stadträtin',
+            'Ratsherrin', 'Säckelmeister', 'Beirätin', 'Leiterin', ]
+        : [ 'Vorstand', 'Inspektor', 'Geheimrat', 'Delegierter', 'Vogt', 'Büttel', 'Minister', 'Stadtrat',
+            'Ratsherr', 'Säckelmeister', 'Beirat', 'Leiter', ],
+      [ 'der Zisterne', 'des Aquädukts', 'der Brunnen', 'der Mauern', 'der Steuern', 'der Stallungen', 'der Reithalle',
+        'der Jagdhunde', 'der Abwässer', 'der Kanalisation', 'der Bettler', 'der Fremden', 'der Einheimischen',
+        'der Burger', 'des Waldes', 'der Holzfäller', 'der Schmiede', 'der Schneider', 'der Juweliere', 'der Küfer',
+        'der Weinbauern', 'der Bierbrauer', 'der Kuhhirten', 'der Schweinehirten', 'der Ziegenhirten', 'der Käser',
+        'der Wagenbauer', 'der Vagranten', 'der Musiker', 'der Maler', 'der Sänger', 'der Artisten', 'der Diebe',
+        'der Kerker', ]);
   }
 
   /* t ist der Charakter */
@@ -92,7 +107,8 @@ function helmbartenCharakter() {
   t.mitgliedschaften = [];
   t.gefährten = [];
   t.tiere = [];
-  t.jobs = [];
+  t.lehrstühle = [];
+  t.stellen = [];
   t.talente = [];
   t.verboten = [];
   t.feinde = [];
@@ -185,7 +201,7 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.jobs.push("Land");
+        t.stellen.push("Land");
         t.geschichte.push("Ich habe etwas Land zugewiesen bekommen.");
         break;
       }
@@ -273,9 +289,9 @@ function helmbartenCharakter() {
     },
     talente: {
       'aggressive Magie studiert': ['Feuer', 'Luft', 'Wasser', 'Erde', 'Sturm', 'Kämpfen'],
-      'passive Magie studiert': ['Heilung', 'Schlaf', 'Augen', 'Türen', 'Pflanzen', 'Brauen'],
-      'manipulative Magie studiert': ['Bezaubern', 'Singen', 'Diplomatie', 'Illusion', 'Menschen', 'Schrift'],
-      'transgressive Magie studiert': ['Gestaltwandlung', 'Nekromantie', 'Transmutation', 'Fusion', 'Tiere', 'Weltenwandel'],
+      'passive Magie studiert': ['Heilung', 'Schlaf', 'Augen', 'Türen', 'Botanik', 'Brauen'],
+      'manipulative Magie studiert': ['Bezaubern', 'Singen', 'Diplomatie', 'Illusion', 'Psychologie', 'Schrift'],
+      'transgressive Magie studiert': ['Gestaltwandlung', 'Nekromantie', 'Transmutation', 'Fusion', 'Zoologie', 'Weltenwandel'],
     },
     waffe: function(t) {
       return 'Messer';
@@ -337,8 +353,10 @@ function helmbartenCharakter() {
         }
       }
       case 6: {
-        t.jobs.push("Lehrstuhl");
-        t.geschichte.push("Ich habe einen Lehrstuhl bekommen.");
+        let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
+        t.lehrstühle.push(j);
+        t.stellen.push(`Lehrstuhl für ${j}`);
+        t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
         break;
       }
       }
@@ -453,8 +471,9 @@ function helmbartenCharakter() {
         break;
       }
       case 6: {
-        t.jobs.push("Posten");
-        t.geschichte.push("Ich habe einen sicheren Posten.");
+        let p = posten(t.geschlecht);
+        t.stellen.push(p);
+        t.geschichte.push(`Ich habe einen sicheren Posten als ${p}.`);
         break;
       }
       }
@@ -542,6 +561,20 @@ function helmbartenCharakter() {
       }
       }
     }
+  };
+
+  t.bestes_talent = function(ohne_diese) {
+    let bestes_talent;
+    let bester_wert = 0;
+    for (let talent of ungeordnet(Object.keys(t.talente))) {
+      if (ohne_diese && ohne_diese.includes(talent)) continue;
+      if (t.talente[talent] > bester_wert) {
+        bester_wert = t.talente[talent];
+        bestes_talent = talent;
+      }
+    }
+    if (bester_wert < 3) return undefined;
+    return bestes_talent;
   };
 
   t.beste_karriere = function() {
@@ -679,19 +712,6 @@ function helmbartenCharakter() {
 
   if (!t.gestorben) t.belohnungen_erhalten();
 
-  t.bestes_talent = function() {
-    let bestes_talent;
-    let bester_wert = 0;
-    for (let talent of ungeordnet(Object.keys(t.talente))) {
-      if (t.talente[talent] > bester_wert) {
-        bester_wert = t.talente[talent];
-        bestes_talent = talent;
-      }
-    }
-    if (bester_wert < 3) return undefined;
-    return bestes_talent;
-  };
-
   t.titel = function() {
     let talent = t.bestes_talent();
     if (!talent) return '';
@@ -702,11 +722,11 @@ function helmbartenCharakter() {
       Disziplin: 'Drillmeister', Erde: 'Geomant', Feldscher: 'Arzt', Feuer: 'Pyromant',
       Fusion: 'Fleischmagier', Gestaltwandlung: 'Gestaltwandler', Handeln: 'Händler', Handwerk: 'Meister',
       Heilung: 'Heiler', Illusion: 'Illusionist', Klettern: 'Akrobat', Knacken: 'Einbrecher',
-      Kultur: 'Gelehrter', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Menschen: 'Menschenkenner',
-      Nekromantie: 'Nekromant', Pflanzen: 'Botaniker', Prügeln: 'Schläger', Reden: 'Redner',
+      Kultur: 'Gelehrter', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Psychologie: 'Menschenkenner',
+      Nekromantie: 'Nekromant', Botanik: 'Botaniker', Prügeln: 'Schläger', Reden: 'Redner',
       Reiten: 'Reiter', Rennen: 'Läufer', Schlaf: 'Somnolog', Schleichen: 'Dieb',
       Schrift: 'Schreiber', Singen: 'Meistersänger', Spionieren: 'Spion', Sturm: 'Sturmmagier',
-      Taktik: 'Feldherr', Tiere: 'Tierflüsterer', Transmutation: 'Alchemist', Tüfteln: 'Erfinder',
+      Taktik: 'Feldherr', Zoologie: 'Tierflüsterer', Transmutation: 'Alchemist', Tüfteln: 'Erfinder',
       Türen: 'Portalmagier', Wasser: 'Aquamant', Weltenwandel: 'Weltenwandler', Messer: 'Messerstecher',
       Spiess: 'Pikenier', Halmbarte: 'Halbardier', Degen: 'Fechtmeister', Bogen: 'Bogenschütze',
       Lanze: 'Ritter', };
@@ -716,11 +736,11 @@ function helmbartenCharakter() {
       Disziplin: 'Drillmeister', Erde: 'Geomantin', Feldscher: 'Ärztin', Feuer: 'Pyromantin',
       Fusion: 'Fleischmagierin', Gestaltwandlung: 'Gestaltwandlerin', Handeln: 'Händlerin', Handwerk: 'Meister',
       Heilung: 'Heilerin', Illusion: 'Illusionistin', Klettern: 'Akrobatin', Knacken: 'Einbrecherin',
-      Kultur: 'Gelehrte', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Menschen: 'Menschenkennerin',
-      Nekromantie: 'Nekromantin', Pflanzen: 'Botanikerin', Prügeln: 'Schlägerin', Reden: 'Rednerin',
+      Kultur: 'Gelehrte', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Psychologie: 'Menschenkennerin',
+      Nekromantie: 'Nekromantin', Botanik: 'Botanikerin', Prügeln: 'Schlägerin', Reden: 'Rednerin',
       Reiten: 'Reiterin', Rennen: 'Läuferin', Schlaf: 'Somnologin', Schleichen: 'Diebin',
       Schrift: 'Schreiberin', Singen: 'Meistersängerin', Spionieren: 'Spionin', Sturm: 'Sturmmagierin',
-      Taktik: 'Feldherrin', Tiere: 'Tierflüsterin', Transmutation: 'Alchemistin', Tüfteln: 'Erfinderin',
+      Taktik: 'Feldherrin', Zoologie: 'Tierflüsterin', Transmutation: 'Alchemistin', Tüfteln: 'Erfinderin',
       Türen: 'Portalmagier', Wasser: 'Aquamantin', Weltenwandel: 'Weltenwandlerin', Messer: 'Messerstecherin',
       Spiess: 'Pikeneuse', Halmbarte: 'Halbardeuse', Degen: 'Fechtmeister', Bogen: 'Bogenschützin',
       Lanze: 'Ritterin',
@@ -748,9 +768,9 @@ function helmbartenCharakter() {
     return "\nMitgliedschaften\n" + t.mitgliedschaften.map(x => `🤝 ${x}\n`).join('');
   }
 
-  t.jobs_text = function() {
-    if (t.gestorben || !t.jobs.length) return '';
-    return "\nJobs\n" + t.jobs.map(x => `💰 ${x}\n`).join('');
+  t.stellen_text = function() {
+    if (t.gestorben || !t.stellen.length) return '';
+    return "\nStellen\n" + t.stellen.map(x => `💰 ${x}\n`).join('');
   }
 
   return (t.gestorben ? '† ' : '')
@@ -763,7 +783,7 @@ function helmbartenCharakter() {
     + t.tiere_text()
     + t.feinde_text()
     + t.mitgliedschaften_text()
-    + t.jobs_text()
+    + t.stellen_text()
     + "\n\n" + t.geschichte.join("\n") + "\n"
     ;
 } // End wrapper function helmbartenCharacter()

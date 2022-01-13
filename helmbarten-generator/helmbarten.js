@@ -294,8 +294,11 @@ function helmbartenCharakter() {
         break;
       }
       case 5: {
-        t.sonstiges.push("Gefährte");
-        t.geschichte.push("Ich habe einen treuen Gefährten bekommen.");
+        let g = geschlecht();
+        let f = name(g);
+        let p = g == '♀' ? `eine treue Gefährtin` : `einen treuen Gefährten`;
+        t.sonstiges.push(f + ' (' + 'KGAIBS'.split('').map(x => würfel(2)).join(' ') + ')');
+        t.geschichte.push(`Ich habe in ${f} ${p} gefunden.`);
         break;
       }
       case 6: {

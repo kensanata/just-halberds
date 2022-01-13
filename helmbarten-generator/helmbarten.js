@@ -65,11 +65,18 @@ function helmbartenCharakter() {
       ['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
   }
 
+  function welt() {
+    return wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+  }
+
   function geheimbund() {
+    let w = welt();
     let n = wähle(['Sieben', 'Neun', 'Elf', 'Zwölf', 'Dreizehn', 'Vierzehn', 'Einundzwanzig'])
-    return 'Mitglied ' + wähle(
-      ['der Getreuen', 'der Knechte', 'des Bundes', `der ${n}`, 'der Freunde', 'der Genossen', 'der Brüder und Schwestern'],
-      ['der Abendröte', 'des Morgengrauens', 'des Nebels', 'der Erneuerung', 'des Volkes', 'der Pyramide', 'der Drachen']);
+    return wähle(
+      [ 'Die Getreuen', 'Die Knechte', 'Der Bundes', `Die ${n}`, 'Die Freunde', 'Die Genossen', 'Die Brüder und Schwestern',
+        'Die Gesegneten'],
+      [ 'der Abendröte', 'des Morgengrauens', 'des Nebels', 'der Erneuerung', 'des Volkes', 'der Pyramide', 'der Drachen',
+        `von ${w}`, 'vom Berg', 'vom See' ]);
   }
 
   /* t ist der Charakter */
@@ -82,7 +89,10 @@ function helmbartenCharakter() {
   t.karrieren = 0;
   t.gestorben = false;
   t.belohnungen = [];
-  t.sonstiges = [];
+  t.mitgliedschaften = [];
+  t.gefährten = [];
+  t.tiere = [];
+  t.jobs = [];
   t.talente = [];
   t.verboten = [];
   t.feinde = [];
@@ -165,17 +175,17 @@ function helmbartenCharakter() {
       }
       case 4: {
         let g = geheimbund();
-        t.sonstiges.push(`${g}`);
-        t.geschichte.push(`Ich wurde ${g}.`);
+        t.mitgliedschaften.push(`${g}`);
+        t.geschichte.push(`${g} haben mich aufgenommen.`);
         break;
       }
       case 5: {
-        t.sonstiges.push("Pferd");
+        t.tiere.push("🐎 Pferd");
         t.geschichte.push("Ich habe ein Pferd bekommen.");
         break;
       }
       case 6: {
-        t.sonstiges.push("Land");
+        t.jobs.push("Land");
         t.geschichte.push("Ich habe etwas Land zugewiesen bekommen.");
         break;
       }
@@ -197,7 +207,8 @@ function helmbartenCharakter() {
       case 1: {
         let g = geschlecht();
         let f = name(g);
-        t.feinde.push(f);
+        let u = g == '♀' ? '👩' : '👨';
+        t.feinde.push(`${u} ${f}`);
         let p = g == '♀' ? `sie` : `er`;
         t.geschichte.push(wähle(
           [ `Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`,
@@ -289,20 +300,44 @@ function helmbartenCharakter() {
       }
       case 4: {
         let g = geheimbund();
-        t.sonstiges.push(`${g}`);
-        t.geschichte.push(`Ich wurde ${g}.`);
+        t.mitgliedschaften.push(`${g}`);
+        t.geschichte.push(`${g} haben mich aufgenommen.`);
         break;
       }
       case 5: {
-        let g = geschlecht();
-        let f = name(g);
-        let p = g == '♀' ? `eine treue Gefährtin` : `einen treuen Gefährten`;
-        t.sonstiges.push(f + ' (' + 'KGAIBS'.split('').map(x => würfel(2)).join(' ') + ')');
-        t.geschichte.push(`Ich habe in ${f} ${p} gefunden.`);
-        break;
+        switch (würfel(1)) {
+        case 1: {
+          t.tiere.push("🐦 intelligente Krähe");
+          t.geschichte.push("Ich habe eine Krähe adoptiert.");
+          break;
+        }
+        case 2: {
+          t.tiere.push("🦉 intelligente Eule");
+          t.geschichte.push("Ich habe eine Eule adoptiert.");
+          break;
+        }
+        case 3: {
+          t.tiere.push("🐈 intelligente Katze");
+          t.geschichte.push("Ich habe eine Katze adoptiert.");
+          break;
+        }
+        case 4:
+        case 5:
+        case 6: {
+          let g = geschlecht();
+          let f = name(g);
+          let u = g == '♀' ? '👩' : '👨';
+          t.gefährten.push(`${u} ${f}` + ' (' +
+                           ['Kraft', 'Geschick', 'Ausdauer', 'Intelligenz', 'Bildung', 'Status', ]
+                           .map(x => x + ' ' + würfel(2)).join(' ') + ')');
+          let p = g == '♀' ? `eine treue Gefährtin` : `einen treuen Gefährten`;
+          t.geschichte.push(`Ich habe in ${f} ${p} gefunden.`);
+          break;
+        }
+        }
       }
       case 6: {
-        t.sonstiges.push("Lehrstuhl");
+        t.jobs.push("Lehrstuhl");
         t.geschichte.push("Ich habe einen Lehrstuhl bekommen.");
         break;
       }
@@ -319,7 +354,8 @@ function helmbartenCharakter() {
       case 1: {
         let g = geschlecht()
         let f = name(g);
-        t.feinde.push(f);
+        let u = g == '♀' ? '👩' : '👨';
+        t.feinde.push(`${u} ${f}`);
         let m = g == '♀' ? `meine Mitschülerin ${f}` : `meinen Mitschüler ${f}`;
         t.geschichte.push(`Ich habe ${m} blossgestellt. 😏`);
         break;
@@ -333,7 +369,7 @@ function helmbartenCharakter() {
       }
       case 3: {
         let f = dämon();
-        t.feinde.push(f);
+        t.feinde.push(`👹 ${f}`);
         t.geschichte.push(wähle(
           [ 'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
             'Ich habe in den Abgrund geschaut. Es war fürchterlich.',
@@ -351,14 +387,14 @@ function helmbartenCharakter() {
         break;
       }
       case 5: {
-        let w = wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+        let w = welt();
         t.geschichte.push(`Ich habe mich in ${w} verirrt.`);
         t.verloren(`in ${w} verstorben. 💀`,
                    'Wanderung habe ich den Weg zurück nach Midgard gefunden. 😌');
         break;
       }
       case 6: {
-        let w = wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+        let w = welt();
         t.geschichte.push(wähle(
           [ 'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
             `Wir waren unterwegs nach ${w}, als plötzlich die Hölle los ging.`,
@@ -407,17 +443,17 @@ function helmbartenCharakter() {
       }
       case 4: {
         let g = geheimbund();
-        t.sonstiges.push(`${g}`);
-        t.geschichte.push(`Ich wurde ${g}.`);
+        t.mitgliedschaften.push(`${g}`);
+        t.geschichte.push(`${g} haben mich aufgenommen.`);
         break;
       }
       case 5: {
-        t.sonstiges.push("Hund");
+        t.tiere.push("🐕 Hund");
         t.geschichte.push("Ich habe einen Hund bekommen.");
         break;
       }
       case 6: {
-        t.sonstiges.push("Posten");
+        t.jobs.push("Posten");
         t.geschichte.push("Ich habe einen sicheren Posten.");
         break;
       }
@@ -434,7 +470,8 @@ function helmbartenCharakter() {
       case 1: {
         let g = geschlecht()
         let f = name(g);
-        t.feinde.push(f);
+        let u = g == '♀' ? '👩' : '👨';
+        t.feinde.push(`${u} ${f}`);
         let m = g == '♀' ? `meine Rivalin ${f}` : `meinen Rivalen ${f}`;
         t.geschichte.push(wähle(
           [ `Ich habe ${m} öffentlich gedemütigt. 😏`,
@@ -443,19 +480,23 @@ function helmbartenCharakter() {
         break;
       }
       case 2: {
-        let f = name(geschlecht());
-        t.feinde.push(f);
+        let g = geschlecht();
+        let f = name(g);
+        let u = g == '♀' ? '👩' : '👨';
+        t.feinde.push(`${u} ${f}`);
         t.geschichte.push(wähle(
           [ 'Der Plan ist nicht aufgegangen.',
             'Man hat mich ausgetrickst.', ,
             'Ich wurde ausmanövriert.', ],
-          [ `Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann.`,
-            `${f} hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen.`, ]));
+          [ `Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann. 😒`,
+            `${f} hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen. 😒`, ]));
         break;
       }
       case 3: {
-        let f = name(geschlecht());
-        t.feinde.push(f);
+        let g = geschlecht();
+        let f = name(g);
+        let u = g == '♀' ? '👩' : '👨';
+        t.feinde.push(`${u} ${f}`);
         t.geschichte.push(wähle(
           [ 'Ich habe die Hilfe von falschen Freunden angenommen.',
             'Ich liess mich von falschen Freunden blenden.',
@@ -529,7 +570,7 @@ function helmbartenCharakter() {
     }
     return bestes_attribut;
   };
-  
+
   t.karriere = t.beste_karriere();
   t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
 
@@ -566,7 +607,8 @@ function helmbartenCharakter() {
     t.alterung();
     t.alter += 4;
     let jahre = 4;
-    while (!t.gestorben && würfel(2) > t.bestes_attribut()) {
+    // Das Entkommen ist eine schwierige Probe mit 3W6!
+    while (!t.gestorben && würfel(3) > t.bestes_attribut()) {
       jahre += 4;
       t.alter += 4;
       t.alterung();
@@ -636,7 +678,7 @@ function helmbartenCharakter() {
   };
 
   if (!t.gestorben) t.belohnungen_erhalten();
-  
+
   t.bestes_talent = function() {
     let bestes_talent;
     let bester_wert = 0;
@@ -685,15 +727,43 @@ function helmbartenCharakter() {
     };
     return titel[t.geschlecht][talent] + ' ';
   };
-  
+
+  t.gefährten_text = function() {
+    if (t.gestorben || !t.gefährten.length) return '';
+    return "\nGefährten\n" + t.gefährten.map(x => `${x}\n`).join('');
+  }
+
+  t.tiere_text = function() {
+    if (t.gestorben || !t.tiere.length) return '';
+    return "\nTiere\n" + t.tiere.map(x => `${x}\n`).join('');
+  }
+
+  t.feinde_text = function() {
+    if (t.gestorben || !t.feinde.length) return '';
+    return "\nFeinde\n" + t.feinde.map(x => `${x}\n`).join('');
+  }
+
+  t.mitgliedschaften_text = function() {
+    if (t.gestorben || !t.mitgliedschaften.length) return '';
+    return "\nMitgliedschaften\n" + t.mitgliedschaften.map(x => `🤝 ${x}\n`).join('');
+  }
+
+  t.jobs_text = function() {
+    if (t.gestorben || !t.jobs.length) return '';
+    return "\nJobs\n" + t.jobs.map(x => `💰 ${x}\n`).join('');
+  }
+
   return (t.gestorben ? '† ' : '')
     + t.titel() + t.name
     + `    Alter: ${t.alter}`
     + `    Karrieren: ${t.karrieren}\n`
     + t.attribute_text()
     + t.talente_text()
-    + (!t.gestorben && t.sonstiges.length > 0 ? 'Sonstiges: ' + t.sonstiges.join(', ') + "\n" : '')
-    + (!t.gestorben && t.feinde.length > 0 ? 'Feinde: ' + t.feinde.join(', ') + "\n" : '')
+    + t.gefährten_text()
+    + t.tiere_text()
+    + t.feinde_text()
+    + t.mitgliedschaften_text()
+    + t.jobs_text()
     + "\n\n" + t.geschichte.join("\n") + "\n"
     ;
 } // End wrapper function helmbartenCharacter()

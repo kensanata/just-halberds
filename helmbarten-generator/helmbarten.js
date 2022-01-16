@@ -30,10 +30,14 @@ function helmbarten(daten) {
     let m = text.match(/\/([^\/]+)\/([^\/]*)\/([gi])?$/);
     // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
     if (m) text = text.substring(0, text.length - m[0].length);
-    // Auswahl [a|b] wählt a oder b
-    text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g, (m, t) => wähle(t.split('|')));
-    // Tabelle [a] wählt einen Eintrag aus der Tabelle a
-    text = text.replaceAll(/\[([^\[\]]+)\]/g, (m, t) => nimm(t, level + 1));
+    let old;
+    do {
+      old = text;
+      // Auswahl [a|b] wählt a oder b
+      text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g, (m, t) => wähle(t.split('|')));
+      // Tabelle [a] wählt einen Eintrag aus der Tabelle a
+      text = text.replaceAll(/\[([^\[\]]+)\]/g, (m, t) => nimm(t, level + 1));
+    } while (old != text);
     // Führe Suchen & Ersetzen aus, falls nötig
     if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
     return text;
@@ -101,24 +105,11 @@ function helmbarten(daten) {
   }
 
   function hund() {
-    let h = 'ein '
-        + wähle([ 'kläffender', 'aggressiver', 'bissiger', 'verspielter', 'fauler', 'jaulender', 'aktiver', 'wilder' ],
-                [ 'Hund', 'Strassenhund', 'Jagdhund', 'Wachhund', 'Schosshund', 'Hirtenhund', 'Spürhund' ]);
-    if (würfel(1) <= 3) h = h.replace(/^ein/, 'eine').replace(/r\b/, '').replace(/und$/, 'ündin');
-    return h;
+    return nimm('Hund');
   }
 
   function pferd() {
-    let p = 'ein '
-        + wähle([ 'stoischer', 'aggressiver', 'bissiger', 'verspielter', 'lahmer', 'freundlicher', 'aktiver' ])
-        + ' ';
-    if (würfel(1) <= 4) {
-      p += wähle([ 'Rappen', 'Schimmel', 'Hengst', 'Gaul', 'Klappergaul' ]);
-    } else {
-      p = p.replace(/r\b/, 's');
-      p += wähle([ 'Reitpferd', 'Kriegspferd' ]);
-    }
-    return p;
+    return nimm('Pferd');
   }
 
   function gute() {

@@ -21,25 +21,45 @@ function helmbarten(daten) {
     return d;
   }
 
+  // Die Resultate vom letzten nimm Aufruf bleiben gespeichert
+  h.resultate = {};
+
   function nimm(titel, level) {
     level = level || 1;
+    if (level == 1) h.resultate = {};
     if (level > 20) { console.log(`Rekursion über 20 Stufen tief für ${titel}`); return "…" }
+    // [@a] nimmt das schon vorhandene Resultat für die Tabelle a
+    if (titel.startsWith('@')) return h.resultate[titel.substring(1)];
     // Wähle einen Text aus der Tabelle mit dem entsprechenden Titel
     let text = gewichte(titel);
     // Merke, falls es am Ende ein Suchen und Ersetzen gibt wie /a/b/
     let m = text.match(/\/([^\/]+)\/([^\/]*)\/([gi])?$/);
     // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
     if (m) text = text.substring(0, text.length - m[0].length);
-    let old;
-    do {
-      old = text;
-      // Auswahl [a|b] wählt a oder b
-      text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g, (m, t) => wähle(t.split('|')));
-      // Tabelle [a] wählt einen Eintrag aus der Tabelle a
-      text = text.replaceAll(/\[([^\[\]]+)\]/g, (m, t) => nimm(t, level + 1));
-    } while (old != text);
+    while (true) {
+      let e = false;
+      // [2W6] würfelt 2W6
+      text = text.replaceAll(/\[(\d+)W6\]/g,
+                             (m, t) => { e = true; return würfel(Number(t)) });
+      if (e) continue;
+      // [a@b] speichert a als Resultat für b
+      text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
+                             (m, t, u) => { e = true; h.resultate[u] = t; return '' });
+      if (e) continue;
+      // [a|b] wählt a oder b
+      text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g,
+                             (m, t) => { e = true; return wähle(t.split('|')) });
+      if (e) continue;
+      // [a] wählt einen Eintrag aus der Tabelle a
+      text = text.replaceAll(/\[([^\[\]]+)\]/g,
+                             (m, t) => { e = true; return nimm(t, level + 1) });
+      if (e) continue;
+      break;
+    }
     // Führe Suchen & Ersetzen aus, falls nötig
     if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
+    // Alle bisherigen Resultate speichern
+    h.resultate[titel] = text;
     return text;
   }
 
@@ -84,37 +104,8 @@ function helmbarten(daten) {
     return nimm(`Menschenname ${geschlecht}`);
   }
 
-  function geschlecht() {
-    return nimm('Geschlecht');
-  }
-
-  function dämon() {
-    return nimm('Dämon');
-  }
-
-  function welt() {
-    return nimm('Welt');
-  }
-
-  function geheimbund() {
-    return nimm('Geheimbund');
-  }
-
   function posten(geschlecht) {
     return nimm(`Posten ${geschlecht}`);
-  }
-
-  function hund() {
-    return nimm('Hund');
-  }
-
-  function pferd() {
-    return nimm('Pferd');
-  }
-
-  function gute() {
-    return wähle(['gutmütige', 'intelligente', 'freche', 'vorlaute', 'anhängliche', 'neugierige', 'ständig lästernde',
-                  'weise', 'vorsichtige', 'verspielte']);
   }
 
   function land() {
@@ -129,7 +120,7 @@ function helmbarten(daten) {
     
     t.geschichte = [];
     t.alter = 16;
-    t.geschlecht = geschlecht();
+    t.geschlecht = nimm('Geschlecht');
     t.name = name(t.geschlecht);
     t.karrieren = 0;
     t.gestorben = false;
@@ -221,13 +212,13 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = geheimbund();
+          let g = nimm('Geheimbund');
           t.mitgliedschaften.push(`${g}`);
           t.geschichte.push(`${g} haben mich aufgenommen.`);
           break;
         }
         case 5: {
-          let p = pferd();
+          let p = nimm('Pferd');
           t.tiere.push(`🐎 ${p}`);
           t.geschichte.push("Ich habe ein Pferd bekommen.");
           break;
@@ -253,7 +244,7 @@ function helmbarten(daten) {
       schicksalsschlag: function(t) {
         switch(würfel(1)) {
         case 1: {
-          let g = geschlecht();
+          let g = nimm('Geschlecht');
           let f = name(g);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
@@ -347,45 +338,16 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = geheimbund();
+          let g = nimm('Geheimbund');
           t.mitgliedschaften.push(`${g}`);
           t.geschichte.push(`${g} haben mich aufgenommen.`);
           break;
         }
         case 5: {
-          switch (würfel(1)) {
-          case 1: {
-            let g = gute();
-            t.tiere.push(`🐦 eine ${g} Krähe`);
-            t.geschichte.push("Ich habe eine Krähe adoptiert.");
-            break;
-          }
-          case 2: {
-            let g = gute();
-            t.tiere.push(`🦉 eine ${g} Eule`);
-            t.geschichte.push("Ich habe eine Eule adoptiert.");
-            break;
-          }
-          case 3: {
-            let g = gute();
-            t.tiere.push(`🐈 eine ${g} Katze`);
-            t.geschichte.push("Ich habe eine Katze adoptiert.");
-            break;
-          }
-          case 4:
-          case 5:
-          case 6: {
-            let g = geschlecht();
-            let f = name(g);
-            let u = g == '♀' ? '👩' : '👨';
-            t.gefährten.push(`${u} ${f}` + ' (' +
-                             ['Kraft', 'Geschick', 'Ausdauer', 'Intelligenz', 'Bildung', 'Status', ]
-                             .map(x => x + ' ' + würfel(2)).join(' ') + ')');
-            let p = g == '♀' ? `eine treue Gefährtin` : `einen treuen Gefährten`;
-            t.geschichte.push(`Ich habe in ${f} ${p} gefunden.`);
-            break;
-          }
-          }
+          let g = nimm('Gefährte');
+          if (h.resultate.Tier) t.tiere.push(g)
+          else t.gefährten.push(g);
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 6: {
@@ -406,7 +368,7 @@ function helmbarten(daten) {
       schicksalsschlag: function(t) {
         switch(würfel(1)) {
         case 1: {
-          let g = geschlecht()
+          let g = nimm('Geschlecht')
           let f = name(g);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
@@ -422,7 +384,7 @@ function helmbarten(daten) {
           break;
         }
         case 3: {
-          let f = dämon();
+          let f = nimm('Dämon');
           t.feinde.push(`👹 ${f}`);
           t.geschichte.push(wähle(
             [ 'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
@@ -441,14 +403,14 @@ function helmbarten(daten) {
           break;
         }
         case 5: {
-          let w = welt();
+          let w = nimm('Welt');
           t.geschichte.push(`Ich habe mich in ${w} verirrt.`);
           t.verloren(`in ${w} verstorben. 💀`,
                      'Wanderung habe ich den Weg zurück nach Midgard gefunden. 😌');
           break;
         }
         case 6: {
-          let w = welt();
+          let w = nimm('Welt');
           t.geschichte.push(wähle(
             [ 'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
               `Wir waren unterwegs nach ${w}, als plötzlich die Hölle los ging.`,
@@ -496,13 +458,13 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = geheimbund();
+          let g = nimm('Geheimbund');
           t.mitgliedschaften.push(`${g}`);
           t.geschichte.push(`${g} haben mich aufgenommen.`);
           break;
         }
         case 5: {
-          t.tiere.push("🐕 " + hund());
+          t.tiere.push("🐕 " + nimm('Hund'));
           t.geschichte.push("Ich habe einen Hund adoptiert.");
           break;
         }
@@ -523,7 +485,7 @@ function helmbarten(daten) {
       schicksalsschlag: function(t) {
         switch(würfel(1)) {
         case 1: {
-          let g = geschlecht()
+          let g = nimm('Geschlecht')
           let f = name(g);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
@@ -535,7 +497,7 @@ function helmbarten(daten) {
           break;
         }
         case 2: {
-          let g = geschlecht();
+          let g = nimm('Geschlecht');
           let f = name(g);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
@@ -548,7 +510,7 @@ function helmbarten(daten) {
           break;
         }
         case 3: {
-          let g = geschlecht();
+          let g = nimm('Geschlecht');
           let f = name(g);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);

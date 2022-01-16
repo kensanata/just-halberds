@@ -20,8 +20,8 @@
 
 <script>
 function generateCharacter(){
-  let daten = document.getElementById('daten').innerHTML;
-	document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
+  const daten = document.getElementById('daten').textContent;
+  document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
 }
 </script>
 
@@ -299,6 +299,45 @@ function generateCharacter(){
 1,Spür
 1,Strassen
 1,Wach
+
+;Gefährte
+1,[Tier]
+1,[Mensch]
+
+;Tier
+1,🐦 eine [Eigenschaft intelligenter Tiere] Krähe[Ich habe eine Krähe adoptiert.@Geschichte]
+1,🦉 eine [Eigenschaft intelligenter Tiere] Eule[Ich habe eine Eule adoptiert.@Geschichte]
+1,🐈 eine [Eigenschaft intelligenter Tiere] Katze[Ich habe eine Katze adoptiert.@Geschichte]
+
+;Eigenschaft intelligenter Tiere
+1,anhängliche
+1,freche
+1,gutmütige
+1,intelligente
+1,neugierige
+1,ständig lästernde
+1,verspielte
+1,vorlaute
+1,vorsichtige
+1,weise
+
+;Mensch
+1,[Gefährten [Geschlecht] Emoji] [Menschenname [@Geschlecht]] [Werte für Menschen] [[Gefährten [@Geschlecht] gefunden]@Geschichte]
+
+;Gefährten ♀ Emoji
+1,👩
+
+;Gefährten ♂ Emoji
+1,👨
+
+;Werte für Menschen
+1,Kraft-[2W6] Geschick-[2W6] Ausdauer-[2W6] Intelligenz-[2W6] Bildung-[2W6] Status-[2W6]
+
+;Gefährten ♀ gefunden
+1,Ich habe in [@Menschenname ♀] eine treue Gefährtin gefunden.
+
+;Gefährten ♂ gefunden
+1,Ich habe in [@Menschenname ♂] einen treuen Gefährten gefunden.
 
 </pre>
 </body>

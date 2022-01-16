@@ -31,7 +31,7 @@ body {
     margin-left: clamp(1ex, 5%, 4em);
     hyphens: auto;
 }
-#char {
+#ziel {
     white-space: pre-wrap;
     max-width: 45em;
 }

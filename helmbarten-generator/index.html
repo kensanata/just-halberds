@@ -16,12 +16,248 @@
 <hr>
 </div>
 
-<div id="char"></div>
+<div id="ziel"></div>
 
 <script>
 function generateCharacter(){
-	document.getElementById('char').innerHTML = helmbarten().charakter().text();
+  let daten = document.getElementById('daten').innerHTML;
+	document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
 }
 </script>
+
+<pre id="daten" style="display: none">
+# Helmbarten RPG Tabellen
+# © Alex Schröder 2022
+
+# Ein '#' beginnt ein Kommentar, welcher ignoriert wird.
+# Ein ';' beginnt eine Tabelle mit dem nachfolgenden Namen.
+# Eine Zahl mit einem Komma beginnt einen Eintrag in einer Tabelle mit entsprechender Gewichtung
+# Mit '[' und ']' werden rekursiv weitere Tabellen verwendet.
+
+;Geschlecht
+1,♀
+1,♂
+
+;Menschenname ♀
+1,[Kurzer Frauenname]
+5,[Langer Frauenname]
+
+;Menschenname ♂
+1,[Kurzer Männername]
+5,[Langer Männername]
+
+;Kurzer Frauenname
+1,Ada
+1,Berta
+1,Hilde
+1,Inge
+1,Chloe
+1,Frieda
+1,Gisela
+
+;Kurzer Männername
+1,Ardo
+1,Dodo
+1,Gregor
+1,Gundobad
+1,Gyso
+1,Siggo
+
+;Langer Frauenname
+2,[Menschenname 1][Frauenname 2]
+1,[Menschenname 1][Männername 2][a|e]
+
+;Langer Männername
+1,[Menschenname 1][Männername 2]/[ie]a/oa/
+
+;Menschenname 1
+1,Adal
+1,Amal
+1,Bald
+1,Bert
+1,Brun
+1,Charde
+1,Chari
+1,Childe
+1,Chilpe
+1,Chlodo
+1,Chrodo
+1,Clot
+1,Crot
+1,Dago
+1,Ger
+1,Gunde
+1,Ingo
+1,Mero
+1,Os
+1,Sigi
+1,Theude
+1,Vulde
+1,Wisi
+
+;Frauenname 2
+1,berga
+1,burg
+1,fled
+1,gard
+1,gund
+1,hild
+1,lind
+1,trud
+
+;Männername 2
+1,ald
+1,ger
+1,hard
+1,man
+1,mer
+1,mund
+1,ric
+1,sind
+1,tram
+1,wech
+
+;Welt
+1,Asgard
+1,Alfheim
+1,Myrkheim
+1,Jötunheim
+1,Vanaheim
+1,Niflheim
+1,Muspelheim
+
+;Dämon
+1,[Dämon 1] [Dämon 2]
+
+;Dämon 1
+1,Auge
+1,Herr
+1,Herrin
+1,Mühle
+1,Rabe
+1,Wolf
+1,Zahn
+
+;Dämon 2
+1,der Finsternis
+1,der Fäulnis
+1,der Pest
+1,der Zeit
+1,des Abgrunds
+1,des Eises
+1,des Feuers
+1,des Zorns
+
+;Geheimbund
+1,[Geheimbund 1] [Geheimbund 2]
+
+;Geheimbund 1
+1,Der Bundes
+1,Die Brüder und Schwestern
+1,Die Freunde
+1,Die Gefährten
+1,Die Gemeinschaft
+1,Die Genossen
+1,Die Gesegneten
+1,Die Getreuen
+1,Die Knechte
+1,Die [Geheimbundzahl]
+
+;Geheimbundzahl
+1,Sieben
+1,Neun
+1,Elf
+1,Zwölf
+1,Dreizehn
+1,Vierzehn
+1,Einundzwanzig
+
+;Geheimbund 2
+1,der Abendröte
+1,der Drachen
+1,der Erneuerung
+1,der Pyramide
+1,der Revolution
+1,des Krieges
+1,des Morgengrauens
+1,des Nebels
+1,des Volkes
+1,des ewigen Friedens
+1,vom Berg
+1,vom Ende der Zeit
+1,vom See
+1,von [Welt]
+
+;Posten ♀
+1,[Frauentitel] [des Amtes]
+
+;Posten ♂
+1,[Männertitel] [des Amtes]
+
+;Frauentitel
+1,Beirätin
+1,Büttel
+1,Delegierte
+1,Geheimrätin
+1,Inspektorin
+1,Leiterin
+1,Ministerin
+1,Ratsherrin
+1,Stadträtin
+1,Säckelmeister
+1,Vogt
+1,Vorstand
+
+;Männertitel
+1,Beirat
+1,Büttel
+1,Delegierter
+1,Geheimrat
+1,Inspektor
+1,Leiter
+1,Minister
+1,Ratsherr
+1,Stadtrat
+1,Säckelmeister
+1,Vogt
+1,Vorstand
+
+;des Amtes
+1,der Abwässer
+1,der Artisten
+1,der Bettler
+1,der Bierbrauer
+1,der Brunnen
+1,der Burger
+1,der Diebe
+1,der Einheimischen
+1,der Fremden
+1,der Holzfäller
+1,der Jagdhunde
+1,der Juweliere
+1,der Kanalisation
+1,der Kerker
+1,der Kuhhirten
+1,der Käser
+1,der Küfer
+1,der Maler
+1,der Mauern
+1,der Musiker
+1,der Reithalle
+1,der Schmiede
+1,der Schneider
+1,der Schweinehirten
+1,der Stallungen
+1,der Steuern
+1,der Sänger
+1,der Vagranten
+1,der Wagenbauer
+1,der Weinbauern
+1,der Ziegenhirten
+1,der Zisterne
+1,des Aquädukts
+1,des Waldes
+
+</pre>
 </body>
 </html>

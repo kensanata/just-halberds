@@ -2,17 +2,58 @@
    © Alex Schröder 2022
 
    Um eine Charakterbeschreibung zu generieren: helmbarten().character().text();
-   
 */
 
-function helmbarten() {
+function helmbarten(daten) {
   let h = {};
 
-  function tabellen() {
-    let tabellen = [];
-    return tabellen;
+  h.tabellen = transformieren(daten);
+  
+  function transformieren(daten) {
+    let d = {}
+    let t;
+    daten.split("\n").forEach(zeile => {
+      zeile.replace(/#.*/, ""); // Kommentare
+      let m;
+      if (zeile.startsWith(";")) { t = []; d[zeile.substring(1)] = t }
+      else if (m = zeile.match(/^(\d),(.*)/)) { t.push([m[2], Number(m[1])]) }
+    });
+    return d;
   }
 
+  function nimm(titel, level) {
+    level = level || 1;
+    if (level > 20) { console.log(`Rekursion über 20 Stufen tief für ${titel}`); return "…" }
+    // Wähle einen Text aus der Tabelle mit dem entsprechenden Titel
+    let text = gewichte(titel);
+    // Merke, falls es am Ende ein Suchen und Ersetzen gibt wie /a/b/
+    let m = text.match(/\/([^\/]+)\/([^\/]*)\/([gi])?$/);
+    // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
+    if (m) text = text.substring(0, text.length - m[0].length);
+    // Auswahl [a|b] wählt a oder b
+    text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g, (m, t) => wähle(t.split('|')));
+    // Tabelle [a] wählt einen Eintrag aus der Tabelle a
+    text = text.replaceAll(/\[([^\[\]]+)\]/g, (m, t) => nimm(t, level + 1));
+    // Führe Suchen & Ersetzen aus, falls nötig
+    if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
+    return text;
+  }
+
+  function gewichte(titel) {
+    let t = h.tabellen[titel];
+    if (!t) { console.log(`Es gibt keine Tabelle ${titel}`); return "…" }
+    let total = t.reduce((n, x) => n + x[1], 0);
+    // starte mit 1
+    let n = Math.floor(Math.random() * total) + 1;
+    let i = 0;
+    for (const z of t) {
+      i += z[1];
+      if (i >= n) { return(z[0]) }
+    }
+    console.log(`Die Tabelle ${titel} hat kein Resultat für ${n}`);
+    return "…";
+  }
+  
   function wähle(...arr) {
     return arr
       .map(a => a[Math.floor(Math.random() * (a.length))])
@@ -36,72 +77,27 @@ function helmbarten() {
   }
 
   function name(geschlecht) {
-    let name;
-    if (würfel(1) <= 2) {
-      // kurzer Name
-      if (geschlecht == '♀') {
-        name = wähle(
-          [ 'Ada', 'Berta', 'Hilde', 'Inge', 'Chloe', 'Frieda', 'Gisela' ]);
-      } else {
-        name = wähle(
-          [ 'Gyso', 'Dodo', 'Gregor', 'Siggo', 'Ardo', 'Gundobad' ]);
-      }
-    } else {
-      name = wähle(
-        [ 'Adal', 'Amal', 'Bald', 'Bert', 'Brun', 'Ger', 'Chlodo', 'Charde', 'Gunde', 'Os', 'Sigi', 'Theude',
-          'Childe', 'Chilpe', 'Clot', 'Crot', 'Wisi', 'Chari', 'Ingo', 'Chrodo', 'Vulde', 'Mero', 'Dago' ]);
-      if (geschlecht == '♀' && würfel(1) <= 4) {
-        name += wähle(
-          [ 'burg', 'gard', 'gund', 'hild', 'lind', 'trud', 'berga', 'fled' ]);
-      } else {
-        name += wähle(
-          [ 'ger', 'man', 'mund', 'ric', 'hard', 'sind', 'mer', 'ald', 'tram', 'wech' ]);
-        if (geschlecht == '♀') {
-          name += wähle(['a', 'e']);
-        }
-      }
-    }
-    name = name.replaceAll('[ie]a', 'oa');
-    return name;
+    return nimm(`Menschenname ${geschlecht}`);
   }
 
   function geschlecht() {
-    return wähle('♀♂');
+    return nimm('Geschlecht');
   }
 
   function dämon() {
-    return wähle(
-      ['Herr', 'Herrin', 'Auge', 'Zahn', 'Wolf', 'Rabe', 'Mühle'],
-      ['der Zeit', 'des Zorns', 'der Pest', 'der Fäulnis', 'des Abgrunds']);
+    return nimm('Dämon');
   }
 
   function welt() {
-    return wähle(['Asgard', 'Alfheim', 'Myrkheim', 'Jötunheim', 'Vanaheim', 'Niflheim', 'Muspelheim']);
+    return nimm('Welt');
   }
 
   function geheimbund() {
-    let w = welt();
-    let n = wähle(['Sieben', 'Neun', 'Elf', 'Zwölf', 'Dreizehn', 'Vierzehn', 'Einundzwanzig'])
-    return wähle(
-      [ 'Die Getreuen', 'Die Knechte', 'Der Bundes', `Die ${n}`, 'Die Freunde', 'Die Genossen', 'Die Brüder und Schwestern',
-        'Die Gesegneten', 'Die Gefährten', 'Die Gemeinschaft' ],
-      [ 'der Abendröte', 'des Morgengrauens', 'des Nebels', 'der Erneuerung', 'des Volkes', 'der Pyramide', 'der Drachen',
-        `von ${w}`, 'vom Berg', 'vom See', 'des Krieges', 'des ewigen Friedens', 'der Revolution', 'vom Ende der Zeit' ]);
+    return nimm('Geheimbund');
   }
 
   function posten(geschlecht) {
-    return wähle(
-      geschlecht == '♀'
-        ? [ 'Vorstand', 'Inspektorin', 'Geheimrätin', 'Delegierte', 'Vogt', 'Büttel', 'Ministerin', 'Stadträtin',
-            'Ratsherrin', 'Säckelmeister', 'Beirätin', 'Leiterin', ]
-        : [ 'Vorstand', 'Inspektor', 'Geheimrat', 'Delegierter', 'Vogt', 'Büttel', 'Minister', 'Stadtrat',
-            'Ratsherr', 'Säckelmeister', 'Beirat', 'Leiter', ],
-      [ 'der Zisterne', 'des Aquädukts', 'der Brunnen', 'der Mauern', 'der Steuern', 'der Stallungen', 'der Reithalle',
-        'der Jagdhunde', 'der Abwässer', 'der Kanalisation', 'der Bettler', 'der Fremden', 'der Einheimischen',
-        'der Burger', 'des Waldes', 'der Holzfäller', 'der Schmiede', 'der Schneider', 'der Juweliere', 'der Küfer',
-        'der Weinbauern', 'der Bierbrauer', 'der Kuhhirten', 'der Schweinehirten', 'der Ziegenhirten', 'der Käser',
-        'der Wagenbauer', 'der Vagranten', 'der Musiker', 'der Maler', 'der Sänger', 'der Artisten', 'der Diebe',
-        'der Kerker', ]);
+    return nimm(`Posten ${geschlecht}`);
   }
 
   function hund() {

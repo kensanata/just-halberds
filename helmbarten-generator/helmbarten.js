@@ -138,6 +138,14 @@ function helmbarten(daten) {
         + ` Bildung-${t.attribute.bildung} Status-${t.attribute.status}\n`;
     };
 
+    t.attribute_hex = function () {
+      // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
+      return [t.attribute.kraft, t.attribute.geschick, t.attribute.ausdauer,
+              t.attribute.intelligenz, t.attribute.bildung, t.attribute.status]
+        .map(x => "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"[x])
+        .join('');
+    };
+
     /* s sind die Karrierendefinitionen */
     let s = {};
 
@@ -583,6 +591,7 @@ function helmbarten(daten) {
       return bestes_attribut;
     };
 
+    t.geschichte.push('Gestartet mit ' + t.attribute_hex());
     t.karriere = t.beste_karriere();
     t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
 
@@ -634,33 +643,12 @@ function helmbarten(daten) {
     };
 
     t.alterung = function() {
-      let faktor = t.alter < 50 ? 1 : 2;
-      let w = faktor == 1 ? "Etwas" : "Sehr viel";
-      switch(würfel(1)) {
-      case 1: {
-        t.attribute.kraft = Math.max(t.attribute.kraft - faktor, 0);
-        t.gestorben = t.gestorben || t.attribute.kraft <= 0;
-        t.geschichte.push(`${w} schwächer geworden.`);
-        break;
-      }
-      case 2: {
-        t.attribute.geschick = Math.max(t.attribute.geschick - faktor, 0);
-        t.gestorben = t.gestorben || t.attribute.geschick <= 0;
-        t.geschichte.push(`${w} ungeschickter geworden.`);
-        break;
-      }
-      case 3: {
-        t.attribute.ausdauer = Math.max(t.attribute.ausdauer - faktor, 0);
-        t.gestorben = t.gestorben || t.attribute.ausdauer <= 0;
-        t.geschichte.push(`${w} mehr ausser Atem gekommen.`);
-        break;
-      }
-      case 4: {
-        t.attribute.intelligenz = Math.max(t.attribute.intelligenz - faktor, 0);
-        t.gestorben = t.gestorben || t.attribute.intelligenz <= 0;
-        t.geschichte.push(`${w} vergesslicher geworden.`);
-        break;
-      }
+      const faktor = t.alter < 50 ? 1 : 2;
+      const a = nimm(`Alterung ${faktor}`);
+      if (h.resultate.alterung) {
+        t.attribute[h.resultate.alterung] = Math.max(t.attribute[h.resultate.alterung] - faktor, 0);
+        t.gestorben = t.gestorben || t.attribute[h.resultate.alterung] <= 0;
+        t.geschichte.push(a + ' (' + t.attribute_hex() + ')');
       }
     };
 

@@ -576,7 +576,7 @@ function helmbarten(daten) {
       return beste_karriere;
     };
 
-    t.bestes_attribut = function() {
+    t.bester_wert = function() {
       let bestes_attribut;
       let bester_wert = 0;
       for (let attribut of ungeordnet(Object.keys(t.attribute))) {
@@ -585,7 +585,7 @@ function helmbarten(daten) {
           bester_wert = t.attribute[attribut];
         }
       }
-      return bestes_attribut;
+      return bester_wert;
     };
 
     t.geschichte.push('Gestartet mit ' + t.attribute_hex());
@@ -626,7 +626,7 @@ function helmbarten(daten) {
       t.alter += 4;
       let jahre = 4;
       // Das Entkommen ist eine schwierige Probe mit 3W6!
-      while (!t.gestorben && würfel(3) > t.bestes_attribut()) {
+      while (!t.gestorben && würfel(3) > t.bester_wert()) {
         jahre += 4;
         t.alter += 4;
         t.alterung();

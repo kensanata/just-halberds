@@ -32,7 +32,11 @@ function generateCharacter(){
 # Ein '#' beginnt ein Kommentar, welcher ignoriert wird.
 # Ein ';' beginnt eine Tabelle mit dem nachfolgenden Namen.
 # Eine Zahl mit einem Komma beginnt einen Eintrag in einer Tabelle mit entsprechender Gewichtung
-# Mit '[' und ']' werden rekursiv weitere Tabellen verwendet.
+# Mit '[2W6]' wird ersetzt mit der Summe von 2W6. Im Moment ist nur die Anzahl Würfel variabel.
+# Mit '[a]' wird ersetzt mit einem Resultat der Tabelle 'a'.
+# Mit '[@a]' wird ein vorheriges Resultat der Tabelle 'a' nocheinmal verwendet.
+# Mit '[a@b]' wird das Resultat der Tabelle 'a' als Resultat der Tabelle 'b' gespeichert.
+# Weil diese Daten im HTML stehen, müssen < & > in den Tabellen als &lt; &amp; &gt; geschrieben werden.
 
 ;Geschlecht
 1,♀

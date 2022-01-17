@@ -149,8 +149,7 @@ function helmbarten(daten) {
     /* s sind die Karrierendefinitionen */
     let s = {};
 
-    s.krieger = {
-      name: 'Krieger',
+    s.Krieger = {
       attribut: function(t) {
         return Math.max(t.attribute.kraft, t.attribute.ausdauer);
       },
@@ -274,8 +273,7 @@ function helmbarten(daten) {
       }
     };
 
-    s.magier = {
-      name: 'Magier',
+    s.Magier = {
       attribut: function(t) {
         return Math.max(t.attribute.intelligenz, t.attribute.bildung);
       },
@@ -393,8 +391,7 @@ function helmbarten(daten) {
       }
     };
 
-    s.taugenichts = {
-      name: 'Taugenichts',
+    s.Taugenichts = {
       attribut: function(t) {
         return Math.max(t.attribute.geschick, t.attribute.status);
       },
@@ -575,7 +572,7 @@ function helmbarten(daten) {
           beste_karriere = karriere;
         }
       }
-      if (beste_karriere) t.geschichte.push(s[beste_karriere].name + ' geworden.');
+      if (beste_karriere) t.geschichte.push(beste_karriere + ' geworden.');
       return beste_karriere;
     };
 

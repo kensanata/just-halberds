@@ -10,13 +10,13 @@ function helmbarten(daten) {
   h.tabellen = transformieren(daten);
   
   function transformieren(daten) {
-    let d = {}
+    let d = {};
     let t;
     daten.split("\n").forEach(zeile => {
       zeile.replace(/#.*/, ""); // Kommentare
       let m;
-      if (zeile.startsWith(";")) { t = []; d[zeile.substring(1)] = t }
-      else if (m = zeile.match(/^(\d),(.*)/)) { t.push([m[2], Number(m[1])]) }
+      if (zeile.startsWith(";")) { t = []; d[zeile.substring(1)] = t; }
+      else if ((m = zeile.match(/^(\d),(.*)/))) { t.push([m[2], Number(m[1])]); }
     });
     return d;
   }
@@ -27,7 +27,7 @@ function helmbarten(daten) {
   function nimm(titel, level) {
     level = level || 1;
     if (level == 1) h.resultate = {};
-    if (level > 20) { console.log(`Rekursion über 20 Stufen tief für ${titel}`); return "…" }
+    if (level > 20) { console.log(`Rekursion über 20 Stufen tief für ${titel}`); return "…"; }
     // [@a] nimmt das schon vorhandene Resultat für die Tabelle a
     if (titel.startsWith('@')) return h.resultate[titel.substring(1)];
     // Wähle einen Text aus der Tabelle mit dem entsprechenden Titel
@@ -40,19 +40,19 @@ function helmbarten(daten) {
       let e = false;
       // [2W6] würfelt 2W6
       text = text.replaceAll(/\[(\d+)W6\]/g,
-                             (m, t) => { e = true; return würfel(Number(t)) });
+                             (m, t) => { e = true; return würfel(Number(t)); });
       if (e) continue;
       // [a@b] speichert a als Resultat für b
       text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
-                             (m, t, u) => { e = true; h.resultate[u] = t; return '' });
+                             (m, t, u) => { e = true; h.resultate[u] = t; return ''; });
       if (e) continue;
       // [a|b] wählt a oder b
       text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g,
-                             (m, t) => { e = true; return wähle(t.split('|')) });
+                             (m, t) => { e = true; return wähle(t.split('|')); });
       if (e) continue;
       // [a] wählt einen Eintrag aus der Tabelle a
       text = text.replaceAll(/\[([^\[\]]+)\]/g,
-                             (m, t) => { e = true; return nimm(t, level + 1) });
+                             (m, t) => { e = true; return nimm(t, level + 1); });
       if (e) continue;
       break;
     }
@@ -65,14 +65,14 @@ function helmbarten(daten) {
 
   function gewichte(titel) {
     let t = h.tabellen[titel];
-    if (!t) { console.log(`Es gibt keine Tabelle ${titel}`); return "…" }
+    if (!t) { console.log(`Es gibt keine Tabelle ${titel}`); return "…"; }
     let total = t.reduce((n, x) => n + x[1], 0);
     // starte mit 1
     let n = Math.floor(Math.random() * total) + 1;
     let i = 0;
     for (const z of t) {
       i += z[1];
-      if (i >= n) { return(z[0]) }
+      if (i >= n) { return z[0]; }
     }
     console.log(`Die Tabelle ${titel} hat kein Resultat für ${n}`);
     return "…";
@@ -100,20 +100,6 @@ function helmbarten(daten) {
     return total;
   }
 
-  function name(geschlecht) {
-    return nimm(`Menschenname ${geschlecht}`);
-  }
-
-  function posten(geschlecht) {
-    return nimm(`Posten ${geschlecht}`);
-  }
-
-  function land() {
-    return wähle([ 'ein Waldfleck', 'ein Stück Wald mit Teich', 'ein karger Fels mit Burgruine',
-                   'ein verwaldetes Stück Weideland', 'ein versumpftes Stück Ackerland',
-                   'eine Burgruine voller Banditen' ]);
-  }
-
   h.charakter = function() {
     /* t ist der Charakter */
     let t = {};
@@ -121,7 +107,7 @@ function helmbarten(daten) {
     t.geschichte = [];
     t.alter = 16;
     t.geschlecht = nimm('Geschlecht');
-    t.name = name(t.geschlecht);
+    t.name = nimm(`Menschenname ${t.geschlecht}`);
     t.karrieren = 0;
     t.gestorben = false;
     t.belohnungen = [];
@@ -151,29 +137,6 @@ function helmbarten(daten) {
         + ` Ausdauer-${t.attribute.ausdauer} Intelligenz-${t.attribute.intelligenz}`
         + ` Bildung-${t.attribute.bildung} Status-${t.attribute.status}\n`;
     };
-
-    t.talente = [];
-    t.lerne = function (talent) {
-      if (talent == 'Kämpfen') {
-        if (t.talente['Reiten']) {
-          talent = t.favorit = 'Lanze';
-        } else if (t.favorit) {
-          talent = t.favorit;
-        } else {
-          talent = t.favorit = s[t.karriere].waffe(t);
-        }
-      }
-      t.talente[talent] = t.talente[talent] ? t.talente[talent] + 1 : 1;
-      return talent;
-    };
-
-    t.talente_text = function () {
-      if (t.gestorben) { return ''; }
-      return Object.keys(t.talente)
-        .map(x => { return x + '-' + t.talente[x]})
-        .sort()
-        .join(' ') + "\n";
-    }
 
     /* s sind die Karrierendefinitionen */
     let s = {};
@@ -212,20 +175,18 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = nimm('Geheimbund');
-          t.mitgliedschaften.push(`${g}`);
-          t.geschichte.push(`${g} haben mich aufgenommen.`);
+          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 5: {
-          let p = nimm('Pferd');
-          t.tiere.push(`🐎 ${p}`);
-          t.geschichte.push("Ich habe ein Pferd bekommen.");
+          t.tiere.push(nimm('Pferd als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 6: {
-          t.stellen.push(land());
-          t.geschichte.push("Ich habe etwas Land zugewiesen bekommen.");
+          t.stellen.push(nimm('Land als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         }
@@ -245,7 +206,7 @@ function helmbarten(daten) {
         switch(würfel(1)) {
         case 1: {
           let g = nimm('Geschlecht');
-          let f = name(g);
+          let f = nimm(`Menschenname ${g}`);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
           let p = g == '♀' ? `sie` : `er`;
@@ -258,14 +219,14 @@ function helmbarten(daten) {
           t.geschichte.push(wähle(
             [ 'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
               'Nach der Niederlage haben wir uns monatelang versteckt, haben im Wald gelebt wie Tiere. 🙁', ]));
-          t.alterung()
+          t.alterung();
           break;
         }
         case 3: {
           t.geschichte.push(wähle(
             [ 'Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁',
               'Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen. 🙁', ]));
-          t.alterung()
+          t.alterung();
           break;
         }
         case 4: {
@@ -338,14 +299,13 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = nimm('Geheimbund');
-          t.mitgliedschaften.push(`${g}`);
-          t.geschichte.push(`${g} haben mich aufgenommen.`);
+          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 5: {
           let g = nimm('Gefährte');
-          if (h.resultate.Tier) t.tiere.push(g)
+          if (h.resultate.Tier) t.tiere.push(g);
           else t.gefährten.push(g);
           t.geschichte.push(h.resultate.Geschichte);
           break;
@@ -353,7 +313,7 @@ function helmbarten(daten) {
         case 6: {
           let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
           t.lehrstühle.push(j);
-          t.stellen.push(`Lehrstuhl für ${j}`);
+          t.stellen.push(`💰 Lehrstuhl für ${j}`);
           t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
           break;
         }
@@ -368,8 +328,8 @@ function helmbarten(daten) {
       schicksalsschlag: function(t) {
         switch(würfel(1)) {
         case 1: {
-          let g = nimm('Geschlecht')
-          let f = name(g);
+          let g = nimm('Geschlecht');
+          let f = nimm(`Menschenname ${g}`);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
           let m = g == '♀' ? `meine Mitschülerin ${f}` : `meinen Mitschüler ${f}`;
@@ -380,7 +340,7 @@ function helmbarten(daten) {
           t.geschichte.push(wähle(
             [ 'Das Experiment ging schief und mich hat es getroffen. 🙁',
               'Es war mein Fehler, und ich habe jahrelang dafür bezahlt. 🙁', ]));
-          t.alterung()
+          t.alterung();
           break;
         }
         case 3: {
@@ -458,20 +418,18 @@ function helmbarten(daten) {
           break;
         }
         case 4: {
-          let g = nimm('Geheimbund');
-          t.mitgliedschaften.push(`${g}`);
-          t.geschichte.push(`${g} haben mich aufgenommen.`);
+          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 5: {
-          t.tiere.push("🐕 " + nimm('Hund'));
-          t.geschichte.push("Ich habe einen Hund adoptiert.");
+          t.tiere.push(nimm('Hund als Belohnung'));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         case 6: {
-          let p = posten(t.geschlecht);
-          t.stellen.push(p);
-          t.geschichte.push(`Ich habe einen sicheren Posten als ${p}.`);
+          t.stellen.push(nimm(`Posten ${t.geschlecht} als Belohnung`));
+          t.geschichte.push(h.resultate.Geschichte);
           break;
         }
         }
@@ -485,8 +443,8 @@ function helmbarten(daten) {
       schicksalsschlag: function(t) {
         switch(würfel(1)) {
         case 1: {
-          let g = nimm('Geschlecht')
-          let f = name(g);
+          let g = nimm('Geschlecht');
+          let f = nimm(`Menschenname ${g}`);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
           let m = g == '♀' ? `meine Rivalin ${f}` : `meinen Rivalen ${f}`;
@@ -498,7 +456,7 @@ function helmbarten(daten) {
         }
         case 2: {
           let g = nimm('Geschlecht');
-          let f = name(g);
+          let f = nimm(`Menschenname ${g}`);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
           t.geschichte.push(wähle(
@@ -511,7 +469,7 @@ function helmbarten(daten) {
         }
         case 3: {
           let g = nimm('Geschlecht');
-          let f = name(g);
+          let f = nimm(`Menschenname ${g}`);
           let u = g == '♀' ? '👩' : '👨';
           t.feinde.push(`${u} ${f}`);
           t.geschichte.push(wähle(
@@ -559,6 +517,29 @@ function helmbarten(daten) {
         }
         }
       }
+    };
+
+    t.talente = [];
+    t.lerne = function (talent) {
+      if (talent == 'Kämpfen') {
+        if (t.talente['Reiten']) {
+          talent = t.favorit = 'Lanze';
+        } else if (t.favorit) {
+          talent = t.favorit;
+        } else {
+          talent = t.favorit = s[t.karriere].waffe(t);
+        }
+      }
+      t.talente[talent] = t.talente[talent] ? t.talente[talent] + 1 : 1;
+      return talent;
+    };
+
+    t.talente_text = function () {
+      if (t.gestorben) { return ''; }
+      return Object.keys(t.talente)
+        .map(x => { return x + '-' + t.talente[x]; })
+        .sort()
+        .join(' ') + "\n";
     };
 
     t.bestes_talent = function(ohne_diese) {
@@ -632,7 +613,7 @@ function helmbarten(daten) {
       let z = s[t.karriere].attribut(t);
       // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
       if (w + t.karrieren > z) s[t.karriere].schicksalsschlag(t);
-    }
+    };
 
     t.verloren = function(gestorben, entkommen) {
       t.alterung();
@@ -681,7 +662,7 @@ function helmbarten(daten) {
         break;
       }
       }
-    }
+    };
 
     t.älter_werden = function() {
       if (t.gestorben) return;
@@ -749,27 +730,27 @@ function helmbarten(daten) {
     t.gefährten_text = function() {
       if (t.gestorben || !t.gefährten.length) return '';
       return "\nGefährten\n" + t.gefährten.map(x => `${x}\n`).join('');
-    }
+    };
 
     t.tiere_text = function() {
       if (t.gestorben || !t.tiere.length) return '';
       return "\nTiere\n" + t.tiere.map(x => `${x}\n`).join('');
-    }
+    };
 
     t.feinde_text = function() {
       if (t.gestorben || !t.feinde.length) return '';
       return "\nFeinde\n" + t.feinde.map(x => `${x}\n`).join('');
-    }
+    };
 
     t.mitgliedschaften_text = function() {
       if (t.gestorben || !t.mitgliedschaften.length) return '';
-      return "\nMitgliedschaften\n" + t.mitgliedschaften.map(x => `🤝 ${x}\n`).join('');
-    }
+      return "\nMitgliedschaften\n" + t.mitgliedschaften.join("\n") + "\n";
+    };
 
     t.stellen_text = function() {
       if (t.gestorben || !t.stellen.length) return '';
-      return "\nStellen\n" + t.stellen.map(x => `💰 ${x}\n`).join('');
-    }
+      return "\nStellen\n" + t.stellen.join("\n") + "\n";
+    };
 
     t.text = function() {
       return (t.gestorben ? '† ' : '')
@@ -784,10 +765,10 @@ function helmbarten(daten) {
         + t.mitgliedschaften_text()
         + t.stellen_text()
         + "\n\n" + t.geschichte.join("\n") + "\n";
-    }
+    };
 
     return t;
-  }
+  };
 
   return h;
 }

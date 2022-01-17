@@ -33,7 +33,7 @@ function helmbarten(daten) {
     // Wähle einen Text aus der Tabelle mit dem entsprechenden Titel
     let text = gewichte(titel);
     // Merke, falls es am Ende ein Suchen und Ersetzen gibt wie /a/b/
-    let m = text.match(/\/([^\/]+)\/([^\/]*)\/([gi])?$/);
+    const m = text.match(/\/([^\/]+)\/([^\/]*)\/([gi])?$/);
     // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
     if (m) text = text.substring(0, text.length - m[0].length);
     while (true) {
@@ -64,11 +64,11 @@ function helmbarten(daten) {
   }
 
   function gewichte(titel) {
-    let t = h.tabellen[titel];
+    const t = h.tabellen[titel];
     if (!t) { console.log(`Es gibt keine Tabelle ${titel}`); return "…"; }
-    let total = t.reduce((n, x) => n + x[1], 0);
+    const total = t.reduce((n, x) => n + x[1], 0);
     // starte mit 1
-    let n = Math.floor(Math.random() * total) + 1;
+    const n = Math.floor(Math.random() * total) + 1;
     let i = 0;
     for (const z of t) {
       i += z[1];

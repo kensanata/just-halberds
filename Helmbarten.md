@@ -84,8 +84,8 @@ automatisch Kämpfen-1.
 
 Du verbringst vier Jahre als Krieger und lernst jedes Jahr etwas.
 Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6. Die
-Tabelle „Reiter“ und „Offizier“ darfst du nur wählen, wenn dein
-Charakter 20 oder älter ist.
+Tabelle „Offizier“ darfst du nur wählen, wenn dein Charakter 20 oder
+älter ist.
 
 | 1W6  | Söldner  | Wache     | Reiter     | Offizier   |
 |:----:|---------:|----------:|-----------:|-----------:|

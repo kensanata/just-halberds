@@ -201,7 +201,7 @@ function helmbarten(daten) {
       lernen: function(t) {
         let gruppe;
         if (t.alter < 20) {
-          gruppe = wähle(['Söldner gewesen', 'Wache geschoben']);
+          gruppe = wähle(['Söldner gewesen', 'Wache geschoben', 'Reiter gemacht']);
         } else if (t.attribute.status >= 8 || t.attribute.intelligenz >= 8) {
           gruppe = wähle(['Reiter gemacht', 'Offizier gemacht']);
         } else { gruppe = wähle(Object.keys(this.talente)); }

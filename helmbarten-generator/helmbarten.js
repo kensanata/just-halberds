@@ -209,68 +209,6 @@ function helmbarten(daten) {
         t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
         return;
       },
-      schicksalsschlag: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          let g = nimm('Geschlecht');
-          let f = nimm(`Menschenname ${g}`);
-          let u = g == '♀' ? '👩' : '👨';
-          t.feinde.push(`${u} ${f}`);
-          let p = g == '♀' ? `sie` : `er`;
-          t.geschichte.push(wähle(
-            [ `Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und ${f} schreckliches angetan. 😱`,
-              `Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. ${f} hat es überlebt, aber verziehen hat ${p} mir nie. 🙁`, ]));
-          break;
-        }
-        case 2: {
-          t.geschichte.push(wähle(
-            [ 'Die Belagerung war fürchterlich. Es gab nur wenig zu essen. 🙁',
-              'Nach der Niederlage haben wir uns monatelang versteckt, haben im Wald gelebt wie Tiere. 🙁', ]));
-          t.alterung();
-          break;
-        }
-        case 3: {
-          t.geschichte.push(wähle(
-            [ 'Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden. 🙁',
-              'Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen. 🙁', ]));
-          t.alterung();
-          break;
-        }
-        case 4: {
-          t.geschichte.push(wähle(
-            [ 'Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥',
-              'Dann habe ich geheiratet. Das Söldnerleben ist vorbei. 😁',
-              'Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁', ]));
-          t.neue_karriere();
-          break;
-        }
-        case 5: {
-          t.geschichte.push('Der Feldzug war ein Fiasko. Ich geriet in Gefangenschaft.');
-          let w = wähle(
-            [ 'in einer Silbermine',
-              'auf einer Galeere',
-              'in einem Kerker',
-              'in der Arena', ]);
-          t.verloren(`${w} verstorben. 💀`,
-                     `${w} entkommen. 😌`);
-          break;
-        }
-        case 6: {
-          t.geschichte.push(wähle(
-            [ 'Der Feldzug war ein Fehler, unser Feldherr total ahnungslos.',
-              'Der Feldzug war ein Fehler, unsere Feldherrin total ahnungslos.',
-              'Wir sind ihnen ahnungslos in die Falle gegangen.',
-              'Wir gingen wie Vieh zum Schlachthof. Ahnungslos.'],
-            [ 'Ein blutiges Gemetzel. Es blieben nicht viele übrig.',
-              'Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.',
-              'Die Fliehenden wurden niedergeritten. Die Leichen waren kaum mehr zu erkennen.'],
-            [ 'Ich blieb verschollen. 💀',
-              'Man hat mich nie gefunden. 💀']));
-          t.gestorben = true;
-          break;
-        }
-        }
-      }
     };
 
     s.Magier = {
@@ -453,7 +391,7 @@ function helmbarten(daten) {
       return bester_wert;
     };
 
-    t.geschichte.push('Gestartet mit ' + t.attribute_hex());
+    // t.geschichte.push('Gestartet mit ' + t.attribute_hex());
     t.karriere = t.beste_karriere();
     t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
 
@@ -517,7 +455,7 @@ function helmbarten(daten) {
       if (h.resultate.alterung) {
         t.attribute[h.resultate.alterung] = Math.max(t.attribute[h.resultate.alterung] - faktor, 0);
         t.gestorben = t.gestorben || t.attribute[h.resultate.alterung] <= 0;
-        t.geschichte.push(a + ' (' + t.attribute_hex() + ')');
+        t.geschichte.push(a /* + ' (' + t.attribute_hex() + ')' */ );
       }
     };
 

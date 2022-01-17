@@ -269,15 +269,16 @@ function generateCharacter(){
 
 ;Pferd
 1,ein [Eigenschaft des Pferdes]s [Ross|Schlachtross|Reitpferd]
-1,ein [Eigenschaft des Pferdes]r [Schimmel|Rappen|Gaul]
+1,ein [Eigenschaft des Pferdes]r [Schimmel|Rappen]
 
 # hier wird -r oder -s angehängt
 ;Eigenschaft des Pferdes
 1,aktive
 1,freundliche
-1,lahme
+1,prächtige
 1,stoische
 1,verspielte
+1,wunderschöne
 
 ;Hund als Belohnung
 1,🐕 [Hund][Ich habe einen Hund adoptiert.@Geschichte]
@@ -365,6 +366,61 @@ function generateCharacter(){
 1,Sehr viel vergesslicher geworden.[intelligenz@alterung]
 2,
 
+;Krieger Schicksalsschlag
+1,[Krieger Opfer]
+2,[Krieger Alter]
+1,[Krieger Spätfolgen]
+1,[Krieger Gefangenschaft]
+1,[Krieger Tod]
+
+;Krieger Opfer
+1,Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und [mein Opfer] schreckliches angetan. 😱
+1,Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. [mein Opfer] hat es überlebt, aber verziehen hat [@wer] mir nie. 🙁`, ]));
+
+;mein Opfer
+1,[Menschenname ♀][👩 [@Menschenname ♀]@feind][sie@wer]
+1,[Menschenname ♂][👨 [@Menschenname ♂]@feind][er@wer]
+
+;Krieger Alter
+1,[Krieger Alter 1] 🙁[ja@alterung]
+
+;Krieger Alter 1
+1,Die Belagerung war fürchterlich. Es gab nur wenig zu essen.
+1,Nach der Niederlage haben wir uns monatelang versteckt, haben im Wald gelebt wie Tiere.
+1,Ich habe desertiert, bin untergetaucht, habe einen neuen Namen angenommen und bin nie wieder zurück gegangen.
+1,Auf dem Feldzug sind wir in einen Hinterhalt geraten und ich bin schwer verletzt worden.
+1,Auf dem Feldzug bin ich krank geworden und fast gestorben. Man hat mich fast zurück gelassen.
+1,Ich wurde entführt und kam erst Jahre später in einem Gefangenenaustausch wieder frei.
+
+;Krieger Spätfolgen
+1,Nach einem Unfall ist das Knie nie wieder so geworden wie früher. 😥[ja@karrierewechsel]
+1,Dann habe ich geheiratet. Das Söldnerleben ist vorbei. 😁[ja@karrierewechsel]
+1,Nach dem Sieg habe ich geheult und gekotzt bis ich nicht mehr konnte. 🙁[ja@karrierewechsel]
+
+;Krieger Gefangenschaft
+1,[Krieger Gefangenschaft 1][ja@gefangenschaft][Nach ${n} Jahren [in Gefangenschaft] verstorben. 💀@verloren][Nach ${n} Jahren [in Gefangenschaft] entkommen. 😌@entkommen]
+
+;Krieger Gefangenschaft 1
+1,Der Feldzug war ein Fiasko. Ich geriet in Gefangenschaft.
+
+;Krieger Tod
+1,[Krieger Tod 1] [Krieger Tod 2] [Krieger Tod 3] 💀[ja@gestorben]
+
+;Krieger Tod 1
+1,Der Feldzug war ein Fehler, unser Feldherr total ahnungslos.
+1,Der Feldzug war ein Fehler, unsere Feldherrin total ahnungslos.
+1,Wir sind ihnen ahnungslos in die Falle gegangen.
+1,Wir gingen wie Vieh zum Schlachthof. Ahnungslos.
+
+;Krieger Tod 2
+1,Ein blutiges Gemetzel. Es blieben nicht viele übrig.
+1,Die Armee wurde zerschlagen, und wir in alle Winde zerstreut.
+1,Die Fliehenden wurden niedergeritten. Die Leichen waren kaum mehr zu erkennen.
+
+;Krieger Tod 3
+1,Ich blieb verschollen.
+1,Man hat mich nie gefunden.
+
 ;Magier Schicksalsschlag
 1,[Magier Rivale]
 1,[Magier Fehlschlag]
@@ -381,9 +437,9 @@ function generateCharacter(){
 1,meinen Mitschüler [Menschenname ♂][👨 [@Menschenname ♂]@feind]
 
 ;Magier Fehlschlag
-1,[Magier Fehlschlag Grund] 🙁[ja@alterung]
+1,[Magier Fehlschlag 1] 🙁[ja@alterung]
 
-;Magier Fehlschlag Grund
+;Magier Fehlschlag 1
 1,Das Experiment ging schief und mich hat es getroffen. Ich habe Jahre gebraucht, um mich zu erholen.
 1,Es war mein Fehler, und ich habe jahrelang probiert, es wieder gut zu machen.
 
@@ -470,14 +526,14 @@ function generateCharacter(){
 1,meinen Rivalen [Menschenname ♂][👨 [@Menschenname ♂]@feind]
 
 ;Taugenichts Schulden
-1,[Taugenichts Schulden Grund] [Taugenichts Gläubiger] 😒
+1,[Taugenichts Schulden 1] [Taugenichts Schulden 2] 😒
 
-;Taugenichts Schulden Grund
+;Taugenichts Schulden 1
 1,Der Plan ist nicht aufgegangen.
 1,Man hat mich ausgetrickst.
 1,Ich wurde ausmanövriert.
 
-;Taugenichts Gläubiger
+;Taugenichts Schulden 2
 1,Nun schulde ich [Feind] mehr Geld als ich je zurückzahlen kann.
 1,[Feind] hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen.
 
@@ -486,35 +542,35 @@ function generateCharacter(){
 1,[Menschenname ♂][👨 [@Menschenname ♂]@feind]
 
 ;Taugenichts Gefallen
-1,[Taugenichts Gefallen Grund] [Taugenichts Gönner] 😒
+1,[Taugenichts Gefallen 1] [Taugenichts Gefallen 2] 😒
 
-;Taugenichts Gefallen Grund
+;Taugenichts Gefallen 1
 1,Ich habe die Hilfe von falschen Freunden angenommen.
 1,Ich liess mich von falschen Freunden blenden.
 1,Ich habe mich auf falsche Freunde verlassen.
 
-;Taugenichts Gönner
+;Taugenichts Gefallen 2
 1,Nun schulde ich [Feind] mehr als nur einen Gefallen.
 1,Jetzt habe ich mich bei [Feind] tief verschuldet.
 
 ;Taugenichts Pranger
-1,[Taugenichts Pranger Grund] [Taugenichts Pranger Folgen] 😥[ja@karrierenwechsel]
+1,[Taugenichts Pranger 1] [Taugenichts Pranger 2] 😥[ja@karrierenwechsel]
 
-;Taugenichts Pranger Grund
+;Taugenichts Pranger 1
 1,Man hat mich erwischt und an den Pranger gestellt.
 1,Ich wurde erwischt und durch die Strassen gejagt.
 1,Ich liess mich erwischen und jetzt zahle ich den Preis.
 
-;Taugenichts Pranger Folgen
+;Taugenichts Pranger 2
 1,Jeder kennt mein Gesicht.
 1,Jeder erkennt in mir den Verbrecher.
 1,Mir traut niemand mehr.
 1,Meine Karriere ist zerstört.
 
 ;Taugenichts Gefangenschaft
-1,[Taugenichts Gefangenschaft Grund][ja@gefangenschaft][Nach ${n} Jahren [in Gefangenschaft] verstorben. 💀@verloren][Nach ${n} Jahren [in Gefangenschaft] entkommen. 😌@entkommen]
+1,[Taugenichts Gefangenschaft 1][ja@gefangenschaft][Nach ${n} Jahren [in Gefangenschaft] verstorben. 💀@verloren][Nach ${n} Jahren [in Gefangenschaft] entkommen. 😌@entkommen]
 
-;Taugenichts Gefangenschaft Grund
+;Taugenichts Gefangenschaft 1
 1,Mein Plan ist aufgeflogen. Ich wurde gefasst.
 
 ;in Gefangenschaft

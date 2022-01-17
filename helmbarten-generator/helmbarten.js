@@ -331,64 +331,6 @@ function helmbarten(daten) {
         t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
         return;
       },
-      schicksalsschlag: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          let g = nimm('Geschlecht');
-          let f = nimm(`Menschenname ${g}`);
-          let u = g == '♀' ? '👩' : '👨';
-          t.feinde.push(`${u} ${f}`);
-          let m = g == '♀' ? `meine Mitschülerin ${f}` : `meinen Mitschüler ${f}`;
-          t.geschichte.push(`Ich habe ${m} blossgestellt. 😏`);
-          break;
-        }
-        case 2: {
-          t.geschichte.push(wähle(
-            [ 'Das Experiment ging schief und mich hat es getroffen. 🙁',
-              'Es war mein Fehler, und ich habe jahrelang dafür bezahlt. 🙁', ]));
-          t.alterung();
-          break;
-        }
-        case 3: {
-          let f = nimm('Dämon');
-          t.feinde.push(`👹 ${f}`);
-          t.geschichte.push(wähle(
-            [ 'Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.',
-              'Ich habe in den Abgrund geschaut. Es war fürchterlich.',
-              'Die Forschung hat mich an schreckliche Orte geführt.', ],
-            [ `Nun kennt der Dämon ${f} kennt meinen Namen und sucht mich. 😱`,
-              `Ich habe den Dämon ${f} verspottet. Das war ein grosser Fehler. 😱`, ]));
-          break;
-        }
-        case 4: {
-          t.geschichte.push(wähle(
-            [ 'Ich habe auf dem Weltenbaum Yggdrasil fast den Verstand verloren. 😥',
-              'Ich war nicht mehr bereit, all die Opfer zu bringen. Strenge Disziplin, jeden Tag, jede Stunde. 😥',
-              'Ich wollte nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr. 😥', ]));
-          t.neue_karriere();
-          break;
-        }
-        case 5: {
-          let w = nimm('Welt');
-          t.geschichte.push(`Ich habe mich in ${w} verirrt.`);
-          t.verloren(`in ${w} verstorben. 💀`,
-                     'Wanderung habe ich den Weg zurück nach Midgard gefunden. 😌');
-          break;
-        }
-        case 6: {
-          let w = nimm('Welt');
-          t.geschichte.push(wähle(
-            [ 'Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.',
-              `Wir waren unterwegs nach ${w}, als plötzlich die Hölle los ging.`,
-              `Wir waren auf dem Rückweg von ${w}, als uns Yggradsil unter den Füssen weg brach.`, ],
-            [ 'Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer. 💀',
-              'Und da habe ich einen Fehler gemacht. Die Macht war unkontrollierbar und hat mich verzehrt. 💀',
-              'Ich habe alles gegeben. Bin ausgebrannt, alt geworden. Ich habe es nicht mehr nach Hause geschafft. 💀', ]));
-          t.gestorben = true;
-          break;
-        }
-        }
-      }
     };
 
     s.Taugenichts = {
@@ -445,83 +387,6 @@ function helmbarten(daten) {
         t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
         return;
       },
-      schicksalsschlag: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          let g = nimm('Geschlecht');
-          let f = nimm(`Menschenname ${g}`);
-          let u = g == '♀' ? '👩' : '👨';
-          t.feinde.push(`${u} ${f}`);
-          let m = g == '♀' ? `meine Rivalin ${f}` : `meinen Rivalen ${f}`;
-          t.geschichte.push(wähle(
-            [ `Ich habe ${m} öffentlich gedemütigt. 😏`,
-              `Ich habe ${m} um viel Geld betrogen. 😏`,
-              `Ich habe ${m} an die Obrigkeit verraten. 😏`, ]));
-          break;
-        }
-        case 2: {
-          let g = nimm('Geschlecht');
-          let f = nimm(`Menschenname ${g}`);
-          let u = g == '♀' ? '👩' : '👨';
-          t.feinde.push(`${u} ${f}`);
-          t.geschichte.push(wähle(
-            [ 'Der Plan ist nicht aufgegangen.',
-              'Man hat mich ausgetrickst.', ,
-              'Ich wurde ausmanövriert.', ],
-            [ `Nun schulde ich ${f} mehr Geld als ich je zurückzahlen kann. 😒`,
-              `${f} hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen. 😒`, ]));
-          break;
-        }
-        case 3: {
-          let g = nimm('Geschlecht');
-          let f = nimm(`Menschenname ${g}`);
-          let u = g == '♀' ? '👩' : '👨';
-          t.feinde.push(`${u} ${f}`);
-          t.geschichte.push(wähle(
-            [ 'Ich habe die Hilfe von falschen Freunden angenommen.',
-              'Ich liess mich von falschen Freunden blenden.',
-              'Ich habe mich auf falsche Freunde verlassen.', ],
-            [ `Nun schulde ich ${f} mehr als nur einen Gefallen. 😒`,
-              `Jetzt habe ich mich bei ${f} tief verschuldet. 😒`, ]));
-          break;
-        }
-        case 4: {
-          t.geschichte.push(wähle(
-            [ 'Man hat mich erwischt und an den Pranger gestellt.',
-              'Ich wurde erwischt und durch die Strassen gejagt.',
-              'Ich liess mich erwischen und jetzt zahle ich den Preis.', ],
-            [ 'Jeder kennt mein Gesicht. 😥',
-              'Jeder erkennt in mir den Verbrecher. 😥',
-              'Mir traut niemand mehr. 😥', ]));
-          t.neue_karriere();
-          break;
-        }
-        case 5: {
-          t.geschichte.push('Mein Plan ist aufgeflogen. Ich wurde gefasst.');
-          let w = wähle(
-            [ 'in einer Silbermine',
-              'auf einer Galeere',
-              'in einem Kerker',
-              'in der Arena', ]);
-          t.verloren(`${w} verstorben. 💀`,
-                     `${w} entkommen. 😌`);
-          break;
-        }
-        case 6: {
-          t.geschichte.push(wähle(
-            [ 'Es gab einen Bandenkrieg.',
-              'Es gab einen Aufstand.',
-              'Die Meute machte mit uns kurzen Prozess.' ],
-            [ 'Die Strassenhunde sind fett geworden.',
-              'Die Bäume trugen damals seltsame Früchte.',
-              'Die Fische sind fett geworden.' ],
-            [ 'Mich hat man nie wieder gesehen. 💀',
-              'Ich blieb unauffindbar. 💀', ]));
-          t.gestorben = true;
-          break;
-        }
-        }
-      }
     };
 
     t.talente = [];
@@ -618,7 +483,14 @@ function helmbarten(daten) {
       let w = würfel(2);
       let z = s[t.karriere].attribut(t);
       // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
-      if (w + t.karrieren > z) s[t.karriere].schicksalsschlag(t);
+      if (w + t.karrieren > z) {
+        t.geschichte.push(nimm(t.karriere + ' Schicksalsschlag'));
+        if (h.resultate.feind) { t.feinde.push(h.resultate.feind); }
+        if (h.resultate.alterung) { t.alterung() }
+        if (h.resultate.karrierenwechsel) { t.neue_karriere(); }
+        if (h.resultate.gefangenschaft) { t.verloren(h.resultate.verloren, h.resultate.entkommen); }
+        if (h.resultate.gestorben) { t.gestorben = true; }
+      }
     };
 
     t.verloren = function(gestorben, entkommen) {
@@ -632,9 +504,9 @@ function helmbarten(daten) {
         t.alterung();
       }
       if (t.gestorben) {
-        t.geschichte.push(`Nach ${jahre} Jahren ${gestorben}`);
+        t.geschichte.push(gestorben.replace('${n}', jahre));
       } else {
-        t.geschichte.push(`Nach ${jahre} Jahren ${entkommen}`);
+        t.geschichte.push(entkommen.replace('${n}', jahre));
         t.neue_karriere();
       }
     };

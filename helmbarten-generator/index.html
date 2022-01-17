@@ -134,28 +134,6 @@ function generateCharacter(){
 1,Niflheim
 1,Muspelheim
 
-;Dämon
-1,[Dämon 1] [Dämon 2]
-
-;Dämon 1
-1,Auge
-1,Herr
-1,Herrin
-1,Mühle
-1,Rabe
-1,Wolf
-1,Zahn
-
-;Dämon 2
-1,der Finsternis
-1,der Fäulnis
-1,der Pest
-1,der Zeit
-1,des Abgrunds
-1,des Eises
-1,des Feuers
-1,des Zorns
-
 ;Geheimbund als Belohnung
 1,🤝 [Geheimbund] [[@Geheimbund] haben mich aufgenommen.@Geschichte]
 
@@ -386,6 +364,181 @@ function generateCharacter(){
 1,Sehr viel ausser Atem geworden.[ausdauer@alterung]
 1,Sehr viel vergesslicher geworden.[intelligenz@alterung]
 2,
+
+;Magier Schicksalsschlag
+1,[Magier Rivale]
+1,[Magier Fehlschlag]
+1,[Magier Dämon]
+1,[Magier Burnout]
+1,[Magier Verirrt]
+1,[Magier Tod]
+
+;Magier Rivale
+1,Ich habe [meinen Magier] blossgestellt. 😏
+
+;meinen Magier
+1,meine Mitschülerin [Menschenname ♀][👩 [@Menschenname ♀]@feind]
+1,meinen Mitschüler [Menschenname ♂][👨 [@Menschenname ♂]@feind]
+
+;Magier Fehlschlag
+1,[Magier Fehlschlag Grund] 🙁[ja@alterung]
+
+;Magier Fehlschlag Grund
+1,Das Experiment ging schief und mich hat es getroffen. Ich habe Jahre gebraucht, um mich zu erholen.
+1,Es war mein Fehler, und ich habe jahrelang probiert, es wieder gut zu machen.
+
+;Magier Dämon
+1,[Magier Dämon 1] [Magier Dämon 1]. 😱
+
+;Magier Dämon 1
+1,Ich habe Dinge gesehen, die würdet ihr mir nicht glauben.
+1,Ich habe in den Abgrund geschaut. Es war fürchterlich.
+1,Die Forschung hat mich an schreckliche Orte geführt.
+1,Gewisse Bücher sollte man nicht lesen. Sie sind unkontrollierbar!
+
+;Magier Dämon 2
+1,Nun kennt der Dämon [Dämon][👹 [@Dämon]@feind] meinen Namen und sucht mich.
+1,Ich habe den Dämon [Dämon][👹 [@Dämon]@feind] verspottet. Das war ein grosser Fehler.
+
+;Dämon
+1,[Dämon 1] [Dämon 2]
+
+;Dämon 1
+1,Auge
+1,Herr
+1,Herrin
+1,Mühle
+1,Rabe
+1,Wolf
+1,Zahn
+
+;Dämon 2
+1,der Finsternis
+1,der Fäulnis
+1,der Pest
+1,der Zeit
+1,des Abgrunds
+1,des Eises
+1,des Feuers
+1,des Zorns
+
+;Magier Burnout
+1,[Magier Burnout 1] 😥[ja@karrierenwechsel]
+
+;Magier Burnout 1
+1,Ich habe auf dem Weltenbaum Yggdrasil fast den Verstand verloren.
+1,Ich bin nicht mehr bereit, all die Opfer zu bringen. Ich hasse diese strenge Disziplin, jeden Tag, jede Stunde.
+1,Ich will nur noch raus. In meinem Kopf schreien jeden Abend böse Geister. Ich kann nicht mehr.
+1,Für mehr Macht müsste ich einen fürchterlichen Pakt eingehen. Das geht so nicht weiter.
+
+;Magier Verirrt
+2,Ich habe mich in [Welt] verirrt.[ja@gefangenschaft][Nach ${n} Jahren in [@Welt] einsam und allein verstorben. 💀@verloren][Nach ${n} Jahren Wanderung habe ich den Weg zurück nach Midgard gefunden. 😌@entkommen]
+1,Ich diene [Lehrmeister] in [Welt].[ja@gefangenschaft][Nach ${n} Jahren in [@Welt] verstorben. 💀@verloren][Nach ${n} Jahren verstarb [@wer] und ich kehre zurück nach Midgard. 😌@entkommen]
+
+;Lehrmeister
+1,einer grossen Magierin[meine Lehrerin@wer]
+1,einem grossen Magier[mein Lehrer@wer]
+
+;Magier Tod
+1,[Magier Tod 1] [Magier Tod 2] 💀[ja@gestorben]
+
+;Magier Tod 1
+1,Wir haben die dünne Grenze zwischen den Ebenen untersucht, und es kam zu einem Unglück.
+1,Wir waren unterwegs nach [Welt], als plötzlich die Hölle los ging.
+1,Wir waren auf dem Rückweg von [Welt], als uns Yggrasil unter den Füssen weg brach.
+
+;Magier Tod 2
+1,Ich habe mich für meine Freunde geopfert. Meine Seele schreit dort noch immer.
+1,Und da habe ich einen Fehler gemacht. Die Macht war unkontrollierbar und hat mich verzehrt.
+1,Ich habe alles gegeben. Bin ausgebrannt, alt geworden. Ich habe es nicht mehr nach Hause geschafft.
+
+;Taugenichts Schicksalsschlag
+1,[Taugenichts Rivale]
+1,[Taugenichts Schulden]
+1,[Taugenichts Gefallen]
+1,[Taugenichts Pranger]
+1,[Taugenichts Gefangenschaft]
+1,[Taugenichts Tod]
+
+;Taugenichts Rivale
+1,Ich habe [meinen Rivalen] öffentlich gedemütigt. 😏
+1,Ich habe [meinen Rivalen] um viel Geld betrogen. 😏
+1,Ich habe [meinen Rivalen] an die Obrigkeit verraten. 😏
+
+;meinen Rivalen
+1,meine Rivalin [Menschenname ♀][👩 [@Menschenname ♀]@feind]
+1,meinen Rivalen [Menschenname ♂][👨 [@Menschenname ♂]@feind]
+
+;Taugenichts Schulden
+1,[Taugenichts Schulden Grund] [Taugenichts Gläubiger] 😒
+
+;Taugenichts Schulden Grund
+1,Der Plan ist nicht aufgegangen.
+1,Man hat mich ausgetrickst.
+1,Ich wurde ausmanövriert.
+
+;Taugenichts Gläubiger
+1,Nun schulde ich [Feind] mehr Geld als ich je zurückzahlen kann.
+1,[Feind] hat mir daraufhin viel Geld geliehen, aber das kann ich nie zurückzahlen.
+
+;Feind
+1,[Menschenname ♀][👩 [@Menschenname ♀]@feind]
+1,[Menschenname ♂][👨 [@Menschenname ♂]@feind]
+
+;Taugenichts Gefallen
+1,[Taugenichts Gefallen Grund] [Taugenichts Gönner] 😒
+
+;Taugenichts Gefallen Grund
+1,Ich habe die Hilfe von falschen Freunden angenommen.
+1,Ich liess mich von falschen Freunden blenden.
+1,Ich habe mich auf falsche Freunde verlassen.
+
+;Taugenichts Gönner
+1,Nun schulde ich [Feind] mehr als nur einen Gefallen.
+1,Jetzt habe ich mich bei [Feind] tief verschuldet.
+
+;Taugenichts Pranger
+1,[Taugenichts Pranger Grund] [Taugenichts Pranger Folgen] 😥[ja@karrierenwechsel]
+
+;Taugenichts Pranger Grund
+1,Man hat mich erwischt und an den Pranger gestellt.
+1,Ich wurde erwischt und durch die Strassen gejagt.
+1,Ich liess mich erwischen und jetzt zahle ich den Preis.
+
+;Taugenichts Pranger Folgen
+1,Jeder kennt mein Gesicht.
+1,Jeder erkennt in mir den Verbrecher.
+1,Mir traut niemand mehr.
+1,Meine Karriere ist zerstört.
+
+;Taugenichts Gefangenschaft
+1,[Taugenichts Gefangenschaft Grund][ja@gefangenschaft][Nach ${n} Jahren [in Gefangenschaft] verstorben. 💀@verloren][Nach ${n} Jahren [in Gefangenschaft] entkommen. 😌@entkommen]
+
+;Taugenichts Gefangenschaft Grund
+1,Mein Plan ist aufgeflogen. Ich wurde gefasst.
+
+;in Gefangenschaft
+1,in einer Silbermine
+1,auf einer Galeere
+1,in einem Kerker
+1,in der Arena
+
+;Taugenichts Tod
+1,[Taugenichts Tod 1] [Taugenichts Tod 2] [Taugenichts Tod 3] 💀[ja@gestorben]
+
+;Taugenichts Tod 1
+1,Es gab einen Bandenkrieg.
+1,Es gab einen Aufstand.
+1,Die Meute machte mit uns kurzen Prozess.
+
+;Taugenichts Tod 2
+1,Die Strassenhunde sind fett geworden.
+1,Die Bäume trugen damals seltsame Früchte.
+1,Die Fische sind fett geworden.
+
+;Taugenichts Tod 3
+1,Mich hat man nie wieder gesehen.
+1,Ich blieb unauffindbar.
 
 </pre>
 </body>

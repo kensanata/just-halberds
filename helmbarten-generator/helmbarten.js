@@ -404,7 +404,7 @@ function helmbarten(daten) {
     t.weitermachen = function() {
       if (t.gestorben) return false;
       if (würfel(1) < t.karrieren) {
-        t.geschichte.push("Ich bin bereit für das Abenteurerleben! 💚");
+        t.geschichte.push(nimm('Abenteurerleben!'));
         return false;
       }
       if (!t.karriere) t.karriere = t.beste_karriere();

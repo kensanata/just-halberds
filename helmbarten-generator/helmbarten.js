@@ -130,7 +130,6 @@ function helmbarten(daten) {
       status: würfel(2),
     };
 
-
     t.attribute_text = function () {
       // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
       return `Kraft-${t.attribute.kraft} Geschick-${t.attribute.geschick}`
@@ -152,12 +151,6 @@ function helmbarten(daten) {
     s.Krieger = {
       attribut: function(t) {
         return Math.max(t.attribute.kraft, t.attribute.ausdauer);
-      },
-      talente: {
-        'Söldner gewesen': ['Bauen', 'Rennen', 'Taktik', 'Feldscher', 'Handwerk', 'Kämpfen'],
-        'Wache geschoben': ['Bürokratie', 'Disziplin', 'Bauen', 'Prügeln', 'Brauen', 'Kämpfen'],
-        'Reiter gemacht': ['Reiten', 'Singen', 'Taktik', 'Spionieren', 'Kultur', 'Kämpfen'],
-        'Offizier gemacht': ['Schrift', 'Bürokratie', 'Taktik', 'Diplomatie', 'Benehmen', 'Kämpfen'],
       },
       waffe: function(t) {
         if (t.attribute.geschick > t.attribute.kraft) return 'Bogen';
@@ -198,28 +191,11 @@ function helmbarten(daten) {
         }
         }
       },
-      lernen: function(t) {
-        let gruppe;
-        if (t.alter < 20) {
-          gruppe = wähle(['Söldner gewesen', 'Wache geschoben', 'Reiter gemacht']);
-        } else if (t.attribute.status >= 8 || t.attribute.intelligenz >= 8) {
-          gruppe = wähle(['Reiter gemacht', 'Offizier gemacht']);
-        } else { gruppe = wähle(Object.keys(this.talente)); }
-        t.geschichte.push("4 Jahre " + gruppe);
-        t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
-        return;
-      },
     };
 
     s.Magier = {
       attribut: function(t) {
         return Math.max(t.attribute.intelligenz, t.attribute.bildung);
-      },
-      talente: {
-        'aggressive Magie studiert': ['Feuer', 'Luft', 'Wasser', 'Erde', 'Sturm', 'Kämpfen'],
-        'passive Magie studiert': ['Heilung', 'Schlaf', 'Augen', 'Türen', 'Botanik', 'Brauen'],
-        'manipulative Magie studiert': ['Bezaubern', 'Singen', 'Diplomatie', 'Illusion', 'Psychologie', 'Schrift'],
-        'transgressive Magie studiert': ['Gestaltwandlung', 'Nekromantie', 'Transmutation', 'Fusion', 'Zoologie', 'Weltenwandel'],
       },
       waffe: function(t) {
         return 'Messer';
@@ -263,23 +239,11 @@ function helmbarten(daten) {
         }
         }
       },
-      lernen: function(t) {
-        let gruppe = wähle(Object.keys(this.talente));
-        t.geschichte.push("4 Jahre " + gruppe);
-        t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
-        return;
-      },
     };
 
     s.Taugenichts = {
       attribut: function(t) {
         return Math.max(t.attribute.geschick, t.attribute.status);
-      },
-      talente: {
-        'in einer Diebesbande gewesen': ['Schleichen', 'Spionieren', 'Rennen', 'Klettern', 'Ablenken', 'Knacken'],
-        'in einer Schlägerbande verbracht': ['Kämpfen', 'Handwerk', 'Rennen', 'Feldscher', 'Taktik', 'Singen'],
-        'gelogen und betrogen': ['Kultur', 'Benehmen', 'Bürokratie', 'Schrift', 'Reden', 'Handeln'],
-        'Mörder gewesen': ['Kämpfen', 'Brauen', 'Feldscher', 'Schleichen', 'Benehmen', 'Tüfteln'],
       },
       waffe: function(t) {
         return wähle(['Messer', 'Degen']);
@@ -319,12 +283,21 @@ function helmbarten(daten) {
         }
         }
       },
-      lernen: function(t) {
-        let gruppe = wähle(Object.keys(this.talente));
-        t.geschichte.push("4 Jahre " + gruppe);
-        t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(wähle(this.talente[gruppe])) + ' gelernt.').join(" "));
-        return;
-      },
+    };
+
+    function lernen() {
+      let tabelle = t.karriere;
+      if (t.karriere == 'Krieger') {
+        if (t.alter < 20) {
+          tabelle += ' Anfänger';
+        } else if (t.attribute.status >= 8 || t.attribute.intelligenz >= 8) {
+          tabelle += ' Bevorzugte';
+        }
+      }
+      let tätigkeit = nimm(tabelle);
+      t.geschichte.push("4 Jahre " + tätigkeit);
+      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(nimm(tätigkeit)) + ' gelernt.').join(" "));
+      return;
     };
 
     t.talente = [];
@@ -414,7 +387,7 @@ function helmbarten(daten) {
     t.karriereschritt = function() {
       t.karrieren += 1;
       t.geschichte.push(`<hr>Karriere ${t.karrieren}, Alter ${t.alter}`);
-      s[t.karriere].lernen(t);
+      lernen(t);
     };
 
     t.schicksalsschlag = function() {

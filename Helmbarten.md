@@ -345,15 +345,15 @@ Treffern, darfst du die Trefferwürfel selber auf die drei physischen
 Attribute verteilen. Einen etwaigen Übertrag musst du von einem
 anderen physischen Attribut abziehen.
 
+Sinkt eines deiner Attribute auf 0, bist du leicht verletzt und
+brichst ohnmächtig zusammen. Nach 10min wachst du wieder auf.
+
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9. Sie wird
 > zum ersten Mal getroffen und muss 4+5=9 Schaden abziehen. Berta
 > würfelt eine 1, also muss Brunhilde 9 von Kraft (10-9=1) abziehen.
 > Sie wird nicht ohnmächtig! Beim zweiten Mal muss sie 2+6=8 Treffer
 > abziehen und entscheidet sich, 2 vom Geschick (6-2=4) und 6 von der
 > Ausdauer (9-6=3) abzuziehen. Jetzt wird es knapp…
-
-Sinkt eines deiner Attribute auf 0, bist du leicht verletzt und
-brichst ohnmächtig zusammen. Nach 10min wachst du wieder auf.
 
 Nach dem Kampf erholen sich alle Attribute um die Hälfte des fehlenden
 Betrages (runde ab). Wenn du von einem Feldscher oder einem Heiler

@@ -39,8 +39,8 @@ function helmbarten(daten) {
     while (true) {
       let e = false;
       // [2W6] würfelt 2W6
-      text = text.replaceAll(/\[(\d+)W6\]/g,
-                             (m, t) => { e = true; return würfel(Number(t)); });
+      text = text.replaceAll(/\[(\d+)W(\d+)(?:\+(\d+))?\]/g,
+                             (m, n, d, p) => { e = true; return würfel(Number(n), Number(d), p ? Number(p) : 0); });
       if (e) continue;
       // [a@b] speichert a als Resultat für b
       text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
@@ -92,12 +92,12 @@ function helmbarten(daten) {
     return a;
   }
 
-  function würfel(anzahl) {
+  function würfel(anzahl, seiten = 6, plus = 0) {
     let total = 0;
     for (var i = 0; i < anzahl; i++) {
-      total += Math.floor(Math.random() * 6 + 1);
+      total += Math.floor(Math.random() * seiten + 1);
     }
-    return total;
+    return total + plus;
   }
 
   h.charakter = function() {

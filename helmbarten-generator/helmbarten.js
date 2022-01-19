@@ -5,30 +5,31 @@
 */
 
 function helmbarten(daten) {
+  const debug = false;
   let h = {};
 
   h.tabellen = transformieren(daten);
   
   function transformieren(daten) {
-    let d = {};
-    let t;
+    let tabellen = {};
+    let zeilen;
     daten.split("\n").forEach(zeile => {
       zeile.replace(/#.*/, ""); // Kommentare
       let m;
-      if (zeile.startsWith(";")) { t = []; d[zeile.substring(1)] = t; }
-      else if ((m = zeile.match(/^(\d),(.*)/))) { t.push([m[2], Number(m[1])]); }
+      if (zeile.startsWith(";")) { zeilen = []; tabellen[zeile.substring(1)] = zeilen; }
+      else if ((m = zeile.match(/^(\d),(.*)/))) { zeilen.push([m[2], Number(m[1])]); }
     });
-    return d;
+    return tabellen;
   }
 
   // Die Resultate vom letzten nimm Aufruf bleiben gespeichert
   h.resultate = {};
 
-  function nimm(titel, level) {
+  function nimm(titel, level, t) {
     level = level || 1;
-    if (level == 1) h.resultate = {};
+    if (level == 1) h.resultate = t ? { Geschlecht: t.geschlecht } : {};
     if (level > 20) { console.log(`Rekursion über 20 Stufen tief für ${titel}`); return "…"; }
-    // [@a] nimmt das schon vorhandene Resultat für die Tabelle a
+    // [@a] nimmt das schon vorhandene Resultat für a
     if (titel.startsWith('@')) return h.resultate[titel.substring(1)];
     // Wähle einen Text aus der Tabelle mit dem entsprechenden Titel
     let text = gewichte(titel);
@@ -42,17 +43,20 @@ function helmbarten(daten) {
       text = text.replaceAll(/\[(\d+)W(\d+)(?:\+(\d+))?\]/g,
                              (m, n, d, p) => { e = true; return würfel(Number(n), Number(d), p ? Number(p) : 0); });
       if (e) continue;
+      // [a@@b] fügt a der Liste b von t hinzu
+      text = text.replaceAll(/\[([^\[\]]+)@@([^\[\]]+)\]/g,
+                             (m, w, u) => { e = true; t[u].push(w); return ''; });
       // [a@b] speichert a als Resultat für b
       text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
-                             (m, t, u) => { e = true; h.resultate[u] = t; return ''; });
+                             (m, w, u) => { e = true; h.resultate[u] = w; return ''; });
       if (e) continue;
       // [a|b] wählt a oder b
       text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g,
-                             (m, t) => { e = true; return wähle(t.split('|')); });
+                             (m, w) => { e = true; return wähle(w.split('|')); });
       if (e) continue;
       // [a] wählt einen Eintrag aus der Tabelle a
       text = text.replaceAll(/\[([^\[\]]+)\]/g,
-                             (m, t) => { e = true; return nimm(t, level + 1); });
+                             (m, w) => { e = true; return nimm(w, level + 1, t); });
       if (e) continue;
       break;
     }
@@ -106,11 +110,10 @@ function helmbarten(daten) {
     
     t.geschichte = [];
     t.alter = 16;
-    t.geschlecht = nimm('Geschlecht');
-    t.name = nimm(`Menschenname ${t.geschlecht}`);
+    t.name = nimm(`Menschenname`);
+    t.geschlecht = h.resultate.Geschlecht;
     t.karrieren = 0;
     t.gestorben = false;
-    t.belohnungen = [];
     t.mitgliedschaften = [];
     t.gefährten = [];
     t.tiere = [];
@@ -156,41 +159,6 @@ function helmbarten(daten) {
         if (t.attribute.geschick > t.attribute.kraft) return 'Bogen';
         return wähle(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
       },
-      gratis: 'Kämpfen',
-      belohnung: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          t.attribute.intelligenz += 1;
-          t.geschichte.push("Bin etwas schlauer geworden.");
-          break;
-        }
-        case 2: {
-          t.attribute.bildung += 2;
-          t.geschichte.push("Habe ziemlich dazu gelernt.");
-          break;
-        }
-        case 3: {
-          t.attribute.status += 1;
-          t.geschichte.push("Bin etwas aufgestiegen in der Welt.");
-          break;
-        }
-        case 4: {
-          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 5: {
-          t.tiere.push(nimm('Pferd als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 6: {
-          t.stellen.push(nimm('Land als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        }
-      },
     };
 
     s.Magier = {
@@ -200,45 +168,6 @@ function helmbarten(daten) {
       waffe: function(t) {
         return 'Messer';
       },
-      gratis: 'Schrift',
-      belohnung: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          t.attribute.intelligenz += 2;
-          t.geschichte.push("Bin ziemlich schlauer geworden.");
-          break;
-        }
-        case 2: {
-          t.attribute.bildung += 1;
-          t.geschichte.push("Habe etwas dazu gelernt.");
-          break;
-        }
-        case 3: {
-          t.attribute.status += 2;
-          t.geschichte.push("Bin ziemlich aufgestiegen in der Welt.");
-          break;
-        }
-        case 4: {
-          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 5: {
-          let g = nimm('Gefährte');
-          if (h.resultate.Tier) t.tiere.push(g);
-          else t.gefährten.push(g);
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 6: {
-          let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
-          t.lehrstühle.push(j);
-          t.stellen.push(`💰 Lehrstuhl für ${j}`);
-          t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
-          break;
-        }
-        }
-      },
     };
 
     s.Taugenichts = {
@@ -247,41 +176,6 @@ function helmbarten(daten) {
       },
       waffe: function(t) {
         return wähle(['Messer', 'Degen']);
-      },
-      gratis: 'Rennen',
-      belohnung: function(t) {
-        switch(würfel(1)) {
-        case 1: {
-          t.attribute.intelligenz += 1;
-          t.geschichte.push("Bin etwas schlauer geworden.");
-          break;
-        }
-        case 2: {
-          t.attribute.bildung += 2;
-          t.geschichte.push("Habe ziemlich dazu gelernt.");
-          break;
-        }
-        case 3: {
-          t.attribute.status += 2;
-          t.geschichte.push("Bin ziemlich aufgestiegen in der Welt.");
-          break;
-        }
-        case 4: {
-          t.mitgliedschaften.push(nimm('Geheimbund als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 5: {
-          t.tiere.push(nimm('Hund als Belohnung'));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        case 6: {
-          t.stellen.push(nimm(`Posten ${t.geschlecht} als Belohnung`));
-          t.geschichte.push(h.resultate.Geschichte);
-          break;
-        }
-        }
       },
     };
 
@@ -348,7 +242,7 @@ function helmbarten(daten) {
           beste_karriere = karriere;
         }
       }
-      if (beste_karriere) t.geschichte.push(beste_karriere + ' geworden.');
+      if (beste_karriere) t.geschichte.push(`${beste_karriere} geworden.`);
       return beste_karriere;
     };
 
@@ -364,9 +258,9 @@ function helmbarten(daten) {
       return bester_wert;
     };
 
-    // t.geschichte.push('Gestartet mit ' + t.attribute_hex());
+    if (debug) t.geschichte.push('Gestartet mit ' + t.attribute_hex());
     t.karriere = t.beste_karriere();
-    t.geschichte.push(t.lerne(s[t.karriere].gratis) + ' gelernt.');
+    t.geschichte.push(t.lerne(nimm(`${t.karriere} Aufnahme`)) + ' gelernt.');
 
     t.neue_karriere = function() {
       t.alter += 1;
@@ -395,7 +289,7 @@ function helmbarten(daten) {
       let z = s[t.karriere].attribut(t);
       // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
       if (w + t.karrieren > z) {
-        t.geschichte.push(nimm(t.karriere + ' Schicksalsschlag'));
+        t.geschichte.push(nimm(`${t.karriere} Schicksalsschlag`));
         if (h.resultate.feind) { t.feinde.push(h.resultate.feind); }
         if (h.resultate.alterung) { t.alterung() }
         if (h.resultate.karrierenwechsel) { t.neue_karriere(); }
@@ -428,7 +322,8 @@ function helmbarten(daten) {
       if (h.resultate.alterung) {
         t.attribute[h.resultate.alterung] = Math.max(t.attribute[h.resultate.alterung] - faktor, 0);
         t.gestorben = t.gestorben || t.attribute[h.resultate.alterung] <= 0;
-        t.geschichte.push(a /* + ' (' + t.attribute_hex() + ')' */ );
+        t.geschichte.push(a);
+        if (debug) t.geschichte.push('Weiter mit ' + t.attribute_hex());
       }
     };
 
@@ -440,24 +335,34 @@ function helmbarten(daten) {
       };
     };
 
-    // Belohnungen sind callbacks, die gesammelt werden und am Ende ein Mal ausgeführt werden.
-    t.belohnung_merken = function() {
-      t.belohnungen.push(s[t.karriere].belohnung);
-    };
-
+    let belohnungen = [];
     while(t.weitermachen()) {
       t.karriereschritt();
-      t.belohnung_merken();
+      // Belohnungen werden gesammelt und am Ende ein Mal ausgeführt werden.
+      belohnungen.push(`${t.karriere} Belohnung`);
       t.schicksalsschlag();
       t.älter_werden();
     }
 
-    t.belohnungen_erhalten = function() {
-      t.geschichte.push('<hr>Belohnungen');
-      t.belohnungen.forEach(x => x(t));
+    function lehrstuhl() {
+      let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
+      t.lehrstühle.push(j);
+      t.stellen.push(`💰 Lehrstuhl für ${j}`);
+      t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
     };
 
-    if (!t.gestorben) t.belohnungen_erhalten();
+    belohnungen_erhalten = function() {
+      t.geschichte.push('<hr>Belohnungen');
+      belohnungen.forEach(function (x) {
+        const bonus = nimm(x, 1, t).split('+');
+        // intelligenz+1
+        if (bonus.length == 2) t.attribute[bonus[0]]+=Number(bonus[1])
+        // lehrstuhl()
+        else if (bonus.length == 1) eval(bonus[0]);
+      });
+    };
+
+    if (!t.gestorben) belohnungen_erhalten();
 
     t.titel = function() {
       let talent = t.bestes_talent();

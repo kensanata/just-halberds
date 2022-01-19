@@ -38,9 +38,13 @@ function generateCharacter(){
 # Eine Zahl mit einem Komma beginnt einen Eintrag in einer Tabelle mit entsprechender Gewichtung.
 # Mit '[2W6]' oder '[1W6+3]' wird Würfelresultat eingesetzt.
 # Mit '[a]' wird ersetzt mit einem Resultat der Tabelle 'a'.
-# Mit '[@a]' wird ein vorheriges Resultat der Tabelle 'a' nocheinmal verwendet.
-# Mit '[a@b]' wird das Resultat der Tabelle 'a' als Resultat der Tabelle 'b' gespeichert.
+# Mit '[a@b]' wird 'a' als Wert 'b' gespeichert.
+# Mit '[@b]' wird der Wert 'b' wieder verwendet, oder ein vorheriges Resultat der Tabelle 'b'.
+# {t.attribute.intelligenz += 1} wird Code ausgeführt.
 # Weil diese Daten im HTML stehen, müssen < & > in den Tabellen als &lt; &amp; &gt; geschrieben werden.
+
+;Krieger Aufnahme
+1,Kämpfen
 
 ;Krieger
 1,Söldner
@@ -89,6 +93,17 @@ function generateCharacter(){
 1,Benehmen
 1,Kämpfen
 
+;Krieger Belohnung
+1,intelligenz+1[Bin etwas schlauer geworden.@@geschichte]
+1,bildung+2[Habe ziemlich dazu gelernt.@@geschichte]
+1,status+1[Bin etwas aufgestiegen in der Welt.@@geschichte]
+1,[[Geheimbund als Belohnung]@@mitgliedschaften]
+1,[[Pferd als Belohnung]@@tiere]
+1,[[Land als Belohnung]@@stellen]
+
+;Magier Aufnahme
+1,Schrift
+
 ;Magier
 1,aggressive Magie
 1,passive Magie
@@ -126,6 +141,17 @@ function generateCharacter(){
 1,Fusion
 1,Zoologie
 1,Weltenwandel
+
+;Magier Belohnung
+1,intelligenz+2[Bin ziemlich schlauer geworden.@@geschichte]
+1,bildung+1[Habe etwas dazu gelernt.@@geschichte]
+1,status+2[Bin ziemlich aufgestiegen in der Welt.@@geschichte]
+1,[[Geheimbund als Belohnung]@@mitgliedschaften]
+1,[Gefährte]
+1,lehrstuhl()
+
+;Taugenichts Aufnahme
+1,Rennen
 
 ;Taugenichts
 1,in einer Diebesbande
@@ -165,9 +191,20 @@ function generateCharacter(){
 1,Benehmen
 1,Tüfteln
 
+;Taugenichts Belohnung
+1,intelligenz+1[Bin etwas schlauer geworden.@@geschichte]
+1,bildung+2[Habe ziemlich dazu gelernt.@@geschichte]
+1,status+2[Bin ziemlich aufgestiegen in der Welt.@@geschichte]
+1,[[Geheimbund als Belohnung]@@mitgliedschaften]
+1,[[Hund als Belohnung]@@tiere]
+1,[[Posten [@Geschlecht] als Belohnung]@@stellen]
+
 ;Geschlecht
 1,♀
 1,♂
+
+;Menschenname
+1,[Menschenname [Geschlecht]]
 
 ;Menschenname ♀
 1,[Kurzer Frauenname]
@@ -258,7 +295,7 @@ function generateCharacter(){
 1,Muspelheim
 
 ;Geheimbund als Belohnung
-1,🤝 [Geheimbund] [[@Geheimbund] haben mich aufgenommen.@Geschichte]
+1,🤝 [Geheimbund] [[@Geheimbund] haben mich aufgenommen.@@geschichte]
 
 ;Geheimbund
 1,[Geheimbund 1] [Geheimbund 2]
@@ -301,21 +338,96 @@ function generateCharacter(){
 1,von [Welt]
 
 ;Land als Belohnung
-1,💰 [Land][Ich habe etwas Land zugewiesen bekommen.@Geschichte]
+1,💰 [Land][Ich habe etwas Land zugewiesen bekommen.@@geschichte]
 
 ;Land
 1,ein Waldfleck
 1,ein Stück Wald mit Teich
-1,ein karger Fels mit Burgruine
-1,ein verwaldetes Stück Weideland
-1,ein versumpftes Stück Ackerland
-1,eine Burgruine voller Banditen
+1,ein karger Fels mit der Ruine [Festung]
+1,ein [verwaldetes|versumpftes] Stück [Weideland|Ackerland]
+1,die Ruine [Festung] voller [Banditen]
+1,die Ruine vom [Turm] voller [Nachtlinge]
+
+;Festung
+1,[Festung 1][Festung 2]/^Felsenfels/Fels/
+
+;Festung 1
+1,Alten
+1,Bären
+1,Falken
+1,Farn
+1,Felsen
+1,Froh
+1,Guten
+1,Klingen
+1,Neuen
+1,Ram
+1,Rifen
+1,Schauen
+1,Sternen
+
+;Festung 2
+1,au
+1,berg
+1,burg
+1,fels
+1,stein
+1,zwinge
+1,egg
+
+;Turm
+1,[Turm 1][Turm 2]
+
+;Turm 1
+1,Hexen
+1,Raben
+1,Teufels
+1,Finster
+1,Dunkel
+1,Eis
+1,Feuer
+1,Toten
+1,Tempel
+1,Hohen
+1,Himmel
+1,Katzen
+
+;Turm 2
+1,turm
+1,warte
+1,stein
+1,wald
+1,keller
+1,feste
+
+;Banditen
+1,[Banditen 1] ([Werte für Menschen] Schaden-[2W6] Anzahl-[2W6])
+
+;Banditen 1
+1,Banditen
+1,Räuber
+1,Deserteure
+1,Freibeuter
+
+;Nachtlinge
+1,[Nachtlinge 1] ([Werte für Nachtlinge])
+
+;Nachtlinge 1
+1,Goblins
+1,Zwerge
+1,Elfen
+1,Harpien
+1,Hexen
+1,Teufel
+
+;Werte für Nachtlinge
+1,Schaden-[2W6] Ausdauer-[1W6] Leben-[1W6] Angriff-[1W6+4] Flucht-[1W6+3] Anzahl-[2W6]
 
 ;Posten ♀ als Belohnung
-1,💰 [Posten ♀][Ich habe einen sicheren Posten als [@Posten ♀].@Geschichte]
+1,💰 [Posten ♀][Ich habe einen sicheren Posten als [@Posten ♀].@@geschichte]
 
 ;Posten ♂ als Belohnung
-1,💰 [Posten ♂][Ich habe einen sicheren Posten als [@Posten ♂].@Geschichte]
+1,💰 [Posten ♂][Ich habe einen sicheren Posten als [@Posten ♂].@@geschichte]
 
 ;Posten ♀
 1,[Frauentitel] [des Amtes]
@@ -388,7 +500,7 @@ function generateCharacter(){
 1,des Waldes
 
 ;Pferd als Belohnung
-1,🐎 [Pferd] ([Werte für ein Reittier])[Ich habe ein Pferd bekommen.@Geschichte]
+1,🐎 [Pferd] ([Werte für ein Reittier])[Ich habe ein Pferd bekommen.@@geschichte]
 
 ;Pferd
 1,ein [Schimmel|Falbe|Fuchs|Brauner|Rappen]
@@ -397,7 +509,7 @@ function generateCharacter(){
 1,Schaden-[3W6] Ausdauer-[6W6] Leben-[3W6] Angriff-[1W6+4] Flucht-[1W6+2]
 
 ;Hund als Belohnung
-1,🐕 [Hund] ([Werte für ein Raubtier])[Ich habe einen Hund adoptiert.@Geschichte]
+1,🐕 [Hund] ([Werte für ein Raubtier])[Ich habe einen Hund adoptiert.@@geschichte]
 
 ;Hund
 1,ein [Hundetyp]
@@ -412,13 +524,13 @@ function generateCharacter(){
 1,Schaden-[2W6] Ausdauer-[3W6] Leben-[2W6] Angriff-[1W6+5] Flucht-[1W6+2]
 
 ;Gefährte
-1,[Tier]
-1,[Mensch]
+1,[[Tier]@@tiere]
+1,[[Mensch]@@gefährten]
 
 ;Tier
-1,🐦 eine [Eigenschaft intelligenter Tiere] Krähe[Ich habe eine Krähe adoptiert.@Geschichte]
-1,🦉 eine [Eigenschaft intelligenter Tiere] Eule[Ich habe eine Eule adoptiert.@Geschichte]
-1,🐈 eine [Eigenschaft intelligenter Tiere] Katze[Ich habe eine Katze adoptiert.@Geschichte]
+1,🐦 eine [Eigenschaft intelligenter Tiere] Krähe[Ich habe eine Krähe adoptiert.@@geschichte]
+1,🦉 eine [Eigenschaft intelligenter Tiere] Eule[Ich habe eine Eule adoptiert.@@geschichte]
+1,🐈 eine [Eigenschaft intelligenter Tiere] Katze[Ich habe eine Katze adoptiert.@@geschichte]
 
 ;Eigenschaft intelligenter Tiere
 1,anhängliche
@@ -433,7 +545,7 @@ function generateCharacter(){
 1,weise
 
 ;Mensch
-1,[Gefährten [Geschlecht] Emoji] [Menschenname [@Geschlecht]] ([Werte für Menschen])[[Gefährten [@Geschlecht] gefunden]@Geschichte]
+1,[Gefährten [Geschlecht] Emoji] [Menschenname [@Geschlecht]] ([Werte für Menschen])[[Gefährten [@Geschlecht] gefunden]@@geschichte]
 
 ;Gefährten ♀ Emoji
 1,👩
@@ -473,7 +585,7 @@ function generateCharacter(){
 
 ;Krieger Opfer
 1,Der Feldzug war ein Erfolg. Ich habe drei Tage lang mit geplündert und [mein Opfer] schreckliches angetan. 😱
-1,Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. [mein Opfer] hat es überlebt, aber verziehen hat [@wer] mir nie. 🙁`, ]));
+1,Wir mussten die Verletzten zurück lassen. Es war meine Entscheidung. [mein Opfer] hat es überlebt, aber verziehen hat [@wer] mir nie. 🙁
 
 ;mein Opfer
 1,[Menschenname ♀][👩 [@Menschenname ♀]@feind][sie@wer]

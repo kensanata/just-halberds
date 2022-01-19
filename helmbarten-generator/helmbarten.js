@@ -355,10 +355,13 @@ function helmbarten(daten) {
       t.geschichte.push('<hr>Belohnungen');
       belohnungen.forEach(function (x) {
         const bonus = nimm(x, 1, t).split('+');
-        // intelligenz+1
-        if (bonus.length == 2) t.attribute[bonus[0]]+=Number(bonus[1])
-        // lehrstuhl()
-        else if (bonus.length == 1) eval(bonus[0]);
+        if (bonus.length == 2) {
+          // intelligenz+1
+          t.attribute[bonus[0]] += Number(bonus[1]);
+        } else if (bonus.length == 1) {
+          // lehrstuhl()
+          eval(bonus[0]);
+        }
       });
     };
 

@@ -181,8 +181,8 @@ function helmbarten(daten) {
 
     function lernen() {
       let tabelle = t.karriere;
-      if (t.alter < 20) tabelle += ' Anfänger';
       if (t.karriere == 'Krieger' && (t.attribute.status >= 8 || t.attribute.intelligenz >= 8)) tabelle += ' Bevorzugte';
+      if (t.alter < 20) tabelle += ' Anfänger';
       let tätigkeit = nimm(tabelle);
       t.geschichte.push("4 Jahre " + tätigkeit);
       t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(nimm(tätigkeit)) + ' gelernt.').join(" "));

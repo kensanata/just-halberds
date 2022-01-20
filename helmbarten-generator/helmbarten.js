@@ -365,37 +365,7 @@ function helmbarten(daten) {
     t.titel = function() {
       let talent = t.bestes_talent();
       if (!talent) return '';
-      let titel = {};
-      titel['♂'] = {
-        Ablenken: 'Taschendieb', Augen: 'Seher', Bauen: 'Bauherr', Benehmen: 'Edelmann',
-        Bezaubern: 'Silberzunge', Brauen: 'Giftmischer', Bürokratie: 'Verwalter', Diplomatie: 'Diplomat',
-        Disziplin: 'Drillmeister', Erde: 'Geomant', Feldscher: 'Arzt', Feuer: 'Pyromant',
-        Fusion: 'Fleischmagier', Gestaltwandlung: 'Gestaltwandler', Handeln: 'Händler', Handwerk: 'Meister',
-        Heilung: 'Heiler', Illusion: 'Illusionist', Klettern: 'Akrobat', Knacken: 'Einbrecher',
-        Kultur: 'Gelehrter', Kämpfen: 'Reisläufer', Luft: 'Aeromant', Psychologie: 'Menschenkenner',
-        Nekromantie: 'Nekromant', Botanik: 'Botaniker', Prügeln: 'Schläger', Reden: 'Redner',
-        Reiten: 'Reiter', Rennen: 'Läufer', Schlaf: 'Somnolog', Schleichen: 'Dieb',
-        Schrift: 'Schreiber', Singen: 'Meistersänger', Spionieren: 'Spion', Sturm: 'Sturmmagier',
-        Taktik: 'Feldherr', Zoologie: 'Tierflüsterer', Transmutation: 'Alchemist', Tüfteln: 'Erfinder',
-        Türen: 'Portalmagier', Wasser: 'Aquamant', Weltenwandel: 'Weltenwandler', Messer: 'Messerstecher',
-        Spiess: 'Pikenier', Halmbarte: 'Halbardier', Degen: 'Fechtmeister', Bogen: 'Bogenschütze',
-        Lanze: 'Ritter', };
-      titel['♀'] = {
-        Ablenken: 'Taschendiebin', Augen: 'Seherin', Bauen: 'Bauherrin', Benehmen: 'Edelfrau',
-        Bezaubern: 'Silberzunge', Brauen: 'Giftmischerin', Bürokratie: 'Verwalterin', Diplomatie: 'Diplomatin',
-        Disziplin: 'Drillmeister', Erde: 'Geomantin', Feldscher: 'Ärztin', Feuer: 'Pyromantin',
-        Fusion: 'Fleischmagierin', Gestaltwandlung: 'Gestaltwandlerin', Handeln: 'Händlerin', Handwerk: 'Meister',
-        Heilung: 'Heilerin', Illusion: 'Illusionistin', Klettern: 'Akrobatin', Knacken: 'Einbrecherin',
-        Kultur: 'Gelehrte', Kämpfen: 'Reisläuferin', Luft: 'Aeromantin', Psychologie: 'Menschenkennerin',
-        Nekromantie: 'Nekromantin', Botanik: 'Botanikerin', Prügeln: 'Schlägerin', Reden: 'Rednerin',
-        Reiten: 'Reiterin', Rennen: 'Läuferin', Schlaf: 'Somnologin', Schleichen: 'Diebin',
-        Schrift: 'Schreiberin', Singen: 'Meistersängerin', Spionieren: 'Spionin', Sturm: 'Sturmmagierin',
-        Taktik: 'Feldherrin', Zoologie: 'Tierflüsterin', Transmutation: 'Alchemistin', Tüfteln: 'Erfinderin',
-        Türen: 'Portalmagier', Wasser: 'Aquamantin', Weltenwandel: 'Weltenwandlerin', Messer: 'Messerstecherin',
-        Spiess: 'Pikeneuse', Halmbarte: 'Halbardeuse', Degen: 'Fechtmeister', Bogen: 'Bogenschützin',
-        Lanze: 'Ritterin',
-      };
-      return titel[t.geschlecht][talent] + ' ';
+      return nimm(`${talent} ${t.geschlecht}`) + ' ';
     };
 
     t.gefährten_text = function() {

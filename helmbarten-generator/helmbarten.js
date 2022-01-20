@@ -107,13 +107,16 @@ function helmbarten(daten) {
   h.charakter = function() {
     /* t ist der Charakter */
     let t = {};
-    
+
+    let alter = 16;
+    let name = nimm(`Menschenname`);
+    let geschlecht = h.resultate.Geschlecht;
+    let karrieren = 0;
+    let gestorben = false;
+    let favorit = '';
+
+    /* Auf all diese arrays kann man aus den Regeln heraus zugreifen, siehe [a@@b]. */
     t.geschichte = [];
-    t.alter = 16;
-    t.name = nimm(`Menschenname`);
-    t.geschlecht = h.resultate.Geschlecht;
-    t.karrieren = 0;
-    t.gestorben = false;
     t.mitgliedschaften = [];
     t.gefährten = [];
     t.tiere = [];
@@ -122,7 +125,7 @@ function helmbarten(daten) {
     t.talente = [];
     t.verboten = [];
     t.feinde = [];
-    t.favorit = '';
+    let belohnungen = [];
 
     t.attribute = {
       kraft: würfel(2),
@@ -140,7 +143,7 @@ function helmbarten(daten) {
         + ` Bildung-${t.attribute.bildung} Status-${t.attribute.status}\n`;
     };
 
-    t.attribute_hex = function () {
+    function attribute_hex() {
       // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
       return [t.attribute.kraft, t.attribute.geschick, t.attribute.ausdauer,
               t.attribute.intelligenz, t.attribute.bildung, t.attribute.status]
@@ -170,40 +173,39 @@ function helmbarten(daten) {
       },
     };
 
-    function lernen() {
-      let tabelle = t.karriere;
-      if (t.karriere == 'Krieger' && (t.attribute.status >= 8 || t.attribute.intelligenz >= 8)) tabelle += ' Bevorzugte';
-      if (t.alter < 20) tabelle += ' Anfänger';
-      let tätigkeit = nimm(tabelle);
-      t.geschichte.push("4 Jahre " + tätigkeit);
-      t.geschichte.push([1, 2, 3, 4].map(n => t.lerne(nimm(tätigkeit)) + ' gelernt.').join(" "));
-      return;
-    };
-
-    t.talente = [];
-    t.lerne = function (talent) {
+    function lerne(talent) {
       if (talent == 'Kämpfen') {
         if (t.talente['Reiten']) {
-          talent = t.favorit = 'Lanze';
-        } else if (t.favorit) {
-          talent = t.favorit;
+          talent = favorit = 'Lanze';
+        } else if (favorit) {
+          talent = favorit;
         } else {
-          talent = t.favorit = s[t.karriere].waffe(t);
+          talent = favorit = s[t.karriere].waffe(t);
         }
       }
       t.talente[talent] = t.talente[talent] ? t.talente[talent] + 1 : 1;
       return talent;
     };
 
+    function lernen() {
+      let tabelle = t.karriere;
+      if (t.karriere == 'Krieger' && (t.attribute.status >= 8 || t.attribute.intelligenz >= 8)) tabelle += ' Bevorzugte';
+      if (alter < 20) tabelle += ' Anfänger';
+      let tätigkeit = nimm(tabelle);
+      t.geschichte.push("4 Jahre " + tätigkeit);
+      t.geschichte.push([1, 2, 3, 4].map(n => lerne(nimm(tätigkeit)) + ' gelernt.').join(" "));
+      return;
+    };
+
     function talente_text() {
-      if (t.gestorben) { return ''; }
+      if (gestorben) { return ''; }
       return Object.keys(t.talente)
         .map(x => { return x + '-' + t.talente[x]; })
         .sort()
         .join(' ') + "\n";
     };
 
-    t.bestes_talent = function(ohne_diese) {
+    function bestes_talent(ohne_diese) {
       let bestes_talent;
       let bester_wert = 0;
       for (let talent of ungeordnet(Object.keys(t.talente))) {
@@ -221,137 +223,123 @@ function helmbarten(daten) {
       return nimm(`${karriere} Attribut`).split(',').map(x => t.attribute[x]).reduce((a, b) => Math.max(a, b), 0);
     };
 
-    t.beste_karriere = function() {
-      let beste_karriere;
-      let bester_wert = 0;
-      for (let karriere of ungeordnet(Object.keys(s))) {
-        if (t.verboten.includes(karriere)) continue;
-        const wert = attribut(karriere);
-        if (wert > bester_wert) {
-          bester_wert = wert;
-          beste_karriere = karriere;
+    function beste_karriere() {
+      let bk;
+      let bw = 0;
+      for (let k of ungeordnet(Object.keys(s))) {
+        if (t.verboten.includes(k)) continue;
+        const w = attribut(k);
+        if (w > bw) {
+          bw = w;
+          bk = k;
         }
       }
-      if (beste_karriere) {
-        if (würfel(2) <= bester_wert) {
-          t.geschichte.push(`${beste_karriere} geworden.`);
+      if (bk) {
+        if (würfel(2) <= bw) {
+          t.geschichte.push(`${bk} geworden.`);
         } else {
-          t.geschichte.push(`Wollte ${beste_karriere} werden, bin aber nicht aufgenommen worden.`);
-          t.verboten.push(beste_karriere);
-          return t.beste_karriere();
+          t.geschichte.push(`Wollte ${bk} werden, bin aber nicht aufgenommen worden.`);
+          t.verboten.push(bk);
+          return beste_karriere();
         }
       }
-      return beste_karriere;
+      return bk;
     };
 
-    t.bester_wert = function() {
-      let bestes_attribut;
-      let bester_wert = 0;
-      for (let attribut of ungeordnet(Object.keys(t.attribute))) {
-        if (t.attribute[attribut] > bester_wert) {
-          bestes_attribut = attribut;
-          bester_wert = t.attribute[attribut];
+    function bester_wert() {
+      let ba;
+      let bw = 0;
+      for (let a of ungeordnet(Object.keys(t.attribute))) {
+        if (t.attribute[a] > bw) {
+          ba = a;
+          bw = t.attribute[a];
         }
       }
-      return bester_wert;
+      return bw;
     };
 
-    if (debug) t.geschichte.push('Gestartet mit ' + t.attribute_hex());
-    t.karriere = t.beste_karriere();
-    if (t.karriere)
-      t.geschichte.push(t.lerne(nimm(`${t.karriere} Aufnahme`)) + ' gelernt.');
-
-    t.neue_karriere = function() {
-      t.alter += 1;
+    function neue_karriere() {
+      alter += 1;
       t.verboten.push(t.karriere);
       t.karriere = undefined;
     };
 
-    t.weitermachen = function() {
-      if (t.gestorben) return false;
-      if (würfel(1) < t.karrieren) {
+    function weitermachen() {
+      if (gestorben) return false;
+      if (würfel(1) < karrieren) {
         t.geschichte.push(nimm('Abenteurerleben!'));
         return false;
       }
-      if (!t.karriere) t.karriere = t.beste_karriere();
+      if (!t.karriere) t.karriere = beste_karriere();
       return t.karriere;
     };
 
-    t.karriereschritt = function() {
-      t.karrieren += 1;
-      t.geschichte.push(`<hr>Karriere ${t.karrieren}, Alter ${t.alter}`);
+    function karriereschritt() {
+      karrieren += 1;
+      t.geschichte.push(`<hr>Karriere ${karrieren}, Alter ${alter}`);
       lernen(t);
     };
 
-    t.schicksalsschlag = function() {
-      if (t.gestorben) return;
-      const w = würfel(2);
-      const z = attribut(t.karriere);
-      // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
-      if (w + t.karrieren > z) {
-        t.geschichte.push(nimm(`${t.karriere} Schicksalsschlag`));
-        if (h.resultate.feind) { t.feinde.push(h.resultate.feind); }
-        if (h.resultate.alterung) { t.alterung() }
-        if (h.resultate.karrierenwechsel) { t.neue_karriere(); }
-        if (h.resultate.gefangenschaft) { t.verloren(h.resultate.verloren, h.resultate.entkommen); }
-        if (h.resultate.gestorben) { t.gestorben = true; }
-      }
-    };
-
-    t.verloren = function(gestorben, entkommen) {
-      t.alterung();
-      t.alter += 4;
-      let jahre = 4;
-      // Das Entkommen ist eine schwierige Probe mit 3W6!
-      while (!t.gestorben && würfel(3) > t.bester_wert()) {
-        jahre += 4;
-        t.alter += 4;
-        t.alterung();
-      }
-      if (t.gestorben) {
-        t.geschichte.push(gestorben.replace('${n}', jahre));
-      } else {
-        t.geschichte.push(entkommen.replace('${n}', jahre));
-        t.neue_karriere();
-      }
-    };
-
-    t.alterung = function() {
-      const faktor = t.alter < 50 ? 1 : 2;
+    function alterung() {
+      const faktor = alter < 50 ? 1 : 2;
       const a = nimm(`Alterung ${faktor}`);
       if (h.resultate.alterung) {
         t.attribute[h.resultate.alterung] = Math.max(t.attribute[h.resultate.alterung] - faktor, 0);
-        t.gestorben = t.gestorben || t.attribute[h.resultate.alterung] <= 0;
+        gestorben = gestorben || t.attribute[h.resultate.alterung] <= 0;
         t.geschichte.push(a);
         if (debug) t.geschichte.push('Weiter mit ' + t.attribute_hex());
       }
     };
 
-    t.älter_werden = function() {
-      if (t.gestorben) return;
-      t.alter += 4;
-      if (t.alter >= 36) {
-        t.alterung();
+    function verloren(sterben, entkommen) {
+      alterung();
+      alter += 4;
+      let jahre = 4;
+      // Das Entkommen ist eine schwierige Probe mit 3W6!
+      while (!gestorben && würfel(3) > bester_wert()) {
+        jahre += 4;
+        alter += 4;
+        alterung();
+      }
+      if (gestorben) {
+        t.geschichte.push(sterben.replace('${n}', jahre));
+      } else {
+        t.geschichte.push(entkommen.replace('${n}', jahre));
+        neue_karriere();
+      }
+    };
+
+    function schicksalsschlag() {
+      if (gestorben) return;
+      const w = würfel(2);
+      const z = attribut(t.karriere);
+      // t.geschichte.push(w + '+' + karrieren + ' ≤ ' +  z);
+      if (w + karrieren > z) {
+        t.geschichte.push(nimm(`${t.karriere} Schicksalsschlag`));
+        if (h.resultate.feind) { t.feinde.push(h.resultate.feind); }
+        if (h.resultate.alterung) { alterung() }
+        if (h.resultate.karrierenwechsel) { neue_karriere(); }
+        if (h.resultate.gefangenschaft) { verloren(h.resultate.verloren, h.resultate.entkommen); }
+        if (h.resultate.gestorben) { gestorben = true; }
+      }
+    };
+
+    function älter_werden() {
+      if (gestorben) return;
+      alter += 4;
+      if (alter >= 36) {
+        alterung();
       };
     };
 
-    let belohnungen = [];
-    while(t.weitermachen()) {
-      t.karriereschritt();
-      // Belohnungen werden gesammelt und am Ende ein Mal ausgeführt werden.
-      belohnungen.push(`${t.karriere} Belohnung`);
-      t.älter_werden();
-      t.schicksalsschlag();
-    }
-
     function lehrstuhl() {
-      const j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
+      const j = bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
       t.lehrstühle.push(j);
       t.stellen.push(`💰 Lehrstuhl für ${j}`);
       t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
     };
 
-    belohnungen_erhalten = function() {
+    function belohnungen_erhalten() {
       t.geschichte.push('<hr>Belohnungen');
       belohnungen.forEach(function (x) {
         const bonus = nimm(x, 1, t).split('+');
@@ -365,44 +353,44 @@ function helmbarten(daten) {
       });
     };
 
-    if (!t.gestorben && belohnungen.length > 0) belohnungen_erhalten();
+    if (!gestorben && belohnungen.length > 0) belohnungen_erhalten();
 
-    t.titel = function() {
-      const talent = t.bestes_talent();
+    function titel() {
+      const talent = bestes_talent();
       if (!talent) return '';
-      return nimm(`${talent} ${t.geschlecht}`) + ' ';
+      return nimm(`${talent} ${geschlecht}`) + ' ';
     };
 
     function gefährten_text() {
-      if (t.gestorben || !t.gefährten.length) return '';
+      if (gestorben || !t.gefährten.length) return '';
       return "\nGefährten\n" + t.gefährten.map(x => `${x}\n`).join('');
     };
 
     function tiere_text() {
-      if (t.gestorben || !t.tiere.length) return '';
+      if (gestorben || !t.tiere.length) return '';
       return "\nTiere\n" + t.tiere.map(x => `${x}\n`).join('');
     };
 
     function feinde_text() {
-      if (t.gestorben || !t.feinde.length) return '';
+      if (gestorben || !t.feinde.length) return '';
       return "\nFeinde\n" + t.feinde.map(x => `${x}\n`).join('');
     };
 
     function mitgliedschaften_text() {
-      if (t.gestorben || !t.mitgliedschaften.length) return '';
+      if (gestorben || !t.mitgliedschaften.length) return '';
       return "\nMitgliedschaften\n" + t.mitgliedschaften.join("\n") + "\n";
     };
 
     function stellen_text() {
-      if (t.gestorben || !t.stellen.length) return '';
+      if (gestorben || !t.stellen.length) return '';
       return "\nStellen\n" + t.stellen.join("\n") + "\n";
     };
 
     t.text = function() {
-      return (t.gestorben ? '† ' : '')
-        + t.titel() + t.name
-        + `    Alter: ${t.alter}`
-        + `    Karrieren: ${t.karrieren}\n`
+      return (gestorben ? '† ' : '')
+        + titel() + name
+        + `    Alter: ${alter}`
+        + `    Karrieren: ${karrieren}\n`
         + attribute_text()
         + talente_text()
         + gefährten_text()
@@ -412,6 +400,20 @@ function helmbarten(daten) {
         + stellen_text()
         + "\n\n" + t.geschichte.join("\n") + "\n";
     };
+
+    // Das Abenteuerleben!
+    if (debug) t.geschichte.push('Gestartet mit ' + t.attribute_hex());
+    t.karriere = beste_karriere();
+    if (t.karriere)
+      t.geschichte.push(lerne(nimm(`${t.karriere} Aufnahme`)) + ' gelernt.');
+
+    while(weitermachen()) {
+      karriereschritt();
+      // Belohnungen werden gesammelt und am Ende ausgeführt werden.
+      belohnungen.push(`${t.karriere} Belohnung`);
+      älter_werden();
+      schicksalsschlag();
+    }
 
     return t;
   };

@@ -226,7 +226,7 @@ function helmbarten(daten) {
       let bester_wert = 0;
       for (let karriere of ungeordnet(Object.keys(s))) {
         if (t.verboten.includes(karriere)) continue;
-        let wert = attribut(karriere);
+        const wert = attribut(karriere);
         if (wert > bester_wert) {
           bester_wert = wert;
           beste_karriere = karriere;
@@ -284,8 +284,9 @@ function helmbarten(daten) {
     };
 
     t.schicksalsschlag = function() {
-      let w = würfel(2);
-      let z = attribut(t.karriere);
+      if (t.gestorben) return;
+      const w = würfel(2);
+      const z = attribut(t.karriere);
       // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
       if (w + t.karrieren > z) {
         t.geschichte.push(nimm(`${t.karriere} Schicksalsschlag`));
@@ -339,12 +340,12 @@ function helmbarten(daten) {
       t.karriereschritt();
       // Belohnungen werden gesammelt und am Ende ein Mal ausgeführt werden.
       belohnungen.push(`${t.karriere} Belohnung`);
-      t.schicksalsschlag();
       t.älter_werden();
+      t.schicksalsschlag();
     }
 
     function lehrstuhl() {
-      let j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
+      const j = t.bestes_talent(t.lehrstühle) || wähle(Object.keys(t.talente));
       t.lehrstühle.push(j);
       t.stellen.push(`💰 Lehrstuhl für ${j}`);
       t.geschichte.push(`Ich habe einen Lehrstuhl für ${j} bekommen.`);
@@ -367,7 +368,7 @@ function helmbarten(daten) {
     if (!t.gestorben && belohnungen.length > 0) belohnungen_erhalten();
 
     t.titel = function() {
-      let talent = t.bestes_talent();
+      const talent = t.bestes_talent();
       if (!talent) return '';
       return nimm(`${talent} ${t.geschlecht}`) + ' ';
     };

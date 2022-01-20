@@ -133,7 +133,7 @@ function helmbarten(daten) {
       status: würfel(2),
     };
 
-    t.attribute_text = function () {
+    function attribute_text() {
       // Das wird hier alles explizit aufgeführt, damit die Reihenfolge stimmt.
       return `Kraft-${t.attribute.kraft} Geschick-${t.attribute.geschick}`
         + ` Ausdauer-${t.attribute.ausdauer} Intelligenz-${t.attribute.intelligenz}`
@@ -195,7 +195,7 @@ function helmbarten(daten) {
       return talent;
     };
 
-    t.talente_text = function () {
+    function talente_text() {
       if (t.gestorben) { return ''; }
       return Object.keys(t.talente)
         .map(x => { return x + '-' + t.talente[x]; })
@@ -373,27 +373,27 @@ function helmbarten(daten) {
       return nimm(`${talent} ${t.geschlecht}`) + ' ';
     };
 
-    t.gefährten_text = function() {
+    function gefährten_text() {
       if (t.gestorben || !t.gefährten.length) return '';
       return "\nGefährten\n" + t.gefährten.map(x => `${x}\n`).join('');
     };
 
-    t.tiere_text = function() {
+    function tiere_text() {
       if (t.gestorben || !t.tiere.length) return '';
       return "\nTiere\n" + t.tiere.map(x => `${x}\n`).join('');
     };
 
-    t.feinde_text = function() {
+    function feinde_text() {
       if (t.gestorben || !t.feinde.length) return '';
       return "\nFeinde\n" + t.feinde.map(x => `${x}\n`).join('');
     };
 
-    t.mitgliedschaften_text = function() {
+    function mitgliedschaften_text() {
       if (t.gestorben || !t.mitgliedschaften.length) return '';
       return "\nMitgliedschaften\n" + t.mitgliedschaften.join("\n") + "\n";
     };
 
-    t.stellen_text = function() {
+    function stellen_text() {
       if (t.gestorben || !t.stellen.length) return '';
       return "\nStellen\n" + t.stellen.join("\n") + "\n";
     };
@@ -403,13 +403,13 @@ function helmbarten(daten) {
         + t.titel() + t.name
         + `    Alter: ${t.alter}`
         + `    Karrieren: ${t.karrieren}\n`
-        + t.attribute_text()
-        + t.talente_text()
-        + t.gefährten_text()
-        + t.tiere_text()
-        + t.feinde_text()
-        + t.mitgliedschaften_text()
-        + t.stellen_text()
+        + attribute_text()
+        + talente_text()
+        + gefährten_text()
+        + tiere_text()
+        + feinde_text()
+        + mitgliedschaften_text()
+        + stellen_text()
         + "\n\n" + t.geschichte.join("\n") + "\n";
     };
 

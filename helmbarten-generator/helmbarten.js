@@ -152,9 +152,6 @@ function helmbarten(daten) {
     let s = {};
 
     s.Krieger = {
-      attribut: function(t) {
-        return Math.max(t.attribute.kraft, t.attribute.ausdauer);
-      },
       waffe: function(t) {
         if (t.attribute.geschick > t.attribute.kraft) return 'Bogen';
         return wähle(['Messer', 'Spiess', 'Halmbarte', 'Degen']);
@@ -162,18 +159,12 @@ function helmbarten(daten) {
     };
 
     s.Magier = {
-      attribut: function(t) {
-        return Math.max(t.attribute.intelligenz, t.attribute.bildung);
-      },
       waffe: function(t) {
         return 'Messer';
       },
     };
 
     s.Taugenichts = {
-      attribut: function(t) {
-        return Math.max(t.attribute.geschick, t.attribute.status);
-      },
       waffe: function(t) {
         return wähle(['Messer', 'Degen']);
       },
@@ -226,18 +217,30 @@ function helmbarten(daten) {
       return bestes_talent;
     };
 
+    function attribut(karriere) {
+      return nimm(`${karriere} Attribut`).split(',').map(x => t.attribute[x]).reduce((a, b) => Math.max(a, b), 0);
+    };
+
     t.beste_karriere = function() {
       let beste_karriere;
       let bester_wert = 0;
       for (let karriere of ungeordnet(Object.keys(s))) {
         if (t.verboten.includes(karriere)) continue;
-        let wert = s[karriere].attribut(t);
+        let wert = attribut(karriere);
         if (wert > bester_wert) {
           bester_wert = wert;
           beste_karriere = karriere;
         }
       }
-      if (beste_karriere) t.geschichte.push(`${beste_karriere} geworden.`);
+      if (beste_karriere) {
+        if (würfel(2) <= bester_wert) {
+          t.geschichte.push(`${beste_karriere} geworden.`);
+        } else {
+          t.geschichte.push(`Wollte ${beste_karriere} werden, bin aber nicht aufgenommen worden.`);
+          t.verboten.push(beste_karriere);
+          return t.beste_karriere();
+        }
+      }
       return beste_karriere;
     };
 
@@ -255,7 +258,8 @@ function helmbarten(daten) {
 
     if (debug) t.geschichte.push('Gestartet mit ' + t.attribute_hex());
     t.karriere = t.beste_karriere();
-    t.geschichte.push(t.lerne(nimm(`${t.karriere} Aufnahme`)) + ' gelernt.');
+    if (t.karriere)
+      t.geschichte.push(t.lerne(nimm(`${t.karriere} Aufnahme`)) + ' gelernt.');
 
     t.neue_karriere = function() {
       t.alter += 1;
@@ -281,7 +285,7 @@ function helmbarten(daten) {
 
     t.schicksalsschlag = function() {
       let w = würfel(2);
-      let z = s[t.karriere].attribut(t);
+      let z = attribut(t.karriere);
       // t.geschichte.push(w + '+' + t.karrieren + ' ≤ ' +  z);
       if (w + t.karrieren > z) {
         t.geschichte.push(nimm(`${t.karriere} Schicksalsschlag`));
@@ -360,7 +364,7 @@ function helmbarten(daten) {
       });
     };
 
-    if (!t.gestorben) belohnungen_erhalten();
+    if (!t.gestorben && belohnungen.length > 0) belohnungen_erhalten();
 
     t.titel = function() {
       let talent = t.bestes_talent();

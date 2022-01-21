@@ -402,8 +402,7 @@ function helmbarten(daten) {
         + feinde_text()
         + mitgliedschaften_text()
         + stellen_text()
-        + (hintergrund ? "\n\n" + t.geschichte.join("\n") : "")
-        + "\n";
+        + (hintergrund ? "\n\n" + t.geschichte.join("\n") + "\n" : "");
     };
 
     // Das Abenteuerleben!
@@ -505,7 +504,7 @@ function helmbarten(daten) {
 
     function monster(t) {
       return `<h3>${t.name}</h3><p>${t.text()}<p>`
-        + nimm('Verfluchter Ort in den Bergen');
+        + nimm('Verfluchter Ort');
     }
 
     function riesen() {

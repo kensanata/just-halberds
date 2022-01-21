@@ -12,20 +12,26 @@
 
 <h1 id="noprintheader">Helmbarten Charaktergenerator</h1>
 <div id="noprintheader">
-	<button type="button" onclick="generateCharacter()">Los!</button>
+  <button type="button" onclick="charakter()">Charakter</button>
+	<button type="button" onclick="gegend()">Gegend</button>
 	<ul id="links">
 		<li><a href="https://alexschroeder.ch/wiki/Helmbarten">Helmbarten</a>
 		<li><a href="https://alexschroeder.ch/cgit/just-halberds/about/">Quellen</a>
 		<li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>
+	</ul>
 	<hr>
 </div>
 
 <div id="ziel"></div>
 
 <script>
-function generateCharacter(){
+function charakter(){
   const daten = document.getElementById('daten').textContent;
   document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
+}
+function gegend(){
+  const daten = document.getElementById('daten').textContent;
+  document.getElementById('ziel').innerHTML = helmbarten(daten).gegend().text();
 }
 </script>
 
@@ -665,7 +671,8 @@ function generateCharacter(){
 1,die Ruine vom [Turm] voller [Nachtlinge]
 
 ;Festung
-1,[Festung 1][Festung 2]/^Felsenfels/Fels/
+2,[Festung 1][Festung am Wasser][[Beschreibung der Festung am Wasser]@Standort]/^Felsenfels/Fels/
+5,[Festung 1][Festung am Berg][[Beschreibung der Festung am Berg]@Standort]
 
 ;Festung 1
 1,Alten
@@ -675,24 +682,29 @@ function generateCharacter(){
 1,Felsen
 1,Froh
 1,Guten
+1,Greifen
 1,Klingen
 1,Neuen
 1,Ram
 1,Rifen
 1,Schauen
+1,Scharten
 1,Sternen
 
-;Festung 2
+;Festung am Wasser
 1,au
-1,berg
 1,burg
+
+;Festung am Berg
+1,berg
 1,fels
 1,stein
 1,zwinge
 1,egg
 
 ;Turm
-1,[Turm 1][Turm 2]
+1,[Turm 1][Turm im Wald][[Beschreibung des Turms im Wald]@Standort]
+1,[Turm 1][Turm am Berg][[Beschreibung des Turms am Berg]@Standort]
 
 ;Turm 1
 1,Hexen
@@ -708,12 +720,16 @@ function generateCharacter(){
 1,Himmel
 1,Katzen
 
-;Turm 2
+;Turm im Wald
+1,wald
+1,keller
+1,sumpf
+1,au
+
+;Turm am Berg
 1,turm
 1,warte
 1,stein
-1,wald
-1,keller
 1,feste
 
 ;Banditen
@@ -1145,6 +1161,79 @@ function generateCharacter(){
 ;Abenteurerleben!
 1,Ich bin bereit für das Abenteurerleben! 💚
 
+;Monstername 1
+1,Eis
+1,Frost
+1,Feuer
+1,Gift
+1,Pest
+1,Schatten
+
+;Drachenname
+1,[Monstername 1][Drachenname 2]
+
+;Drachenname 2
+1,rachen
+1,atem
+1,speier
+1,nadel
+1,hauch
+1,rauch
+
+;Werte für einen Drachen
+1,Schaden-[6W6] Ausdauer-[10W6] Leben-[5W6] Angriff-[1W6+2] Flucht-[1W6]
+
+;Riesenname
+1,[Monstername 1][Riesenname 2]
+
+;Riesenname 2
+1,hammer
+1,schmied
+1,macher
+1,vater
+1,mutter
+1,zahn
+
+;Werte für einen Riesen
+1,Schaden-[4W6] Ausdauer-[8W6] Leben-[4W6] Angriff-[1W6+3] Flucht-[1W6]
+
+;Beschreibung der Festung am Wasser
+1,Die Festung steht am [dunklem|blauen|grossen|spiegelglatten|vernebelten] [@Festung 1]see. [Anlegestelle]
+
+;Anlegestelle
+1,Die Anlegestelle ist mit Mauerwerk, Turm und Kette geschützt.
+1,Die Anlegestelle ist ein kleiner Steg, der im Schilf fast verschwindet.
+1,Die Anlegestelle hat einen Steg zum Dorf, direkt zum Marktplatz.
+1,Pfähle markieren die Zufahrt zur Anlegestelle. Hier hat es Untiefen.
+1,Die Burg selber ist nochmal durch einen Wassergraben und eine Ziehbrücke geschützt.
+1,Eine schmale Holzbrücke führt über einen Wassergraben zur Burg.
+
+;Beschreibung der Festung am Berg
+1,Die Festung steht oberhalb vom Dorf. [Aufstieg]
+
+;Aufstieg
+1,Der Aufstieg ist ein schmaler Fusspfad, der sich den Hang hoch windet.
+1,Eine breite Treppe führt zwischen den Weinreben hinauf zur Burg.
+1,Die Aussicht auf das Tal von hier oben ist ausgezeichnet.
+1,Der Aufstieg ist lang und beschwerlich, die Burg selber vom Dorf aus gar nicht zu sehen.
+1,Das Tal hier ist eng und wer die Burg kontrolliert, kontrolliert den Zugang zum Hintertal.
+1,Eine Brücke führt unten im Tal über den Fluss, beschützt von einem Zollturm. Eine begehbare Mauer führt vom Zollturm bis zur Burg hinauf.
+
+;Beschreibung des Turms im Wald
+1,Der Turm steht [tief|gut versteckt|kaum zu finden] [im Wald mit Beschreibung]
+
+;im Wald mit Beschreibung
+1,im Sumpf. Die Seitenarme des Flusses verhindern einen Zugang zu Fuss. Ohne Boot wird es sehr schwierig.
+1,auf einer Insel im Auenwald. Zu Fuss führt kein Weg hinüber und die Fischer fürchten das Wasser, hier.
+1,an einem kleinen, verwunschenen See im Wald. Sonnenschein glitzert auf dem Wasser. Vögel pfeifen im Schilf.
+
+;Beschreibung des Turms am Berg
+1,Der Turm steht [tief|gut versteckt|kaum zu finden] [am Berg mit Beschreibung]
+
+;am Berg mit Beschreibung
+1,am Hang. Mehrere tiefe Tobel führen den bewaldeten Hang hinauf und erschweren die Orientierung.
+1,auf einem Hügel im Wald. Hier hat man eine gute Aussicht über den Talboden.
+1,auf einem Grat weit über dem Talboden. Kein Weg führt dort hinauf, behaupten die Einheimischen.
 </pre>
 </body>
 </html>

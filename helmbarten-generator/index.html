@@ -832,16 +832,16 @@ function gegend(){
 1,des Waldes
 
 ;Pferd als Belohnung
-1,🐎 [Pferd] ([Werte für ein Reittier])[Ich habe ein Pferd bekommen.@@geschichte]
+1,🐎 [Pferd] ([Werte für Reittier])[Ich habe ein Pferd bekommen.@@geschichte]
 
 ;Pferd
 1,ein [Schimmel|Falbe|Fuchs|Brauner|Rappen]
 
-;Werte für ein Reittier
+;Werte für Reittier
 1,Schaden-[3W6] Ausdauer-[6W6] Leben-[3W6] Angriff-[1W6+4] Flucht-[1W6+2]
 
 ;Hund als Belohnung
-1,🐕 [Hund] ([Werte für ein Raubtier])[Ich habe einen Hund adoptiert.@@geschichte]
+1,🐕 [Hund] ([Werte für Raubtier])[Ich habe einen Hund adoptiert.@@geschichte]
 
 ;Hund
 1,ein [Hundetyp]
@@ -852,7 +852,7 @@ function gegend(){
 1,Spürhund
 1,Wachhund
 
-;Werte für ein Raubtier
+;Werte für Raubtier
 1,Schaden-[2W6] Ausdauer-[3W6] Leben-[2W6] Angriff-[1W6+5] Flucht-[1W6+2]
 
 ;Gefährte
@@ -1180,8 +1180,11 @@ function gegend(){
 1,hauch
 1,rauch
 
-;Werte für einen Drachen
+;Werte für Drachen
 1,Schaden-[6W6] Ausdauer-[10W6] Leben-[5W6] Angriff-[1W6+2] Flucht-[1W6]
+
+;Beschreibung für Drachen
+1,So gross wie ein Haus, Flügel sicher zehn Spannen lang.
 
 ;Riesenname
 1,[Monstername 1][Riesenname 2]
@@ -1194,8 +1197,11 @@ function gegend(){
 1,mutter
 1,zahn
 
-;Werte für einen Riesen
+;Werte für Riesen
 1,Schaden-[4W6] Ausdauer-[8W6] Leben-[4W6] Angriff-[1W6+3] Flucht-[1W6]
+
+;Beschreibung für Riesen
+1,Fast doppelt so gross wie ein Mensch, mit Bart.
 
 ;Beschreibung der Festung am Wasser
 1,Die Festung steht am [dunklem|blauen|grossen|spiegelglatten|vernebelten] [@Festung 1]see. [Anlegestelle]
@@ -1234,6 +1240,54 @@ function gegend(){
 1,am Hang. Mehrere tiefe Tobel führen den bewaldeten Hang hinauf und erschweren die Orientierung.
 1,auf einem Hügel im Wald. Hier hat man eine gute Aussicht über den Talboden.
 1,auf einem Grat weit über dem Talboden. Kein Weg führt dort hinauf, behaupten die Einheimischen.
+
+;Verfluchter Ort
+1,[Verfluchter Ort in den Bergen]
+1,[Verfluchter Ort in den Sümpfen]
+
+;Verfluchter Ort in den Bergen
+1,Auf [dem Bergname] gibt es eine finstere Höhle, wo er haust. Blanke Knochen weisen den Weg. [Beschützt von Nachtlingen in den Bergen]
+1,Oben auf [dem Bergname] gibt es einen Gletscher, wo er in einem Palast aus Eis lebt. [Beschützt von Nachtlingen in den Bergen]
+1,Ganz oben auf [dem Bergname] steht ein Palast aus Stein, wo er lebt. [Beschützt von Nachtlingen in den Bergen]
+1,Auf [dem Bergname] hat es eine Ruine aus grauer Vorzeit. Dort lebt er. [Beschützt von Nachtlingen in den Bergen]
+
+;dem Bergname
+1,[[Bergname]@name][@dativ] [@name]
+
+;Bergname
+1,[Berg 1][Berg 2]
+
+;Berg 1
+1,Nadel
+1,Bös
+1,Scheid
+1,Finster
+1,Rot
+1,Isen
+
+;Berg 2
+1,berg[dem@dativ]
+1,horn[dem@dativ]
+1,egg[der@dativ]
+1,höhe[der@dativ]
+1,flue[der@dativ]
+1,spitze[der@dativ]
+
+;Verfluchter Ort in den Sümpfen
+1,Dort wo das Teil sich weitet und das Schilfmeer sich öffnet, hat es ein Knochenberg, wo er haust. [Beschützt von Nachtlingen im Sumpf]
+1,Dort wo das Nebelmeer sich niemals lichtet die Schatten lauern, lebt er in einem faulen Loch. [Beschützt von Nachtlingen im Sumpf]
+1,Dort wo der Wald ertrunken ist und die Leichen alter Kriege unter dem Wasser noch zum Himmel schauen, lebt er. [Beschützt von Nachtlingen im Sumpf]
+1,In einem fernen Sump, wo grauer Nebel über grauem Schlick die Sicht behindert, lebt er in einer halb versunkenen Festung. [Beschützt von Nachtlingen im Sumpf]
+
+;Beschützt von Nachtlingen in den Bergen
+1,Die Wege oben im Gebirge wurden von Nachtlingen gebaut und sind gefährlich. Steinschläge, Erdrutsche, Lawinen. Alles ist ihr Werk: [Nachtlinge].
+1,Die Nachtlinge hier oben haben Macht über das Wetter. Nehmt euch in acht. Klirrende Kälte, Frost, Schneestürme. Alles ist ihr Werk: [Nachtlinge].
+1,Die Nachtlinge hier oben haben schon manchen Wanderer in die Irre geführt. Nehmt euch in acht. Erst scheinen sie freundlich zu sein, doch dann übertretet ihr eines ihrer lächerlichen Gebote und dann lassen sie euch im Stich. [Nachtlinge].
+
+;Beschützt von Nachtlingen im Sump
+1,Viele der Bohlenwege hier wurden von Nachtlingen gebaut und führen in die Irre. [Nachtlinge]
+1,Nehmt euch in acht vor den Irrlichtern, welche euch Heim und Herd vorgaukeln und doch nur immer weiter in die Irre führen. Am Ende seid ihr den Nachtlingen hilflos ausgeliefert. [Nachtlinge]
+1,Meidet die Nachtlinge auf ihren kleinen Booten. Von dort beschiessen und bezaubern sie euch, weil sie genau wissen, dass ihr in den Sümpfen elendig sterben werdet, wenn ihr den Weg verlasst.
 </pre>
 </body>
 </html>

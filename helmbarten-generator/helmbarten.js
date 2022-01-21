@@ -9,7 +9,7 @@ function helmbarten(daten) {
   let h = {};
 
   h.tabellen = transformieren(daten);
-  
+
   function transformieren(daten) {
     let tabellen = {};
     let zeilen;
@@ -86,11 +86,9 @@ function helmbarten(daten) {
     console.log(`Die Tabelle ${titel} hat kein Resultat für ${n}`);
     return "…";
   }
-  
-  function wähle(...arr) {
-    return arr
-      .map(a => a[Math.floor(Math.random() * (a.length))])
-      .join(' ');
+
+  function wähle(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
   }
 
   function ungeordnet(a) {
@@ -111,9 +109,8 @@ function helmbarten(daten) {
 
   h.charakter = function() {
     /* t ist der Charakter */
-    let t = {};
+    let t = { typ: 'Mensch', };
 
-    let alter = 16;
     let karrieren = 0;
     let favorit = '';
 
@@ -121,6 +118,7 @@ function helmbarten(daten) {
     t.name = nimm(`Menschenname`);
     t.geschlecht = h.resultate.Geschlecht;
     t.gestorben = false;
+    t.alter = 16;
 
     /* Auf all diese arrays kann man aus den Regeln heraus zugreifen, siehe [a@@b]. */
     t.geschichte = [];
@@ -197,7 +195,7 @@ function helmbarten(daten) {
     function lernen() {
       let tabelle = t.karriere;
       if (t.karriere == 'Krieger' && (t.attribute.status >= 8 || t.attribute.intelligenz >= 8)) tabelle += ' Bevorzugte';
-      if (alter < 20) tabelle += ' Anfänger';
+      if (t.alter < 20) tabelle += ' Anfänger';
       let tätigkeit = nimm(tabelle);
       t.geschichte.push("4 Jahre " + tätigkeit);
       t.geschichte.push([1, 2, 3, 4].map(n => lerne(nimm(tätigkeit)) + ' gelernt.').join(" "));
@@ -266,7 +264,7 @@ function helmbarten(daten) {
     };
 
     function neue_karriere() {
-      alter += 1;
+      t.alter += 1;
       t.verboten.push(t.karriere);
       t.karriere = undefined;
     };
@@ -283,12 +281,12 @@ function helmbarten(daten) {
 
     function karriereschritt() {
       karrieren += 1;
-      t.geschichte.push(`<hr>Karriere ${karrieren}, Alter ${alter}`);
+      t.geschichte.push(`<hr>Karriere ${karrieren}, Alter ${t.alter}`);
       lernen(t);
     };
 
     function alterung() {
-      const faktor = alter < 50 ? 1 : 2;
+      const faktor = t.alter < 50 ? 1 : 2;
       const a = nimm(`Alterung ${faktor}`);
       if (h.resultate.alterung) {
         t.attribute[h.resultate.alterung] = Math.max(t.attribute[h.resultate.alterung] - faktor, 0);
@@ -300,12 +298,12 @@ function helmbarten(daten) {
 
     function verloren(sterben, entkommen) {
       alterung();
-      alter += 4;
+      t.alter += 4;
       let jahre = 4;
       // Das Entkommen ist eine schwierige Probe mit 3W6!
       while (!t.gestorben && würfel(3) > bester_wert()) {
         jahre += 4;
-        alter += 4;
+        t.alter += 4;
         alterung();
       }
       if (t.gestorben) {
@@ -333,8 +331,8 @@ function helmbarten(daten) {
 
     function älter_werden() {
       if (t.gestorben) return;
-      alter += 4;
-      if (alter >= 36) {
+      t.alter += 4;
+      if (t.alter >= 36) {
         alterung();
       };
     };
@@ -395,7 +393,7 @@ function helmbarten(daten) {
     t.text = function(hintergrund = true) {
       return (t.gestorben ? '† ' : '')
         + titel() + t.name
-        + `    Alter: ${alter}`
+        + `    Alter: ${t.alter}`
         + `    Karrieren: ${karrieren}\n`
         + attribute_text()
         + talente_text()
@@ -427,10 +425,16 @@ function helmbarten(daten) {
     return t;
   };
 
-  h.monster = function(name, werte) {
-    let m = {};
-    m.name = nimm(name);
-    m.werte = nimm(werte);
+  h.monster = function(typ) {
+    const m = {};
+    const werte = nimm(`Werte für ${typ}`);
+    const beschreibung = nimm(`Beschreibung für ${typ}`);
+    // von aussen sichtbar
+    m.typ = typ;
+    m.name = nimm(`${typ}name`);
+    m.text = function() {
+      return `Der ${typ} ${m.name}\n${werte}\n${beschreibung}\n`;
+    };
     return m;
   };
 
@@ -449,42 +453,96 @@ function helmbarten(daten) {
     };
     return t;
   };
-  
+
   h.gegend = function() {
     /* g ist die Gegend */
     let g = {};
-    g.personen = [];
-    g.festungen = Array.from(Array(5)).map(f => f = h.festung());
-    g.türme = Array.from(Array(3)).map(t => t = h.turm());
-    g.personen = Array.from(Array(12)).map(p => p = h.charakter()).filter(p => !p.gestorben);
-    g.drachen = Array.from(Array(3)).map(d => d = h.monster('Drachenname', 'Werte für einen Drachen'));
-    g.riesen = Array.from(Array(3)).map(r => r = h.monster('Riesenname', 'Werte für einen Riesen'));
+    g.festungen = Array
+      .from(Array(5))
+      .map(t => t = h.festung());
+    g.türme = Array
+      .from(Array(3))
+      .map(t => t = h.turm());
+    g.personen = Array
+      .from(Array(12))
+      .map(() => h.charakter())
+      .filter(p => !p.gestorben)
+      .sort((a, b) => (b.attribute.status - a.attribute.status) || (b.alter - a.alter));
+    g.Riesen = Array
+      .from(Array(3))
+      .map(r => r = h.monster('Riesen'));
+    g.Drachen = Array
+      .from(Array(3))
+      .map(d => d = h.monster('Drachen'));
 
-    function personen() {
-      return '<h1>Personen</h1>'
-        + g.personen.map(p => `<h2>${p.name}</h2><p>` + p.text(false)).join('');
+    function besitzer(x) {
+      if (!x.besitzer) return '';
+      const z = x.besitzer.typ == 'Drachen' ? '🐉'
+            : x.besitzer.typ == 'Riesen' ? '🧔'
+            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♀' && x.besitzer.alter < 60 ? '👩'
+            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♀' ? '👵'
+            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♂' && x.besitzer.alter < 60 ? '👨'
+            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♂' ? '👴'
+            : '?';
+      return `<p>${z} ${x.besitzer.text(false)}`;
+    };
+
+    function festung(t) {
+      return `<h2>${t.name}</h2><p>${t.text}` + besitzer(t);
     }
 
     function festungen() {
-      return '<h1>Festungen</h1>'
-        + g.festungen.map(f => `<h2>${f.name}</h2><p>${f.text}`).join('');
-    }
-    
+      return g.festungen.map(t => ungeordnet(festung(t))).join('');
+    };
+
+    function turm(t) {
+      return `<h2>${t.name}</h2><p>${t.text}` + besitzer(t);
+    };
+
     function türme() {
-      return '<h1>Türme</h1>'
-        + g.türme.map(t => `<h2>${t.name}</h2><p>${t.text}`).join('');
+      return g.türme.map(t => ungeordnet(turm(t))).join('');
+    };
+
+    function monster(t) {
+      return `<h3>${t.name}</h3><p>${t.text()}<p>`
+        + nimm('Verfluchter Ort in den Bergen');
     }
-    
-    function drachen() {
-      return '<h1>Drachen</h1>'
-        + g.drachen.map(d => `<h2>${d.name}</h2><p>${d.werte}`).join('');
-    }
-    
+
     function riesen() {
-      return '<h1>Riesen</h1>'
-        + g.riesen.map(r => `<h2>${r.name}</h2><p>${r.werte}`).join('');
-    }
-    
+      if (g.Riesen.length == 0) return '';
+      return '<h2>Riesen in der Wildnis</h2>'
+        + g.Riesen.map(t => monster(t)).join('');
+    };
+
+    function drachen() {
+      if (g.Drachen.length == 0) return '';
+      return '<h2>Drachen in der Wildnis</h2>'
+        + g.Drachen.map(t => monster(t)).join('');
+    };
+
+    function personen() {
+      if (g.personen.length == 0) return '';
+      return '<h2>Weitere Personen</h2>'
+        + g.personen.map(p => `<h3>${p.name}</h3><p>` + p.text(false)).join('');
+    };
+
+    function besitzer_finden(t, k) {
+      for (const p of g.personen) {
+        if (k && p.karriere != k || p.attribute.status < 8) continue;
+        t.besitzer = p;
+        g.personen = g.personen.filter(x => x != p);
+        return;
+      }
+      const m = wähle([g.Drachen, g.Riesen].flat());
+      if (!m) return;
+      t.name = 'Ruine von ' + t.name;
+      t.besitzer = m;
+      g[m.typ] = g[m.typ].filter(x => x != m);
+    };
+
+    g.türme.forEach(t => besitzer_finden(t, 'Magier'));
+    g.festungen.forEach(t => besitzer_finden(t));
+
     g.text = function() {
       return festungen()
         + türme()
@@ -492,12 +550,12 @@ function helmbarten(daten) {
         + drachen()
         + personen();
     };
-    
+
     return g;
   };
 
   // Zugänge zu internen Attributen
   h.nimm = nimm;
-    
+
   return h;
 }

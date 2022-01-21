@@ -424,6 +424,16 @@ function helmbarten(daten) {
     return t;
   };
 
+  function zeichen(t) {
+    return t.typ == 'Drachen' ? '🐉'
+      : t.typ == 'Riesen' ? '🧔'
+      : t.typ == 'Mensch' && t.geschlecht == '♀' && t.alter < 60 ? '👩'
+      : t.typ == 'Mensch' && t.geschlecht == '♀' ? '👵'
+      : t.typ == 'Mensch' && t.geschlecht == '♂' && t.alter < 60 ? '👨'
+      : t.typ == 'Mensch' && t.geschlecht == '♂' ? '👴'
+      : '?';
+  }
+  
   h.monster = function(typ) {
     const m = {};
     const werte = nimm(`Werte für ${typ}`);
@@ -432,7 +442,7 @@ function helmbarten(daten) {
     m.typ = typ;
     m.name = nimm(`${typ}name`);
     m.text = function() {
-      return `Der ${typ} ${m.name}\n${werte}\n${beschreibung}\n`;
+      return `${m.name}\n${werte}\n${beschreibung}\n`;
     };
     return m;
   };
@@ -476,19 +486,12 @@ function helmbarten(daten) {
 
     function besitzer(x) {
       if (!x.besitzer) return '';
-      const z = x.besitzer.typ == 'Drachen' ? '🐉'
-            : x.besitzer.typ == 'Riesen' ? '🧔'
-            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♀' && x.besitzer.alter < 60 ? '👩'
-            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♀' ? '👵'
-            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♂' && x.besitzer.alter < 60 ? '👨'
-            : x.besitzer.typ == 'Mensch' && x.besitzer.geschlecht == '♂' ? '👴'
-            : '?';
-      return `<p>${z} ${x.besitzer.text(false)}`;
+      return `<p>${zeichen(x.besitzer)} ${x.besitzer.text(false)}`;
     };
 
     function festung(t) {
       return `<h2>${t.name}</h2><p>${t.text}` + besitzer(t);
-    }
+    };
 
     function festungen() {
       return g.festungen.map(t => ungeordnet(festung(t))).join('');
@@ -503,7 +506,7 @@ function helmbarten(daten) {
     };
 
     function monster(t) {
-      return `<h3>${t.name}</h3><p>${t.text()}<p>`
+      return `<h3>${t.name}</h3><p>${zeichen(t)} ${t.text()}<p>`
         + nimm('Verfluchter Ort');
     }
 

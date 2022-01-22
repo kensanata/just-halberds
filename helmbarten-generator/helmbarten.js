@@ -439,6 +439,7 @@ function helmbarten(daten) {
     const werte = nimm(`Werte für ${typ}`);
     const beschreibung = nimm(`Beschreibung für ${typ}`);
     // von aussen sichtbar
+    m.verbindungen = [];
     m.typ = typ;
     m.name = nimm(`${typ}name`);
     m.text = function() {
@@ -451,6 +452,7 @@ function helmbarten(daten) {
     let f = {
       name: nimm('Festung'),
       text: h.resultate.Standort,
+      verbindungen: [],
     };
     return f;
   };
@@ -459,6 +461,7 @@ function helmbarten(daten) {
     let t = {
       name: nimm('Turm'),
       text: h.resultate.Standort,
+      verbindungen: [],
     };
     return t;
   };
@@ -484,13 +487,64 @@ function helmbarten(daten) {
       .from(Array(3))
       .map(d => d = h.monster('Drachen'));
 
+    function verbinde(t, u) {
+      t.verbindungen.push(u.name);
+      u.verbindungen.push(t.name);
+    };
+      
+    /**
+     * Es gibt 5 Festungen (1-5), die es zu verbinden gilt, und bis zu
+     * 3 Türme (6-8) + 3 Riesen + 3 Drachen (9-16) auf einer Karte:
+     * 
+     *   13 12
+     *    | |
+     *  1-5 8  9
+     *  |   |  |
+     *  0---3--4-6-10
+     *  |   |  |
+     *  |  14  11
+     *  | 
+     *  2-7-9
+     */
+    function erstelle_verbindungen() {
+      const k = [g.festungen, g.türme, ungeordnet([g.Riesen, g.Drachen].flat())].flat();
+      if (k[14]) { verbinde(k[14], k[3]); }
+      if (k[13]) { verbinde(k[13], k[5]); }
+      if (k[12]) { verbinde(k[12], k[8]); }
+      if (k[11]) { verbinde(k[11], k[4]); }
+      if (k[10]) { verbinde(k[10], k[6]); }
+      if (k[9]) { verbinde(k[9], k[7]); }
+      if (k[8]) { verbinde(k[8], k[3]); }
+      if (k[7]) { verbinde(k[7], k[2]); }
+      if (k[6]) { verbinde(k[6], k[4]); }
+      if (k[5]) { verbinde(k[5], k[1]); }
+      if (k[4]) { verbinde(k[4], k[3]); }
+      if (k[3]) { verbinde(k[3], k[0]); }
+      if (k[2]) { verbinde(k[2], k[0]); }
+      if (k[1]) { verbinde(k[1], k[0]); }
+    };
+
+    function slug(t) {
+      return t.toLowerCase().replace(/ +/g,'-').replace(/[^\w-]+/g,'');
+    }
+    
+    function link(t) {
+      return `<a href="#${slug(t)}">${t}</a>`;
+    }
+    
+    function verbindungen(t) {
+      return t.verbindungen.length > 1 ? `<p>Wege führen nach ${t.verbindungen.map(x => link(x)).reverse().join(', ')}.`
+        : t.verbindungen.length == 1 ? `<p>Ein Weg führt nach ${link(t.verbindungen[0])}.`
+        : '';
+    };
+    
     function besitzer(x) {
       if (!x.besitzer) return '';
       return `<p>${zeichen(x.besitzer)} ${x.besitzer.text(false)}`;
     };
 
     function festung(t) {
-      return `<h2>${t.name}</h2><p>${t.text}` + besitzer(t);
+      return `<h2 id="${slug(t.name)}">${t.name}</h2><p>${t.text}` + besitzer(t) + verbindungen(t);
     };
 
     function festungen() {
@@ -498,7 +552,7 @@ function helmbarten(daten) {
     };
 
     function turm(t) {
-      return `<h2>${t.name}</h2><p>${t.text}` + besitzer(t);
+      return `<h2 id="${slug(t.name)}">${t.name}</h2><p>${t.text}` + besitzer(t) + verbindungen(t);
     };
 
     function türme() {
@@ -506,8 +560,9 @@ function helmbarten(daten) {
     };
 
     function monster(t) {
-      return `<h3>${t.name}</h3><p>${zeichen(t)} ${t.text()}<p>`
-        + nimm('Verfluchter Ort');
+      return `<h3 id="${slug(t.name)}">${t.name}</h3><p>${zeichen(t)} ${t.text()}`
+        + '<p>' + nimm('Verfluchter Ort')
+        + verbindungen(t);
     }
 
     function riesen() {
@@ -541,10 +596,12 @@ function helmbarten(daten) {
       t.besitzer = m;
       g[m.typ] = g[m.typ].filter(x => x != m);
     };
-
+    
     g.türme.forEach(t => besitzer_finden(t, 'Magier'));
     g.festungen.forEach(t => besitzer_finden(t));
 
+    erstelle_verbindungen();
+    
     g.text = function() {
       return festungen()
         + türme()

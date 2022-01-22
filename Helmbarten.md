@@ -604,7 +604,7 @@ Herrschers und seines Reiches. Namen sind wichtig!
 | 1   | Ring    | der Unsichtbarkeit  | der Herrschers der Nacht                  |
 | 2   | Schwert | der Unbesiegbarkeit | die Herrin vom See                        |
 | 3   | Krone   | der Macht           | der erste Richter                         |
-| 4   | Speer   | des Zerstörung      | aus den letzten Tagen des Reichs          |
+| 4   | Speer   | der Zerstörung      | aus den letzten Tagen des Reichs          |
 | 5   | Buch    | des Heiligen        | (eine bekannte Person)                    |
 | 6   | Kelch   | der Erlösung        | (eine oder einer der Götter oder Dämonen) |
 

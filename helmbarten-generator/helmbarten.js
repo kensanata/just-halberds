@@ -1,7 +1,15 @@
 /* Helmbarten RPG character generator
    © Alex Schröder 2022
 
-   Um eine Charakterbeschreibung zu generieren: helmbarten().character().text();
+   Charakterbeschreibung: helmbarten(daten).character().text();
+   Ausgangslage: helmbarten(daten).gegend().text();
+
+   Im Fall von Helmbarten sind die Daten im #daten Element der HTML
+   Datei gespeichert. Der Aufruf also beispielsweise:
+
+   const daten = document.getElementById('daten').textContent;
+   document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
+
 */
 
 function helmbarten(daten) {

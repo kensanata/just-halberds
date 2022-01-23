@@ -16,6 +16,11 @@ You can find the PDF files online:
 
 A short and simple 2d6 system, inspired by Traveller, in German.
 
+* [Generator](https://campaignwiki.org/helmbarten/) for charakters and
+  initial situation
+
+The data for the generator is stored in the HTML file!
+
 ## Just Halberds
 
 This is my short and simple 2d6 system, inspired by

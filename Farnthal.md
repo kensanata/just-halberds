@@ -275,3 +275,114 @@ einen Marduk Tempel.
 
 Ich muss mit mal überlegen, was Wisigarde und Frieda für Talente
 haben.
+
+## Vorbereitung und los marschieren
+
+Zur Vorbereitung habe ich mir die Werte von einem Typen generiert, den
+man als Sidekick gut brauchen könnte.
+
+> Spion **Baldmer** 947A54 Kultur-2 Messer-3 Singen-3 Spionieren-4
+> Taktik-1, besitzt ein Stück Wald mit einem Teich.
+
+Wir verwenden diesen als Knappen für Gundobad, den Teriki heute nach
+Himmelturm begleiten soll. Und stellt sich die Frage, was für Werde
+Gundobad haben soll. Ich generiere so lange Charaktere, bis ein
+passender Krieger erscheint.
+
+> **Gundobad** C9482A Benehmen-3 Bürokratie-2 Diplomatie-1 Kultur-1
+> Messer-3 Schrift-1 Singen-1 Spionieren-1.
+
+Mir fällt auf, dass hier jeder singen kann. Der Einfluss von
+Wisigardes Chor steigt… Ausserdem habe ich wieder angefangen, die Hex
+Notation zu verwenden: A ist 10, B ist 11, C ist 12, und so weiter.
+Ich habe auch angefangen, die Monster so zu notieren. Statt Kraft,
+Geschick, Ausdauer, Intelligenz, Bildung und Status sind die sechs
+Attribute Schaden, Ausdauer, Leben, Angriff, Flucht, Anzahl. Für die
+Banditen also 77A759.
+
+Interessanterweise fragt Claudia zu beginn, ob Teriki und Gundobad
+Wachen anheuern sollen, oder ob Gundobad nicht Wachen hat. Ich sage
+ihr, dass wir wie Ritter der Tafelrunde seien. Lancelot würde auch
+nicht sechs Wachen anheuern. Claudia meint dazu: „Aber das sind ja
+Helden!“ Ja, genau. In Helmbarten ist es wie in Traveller: Man ist
+kein Erststüfler mehr, sondern ein Held! Dafür wird natürlich auch
+nicht mehr gesteigert.
+
+Auf dem Weg fragt Gundobad Teriki nach ihrem Verhältnis zu Wisigarde,
+dann zu ihrem Verhältnis zu Vuldetrude, und schlussendlich nach dem
+Verhältnis der beiden Frauen untereinander. Wir reden über Terikis
+Eltern. Leben sie noch? Ja, sie leben noch. Terikis Mutter war eine
+Freundin von Wisigarde, hat dann aber Kinder bekommen; sie ist
+ebenfalls Sängerin und hat deswegen ihre Tochter zu Wisigarde in den
+Chor geschickt. Wisigarde und Teriki sind sehr vertraut, aber ihre
+Mitgliedschaft im Kreis der Pentarchen hat Teriki trotzdem geheim
+gehalten.
+
+Ich sage Claudia, dass Teriki merkt, dass Gundobad am fischen ist. Er
+würde wohl gerne etwas hören, was er gegen Wisigarde einsetzen könnte,
+aber Teriki gibt nichts preis. Ich sage Claudia, dass es sicher ein
+Gerücht gibt, nachdem Wisigarde und Vuldetrude ein Verhältnis haben,
+aber dass Wisigarde ihr so etwas auch nie erzählen würde. Claudia
+nickt und versteht beide Seiten. Wie geht Vuldetrude denn mit den
+Anwärtern um, die sich immer wieder zeigen, fragt sie mich? Gute
+Frage. Wahrscheinlich trägt sie ihnen auf, gegen Drachen zu kämpfen,
+oder ins heilige Land zu ziehen. Das ist hart.
+
+Claudia findet gefallen an Gundobad. Irgendwie ist er ja nett, und
+jetzt will er eine gute Partie finden, das sei ja sein gutes Recht.
+
+## Die Banditen und Himmelturm
+
+Mit Intelligenz 10 und Spionieren-4 muss Baldmer nicht würfeln, wenn
+er die Banditen sucht. Da Adalgard Bauen-1 hat, erzähle ich, wie die
+Banditen eine Palisade an einer engen Stelle errichtet haben, mit
+einem Tor. Nun verlangen sie „Zoll“. Wieviel denn genau, will Claudia
+wissen. Ich probiere so lange wie möglich an der Vorstellung einer
+Welt ohne Geld festzuhalten und sage, dass sie dir einfach alles
+wegnehmen, bis auf die Unterhosen.
+
+Gundabad will die Torwachen bekämpfen; Baldmer will eine Wache
+herauslocken und abmurksen. Und Claudia? Wir reden über die Magie,
+dass sie mit Luft-1 über das Tor fliegen könnte, mit Augen-1 und ihrer
+Krähe Rax die Gegend auskundschaften kann, und mit Türen-1 das Tor
+öffnen könnte. Baldmer schlägt vor, dies Nachts zu machen: Er lockt
+eine Wache vor das Tor, in dem er eine Wunde vortäuscht; Teriki soll
+dann das Palisadentor öffnen und Gundobad die zweite Wache fertig
+machen. Teriki will vorher mit der Krähe noch den Weg auskundschaften.
+Ich erkläre, dass mit Bildung-12 und Augen-1 das Spähen nicht
+fehlschlagen kann, und selbst wenn die Bildung dann für das Zaubern um
+einen Punkt sinkt, ist 11 und Türen-1 immer noch so hoch, dass es
+nicht fehlschlagen kann. Claudia ist erfreut.
+
+Für Baldmer gilt: Intelligenz-10 und Taktik-1 machen die gespielte
+Verletzung des Nachts sehr glaubhaft. Claudia würfelt keine 12. Sein
+Angriff ist Kraft-9 und Messer-3, wieder eine totsichere Sache.
+Claudia darf sofort den Schaden würfeln und kriegt eine 7, genau
+gleich wie die Ausdauer des Banditen. Diese sinkt ohnmächtig zu Boden
+(und darf nicht gleichzeitig zuschlagen, wegen Terikis gelungener
+Taktik Wurf). Der zweite Bandit hat Flucht-5 und würfelt darüber: er
+flieht, schlägt Alarm, die Dreiergruppe hastet den Weg hinauf, die
+Banditen trauen sich nicht, die Verfolgung aufzunehmen. Geschafft!
+
+Am dritten Tag erreichen wir Himmelturm. Ist Frieda eine Zauberin? Ich
+vermute ja, aber Marduk ist ein Prüglergott. Mal schauen, was der
+Charaktergenerator sagt.
+
+> Hohepriesterin **Frieda** A6784A Benehmen-3 Feldscher-3 Messer-2
+> Rennen-1 Singen-3 Taktik-2 Tüfteln-4. Mit **Hund** 67894.
+
+Eine Karriere als Schläger und Mörder, eigentlich! Wir entscheiden,
+dass der Zugang mit Fallen gespickt ist: Ziehbrücke, wackelige Planken
+über Fallgruben gefüllt mit Spiessen, Maschikulis… Hier oben wird an
+der Taktik und am Messerstechen trainiert und der Leib ertüchtigt. Und
+mit Benehmen-3 und Singen-3 bekommt man gleich die passende Erziehung
+für Schloss Farnheim.
+
+Die Begrüssung und das Abendessen verlaufen gut. Frieda will Gundabad
+gegen den Drachen hetzen, doch Teriki will, dass etwas gegen die
+Banditen unternommen werde. Ich verlange einen Wurf; Intelligenz-4 und
+Diplomatie-1 ist nicht einfach, doch Claudia schafft es. Und so lacht
+Gundabad, ist einverstanden, und es wird ein Plan geschmiedet, wie man
+mehr Bauernkinder nach Himmelturm zur Ausbildung schicken und gegen
+die Banditen vorgehen könnte. Das nächste Mal geht es weiter in
+Hinterthal.

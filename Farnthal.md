@@ -386,3 +386,45 @@ Gundabad, ist einverstanden, und es wird ein Plan geschmiedet, wie man
 mehr Bauernkinder nach Himmelturm zur Ausbildung schicken und gegen
 die Banditen vorgehen könnte. Das nächste Mal geht es weiter in
 Hinterthal.
+
+## Die Würfelprobe
+
+Wann soll man würfeln? Wir würfeln, wenn wir nicht entscheiden wollen,
+wenn wir uns überraschen lassen wollen, wenn sowohl Erfolg als auch
+Fehlschlag zu einer interessanten Weiterentwicklung der Geschichte
+führen.
+
+Darüber hinaus wollen wir aber auch Konsequenzen im Spiel: damit die
+Erfolge süsser werden, müssen die Fehlschläge bitterer werden. Die
+Spieler lieben ihren Charakter und schätzen dessen Bezugspersonen, und
+somit ist das Abenteuerspiel darauf ausgelegt, all dies zu riskieren.
+Das heisst, wir würfeln, wenn damit Erfolg oder Fehlschlag und dessen
+bittere Konsequenzen bestimmt werden: ob wir treffen und wieviel
+Schaden wir austeilen, oder ob wir getroffen werden und wieviel
+Schaden wir einstecken müssen. Wir würfeln, um heraus zu finden, ob
+wir dem Schicksal ein Schnippchen schlagen können.
+
+![Schlacht bei Dorneck](images/Dornach-1499.jpg)
+Schlacht bei Dornach 1499
+{: .pic }
+
+Das Spiel soll sich nicht um Kämpfe drehen, denn diese sind
+gefährlich. Die Gewalt sollte immer nur letztes Mittel sein. Die
+Gespräche, das Intrigieren, das Erkunden, all das ist spannend, kann
+durch Würfelwürfe fehl schlagen und das Spiel in unvorhergesehene
+Richtungen lenken.
+
+Was genau gewürfelt werden soll, wird gemeinsam am Tisch festgelegt.
+Damit ist auch bestimmt, wie „schwer“ das Spiel ist. Das mag seltsam
+wirken. Die Spielleitung macht nur einen Vorschlag und sie entscheidet
+bei Unentschlossenheit, aber sie entscheidet nicht alleine. Wenn
+Spieler aber immer zum eigenen Vorteil entscheiden, machen sie das
+Spiel langweilig. Ist die Spielleitung hingegen zu hart, macht sie das
+Spiel frustrierend. Ist das Spiel langweilig oder frustrierend, spielt
+mit anderen Leuten.
+
+Es ist wichtig, dass man sich gemeinsam daran erinnert, was früher mal
+entschieden wurde. Das macht das Geschehene verständlich und das
+Kommende berechenbar. So wird es euer persönliches Spiel. Man muss
+dies nicht unbedingt aufschreiben, aber es hilft. Was allerdings immer
+wieder vergessen geht, soll man auch getrost wieder streichen.

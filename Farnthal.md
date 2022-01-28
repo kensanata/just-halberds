@@ -26,16 +26,17 @@ seinem Speer, und seiner Wilden Jagd. **Freya**, der alle zu Dank
 verpflichtet sind, die sich von Feld, Wald und Wiese ernähren.
 **Thor** mit seinem Hammer, jähzornig, einfach gestrickt,
 abenteuerlustig. **Mitra** mit ihren Schwüren und Bunden, den
-unterirdischen Ritualen, der Verehrung von Stier und Waage. **Marduk**
-der Monsterjäger, der Keulenträger, der wilde Mann. **Ishtar**, die
-Göttin von Schönheit, der Verliebten, der Eifersüchtigen, der
-Grausamen, der Rächenden. **Set** der Dämon der Mörder, der Schlangen,
-der Giftmischer, der Echsenmenschen. **Orcus** der Schlaumeier, der
-Ziegenkopf, der Herr der Untoten. **Pazuzu**, Herr der Geiern und der
-Pest, mit seinen vier Flügeln. **Nergal**, der Herr der Unterwelt, der
-Toten, der Lähmung, der Angst. **Hel**, Schutzherrin der Hexen, der
-Wegscheiden und Kreuzungen, Hunde und Wölfen. **Zathogga**, der Herr
-der Frösche, der Sümpfe, der Untätigkeit und der Völlerei.
+unterirdischen Ritualen, der Verehrung von Stier und Waage.
+**Marduk**, der Monsterjäger, der Keulenträger, der wilde Mann.
+**Ishtar**, die Göttin von Schönheit, der Verliebten, der
+Eifersüchtigen, der Grausamen, der Rächenden. **Set**, der Dämon der
+Mörder, der Schlangen, der Giftmischer, der Echsenmenschen. **Orcus**,
+der Schlaumeier, der Ziegenkopf, der Herr der Untoten. **Pazuzu**,
+Herr der Geiern und der Pest, mit seinen vier Flügeln. **Nergal**, der
+Herr der Unterwelt, der Toten, der Lähmung, der Angst. **Hel**,
+Schutzherrin der Hexen, der Wegscheiden und Kreuzungen, Hunde und
+Wölfe. **Zathogga**, der Herr der Frösche, der Sümpfe, der
+Untätigkeit und der Völlerei.
 
 Je nachdem gibt es dann natürlich immer auch noch andere Götter und
 Dämonen, die immer wieder mal auftauchen: **Loki**, der Freund aller
@@ -43,7 +44,7 @@ Gestaltwandler und Halunken; **Garaskis**, die Herrin der Krebse, der
 Rache, Verführerin der Fischer, und so weiter.
 
 Mir gefällt auch der Gedanke, dass jeder Stadtstaat ursprünglich eine
-eigene Göttin oder einen eigenen Gott hat, sich die „Portfolios“
+eigene Göttin oder einen eigenen Gott hat und sich die „Portfolios“
 deswegen auch ohne weiteres überschneiden, und dass auch die
 schlimmsten von ihnen noch geduldet werden, weil jemand davon
 profitieren könnte: Wer einen Mörder anheuern will, sucht den Set
@@ -55,14 +56,16 @@ unverdient reich werden will, sucht den Zathogga Tempel auf.
 
 Meine Lieblinge tauchen halt auch immer wieder auf, weil sie mir
 geläufig sind. Wem also die Zwölfgötter von Aventurien geläufiger
-sind, oder wer seinen eigenen Pantheon aufgestellt hat, kein Problem.
+sind, oder wer seinen eigenen Pantheon aufgestellt hat, verwendet
+diese, das ist klar.
 
 Generell halte ich es auch mit einer einfachen Faustregel: Die Götter
 der Ordnung und ihre Tempel findet man in den Bergen, in der Nähe vom
 ewigen Eis, nahe am Himmel und der Sonne, in weiss und blau. Die
 Dämonen des Chaos hingegen leben in den Sümpfen, bei den Mücken,
 Krokodilen, dem Fieber, wo man sich benommen durch den Schlamm kämpft
-und wo die Blutegel auf uns warten.
+und wo die Blutegel auf uns warten. Ihre Farben sind grün, braun und
+rot.
 
 ## Ausgangslage
 
@@ -86,25 +89,26 @@ Die Beschreibung der Damen ist aus dem Regelwerk kopiert:
 > Schule für Diplomatie, Menschenkenntnis, Illusionsmagie, und vieles
 > mehr.
 
-Wen könnte ich noch auf der Burg haben? Nochmal die Beschreibungen
-durchgelesen und finde den Gundobad, der Vuldetrada heiraten will.
+Wen könnte ich noch auf der Burg haben? Ich habe nochmal die
+Beschreibungen durchgelesen und finde den Gundobad, der Vuldetrada
+heiraten will.
 
 > **Gundobad** ist Ritter von Rifenau und zu Besuch.
 
 Damit ich schnell was zur Hand habe, schreibe ich gerne ein oder zwei
-Sätze direkter Rede auf. Wenn ich ins Rotieren komme, kann ich einfach
-etwas ablesen.
+Sätze direkter Rede auf. Wenn ich ins Rotieren komme, kann ich etwas
+ablesen.
 
 Wisigarde mag Gundobad nicht und würde ihn gerne los werden. Wer sich
 mit ihr also gut stellen will, hilft ihr, Vuldetrada davon zu
-überzeugen, dass Gundobad ein Selbstmordkommando übernimmt. Gundobad
-will mehr über den Kelch erfahren. Wer ihm dabei hilft, Wisigarde zu
-überstimmen, stellt sich bei ihm gut. Beides geht nicht.
+überzeugen, dass Gundobad ein Selbstmordkommando übernehmen soll.
+Gundobad will mehr über den Kelch erfahren. Wer ihm dabei hilft,
+Wisigarde zu überstimmen, stellt sich bei ihm gut. Beides geht nicht.
 
-> Wisigarde sagt: “Gundobad, der Widerling, ist zu Besuch. Wie sehr
-> ich mir doch wünschte, er würde sich für das Tal nützlich machen.
-> Soll er doch den Drachen von der Rabenwarte erschlagen! Das wäre
-> eine That, eines Ritters würdig!”
+> Wisigarde sagt: “Gundobad der Widerling ist zu Besuch. Wie sehr ich
+> mir doch wünschte, er würde sich für das Tal nützlich machen. Soll
+> er doch den Drachen von der Rabenwarte erschlagen! Das wäre eine
+> Tat, eines Ritters würdig!”
 > 
 > Gundobad sagt: “Holde Vuldetrada, euer Ruhm und euer Reichtum sind
 > ohnegleichen. Vor allem heisst es, dass Wisigarde aber die schönste
@@ -428,3 +432,58 @@ entschieden wurde. Das macht das Geschehene verständlich und das
 Kommende berechenbar. So wird es euer persönliches Spiel. Man muss
 dies nicht unbedingt aufschreiben, aber es hilft. Was allerdings immer
 wieder vergessen geht, soll man auch getrost wieder streichen.
+
+## Feinde
+
+Ich muss etwas vorbereiten. Teriki und Gundobad werden wohl den
+Bergabstieg direkt ins Hinterthal wagen. Ein Blick auf die
+Monsterliste sagt mir, das Bergwölfe vielleicht einen Auftritt haben
+werden.
+
+Und was ist mit Hinterthal selber? Die Leute leben in der Nähe einer
+bösen Magierin, neben einem vergifteten Sumpf, beherrscht von einem
+grossen Drachen. Das erinnert mich daran: welchen Schatz bewacht
+Pesthauch? → Die Krone der Zerstörung vom Herrscher der Nacht. Das
+tönt nach einem untoten Hexer, aber auch nach der Unterwelt. Das
+bringt mich wiederum auf den Riesen Langfinger, den König vom
+Unterberg, dem Herrn der Diebe.
+
+Wir brauchen einen Dieb! Der Generator liefert mir den Akrobaten
+**Siggo**, 36 Jahre alt, 95899A, Ablenken-1 Brauen-1 Bürokratie-3
+Degen-3 Feldscher-1 Klettern-3 Knacken-1 Reden-1 Rennen-3 Schleichen-2
+Taktik-1 Tüfteln-1, Geheimrat der Holzfäller, und Besitzer dreier sehr
+gefährlicher Hunde mit den Werten 79596, 68A83, 9DC93. Siggo will die
+Krone für seinen Herrn, den Riesen Langfinger, und deswegen lebt er
+nun in Hinterthal und sucht Leute, die er gegen den Drachen hetzen
+könnte. Dies sagt er natürlich nicht, sondern erfindet einen Vorwand.
+Vom Buch der Macht weiss er nichts.
+
+> Siggo sagt: „Ich suche mutige Gesellen, die sich etwas trauen und
+> die etwas können. Gemeinsam mit mir und meinen Kumpanen könnten wir
+> der Herrin der Rabenwarte ein Schnippchen schlagen und ihren Schatz
+> klauen, die Krone des Chardeweche.“
+
+Da Teriki und Gundabad die Dorfjugend zum Himmelturm schicken wollen,
+treibt sich diese im Umfeld von Siggo um. Die Eltern wiederum wollen
+ihre Kinder zurück, und der alte Vogt **Adalad** will Siggo
+vertreiben, doch die Dörfler wollen ihre Kinder nicht gefährden.
+
+> Adalad sagt: „Helft mir Siggo und seine verdammten Hirtenhunde zu
+> vertreiben und ich helfe euch, die Dorfjugend für eure Zwecke zu
+> gewinnen!
+
+Eine Freundin? Die Illusionistin **Chrodohild**, 464994, Bezaubern-1
+Feuer-1 Illusion-3 Luft-2 Messer-1 Psychologie-2 Schrift-2 Singen-1,
+Lehrstuhl für Illusion. Sie ist ebenfalls dem Drachen auf der Spur,
+weiss vielleicht auch etwasvon der Krone.
+
+> Chrodohild sagt: „Die Krone der Zerstörung gehörte dem Meroric, dem
+> Zauberer vom Unterberg, einem Reich in der Tiefe, in der Dunkelheit.
+> Dort besiegte er wohl viele Feinde, doch wollte er nicht sterben und
+> paktierte mit dem Teufel. Orcus schenkte ihm das lange Leben doch er
+> klaute ihm auch die Krone…“
+
+Gundabad wird Chrodohild wohl nach dem Kelch der Erlösung fragen. Sie
+weiss, dass es ihn gibt, und das er tödlich ist, und dass der Sumpf
+von einem tödlichen Fluch beschützt wird. Ob dies das Werk des Kelches
+ist, weiss sie nicht.

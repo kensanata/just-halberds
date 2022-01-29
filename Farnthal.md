@@ -22,7 +22,7 @@ Die angepasste Karte
 
 In meinen Kampagnen verwende ich immer wieder dieselben Götter und
 Dämonen: **Odin**, der einäugige, weise, fiese, harte Vater, mit
-seinem Speer, und seiner Wilden Jagd. **Freya**, der alle zu Dank
+seinem Speer und seiner Wilden Jagd. **Freya**, der alle zu Dank
 verpflichtet sind, die sich von Feld, Wald und Wiese ernähren.
 **Thor** mit seinem Hammer, jähzornig, einfach gestrickt,
 abenteuerlustig. **Mitra** mit ihren Schwüren und Bunden, den
@@ -32,11 +32,11 @@ unterirdischen Ritualen, der Verehrung von Stier und Waage.
 Eifersüchtigen, der Grausamen, der Rächenden. **Set**, der Dämon der
 Mörder, der Schlangen, der Giftmischer, der Echsenmenschen. **Orcus**,
 der Schlaumeier, der Ziegenkopf, der Herr der Untoten. **Pazuzu**,
-Herr der Geiern und der Pest, mit seinen vier Flügeln. **Nergal**, der
+Herr der Geier und der Pest, mit seinen vier Flügeln. **Nergal**, der
 Herr der Unterwelt, der Toten, der Lähmung, der Angst. **Hel**,
 Schutzherrin der Hexen, der Wegscheiden und Kreuzungen, Hunde und
-Wölfe. **Zathogga**, der Herr der Frösche, der Sümpfe, der
-Untätigkeit und der Völlerei.
+Wölfe. **Zathogga**, der Herr der Frösche, der Sümpfe, der Untätigkeit
+und der Völlerei.
 
 Je nachdem gibt es dann natürlich immer auch noch andere Götter und
 Dämonen, die immer wieder mal auftauchen: **Loki**, der Freund aller
@@ -55,9 +55,9 @@ Tempel auf; wer Ratschlag braucht, sucht den Hel Tempel auf; wer
 unverdient reich werden will, sucht den Zathogga Tempel auf.
 
 Meine Lieblinge tauchen halt auch immer wieder auf, weil sie mir
-geläufig sind. Wem also die Zwölfgötter von Aventurien geläufiger
-sind, oder wer seinen eigenen Pantheon aufgestellt hat, verwendet
-diese, das ist klar.
+geläufig sind. Wem also die Zwölfgötter von Aventurien geläufiger sind
+oder wer seinen eigenen Pantheon aufgestellt hat, verwendet diese, das
+ist klar.
 
 Generell halte ich es auch mit einer einfachen Faustregel: Die Götter
 der Ordnung und ihre Tempel findet man in den Bergen, in der Nähe vom
@@ -76,7 +76,7 @@ auf der Wiki an. Der Fluss hat neuerdings einen Namen.
 
 > Das Schloss steht weit oberhalb des Farnsees. Ein steiler Weg führt
 > neben dem Wasserfall der Würm hinab zum See. Unten hat es einen
-> kleinen Hafen für die Fischer, und den Fährmann, der Reisende zur
+> kleinen Hafen für die Fischer und den Fährmann, der Reisende zur
 > Strasse nach Falkenstein führt.
 
 Die Beschreibung der Damen ist aus dem Regelwerk kopiert:
@@ -84,12 +84,11 @@ Die Beschreibung der Damen ist aus dem Regelwerk kopiert:
 > **Vuldetrada** ist die Baronin vom Schloss Farnheim, reich und
 > ledig.
 >
-> **Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim, und
-> die Geliebte der Vuldetrada. Ihr Chor ist gleichzeitig auch eine
-> Schule für Diplomatie, Menschenkenntnis, Illusionsmagie, und vieles
-> mehr.
+> **Wisigarde** ist die berühmte Sängerin vom Schloss Farnheim und die
+> Geliebte der Vuldetrada. Ihr Chor ist gleichzeitig auch eine Schule
+> für Diplomatie, Menschenkenntnis, Illusionsmagie und vieles mehr.
 
-Wen könnte ich noch auf der Burg haben? Ich habe nochmal die
+Wen könnte ich noch auf der Burg haben? Ich habe nochmals die
 Beschreibungen durchgelesen und finde den Gundobad, der Vuldetrada
 heiraten will.
 
@@ -99,7 +98,7 @@ Damit ich schnell was zur Hand habe, schreibe ich gerne ein oder zwei
 Sätze direkter Rede auf. Wenn ich ins Rotieren komme, kann ich etwas
 ablesen.
 
-Wisigarde mag Gundobad nicht und würde ihn gerne los werden. Wer sich
+Wisigarde mag Gundobad nicht und würde ihn gerne loswerden. Wer sich
 mit ihr also gut stellen will, hilft ihr, Vuldetrada davon zu
 überzeugen, dass Gundobad ein Selbstmordkommando übernehmen soll.
 Gundobad will mehr über den Kelch erfahren. Wer ihm dabei hilft,
@@ -147,7 +146,7 @@ ausgewürfelt. Wie man sieht, hätte es auch gepasst, wenn Adalgard
 einfach überall einen Wert von 2 hat.
 
 Wenn ich mir die Tabelle der Tätigkeiten anschaue, stelle ich fest,
-dass es in meiner Liste der Personen keine Diebe gibt! Ob wohl eines
+dass es in meiner Liste der Personen keine Diebe gibt! Obwohl einer
 der drei Geheimbunde eine Diebesgilde ist? Vielleicht eher nicht.
 
 Ich habe drei Drachen aber nur zwei Riesen. Wo ist er dritte?
@@ -198,13 +197,13 @@ fünf), und Bildung +1, was Bildung-12 bedeutet. Wahnsinn!
 
 Mir fällt auf, wie breit gestreut man ist, wenn man mal hier und mal
 da würfelt. Claudia wählt: Agressiv, 3× Passiv, 2×Manipulativ,
-Transgressiv, 2× Agressiv, Passive, Manipulativ, Transgressiv. Also
-eigentlich auf jeder Tabelle 3×. Ich sage ihr, dass ein Talent von 1
-gut genug ist, um damit einen Beruf aus zu üben.
+Transgressiv, 2× Agressiv, Passiv, Manipulativ, Transgressiv. Also
+sehr gleichmässig verteilt. Ich sage ihr, dass ein Talent von 1 gut
+genug ist, um damit einen Beruf auszuüben.
 
 Wir schauen auf die Karte und ich erzähle, wer Theudetrud (Trudi) von
 Bärenau ist (die Anführerin des Geheimbundes), und wer die drei
-Drachen sind, welche sie zu schützen probieren, damit die
+Drachen sind, welche die Pentarchen zu schützen versuchen, damit die
 Kriegstreiber dieser Welt zuhause bleiben: Pesthauch bei der
 Rabenwarte, wo Hildegard lebt, die Hohepriesterin des Pazuzu;
 Frostatem von der Isenspitze, und Schattenspeier vom Finstermoor.
@@ -214,23 +213,22 @@ der letzte dunkle Herrscher geschrieben hat.
 Da wir schon auf die Karte schauen, stellt sich die Frage, woher
 Teriki denn kommt. Ich sage ihr, dass Chlodogunda Feldherrin von
 Klingenstein ist, und wenn sie dort daheim ist, dann wird das Spiel um
-den Konflikt zwischen Chlodogunda und Vuldetrada sein. Getrud ist die
+den Konflikt zwischen Chlodogunda und Vuldetrada sein. Gertrud ist die
 Hexe vom Katzenberg, welche versucht, die Pentarchen des Kreises zu
 finden und zu beseitigen. Wenn Teriki dort daheim ist, dann ist sie
-eine Doppelagentin! Super spannend, aber auch heikel! Amalgund ist
-der Baron von Falkenstein, einem grossen Dorf Richtung Talausgang.
-Oder sonst halt eines der kleinen Dörfer ohne Burg? Und so kommt
-Teriki aus Vorderthal, und das Spiel wird sich im Moment auch mehr um
-diese Gegend drehen. Passt!
+eine Doppelagentin! Super spannend, aber auch heikel! Amalgund ist der
+Baron von Falkenstein, einem grossen Dorf Richtung Talausgang. Oder
+sonst halt eines der kleinen Dörfer ohne Burg? Und so kommt Teriki aus
+Vorderthal, und das Spiel wird sich im Moment auch mehr um diese
+Gegend drehen. Passt!
 
 ### Schloss Farnheim
 
 Teriki ist auf Schloss Farnheim und redet mit Wisigarde. Teriki war
 einmal ihre Schülerin, beschliessen wir. Wisigarde würde gerne den
 Gundabad, der im Moment auf Besuch ist, gegen den Drachen Pesthauch
-schicken will. So wäre er aus dem Weg – oder hätte sich wenigstens
-nützlich gemacht. Nur widerspricht das leider den Zielen der
-Pentarchen.
+schicken. So wäre er aus dem Weg – oder hätte sich wenigstens nützlich
+gemacht. Nur widerspricht das leider den Zielen der Pentarchen.
 
 Als sie mit Vuldetrada reden will, ist Gundabad schon bei ihr und sie
 streiten. Teriki will lauschen. Wir machen das so: Sie hört Gundabads
@@ -257,14 +255,14 @@ ihn besitzt, den sehre die Sorge, und wer ihn nicht hat, den nage der
 Neid … So lang’ er lebt, sterb’ er lechzend dahin, des Ringes Herr als
 des Ringes Knecht!“ und so fange ich an, eine Geschichte zu spinnen:
 Der Kelch wurde vom Zwerg Angrim geschmiedet. Wer ihn besitzt, wird
-reich; Silber und Gold sind immer zum greifen nah. Von Angrim war der
+reich; Silber und Gold sind immer zum greifen nah. Angrim hat den
 Kelch verflucht, nur wissen das viele nicht: Aus dem Kelch darf man
 nicht trinken. Doch wer sich gierig zeigt, den holt der Fluch ein. Sei
-es, weil der König zufällig in der Nähe ist, und verlangt, dass aus
-dem Kelch getrunken werde, oder aus sonst einem Grund: Am Ende trinkt
-man aus dem Kelch und ist des Todes. Der letzte bekannte Besitzer des
+es, weil der König zufällig in der Nähe ist und verlangt, dass aus dem
+Kelch getrunken werde, oder aus sonst einem Grund: Am Ende trinkt man
+aus dem Kelch und ist des Todes. Der letzte bekannte Besitzer des
 Kelchs war der Grossvater von Amalgund von Falkenstein. Ich denke mir,
-das Teriki nicht gleich erfahren wird, wo der Kelch genau liegt.
+dass Teriki nicht gleich erfahren wird, wo der Kelch genau liegt.
 
 Wisigarde singt das Lied vom Kelch, und nun weiss auch Gundabad, dass
 der Kelch verflucht ist, und wer ihn zuletzt hatte. Ich mache
@@ -277,10 +275,9 @@ Das nächste Mal geht es weiter mit der Reise von Teriki und Gundabad
 in die Berge, zu Frieda und dem Himmelturm, an Banditen vorbei und in
 einen Marduk Tempel.
 
-Ich muss mit mal überlegen, was Wisigarde und Frieda für Talente
-haben.
+Ich muss mir mal überlegen, welche Talente Wisigarde und Frieda haben.
 
-## Vorbereitung und los marschieren
+## Vorbereitung und losmarschieren
 
 Zur Vorbereitung habe ich mir die Werte von einem Typen generiert, den
 man als Sidekick gut brauchen könnte.
@@ -289,7 +286,7 @@ man als Sidekick gut brauchen könnte.
 > Taktik-1, besitzt ein Stück Wald mit einem Teich.
 
 Wir verwenden diesen als Knappen für Gundobad, den Teriki heute nach
-Himmelturm begleiten soll. Und stellt sich die Frage, was für Werde
+Himmelturm begleiten soll. Und es stellt sich die Frage, was für Werte
 Gundobad haben soll. Ich generiere so lange Charaktere, bis ein
 passender Krieger erscheint.
 
@@ -304,8 +301,8 @@ Geschick, Ausdauer, Intelligenz, Bildung und Status sind die sechs
 Attribute Schaden, Ausdauer, Leben, Angriff, Flucht, Anzahl. Für die
 Banditen also 77A759.
 
-Interessanterweise fragt Claudia zu beginn, ob Teriki und Gundobad
-Wachen anheuern sollen, oder ob Gundobad nicht Wachen hat. Ich sage
+Interessanterweise fragt Claudia zu Beginn, ob Teriki und Gundobad
+Wachen anheuern sollen oder ob Gundobad nicht Wachen hat. Ich sage
 ihr, dass wir wie Ritter der Tafelrunde seien. Lancelot würde auch
 nicht sechs Wachen anheuern. Claudia meint dazu: „Aber das sind ja
 Helden!“ Ja, genau. In Helmbarten ist es wie in Traveller: Man ist
@@ -349,8 +346,8 @@ Gundabad will die Torwachen bekämpfen; Baldmer will eine Wache
 herauslocken und abmurksen. Und Claudia? Wir reden über die Magie,
 dass sie mit Luft-1 über das Tor fliegen könnte, mit Augen-1 und ihrer
 Krähe Rax die Gegend auskundschaften kann, und mit Türen-1 das Tor
-öffnen könnte. Baldmer schlägt vor, dies Nachts zu machen: Er lockt
-eine Wache vor das Tor, in dem er eine Wunde vortäuscht; Teriki soll
+öffnen könnte. Baldmer schlägt vor, dies nachts zu machen: Er lockt
+eine Wache vor das Tor, indem er eine Wunde vortäuscht; Teriki soll
 dann das Palisadentor öffnen und Gundobad die zweite Wache fertig
 machen. Teriki will vorher mit der Krähe noch den Weg auskundschaften.
 Ich erkläre, dass mit Bildung-12 und Augen-1 das Spähen nicht
@@ -359,12 +356,12 @@ einen Punkt sinkt, ist 11 und Türen-1 immer noch so hoch, dass es
 nicht fehlschlagen kann. Claudia ist erfreut.
 
 Für Baldmer gilt: Intelligenz-10 und Taktik-1 machen die gespielte
-Verletzung des Nachts sehr glaubhaft. Claudia würfelt keine 12. Sein
-Angriff ist Kraft-9 und Messer-3, wieder eine totsichere Sache.
+Verletzung des nachts sehr glaubhaft. Claudia würfelt keine 12. Sein
+Angriff ist Kraft-9 und Messer-3, wieder eine todsichere Sache.
 Claudia darf sofort den Schaden würfeln und kriegt eine 7, genau
-gleich wie die Ausdauer des Banditen. Diese sinkt ohnmächtig zu Boden
-(und darf nicht gleichzeitig zuschlagen, wegen Terikis gelungener
-Taktik Wurf). Der zweite Bandit hat Flucht-5 und würfelt darüber: er
+gleich wie die Ausdauer des Banditen. Dieser sinkt ohnmächtig zu Boden
+(und darf nicht gleichzeitig zuschlagen, wegen Terikis gelungenem
+Taktik-Wurf). Der zweite Bandit hat Flucht-5 und würfelt höher: er
 flieht, schlägt Alarm, die Dreiergruppe hastet den Weg hinauf, die
 Banditen trauen sich nicht, die Verfolgung aufzunehmen. Geschafft!
 
@@ -375,21 +372,21 @@ Charaktergenerator sagt.
 > Hohepriesterin **Frieda** A6784A Benehmen-3 Feldscher-3 Messer-2
 > Rennen-1 Singen-3 Taktik-2 Tüfteln-4. Mit **Hund** 67894.
 
-Eine Karriere als Schläger und Mörder, eigentlich! Wir entscheiden,
-dass der Zugang mit Fallen gespickt ist: Ziehbrücke, wackelige Planken
-über Fallgruben gefüllt mit Spiessen, Maschikulis… Hier oben wird an
-der Taktik und am Messerstechen trainiert und der Leib ertüchtigt. Und
-mit Benehmen-3 und Singen-3 bekommt man gleich die passende Erziehung
-für Schloss Farnheim.
+Eine Karriere als Schlägerin und Mörderin, eigentlich! Wir
+entscheiden, dass der Zugang mit Fallen gespickt ist: Ziehbrücke,
+wackelige Planken über Fallgruben gefüllt mit Spiessen, Maschikulis…
+Hier oben wird an der Taktik und am Messerstechen trainiert und der
+Leib ertüchtigt. Und mit Benehmen-3 und Singen-3 bekommt man gleich
+die passende Erziehung für Schloss Farnheim.
 
 Die Begrüssung und das Abendessen verlaufen gut. Frieda will Gundabad
 gegen den Drachen hetzen, doch Teriki will, dass etwas gegen die
 Banditen unternommen werde. Ich verlange einen Wurf; Intelligenz-4 und
 Diplomatie-1 ist nicht einfach, doch Claudia schafft es. Und so lacht
-Gundabad, ist einverstanden, und es wird ein Plan geschmiedet, wie man
-mehr Bauernkinder nach Himmelturm zur Ausbildung schicken und gegen
-die Banditen vorgehen könnte. Das nächste Mal geht es weiter in
-Hinterthal.
+Gundabad, ist einverstanden, und so wird ein Plan geschmiedet, wie man
+mehr Bauernkinder nach Himmelturm zur Ausbildung schicken und so eine
+Truppe gegen die Banditen bilden könnte. Das nächste Mal geht es
+weiter in Hinterthal.
 
 ## Die Würfelprobe
 
@@ -405,8 +402,8 @@ somit ist das Abenteuerspiel darauf ausgelegt, all dies zu riskieren.
 Das heisst, wir würfeln, wenn damit Erfolg oder Fehlschlag und dessen
 bittere Konsequenzen bestimmt werden: ob wir treffen und wieviel
 Schaden wir austeilen, oder ob wir getroffen werden und wieviel
-Schaden wir einstecken müssen. Wir würfeln, um heraus zu finden, ob
-wir dem Schicksal ein Schnippchen schlagen können.
+Schaden wir einstecken müssen. Wir würfeln, um herauszufinden, ob wir
+dem Schicksal ein Schnippchen schlagen können.
 
 ![Schlacht bei Dorneck](images/Dornach-1499.jpg)
 Schlacht bei Dornach 1499
@@ -415,14 +412,14 @@ Schlacht bei Dornach 1499
 Das Spiel soll sich nicht um Kämpfe drehen, denn diese sind
 gefährlich. Die Gewalt sollte immer nur letztes Mittel sein. Die
 Gespräche, das Intrigieren, das Erkunden, all das ist spannend, kann
-durch Würfelwürfe fehl schlagen und das Spiel in unvorhergesehene
+durch Würfelwürfe fehlschlagen und das Spiel in unvorhergesehene
 Richtungen lenken.
 
 Was genau gewürfelt werden soll, wird gemeinsam am Tisch festgelegt.
 Damit ist auch bestimmt, wie „schwer“ das Spiel ist. Das mag seltsam
 wirken. Die Spielleitung macht nur einen Vorschlag und sie entscheidet
 bei Unentschlossenheit, aber sie entscheidet nicht alleine. Wenn
-Spieler aber immer zum eigenen Vorteil entscheiden, machen sie das
+Spieler jedoch immer zum eigenen Vorteil entscheiden, machen sie das
 Spiel langweilig. Ist die Spielleitung hingegen zu hart, macht sie das
 Spiel frustrierend. Ist das Spiel langweilig oder frustrierend, spielt
 mit anderen Leuten.

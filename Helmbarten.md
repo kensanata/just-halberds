@@ -495,10 +495,10 @@ an, würfeln, und werten aus. Alles passiert gleichzeitig.
 > dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6 – und
 > 6 ≰ 5: verfehlt!
 
-Krieg ist schrecklich. Es ist kein Problem, wenn kaum gekämpft wird.
 In gewissen Rollenspielen ist das Kämpfen ein grosser Teil des Spiels.
 In diesem Spiel liegt nach einer Runde schon vielleicht schon die
-Hälfte der Beteiligten am Boden.
+Hälfte der Beteiligten am Boden. Krieg ist schrecklich. Meistens gilt
+es, dem Kampf aus dem Weg zu gehen.
 
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Kämpfen-1.
 > Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
@@ -554,17 +554,17 @@ zum Teil überschneiden und widersprechen, um so besser.
 | 5   | Bibliothekar | Diener         | des Bewusstseins | Marduk | Hel      |
 | 6   | Händler      | Kooperation    | der Ordnung      | Ishtar | Zathogga |
 
-Dörfer werden nach der schützenden Festung benannt; mit den folgenden
-Tabellen sind die ersten paar Namen schnell generiert.
+Die ersten paar Namen von Dörfern, Burgen und Hexentürme kann man sich
+mit den folgenden Tabellen generieren.
 
-| 1W6 | Burg 1   | Burg 2   | Burg 3  | Magie 1  | Magie 2 | Magie 3 |
-|:---:|----------|----------|---------|----------|---------|---------|
-| 1   | Schauen- | Falken-  | -burg   | Hexen-   | Feuer-  | -turm   |
-| 2   | Alten-   | Farn-    | -berg   | Raben-   | Toten-  | -warte  |
-| 3   | Bären-   | Froh-    | -fels   | Teufels- | Tempel- | -stein  |
-| 4   | Neuen-   | Klingen- | -stein  | Finster- | Hohen-  | -wald   |
-| 5   | Guten-   | Ram-     | -zwinge | Dunkel-  | Himmel- | -keller |
-| 6   | Sternen- | Rifen-   | -au     | Eis-     | Katzen- | -feste  |
+| 1W6 | Burg 1   | Burg 2   | Burg 3  | Dorf   | Magie 1  | Magie 2 | Magie 3 |
+|:---:|----------|----------|---------|--------|----------|---------|---------|
+| 1   | Schauen- | Falken-  | -burg   | -dorf  | Hexen-   | Feuer-  | -turm   |
+| 2   | Alten-   | Farn-    | -berg   | -thal  | Raben-   | Toten-  | -warte  |
+| 3   | Bären-   | Froh-    | -fels   | -wil   | Teufels- | Tempel- | -stein  |
+| 4   | Neuen-   | Klingen- | -stein  | -ach   | Finster- | Hohen-  | -wald   |
+| 5   | Guten-   | Ram-     | -zwinge | -ingen | Dunkel-  | Himmel- | -keller |
+| 6   | Sternen- | Rifen-   | -au     | -furt  | Eis-     | Katzen- | -feste  |
 
 Für die Namen von Personen suche ich mir gerne eine Namenslisten für
 Babies online und verwende diese dann für meine Welt. Hier ein paar
@@ -599,14 +599,14 @@ noch zwei oder drei wichtige Personen aus der Vergangenheit ausdenken:
 Propheten, Heldinnen, und so weiter; sowie den Namen eines dunklen
 Herrschers und seines Reiches. Namen sind wichtig!
 
-| 1W6 | Was     | Wozu                | Wer hat es erfunden?                      |
-|:---:|---------|---------------------|-------------------------------------------|
-| 1   | Ring    | der Unsichtbarkeit  | der Herrschers der Nacht                  |
-| 2   | Schwert | der Unbesiegbarkeit | die Herrin vom See                        |
-| 3   | Krone   | der Macht           | der erste Richter                         |
-| 4   | Speer   | der Zerstörung      | aus den letzten Tagen des Reichs          |
-| 5   | Buch    | des Heiligen        | (eine bekannte Person)                    |
-| 6   | Kelch   | der Erlösung        | (eine oder einer der Götter oder Dämonen) |
+| 1W6 | Was     | Wozu                | Wer hat es erfunden?                   |
+|:---:|---------|---------------------|----------------------------------------|
+| 1   | Ring    | der Unsichtbarkeit  | der Herrschers der Nacht               |
+| 2   | Schwert | der Unbesiegbarkeit | die Herrin vom See                     |
+| 3   | Krone   | der Macht           | der erste Richter                      |
+| 4   | Speer   | der Zerstörung      | aus den letzten Tagen des Reichs       |
+| 5   | Buch    | des Heiligen        | (eine bekannte Person)                 |
+| 6   | Kelch   | der Erlösung        | (ein Gott, eine Göttin oder ein Dämon) |
 
 All diese Dinge werden festgehalten und führen hoffentlich auch gleich
 zu Querverbindungen und Inspirationen. Im nächsten Kapitel hat es den
@@ -745,7 +745,13 @@ auf Wikipedia, für die Personennamen. [Frankish
 Names](https://www.s-gabriel.org/names/guntram/franks.htm), sehr kurz,
 von Guntram von Wolkenstein.
 
-[Text Mapper](https://campaignwiki.org/text-mapper/), um Karten zu
+[Text Mapper](https://campaignwiki.org/text-mapper/), um Karten für
+das Spiel zu erstellen. Mir gefallen die
+[Alpinen](https://campaignwiki.org/text-mapper/alpine/random) Karten.
+
+[Helmbarten Charaktergenerator](https://campaignwiki.org/helmbarten/),
+um schnell ein paar Charaktere oder eine Anfangssituation zu
 erstellen.
 
-[Helmbarten Charaktergenerator](https://campaignwiki.org/helmbarten/).
+[Farnthal Replay](https://alexschroeder.ch/pdfs/Farnthal.pdf) erzählt,
+wie meine erste Kampagne verlaufen ist.

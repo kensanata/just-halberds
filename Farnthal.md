@@ -539,6 +539,6 @@ wird noch gesungen, alle haben Singen-1, ausser Baldmer – er hat
 Singen-3! Die Frau des Vogt ist begeistert.
 
 Später diskutiert Teriki das weitere Vorgehen mit Gundabad und bringt
-ihn zur Vernunft. Chrodohild hat ihn bezaubert, das ist ja klar! Jetzt
-wo er es realisiert, ist er empört. Sie nehmen sich vor, vorsichtig zu
-sein.
+ihn wieder zur Vernunft. Chrodohild hat ihn bezaubert, das ist ja
+klar! Jetzt wo er es realisiert, ist er empört. Sie nehmen sich beide
+vor, vorsichtig zu sein.

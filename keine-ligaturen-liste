@@ -3,7 +3,20 @@ use Modern::Perl;
 use open ':std', ':encoding(UTF-8)';
 use utf8;
 
-# takes a sorted wordlist on STDIN, e.g. /usr/share/dict/swiss
+=head1 NAME
+
+keine-ligaturen-liste
+
+=head1 SYNOPSIS
+
+    keine-ligaturen-liste < /usr/share/dict/swiss >> keine-ligaturen
+
+=head1 DESCRIPTION
+
+Try and find German words that should have no ligatures joining to morphemes and
+print a regular expression for C<keine-ligaturen>.
+
+=cut
 
 my %seen;
 my $last = "\0";
@@ -19,8 +32,8 @@ for (<STDIN>) {
 for (sort keys %seen) {
   if (/graf$/) {
     # Biografie, Geografie: mit Ligatur für fi
-    say "($_)([fljt]..)" ;
+    say "($_)([fljt]\\w\\w)" ;
   } else {
-    say "($_)([flijt]..)" ;
+    say "($_)([flijt]\\w\\w)" ;
   }
 }

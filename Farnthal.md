@@ -364,6 +364,7 @@ gleich wie die Ausdauer des Banditen. Dieser sinkt ohnmächtig zu Boden
 Taktik-Wurf). Der zweite Bandit hat Flucht-5 und würfelt höher: er
 flieht, schlägt Alarm, die Dreiergruppe hastet den Weg hinauf, die
 Banditen trauen sich nicht, die Verfolgung aufzunehmen. Geschafft!
+(Aber siehe Seite 11.)
 
 Am dritten Tag erreichen wir Himmelturm. Ist Frieda eine Zauberin? Ich
 vermute ja, aber Marduk ist ein Prüglergott. Mal schauen, was der
@@ -460,13 +461,13 @@ Vom Buch der Macht weiss er nichts.
 > der Herrin der Rabenwarte ein Schnippchen schlagen und ihren Schatz
 > klauen, die Krone des Chardeweche.“
 
-Da Teriki und Gundabad die Dorfjugend zum Himmelturm schicken wollen,
+Da Teriki und Gundabad die Dorf‌jugend zum Himmelturm schicken wollen,
 treibt sich diese im Umfeld von Siggo um. Die Eltern wiederum wollen
 ihre Kinder zurück, und der alte Vogt **Adalad** will Siggo
 vertreiben, doch die Dörfler wollen ihre Kinder nicht gefährden.
 
 > Adalad sagt: „Helft mir Siggo und seine verdammten Hirtenhunde zu
-> vertreiben und ich helfe euch, die Dorfjugend für eure Zwecke zu
+> vertreiben und ich helfe euch, die Dorf‌jugend für eure Zwecke zu
 > gewinnen!
 
 Eine Freundin? Die Illusionistin **Chrodohild**, 464994, Bezaubern-1
@@ -484,3 +485,36 @@ Gundabad wird Chrodohild wohl nach dem Kelch der Erlösung fragen. Sie
 weiss, dass es ihn gibt, und das er tödlich ist, und dass der Sumpf
 von einem tödlichen Fluch beschützt wird. Ob dies das Werk des Kelches
 ist, weiss sie nicht.
+
+## Die Dorf‌jugend
+
+Claudia beschliesst, den Weg nach Osten zu nehmen, abseits der
+Strasse. Damit ist klar, dass die Bergwölfe einen Auftritt haben
+werden, sich aber auch nicht unbemerkt annähern werden können, weil
+Baldmer so ein guter Spion ist. Teriki hält sie mit einem Feuerring
+(Bildung-12 und Feuer-1) auf Abstand, würfeln ist nicht nötig. Wir
+diskutieren noch, was mit Feuer-1 denn so möglich sein sollte und wir
+einigen uns auf folgende Interpretation:
+
+> Wer ein Talent hat, kann damit einen Beruf ausüben. Ein Feuermagier
+> kann Flammen beschwören, brennende Geschosse verschiessen, aber mit
+> einem fetten Feuerball ein dutzend Leute zu töten ist „schwer“ und
+> das heisst, man muss seine Probe mit 3W6 statt mit 2W6 bestehen.
+
+Mit der Feuermagie werden die Wölfe auf Abstand gehalten. Fliehen sie?
+Ich musste eine Weile überlegen, wie das genau funktionieren soll mit
+Fluch-5. Richtig ist: wenn 2W6 ≤ 5, dann fliehen sie. Das hatte ich
+auf Seite 8 falsch überlegt. Was mich zudem gestört hat: Die
+Feuermagie erhöht gar nicht die Chance für eine Flucht? Vielleicht
+hätte man Flucht-5 plus Feuer-1 verwenden können. Aber da sie auch
+ohne Feuer-1 Bonus fliehen, ist es jetzt egal.
+
+Beim Abstieg entscheide ich, dass wir die Schwierigkeit auswürfeln.
+Ich würfel 12. Eine steile Felswand, hunderte von Metern hoch! Teriki
+ist auch Luftmagierin. Doch was heisst das genau? Wir diskutieren
+lange hin und her und einigen uns auf folgendes:
+
+> Ein Luftmagier kann nicht nur Kerzenausblasen sondern fliegen, weite
+> Sprünge machen, und einen Teppich fliegen lassen, mit einer lokalen
+> Windhose Wölfe von der Verfolgung abhalten, aber ein Dorf zu
+> plätten ist „schwer“ und braucht 3W6 statt 2W6.

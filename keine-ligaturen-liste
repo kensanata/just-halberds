@@ -1,0 +1,17 @@
+#!/usr/bin/env perl
+use Modern::Perl;
+use open ':std', ':encoding(UTF-8)';
+use utf8;
+
+# takes a sorted wordlist on STDIN, e.g. /usr/share/dict/swiss
+
+my %seen;
+my $last = "\0";
+
+for (<STDIN>) {
+  chomp;
+  $last = $_ if /f$/;
+  $seen{$last} = 1 if /^$last[flij]../;
+}
+
+say "($_)([flij]..)" for sort keys %seen;

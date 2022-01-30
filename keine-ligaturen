@@ -1,0 +1,84 @@
+#!/usr/bin/env perl
+use Modern::Perl;
+use open ':std', ':encoding(UTF-8)';
+use utf8;
+
+my $zwnj = "\x{200c}";
+
+my @re = map { chomp; $_ } <DATA>;
+for my $line (<STDIN>) {
+  for my $re (@re) {
+    $line =~ s/\b$re/$1$zwnj$2/gi;
+  }
+  print $line;
+}
+
+__DATA__
+(Ablauf)([flij]..)
+(Auflauf)([flij]..)
+(Baustoff)([flij]..)
+(Binnenschiff)([flij]..)
+(Biograf)([flij]..)
+(Boxcalf)([flij]..)
+(Boxkalf)([flij]..)
+(Brief)([flij]..)
+(Chef)([flij]..)
+(Choreograf)([flij]..)
+(Dampfschiff)([flij]..)
+(Demograf)([flij]..)
+(Dorf)([flij]..)
+(Druckkopf)([flij]..)
+(Filialchef)([flij]..)
+(Fotograf)([flij]..)
+(Futterstoff)([flij]..)
+(Geograf)([flij]..)
+(Graf)([flij]..)
+(Grundstoff)([flij]..)
+(Handelsschiff)([flij]..)
+(Hinterhof)([flij]..)
+(Hof)([flij]..)
+(Juniorchef)([flij]..)
+(Kalligraf)([flij]..)
+(Kampf)([flij]..)
+(Kartograf)([flij]..)
+(Knopf)([flij]..)
+(Kopf)([flij]..)
+(Kreislauf)([flij]..)
+(Kremlchef)([flij]..)
+(Kunststoff)([flij]..)
+(Prof)([flij]..)
+(Ressortchef)([flij]..)
+(Rohstoff)([flij]..)
+(Sauerstoff)([flij]..)
+(Schaf)([flij]..)
+(Schiff)([flij]..)
+(Schlupf)([flij]..)
+(Stenograf)([flij]..)
+(Stoff)([flij]..)
+(Streif)([flij]..)
+(Sumpf)([flij]..)
+(Tarif)([flij]..)
+(Telegraf)([flij]..)
+(Treff)([flij]..)
+(Typograf)([flij]..)
+(Zellstoff)([flij]..)
+(auf)([flij]..)
+(begriff)([flij]..)
+(behilf)([flij]..)
+(drauf)([flij]..)
+(elf)([flij]..)
+(fünf)([flij]..)
+(griff)([flij]..)
+(herauf)([flij]..)
+(hilf)([flij]..)
+(hinauf)([flij]..)
+(kniff)([flij]..)
+(lauf)([flij]..)
+(pfiff)([flij]..)
+(raff)([flij]..)
+(reif)([flij]..)
+(schief)([flij]..)
+(seif)([flij]..)
+(tief)([flij]..)
+(widerruf)([flij]..)
+(zwölf)([flij]..)

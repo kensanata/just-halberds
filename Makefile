@@ -29,11 +29,11 @@ watch:
 	cat $^ | sed 's/YYYY-MM-DD/$(shell date -I)/' > $@
 
 %.html.tmp: %.md.tmp
-	python3 -m markdown \
+	./keine-ligaturen < $< | python3 -m markdown \
 		--extension=markdown.extensions.tables \
 		--extension markdown.extensions.smarty \
 		--extension markdown.extensions.attr_list \
-		--file=$@ $<
+		--file=$@
 
 %.md.tmp: %.md
 	sed 's/¡/{: .highlight}/g' < $< > $@

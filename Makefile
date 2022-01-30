@@ -28,15 +28,14 @@ watch:
 %.html: %-prefix %.html.tmp suffix
 	cat $^ | sed 's/YYYY-MM-DD/$(shell date -I)/' > $@
 
-%.html.tmp: %.md.tmp
-	./keine-ligaturen < $< | python3 -m markdown \
+%.html.tmp: %.md
+	sed 's/¡/{: .highlight}/g' < $< \
+	| ./keine-ligaturen \
+	| python3 -m markdown \
 		--extension=markdown.extensions.tables \
 		--extension markdown.extensions.smarty \
 		--extension markdown.extensions.attr_list \
 		--file=$@
-
-%.md.tmp: %.md
-	sed 's/¡/{: .highlight}/g' < $< > $@
 
 Farnthal.pdf: images/Farnthal.png
 

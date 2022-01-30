@@ -496,10 +496,10 @@ Baldmer so ein guter Spion ist. Teriki hält sie mit einem Feuerring
 diskutieren noch, was mit Feuer-1 denn so möglich sein sollte und wir
 einigen uns auf folgende Interpretation:
 
-> Wer ein Talent hat, kann damit einen Beruf ausüben. Ein Feuermagier
-> kann Flammen beschwören, brennende Geschosse verschiessen, aber mit
-> einem fetten Feuerball ein dutzend Leute zu töten ist „schwer“ und
-> das heisst, man muss seine Probe mit 3W6 statt mit 2W6 bestehen.
+> Ein Feuermagier kann Flammen beschwören, brennende Geschosse
+> verschiessen, aber mit einem fetten Feuerball ein dutzend Leute zu
+> töten ist „schwer“ und das heisst, man muss seine Probe mit 3W6
+> statt mit 2W6 bestehen.
 
 Mit der Feuermagie werden die Wölfe auf Abstand gehalten. Fliehen sie?
 Ich musste eine Weile überlegen, wie das genau funktionieren soll mit
@@ -514,8 +514,31 @@ Ich würfel 12. Eine steile Felswand, hunderte von Metern hoch! Teriki
 ist auch Luftmagierin. Doch was heisst das genau? Wir diskutieren
 lange hin und her und einigen uns auf folgendes:
 
-> Ein Luftmagier kann nicht nur Kerzenausblasen sondern fliegen, weite
-> Sprünge machen, und einen Teppich fliegen lassen, mit einer lokalen
-> Windhose Wölfe von der Verfolgung abhalten, aber ein Dorf zu
-> plätten ist „schwer“ und braucht 3W6 statt 2W6.
+> Ein Luftmagier kann gleiten, fliegen, selbst einen Teppich fliegen
+> lassen, mit einer lokalen Windhose Wölfe von der Verfolgung
+> abhalten, aber ein Dorf zu plätten, die Häuser abzudecken, das ist
+> „schwer“ und braucht 3W6 statt 2W6.
 
+Unten angekommen, treffen Teriki, Gundabad und Baldmer auf einen
+Jugendlichen, der auch sofort Siggo mit seinen drei gefährlichen
+Hirtenhunden herbeiruft. Gundabad hat Benehmen-3, also spricht er wie
+ein Ritter und Sigo eher wie ein Bauer. Als Teriki aber davon erzählt,
+die Jugend für Himmelturm zu gewinnen, ist dies gar nicht im Sinne
+Siggos ist – und da sie kein Talent für Reden oder Psychologie hat,
+Siggo aber Reden-3 hat, gibt es nichts zu würfeln, Teriki hat keine
+Chance. Die Jugendlichen lieben ihn!
+
+Unser Trio trennt sich von Siggo und geht zum Dorf, trifft dort auf
+den Vogt Adalad, der ihnen anbietet, bei ihm zu übernachten.
+Chrodohild sei schon Gast bei ihm, sagt er. Und so wechseln wir zur
+Szene beim Nachtessen. Chrodohild ist an Schätzen interessiert und
+nicht an der Dorfjugend; Gundabad ist ebenfalls an Schätzen
+interessiert und hängt an ihren Lippen; der Vogt und seine Frau sind
+sehr an den Jugendlichen interessiert und unterstützen Teriki. Am Ende
+wird noch gesungen, alle haben Singen-1, ausser Baldmer – er hat
+Singen-3! Die Frau des Vogt ist begeistert.
+
+Später diskutiert Teriki das weitere Vorgehen mit Gundabad und bringt
+ihn zur Vernunft. Chrodohild hat ihn bezaubert, das ist ja klar! Jetzt
+wo er es realisiert, ist er empört. Sie nehmen sich vor, vorsichtig zu
+sein.

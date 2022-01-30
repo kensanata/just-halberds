@@ -11,7 +11,16 @@ my $last = "\0";
 for (<STDIN>) {
   chomp;
   $last = $_ if /f$/;
-  $seen{$last} = 1 if /^$last[flij]../;
+  $seen{$last} = 1 if /^$last[flijt]../;
 }
 
-say "($_)([flij]..)" for sort keys %seen;
+# Watch out for -lich, -lisch, -los, -lein, -te, -ten … somehow?
+
+for (sort keys %seen) {
+  if (/graf$/) {
+    # Biografie, Geografie: mit Ligatur für fi
+    say "($_)([fljt]..)" ;
+  } else {
+    say "($_)([flijt]..)" ;
+  }
+}

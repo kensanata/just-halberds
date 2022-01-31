@@ -30,7 +30,7 @@ watch:
 
 %.html.tmp: %.md
 	sed 's/¡/{: .highlight}/g' < $< \
-	| ./keine-ligaturen \
+	| keine-ligaturen \
 	| python3 -m markdown \
 		--extension=markdown.extensions.tables \
 		--extension markdown.extensions.smarty \

@@ -12,6 +12,17 @@ You can find the PDF files online:
 * [Helle Barden](https://alexschroeder.ch/pdfs/Helle-Barden.pdf)
 * [To Rob a Witch](https://alexschroeder.ch/pdfs/To-Rob-A-Witch.pdf)
 
+Licensing: The maps in Helmbarten and Farnthal use the Gnomeyland Map
+Icons Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.
+The maps licensed under the Creative Commons Attribution-ShareAlike
+3.0 Unported License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/3.0/.
+
+Unless otherwise indicated, the works in this repository are dedicated
+to the public domain. To the extent possible under law, the authors of
+these works has waived all copyright and related or neighboring rights
+to these works.
+
 ## Helmbarten
 
 A short and simple 2d6 system, inspired by Traveller, in German.

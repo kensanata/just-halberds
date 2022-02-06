@@ -1,3 +1,4 @@
+<!--*- ispell-local-dictionary: "swiss8" -*-->
 <address>Alex Schroeder, YYYY-MM-DD</address>
 
 # Helmbarten
@@ -391,39 +392,41 @@ ebenso frei bestimmt (oft 1 oder 2).
 Monster und Tiere haben zwei zusätzliche Charakteristiken, die ihr
 Verhalten beschreiben: Angriff und Flucht. Bei einer Begegnung würfelt
 die Spielleitung aus, ob sie angreifen (2W6 ≤ Angriff), falls ja, ob
-sie treffen (ebenfalls 2W6 ≤ Angriff), und falls nein, ob sie fliehen
-(2W6 ≤ Flucht).
+sie treffen (2W6 ≤ Treffen), und falls nein, ob sie fliehen (2W6 ≤
+Flucht). Falls weder noch, wird geredet.
 
 Für jede Welt werden die Werte etwas anders sein. Folgende Übersicht
 kann man verwenden, wenn die Welt neu ist.
 
-| 1W6 | Gegner       | Schaden | Ausdauer | Leben | Angriff | Flucht | Anzahl |
-|:---:|-------------:|:-------:|:--------:|:-----:|:-------:|-------:|:------:|
-| 1   | Nachtlinge   | 2W6     | 1W6      | 1W6   | 1W6+4   | 1W6+3  | 2W6    |
-| 2   | Raubtiere    | 2W6     | 3W6      | 2W6   | 1W6+5   | 1W6+2  | 2W6    |
-| 3   | Untote       | 2W6     | 3W6      | 4W6   | 1W6+6   | 1W6+0  | 2W6    |
-| 4   | Reittiere    | 3W6     | 6W6      | 3W6   | 1W6+4   | 1W6+2  | 1W6    |
-| 5   | Riesen       | 4W6     | 8W6      | 4W6   | 1W6+3   | 1W6+0  | 1W6    |
-| 6   | Drachen      | 6W6     | 10W6     | 5W6   | 1W6+2   | 1W6+0  | 1      |
+| 1W6 |     Gegner | Schaden | Ausdauer | Leben | Angriff | Treffen | Flucht |
+|:---:|-----------:|:-------:|:--------:|:-----:|:-------:|:-------:|:------:|
+| 1   | Nachtlinge | 2W6     | 1W6      | 1W6   | 1W6+4   | 1W6+5   |  1W6+3 |
+| 2   |  Raubtiere | 2W6     | 3W6      | 2W6   | 1W6+5   | 1W6+6   |  1W6+2 |
+| 3   |     Untote | 2W6     | 3W6      | 4W6   | 1W6+6   | 1W6+7   |  1W6+0 |
+| 4   |  Reittiere | 3W6     | 6W6      | 3W6   | 1W6+4   | 1W6+4   |  1W6+2 |
+| 5   |     Riesen | 4W6     | 8W6      | 4W6   | 1W6+3   | 1W6+8   |  1W6+0 |
+| 6   |    Drachen | 6W6     | 10W6     | 5W6   | 1W6+2   | 1W6+9   |  1W6+0 |
 
-Notiere dir, wenn du etwas auswürfelst und bleibe dabei!
+Notiere dir, wenn du etwas auswürfelst und bleibe dabei! Für die
+Anzahl Gegner, würfel 2W6 für Nachtlinge und Raubtiere, oder 1W6 für
+Untote. Riesen und Drachen sind immer Einzelgänger.
 
 > Beispiel: Claudia macht die Spielleitung und braucht Goblins, die
-> auf Riesenspinnen reiten, welche die Vorhut überfallen. Sie
-> verwendet die Zeile der Nachtlinge und der Reittiere. Goblins:
-> Schaden-3, Ausdauer-1, Leben-5, Angriff-5, Flucht-4, Anzahl-7.
+> auf Riesenspinnen reiten, welche die Vorhut überfallen. Es sind 7.
+> Sie verwendet die Zeile der Nachtlinge und der Reittiere. Goblins:
+> Schaden-3, Ausdauer-1, Leben-5, Angriff-5, Treffen-9, Flucht-4.
 > Riesenspinnen: Schaden-15, Ausdauer-16, Leben-12, Angriff-9,
-> Flucht-7, gleich viele Riesenspinnen wie Goblins. In dieser Welt
-> sind Goblins eher harmlose Gegner, die auf fürchterlichen
-> Riesenspinnen reiten.
+> Treffen-5, Flucht-7. In dieser Welt sind Goblins eher harmlose
+> Gegner, die auf fürchterlichen Riesenspinnen reiten, die aber
+> wiederum nicht so gut treffen.
 
 Wie in jedem guten Film wird die kommende Gefahr immer deutlich
 angekündigt, so dass die Spieler und Spielerinnen selber entscheiden
 können, ob sie sich auf einen Kampf einlassen wollen.
 
 > Beispiel: Claudia beschreibt, wie sich die wagengrossen Schatten
-> durch das Unterholz schieben, ihr beissende Geruch sich ausbreitet
-> und die Tiere im Stall in Panik toben.
+> durch das Unterholz schieben, wie ihr beissende Geruch sich
+> ausbreitet und die Tiere im Stall toben.
 
 Wenn es geht, sollen die Spieler und Spielerinnen würfeln, nicht die
 Spielleitung. Wollen sie beispielsweise den Gegnern in einen
@@ -503,12 +506,13 @@ es, dem Kampf aus dem Weg zu gehen.
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Kämpfen-1.
 > Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
 > den Fersen. Sie stellt sich dem Kampf. Erste Runde: Berta würfelt 6
-> und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6, ein Treffer für
-> die Goblins, da 5 ≤ 5. Es ist die erste Runde, also entscheidet der
-> Zufall, welches Attribut Brunhilde reduzieren werden muss: Berta
-> würfelt eine 4, d.h. Geschick. Claudia würfelt 5, so dass Brunhilde
-> nur um einen Punkt bei Sinnen bleibt, da 6-5=1. Einer der Goblins
-> stirbt (da Ausdauer-1), doch der andere steht noch.
+> und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6, zwei Treffer für
+> die Goblins, da 6 ≤ 9. Beim ersten Treffer entscheidet der Zufall,
+> welches Attribut Brunhilde reduzieren werden muss: Berta würfelt
+> eine 4, d.h. Geschick. Claudia würfelt 5, so dass Brunhilde nur um
+> einen Punkt bei Sinnen bleibt, da 6-5=1, den zweiten Treffer zieht
+> sie von der Ausdauer ab (9-5=4). Einer der Goblins stirbt (da
+> Ausdauer-1), doch der andere steht noch.
 
 Wird mittels Taktik ein Vorteil erreicht, ist das Resultat oft eine
 Überraschungsrunde, wo der Gegner nicht zurückschlagen kann. Das kann

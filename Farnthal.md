@@ -9,10 +9,11 @@ dem Sammelsurium von Vorlieben und Entscheidungen früherer Kampagnen.
 
 ## Anpassung der Karte
 
-Die Karte habe ich etwas angepasst: Es gibt nun einen durchgehenden
-Weg von Osten nach Westen. Der Fluss im Osten fliesst nun ebenfalls
-nach Westen, Tal abwärts. Die bekannten Ortsnamen habe ich verteilt
-und die restlichen Ortschaften benannt.
+Mit [Text Mapper](https://campaignwiki.org/text-mapper/) habe ich die
+Karte etwas angepasst: Es gibt nun einen durchgehenden Weg von Osten
+nach Westen. Der Fluss im Osten fliesst nun ebenfalls nach Westen, Tal
+abwärts. Die bekannten Ortsnamen habe ich verteilt und die restlichen
+Ortschaften benannt.
 
 ![Farnthal](images/Farnthal.png)
 Die angepasste Karte
@@ -633,14 +634,15 @@ Gemeinsam planen sie, die Sandspitze zu erobern und Dagoberga zu erschlagen.
 > Dornenkrone, die sie trägt. Die Sturmspitze ist euch geschenkt, wenn
 > ihr mir helft.“
 
-Örtlichkeiten:
+Eine Jagd durch die Gassen hoch zum Turm:
 
-* die nutzlose Hafenmole, welche ins ausgetrocknete Flusstal ragt
-* das alte Kloster, wo der Ausguck der Sandmänner wacht
-* das unterirdische Puppenlager, wo Charisind den Angriff plant
-* das steile Treppenlabyrinth zum Fuss der Sturmspitze
-* die grosse Halle mit Dagobergas Schreibtisch und perfekter Aussicht
-* ihr eiserner Schlafsarg, der an Ketten hoch oben von der Decke hängt
+* das alte Kloster, wo der Ausguck der Sandmänner wacht (Schleichen)
+* das unterirdische Puppenlager, wo Charisind den Angriff plant (Spionieren)
+* die nutzlose Hafenmole, welche ins ausgetrocknete Flusstal ragt (Magie)
+* das steile Treppenlabyrinth zum Fuss der Sturmspitze (Rennen)
+* ein Hinterhalt in einem Hinterhof (Taktik)
+* eine Mauer und ein verschlossenes Tor (Klettern)
+* die grosse Halle mit Dagobergas Schreibtisch und perfekter Aussicht (Reden)
 
 Die Sturmmagierin ist einem freundlichen Gespräch nicht abgeneigt,
 sofern man nicht an Charisinds Seite die Halle betritt.

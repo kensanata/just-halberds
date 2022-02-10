@@ -83,8 +83,8 @@ automatically learn Fighting-1.
 > accepted!
 
 You spend four years as a warrior and learn something every year.
-Each year choose one of the following tables and roll 1d6.the
-"Officer" table if your character
+Each year choose one of the following tables and roll 1d6. You may
+only roll on the "Officer" table if your character
 is 20 or older.
 
 | 1d6 | mercenaries | guard | Rider | officer |

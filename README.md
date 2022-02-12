@@ -78,5 +78,9 @@ These are Debian packages:
 * `inotify-tools` if you want to run `make watch` and have the PDF
   update every time you save the Markdown file
 
+* for the German files, you also need `keine-ligaturen` which is a
+  Perl script I derived from selnolig; you can get it here:
+  https://alexschroeder.ch/cgit/keine-ligaturen/about/
+
 Let me know if you found another dependency. I'll be happy to add
 them.

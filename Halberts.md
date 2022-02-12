@@ -1,5 +1,15 @@
 <address>Alex Schroeder, Frotz Self, Peter Fröhlich YYYY-MM-DD</address>
 
+<!-- phf
+For talents it's easy, we use "Talent-number" just like Traveller; for
+attributes it's weird; it would be nice to use "Attribute-number" for
+consistency, but then in places where we "do math" it would look really
+weird. Think of "Strength-1+4.5=5" versus "Strength 1+4.5=5" to see. So
+that's why I now made it so all attributes use "Attribute number" and
+all talents use "Talent-number" as Mark Miller intended. Cool? Of course
+it's still weird that "Endurance-number" is used for monsters... :-/
+-->
+
 # Halberts
 
 <p class="title"><img src="Helmbarten.jpg" /></p>
@@ -34,16 +44,16 @@ attribute, add them together (short: 2d6) and write it down.
 > 8; Berta names her character Brunhilde and rolls 10 6 9 5 4 4.
 
 Your character begins at age 16. Now you choose a first
-career. The choices are warrior, mage, or rapscallion. The
-process is always the same: entrance exam, learn talents, twists
-of fate, grow older by four years. And then you have to
+career. The choices are Warrior, Mage, or Rapscallion. The
+process is always the same: entrance exam, learn talents,
+twist of fate, grow older by four years. And then you have to
 decide if your character will do the same for another four years, or
-if you use a year to change careers, or if your character
+if you use one year to change careers, or if your character
 is ready for a life of adventure.
 
 Depending on the career, certain attributes are advantageous. Warriors need
-strength or endurance, mages need intelligence or education, and
-rapscallions need dexterity or status.
+Strength or Endurance, Mages need Intelligence or Education, and
+Rapscallions need Dexterity or Status.
 
 If your character doesn't gain admission to the desired career,
 that career can no longer be selected. When there are no
@@ -57,7 +67,7 @@ When you learn "Fighting", choose a weapon instead:
 knife, spear, halberd, épée, bow, lance.
 
 With every career your character completes, the chance for a
-stroke of fate increases. Thus it makes perfect sense to
+twist of fate increases. Thus it makes perfect sense to
 stop character generation at some point and to start adventuring.
 
 If your character is 36 or older at the end of a career,
@@ -78,40 +88,41 @@ an attribute falls to zero, the character dies.
 **Admission**: Roll 2d6 ≤ Strength or Endurance (your choice). You
 automatically learn Fighting-1.
 
-> Example: Brunhilde has strength 10 and Berta rolls 2. Brunhilde is
+> Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
 > accepted!
 
-You spend four years as a warrior and learn something every year.
+You spend four years as a Warrior and learn something every year.
 Each year choose one of the following tables and roll 1d6. You may
 only roll on the "Officer" table if your character
 is 20 or older.
 
-| 1d6 |    mercenary |        guard |    rider |     officer |
+| 1d6 |    Mercenary |        Guard |    Rider |     Officer |
 |:---:|-------------:|-------------:|---------:|------------:|
 | 1   | Construction |  Bureaucracy |   Riding |    Literacy |
-| 2   |          Run |   Discipline |  Singing | Bureaucracy |
+| 2   |      Running |   Discipline |  Singing | Bureaucracy |
 | 3   |      Tactics | Construction |  Tactics |     Tactics |
 | 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
 | 5   |        Craft |      Brewing |  Culture |    Behavior |
 | 6   |     Fighting |     Fighting | Fighting |    Fighting |
 
-> Example: Berta chooses 2× mercenaries, 2× guards, and rolls 3 2 5 1,
-> resulting in Tactics-1, Run-1, Brewing-1, and Bureaucracy-1. And Fighting-1!
+> Example: Berta chooses 2× Mercenary, 2× Guard, and rolls 3 2 5 1,
+> resulting in Tactics-1, Running-1, Brewing-1, and Bureaucracy-1.
+> And Fighting-1!
 
-**Stroke of Fate**: Roll 2d6 + number of previous careers ≤ Strength
-or Endurance (your choice) to avoid consequences. Otherwise,
-you determine the consequences with 1d6.
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤
+Strength or Endurance (your choice) to avoid consequences.
+Otherwise, you determine the consequences with 1d6.
 
 1. Mortal Enemy: The campaign was a success. For three days you
    plundered. The survivors will never forgive you for your actions.
-2. Siege: Malnutrition has aged you prematurely. Roll on the Aging
-   Chart.
-3. Campaign: You were ambushed and badly injured. Roll on the Aging
-   Chart.
+2. Siege: Malnutrition has aged you prematurely. Roll on the aging
+   table.
+3. Campaign: You were ambushed and badly injured. Roll on the aging
+   table.
 4. Lame: After an accident, things never went back to the way they
-   used to be. The warrior career is now denied to you.
+   used to be. The Warrior career is now denied to you.
 5. Captivity: The campaign was a fiasco. You have been captured. Roll
-   on the Aging Chart. Roll 3d6 ≤ an attribute of your choice to
+   on the aging table. Roll 3d6 ≤ an attribute of your choice to
    escape. If you don't succeed, another four years pass. Roll on the
    aging table again and keep trying to escape – until you succeed or
    die.
@@ -119,7 +130,7 @@ you determine the consequences with 1d6.
    fleeing were ridden down. You were never seen again.
 
 > Example: Berta rolls 4+0 and Brunhilde does not suffer
-> a stroke of fate. Brunhilde is now 20 years old. The
+> a twist of fate. Brunhilde is now 20 years old. The
 > aging table does not have to be rolled yet.
 
 ## Mage Career
@@ -130,7 +141,7 @@ You will automatically learn Literacy-1.
 > Example: Adalric has Education-9 and Alex rolls 9. Adalric is
 > accepted!
 
-You spend four years as a magician and learn something every year.
+You spend four years as a Mage and learn something every year.
 Each year choose one of the following tables and roll 1d6.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
@@ -145,21 +156,20 @@ Each year choose one of the following tables and roll 1d6.
 > Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3 5
 > 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And Literacy-1!
 
-**Stroke of Fate**: Roll 2d6 + number of previous careers ≤
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Intelligence or Education (your choice) to avoid consequences.
 Otherwise, you determine the consequences with 1d6.
 
 1. Mortal Enemy: You exposed a classmate. You will never be forgiven
    for that.
 2. Failure: The experiment went wrong and the energy found a way
-   through your body. Roll on the Aging Chart.
+   through your body. Roll on the aging table.
 3. Crossing borders: Research has taken you to places that cannot be
    unseen again. A demon *saw* you and will find you.
 4. Trespass: You ventured too far into the space between the worlds
-   and almost lost your mind. You are denied the magician's career
-   from now on.
+   and almost lost your mind. The Mage career is now denied to you.
 5. Lost: You have traveled to foreign worlds and lost yourself there.
-   Roll on the Aging Chart. Roll 3d6 ≤ an attribute of your choice to
+   Roll on the aging table. Roll 3d6 ≤ an attribute of your choice to
    find your way back. If this is not successful, another four years
    pass. Roll again on the aging table and try again – until you
    succeed or die.
@@ -169,7 +179,7 @@ Otherwise, you determine the consequences with 1d6.
    you, but your screams are not for the faint of heart.
 
 > Example: Alex rolls 4+0 and Adalric does not suffer
-> a stroke of fate. Adalric is now 20 years old. The
+> a twist of fate. Adalric is now 20 years old. The
 > aging table does not have to be rolled yet.
 
 ## Rapscallion Career
@@ -178,13 +188,13 @@ Otherwise, you determine the consequences with 1d6.
 automatically learn Running-1.
 
 > Example: Adalric changes careers (so he is now 21 years old) and
-> wants to become a rapscallion; he has status 10 and Alex rolls 7. Adalric
+> wants to become a Rapscallion; he has Status 10 and Alex rolls 7. Adalric
 > is accepted!
 
-You spend four years as a rapscallion and learn something every year.
+You spend four years as a Rapscallion and learn something every year.
 Each year choose one of the following tables and roll 1d6.
 
-| 1d6 |    thief |      thug |        liar |  murderer |
+| 1d6 |    Thief |      Thug |        Liar |  Murderer |
 |:---:|---------:|----------:|------------:|----------:|
 | 1   | Sneaking |  Fighting |     Culture |  Fighting |
 | 2   |   Spying |  Crafting |    Behavior |   Brewing |
@@ -193,11 +203,11 @@ Each year choose one of the following tables and roll 1d6.
 | 5   | Distract |   Tactics |     Oratory |  Behavior |
 | 6   |     Pick |   Singing |     Trading |    Tinker |
 
-> Example: Alex chooses 1× thief, 3× murderer, and rolls 6 2 2 6, resulting in
+> Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6, resulting in
 > Pick-1, Brewing-2, Tinker-1. And Running-1!
 
-**Stroke of Fate**: Roll 2d6 + number of previous careers ≤
-skill or status (your choice) to avoid consequences.
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤
+Dexterity or Status (your choice) to avoid consequences.
 Otherwise, you determine the consequences with 1d6.
 
 1. Mortal Enemy: You have humiliated your rival. He or she will never
@@ -208,16 +218,16 @@ Otherwise, you determine the consequences with 1d6.
 3. Pulled in: You've accepted help from people, gotten more and more
    entangled, and now you owe them more than just a favor.
 4. Caught: You were caught and pilloried. Everyone knows your face.
-   The rapscallion career is denied to you from now on.
+   The Rapscallion career is now denied to you.
 5. Imprisonment: The plan has been blown. You got caught. Roll on the
-   Aging Chart. Roll 3d6 ≤ an attribute of your choice to escape. If
+   aging table. Roll 3d6 ≤ an attribute of your choice to escape. If
    this fails, another four years pass. Roll again on the aging table
    and try again – until you succeed or die.
 6. Disappeared: There was a gang war and you disappeared. They say the
    street dogs have gotten fat this year.
 
-> Example: Alex rolls 8+1 because he already has a career as a magician
-> behind him. Adalric suffers no stroke of fate and is now
+> Example: Alex rolls 8+1 because he already has a career as a Mage
+> behind him. Adalric suffers no twist of fate and is now
 > 25 years old.
 
 ## Talents
@@ -301,14 +311,14 @@ If necessary, these are the three:
 **Companion**: A young human who has not made any careers,
 or an intelligent animal such as a cat, an owl, or a raven.
 If human, name your companion and roll the six attributes
-(2d6 each for strength, dexterity, endurance, intelligence,
-education, and status).
+(2d6 each for Strength, Dexterity, Endurance, Intelligence,
+Education, and Status).
 
 **Dog**: A loyal companion that needs to be fed. Damage
-2d6; endurance 3d6; life 2d6.
+2d6; Endurance 3d6; Life 2d6.
 
 **Horse**: A loyal mount that requires care and feeding. Damage
-3d6; endurance 6d6; life 3d6.
+3d6; Endurance 6d6; Life 3d6.
 
 **Land**: A piece of land in the wilderness that has been granted
 to you. Taking possession of said land is up to you however.
@@ -330,7 +340,7 @@ it's very hard, you might have to roll 3d6 ≤ attribute + talent.
 
 If you attack successfully, you deal 2d6 damage unless you
 use a halberd. This deals 3d6 damage. You can
-only attack as many times in a fight as you have endurance.
+only attack as many times in a fight as you have Endurance.
 
 When you are first hit in combat, you must
 subtract the damage from a random physical attribute. Roll 1d6:
@@ -342,7 +352,7 @@ subtract any carryover from another physical attribute.
 If one of your attributes drops to 0, you are slightly injured and
 pass out. After 10 minutes you wake up again.
 
-> Example: Brunhilde has strength 10, dexterity 6, endurance 9. She gets hit
+> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She gets hit
 > for the first time and has to subtract 4+5=9 damage. Berta
 > rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1).
 > She won't pass out! The second time she has to subtract 2+6=8 hits
@@ -365,11 +375,11 @@ otherwise you die.
 
 If three of your attributes drop to 0, you die.
 
-For all other creatures there are only endurance and life instead of the
-known six attributes. When endurance drops to 0, they faint; when life
+For all other creatures there are only Endurance and Life instead of the
+known six attributes. When Endurance drops to 0, they faint; when Life
 drops to 0, they die.
 
-> Example: Adalric's dog Tix has endurance 3d6, life 2d6. Alex rolls
+> Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
 ## Opponents
@@ -449,13 +459,13 @@ rule applies: roll 2d6 + number of spells cast today ≤ attribute + talent
 to succeed. If the check fails, the talent can no longer be used today.
 
 > Example: Adalric conjures rain for privacy. He has
-> Education-9, Water-1, making a total of 10. Alex rolls 10 + 0 since
+> Education 9, Water-1, making a total of 10. Alex rolls 10 + 0 since
 > this was the first spell of the day. It's raining because 10 ≤ 10.
 > Chain Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills
 > five goblins.
 
 Magic always leads to discussions. You have to like that –
-otherwise you should skip the magician's career. How long can
+otherwise you should skip the Mage career. How long can
 you breathe underwater? Can you do magic underwater? What happens
 when you cast lightning underwater? The important thing is to agree
 at the table and to write down the result.
@@ -490,7 +500,7 @@ this game, after one round, perhaps half of those involved are already
 on the ground. War is terrible. Most of the time it's about avoiding
 the fight.
 
-> Example: Brunhilde has 10 strength, 6 dexterity, 9 endurance, and
+> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9, and
 > Fighting-1. She tries to reach the farm, but two goblins are hot on
 > her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
 > Escape-4. She turns to fight. First round: Berta rolls 6 and hits
@@ -608,8 +618,8 @@ it yourself!
 ## Example
 
 ① **Brunmund** the Mage of Dark Cellar is Flesh Mage and
-Wolfman - savage, free, uneducated: Strength-7, Dexterity-10, Endurance-7,
-Intelligence-12, Education-2, Status-9, Fusion-3, Shapeshifting-3,
+Wolfman - savage, free, uneducated: Strength 7, Dexterity 10, Endurance 7,
+Intelligence 12, Education 2, Status 9; Fusion-3, Shapeshifting-3,
 Animals-2, Necromancy-2, Water-1, Plants-1, Singing-1, Literacy-1.
 He covets the Ring of Invisibility from the giant Icetooth of Bösberg,
 which Osrica once wore. He wants Amalgund of Falkenstein driven
@@ -628,7 +638,7 @@ being held captive by the giant Icetooth. He would gladly make their rescuer a
 knight of Rifenstein Castle.
 
 ③ **Gertrud** the witch of Katzenberg. Roll attributes and a handful of dice on each of
-the different magician tables. Wants to uncover and eliminate 
+the different Mage tables. Wants to uncover and eliminate
 The Pentarchs of the Circle. Wants to find the Book of Power. Is
 protected by big cats.
 
@@ -637,7 +647,7 @@ protected by big cats.
 ④ **Theudetrud** of Bärenau is one of the Five Pentarchs of the Circle,
 a secret society of magicians sworn to maintaining
 eternal peace. Accordingly, she
-does not identify herself as a magician, but leads a double life
+does not identify herself as a Mage, but leads a double life
 as a brewer for the surrounding area. She is also looking for the
 Book of Power. From her point of view, it is also important to protect the dragons,
 otherwise everything will change.

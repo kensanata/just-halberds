@@ -354,7 +354,7 @@ amount (round down). If you are being treated by First Aid or a healer,
 you will be fit again in 30 minutes, otherwise the recovery will take 3 days.
 
 > Example: After being treated with First Aid, she recovers.
-> Brunhilde's attributes: Strength 1+4 1/2=5, Dexterity 4+1=5, Endurance
+> Brunhilde's attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
 > 3+3=6.
 
 If two of your attributes drop to 0, you are severely wounded and
@@ -380,14 +380,15 @@ People can be depicted with the well-known six attributes. You
 may choose these freely or roll them (2d6). Talents are
 also freely determined (often 1 or 2).
 
-Monsters and animals have two additional characteristics that describe their
-behavior: attack and escape. During an encounter, the GM rolls
-whether they attack (2d6 ≤ attack), if so, whether
-they hit (also 2d6 ≤ hit), and if no, whether they flee
-(2d6 ≤ escape). If neither, we talk.
-
-For each world, the stats will be slightly different. The following table
-can be used when the world is new (before a lot of monsters have been developed).
+Monsters and animals have different characteristics that describe
+their behavior: damage determines how much damage they deal if they
+hit; endurance determines how many rounds they will fight and how much
+damage they can take; if it drops to zero, they faint; excess damage
+is substracted from life; if it drops to zero, they are mortally
+wounded; attack determines whether they attack in an encounter (2d6 ≤
+attack); hit determines how well they hit (2d6 ≤ hit), and escape
+determines if they attempt to escape when they’re not attacking (2d6 ≤
+escape). If they neither attack nor escape, we talk.
 
 | 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |
 |:---:|-----------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
@@ -411,9 +412,8 @@ are always loners.
 > opponents who ride on terrible giant spiders, which,
 > oddly enough, are not very good at hitting things.
 
-As in any good film, the impending danger is always clearly
-announced, so that the players can decide
-for themselves whether they want to engage in a fight.
+Announce impending danger is always clearly, so that the players can
+decide for themselves whether they want to engage in a fight.
 
 > Example: Claudia describes how the car-sized shadows
 > push through the undergrowth, how their acrid smell spreads

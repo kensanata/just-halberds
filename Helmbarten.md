@@ -395,7 +395,7 @@ angreifen können und wieviel Schaden sie einstecken können, ohne ihr
 Bewusstsein zu verlieren; darüber hinaus gehender Schaden wird vom
 Leben abgezogen; sinkt Leben auf null, sind sie tödlich getroffen;
 Angriff bestimmt bei einer Begegnung, ob sie angreifen (2W6 ≤
-Angriff); Treffen bestimmt, wie gut sie treffen (2W6 ≤ Treffen); Fluch
+Angriff); Treffen bestimmt, wie gut sie treffen (2W6 ≤ Treffen); Flucht
 bestimmt, ob sie fliehen, falls sie nicht angreifen (2W6 ≤ Flucht).
 Falls sie weder angreifen noch fliehen wird geredet.
 

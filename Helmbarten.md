@@ -113,8 +113,8 @@ bestimmst du die Folgen mit 1W6.
 4. Erlahmt: Nach einem Unfall ist es nie wieder so geworden wie
    früher. Die Kriegerkarriere ist dir von nun an verwehrt.
 5. Gefangenschaft: Der Feldzug war ein Fiasko. Du wurdest gefangen
-   genommen. Würfle auf der Alterungstabelle. Würfle 3W6 ≤ Kraft oder
-   Ausdauer (deine Wahl) um zu entkommen. Gelingt dies nicht, vergehen
+   genommen. Würfle auf der Alterungstabelle. Würfle 3W6 ≤ ein
+   Attribut deiner Wahl, um zu entkommen. Gelingt dies nicht, vergehen
    weitere vier Jahre. Würfle wieder auf der Alterungstabelle und
    versuche nochmal – bis du es schaffst, oder stirbst.
 6. Verschollen: Der Feldzug war ein grosser Fehler. Die Armee wurde
@@ -163,11 +163,11 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    getraut, hast fast den Verstand verloren. Die Magierkarriere ist
    dir von nun an verwehrt.
 5. Verloren: Du bist in fremden Welten unterwegs gewesen und hast dich
-   dort verloren. Würfle auf der Alterungstabelle. Würfle 3W6 ≤
-   Intelligenz oder Bildung (deine Wahl), um den Weg zurück zu finden.
-   Gelingt dies nicht, vergehen weitere vier Jahre. Würfle wieder auf
-   der Alterungstabelle und versuche es nochmal – bis du es schaffst
-   oder stirbst.
+   dort verloren. Würfle auf der Alterungstabelle. Würfle 3W6 ≤ ein
+   Attribut deiner Wahl, um den Weg zurück zu finden. Gelingt dies
+   nicht, vergehen weitere vier Jahre. Würfle wieder auf der
+   Alterungstabelle und versuche es nochmal – bis du es schaffst oder
+   stirbst.
 6. Ein Opfer: Der Riss zwischen den Ebenen war zu gross, die Energie
    unkontrollierbar, deine Freunde waren fast verloren – doch dann
    hast du dich geopfert. Wer den Ort kennt, weiss wo man dich finden
@@ -216,9 +216,9 @@ Anderenfalls bestimmst du die Folgen mit 1W6.
    kennt dein Gesicht. Die Taugenichtskarriere ist dir von nun an
    verwehrt.
 5. Gefangenschaft: Der Plan ist aufgeflogen. Du wurdest gefasst.
-   Würfle auf der Alterungstabelle. Würfle 3W6 ≤ Kraft oder Ausdauer
-   (deine Wahl) um zu entkommen. Gelingt dies nicht, vergehen weitere
-   vier Jahre. Würfle wieder auf der Alterungstabelle und versuche es
+   Würfle auf der Alterungstabelle. Würfle 3W6 ≤ ein Attribut deiner
+   Wahl, um zu entkommen. Gelingt dies nicht, vergehen weitere vier
+   Jahre. Würfle wieder auf der Alterungstabelle und versuche es
    nochmal – bis du es schaffst oder stirbst.
 6. Verschwunden: Es kam zum Bandenkrieg und du bist verschwunden. Es
    heisst, die Strassenhunde sind fett geworden, dieses Jahr. 

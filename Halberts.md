@@ -409,9 +409,10 @@ escape). If they neither attack nor escape, we talk.
 | 5   |     Giants | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
 | 6   |    Dragons | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
 
-Note down when you roll something and stick to it! For the number of enemies,
-roll 2d6 for nightlings and predators, or 1d6 for undead. Giants and dragons
-are always loners.
+For each world, the stats will be slightly different. Note down when
+you roll something and stick to it! For the number of enemies, roll
+2d6 for nightlings and predators, or 1d6 for undead. Giants and
+dragons are always loners.
 
 > Example: Claudia directs the game and needs goblins that
 > ride on giant spiders that ambush the vanguard. There are 7.

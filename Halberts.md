@@ -1,4 +1,4 @@
-<address>Alex Schroeder, Frotz, YYYY-MM-DD</address>
+<address>Alex Schroeder, Frotz Self, Peter Fröhlich YYYY-MM-DD</address>
 
 # Halberts
 
@@ -64,14 +64,14 @@ If your character is 36 or older at the end of a career,
 you'll need to check for physical decline. If
 an attribute falls to zero, the character dies.
 
-| 1d6 | Aging Table |
-|:---:|-----------------:|
-| 1 | Strength -1 |
-| 2 | Dexterity -1 |
-| 3 | Endurance -1 |
-| 4 | Intelligence -1 |
-| 5 | Lucky! |
-| 6 | Lucky! |
+| 1d6 |     Aging Table |
+|:---:|----------------:|
+| 1   |     Strength -1 |
+| 2   |    Dexterity -1 |
+| 3   |    Endurance -1 |
+| 4   | Intelligence -1 |
+| 5   |          Lucky! |
+| 6   |          Lucky! |
 
 ## Warrior Career
 
@@ -86,14 +86,14 @@ Each year choose one of the following tables and roll 1d6. You may
 only roll on the "Officer" table if your character
 is 20 or older.
 
-| 1d6 | mercenary | guard | rider | officer |
-|:----:|---------:|----------:|-----------:|------ -----:|
-| 1 |Construction |Bureaucracy |Riding |Literacy |
-| 2 |Run |Discipline |Singing |Bureaucracy |
-| 3 |Tactics |Construction |Tactics |Tactics |
-| 4 |First Aid |Brawling |Spying |Diplomacy |
-| 5 |Craft |Brewing |Culture |Behavior |
-| 6 |Fighting |Fighting |Fighting |Fighting |
+| 1d6 |    mercenary |        guard |    rider |     officer |
+|:---:|-------------:|-------------:|---------:|------------:|
+| 1   | Construction |  Bureaucracy |   Riding |    Literacy |
+| 2   |          Run |   Discipline |  Singing | Bureaucracy |
+| 3   |      Tactics | Construction |  Tactics |     Tactics |
+| 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
+| 5   |        Craft |      Brewing |  Culture |    Behavior |
+| 6   |     Fighting |     Fighting | Fighting |    Fighting |
 
 > Example: Berta chooses 2× mercenaries, 2× guards, and rolls 3 2 5 1,
 > resulting in Tactics-1, Run-1, Brewing-1, and Bureaucracy-1. And Fighting-1!
@@ -135,13 +135,13 @@ You spend four years as a magician and learn something every year.
 Each year choose one of the following tables and roll 1d6.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
-|:----:|----------:|--------:|------------:|------ -----------:|
-| 1 |Fire |Healing |Charm |Shapeshift |
-| 2 |Air |Sleep |Singing |Necromancy |
-| 3 |Water |Eyes |Diplomacy |Transmutation |
-| 4 |Earth |Doors |Illusion |Fusion |
-| 5 |Storm |Plants |People |Animals |
-| 6 |Fighting |Brewing |Literacy |Planeswalk |
+|:---:|-----------:|--------:|-------------:|--------------:|
+| 1   |       Fire | Healing |        Charm |    Shapeshift |
+| 2   |        Air |   Sleep |      Singing |    Necromancy |
+| 3   |      Water |    Eyes |    Diplomacy | Transmutation |
+| 4   |      Earth |   Doors |     Illusion |        Fusion |
+| 5   |      Storm |  Plants |       People |       Animals |
+| 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
 
 > Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3 5
 > 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And Literacy-1!
@@ -186,14 +186,14 @@ automatically learn Running-1.
 You spend four years as a rapscallion and learn something every year.
 Each year choose one of the following tables and roll 1d6.
 
-| 1d6 | thief | thug | liar | murderer |
-|:---:|-----------:|---------:|-----------:|------ ----:|
-| 1 |Sneaking |Fighting |Culture |Fighting |
-| 2 |Spying |Crafting |Behavior |Brewing |
-| 3 |Running |Running |Bureaucracy |First Aid |
-| 4 |Climbing |First Aid |Literacy |Sneaking |
-| 5 |Distract |Tactics |Oratory |Behavior |
-| 6 |Pick |Singing |Trading |Tinker |
+| 1d6 |    thief |      thug |        liar |  murderer |
+|:---:|---------:|----------:|------------:|----------:|
+| 1   | Sneaking |  Fighting |     Culture |  Fighting |
+| 2   |   Spying |  Crafting |    Behavior |   Brewing |
+| 3   |  Running |   Running | Bureaucracy | First Aid |
+| 4   | Climbing | First Aid |    Literacy |  Sneaking |
+| 5   | Distract |   Tactics |     Oratory |  Behavior |
+| 6   |     Pick |   Singing |     Trading |    Tinker |
 
 > Example: Alex chooses 1× thief, 3× murderer, and rolls 6 2 2 6, resulting in
 > Pick-1, Brewing-2, Tinker-1. And Running-1!
@@ -231,49 +231,49 @@ hard tests: 3d6 ≤ attribute + talent. If no talent fits,
 or the matching talent is missing, then +0.
 
 A few key words about the individual talents.
-**Distract**: Distracting people from something so that something else can be done unnoticed.
-**Eyes**: Magic that allows distant or true vision.
-**Construction**: Building houses, castles, siege engines, digging pits and shafts.
+**Air**: Magic related to wind, movement, and sound.
+**Animals**: Magic related to animals and handling them.
 **Behavior**: How to behave in noble company.
-**Charm**: Magic that subdues people, controls their emotions.
+**Brawling**: The unarmed force, threats, and infliction of pain.
 **Brewing**: Brew beer, concoct herbal tea, brew potions, mix poison.
 **Bureaucracy**: An understanding of every administrative apparatus and the people who work there.
+**Charm**: Magic that subdues people, controls their emotions.
+**Climbing**: Climbing rocks and walls, moving in the mountains.
+**Construction**: Building houses, castles, siege engines, digging pits and shafts.
+**Crafts**: Woodworking, metalworking, filing, sawing, decorating and painting things.
+**Culture**: An understanding of legends, paintings, songs, manners and customs of foreign countries.
 **Diplomacy**: Negotiating treaties, avoiding violence, making peace.
 **Discipline**: Control over groups of people and oneself against natural instinct.
+**Distract**: Distracting people from something so that something else can be done unnoticed.
+**Doors**: Magic that has to do with locking and opening doors and gates.
 **Earth**: Magic dealing with rocks, tremors, the earth, and everything subterranean.
-**First Aid**: Cleaning and stitching up wounds, setting bones, caring for the sick.
+**Eyes**: Magic that allows distant or true vision.
+**Fighting**: Weapon handling and killing.
 **Fire**: Magic dealing with flames, explosions and destruction.
+**First Aid**: Cleaning and stitching up wounds, setting bones, caring for the sick.
 **Fusion**: Magic that fuses living things with other living things and things.
-**Shapeshift**: Magic that allows you to change shape.
-**Trading**: Finding, sourcing, haggling, buying, and selling things.
-**Crafts**: Woodworking, metalworking, filing, sawing, decorating and painting things.
 **Healing**: Magic that restores power to living beings and breaks curses.
 **Illusion**: Magic that makes others believe things that are not true.
-**Climbing**: Climbing rocks and walls, moving in the mountains.
-**Pick**: Opening locks and doors.
-**Culture**: An understanding of legends, paintings, songs, manners and customs of foreign countries.
-**Fighting**: Weapon handling and killing.
-**Air**: Magic related to wind, movement, and sound.
-**People**: Magic used to read people's minds and emotions.
+**Literacy**: Reading and writing.
 **Necromancy**: Magic that allows resurrection and contact with the dead.
-**Plants**: Magic related to plants and their growth.
-**Brawling**: The unarmed force, threats, and infliction of pain.
 **Oratory**: Convincing with well-chosen words.
+**People**: Magic used to read people's minds and emotions.
+**Pick**: Opening locks and doors.
+**Planeswalk**: Magic that has to do with contact with other worlds and transition into them.
+**Plants**: Magic related to plants and their growth.
 **Riding**: Riding on animals, mostly horses.
 **Running**: Long Distance Run, Short Distance Run, Rush.
+**Shapeshift**: Magic that allows you to change shape.
+**Singing**: Singing songs and playing instruments.
 **Sleep**: Magic related to sleep and fainting.
 **Sneaking**: Moving silently and hiding.
-**Literacy**: Reading and writing.
-**Singing**: Singing songs and playing instruments.
 **Spying**: Scouting, tracking, observing.
 **Storm**: Magic related to wind, rain, lightning and thunder.
 **Tactics**: Setting up ambushes, using the terrain for combat.
-**Animals**: Magic related to animals and handling them.
-**Transmutation**: Magic that transforms things into other things.
 **Tinker**: Building mechanical devices and using material properties.
-**Doors**: Magic that has to do with locking and opening doors and gates.
+**Trading**: Finding, sourcing, haggling, buying, and selling things.
+**Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
-**Planeswalk**: Magic that has to do with contact with other worlds and transition into them.
 
 <div style="break-after: always;"></div>
 
@@ -282,14 +282,14 @@ A few key words about the individual talents.
 Before you start the adventurous life, there is one more
 reward. Roll for each career on the appropriate table.
 
-| 1d6 | Warrior | Mage | Rapscallion |
-|:---:|--------------:|--------------:|--------------:|
-| 1 |Intelligence +1 |Intelligence +2 |Intelligence +1 |
-| 2 |Education +2 |Education + 1 |Education +2 |
-| 3 |Status +1 |Status +2 |Status +2 |
-| 4 |Secret Society |Secret Society |Secret Society |
-| 5 |Horse |Companion |Dog |
-| 6 |Land |Chair |Post |
+| 1d6 |         Warrior |            Mage |     Rapscallion |
+|:---:|----------------:|----------------:|----------------:|
+| 1   | Intelligence +1 | Intelligence +2 | Intelligence +1 |
+| 2   |    Education +2 |   Education + 1 |    Education +2 |
+| 3   |       Status +1 |       Status +2 |       Status +2 |
+| 4   |  Secret Society |  Secret Society |  Secret Society |
+| 5   |           Horse |       Companion |             Dog |
+| 6   |            Land |           Chair |            Post |
 
 > Example: Adalric has had two careers, 1× Mage and 1×
 > Rapscallion. Alex rolls 4 5, resulting in membership in a
@@ -393,14 +393,14 @@ they hit (also 2d6 ≤ hit), and if no, whether they flee
 For each world, the stats will be slightly different. The following table
 can be used when the world is new (before a lot of monsters have been developed).
 
-| 1d6 | Opponents | Damage | Endurance | Life | Attack | Hit | Escape |
-|:---:|-----------:|:-------:|:--------:|:-----:|: -------:|:-------:|:------:|
-| 1 | Nightlings | 2d6 | 1d6 | 1d6 | 1d6+4 | 1d6+5 | 1d6+3 |
-| 2 | Predators | 2d6 | 3d6 | 2d6 | 1d6+5 | 1d6+6 | 1d6+2 |
-| 3 | Undead | 2d6 | 3d6 | 4d6 | 1d6+6 | 1d6+7 | 1d6+0 |
-| 4 | Mounts | 3d6 | 6d6 | 3d6 | 1d6+4 | 1d6+4 | 1d6+2 |
-| 5 | Giants | 4d6 | 8d6 | 4d6 | 1d6+3 | 1d6+8 | 1d6+0 |
-| 6 | Dragons | 6d6 | 10d6 | 5d6 | 1d6+2 | 1d6+9 | 1d6+0 |
+| 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |
+|:---:|-----------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
+| 1   | Nightlings | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
+| 2   |  Predators | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
+| 3   |     Undead | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
+| 4   |     Mounts | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
+| 5   |     Giants | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
+| 6   |    Dragons | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
 
 Note down when you roll something and stick to it! For the number of enemies,
 roll 2d6 for nightlings and predators, or 1d6 for undead. Giants and dragons
@@ -540,26 +540,26 @@ headquarters. People as well as organizations want three things
 each and offer three rewards each. If those wishes partly
 overlap and contradict each other, so much the better.
 
-| 1d6 | Activity | Secret Society 1 | Secret Society 2 | Gods | Demons |
-|:---:|-------------|----------------|----------- -------|--------|----------|
-| 1 | Knight | Militia | of the pyramid | Odin | Set |
-| 2 | Bard | Scribes | of the moon | Freya | Orcus |
-| 3 | Thief | Pentarchs | of the circle | Thor | Pazuzu |
-| 4 | Mage | Students | of history | Mitra | Nergal |
-| 5 | Librarian | Servants | of consciousness | Marduk | Hel |
-| 6 | Merchant | Cooperation | of order | Ishtar | Zathogga |
+| 1d6 | Activity  | Secret Society 1 | Secret Society 2 | Gods   | Demons   |
+|:---:|-----------|------------------|------------------|--------|----------|
+| 1   | Knight    | Militia          | of the pyramid   | Odin   | Set      |
+| 2   | Bard      | Scribes          | of the moon      | Freya  | Orcus    |
+| 3   | Thief     | Pentarchs        | of the circle    | Thor   | Pazuzu   |
+| 4   | Mage      | Students         | of history       | Mitra  | Nergal   |
+| 5   | Librarian | Servants         | of consciousness | Marduk | Hel      |
+| 6   | Merchant  | Cooperation      | of order         | Ishtar | Zathogga |
 
 The first few names of villages, castles and witch towers can be
 generated with the following tables.
 
-| 1d6 | Castle 1 | Castle 2 | Castle 3 | village | Magic 1 | Magic 2 | Magic 3 |
-|:---:|----------|----------|---------|--------|-- --------|---------|---------|
-| 1 | Look- | Falcon | -burg | village | witch | Fire | tower |
-| 2 | Old | Fern | -mountain | -thal | raven | dead | -wait |
-| 3 | Bear | Glad- | -rock | -wil | Devil | Temple | -stone |
-| 4 | New- | Blade | -stone | -oh | Sinister | High | -forest |
-| 5 | Hello- | Ram | -clamp | -ingen | Dark | Heaven | -cellar |
-| 6 | Starry | Rifen | -to | -fort | Ice | Feline | -fixed |
+| 1d6 | Castle 1 | Castle 2 | Castle 3  | village | Magic 1  | Magic 2 | Magic 3 |
+|:---:|----------|----------|-----------|---------|----------|---------|---------|
+| 1   | Look-    | Falcon   | -burg     | village | witch    | Fire    | tower   |
+| 2   | Old      | Fern     | -mountain | -thal   | raven    | dead    | -wait   |
+| 3   | Bear     | Glad-    | -rock     | -wil    | Devil    | Temple  | -stone  |
+| 4   | New-     | Blade    | -stone    | -oh     | Sinister | High    | -forest |
+| 5   | Hello-   | Ram      | -clamp    | -ingen  | Dark     | Heaven  | -cellar |
+| 6   | Starry   | Rifen    | -to       | -fort   | Ice      | Feline  | -fixed  |
 
 For people's names, I like to look up a baby name list
 online and use that for my world. Here are a few

@@ -104,20 +104,19 @@ you determine the consequences with 1d6.
 
 1. Mortal Enemy: The campaign was a success. For three days you
    plundered. The survivors will never forgive you for your actions.
-2. Siege: Malnutrition has aged you prematurely.
-   Roll on the Aging Chart.
-3. Campaign: You were ambushed and badly injured.
-   Roll on the Aging Chart.
+2. Siege: Malnutrition has aged you prematurely. Roll on the Aging
+   Chart.
+3. Campaign: You were ambushed and badly injured. Roll on the Aging
+   Chart.
 4. Lame: After an accident, things never went back to the way they
    used to be. The warrior career is now denied to you.
-5. Captivity: The campaign was a fiasco. You have been captured.
-   Roll on the Aging Chart. Roll 3d6 ≤ Strength or
-   Endurance (your choice) to escape. If you don't succeed, another
-   four years pass. Roll on the aging table again and keep trying to
-   escape – until you succeed or die.
-6. Lost: The campaign was a big mistake. The army was
-   crushed. The fleeing were ridden down. You were never
-   seen again.
+5. Captivity: The campaign was a fiasco. You have been captured. Roll
+   on the Aging Chart. Roll 3d6 ≤ an attribute of your choice to
+   escape. If you don't succeed, another four years pass. Roll on the
+   aging table again and keep trying to escape – until you succeed or
+   die.
+6. Lost: The campaign was a big mistake. The army was crushed. The
+   fleeing were ridden down. You were never seen again.
 
 > Example: Berta rolls 4+0 and Brunhilde does not suffer
 > a stroke of fate. Brunhilde is now 20 years old. The
@@ -150,24 +149,23 @@ Each year choose one of the following tables and roll 1d6.
 Intelligence or Education (your choice) to avoid consequences.
 Otherwise, you determine the consequences with 1d6.
 
-1. Mortal Enemy: You exposed a classmate. You will
-   never be forgiven for that.
-2. Failure: The experiment went wrong and the energy found a
-   way through your body. Roll on the Aging Chart.
-3. Crossing borders: Research has taken you to places that
-   cannot be unseen again. A demon *saw* you and will find you.
+1. Mortal Enemy: You exposed a classmate. You will never be forgiven
+   for that.
+2. Failure: The experiment went wrong and the energy found a way
+   through your body. Roll on the Aging Chart.
+3. Crossing borders: Research has taken you to places that cannot be
+   unseen again. A demon *saw* you and will find you.
 4. Trespass: You ventured too far into the space between the worlds
    and almost lost your mind. You are denied the magician's career
    from now on.
 5. Lost: You have traveled to foreign worlds and lost yourself there.
-   Roll on the Aging Chart. Roll 3d6 ≤ Intelligence or Education (your
-   choice) to find your way back.
-   If this is not successful, another four years pass. Roll again on
-   the aging table and try again – until you succeed
-   or die.
+   Roll on the Aging Chart. Roll 3d6 ≤ an attribute of your choice to
+   find your way back. If this is not successful, another four years
+   pass. Roll again on the aging table and try again – until you
+   succeed or die.
 6. A Sacrifice: The rift between the planes was too big, the energy
-   uncontrollable, your friends were almost lost – but then
-   you sacrificed yourself. Those who know the place know where to find
+   uncontrollable, your friends were almost lost – but then you
+   sacrificed yourself. Those who know the place know where to find
    you, but your screams are not for the faint of heart.
 
 > Example: Alex rolls 4+0 and Adalric does not suffer
@@ -202,23 +200,21 @@ Each year choose one of the following tables and roll 1d6.
 skill or status (your choice) to avoid consequences.
 Otherwise, you determine the consequences with 1d6.
 
-1. Mortal Enemy: You have humiliated your rival. He or she
-   will never forgive you for that.
-2. Debt: Your plan didn't work out. On the contrary,
-   you have been tricked and now you owe someone more money than you
-   can ever pay back.
+1. Mortal Enemy: You have humiliated your rival. He or she will never
+   forgive you for that.
+2. Debt: Your plan didn't work out. On the contrary, you have been
+   tricked and now you owe someone more money than you can ever pay
+   back.
 3. Pulled in: You've accepted help from people, gotten more and more
    entangled, and now you owe them more than just a favor.
-4. Caught: You were caught and pilloried. Everyone
-   knows your face. The rapscallion career is denied to you from
-   now on.
-5. Imprisonment: The plan has been blown. You got caught.
-   Roll on the Aging Chart. Roll 3d6 ≤ Strength or Endurance
-   (your choice) to escape. If this fails, another four
-   years pass. Roll again on the aging table and try
-   again – until you succeed or die.
-6. Disappeared: There was a gang war and you disappeared. They
-   say the street dogs have gotten fat this year. 
+4. Caught: You were caught and pilloried. Everyone knows your face.
+   The rapscallion career is denied to you from now on.
+5. Imprisonment: The plan has been blown. You got caught. Roll on the
+   Aging Chart. Roll 3d6 ≤ an attribute of your choice to escape. If
+   this fails, another four years pass. Roll again on the aging table
+   and try again – until you succeed or die.
+6. Disappeared: There was a gang war and you disappeared. They say the
+   street dogs have gotten fat this year.
 
 > Example: Alex rolls 8+1 because he already has a career as a magician
 > behind him. Adalric suffers no stroke of fate and is now

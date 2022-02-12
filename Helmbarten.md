@@ -621,8 +621,8 @@ allerdings selber!
 
 ① **Brunmund** der Magier von Dunkelkeller ist Fleischmagier und
 Wolfsmensch, wild, frei, ungebildet: Kraft-7, Geschick-10, Ausdauer-7,
-Intelligenz-12 Bildung-2, Status-9, Fusion-3, Gestaltwandlung-3,
-Tiere-2, Nekromantie-2, ein Wasser-1, Pflanzen-1, Singen-1, Schrift-1.
+Intelligenz-12, Bildung-2, Status-9, Fusion-3, Gestaltwandlung-3,
+Tiere-2, Nekromantie-2, Wasser-1, Pflanzen-1, Singen-1, Schrift-1.
 Er begehrt den Ring der Unsichtbarkeit des Riesen Eiszahn vom Bösberg,
 den Osrica einmal getragen hat. Er möchte, dass Amalgund von
 Falkenstein aus seiner Burg vertrieben wird. Er liebt die Hexe Getrud
@@ -637,7 +637,7 @@ denen Schattenelfen reiten.
 eine handvoll Würfel auf den verschiedenen Kriegertabellen. Auch er
 liebt die Hexe Gertrud vom Katzenberg. Seine Tochter Inge wird vom
 Riesen Eiszahn gefangen gehalten. Gerne würde er ihren Retter zum
-Ritter oder zur Rittern der Burg Rifenstein machen.
+Ritter oder zur Ritterin der Burg Rifenstein machen.
 
 ③ **Gertrud** die Hexe vom Katzenberg … Je eine handvoll Würfel auf
 den verschiedenen Magiertabellen. Will die Pentarchen des Kreises

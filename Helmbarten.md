@@ -389,14 +389,15 @@ Menschen lassen sich mit den bekannten sechs Attributen abbilden. Du
 darf diese frei bestimmen oder sie auswürfeln (2W6). Talente werden
 ebenso frei bestimmt (oft 1 oder 2).
 
-Monster und Tiere haben zwei zusätzliche Charakteristiken, die ihr
-Verhalten beschreiben: Angriff und Flucht. Bei einer Begegnung würfelt
-die Spielleitung aus, ob sie angreifen (2W6 ≤ Angriff), falls ja, ob
-sie treffen (2W6 ≤ Treffen), und falls nein, ob sie fliehen (2W6 ≤
-Flucht). Falls weder noch, wird geredet.
-
-Für jede Welt werden die Werte etwas anders sein. Folgende Übersicht
-kann man verwenden, wenn die Welt neu ist.
+Monster und Tiere haben andere: Schaden bestimmt wieviel Schaden sie
+bei einem Treffer verursachen; Ausdauer bestimmt, wieviele Runden sie
+angreifen können und wieviel Schaden sie einstecken können, ohne ihr
+Bewusstsein zu verlieren; darüber hinaus gehender Schaden wird vom
+Leben abgezogen; sinkt Leben auf null, sind sie tödlich getroffen;
+Angriff bestimmt bei einer Begegnung, ob sie angreifen (2W6 ≤
+Angriff); Treffen bestimmt, wie gut sie treffen (2W6 ≤ Treffen); Fluch
+bestimmt, ob sie fliehen, falls sie nicht angreifen (2W6 ≤ Flucht).
+Falls sie weder angreifen noch fliehen wird geredet.
 
 | 1W6 |     Gegner | Schaden | Ausdauer | Leben | Angriff | Treffen | Flucht |
 |:---:|-----------:|:-------:|:--------:|:-----:|:-------:|:-------:|:------:|
@@ -420,9 +421,9 @@ Untote. Riesen und Drachen sind immer Einzelgänger.
 > Gegner, die auf fürchterlichen Riesenspinnen reiten, die aber
 > wiederum nicht so gut treffen.
 
-Wie in jedem guten Film wird die kommende Gefahr immer deutlich
-angekündigt, so dass die Spieler und Spielerinnen selber entscheiden
-können, ob sie sich auf einen Kampf einlassen wollen.
+Kündige die kommende Gefahr immer deutlich an, damit Spieler und
+Spielerinnen selber entscheiden können, ob sie sich auf einen Kampf
+einlassen wollen.
 
 > Beispiel: Claudia beschreibt, wie sich die wagengrossen Schatten
 > durch das Unterholz schieben, wie ihr beissende Geruch sich
@@ -445,8 +446,7 @@ wie stark die Magie in etwa ist.
 > macht, oder dass ein Kettenblitz fünf Goblins erwischt und ihnen je
 > 2W6 Schaden macht.
 
-Auch hier gilt: Notiere dir, was ihr etwas aushandelt und bleibt
-dabei!
+Auch hier gilt: Notiert euch, was ihr aushandelt und bleibt dabei!
 
 > **Blitzschlag**: trifft einen Gegner und was er trägt für je 5W6 Schaden  
 > **Kettenblitz**: trifft bis zu 5 Gegner für je 2W6 Schaden

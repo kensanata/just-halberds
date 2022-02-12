@@ -505,14 +505,16 @@ es, dem Kampf aus dem Weg zu gehen.
 
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Kämpfen-1.
 > Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
-> den Fersen. Sie stellt sich dem Kampf. Erste Runde: Berta würfelt 6
-> und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6, zwei Treffer für
-> die Goblins, da 6 ≤ 9. Beim ersten Treffer entscheidet der Zufall,
-> welches Attribut Brunhilde reduzieren werden muss: Berta würfelt
-> eine 4, d.h. Geschick. Claudia würfelt 5, so dass Brunhilde nur um
-> einen Punkt bei Sinnen bleibt, da 6-5=1, den zweiten Treffer zieht
-> sie von der Ausdauer ab (9-5=4). Einer der Goblins stirbt (da
-> Ausdauer-1), doch der andere steht noch.
+> den Fersen, mit Schaden-3, Ausdauer-1, Leben-5, Angriff-5,
+> Treffen-9, Flucht-4. Brunhilde stellt sich dem Kampf. Erste Runde:
+> Berta würfelt 6 und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6,
+> zwei Treffer für die Goblins, da 6 ≤ 9. Beim ersten Treffer
+> entscheidet der Zufall, welches Attribut Brunhilde reduzieren werden
+> muss: Berta würfelt eine 4, d.h. Geschick (6-3=3). Die Goblins
+> machen immer gleich viel Schaden. Den zweiten Treffer zieht sie von
+> der Ausdauer ab (9-3=6). Berta würfelt ihren Schaden aus: 6. Damit
+> ist der erste Goblin tödlich verweundet (Ausdauer und Leben beide
+> auf 0), doch der andere steht noch.
 
 Wird mittels Taktik ein Vorteil erreicht, ist das Resultat oft eine
 Überraschungsrunde, wo der Gegner nicht zurückschlagen kann. Das kann

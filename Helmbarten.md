@@ -513,7 +513,7 @@ es, dem Kampf aus dem Weg zu gehen.
 > muss: Berta würfelt eine 4, d.h. Geschick (6-3=3). Die Goblins
 > machen immer gleich viel Schaden. Den zweiten Treffer zieht sie von
 > der Ausdauer ab (9-3=6). Berta würfelt ihren Schaden aus: 6. Damit
-> ist der erste Goblin tödlich verweundet (Ausdauer und Leben beide
+> ist der erste Goblin tödlich verwundet (Ausdauer und Leben beide
 > auf 0), doch der andere steht noch.
 
 Wird mittels Taktik ein Vorteil erreicht, ist das Resultat oft eine

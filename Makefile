@@ -25,17 +25,17 @@ watch:
 %.pdf: %.html %.css
 	weasyprint $< $@
 
-%.html: %-prefix %.html.tmp suffix
-	cat $^ | sed 's/YYYY-MM-DD/$(shell date -I)/' > $@
-
-%.html.tmp: %.md
-	sed 's/¡/{: .highlight}/g' < $< \
-	| keine-ligaturen \
+%.html: lang=$(shell sed -ne 's/<html lang=\(..\)>/\1/p' < $*-prefix)
+%.html: %-prefix %.md suffix
+	sed 's/¡/{: .highlight}/g' < $*.md \
+	| (if test "de" = "$(lang)"; then keine-ligaturen; else cat; fi) \
 	| python3 -m markdown \
 		--extension=markdown.extensions.tables \
 		--extension markdown.extensions.smarty \
 		--extension markdown.extensions.attr_list \
-		--file=$@
+	| cat $*-prefix - suffix \
+	| sed 's/YYYY-MM-DD/$(shell date -I)/' \
+	> $@
 
 Farnthal.pdf: images/Farnthal.png
 

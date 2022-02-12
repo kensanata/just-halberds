@@ -481,33 +481,34 @@ fate is not predetermined.
 
 ## Combat
 
-Combat is divided into rounds. Everyone may attack,
-cast magic, or do something else 1×/round. All participants announce their
-action, roll the dice and evaluate. Everything happens at the same time.
+Combat is divided into rounds. Everyone may attack, cast magic, or do
+something else 1×/round. All participants announce their action, roll
+the dice and evaluate. Everything happens at the same time.
 
-> Example: Adalric casts chain lightning and he is protected by the rain.
-> A goblin has seen him anyway and shoots at him with his bow. The goblin
-> has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
+> Example: Adalric casts chain lightning and he is protected by the
+> rain. A goblin has seen him anyway and shoots at him with his bow.
+> The goblin has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
 
-In certain role-playing games, fighting is a big part of the game.
-In this game, after one round, perhaps half of those involved are already
+In certain role-playing games, fighting is a big part of the game. In
+this game, after one round, perhaps half of those involved are already
 on the ground. War is terrible. Most of the time it's about avoiding
 the fight.
 
 > Example: Brunhilde has 10 strength, 6 dexterity, 9 endurance, and
-> Fighting-1.
-> She tries to reach the farm, but two goblins are hot on her tail.
-> She turns to fight. First round: Berta rolls 6 and hits because 6 ≤ 10+1.
-> Claudia rolls 5 and 6, two hits for the goblins, since 6 ≤ 9.
-> With the first hit, chance decides which attribute Brunhilde must reduce:
-> Berta rolls a 4, which is Dexterity. Claudia rolls a 5, leaving Brunhilde
-> conscious by just one point since 6-5=1, the second hit she deducts from
-> her Endurance (9-5=4). One of the goblins faints (Endurance-1), but the other
-> still stands.
+> Fighting-1. She tries to reach the farm, but two goblins are hot on
+> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
+> Escape-4. She turns to fight. First round: Berta rolls 6 and hits
+> because 6 ≤ 10+1. Claudia rolls 5 and 6, two hits for the goblins,
+> since 6 ≤ 9. With the first hit, chance decides which attribute
+> Brunhilde must reduce: Berta rolls a 4, which is Dexterity (6-3=3).
+> The goblins deal 3 every time they hit. The second hit Brunhilde
+> deducts from her Endurance (9-3=4). Berta rolls 6 damage which kills
+> the goblin (both Endurance and Life are reduced to zero), but the
+> other still stands.
 
 When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back. That can
-become very important.
+surprise round where the opponent cannot strike back. That can become
+very important.
 
 ![The horror of war (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
 The horror of war (1521), by Urs Graf

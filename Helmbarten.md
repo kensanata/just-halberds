@@ -491,7 +491,7 @@ Schicksal ist nicht vorherbestimmt.
 
 Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,
 zaubern, oder sonst etwas tun. Alle Beteiligten kündigen ihre Aktion
-an, würfeln, und werten aus. Alles passiert gleichzeitig.
+an, würfeln, und werten gleichzeitig aus.
 
 > Beispiel: Adalric zaubert den Kettenblitz und er ist durch den Regen
 > geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit

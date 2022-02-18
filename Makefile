@@ -1,5 +1,6 @@
 SHELL=/bin/bash
-FILES=Halberts.pdf Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf
+FILES=Halberts.pdf Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf \
+	Altenstein.pdf
 all: $(FILES)
 
 clean:
@@ -38,6 +39,8 @@ watch:
 	| cat $*-prefix - suffix \
 	| sed 's/YYYY-MM-DD/$(shell date -I)/' \
 	> $@
+
+Altenstein.pdf: images/Altenstein.png
 
 Farnthal.pdf: images/Farnthal.png
 

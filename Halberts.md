@@ -16,63 +16,60 @@ it's still weird that "Endurance-number" is used for monsters... :-/
 
 ## What are we even doing?
 
-You have a super simple RPG in front of you. All you need are
-some friends and two regular six-sided dice, maybe some
-pen and paper, and you're good to go. One of you will direct
-the game. Is that you? All other players think
-up a person. The game manager (GM) dreams up a world and
-situations for these imaginary people; your
-friends say how they react and the GM says how the world reacts,
-and so it goes on and on. The story of these people is our
-story.
+You have a super simple RPG in front of you. All you need are some
+friends and two regular six-sided dice, maybe some pen and paper, and
+you're good to go. One of you will direct the game. Is that you? All
+other players think up a person. The game manager (GM) dreams up a
+world and situations for these imaginary people; your friends say how
+they react and the GM says how the world reacts, and so it goes on and
+on. The story of these people is our story.
 
-The dice are rolled when something with exciting consequences happens and
-we want to leave the outcome to chance. Do our people succeed
-in their project or not? And what happens afterwards?
+The dice are rolled when something with exciting consequences happens
+and we want to leave the outcome to chance. Do our people succeed in
+their project or not? And what happens afterwards?
 
 ## Character Creation
 
-If you are a player, you play a fictional person,
-your character. We will now create this together.
+If you are a player, you play a fictional person, your character. We
+will now create this together.
 
-First you choose your name, then you roll your attributes.
-You have six attributes: Strength, Dexterity, Endurance, Intelligence,
-Education, and Status. Roll two six-sided dice for each
-attribute, add them together (short: 2d6) and write it down.
+First you choose your name, then you roll your attributes. You have
+six attributes: Strength, Dexterity, Endurance, Intelligence,
+Education, and Status. Roll two six-sided dice for each attribute, add
+them together (short: 2d6) and write it down.
 
 > Example: Alex names his character Adalric and rolls 8 8 7 9 10
 > 8; Berta names her character Brunhilde and rolls 10 6 9 5 4 4.
 
-Your character begins at age 16. Now you choose a first
-career. The choices are Warrior, Mage, or Rapscallion. The
-process is always the same: entrance exam, learn talents,
-twist of fate, grow older by four years. And then you have to
-decide if your character will do the same for another four years, or
-if you use one year to change careers, or if your character
-is ready for a life of adventure.
+Your character begins at age 16. Now you choose a first career. The
+choices are Warrior, Mage, or Rapscallion. The process is always the
+same: entrance exam, learn talents, twist of fate, grow older by four
+years. And then you have to decide if your character will do the same
+for another four years, or if you use one year to change careers, or
+if your character is ready for a life of adventure.
 
-Depending on the career, certain attributes are advantageous. Warriors need
-Strength or Endurance, Mages need Intelligence or Education, and
+Depending on the career, certain attributes are advantageous. Warriors
+need Strength or Endurance, Mages need Intelligence or Education, and
 Rapscallions need Dexterity or Status.
 
-If your character doesn't gain admission to the desired career,
-that career can no longer be selected. When there are no
-more careers to choose from, the adventurous life begins: roll on the
-reward table for each career!
+If your character doesn't gain admission to the desired career, that
+career can no longer be selected. When there are no more careers to
+choose from, the adventurous life begins: roll on the reward table for
+each career!
 
 A career lasts for four years. Each year, choose one of your career
-charts and roll 1d6. Write down that talent with a value of 1,
-or increase the value if you learn a talent again.
-When you learn "Fighting", choose a weapon instead:
-knife, spear, halberd, épée, bow, lance.
+charts and roll 1d6. Write down that talent with a value of 1, or
+increase the value if you learn a talent again. When you learn
+"Fighting", choose a weapon instead: knife, spear, halberd, épée, bow,
+lance.
 
-With every career your character completes, the chance for a
-twist of fate increases. Thus it makes perfect sense to
-stop character generation at some point and to start adventuring.
+With every career your character completes, the chance for a twist of
+fate increases. Thus it makes perfect sense to stop character
+generation at some point and to start adventuring.
 
-If your character is 36 or older at the end of a career,
-you'll need to check for physical decline. If
-an attribute falls to zero, the character dies.
+If your character is 36 or older at the end of a career, you'll need
+to check for physical decline. If an attribute falls to zero, the
+character dies.
 
 | 1d6 |     Aging Table |
 |:---:|----------------:|
@@ -91,10 +88,9 @@ automatically learn Fighting-1.
 > Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
 > accepted!
 
-You spend four years as a Warrior and learn something every year.
-Each year choose one of the following tables and roll 1d6. You may
-only roll on the "Officer" table if your character
-is 20 or older.
+You spend four years as a Warrior and learn something every year. Each
+year choose one of the following tables and roll 1d6. You may only
+roll on the "Officer" table if your character is 20 or older.
 
 | 1d6 |    Mercenary |        Guard |    Rider |     Officer |
 |:---:|-------------:|-------------:|---------:|------------:|
@@ -109,9 +105,9 @@ is 20 or older.
 > resulting in Tactics-1, Running-1, Brewing-1, and Bureaucracy-1.
 > And Fighting-1!
 
-**Twist of Fate**: Roll 2d6 + number of previous careers ≤
-Strength or Endurance (your choice) to avoid consequences.
-Otherwise, you determine the consequences with 1d6.
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤ Strength or
+Endurance (your choice) to avoid consequences. Otherwise, you
+determine the consequences with 1d6.
 
 1. Mortal Enemy: The campaign was a success. For three days you
    plundered. The survivors will never forgive you for your actions.
@@ -129,20 +125,20 @@ Otherwise, you determine the consequences with 1d6.
 6. Lost: The campaign was a big mistake. The army was crushed. The
    fleeing were ridden down. You were never seen again.
 
-> Example: Berta rolls 4+0 and Brunhilde does not suffer
-> a twist of fate. Brunhilde is now 20 years old. The
-> aging table does not have to be rolled yet.
+> Example: Berta rolls 4+0 and Brunhilde does not suffer a twist of
+> fate. Brunhilde is now 20 years old. The aging table does not have
+> to be rolled yet.
 
 ## Mage Career
 
-**Admission**: Roll 2d6 ≤ Intelligence or Education (your choice).
-You will automatically learn Literacy-1.
+**Admission**: Roll 2d6 ≤ Intelligence or Education (your choice). You
+will automatically learn Literacy-1.
 
 > Example: Adalric has Education-9 and Alex rolls 9. Adalric is
 > accepted!
 
-You spend four years as a Mage and learn something every year.
-Each year choose one of the following tables and roll 1d6.
+You spend four years as a Mage and learn something every year. Each
+year choose one of the following tables and roll 1d6.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
 |:---:|-----------:|--------:|-------------:|--------------:|
@@ -153,8 +149,9 @@ Each year choose one of the following tables and roll 1d6.
 | 5   |      Storm |  Plants |       People |       Animals |
 | 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
 
-> Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3 5
-> 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And Literacy-1!
+> Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3
+> 5 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And
+> Literacy-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Intelligence or Education (your choice) to avoid consequences.
@@ -178,9 +175,9 @@ Otherwise, you determine the consequences with 1d6.
    sacrificed yourself. Those who know the place know where to find
    you, but your screams are not for the faint of heart.
 
-> Example: Alex rolls 4+0 and Adalric does not suffer
-> a twist of fate. Adalric is now 20 years old. The
-> aging table does not have to be rolled yet.
+> Example: Alex rolls 4+0 and Adalric does not suffer a twist of fate.
+> Adalric is now 20 years old. The aging table does not have to be
+> rolled yet.
 
 ## Rapscallion Career
 
@@ -188,8 +185,8 @@ Otherwise, you determine the consequences with 1d6.
 automatically learn Running-1.
 
 > Example: Adalric changes careers (so he is now 21 years old) and
-> wants to become a Rapscallion; he has Status 10 and Alex rolls 7. Adalric
-> is accepted!
+> wants to become a Rapscallion; he has Status 10 and Alex rolls 7.
+> Adalric is accepted!
 
 You spend four years as a Rapscallion and learn something every year.
 Each year choose one of the following tables and roll 1d6.
@@ -203,8 +200,8 @@ Each year choose one of the following tables and roll 1d6.
 | 5   | Distract |   Tactics |     Oratory |  Behavior |
 | 6   |     Pick |   Singing |     Trading |    Tinker |
 
-> Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6, resulting in
-> Pick-1, Brewing-2, Tinker-1. And Running-1!
+> Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6,
+> resulting in Pick-1, Brewing-2, Tinker-1. And Running-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Dexterity or Status (your choice) to avoid consequences.
@@ -227,14 +224,14 @@ Otherwise, you determine the consequences with 1d6.
    street dogs have gotten fat this year.
 
 > Example: Alex rolls 8+1 because he already has a career as a Mage
-> behind him. Adalric suffers no twist of fate and is now
-> 25 years old.
+> behind him. Adalric suffers no twist of fate and is now 25 years
+> old.
 
 ## Talents
 
-We roll checks as follows: 2d6 ≤ attribute + talent. On very
-hard tests: 3d6 ≤ attribute + talent. If no talent fits,
-or the matching talent is missing, then +0.
+We roll checks as follows: 2d6 ≤ attribute + talent. On very hard
+tests: 3d6 ≤ attribute + talent. If no talent fits, or the matching
+talent is missing, then +0.
 
 A few key words about the individual talents.
 **Air**: Magic related to wind, movement, and sound.
@@ -285,8 +282,8 @@ A few key words about the individual talents.
 
 ## Reward
 
-Before you start the adventurous life, there is one more
-reward. Roll for each career on the appropriate table.
+Before you start the adventurous life, there is one more reward. Roll
+for each career on the appropriate table.
 
 | 1d6 |         Warrior |            Mage |     Rapscallion |
 |:---:|----------------:|----------------:|----------------:|
@@ -297,87 +294,84 @@ reward. Roll for each career on the appropriate table.
 | 5   |           Horse |       Companion |             Dog |
 | 6   |            Land |           Chair |            Post |
 
-> Example: Adalric has had two careers, 1× Mage and 1×
-> Rapscallion. Alex rolls 4 5, resulting in membership in a
-> secret society and a dog.
+> Example: Adalric has had two careers, 1× Mage and 1× Rapscallion.
+> Alex rolls 4 5, resulting in membership in a secret society and a
+> dog.
 
-**Secret Society**: The game manager offers three societies to choose from.
-If necessary, these are the three:
+**Secret Society**: The game manager offers three societies to choose
+from. If necessary, these are the three:
 
 * The Ministry of the Evening Light
 * The Siblings of the Dawn Treader
 * The Descendants of the Frost Giants
 
-**Companion**: A young human who has not made any careers,
-or an intelligent animal such as a cat, an owl, or a raven.
-If human, name your companion and roll the six attributes
-(2d6 each for Strength, Dexterity, Endurance, Intelligence,
-Education, and Status).
+**Companion**: A young human who has not made any careers, or an
+intelligent animal such as a cat, an owl, or a raven. If human, name
+your companion and roll the six attributes (2d6 each for Strength,
+Dexterity, Endurance, Intelligence, Education, and Status).
 
-**Dog**: A loyal companion that needs to be fed. Damage
-2d6; Endurance 3d6; Life 2d6.
+**Dog**: A loyal companion that needs to be fed. Damage 2d6; Endurance
+3d6; Life 2d6.
 
-**Horse**: A loyal mount that requires care and feeding. Damage
-3d6; Endurance 6d6; Life 3d6.
+**Horse**: A loyal mount that requires care and feeding. Damage 3d6;
+Endurance 6d6; Life 3d6.
 
-**Land**: A piece of land in the wilderness that has been granted
-to you. Taking possession of said land is up to you however.
-Name your piece of land.
+**Land**: A piece of land in the wilderness that has been granted to
+you. Taking possession of said land is up to you however. Name your
+piece of land.
 
-**Chair**: You are welcome in your magic school and can
-come back at any time to teach the young magicians something.
-Name your sponsor.
+**Chair**: You are welcome in your magic school and can come back at
+any time to teach the young magicians something. Name your sponsor.
 
-**Posts**: There is always a vacancy for you in your town, be it
-in your gang or in the administration. Name your sponsor.
+**Posts**: There is always a vacancy for you in your town, be it in
+your gang or in the administration. Name your sponsor.
 
 ## Adventurer's Life
 
-If you want to do something and the outcome is uncertain, discuss with the
-game manager an attribute and a talent to use, provided there is a suitable
-match. Roll 2d6 ≤ attribute + talent to succeed. If
-it's very hard, you might have to roll 3d6 ≤ attribute + talent.
+If you want to do something and the outcome is uncertain, discuss with
+the game manager an attribute and a talent to use, provided there is a
+suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
+hard, you might have to roll 3d6 ≤ attribute + talent.
 
-If you attack successfully, you deal 2d6 damage unless you
-use a halberd. This deals 3d6 damage. You can
-only attack as many times in a fight as you have Endurance.
+If you attack successfully, you deal 2d6 damage unless you use a
+halberd. This deals 3d6 damage. You can only attack as many times in a
+fight as you have Endurance.
 
-When you are first hit in combat, you must
-subtract the damage from a random physical attribute. Roll 1d6:
-1–2 is Strength, 3–4 is Dexterity, 5–6 is Endurance. For all other
-hits, you may distribute the hit dice yourself among the three physical
-attributes. You must
+When you are first hit in combat, you must subtract the damage from a
+random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
+Dexterity, 5–6 is Endurance. For all other hits, you may distribute
+the hit dice yourself among the three physical attributes. You must
 subtract any carryover from another physical attribute.
 
 If one of your attributes drops to 0, you are slightly injured and
 pass out. After 10 minutes you wake up again.
 
-> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She gets hit
-> for the first time and has to subtract 4+5=9 damage. Berta
-> rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1).
-> She won't pass out! The second time she has to subtract 2+6=8 hits
-> and chooses to subtract 2 from Dexterity (6-2=4) and 6 from
-> Endurance (9-6=3). Now it's getting close…
+> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She
+> gets hit for the first time and has to subtract 4+5=9 damage. Berta
+> rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1). She
+> won't pass out! The second time she has to subtract 2+6=8 hits and
+> chooses to subtract 2 from Dexterity (6-2=4) and 6 from Endurance
+> (9-6=3). Now it's getting close…
 
-After the fight, all attributes recover half of the missing
-amount (round down). If you are being treated by First Aid or a healer,
-you will be fit again in 30 minutes, otherwise the recovery will take 3 days.
+After the fight, all attributes recover half of the missing amount
+(round down). If you are being treated by First Aid or a healer, you
+will be fit again in 30 minutes, otherwise the recovery will take 3
+days.
 
 > Example: After being treated with First Aid, she recovers.
 > Brunhilde's attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
 > 3+3=6.
 
-If two of your attributes drop to 0, you are severely wounded and
-pass out. You don't wake up again for 3h and only
-the attributes from 0 recover to 1. With First Aid-3 or
- Healing-3 you can recover in an infirmary in 5d6 days,
-otherwise you die.
+If two of your attributes drop to 0, you are severely wounded and pass
+out. You don't wake up again for 3h and only the attributes from 0
+recover to 1. With First Aid-3 or Healing-3 you can recover in an
+infirmary in 5d6 days, otherwise you die.
 
 If three of your attributes drop to 0, you die.
 
-For all other creatures there are only Endurance and Life instead of the
-known six attributes. When Endurance drops to 0, they faint; when Life
-drops to 0, they die.
+For all other creatures there are only Endurance and Life instead of
+the known six attributes. When Endurance drops to 0, they faint; when
+Life drops to 0, they die.
 
 > Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
@@ -386,9 +380,9 @@ drops to 0, they die.
 
 All other chapters in this book are intended for the GM. So for you!
 
-People can be depicted with the well-known six attributes. You
-may choose these freely or roll them (2d6). Talents are
-also freely determined (often 1 or 2).
+People can be depicted with the well-known six attributes. You may
+choose these freely or roll them (2d6). Talents are also freely
+determined (often 1 or 2).
 
 Monsters and animals have different characteristics that describe
 their behavior: damage determines how much damage they deal if they
@@ -430,22 +424,20 @@ decide for themselves whether they want to engage in a fight.
 > push through the undergrowth, how their acrid smell spreads
 > and the animals in the barn panic.
 
-If possible, the players should roll the dice, not the
-GM. For example, if they want to lure the opponent into an
-ambush, or notice an ambush,
-someone should roll against Intelligence + Tactics in both cases.
+If possible, the players should roll the dice, not the GM. For
+example, if they want to lure the opponent into an ambush, or notice
+an ambush, someone should roll against Intelligence + Tactics in both
+cases.
 
 ## Magic
 
-Just like you slowly build up a pool of enemies,
-you need to work out an understanding of just how powerful magic is
-with the players.
+Just like you slowly build up a pool of enemies, you need to work out
+an understanding of just how powerful magic is with the players.
 
-> Example: How many goblins can Adalric kill with lightning?
-> Alex and Claudia agree that lightning can hit a
-> giant spider including its rider, doing 5d6 damage to each,
-> or chain lightning can hit five goblins, doing
-> 2d6 damage to each.
+> Example: How many goblins can Adalric kill with lightning? Alex and
+> Claudia agree that lightning can hit a giant spider including its
+> rider, doing 5d6 damage to each, or chain lightning can hit five
+> goblins, doing 2d6 damage to each.
 
 The same applies here: Make a note of what you negotiate and stick to
 it!
@@ -453,38 +445,38 @@ it!
 > **Lightning**: hits an enemy and what they are carrying for 5d6 damage each  
 > **Chain Lightning**: hits up to 5 enemies for 2d6 damage each
 
-Since spells are stronger than weapon attacks, one shouldn't be able to cast
-any number of them. With each spell cast, the 
-risk of exhaustion increases. Therefore, when casting spells, the modified
-rule applies: roll 2d6 + number of spells cast today ≤ attribute + talent
-to succeed. If the check fails, the talent can no longer be used today.
+Since spells are stronger than weapon attacks, one shouldn't be able
+to cast any number of them. With each spell cast, the risk of
+exhaustion increases. Therefore, when casting spells, the modified
+rule applies: roll 2d6 + number of spells cast today ≤ attribute +
+talent to succeed. If the check fails, the talent can no longer be
+used today.
 
-> Example: Adalric conjures rain for privacy. He has
-> Education 9, Water-1, making a total of 10. Alex rolls 10 + 0 since
-> this was the first spell of the day. It's raining because 10 ≤ 10.
-> Chain Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills
-> five goblins.
+> Example: Adalric conjures rain for privacy. He has Education 9,
+> Water-1, making a total of 10. Alex rolls 10 + 0 since this was the
+> first spell of the day. It's raining because 10 ≤ 10. Chain
+> Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills five
+> goblins.
 
-Magic always leads to discussions. You have to like that –
-otherwise you should skip the Mage career. How long can
-you breathe underwater? Can you do magic underwater? What happens
-when you cast lightning underwater? The important thing is to agree
-at the table and to write down the result.
+Magic always leads to discussions. You have to like that – otherwise
+you should skip the Mage career. How long can you breathe underwater?
+Can you do magic underwater? What happens when you cast lightning
+underwater? The important thing is to agree at the table and to write
+down the result.
 
 Not all magic talents are equally powerful, or equally useful. You
 also have to live with that. Certain magic talents lend themselves to
 druids, bards, healers.
 
-There is no talent for summoning: instead, this is meant to be handled with
-a gate to another plane, or as a planeswalk. You have to subjugate every
-demon yourself and force it to do its deeds.
+There is no talent for summoning: instead, this is meant to be handled
+with a gate to another plane, or as a planeswalk. You have to
+subjugate every demon yourself and force it to do its deeds.
 
-In my games, Charm is always a violent thing:
-being forced into things is nauseating and revolting.
+In my games, Charm is always a violent thing: being forced into things
+is nauseating and revolting.
 
-It is not possible to foresee the future. That would
-incapacitate players. A role-playing game is not a saga;
-fate is not predetermined.
+It is not possible to foresee the future. That would incapacitate
+players. A role-playing game is not a saga; fate is not predetermined.
 
 ## Combat
 
@@ -523,30 +515,28 @@ The horror of war (1521), by Urs Graf
 
 ## Worldbuilding
 
-The world is best built where the characters get
-involved. If they go north, there will be cultivation. When they
-get interested in libraries, books and librarians become
-important. If you are interested in history, ancient
-writings and ruins become important.
+The world is best built where the characters get involved. If they go
+north, there will be cultivation. When they get interested in
+libraries, books and librarians become important. If you are
+interested in history, ancient writings and ruins become important.
 
 The game does not offer a "reward" in the sense of gaining power.
-Finding money is not worth it, there's no special equipment to buy,
-no experience points to gain. That's another reason why it's important to
-find out what interests the players. A
-tragic end? A love story? Owning a castle? To
-be knighted? Take over a gang? To
-travel the world? And then you add helpers, competitors, villains, and
+Finding money is not worth it, there's no special equipment to buy, no
+experience points to gain. That's another reason why it's important to
+find out what interests the players. A tragic end? A love story?
+Owning a castle? To be knighted? Take over a gang? To travel the
+world? And then you add helpers, competitors, villains, and
 troublemakers to the world. This friction sharpens the profile. Here
 we see what kind of people our characters are.
 
-Specifically, I recommend working up a dozen people. All have
-names, attributes, a few talents, and a job.
-Three of them belong to a secret society each, three belong to
-a temple each, three belong to a castle each, and three belong to
-a magic school each. All of these organizations have names and
-headquarters. People as well as organizations want three things
-each and offer three rewards each. If those wishes partly
-overlap and contradict each other, so much the better.
+Specifically, I recommend working up a dozen people. All have names,
+attributes, a few talents, and a job. Three of them belong to a secret
+society each, three belong to a temple each, three belong to a castle
+each, and three belong to a magic school each. All of these
+organizations have names and headquarters. People as well as
+organizations want three things each and offer three rewards each. If
+those wishes partly overlap and contradict each other, so much the
+better.
 
 | 1d6 | Activity  | Secret Society 1 | Secret Society 2 | Gods   | Demons   |
 |:---:|-----------|------------------|------------------|--------|----------|
@@ -569,11 +559,10 @@ generated with the following tables.
 | 5   | Hello-   | Ram      | -clamp    | -ingen  | Dark     | Heaven  | -cellar |
 | 6   | Starry   | Rifen    | -to       | -fort   | Ice      | Feline  | -fixed  |
 
-For people's names, I like to look up a baby name list
-online and use that for my world. Here are a few
-tables for names with a Franconian touch. Easily add -o, -a or
--e at the end, or reverse (Chlodobert, Theudebald, Hildebart,
-Gertrud).
+For people's names, I like to look up a baby name list online and use
+that for my world. Here are a few tables for names with a Franconian
+touch. Easily add -o, -a or -e at the end, or reverse (Chlodobert,
+Theudebald, Hildebart, Gertrud).
 
 | 1d6 | Name 1 | Name 2  | Name 3 | Name 4 | Name 5 | Name 6 |
 |:---:|--------|---------|--------|--------|--------|--------|
@@ -597,10 +586,9 @@ and dragons, I like to use names that indicate forces of nature.
 | 6   | Shadow | -smoke   | -tooth  | Frozen     | -peak      |
 
 Treasures that these people, giants, and dragons may have and that
-they might want to steal from each other. For this you should make
-up two or three important people from the past:
-prophets, heroines, and so on, as well as the name of a dark
-lord and his realm. Names matter!
+they might want to steal from each other. For this you should make up
+two or three important people from the past: prophets, heroines, and
+so on, as well as the name of a dark lord and his realm. Names matter!
 
 | 1d6 | What    | What for         | Who invented it?                 |
 |:---:|---------|------------------|----------------------------------|
@@ -611,47 +599,44 @@ lord and his realm. Names matter!
 | 5   | Book    | of the Saint     | (a well-known person)            |
 | 6   | Chalice | of Redemption    | (a god, goddess, or demon)       |
 
-All these things are recorded and hopefully lead
-to cross-connections and inspiration. The next chapter presents the
-beginning of such an initial setting – but you have to finish writing
-it yourself!
+All these things are recorded and hopefully lead to cross-connections
+and inspiration. The next chapter presents the beginning of such an
+initial setting – but you have to finish writing it yourself!
 
 ## Example
 
-① **Brunmund** the Mage of Dark Cellar is Flesh Mage and
-Wolfman - savage, free, uneducated: Strength 7, Dexterity 10, Endurance 7,
+① **Brunmund** the Mage of Dark Cellar is Flesh Mage and Wolfman -
+savage, free, uneducated: Strength 7, Dexterity 10, Endurance 7,
 Intelligence 12, Education 2, Status 9; Fusion-3, Shapeshifting-3,
-Animals-2, Necromancy-2, Water-1, Plants-1, Singing-1, Literacy-1.
-He covets the Ring of Invisibility from the giant Icetooth of Bösberg,
-which Osrica once wore. He wants Amalgund of Falkenstein driven
-out of his castle. He loves the witch Gertrud
-of Katzenberg. His forest is defended by giant wolves mounted
-by shadow elves.
+Animals-2, Necromancy-2, Water-1, Plants-1, Singing-1, Literacy-1. He
+covets the Ring of Invisibility from the giant Icetooth of Bösberg,
+which Osrica once wore. He wants Amalgund of Falkenstein driven out of
+his castle. He loves the witch Gertrud of Katzenberg. His forest is
+defended by giant wolves mounted by shadow elves.
 
 **Wolf** … Create like a predator.
 
 **Dark Elf**...Create like a nightling.
 
-② **Amalgund** the Baron of Falkenstein. Roll attributes and 
-a handful of dice on the various Warrior tables. He also
-loves the witch Gertrud of Katzenberg. His daughter Inge is
-being held captive by the giant Icetooth. He would gladly make their rescuer a
-knight of Rifenstein Castle.
+② **Amalgund** the Baron of Falkenstein. Roll attributes and a handful
+of dice on the various Warrior tables. He also loves the witch Gertrud
+of Katzenberg. His daughter Inge is being held captive by the giant
+Icetooth. He would gladly make their rescuer a knight of Rifenstein
+Castle.
 
-③ **Gertrud** the witch of Katzenberg. Roll attributes and a handful of dice on each of
-the different Mage tables. Wants to uncover and eliminate
-The Pentarchs of the Circle. Wants to find the Book of Power. Is
-protected by big cats.
+③ **Gertrud** the witch of Katzenberg. Roll attributes and a handful
+of dice on each of the different Mage tables. Wants to uncover and
+eliminate The Pentarchs of the Circle. Wants to find the Book of
+Power. Is protected by big cats.
 
 **Panther**... Create like a predator.
 
-④ **Theudetrud** of Bärenau is one of the Five Pentarchs of the Circle,
-a secret society of magicians sworn to maintaining
-eternal peace. Accordingly, she
-does not identify herself as a Mage, but leads a double life
-as a brewer for the surrounding area. She is also looking for the
-Book of Power. From her point of view, it is also important to protect the dragons,
-otherwise everything will change.
+④ **Theudetrud** of Bärenau is one of the Five Pentarchs of the
+Circle, a secret society of magicians sworn to maintaining eternal
+peace. Accordingly, she does not identify herself as a Mage, but leads
+a double life as a brewer for the surrounding area. She is also
+looking for the Book of Power. From her point of view, it is also
+important to protect the dragons, otherwise everything will change.
 
 ⑤ **Hildegard** of the Raven Watch is High Priestess of Pazuzu,
 protected by a cursed mist over the Great Swamp where
@@ -661,37 +646,34 @@ to insinuate someone with Gertrud to gain influence.
 
 **Plague** is a dragon in the Great Swamp that fell for Hildegard.
 
-**Eiszahn** is the giant from the Bösberg... He's holding the beautiful Inge of
-Falkenstein prisoner. Every night dead penitents roam his
-glacier.
+**Eiszahn** is the giant from the Bösberg... He's holding the
+beautiful Inge of Falkenstein prisoner. Every night dead penitents
+roam his glacier.
 
 **Dead Penitents** … Wailing undead, barefoot on the ice.
 
-**Fire Father** is a giant from the Rothorn. A powerful
-bladesmith. Ages ago he forged the sword of Osrica.
-He doesn't want to repeat that mistake.
+**Fire Father** is a giant from the Rothorn. A powerful bladesmith.
+Ages ago he forged the sword of Osrica. He doesn't want to repeat that
+mistake.
 
-⑥ **Chlodogunda** is the Champion of Klingenstein, returned
-from wars in faraway lands to take possession of what is
-supposedly hers. She is surrounded by a hundred rice runners.
-The leader of her rear guard is Siegbert. She wants to
-find the sword of Osrica.
+⑥ **Chlodogunda** is the Champion of Klingenstein, returned from wars
+in faraway lands to take possession of what is supposedly hers. She is
+surrounded by a hundred rice runners. The leader of her rear guard is
+Siegbert. She wants to find the sword of Osrica.
 
 **Rice Runner**...mercenaries. Warriors with halberds: Damage-3d6,
 Endurance-9, Life-9, Attack-9, Escape-5, Count: 10.
 
-⑦ **Gyso** of the Feathers is Chairman of the Silver
-Scribes, a secret society of chroniclers and scholars, who
-copy books and save the knowledge of old times through these dark years.
-He wants the Book of Power that the dark
-lord wrote before his end.
+⑦ **Gyso** of the Feathers is Chairman of the Silver Scribes, a secret
+society of chroniclers and scholars, who copy books and save the
+knowledge of old times through these dark years. He wants the Book of
+Power that the dark lord wrote before his end.
 
-⑧ **Siegbert** belongs to the "Militia of the Pyramid", a secret society.
-The mercenaries on the campaigns against the steppe riders
-reached the desert land and saw the ancient pyramids there.
-He would probably be in the mood for a marriage. He is easily
-seduced by power. He would like to have a sword forged, just
-like the one Osrica had.
+⑧ **Siegbert** belongs to the "Militia of the Pyramid", a secret
+society. The mercenaries on the campaigns against the steppe riders
+reached the desert land and saw the ancient pyramids there. He would
+probably be in the mood for a marriage. He is easily seduced by power.
+He would like to have a sword forged, just like the one Osrica had.
 
 ⑨ **Frieda** of the Tower of Heaven is the High Priestess of Marduk in
 Midgard. Marduk protects the people from the monsters, and therefore
@@ -701,35 +683,33 @@ Frostbreath, and Shadowspitter.
 **Frost Breath** is the Dragon of Isenspire. In his hoard lies the
 sword of Osrica.
 
-⑩ **Wisigarde** is the famous singer from Farnheim Castle and
-the beloved of the Vuldetrada. Her choir is also a
-school for diplomacy, knowledge of human nature, illusion magic, and much
-more.
+⑩ **Wisigarde** is the famous singer from Farnheim Castle and the
+beloved of the Vuldetrada. Her choir is also a school for diplomacy,
+knowledge of human nature, illusion magic, and much more.
 
-⑪ **Vuldetrada** is the Baroness of Farnheim Castle, rich and
-single.
+⑪ **Vuldetrada** is the Baroness of Farnheim Castle, rich and single.
 
-⑫ **Gundobad** is a knight of Rifenau, and would like to
-marry Vuldetrada, but so far he has failed miserably. He would like to possess
-the Cup of Salvation blessed by Set, which can turn water into poison.
-It is in Shadowspitter's hoard.
+⑫ **Gundobad** is a knight of Rifenau, and would like to marry
+Vuldetrada, but so far he has failed miserably. He would like to
+possess the Cup of Salvation blessed by Set, which can turn water into
+poison. It is in Shadowspitter's hoard.
 
-**Shadowspitter** is the dragon of the Darkmoor. In his hoard
-is the Chalice of Redemption, blessed by Set, which can turn
-water into poison.
+**Shadowspitter** is the dragon of the Darkmoor. In his hoard is the
+Chalice of Redemption, blessed by Set, which can turn water into
+poison.
 
-And at some point, of course, it's time to play! Contact with players works
-wonders. Only then do you find out whether the players are looking for the dragons, the
-giants, the story of Osrica, the Book of Power, to fight against
-Hildegard or against Chlodogunda, whether they want to help Amalgund, or whether they
-want to establish themselves as rulers of Hintertal instead.
+And at some point, of course, it's time to play! Contact with players
+works wonders. Only then do you find out whether the players are
+looking for the dragons, the giants, the story of Osrica, the Book of
+Power, to fight against Hildegard or against Chlodogunda, whether they
+want to help Amalgund, or whether they want to establish themselves as
+rulers of Hintertal instead.
 
 You can't prepare for everything. At some point it has to start.
 
 ## Map
 
-I find a map very atmospheric, but it doesn't have to
-be.
+I find a map very atmospheric, but it doesn't have to be.
 
 ![Map](images/Helmbarten.png)
 The world map for starters
@@ -744,16 +724,15 @@ Westenfelder.
 [Stammliste der
 Merowinger](https://de.wikipedia.org/wiki/Stammliste_der_Merowinger),
 on Wikipedia, for the personal names. [Frankish
-Names](https://www.s-gabriel.org/names/guntram/franks.htm), very short,
-by Guntram von Wolkenstein.
+Names](https://www.s-gabriel.org/names/guntram/franks.htm), very
+short, by Guntram von Wolkenstein.
 
-[Text Mapper](https://campaignwiki.org/text-mapper/) to create maps for
-the game. I like the
+[Text Mapper](https://campaignwiki.org/text-mapper/) to create maps
+for the game. I like the
 [Alpine](https://campaignwiki.org/text-mapper/alpine/random) maps.
 
 [Helmbarten Character Generator](https://campaignwiki.org/helmbarten/)
-to quickly
-create some characters or an initial situation.
+to quickly create some characters or an initial situation.
 
 [Farnthal Replay](https://alexschroeder.ch/pdfs/Farnthal.pdf) recounts
 how my first campaign went.

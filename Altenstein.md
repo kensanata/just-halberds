@@ -42,8 +42,6 @@ The regional map
 
 **Ingolind** is Meromer’s sworn enemy, a victim of his plundering abroad, come here on his trail to take revenge.
 
-<div style="page-break-after: always"></div>
-
 ### Three Giants
 
 The giant **Feuerhammer** made his lair in the ruins of castle Felsenfest. He guards the Spear of Vanaheim.
@@ -128,7 +126,7 @@ Brother and sister have each other’s back but they don’t necessarily like ea
 
 ### Gundehard
 
-There is a knight-errant called Gundehard. He moves quietly, like a snake. Everybody thinks he’s a sneaky fellow but he is in fact an honorable man.
+There is a knight-errant called Gundehard. He moves quietly, like a snake. Everybody thinks he’s a sneaky fellow but he is in fact an honorable man, possibly an ally for the player characters.
 
 > Spy Gundehard, 28 years old. Strength-11 Dexterity-3 Endurance-12 Intelligence-10 Education-6 Status-6 Culture-1 Knife-1 Lance-2 Riding-3 Singing-1 Spying-3 Tactics-2.
 
@@ -154,7 +152,7 @@ Baldsind has come here to sacrifice in the past. His last victim was Ingrid, sis
 
 ## Hels Stein
 
-Hel is the demon goddess of the underworld; the caretaker of all those who died in their beds, of old age and disease. She’s also the goddess of magic, of witchcraft, of crossroads, and of multi-headed animals. Here, a the crossroads behind the Bärensee (the bear lake), it stands, a black rock showing a woman with a tree-headed dog at her feet.
+Hel is the demon goddess of the underworld; the caretaker of all those who died in their beds, of old age and disease. She’s also the goddess of magic, of witchcraft, of crossroads, and of multi-headed animals. Here, a the crossroads behind the Bärensee (the bear lake), it stands, a black rock showing a woman with a tree-headed dog at her feet. This is the Altenstein (the old stone) that gave this valley its name.
 
 ### Brunman
 
@@ -166,7 +164,7 @@ Near the stone is a small camp of a travelling necromancer. Hidden away under bu
 
 > The crow says: “Touch anything and your skin shall rot while you live and worms shall eat your heart. Turn back while you still can.”
 
-> Brunman says: “I am looking for courageous people willing to fight the nobles. Help me steal the book about the giant Schattenschmied (the shadow smith) from the library in Felsenstein and I’ll owe you a boon. This giant the blight of Himmelau!
+> Brunman says: “I am looking for courageous people willing to fight the nobles. Help me steal the book about the giant Schattenschmied (the shadow smith) from the library in Felsenstein and I’ll owe you a boon. This giant is the blight of Himmelau!
 
 ## Felsenstein
 
@@ -194,9 +192,31 @@ She maintains the Library of Learning, an old archive with records that were pre
 
 ### Osman
 
-Osman is a few years younger than Crotberga, a travelling botanist currently visiting the library.
+Osman is a few years younger than Crotberga, a travelling botanist currently visiting the library. He’s a bit of a free agent, possibly an ally for the player characters, like Gundehard.
 
 > Osman, 29 years old. Strength-5 Dexterity-7 Endurance-3 Intelligence-8 Education-11 Status-6 Doors-2 Eyes-2 Healing-1 Literacy-1 Plants-2 Sleep-1.
+
+He’s here trying to research the Necklace of Asgard at the library.
+
+> Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when the Heruli went to war against Thrakia in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
+
+## Sternenbrück
+
+The bridge going over the Sternen (the star river) is ancient and narrow, with two tall arches. The Sternental (the star valley) is very narrow, with bare cliffs and secret caverns and hiding places up there.
+
+### Ingohard
+
+Ingohard is a member of the Friends of the Mountain secret society and an honorable man, like Gundehard. The secret society is sworn to resist the reeve’s influence. He also hates Baldsind for having killed Ingrid many years ago.
+
+> Ingohard, 32 years old. Strength-6 Dexterity-6 Endurance-8 Intelligence-7 Education-6 Status-11 First Aid-1 Behaviour-2 Brewing-1 Crafts-1 Distract-2 Epee-2 Oratory-2 Running-1 Singing-1 Sneaking-1 Spying-1 Tactics-1 Tinker-1.
+
+He is the captain of a bunch of peasant bandits. They don’t actually harm anybody, fleeing at the first opportunity. He’s mostly trying to scare away messengers, merchants, nobles with their wannbe-wizard children, isolating Sternenau and then perhaps one day taking it by trickery.
+
+> Bandits: Damage-3 Endurance-7 Life-6 Attack-8 Hit-5 Flee-11
+
+The bandits may be harmless but all the rulers in the region fear and hate Ingohard.
+
+> Ingohard says: “Listen to me! Baldsind and Baldweche are agents of corruption. They killed my sister Ingrid many years ago. I have proof! I can show you where she lies. Come with me to the Tempelsumpf and you shall see.”
 
 ## Sternenau
 

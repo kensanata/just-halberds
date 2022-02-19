@@ -43,10 +43,14 @@ them together (short: 2d6) and write it down.
 
 Your character begins at age 16. Now you choose a first career. The
 choices are Warrior, Mage, or Rapscallion. The process is always the
-same: entrance exam, learn talents, twist of fate, grow older by four
-years. And then you have to decide if your character will do the same
-for another four years, or if you use one year to change careers, or
-if your character is ready for a life of adventure.
+same: make an admission test if you enter a new career, get an
+automatic talent if you are admitted, learn talents, possibly suffer a
+twist of fate, grow older by four years. And then you have to decide
+if your character continues in the same career for another four years,
+with no admission test and no automatic skill; or if you use one year
+to change careers, risking a new admission test, but also getting a
+new automatic skill; or if your character is ready for a life of
+adventure.
 
 Depending on the career, certain attributes are advantageous. Warriors
 need Strength or Endurance, Mages need Intelligence or Education, and

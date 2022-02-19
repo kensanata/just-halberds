@@ -1,4 +1,6 @@
-<address>Alex Schroeder, Frotz Self, Peter Fröhlich YYYY-MM-DD</address>
+<address>Written and translated by Alex Schroeder, Frotz Self, Peter
+Fröhlich<br>Playtesting by Alex Schroeder, Frotz Self,
+Peter Fröhlich, Robert Freeman-Day (PresGas)<br>YYYY-MM-DD</address>
 
 <!-- phf
 For talents it's easy, we use "Talent-number" just like Traveller; for

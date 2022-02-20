@@ -20,11 +20,11 @@ it's still weird that "Endurance-number" is used for monsters... :-/
 
 You have a super simple RPG in front of you. All you need are some
 friends and two regular six-sided dice, maybe some pen and paper, and
-you're good to go. One of you will direct the game. Is that you? All
-other players think up a person. The game manager (GM) dreams up a
-world and situations for these imaginary people; your friends say how
-they react and the GM says how the world reacts, and so it goes on and
-on. The story of these people is our story.
+you're good to go. One of you will referee the game. Is that you? All
+other players think up a person. The referee dreams up a world and
+situations for these imaginary people; the players say how they react
+and the referee says how the world reacts, and so it goes on and on.
+The story of these people is our story.
 
 The dice are rolled when something with exciting consequences happens
 and we want to leave the outcome to chance. Do our people succeed in
@@ -304,7 +304,7 @@ for each career on the appropriate table.
 > Alex rolls 4 5, resulting in membership in a secret society and a
 > dog.
 
-**Secret Society**: The game manager offers three societies to choose
+**Secret Society**: The referee offers three societies to choose
 from. If necessary, these are the three:
 
 * The Ministry of the Evening Light
@@ -335,7 +335,7 @@ your gang or in the administration. Name your sponsor.
 ## Adventurer's Life
 
 If you want to do something and the outcome is uncertain, discuss with
-the game manager an attribute and a talent to use, provided there is a
+the referee an attribute and a talent to use, provided there is a
 suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
 hard, you might have to roll 3d6 ≤ attribute + talent.
 
@@ -384,7 +384,7 @@ Life drops to 0, they die.
 
 ## Opponents
 
-All other chapters in this book are intended for the GM. So for you!
+All other chapters in this book are intended for the referee. So for you!
 
 People can be depicted with the well-known six attributes. You may
 choose these freely or roll them (2d6). Talents are also freely
@@ -414,7 +414,7 @@ you roll something and stick to it! For the number of enemies, roll
 2d6 for nightlings and predators, or 1d6 for undead. Giants and
 dragons are always loners.
 
-> Example: Claudia directs the game and needs goblins that
+> Example: Claudia referees the game and needs goblins that
 > ride on giant spiders that ambush the vanguard. There are 7.
 > She uses the line of nightlings and mounts. Goblins:
 > Damage-3, Endurance-1, Life-5, Attack-5, Hit-9, Escape-4.
@@ -430,7 +430,7 @@ decide for themselves whether they want to engage in a fight.
 > push through the undergrowth, how their acrid smell spreads
 > and the animals in the barn panic.
 
-If possible, the players should roll the dice, not the GM. For
+If possible, the players should roll the dice, not the referee. For
 example, if they want to lure the opponent into an ambush, or notice
 an ambush, someone should roll against Intelligence + Tactics in both
 cases.
@@ -494,7 +494,7 @@ the dice and evaluate. Everything happens at the same time.
 > rain. A goblin has seen him anyway and shoots at him with his bow.
 > The goblin has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
 
-In certain role-playing games, fighting is a big part of the game. In
+In some role-playing games, combat tends to be front and center. In
 this game, after one round, perhaps half of those involved are already
 on the ground. War is terrible. Most of the time it's about avoiding
 the fight.
@@ -556,14 +556,14 @@ better.
 The first few names of villages, castles and witch towers can be
 generated with the following tables.
 
-| 1d6 | Castle 1 | Castle 2 | Castle 3  | village | Magic 1  | Magic 2 | Magic 3 |
-|:---:|----------|----------|-----------|---------|----------|---------|---------|
-| 1   | Look-    | Falcon   | -burg     | village | witch    | Fire    | tower   |
-| 2   | Old      | Fern     | -mountain | -thal   | raven    | dead    | -wait   |
-| 3   | Bear     | Glad-    | -rock     | -wil    | Devil    | Temple  | -stone  |
-| 4   | New-     | Blade    | -stone    | -oh     | Sinister | High    | -forest |
-| 5   | Hello-   | Ram      | -clamp    | -ingen  | Dark     | Heaven  | -cellar |
-| 6   | Starry   | Rifen    | -to       | -fort   | Ice      | Feline  | -fixed  |
+| 1d6 | Castle 1 | Castle 2 | Castle 3 | Village | Magic 1 | Magic 2 | Magic 3 |
+|:---:|----------|----------|----------|---------|---------|---------|---------|
+| 1   | Watch-   | Falcon-  | -fort    | -thrope | Witch-  | Flame-  | -tower  |
+| 2   | Olden-   | Fern-    | -hill    | -dale   | Raven-  | Death-  | -watch  |
+| 3   | Bear-    | Glad-    | -rock    | -wick   | Devil-  | Temple- | -crest  |
+| 4   | New-     | Blade-   | -stone   | -ley    | Fell-   | High-   | -wood   |
+| 5   | Good-    | Ram-     | -ward    | -ton    | Dark-   | Sky-    | -hole   |
+| 6   | Star-    | Frost-   | -hall    | -ford   | Ice-    | Cat-    | -stead  |
 
 For people's names, I like to look up a baby name list online and use
 that for my world. Here are a few tables for names with a Franconian
@@ -584,7 +584,7 @@ and dragons, I like to use names that indicate forces of nature.
 
 | 1d6 | Name 1 | Dragons  | Giants  | Mountain 1 | Mountain 2 |
 |:---:|--------|----------|---------|------------|------------|
-| 1   | Ice    | -pharynx | -hammer | Needle     | -mountain  |
+| 1   | Ice    | -pharynx | -hammer | Needle     | -mount     |
 | 2   | Frost  | -breath  | -smith  | Hell       | -horn      |
 | 3   | Fire   | -spout   | -maker  | Division   | -crag      |
 | 4   | Poison | -needle  | -father | Dark       | -height    |

@@ -490,35 +490,34 @@ Schicksal ist nicht vorherbestimmt.
 ## Kämpfe
 
 Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,
-zaubern, oder sonst etwas tun. Alle Beteiligten kündigen ihre Aktion
-an, würfeln, und werten gleichzeitig aus.
+zaubern, oder sonst etwas tun. Wird mittels Taktik ein Vorteil
+erreicht, ist das Resultat eine Überraschungsrunde, wo der Gegner
+nicht zurückschlagen kann. In der ersten Runde ist die Reihenfolge
+Magie → Spiess → Helmbarte → Degen → Messer → Armbrust. Krallen zählen
+als Messer. Die Armbrust kann nur einmal verwendet werden! In der
+zweiten Runde ist die Reihenfolge dann Messer → Degen → Helmbarte →
+Spiess → Magie. Ab der dritten Runde passiert alles gleichzeitig.
 
 > Beispiel: Adalric zaubert den Kettenblitz und er ist durch den Regen
 > geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit
-> dem Bogen auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6 – und
-> 6 ≰ 5: verfehlt!
+> dem Armbrust auf ihn. Der Goblin hat Angriff 5. Claudia würfelt 6 –
+> und 6 ≰ 5: verfehlt!
 
 In gewissen Rollenspielen ist das Kämpfen ein grosser Teil des Spiels.
 In diesem Spiel liegt nach einer Runde schon vielleicht schon die
 Hälfte der Beteiligten am Boden. Krieg ist schrecklich. Meistens gilt
 es, dem Kampf aus dem Weg zu gehen.
 
-> Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Kämpfen-1.
+> Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Degen-1.
 > Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
 > den Fersen, mit Schaden-3, Ausdauer-1, Leben-5, Angriff-5,
-> Treffen-9, Flucht-4. Brunhilde stellt sich dem Kampf. Erste Runde:
-> Berta würfelt 6 und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6,
-> zwei Treffer für die Goblins, da 6 ≤ 9. Beim ersten Treffer
+> Treffen-9, Flucht-4. Brunhilde greift zuerst an, da ihr Schwert
+> länger als die Messer der Goblins ist. Erste Runde: Berta würfelt 6
+> und trifft, da 6 ≤ 10+1. Sie würfelt den Schaden aus: 6. Damit ist
+> der erste Goblin tödlich verwundet (Ausdauer und Leben beide auf 0).
+> Claudia würfelt eine 5 und trifft, da 6 ≤ 9. Beim ersten Treffer
 > entscheidet der Zufall, welches Attribut Brunhilde reduzieren werden
-> muss: Berta würfelt eine 4, d.h. Geschick (6-3=3). Die Goblins
-> machen immer gleich viel Schaden. Den zweiten Treffer zieht sie von
-> der Ausdauer ab (9-3=6). Berta würfelt ihren Schaden aus: 6. Damit
-> ist der erste Goblin tödlich verwundet (Ausdauer und Leben beide
-> auf 0), doch der andere steht noch.
-
-Wird mittels Taktik ein Vorteil erreicht, ist das Resultat oft eine
-Überraschungsrunde, wo der Gegner nicht zurückschlagen kann. Das kann
-sehr wichtig werden.
+> muss: Berta würfelt eine 4, d.h. Geschick (6-3=3).
 
 ![Schrecken des Krieges (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
 Der Schrecken des Krieges (1521), von Urs Graf

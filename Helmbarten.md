@@ -55,8 +55,7 @@ Eine Karriere dauert vier Jahre. Wähle jedes Jahr eine der Tabellen
 deiner Karriere und würfle 1W6. Schreibe dir das Talent mit Wert 1
 auf, oder erhöhe den Wert, falls du das Talent ein weiteres Mal
 lernst. Wenn du „Kämpfen“ lernst, wähle stattdessen eine Waffe:
-Messer, Spiess, Helmbarte, Degen, Armbrust, oder Lanze (benötigt ein
-Pferd und das Reiten Talent).
+Spiess, Helmbarte, Degen, Messer oder Armbrust.
 
 Mit jeder Karriere, die dein Charakter gemacht hat, wird die Chance
 höher, dass ein Schicksalsschlag deinen Charakter trifft. Deswegen

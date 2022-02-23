@@ -94,7 +94,7 @@ The lord of this watercastle is a young and ambitious man.
 
 Baldsind owns a very nice horse:
 
-> Baldsind’s chestnut horse: Damage-11 Endurance-27 Life-6 Attack-8 Treffen-8 Flee-4.
+> Baldsind’s chestnut horse: Damage-11 Endurance-27 Life-6 Attack-8 Hit-8 Escape-4.
 
 The three obvious trails lead to Felsenstein, Sternenau, and the ruin of Falkenegg. The trail to Tempelsumpf is hard to find.
 
@@ -144,7 +144,7 @@ Gundehard is not afraid of the bandits but also avoids talking about them. Both 
 
 The ruins of the Tempelsumpf (the devil’s swamp) are full of devils. This is a rotten place. It stinks. It’s dark. The main hall holds a temple of Nergal. Human bones have been been collected, here. People have been killed in the swamp and brought here, as sacrifice.
 
-> Swamp devils: Damage-7 Endurance-1 Life-2 Attack-8 Hit-8 Flee-4 Number-11.
+> 11 swamp devils: Damage-7 Endurance-1 Life-2 Attack-8 Hit-8 Escape-4.
 
 > The devils expect worshippers and call out to any that approach: “Who have you brought? Who have you killed? We are hungry for souls! Nergal seeks new servants! A boon for a kill! A boon for a kill!”
 
@@ -160,7 +160,7 @@ Near the stone is a small camp of a travelling necromancer. Hidden away under bu
 
 > Brunman, 34 years old. Strength-6 Dexterity-5 Endurance-4 Intelligence-10 Education-13 Status-5 Air-1 Animals-1 Climb-2 Distract-2 Fire-1 Fusion-1 Literacy-1 Necromancy-1 Pick-1 Shapeshift-1 Sneaking-2 Spying-1 Storm-2.
 
-> Herd dog: Damage-7 Endurance-14 Life-7 Attack-10 Hit-11 Flee-3.
+> Herd dog: Damage-7 Endurance-14 Life-7 Attack-10 Hit-11 Escape-3.
 
 > The crow says: “Touch anything and your skin shall rot while you live and worms shall eat your heart. Turn back while you still can.”
 
@@ -200,6 +200,24 @@ He’s here trying to research the Necklace of Asgard at the library.
 
 > Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when the Heruli went to war against Thrakia in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
 
+## Ruine von Himmelau
+
+The Himmel (heaven) river originates back here, from a long and narrow lake that silted up, full of brown reeds and white birches, cold mud and and black water. Somewhere in there lies a rock that fell from the cliffs above ages ago and on it stands the old tower of Himmelau (heaven’s river island), reachable by boat, or not at all. There is no boat.
+
+The trail follows the water as it runs down past Felsenstein to Bärenburg.
+
+The giant who lives in this ruined tower is as tall as three men, muscular and grey, with white eyes as if he were blind, but he’s not. He sees you, feels you. You disturb his shadow weaving and he resents it.
+
+> Schattenschmied, giant. Damage-17 Endurance-32 Life-12 Attack-6 Escape-5.
+
+He’s not fast, but he knows how to weave shadows, building up a grey storm of fog, smoke, and dying light, shaping it into a tentacle that whips through the air, builds up, and when it finds you, it crushes you.
+
+The valley walls cast long shadows across the swamp. The giant living here gives these shadows a life of its own.
+
+> 2 shadows. Damage-6 Endurance-11 Life-18 Attack-9 Hit-8 Escape-5.
+
+The power of shadow weapon is an arcane art bound to the jewel of the Dark Lord. The giant found it many years ago and mastered it. Now he sits here and sends his shadowy tendrils out to contact other agents of evil.
+
 ## Sternenbrück
 
 The bridge going over the Sternen (the star river) is ancient and narrow, with two tall arches. The Sternental (the star valley) is very narrow, with bare cliffs and secret caverns and hiding places up there.
@@ -212,7 +230,7 @@ Ingohard is a member of the Friends of the Mountain secret society and an honora
 
 He is the captain of a bunch of peasant bandits. They don’t actually harm anybody, fleeing at the first opportunity. He’s mostly trying to scare away messengers, merchants, nobles with their wannbe-wizard children, isolating Sternenau and then perhaps one day taking it by trickery.
 
-> Bandits: Damage-3 Endurance-7 Life-6 Attack-8 Hit-5 Flee-11
+> Bandits: Damage-3 Endurance-7 Life-6 Attack-8 Hit-5 Escape-11
 
 The bandits may be harmless but all the rulers in the region fear and hate Ingohard.
 
@@ -244,7 +262,7 @@ Wege führen zur Bärenburg und zur Ruine von Dunkelwald.
 Die Festung steht oberhalb vom Dorf. Die Aussicht auf das Tal von hier oben ist ausgezeichnet.
 
 🐉 Eisatem
-Damage-22 Endurance-35 Life-16 Attack-6 Flee-1
+Damage-22 Endurance-35 Life-16 Attack-6 Escape-1
 Eine tief schwarze Echse, fast unbeweglich, in den Schatten kaum zu erkennen.
 
 Er bewacht den Zepter der Unbesiegbarkeit.
@@ -256,31 +274,19 @@ Wege führen zur Bärenburg, zur Ruine von Felsenfest und zum Giftmacher.
 Die Festung steht oberhalb vom Dorf. Der Aufstieg ist ein schmaler Fusspfad, der sich den Hang hoch windet.
 
 🧔 Feuerhammer
-Damage-10 Endurance-31 Life-13 Attack-7 Flee-5
+Damage-10 Endurance-31 Life-13 Attack-7 Escape-5
 Ein bärtiger Mann, so gross wie drei Mensch, langsam, sorgfältig. Die Proportionen stimmen irgendwie nicht. Die Beine sind zu breit, die Arme zu dick.
 
 Er bewacht den Speer von Vanaheim.
 
 Wege führen zur Ruine von Falkenegg und zur Ruine von Himmelspitz.
 
-## Ruine von Himmelau
-
-Der Turm steht tief im Sumpf. Die Seitenarme des Flusses verhindern einen Zugang zu Fuss. Ohne Boot wird es sehr schwierig.
-
-🧔 Schattenschmied
-Damage-17 Endurance-32 Life-12 Attack-6 Flee-5
-Ein Riese, sicher dreimal grösser als ein Mensch, halb nackt, muskulös. Einen solchen Riesen einmal in Rage zu sehen, ist Material für ein Lied. Überlebt haben es nur wenige.
-
-Er bewacht den Juwel des Dunklen Herrschers.
-
-Ein Weg führt zum Felsenstein.
-
 ## Ruine von Himmelspitz
 
 Der Turm steht weit oben auf einem Hügel im Wald. Hier hat man eine gute Aussicht über den Talboden.
 
 🐉 Feuerrachen
-Damage-25 Endurance-29 Life-20 Attack-3 Flee-4
+Damage-25 Endurance-29 Life-20 Attack-3 Escape-4
 Ein Drachen so gross wie ein Haus, Flügel sicher zehn Spannen lang, die Zähne sicher ein Fuss lang.
 
 Er bewacht die Halskette von Asgard.
@@ -292,7 +298,7 @@ Ein Weg führt zur Ruine von Felsenfest.
 Der Turm steht gut versteckt an einem kleinen, verwunschenen See im Wald. Sonnenschein glitzert auf dem Wasser. Vögel pfeifen im Schilf.
 
 🐉 Schattenrauch
-Damage-23 Endurance-36 Life-20 Attack-5 Flee-5
+Damage-23 Endurance-36 Life-20 Attack-5 Escape-5
 Ein drahtiges Wesen, langbeinig, langarmig, mit riesigen Schwingen.
 
 Er bewacht das Schwert des Hexers.
@@ -304,12 +310,12 @@ Ein Weg führt zur Sternenau.
 ### Giftmacher
 
 🧔 Giftmacher
-Damage-11 Endurance-18 Life-17 Attack-4 Flee-4
+Damage-11 Endurance-18 Life-17 Attack-4 Escape-4
 Ein bärtiger Mann, so gross wie drei Mensch, langsam, sorgfältig. Die Proportionen stimmen irgendwie nicht. Die Beine sind zu breit, die Arme zu dick.
 
 Er bewacht den Kelch des Heiligen Ingoger.
 
-In einem fernen Sumpf, wo grauer Nebel über grauem Schlick die Sicht behindert, lebt er in einer halb versunkenen Festung. Nehmt euch in acht vor den Irrlichtern, welche euch Heim und Herd vorgaukeln und doch nur immer weiter in die Irre führen. Am Ende seid ihr den Nachtlingen hilflos ausgeliefert. Teufel (Damage-3 Endurance-6 Life-5 Attack-10 Flee-6 Number-9)
+In einem fernen Sumpf, wo grauer Nebel über grauem Schlick die Sicht behindert, lebt er in einer halb versunkenen Festung. Nehmt euch in acht vor den Irrlichtern, welche euch Heim und Herd vorgaukeln und doch nur immer weiter in die Irre führen. Am Ende seid ihr den Nachtlingen hilflos ausgeliefert. Teufel (Damage-3 Endurance-6 Life-5 Attack-10 Escape-6 Number-9)
 
 Ein Weg führt zur Ruine von Falkenegg.
 
@@ -323,11 +329,11 @@ Strength-5 Dexterity-4 Endurance-3 Intelligence-2 Education-5 Status-4
 Bauen-2 Bürokratie-2 Handwerk-2 Kultur-2 Prügeln-1 Reiten-1 Singen-1 Spiess-2
 
 Tiere
-🐎 ein Schimmel (Damage-11 Endurance-19 Life-12 Attack-5 Flee-6)
+🐎 ein Schimmel (Damage-11 Endurance-19 Life-12 Attack-5 Escape-6)
 
 Feinde
 👩 Ingolind
 
 Stellen
 💰 ein karger Fels mit der Ruine Felsenzwinge
-💰 die Ruine vom Eiswarte voller Harpien (Damage-5 Endurance-3 Life-6 Attack-9 Flee-9 Number-2)
+💰 die Ruine vom Eiswarte voller Harpien (Damage-5 Endurance-3 Life-6 Attack-9 Escape-9 Number-2)

@@ -55,7 +55,8 @@ Eine Karriere dauert vier Jahre. Wähle jedes Jahr eine der Tabellen
 deiner Karriere und würfle 1W6. Schreibe dir das Talent mit Wert 1
 auf, oder erhöhe den Wert, falls du das Talent ein weiteres Mal
 lernst. Wenn du „Kämpfen“ lernst, wähle stattdessen eine Waffe:
-Spiess, Helmbarte, Degen, Messer oder Armbrust.
+Spiess, Helmbarte, Degen, Messer, Armbrust oder Lanze (benötigt
+Reiten-1 und ein Pferd).
 
 Mit jeder Karriere, die dein Charakter gemacht hat, wird die Chance
 höher, dass ein Schicksalsschlag deinen Charakter trifft. Deswegen
@@ -99,6 +100,7 @@ Tabelle „Offizier“ darfst du nur wählen, wenn dein Charakter 20 oder
 
 > Beispiel: Berta wählt 2× Söldner, 2× Wache, und würfelt 3 2 5 1,
 > gibt Taktik-1, Rennen-1, Brauen-1 und Bürokratie-1. Und Kämpfen-1!
+> Sie wählt Degen-1.
 
 **Schicksalsschlag**: Würfle 2W6 + Anzahl bisheriger Karrieren ≤ Kraft
 oder Ausdauer (deine Wahl) um den Folgen zu entgehen. Anderenfalls
@@ -309,11 +311,13 @@ Falls es ein Mensch ist, gib deinem Gefährten oder deiner Gefährtin
 einen Namen und würfle die sechs Attribute aus (je 2W6 für Kraft,
 Geschick, Ausdauer, Intelligenz, Bildung, und Status).
 
-**Hund**: Ein treuer Gefährte, welcher gefüttert werden muss. Schaden
-2W6; Ausdauer 3W6; Leben 2W6.
+**Hund**: Ein treuer Gefährte (Schaden 2W6, Ausdauer 3W6, Leben 2W6,
+Treffen 1W6+6).
 
-**Pferd**: Ein treues Reittier, welches gepflegt und gefüttert werden
-muss. Schaden 3W6; Ausdauer 6W6; Leben 3W6.
+**Pferd**: Ein treues Reittier (Schaden 3W6, Ausdauer 6W6, Leben 3W6,
+Treffen 1W6+4). Ein Reiter im Nahkampf kann sein Pferd angreifen
+lassen. Ein Reiter kann nur mit der Lanze angreifen; einen Reiter kann
+man nur mit Spiess oder Helmbarte angreifen.
 
 **Land**: Ein Stück Land in der Wildnis, welches dir zugesprochen
 wurde. Die Inbesitznahme des Landes ist allerdings dir überlassen.
@@ -346,8 +350,8 @@ Treffern, darfst du die Trefferwürfel selber auf die drei physischen
 Attribute verteilen. Einen etwaigen Übertrag musst du von einem
 anderen physischen Attribut abziehen.
 
-Sinkt eines deiner Attribute auf 0, bist du leicht verletzt und
-brichst ohnmächtig zusammen. Nach 10min wachst du wieder auf.
+Sinkt eines deiner physischen Attribute auf 0, bist du leicht verletzt
+und brichst ohnmächtig zusammen. Nach 10min wachst du wieder auf.
 
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9. Sie wird
 > zum ersten Mal getroffen und muss 4+5=9 Schaden abziehen. Berta
@@ -365,17 +369,17 @@ Erholung 3 Tage.
 > Brunhildes Attribute auf Kraft 1+4½=5, Geschick 4+1=5, Ausdauer
 > 3+3=6.
 
-Sinken zwei deiner Attribute auf 0, bist du schwer verwundet und
-brichst ohnmächtig zusammen. Du wachst erst in 3h wieder auf und nur
-die Attribute auf 0 erholen sich auf 1. Mit einem Feldscher-3 oder
-einem Heiler-3 kannst du dich in einem Lazarett in 5W6 Tagen erholen,
-andernfalls stirbst du.
+Sinken zwei deiner physischen Attribute auf 0, bist du schwer
+verwundet und brichst ohnmächtig zusammen. Du wachst erst in 3h wieder
+auf und nur die Attribute auf 0 erholen sich auf 1. Mit einem
+Feldscher-3 oder einem Heiler-3 kannst du dich in einem Lazarett in
+5W6 Tagen erholen, andernfalls stirbst du.
 
-Sinken drei deiner Attribute auf 0, stirbst du.
+Sinken drei deiner physischen Attribute auf 0, stirbst du.
 
-Für allen anderen Lebewesen gibt es anstatt der bekannten sechs
-Attribute nur Ausdauer und Leben. Sinkt die Ausdauer auf 0, werden sie
-ohnmächtig; sinkt das Leben auf 0, sterben sie.
+Für allen anderen Lebewesen gibt es zwei physische Attribute: Ausdauer
+und Leben. Sinkt ersteres auf 0, werden sie ohnmächtig; sind beide auf
+0 gesunken, sterben sie.
 
 > Beispiel: Adalrics Hund Tix hat Ausdauer 3W6, Leben 2W6. Alex würfelt
 > 1+4+5=10 und 5+2=7 und notiert 10/7 für den Hund.
@@ -490,13 +494,10 @@ Schicksal ist nicht vorherbestimmt.
 ## Kämpfe
 
 Der Kampf wird in Runden unterteilt. Jeder darf 1×/Runde angreifen,
-zaubern, oder sonst etwas tun. Wird mittels Taktik ein Vorteil
-erreicht, ist das Resultat eine Überraschungsrunde, wo der Gegner
-nicht zurückschlagen kann. In der ersten Runde ist die Reihenfolge
-Magie → Spiess → Helmbarte → Degen → Messer → Armbrust. Krallen zählen
-als Messer. Die Armbrust kann nur einmal verwendet werden! In der
-zweiten Runde ist die Reihenfolge dann Messer → Degen → Helmbarte →
-Spiess → Magie. Ab der dritten Runde passiert alles gleichzeitig.
+zaubern, oder sonst etwas tun. Alle Beteiligten kündigen ihre Aktion
+an, würfeln, und werten gleichzeitig aus. Wird mittels Taktik ein
+Vorteil erreicht, ist das Resultat eine Überraschungsrunde, wo der
+Gegner nicht zurückschlagen kann.
 
 > Beispiel: Adalric zaubert den Kettenblitz und er ist durch den Regen
 > geschützt, doch ein Goblin hat ihn trotzdem erkannt und schiesst mit
@@ -511,13 +512,15 @@ es, dem Kampf aus dem Weg zu gehen.
 > Beispiel: Brunhilde hat Kraft-10, Geschick-6, Ausdauer-9, Degen-1.
 > Sie versucht, den Hof zu erreichen, doch zwei Goblins sind ihr auf
 > den Fersen, mit Schaden-3, Ausdauer-1, Leben-5, Angriff-5,
-> Treffen-9, Flucht-4. Brunhilde greift zuerst an, da ihr Schwert
-> länger als die Messer der Goblins ist. Erste Runde: Berta würfelt 6
-> und trifft, da 6 ≤ 10+1. Sie würfelt den Schaden aus: 6. Damit ist
-> der erste Goblin tödlich verwundet (Ausdauer und Leben beide auf 0).
-> Claudia würfelt eine 5 und trifft, da 6 ≤ 9. Beim ersten Treffer
+> Treffen-9, Flucht-4. Brunhilde stellt sich dem Kampf. Erste Runde:
+> Berta würfelt 6 und trifft, da 6 ≤ 10+1. Claudia würfelt 5 und 6,
+> zwei Treffer für die Goblins, da 6 ≤ 9. Beim ersten Treffer
 > entscheidet der Zufall, welches Attribut Brunhilde reduzieren werden
-> muss: Berta würfelt eine 4, d.h. Geschick (6-3=3).
+> muss: Berta würfelt eine 4, d.h. Geschick (6-3=3). Die Goblins
+> machen immer gleich viel Schaden. Den zweiten Treffer zieht sie von
+> der Ausdauer ab (9-3=6). Berta würfelt ihren Schaden aus: 6. Damit
+> ist der erste Goblin tödlich verwundet (Ausdauer und Leben beide auf
+> 0), doch der andere steht noch.
 
 ![Schrecken des Krieges (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
 Der Schrecken des Krieges (1521), von Urs Graf

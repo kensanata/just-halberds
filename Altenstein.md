@@ -178,7 +178,7 @@ Vuldeberga does not like Chlodoman and the reeve, but she’s weak and needs str
 
 > Vuldeberga says: “Everybody hates the bandits but both Baldsind and Chlodoman stole so much more than Ingohard ever did. Bring me the Sceptre of Invincibility that Balsind’s brother Baldwin brought to Falkenegg and I’ll tell you more.”
 
-Vuldeberga is a member of the secret society of Masons and Coopers via her mother but doesn’t know how to tinker or build anything. This is a difficult proposition. Should any player characters need a secret society association that’s different from the big three, this is one option.
+> Vuldeberga says: “I don’t mind the giant Schattenschmied as long as he stays in his tower.”
 
 ### Crotberga
 
@@ -189,6 +189,8 @@ She maintains the Library of Learning, an old archive with records that were pre
 > Crotberga says: “We must rebuild what we have lost. Already nobody knows how to build roads and how to drain the swamps. Brunman is a necromancer and a book thief who took a book from my library. Bring it back to me.”
 
 > Crotberga says: “We must make sure the Dark Lord never returns. I have heard that the giant Schattenschmied (the shadow smith) in the ruins of Himmelau has reforged the jewels of the Dark Lord. Discover whether there is any truth to that and destroy these jewels, if you can.”
+
+There is a book about shadow magic in the library. With it, you pull power from Myrkheim. It was a favourite technique of the Dark Lord. They say that to stop it, one has to visit Myrkheim, the realm of the dwarves, of dreary darkness, of fens.
 
 ### Osman
 
@@ -216,7 +218,23 @@ The valley walls cast long shadows across the swamp. The giant living here gives
 
 > 2 shadows. Damage-6 Endurance-11 Life-18 Attack-9 Hit-8 Escape-5.
 
-The power of shadow weapon is an arcane art bound to the jewel of the Dark Lord. The giant found it many years ago and mastered it. Now he sits here and sends his shadowy tendrils out to contact other agents of evil.
+The power of shadow weaponry is an arcane art bound to the jewel of the Dark Lord. The giant found it many years ago and mastered it. Now he sits here and sends his shadowy tendrils out to contact other agents of evil.
+
+## Myrkheim
+
+One way to weaken Schattenschmied is to take away his shadow weaving powers by cutting them at the source. This prevents him from doing anything at a distance: no spying, no shadow tendrils. The roots of Yggdrasil lead to a lake in eternal night.
+
+This is the land of mykonids and froglings land. Brá Alderfist is leading a party of wild dwarves from Niflheim as they explore the area looking for Banupal.
+
+> 8 wild dwarves. Damage-6 Endurance-4 Life-2 Attack-9 Hit-7 Escape-4.
+
+The Schattenschmied jewel draws its shadow magic from the Lake of Eyes where the frog temple stands. The beholder below spawns eyes when it is excited. They bubble up when things are afoot. Right now, they turn up putrid, drained, and they wash up at the shore.
+
+A frog temple of Tsathoggua overlooks the lake. A priest lives here.
+
+> Banupal, frogling priest. Damage-3 Endurance-11 Life-8 Attack-6 Hit-8 Escape-6 Shadow-2 Lightning-2 Eyes-2. Hide in shadows and shadow jump. Lightning bolt for 2d6. See through floating eyes.
+
+In order to sever the connection between the Lake of Eyes and the Dark Lord’s jewel, one must find the connection using Eye magic, dive into the water using Water or Shapeshift magic, or befriend the frogling, pull out the spear and survive the 3d6 shadow bane discharge, or cut the connection and then pull out the spear.
 
 ## Sternenbrück
 

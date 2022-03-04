@@ -68,6 +68,13 @@ Krokodilen, dem Fieber, wo man sich benommen durch den Schlamm kämpft
 und wo die Blutegel auf uns warten. Ihre Farben sind grün, braun und
 rot.
 
+Was die Ebenen anbelangt, verwende ich ein nordisch inspiriertes
+System: **Asgard** ist das Reich der Götter, **Alfheim** das Reich der
+Elfen, **Midgard** das Reich der Menschen, **Myrkheim** das Reich der
+Zwerge, **Jötunheim** das Reich der Riesen, **Vanaheim** das Reich der
+Dämonen, **Niflheim** das Reich der Trolle und **Muspelheim** das
+Reich der Salamander.
+
 ## Ausgangslage
 
 Wo soll das Spiel beginnen? Im grössten Ort, also auf Schloss

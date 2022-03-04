@@ -100,7 +100,7 @@ The three obvious trails lead to Felsenstein, Sternenau, and the ruin of Falkene
 
 > Baldsind says: “I have inherited the tower of Tempelsumpf (the temple swamp) but it has been taken over by a dozen devils. If you get rid of these devils for me, I shall reward you all. Turn left before crossing Sternbrück (the Starbridge) and you’ll find the tower in the devils’ swamp.” → Those devils are there because Nergal was promised a hundred souls by the former owner those have not yet been delivered!
 
-> Baldsind says: “Many years ago, my brother Baldwin was lost in castle Falkenegg when the dragon Eisatem arrived. Return our family heirloom to me, and I shall reward you with the hand of my sister.”
+> Baldsind says: “Many years ago, my brother Baldwin was lost in castle Falkenegg when the dragon Eisatem arrived. Return our family heirloom to me, a small sceptre. I shall reward you with the hand of my sister when you do.”
 
 ### Baldweche
 
@@ -222,23 +222,29 @@ The power of shadow weaponry is an arcane art bound to the jewel of the Dark Lor
 
 ## Myrkheim
 
-One way to weaken Schattenschmied is to take away his shadow weaving powers by cutting them at the source. This prevents him from doing anything at a distance: no spying, no shadow tendrils. The roots of Yggdrasil lead to a lake in eternal night.
+One way to weaken Schattenschmied is to take away his shadow weaving powers by cutting them at the source: no more spying, no more shadow tendrils. The roots of Yggdrasil lead from a dark passage between the reeds of Himmelau to a lake deep beneath the earth, in eternal night, to Myrkheim – the land of dwarves, mykonids, and froglings.
 
-This is the land of mykonids and froglings land. Brá Alderfist is leading a party of wild dwarves from Niflheim as they explore the area looking for Banupal.
+Schattenschmied’s jewel draws its shadow magic from the Lake of Eyes via a shadow tendril pinned to the lake’s bottom by the Moonlight Spear, an artefact that belonged to the order of Lunar Knights from Alfheim, allowing the bearer to see magic energies and to pin them in place. The lake gets it name from the beholder below which spawns eyes when it is excited. They bubble up when things are afoot. Right now, they wash ashore putrid and drained.
 
-> 8 wild dwarves. Damage-6 Endurance-4 Life-2 Attack-9 Hit-7 Escape-4.
+Brá Alderfist is leading a party of wild dwarves to find and capture Banupal, the high priest of Tsathoggua. He lives in a frog temple of Tsathoggua overlooking the lake, supported by a spear bearing servant. Banupal can see through the eyes rotting along the shore. How to enter the frog sanctum and surprise the all-seeing priest who keeps bottled eyes on shelves?
 
-The Schattenschmied jewel draws its shadow magic from the Lake of Eyes where the frog temple stands. The beholder below spawns eyes when it is excited. They bubble up when things are afoot. Right now, they turn up putrid, drained, and they wash up at the shore.
+> 8 wild dwarves, including Brá Alderfist. Damage-6 Endurance-4 Life-2 Attack-9 Hit-7 Escape-4.
 
-A frog temple of Tsathoggua overlooks the lake. A priest lives here.
+> Banupal, frogling high priest. Damage-3 Endurance-11 Life-8 Attack-6 Hit-8 Escape-6 Shadow-2 Lightning-2 Eyes-2. Hide in shadows and shadow jump. Lightning bolt for 2d6. See through floating eyes.
 
-> Banupal, frogling priest. Damage-3 Endurance-11 Life-8 Attack-6 Hit-8 Escape-6 Shadow-2 Lightning-2 Eyes-2. Hide in shadows and shadow jump. Lightning bolt for 2d6. See through floating eyes.
+> Stich, the spear bearing frogling servant: Damage-7 Endurance-1 Life-2 Attack-7 Hit-11 Escape-6. Beware the jumping charge!
 
-In order to sever the connection between the Lake of Eyes and the Dark Lord’s jewel, one must find the connection using Eye magic, dive into the water using Water or Shapeshift magic, or befriend the frogling, pull out the spear and survive the 3d6 shadow bane discharge, or cut the connection and then pull out the spear.
+![Altenstein](images/Myrkheim.jpg)
+Brá pointing across the Lake of Eyes at the Tsathoggua temple
+{: .pic }
 
 ## Sternenbrück
 
-The bridge going over the Sternen (the star river) is ancient and narrow, with two tall arches. The Sternental (the star valley) is very narrow, with bare cliffs and secret caverns and hiding places up there.
+The bridge going over the Sternen (the star river) is ancient and narrow, with two tall arches. The Sternental (the star valley) is very narrow, with bare cliffs and secret caverns and hiding places up there. Upriver leads to Sternenau, downriver leads to Bärenburg.
+
+![Sternenbrück](images/Brücke.jpg)
+Two peasants on their way to Sternenau
+{: .pic }
 
 ### Ingohard
 
@@ -246,46 +252,39 @@ Ingohard is a member of the Friends of the Mountain secret society and an honora
 
 > Ingohard, 32 years old. Strength-6 Dexterity-6 Endurance-8 Intelligence-7 Education-6 Status-11 First Aid-1 Behaviour-2 Brewing-1 Crafts-1 Distract-2 Epee-2 Oratory-2 Running-1 Singing-1 Sneaking-1 Spying-1 Tactics-1 Tinker-1.
 
+> Ingohard says: “Listen to me! Baldsind and Baldweche are agents of corruption. They killed my sister Ingrid many years ago. I have proof! I can show you where she lies. Come with me to the Tempelsumpf and you shall see.”
+
 He is the captain of a bunch of peasant bandits. They don’t actually harm anybody, fleeing at the first opportunity. He’s mostly trying to scare away messengers, merchants, nobles with their wannbe-wizard children, isolating Sternenau and then perhaps one day taking it by trickery.
 
 > Bandits: Damage-3 Endurance-7 Life-6 Attack-8 Hit-5 Escape-11
 
-The bandits may be harmless but all the rulers in the region fear and hate Ingohard.
-
-> Ingohard says: “Listen to me! Baldsind and Baldweche are agents of corruption. They killed my sister Ingrid many years ago. I have proof! I can show you where she lies. Come with me to the Tempelsumpf and you shall see.”
-
 ## Sternenau
 
-Die Festung steht am vernebelten Sternensee. Die Burg selber ist nochmal durch einen Wassergraben und eine Ziehbrücke geschützt.
+The fortress stands on shores of the Sternensee (star lake), covered in mist. A moat and drawing bridge control the aproach.
 
-👨 Pyromant Chlodoman    Alter: 49    Karrieren: 5
-Strength-9 Dexterity-6 Endurance-4 Intelligence-12 Education-10 Status-10
-Feuer-5 Fusion-2 Kultur-2 Luft-3 Schrift-1 Singen-1 Spionieren-1 Sturm-3 Transmutation-2 Wasser-1
+A trail leads along the river to Sternenbrück and Bärenburg. Up river is yet another lake, much smaller, hidden away behind a dark forest. There lies the ruined tower of Dunkewald.
 
-Gefährten
-👨 Dodo (Strength-5 Dexterity-11 Endurance-4 Intelligence-7 Education-9 Status-3)
+> Pyromancer Chlodoman, 49 years old. Strength-9 Dexterity-6 Endurance-4 Intelligence-12 Education-10 Status-10 Air-3 Culture-2 Fire-5 Fusion-2 Literacy-1 Singing-1 Spying-1 Storm-3 Transmutation-2 Water-1. Owns an intelligent cat.
 
-Tiere
-🐈 eine intelligente Katze
+Chlodoman is a member of the Blessed of the People, a secret society of afarit worshippers. 
 
-Mitgliedschaften
-🤝 Die Gesegneten des Volkes 
+> Chlodoman says: “My best student is Baldweche, Baldsind’s sister at Bärenburg.”
 
-Wege führen zur Bärenburg und zur Ruine von Dunkelwald.
+> Chlodoman says, “Unfortunately, Baldsind is a fool. He’s not going to make a move against Vuldeberga in Felsenstein. She’s a rebel and a traitor and the reeve and I would reward any just and honourable fellow who brings her down.”
 
-> Chlodoman is a fire mage of the highest order. “My best student is Baldweche, Baldsind’s sister at Bärenburg.”
+Chlodoman worships at the altar of Sutr and maintains a fire pit in the cellar beneath his castle. From the lake, you can see the flickering orange lights through the mist. It looks like a grinning demon.
 
-## Ruine von Falkenegg
+> Dodo is Chlodoman’s loyal servant and the acting priest of Sutr. Strength-5 Dexterity-11 Endurance-4 Intelligence-7 Education-9 Status-3.
 
-Die Festung steht oberhalb vom Dorf. Die Aussicht auf das Tal von hier oben ist ausgezeichnet.
+## Ruin of Falkenegg
 
-🐉 Eisatem
-Damage-22 Endurance-35 Life-16 Attack-6 Escape-1
-Eine tief schwarze Echse, fast unbeweglich, in den Schatten kaum zu erkennen.
+The ruined castle is built above a village of husks and rubble. The view from up there is excellent, but the dragon Eisatem (ice breath) keeps all away.
 
-Er bewacht den Zepter der Unbesiegbarkeit.
+> Eisatem, ice dragon. Damage-22 Endurance-35 Life-16 Attack-6 Escape-1. White and hard to spot when it lies hidden in the ice on the mountain above.
 
-Wege führen zur Bärenburg, zur Ruine von Felsenfest und zum Giftmacher.
+Many people died, here. One of them was Baldsind’s brother Baldwin. He carried the Sceptre of Invincibility. Instead of challenging him to a fight, the dragon brought down an avalanche on him and killed him with cold and ice. Baldwin died, undefeated, from hypothermia.
+
+The trail from Bärenburg hugs the foot of the mountain, trying to keep above the swamp to the west, passes beneath the village and continues south to Felsenfest.
 
 ## Ruine von Felsenfest
 

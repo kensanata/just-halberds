@@ -288,15 +288,31 @@ The trail from Bärenburg hugs the foot of the mountain, trying to keep above th
 
 ## Ruine von Felsenfest
 
-Die Festung steht oberhalb vom Dorf. Der Aufstieg ist ein schmaler Fusspfad, der sich den Hang hoch windet.
+A small ruin wins itself up the rock upon which the fortress was built. Down below is a burnt down village. The trail from Bärensee and Falkenegg (falcon’s corner) starts it’s ascent towards the pass south past the ruin of Himmelspitz (sky peak). There is also the narrow and steep Eisthal (ice valley) that ends at a glacier. Overlooking that glacier stands the ruined tower of Eiswarte (ice watch).
 
-🧔 Feuerhammer
-Damage-10 Endurance-31 Life-13 Attack-7 Escape-5
-Ein bärtiger Mann, so gross wie drei Mensch, langsam, sorgfältig. Die Proportionen stimmen irgendwie nicht. Die Beine sind zu breit, die Arme zu dick.
+Fortress Felsenfest has been occupied by the giant Feuerhammer (fire hammer). He was once a war giant in a demonic army on Vanaheim but made his escape to Midgard. He brought with him the Spear of Vanaheim. It bears the runes of Pazuzu and gives off fumes that are said to poison the wombs of all who bear children and to destroy the lungs of all who do not.
 
-Er bewacht den Speer von Vanaheim.
+> Feuerhammer, giant. Damage-10 Endurance-31 Life-13 Attack-7 Escape-5. He looks like a dwarf as big as three men, with legs like tree trunks and arms to bend steel bars.
 
-Wege führen zur Ruine von Falkenegg und zur Ruine von Himmelspitz.
+> Feuerhammer says: “I have found my peace in this place. Leave now and never return, for I claim this land as my own. You are not welcome here.”
+
+### Meromer
+
+Outside the village camps a black haired youth, a simple young man from Felsenstein who had run afoul of Vuldeberga as a youth, trying to extort money from the locals. He fled, joined a company mercenaries, fought, got rewarded with deeds to the Eisthal and decided to return. Now he finds the fortress at the opening of Eisthal and the tower at the end of it both in ruins and occupied.
+
+> Meromer, 28 years old. Strength-5 Dexterity-4 Endurance-3 Intelligence-2 Education-5 Status-4 Building-2 Bureaucracy-2 Crafts-1 Culture-2 Brawling-1 Riding-1 Singing-1 Spear-2.
+
+> Meromer’s white horse: Damage-11 Endurance-19 Life-12 Attack-5 Hit-7 Escape-6.
+
+> Meromer says: “Help me reconquer what is rightfully mine and I shall reward you.”
+
+## Eiswarte
+
+A ruined tower, now a nesting place for two harpies.
+
+> Harpies: Damage-5 Endurance-3 Life-6 Attack-9 Escape-9. They can fly.
+
+> They sing songs of lust and violence: “Stay with us! Father of our children.”
 
 ## Ruine von Himmelspitz
 
@@ -335,22 +351,3 @@ Er bewacht den Kelch des Heiligen Ingoger.
 In einem fernen Sumpf, wo grauer Nebel über grauem Schlick die Sicht behindert, lebt er in einer halb versunkenen Festung. Nehmt euch in acht vor den Irrlichtern, welche euch Heim und Herd vorgaukeln und doch nur immer weiter in die Irre führen. Am Ende seid ihr den Nachtlingen hilflos ausgeliefert. Teufel (Damage-3 Endurance-6 Life-5 Attack-10 Escape-6 Number-9)
 
 Ein Weg führt zur Ruine von Falkenegg.
-
-### Weitere Personen
-
-
-### Meromer
-
-Meromer    Alter: 28    Karrieren: 3
-Strength-5 Dexterity-4 Endurance-3 Intelligence-2 Education-5 Status-4
-Bauen-2 Bürokratie-2 Handwerk-2 Kultur-2 Prügeln-1 Reiten-1 Singen-1 Spiess-2
-
-Tiere
-🐎 ein Schimmel (Damage-11 Endurance-19 Life-12 Attack-5 Escape-6)
-
-Feinde
-👩 Ingolind
-
-Stellen
-💰 ein karger Fels mit der Ruine Felsenzwinge
-💰 die Ruine vom Eiswarte voller Harpien (Damage-5 Endurance-3 Life-6 Attack-9 Escape-9 Number-2)

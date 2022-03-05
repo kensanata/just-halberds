@@ -150,9 +150,29 @@ The ruins of the Tempelsumpf (the devil’s swamp) are full of devils. This is a
 
 Baldsind has come here to sacrifice in the past. His last victim was Ingrid, sister of Ingohard. In exchange, his brother Baldwin was able to take Falkenegg. And then, in an ironic twist, the ice dragon came and undid it all. Now, Baldsind no longer trusts the devils, of course.
 
-## Hels Stein
+### Giftmacher
 
-Hel is the demon goddess of the underworld; the caretaker of all those who died in their beds, of old age and disease. She’s also the goddess of magic, of witchcraft, of crossroads, and of multi-headed animals. Here, a the crossroads behind the Bärensee (the bear lake), it stands, a black rock showing a woman with a tree-headed dog at her feet. This is the Altenstein (the old stone) that gave this valley its name.
+Even further in this dreadful swamp lives the elusive giant Giftmacher (poison maker).
+
+> Giftmacher, giant. Damage-11 Endurance-18 Life-17 Attack-4 Escape-4.
+
+Giftmacher’s skin is green and grey like the willows that grow here; he knows the Silent Ways of Set, the demon lord of assassins and poison brewers; and he guards the Chalice of Saint Ingoger, patron of the dream lands. It is this very chalice he uses to brew the most rarefied poisons: the ones that claim the soul as well as the body.
+
+The half sunk temple of snake worship is protected by will-o’-the-wisps: beware the malevolent spirits that look like lantern bearers searching for the drowned, or the recently dead desperately looking for help, for they shall lead you astray and in the end you’ll fall to their wiles.
+
+> 9 will-o’-the-wisps: Damage-3 Endurance-6 Life-5 Attack-10 Escape-6 Number-9.
+
+There is, however, a trail that out of the swamp that leads to safety: the Bohlenweg (bog trackway) which leads to Falkenegg.
+
+<div style="break-after: always"></div>
+
+## Hel’s Stein
+
+Hel is the demon goddess of the underworld; the caretaker of all those who died in their beds, of old age and disease. She’s also the goddess of magic, of witchcraft, of crossroads, and of multi-headed animals. Here, a the crossroads behind the Bärensee (the bear lake), it stands, a black rock showing a woman with a tree-headed dog at her feet. This is the Altenstein (the old stone) that gave this valley its name. The locals like to stop here and leave an offering of food or wine before moving on.
+
+![Hel and Kerberos](images/Hel.jpg)
+Hel’s Stein
+{: .pic }
 
 ### Brunman
 

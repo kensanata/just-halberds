@@ -737,7 +737,7 @@ Man kann nicht alles vorbereiten. Irgendwann muss es los gehen.
 Eine Karte finde ich sehr stimmungsvoll, muss aber nicht zwingend
 sein.
 
-![Karte](images/Helmbarten.png)
+![Karte](images/Helmbarten.svg)
 Die Weltkarte für den Anfang
 {: .pic }
 

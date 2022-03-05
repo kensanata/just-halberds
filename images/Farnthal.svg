@@ -68,6 +68,9 @@
         <g id="dark-grey">
       <polygon fill="#859d70" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
     </g>
+    <g id="dry">
+      <polygon fill="black" opacity="0.1" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
+    </g>
     <g id="dust">
       <polygon fill="#ede787" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
     </g>
@@ -85,6 +88,9 @@
     </g>
     <g id="light-soil">
       <polygon fill="#e5de47" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
+    </g>
+    <g id="port">
+      <polygon opacity="0" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
     </g>
     <g id="water">
       <polygon fill="#6ebae7" points='-100.0,0.0 -50.0,86.6 50.0,86.6 100.0,0.0 50.0,-86.6 -50.0,-86.6' />
@@ -108,6 +114,7 @@
     <use x="300.0" y="692.8" xlink:href="#green" />
     <use x="300.0" y="866.0" xlink:href="#light-grey" />
     <use x="300.0" y="1039.2" xlink:href="#light-grey" />
+    <use x="300.0" y="1039.2" xlink:href="#dry" />
     <use x="300.0" y="1212.4" xlink:href="#light-grey" />
     <use x="300.0" y="1385.6" xlink:href="#light-grey" />
     <use x="450.0" y="86.6" xlink:href="#light-green" />
@@ -123,6 +130,7 @@
     <use x="600.0" y="519.6" xlink:href="#green" />
     <use x="600.0" y="692.8" xlink:href="#water" />
     <use x="600.0" y="866.0" xlink:href="#light-soil" />
+    <use x="600.0" y="866.0" xlink:href="#port" />
     <use x="600.0" y="1039.2" xlink:href="#green" />
     <use x="600.0" y="1212.4" xlink:href="#grey" />
     <use x="600.0" y="1385.6" xlink:href="#light-grey" />
@@ -144,6 +152,7 @@
     <use x="900.0" y="1385.6" xlink:href="#light-grey" />
     <use x="1050.0" y="86.6" xlink:href="#green" />
     <use x="1050.0" y="259.8" xlink:href="#light-grey" />
+    <use x="1050.0" y="259.8" xlink:href="#dry" />
     <use x="1050.0" y="433.0" xlink:href="#dust" />
     <use x="1050.0" y="606.2" xlink:href="#light-green" />
     <use x="1050.0" y="779.4" xlink:href="#light-green" />
@@ -152,6 +161,7 @@
     <use x="1050.0" y="1299.0" xlink:href="#green" />
     <use x="1200.0" y="173.2" xlink:href="#white" />
     <use x="1200.0" y="346.4" xlink:href="#light-grey" />
+    <use x="1200.0" y="346.4" xlink:href="#dry" />
     <use x="1200.0" y="519.6" xlink:href="#green" />
     <use x="1200.0" y="692.8" xlink:href="#green" />
     <use x="1200.0" y="866.0" xlink:href="#green" />
@@ -161,6 +171,7 @@
     <use x="1350.0" y="86.6" xlink:href="#light-grey" />
     <use x="1350.0" y="259.8" xlink:href="#white" />
     <use x="1350.0" y="433.0" xlink:href="#light-grey" />
+    <use x="1350.0" y="433.0" xlink:href="#dry" />
     <use x="1350.0" y="606.2" xlink:href="#light-green" />
     <use x="1350.0" y="779.4" xlink:href="#green" />
     <use x="1350.0" y="952.6" xlink:href="#green" />
@@ -226,7 +237,6 @@
     <use x="300.0" y="866.0" xlink:href="#forest-hill" />
     <use x="300.0" y="866.0" xlink:href="#cliff1" />
     <use x="300.0" y="1039.2" xlink:href="#mountain" />
-    <use x="300.0" y="1039.2" xlink:href="#dry" />
     <use x="300.0" y="1039.2" xlink:href="#cliff3" />
     <use x="300.0" y="1212.4" xlink:href="#mountain" />
     <use x="300.0" y="1212.4" xlink:href="#cliff2" />
@@ -255,7 +265,6 @@
     <use x="600.0" y="346.4" xlink:href="#forest" />
     <use x="600.0" y="519.6" xlink:href="#forest" />
     <use x="600.0" y="866.0" xlink:href="#large-town" />
-    <use x="600.0" y="866.0" xlink:href="#port" />
     <use x="600.0" y="866.0" xlink:href="#cliff1" />
     <use x="600.0" y="1039.2" xlink:href="#fir-forest" />
     <use x="600.0" y="1212.4" xlink:href="#swamp" />
@@ -289,7 +298,6 @@
     <use x="900.0" y="1385.6" xlink:href="#cliff2" />
     <use x="1050.0" y="86.6" xlink:href="#fir-forest" />
     <use x="1050.0" y="259.8" xlink:href="#mountain" />
-    <use x="1050.0" y="259.8" xlink:href="#dry" />
     <use x="1050.0" y="259.8" xlink:href="#cliff0" />
     <use x="1050.0" y="259.8" xlink:href="#cliff1" />
     <use x="1050.0" y="433.0" xlink:href="#grass" />
@@ -303,7 +311,6 @@
     <use x="1200.0" y="173.2" xlink:href="#cliff0" />
     <use x="1200.0" y="173.2" xlink:href="#cliff2" />
     <use x="1200.0" y="346.4" xlink:href="#mountain" />
-    <use x="1200.0" y="346.4" xlink:href="#dry" />
     <use x="1200.0" y="346.4" xlink:href="#cliff4" />
     <use x="1200.0" y="519.6" xlink:href="#fir-forest" />
     <use x="1200.0" y="692.8" xlink:href="#firs" />
@@ -319,7 +326,6 @@
     <use x="1350.0" y="259.8" xlink:href="#cliff4" />
     <use x="1350.0" y="259.8" xlink:href="#cliff5" />
     <use x="1350.0" y="433.0" xlink:href="#mountain" />
-    <use x="1350.0" y="433.0" xlink:href="#dry" />
     <use x="1350.0" y="433.0" xlink:href="#cliff5" />
     <use x="1350.0" y="606.2" xlink:href="#fir-forest" />
     <use x="1350.0" y="606.2" xlink:href="#cliff4" />

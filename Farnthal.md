@@ -15,7 +15,7 @@ nach Westen. Der Fluss im Osten fliesst nun ebenfalls nach Westen, Tal
 abwärts. Die bekannten Ortsnamen habe ich verteilt und die restlichen
 Ortschaften benannt.
 
-![Farnthal](images/Farnthal.png)
+![Farnthal](images/Farnthal.svg)
 Die angepasste Karte
 {: .pic }
 

@@ -10,7 +10,7 @@ The world is at a turning point. The age of chivalry is ending. Mounted knights 
 
 ⚠ There are no non-player characters with Healing-3, and that means mortal wounds cannot be treated. Having two attributes drop to zero is deadly.
 
-![Altenstein](images/Altenstein.png)
+![Altenstein](images/Altenstein.svg)
 The regional map
 {: .pic }
 

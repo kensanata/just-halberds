@@ -40,13 +40,13 @@ watch:
 	| sed 's/YYYY-MM-DD/$(shell date -I)/' \
 	> $@
 
-Altenstein.pdf: images/Altenstein.png
+Altenstein.pdf: images/Altenstein.svg
 
-Farnthal.pdf: images/Farnthal.png
+Farnthal.pdf: images/Farnthal.svg
 
-Helmbarten.pdf: images/Helmbarten.png
+Helmbarten.pdf: images/Helmbarten.svg
 
-images/Helmbarten.svg: images/Helmbarten.txt
+images/%.svg: images/%.txt
 	text-mapper render < $< > $@
 
 images/%.png: images/%.svg

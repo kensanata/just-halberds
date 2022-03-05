@@ -222,7 +222,7 @@ He’s here trying to research the Necklace of Asgard at the library.
 
 > Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when the Heruli went to war against Thrakia in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
 
-## Ruine von Himmelau
+## Ruin of Himmelau
 
 The Himmel (heaven) river originates back here, from a long and narrow lake that silted up, full of brown reeds and white birches, cold mud and and black water. Somewhere in there lies a rock that fell from the cliffs above ages ago and on it stands the old tower of Himmelau (heaven’s river island), reachable by boat, or not at all. There is no boat.
 
@@ -306,7 +306,7 @@ Many people died, here. One of them was Baldsind’s brother Baldwin. He carried
 
 The trail from Bärenburg hugs the foot of the mountain, trying to keep above the swamp to the west, passes beneath the village and continues south to Felsenfest.
 
-## Ruine von Felsenfest
+## Ruin of Felsenfest
 
 A small ruin wins itself up the rock upon which the fortress was built. Down below is a burnt down village. The trail from Bärensee and Falkenegg (falcon’s corner) starts it’s ascent towards the pass south past the ruin of Himmelspitz (sky peak). There is also the narrow and steep Eisthal (ice valley) that ends at a glacier. Overlooking that glacier stands the ruined tower of Eiswarte (ice watch).
 
@@ -326,7 +326,11 @@ Outside the village camps a black haired youth, a simple young man from Felsenst
 
 > Meromer says: “Help me reconquer what is rightfully mine and I shall reward you.”
 
-## Eiswarte
+If a player character is from the area and is now returning to it after spending some years away, Meromer can be used to talk about that moment of leaving. Meromer did not always make the right decisions in life.
+
+> Meromer says: “You were always the smart one. Of course you left when you could. I could not.”
+
+## Ruin of Eiswarte
 
 A ruined tower, now a nesting place for two harpies.
 
@@ -334,7 +338,7 @@ A ruined tower, now a nesting place for two harpies.
 
 > They sing songs of lust and violence: “Stay with us! Father of our children.”
 
-## Ruine von Himmelspitz
+## Ruin of Himmelspitz
 
 Der Turm steht weit oben auf einem Hügel im Wald. Hier hat man eine gute Aussicht über den Talboden.
 
@@ -346,7 +350,7 @@ Er bewacht die Halskette von Asgard.
 
 Ein Weg führt zur Ruine von Felsenfest.
 
-## Ruine von Dunkelwald
+## Ruin of Dunkelwald
 
 Der Turm steht gut versteckt an einem kleinen, verwunschenen See im Wald. Sonnenschein glitzert auf dem Wasser. Vögel pfeifen im Schilf.
 
@@ -357,17 +361,3 @@ Ein drahtiges Wesen, langbeinig, langarmig, mit riesigen Schwingen.
 Er bewacht das Schwert des Hexers.
 
 Ein Weg führt zur Sternenau.
-
-## Riesen in der Wildnis
-
-### Giftmacher
-
-🧔 Giftmacher
-Damage-11 Endurance-18 Life-17 Attack-4 Escape-4
-Ein bärtiger Mann, so gross wie drei Mensch, langsam, sorgfältig. Die Proportionen stimmen irgendwie nicht. Die Beine sind zu breit, die Arme zu dick.
-
-Er bewacht den Kelch des Heiligen Ingoger.
-
-In einem fernen Sumpf, wo grauer Nebel über grauem Schlick die Sicht behindert, lebt er in einer halb versunkenen Festung. Nehmt euch in acht vor den Irrlichtern, welche euch Heim und Herd vorgaukeln und doch nur immer weiter in die Irre führen. Am Ende seid ihr den Nachtlingen hilflos ausgeliefert. Teufel (Damage-3 Endurance-6 Life-5 Attack-10 Escape-6 Number-9)
-
-Ein Weg führt zur Ruine von Falkenegg.

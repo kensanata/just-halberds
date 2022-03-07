@@ -220,7 +220,7 @@ Osman is a few years younger than Crotberga, a travelling botanist currently vis
 
 He’s here trying to research the Necklace of Asgard at the library.
 
-> Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when the Heruli went to war against Thrakia in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
+> Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when he went to war in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
 
 ## Ruin of Himmelau
 
@@ -280,9 +280,7 @@ He is the captain of a bunch of peasant bandits. They don’t actually harm anyb
 
 ## Sternenau
 
-The fortress stands on shores of the Sternensee (star lake), covered in mist. A moat and drawing bridge control the aproach.
-
-A trail leads along the river to Sternenbrück and Bärenburg. Up river is yet another lake, much smaller, hidden away behind a dark forest. There lies the ruined tower of Dunkewald.
+The fortress stands on shores of the Sternensee (star lake), covered in mist. A moat and drawing bridge control the approach. A trail leads along the river to Sternenbrück. Beyond the Sternensee is yet another lake, much smaller, hidden away in Dunkelwald (dark forest).
 
 > Pyromancer Chlodoman, 49 years old. Strength-9 Dexterity-6 Endurance-4 Intelligence-12 Education-10 Status-10 Air-3 Culture-2 Fire-5 Fusion-2 Literacy-1 Singing-1 Spying-1 Storm-3 Transmutation-2 Water-1. Owns an intelligent cat.
 
@@ -296,29 +294,33 @@ Chlodoman worships at the altar of Sutr and maintains a fire pit in the cellar b
 
 > Dodo is Chlodoman’s loyal servant and the acting priest of Sutr. Strength-5 Dexterity-11 Endurance-4 Intelligence-7 Education-9 Status-3.
 
+## Ruin of Dunkelwald
+
+Across the Sternensee by boat and up a river into Dunkelwald (dark forest) there is a small lake and on its shore stands a ruined tower. Sunlight glitters on the water. The birds are singing in the reed.
+
+The lady of the lake guards the Sword of the Witcher, a silver blade to cut and banish demons and devils of all sorts of unnatural creatures. A warrior with at least Status-10 and Epée-1 would be a worthy recipient. Anybody else should prove their worthiness, first.
+
+> The Lady of the Lake says: “Slay the dragon Schattenrauch and prove yourself a warrior worth wielding the witcher’s sword.”
+
+The dragon Schattenrauch is sleeping in the ruined tower of Dunkelwald. As soon as he awakes, acrid smoke pours out of all the windows and rises from every hole in the ground, obscuring sight and damaging the lungs.
+
+> Schattenrauch, dragon. Damage-23 Endurance-36 Life-20 Attack-5 Hit-12 Escape-5.
+
 ## Ruin of Falkenegg
 
 The ruined castle is built above a village of husks and rubble. The view from up there is excellent, but the dragon Eisatem (ice breath) keeps all away.
 
-> Eisatem, ice dragon. Damage-22 Endurance-35 Life-16 Attack-6 Escape-1. White and hard to spot when it lies hidden in the ice on the mountain above.
+> Eisatem, ice dragon. Damage-22 Endurance-35 Life-16 Attack-6 Hit-11 Escape-1. White and hard to spot when it lies hidden in the ice on the mountain above.
 
 Many people died, here. One of them was Baldsind’s brother Baldwin. He carried the Sceptre of Invincibility. Instead of challenging him to a fight, the dragon brought down an avalanche on him and killed him with cold and ice. Baldwin died, undefeated, from hypothermia.
 
-The trail from Bärenburg hugs the foot of the mountain, trying to keep above the swamp to the west, passes beneath the village and continues south to Felsenfest.
+The courtyard is full of ice and bones. Down in the deepest cistern lie Baldwin’s bones in a lake of ice water.
 
-## Ruin of Felsenfest
-
-A small ruin wins itself up the rock upon which the fortress was built. Down below is a burnt down village. The trail from Bärensee and Falkenegg (falcon’s corner) starts it’s ascent towards the pass south past the ruin of Himmelspitz (sky peak). There is also the narrow and steep Eisthal (ice valley) that ends at a glacier. Overlooking that glacier stands the ruined tower of Eiswarte (ice watch).
-
-Fortress Felsenfest has been occupied by the giant Feuerhammer (fire hammer). He was once a war giant in a demonic army on Vanaheim but made his escape to Midgard. He brought with him the Spear of Vanaheim. It bears the runes of Pazuzu and gives off fumes that are said to poison the wombs of all who bear children and to destroy the lungs of all who do not.
-
-> Feuerhammer, giant. Damage-10 Endurance-31 Life-13 Attack-7 Escape-5. He looks like a dwarf as big as three men, with legs like tree trunks and arms to bend steel bars.
-
-> Feuerhammer says: “I have found my peace in this place. Leave now and never return, for I claim this land as my own. You are not welcome here.”
+The trail from Bärenburg hugs the foot of the mountain, trying to keep above the swamp to the west, passes beneath the village and continues south to Felsenfest (rock solid).
 
 ### Meromer
 
-Outside the village camps a black haired youth, a simple young man from Felsenstein who had run afoul of Vuldeberga as a youth, trying to extort money from the locals. He fled, joined a company mercenaries, fought, got rewarded with deeds to the Eisthal and decided to return. Now he finds the fortress at the opening of Eisthal and the tower at the end of it both in ruins and occupied.
+Outside the village camps a black haired youth, a simple young man from Felsenstein who had run afoul of Vuldeberga as a youth, trying to extort money from the locals. He fled, joined a company mercenaries, fought, got rewarded with deeds to the Eisthal and decided to return. Now he finds the fortress at the opening of Eisthal and the tower at the end of it both in ruins – and occupied.
 
 > Meromer, 28 years old. Strength-5 Dexterity-4 Endurance-3 Intelligence-2 Education-5 Status-4 Building-2 Bureaucracy-2 Crafts-1 Culture-2 Brawling-1 Riding-1 Singing-1 Spear-2.
 
@@ -330,34 +332,22 @@ If a player character is from the area and is now returning to it after spending
 
 > Meromer says: “You were always the smart one. Of course you left when you could. I could not.”
 
-## Ruin of Eiswarte
+## Ruin of Felsenfest
 
-A ruined tower, now a nesting place for two harpies.
+A small ruin wins itself up the rock upon which the fortress was built. Down below is a burnt down village. The trail from Bärensee and Falkenegg (falcon’s corner) starts it’s ascent towards the pass south past the ruin of Himmelspitz (sky peak). There is also the narrow and steep Eisthal (ice valley) that ends at a glacier. Overlooking that glacier stands the ruined tower of Eiswarte (ice watch).
 
-> Harpies: Damage-5 Endurance-3 Life-6 Attack-9 Escape-9. They can fly.
+Fortress Felsenfest has been occupied by the giant Feuerhammer (fire hammer). He was once a war giant in a demonic army on Vanaheim but made his escape to Midgard. He brought with him the Spear of Vanaheim. It bears the runes of Pazuzu and gives off fumes that are said to poison the wombs of all who bear children and to destroy the lungs of all who do not.
 
-> They sing songs of lust and violence: “Stay with us! Father of our children.”
+> Feuerhammer, giant. Damage-10 Endurance-31 Life-13 Attack-7 Escape-5. He looks like a dwarf as big as three men, with legs like tree trunks and arms to bend steel bars.
+
+> Feuerhammer says: “I have found my peace in this place. Leave now and never return, for I claim this land as my own. You are not welcome here.”
 
 ## Ruin of Himmelspitz
 
-Der Turm steht weit oben auf einem Hügel im Wald. Hier hat man eine gute Aussicht über den Talboden.
+The pass is far above the tree line, all is barren rock. On this side, the trail leads back down to Felsenfest (rock solid) On the other side, the trail descends to the south, towards lands unknown.
 
-🐉 Feuerrachen
-Damage-25 Endurance-29 Life-20 Attack-3 Escape-4
-Ein Drachen so gross wie ein Haus, Flügel sicher zehn Spannen lang, die Zähne sicher ein Fuss lang.
+The dragon Feuerrachen (fire throat) guards the mausoleum of Hermegiselus, king of the Warna. Two giant crows carved into the stone signal the beginning of the Stair of a Thousand Tears that leads up to it. The dragon sleeps at the top of the stairs.
 
-Er bewacht die Halskette von Asgard.
+> Feuerrachen, dragon. Damage-25 Endurance-29 Life-20 Attack-3 Hit-10 Escape-4. This is the typical fire-breathing dragon. With one roar it can set the entire stair ablaze.
 
-Ein Weg führt zur Ruine von Felsenfest.
-
-## Ruin of Dunkelwald
-
-Der Turm steht gut versteckt an einem kleinen, verwunschenen See im Wald. Sonnenschein glitzert auf dem Wasser. Vögel pfeifen im Schilf.
-
-🐉 Schattenrauch
-Damage-23 Endurance-36 Life-20 Attack-5 Escape-5
-Ein drahtiges Wesen, langbeinig, langarmig, mit riesigen Schwingen.
-
-Er bewacht das Schwert des Hexers.
-
-Ein Weg führt zur Sternenau.
+Inside the mausoleum lies Hermegiselus, king of the crows. Hel’s sorcery protects him still. To take the Necklace of Asgard wrapped around his neck draws the ire of the goddess of magic and it only abates when the Necklace has been returned to her or to Odin himself.

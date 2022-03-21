@@ -26,11 +26,11 @@ The regional map
 
 **Ingohard** is Baldsind’s and Baldweche’s enemy and a bandit, and also a member of the Friends of the Mountain, and therefore Gundehard is bound to help him if he gets himself into trouble. He’s trying to bring down Chlodoman who is staunch defender of the (still nameless) reeve.
 
-**Vuldeberga** lives in castle Felsenstein.
+**Vuldeberga** lives in castle Felsenstein, an enemy of Chlodoman and a friend of the bandits.
 
 **Crotberga** also lives in castle Felsenstein. She’s a chronicler and runs the Library of Learning. She is a member of the Society of Eternal Peace, a secret society intent on keeping the Dark Lord bound in his prison.
 
-**Osman** also lives in castle Felsenstein. He’s a wizard botanist.
+**Osman** also lives in castle Felsenstein. He’s a wizard botanist, a potential ally.
 
 **Brunman** is Crotberga’s enemy, a book thief and necromancer intent on reviving the Dark Lord, a servant of Hel. He hangs about Hel’s stone, a small temple to the goddess of witchcraft, crossroads, and the dead.
 
@@ -40,7 +40,7 @@ The regional map
 
 **Meromer** is a mercenary recently returned from a war in foreign lands. He has a nice horse and knows how to ride, deeds for the ruins of Felsenfest (currently occupied by the giant Feuerhammer) and Eiswarte (currently occupied by harpies).
 
-**Ingolind** is Meromer’s sworn enemy, a victim of his plundering abroad, come here on his trail to take revenge.
+**Ingolind** is Meromer’s sworn enemy, a victim of his plundering abroad, come here on his trail to take revenge. This character has not been detailed.
 
 ### Three Giants
 
@@ -162,7 +162,7 @@ The half sunk temple of snake worship is protected by will-o’-the-wisps: bewar
 
 > 9 will-o’-the-wisps: Damage-3 Endurance-6 Life-5 Attack-10 Escape-6 Number-9.
 
-There is, however, a trail that out of the swamp that leads to safety: the Bohlenweg (bog trackway) which leads to Falkenegg.
+There is, however, a trail out of the swamp that leads to safety: the Bohlenweg (bog trackway) which leads to Falkenegg.
 
 <div style="break-after: always"></div>
 
@@ -221,6 +221,8 @@ Osman is a few years younger than Crotberga, a travelling botanist currently vis
 He’s here trying to research the Necklace of Asgard at the library.
 
 > Osman says: “I’m looking for the Necklace of Asgard. Hermegiselus, king of the Warna, king of the crows, last wore it and when he died during the mountain crossing when he went to war in the south. Perhaps he died somewhere in this valley. Help me search for it and I shall take you to Asgard to see the gods themselves.”
+
+Osman's magic of the eyes might be useful to track Schattenschmied connection to Myrkheim in Himmelau.
 
 ## Ruin of Himmelau
 

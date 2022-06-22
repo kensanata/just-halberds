@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 FILES=Halberts.pdf Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf \
-	Altenstein.pdf
+	Altenstein.pdf Halbardier.pdf
 all: $(FILES)
 
 clean:
@@ -44,7 +44,9 @@ Altenstein.pdf: images/Altenstein.svg
 
 Farnthal.pdf: images/Farnthal.svg
 
-Helmbarten.pdf: images/Helmbarten.svg
+Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg
+
+Halbardier.pdf: Halbardier.jpg
 
 images/%.svg: images/%.txt
 	text-mapper render < $< > $@

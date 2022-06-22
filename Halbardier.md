@@ -1,4 +1,8 @@
-# Halbradier
+<address>Frotz, YYYY-MM-DD</address>
+
+# Halbardier
+
+<p class="title"><img src="Halbardier.jpg" /></p>
 
 ## What are we even doing?
 
@@ -285,6 +289,7 @@ Dexterity, Endurance, Intelligence, Education, and Status).
 **Scout Contact**:
 
 **Patron**:
+<div style="break-after: always;"></div>
 
 ## Adventurer's Life
 

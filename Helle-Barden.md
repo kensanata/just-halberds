@@ -234,30 +234,3 @@ verraten sie, und so weiter.
 * *Stimme*, zwingt jemanden zu einer Handlung
 * *Strömung*, kontrolliert die Luft in Sichtweite (Geruch, Sporen, Gift)
 * *Welle*, schwemmt Gegner weg, braucht eine Wasserquelle
-
-<div style="break-after: page"></div>
-
-## Notizen aus der Kampagne von Marionline
-
-<div class="next"></div>
-<img class="portrait" src="images/adlige-w.png">
-
-Adelige
-Lady ♡, +1 Klatsch und Tratsch, +1 Etikette oder Intriegen
-
-<div class="next"></div>
-<img class="portrait" src="images/soldat-w.png">
-
-Ein einfacher Soldat, bzw eine Soldatin, geübt im Umgang mit einem
-Degen.
-
-Einfacher Soldat ♡♡, +1 bei Kämpfen mit Degen
-
-<div class="next"></div>
-<img class="portrait" src="images/sergeant-w.png">
-
-Sie darf als Sergeant die andern Soldaten etwas herumkommandieren -
-weil kein anderer da ist, der das könnte. Man beachte die
-Schulterdekoration!
-
-Soldaten (Sergant) ♡♡♡, +2 bei Kämpfen, +1 Anführen

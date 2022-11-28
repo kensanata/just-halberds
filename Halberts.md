@@ -423,7 +423,7 @@ dragons are always loners.
 > opponents who ride on terrible giant spiders, which,
 > oddly enough, are not very good at hitting things.
 
-Announce impending danger is always clearly, so that the players can
+Always announce impending danger clearly, so that the players can
 decide for themselves whether they want to engage in a fight.
 
 > Example: Claudia describes how the car-sized shadows

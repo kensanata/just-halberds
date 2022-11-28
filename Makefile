@@ -46,6 +46,8 @@ Farnthal.pdf: images/Farnthal.svg
 
 Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg
 
+Halberts.pdf: images/Helmbarten.png
+
 Halbardier.pdf: Halbardier.jpg
 
 images/%.svg: images/%.txt

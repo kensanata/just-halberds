@@ -382,6 +382,8 @@ Life drops to 0, they die.
 > Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
+<div style="break-after: always;"></div>
+
 ## Opponents
 
 All other chapters in this book are intended for the referee. So for you!
@@ -608,6 +610,8 @@ so on, as well as the name of a dark lord and his realm. Names matter!
 All these things are recorded and hopefully lead to cross-connections
 and inspiration. The next chapter presents the beginning of such an
 initial setting – but you have to finish writing it yourself!
+
+<div style="break-after: always;"></div>
 
 ## Example
 

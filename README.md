@@ -15,8 +15,8 @@ You can find the PDF files online:
 Licensing: The maps in Helmbarten and Farnthal use the Gnomeyland Map
 Icons Copyright Gregory B. MacKenzie 2012, Alex Schroeder 2013-2019.
 The maps licensed under the Creative Commons Attribution-ShareAlike
-3.0 Unported License. To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/3.0/.
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 Unless otherwise indicated, the works in this repository are dedicated
 to the public domain. To the extent possible under law, the authors of

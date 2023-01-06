@@ -7,6 +7,7 @@ HTML and a dedicated CSS to PDF using WeasyPrint.
 You can find the PDF files online:
 
 * [Helmbarten](https://alexschroeder.ch/pdfs/Helmbarten.pdf)
+* [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf)
 * [2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf)
 * [Just Halberds](https://alexschroeder.ch/pdfs/Just-Halberds.pdf)
 * [Helle Barden](https://alexschroeder.ch/pdfs/Helle-Barden.pdf)
@@ -31,6 +32,10 @@ A short and simple 2d6 system, inspired by Traveller, in German.
   initial situation
 
 The data for the generator is stored in the HTML file!
+
+## Halberts
+
+A translation of Helmbarten.
 
 ## Just Halberds
 

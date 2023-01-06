@@ -1,16 +1,11 @@
 <address>Written and translated by Alex Schroeder, Frotz Self, Peter
-Fröhlich<br>Playtesting by Alex Schroeder, Frotz Self,
-Peter Fröhlich, Robert Freeman-Day (PresGas)<br>YYYY-MM-DD</address>
-
-<!-- phf
-For talents it's easy, we use "Talent-number" just like Traveller; for
-attributes it's weird; it would be nice to use "Attribute-number" for
-consistency, but then in places where we "do math" it would look really
-weird. Think of "Strength-1+4.5=5" versus "Strength 1+4.5=5" to see. So
-that's why I now made it so all attributes use "Attribute number" and
-all talents use "Talent-number" as Mark Miller intended. Cool? Of course
-it's still weird that "Endurance-number" is used for monsters... :-/
--->
+Fröhlich, YYYY-MM-DD. Playtesting by Alex Schroeder, Frotz Self, Peter
+Fröhlich, Robert Freeman-Day (PresGas). To the extent possible under
+law, the authors of this work has waived all copyright and related or
+neighboring rights to this work. The map on the last page uses icons
+by Gregory B. MacKenzie under <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</address>
 
 # Halberts
 

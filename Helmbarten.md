@@ -1,5 +1,10 @@
 <!--*- ispell-local-dictionary: "swiss8" -*-->
-<address>Alex Schroeder, YYYY-MM-DD</address>
+<address>Alex Schroeder, YYYY-MM-DD. Der Autor verzichtet weltweit auf
+alle urheberrechtlichen und verwandten Schutzrechte, soweit das
+gesetzlich möglich ist. Da die Karte am Ende auf Icons von Gregory B.
+MacKenzie basiert, untersteht sie der <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a> Lizenz.</address>
 
 # Helmbarten
 

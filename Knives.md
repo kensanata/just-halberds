@@ -412,6 +412,8 @@ What about treasure? If you find the Book of Redemption for Bishop Gregor, you c
 
 Don't write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
 
+<div style="break-after: always;"></div>
+
 ## Reading material
 
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game where characters start with lots of talents

@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 FILES=Halberts.pdf Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf \
-	Altenstein.pdf Halbardier.pdf
+	Altenstein.pdf Halbardier.pdf Knives.pdf
 all: $(FILES)
 
 clean:
@@ -44,9 +44,9 @@ Altenstein.pdf: images/Altenstein.svg
 
 Farnthal.pdf: images/Farnthal.svg
 
-Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg
+Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg
 
-Halberts.pdf: images/Helmbarten.png
+Halberts.pdf: images/Helmbarten.png Helmbarten.jpg images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg
 
 Knives.pdf: Knives.jpg Knives.css Knives-prefix images/Schweizerkrieger_(1515)_Urs_Graf.jpg
 

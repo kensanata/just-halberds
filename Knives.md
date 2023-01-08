@@ -1,5 +1,6 @@
-<address>Written by Alex Schroeder. To the extent possible under law,
-the author of this work has waived all copyright and related or
+<address>Written by Alex Schroeder. Based on a translation by Frotz
+Self and Peter Fröhlich, YYYY-MM-DD. To the extent possible under law,
+the authors of this work has waived all copyright and related or
 neighboring rights to this work.</address>
 
 # Knives
@@ -410,3 +411,9 @@ This needs tons of ideas for a social setting with lords and ladies, secret soci
 What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There's no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book.
 
 Don't write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
+
+## Reading material
+
+[Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game where characters start with lots of talents
+
+[Knave](https://alexschroeder.ch/pdfs/Knave_1.0_EN.pdf), a game where characters are determined largely by the equipment they carry

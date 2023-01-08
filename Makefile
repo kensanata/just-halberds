@@ -48,6 +48,8 @@ Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg
 
 Halberts.pdf: images/Helmbarten.png
 
+Knives.pdf: Knives.jpg Knives.css Knives-prefix images/Schweizerkrieger_(1515)_Urs_Graf.jpg
+
 Halbardier.pdf: Halbardier.jpg
 
 images/%.svg: images/%.txt

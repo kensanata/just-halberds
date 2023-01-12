@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Change this for hyphenation! -->
+<head>
+<meta charset="utf-8">
+<title>Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+@media screen {
+    body {
+        background: #000;
+        color: #fff;
+    }
+    #noprintheader hr {
+        background: green;
+        border: 0;
+        height: 1px;
+        margin: 0.25em 0em 1.5em -10em;
+    }
+}
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+    #noprintheader hr {
+        display: none;
+    }
+    #noprintheader {
+        display: none;
+    }
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
+    font-size: 12pt;
+    margin: 1em;
+    margin-left: clamp(1ex, 5%, 4em);
+    hyphens: auto;
+}
+#target {
+    white-space: pre-wrap;
+    max-width: 45em;
+}
+#links {
+    padding: 0;
+    font-size: smaller;
+}
+#links li {
+    display: inline;
+}
+a {
+    color: chartreuse;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+</style>
+
+<script>
+function parse(data) {
+  // This is the return of parse().
+  let h = {};
+
+  // Save the data so that h can be reused in multiple calls to generate().
+  h.tables = transform(data);
+
+  /**
+   * Generate text. This function is accessible from the outside.
+   */
+  h.generate = function(start) {
+    h.names = {}; // reset
+    return pick(start);
+  };
+
+  /**
+   * Read data and parse comments, table names and weighted rows.
+   */
+  function transform(data) {
+    let table = {};
+    let rows;
+    data.split("\n").forEach(row => {
+      row.replace(/#.*/, ""); // Comments
+      let m;
+      if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; }
+      else if ((m = row.match(/^(\d),(.*)/))) { rows.push([m[2], Number(m[1])]); }
+    });
+    return table;
+  }
+
+  // The list of names ensures that generated names are unique
+  h.names;
+
+  /**
+   * Return an item for table that isn't a known name.
+   */
+  function unique(table) {
+    let t = pick(table);
+    while (h.names[t]) {
+      t = pick(table);
+    }
+    h.names[t] = 1;
+    return t;
+  }
+
+  // Save the results of the last call
+  h.results = {};
+
+  /**
+   * Pick an item for the table
+   */
+  function pick(table, level) {
+    level = level || 1;
+    if (level == 1) h.results = {};
+    if (level > 20) { console.log(`Recursion deeper than 20 for ${table}`); return "…"; }
+    // [@b] take the existing value for b, or does a lookup
+    if (table.startsWith('@++')) {
+       let value = h.results[table.substring(3)];
+       return shuffle(Object.keys(value)).reduce((ac, cur) => value[ac] > value[cur] ? ac : cur, 0);
+    }
+    if (table.startsWith('@')) {
+       let value = h.results[table.substring(1)];
+       if (value === undefined) return pick(table.substring(1), level+1);
+       if (Array.isArray(value)) return value.join(", ");
+       if (value === Object(value)) return Object.keys(value).sort().map(key => key + "-" + value[key]).join(", ");
+       return value;
+    }
+    // otherwise, pick an approprite item
+    let text = weighted_pick(table);
+    // look for search and replace suffixes like /a/b/
+    const m = text.match(/\/([^\/]+)\/([^\/]*)\/$/);
+    // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
+    if (m) text = text.substring(0, text.length - m[0].length);
+    while (true) {
+      let e = false;
+      // [2d6] rolls dice
+      text = text.replaceAll(/\[(\d+)d(\d+)(?:\+(\d+))?\]/g,
+                             (m, n, d, p) => { e = true; return roll(Number(n), Number(d), p ? Number(p) : 0); });
+      if (e) continue;
+      // [a++@b] increments value of key a in map b
+      text = text.replaceAll(/\[([^\[\]]+)\+\+@([^\[\]]+)\]/g,
+                             (m, a, b) => { e = true; key = pick(a, level + 1);
+                                            h.results[b] ||= {};
+                                            h.results[b][key] ||= 0;
+                                            h.results[b][key]++;
+                                            return ''; });
+      if (e) continue;
+      // [a@@b] appends a to list b
+      text = text.replaceAll(/\[([^\[\]]+)@@([^\[\]]+)\]/g,
+                             (m, a, b) => { e = true; h.results[b].push(a); return ''; });
+      if (e) continue;
+      // [a@b] saves a as b
+      text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
+                             (m, a, b) => { e = true; h.results[b] = a; return ''; });
+      if (e) continue;
+      // [a|b] choose a or b
+      text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g,
+                             (m, w) => { e = true; return one(w.split('|')); });
+      if (e) continue;
+      // [a] pick an entry from table a
+      text = text.replaceAll(/\[([^@\[\]]+)\]/g,
+                             (m, a) => { e = true; return pick(a, level + 1); });
+      if (e) continue;
+      // [@b] use variable b (after all the [a] have been replaced)
+      text = text.replaceAll(/\[([^\[\]]+)\]/g,
+                             (m, b) => { e = true; return pick(b, level + 1); });
+      if (e) continue;
+      break;
+    }
+    // run search and replace, if any
+    if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
+    // Save
+    h.results[table] = text;
+    return text;
+  }
+
+  function weighted_pick(table) {
+    const t = h.tables[table];
+    if (!t) { console.log(`There is no table ${table}`); return "…"; }
+    const total = t.reduce((n, x) => n + x[1], 0);
+    // start with 1
+    const n = Math.floor(Math.random() * total) + 1;
+    let i = 0;
+    for (const z of t) {
+      i += z[1];
+      if (i >= n) { return z[0]; }
+    }
+    console.log(`The table ${table} has no result for ${n}`);
+    return "…";
+  }
+
+  function shuffle(a) {
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  /**
+   * Return a random element from arr.
+   */
+  function one(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  /**
+   * Roll dice.
+   */
+  function roll(num, sides = 6, plus = 0) {
+    let total = 0;
+    for (var i = 0; i < num; i++) {
+      total += Math.floor(Math.random() * sides + 1);
+    }
+    return total + plus;
+  }
+
+  // To do anything, call generate().
+  return h;
+}
+
+function generate(){
+  const data = document.getElementById('data').textContent;
+  document.getElementById('target').innerHTML = parse(data).generate("start");
+}
+</script>
+</head>
+<body>
+
+<h1 id="noprintheader">Generator</h1>
+<div id="noprintheader">
+  <button type="button" onclick="generate()">Generate</button>
+	<ul id="links">
+		<li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>
+	</ul>
+	<hr>
+</div>
+
+<div id="target"></div>
+
+<pre id="data" style="display: none">
+# Data
+
+# As this data needs to be valid HTML, you need to replace < & > in
+the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
+
+# '#' begins a comment
+# ';' begins a table, followed by a name, no space
+# A number and a comma begin a weighted entry for the current table
+# /re/to/ at the end replaces regular expression "re" with "to"
+# '[2d6]' or '[1d6+3]' are replaced by dice rolls
+# '[a]' gets replaced with a lookup of table 'a'
+# '[a@b]' does a lookup of table 'a' and stores it as variable 'b'
+# '[a++@b]' does a lookup of table 'a' and increments the key a by one for the map 'b'
+# '[a|b]' gets replaced with a or b
+# '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
+# '[@b]' uses the value of variable 'b' or does a lookup of table 'b' if none is set
+# If b is a list, return a comma-separated list.
+# If b is a map, return a sorted, comma-separated list of key-value pairs
+# '[@++b]' gets replaced by the highest key in map b
+
+;start
+1,[character]
+
+;character
+1,[[1d6] careers][name][nick name]&lt;p&gt;Attributes: [attributes]&lt;p&gt;Skills: [@skills]
+
+;name
+1,[[gender] name]
+
+;gender
+1,female
+1,male
+
+;female name
+1,[short female name]
+5,[long female name]
+
+;male name
+1,[short male name]
+5,[long male name]
+
+;short female name
+1,Ada
+1,Berta
+1,Hilde
+1,Inge
+1,Chloe
+1,Frieda
+1,Gisela
+
+;short male name
+1,Ardo
+1,Dodo
+1,Gregor
+1,Gundobad
+1,Gyso
+1,Siggo
+
+;long female name
+2,[name prefix][female suffix]
+1,[name prefix][male suffix][a|e]
+
+;long male name
+1,[name prefix][male suffix]/[ie]a/oa/
+
+;name prefix
+1,Adal
+1,Amal
+1,Bald
+1,Bert
+1,Brun
+1,Charde
+1,Chari
+1,Childe
+1,Chilpe
+1,Chlodo
+1,Chrodo
+1,Clot
+1,Crot
+1,Dago
+1,Ger
+1,Gunde
+1,Ingo
+1,Mero
+1,Os
+1,Sigi
+1,Theude
+1,Vulde
+1,Wisi
+
+;female suffix
+1,berga
+1,burg
+1,fled
+1,gard
+1,gund
+1,hild
+1,lind
+1,trud
+
+;male suffix
+1,ald
+1,ger
+1,hard
+1,man
+1,mer
+1,mund
+1,ric
+1,sind
+1,tram
+1,wech
+
+;nick name
+1, the [[@++skills] title]
+
+;attributes
+1,strength-[2d6], dexterity-[2d6], endurance-[2d6], intelligence-[2d6], education-[2d6], status-[2d6]
+
+;1 careers
+1,[4 skills]
+;2 careers
+1,[1 careers][4 skills]
+;3 careers
+1,[2 careers][4 skills]
+;4 careers
+1,[3 careers][4 skills]
+;5 careers
+1,[4 careers][4 skills]
+;6 careers
+1,[5 careers][4 skills]
+
+;4 skills
+1,[skill++@skills][skill++@skills][skill++@skills][skill++@skills]
+
+;skill
+1,[[[@career] skill table]]
+
+;career
+1,warrior
+1,mage
+1,rapscallion
+
+;warrior skill table
+1,mercenary
+1,guard
+1,rider
+1,officer
+
+;mage skill table
+1,aggressive
+1,passive
+1,manipulative
+1,transgressive
+
+;rapscallion skill table
+1,thief
+1,thug
+1,liar
+1,murderer
+
+;fighting
+3,[@preferred weapon]
+1,[weapon]
+
+;preferred weapon
+1,[weapon]
+
+;weapon
+1,knife
+1,spear
+1,halberd
+1,épée
+1,bow
+1,lance
+
+;mercenary
+1,construction
+1,running
+1,tactics
+1,first aid
+1,craft
+1,[fighting]
+
+;guard
+1,bureaucracy
+1,discipline
+1,construction
+1,brawling
+1,brewing
+1,[fighting]
+
+;rider
+1,riding
+1,singing
+1,tactics
+1,spying
+1,culture
+1,[fighting]
+
+;officer
+1,literacy
+1,bureaucracy
+1,tactics
+1,diplomacy
+1,behavior
+1,[fighting]
+
+;aggressive
+1,fire
+1,air
+1,water
+1,earth
+1,storm
+1,[fighting]
+
+;passive
+1,healing
+1,sleep
+1,eyes
+1,doors
+1,plants
+1,brewing
+
+;manipulative
+1,charm
+1,singing
+1,diplomacy
+1,illusion
+1,people
+1,literacy
+
+;transgressive
+1,shapeshift
+1,necromancy
+1,transmutation
+1,fusion
+1,animals
+1,planeswalk
+
+;thief
+1,sneaking
+1,spying
+1,running
+1,climbing
+1,distract
+1,pick
+
+;thug
+1,[fighting]
+1,craft
+1,running
+1,first aid
+1,tactics
+1,singing
+
+;liar
+1,culture
+1,behavior
+1,bureaucracy
+1,literacy
+1,oratory
+1,trading
+
+;murderer
+1,[fighting]
+1,brewing
+1,first aid
+1,sneaking
+1,behavior
+1,tinker
+
+;air title
+1,Aeromancer
+
+;animals title
+1,Whisperer
+
+;behavior title
+1,Courtier
+
+;bow title
+1,Hunter
+
+;brawling title
+1,Boxer
+
+;brewing title
+1,Brewer
+
+;bureaucracy title
+1,Administrator
+
+;charm title
+1,Hypnotist
+
+;climbing title
+1,Mountaineer
+
+;construction title
+1,Builder
+
+;craft title
+1,Crafter
+
+;culture title
+1,Artist
+
+;diplomacy title
+1,Diplomat
+
+;discipline title
+1,Task Master
+
+;distract title
+1,Magician
+
+;doors title
+1,Gate Mage
+
+;earth title
+1,Geomancer
+
+;eyes title
+1,Oculomant
+
+;fire title
+1,Pyromancer
+
+;first aid title
+1,Field Medic
+
+;fusion title
+1,Vivomancer
+
+;halberd title
+1,Halberdier
+
+;healing title
+1,Healer
+
+;illusion title
+1,Illusionist
+
+;knife title
+1,Knife Fighter
+
+;lance title
+1,Knight
+
+;literacy title
+1,Sage
+
+;necromancy title
+1,Necromancer
+
+;oratory title
+1,Orator
+
+;people title
+1,Manipulator
+
+;pick title
+1,Pickpocket
+
+;planeswalk title
+1,Planes Walker
+
+;plants title
+1,Botanist
+
+;riding title
+1,Rider
+
+;running title
+1,Runner
+
+;shapeshift title
+1,Shapeshifter
+
+;singing title
+1,Singer
+
+;sleep title
+1,Dream Walker
+
+;sneaking title
+1,Sneak
+
+;spear title
+1,Spear Fighter
+
+;spying title
+1,Spy
+
+;storm title
+1,Storm Mage
+
+;tactics title
+1,Tactician
+
+;tinker title
+1,Tinkerer
+
+;trading title
+1,Trader
+
+;transmutation title
+1,Transmutater
+
+;water title
+1,Aquamancer
+
+;épée title
+1,Sword Fighter
+
+</pre>
+</body>
+</html>

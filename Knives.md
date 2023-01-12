@@ -367,8 +367,8 @@ players. A role-playing game is not a saga; fate is not predetermined.
 ## Combat
 
 Combat is divided into rounds. Everyone may attack, cast magic, or do
-something else 1×/round. All participants announce their action, roll
-the dice and evaluate. Everything happens at the same time.
+something else once per round. All participants announce their action,
+roll the dice and evaluate. Everything happens at the same time.
 
 > Example: Adalric casts chain lightning and he is protected by the
 > rain. A goblin has seen him anyway and shoots at him with his bow.
@@ -383,13 +383,13 @@ the fight.
 > Fighting-1. She tries to reach the farm, but two goblins are hot on
 > her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
 > Escape-4. She turns to fight. First round: Berta rolls 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6, two hits for the goblins,
-> since 6 ≤ 9. With the first hit, chance decides which attribute
-> Brunhilde must reduce: Berta rolls a 4, which is Dexterity (6-3=3).
-> The goblins deal 3 every time they hit. The second hit Brunhilde
-> deducts from her Endurance (9-3=4). Berta rolls 6 damage which kills
-> the goblin (both Endurance and Life are reduced to zero), but the
-> other still stands.
+> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
+> twice since 6 ≤ 9. With the first hit, chance decides which
+> attribute Brunhilde must reduce: Berta rolls a 4, which is Dexterity
+> (6-3=3). The goblins deal 3 every time they hit. The second hit
+> Brunhilde deducts from her Endurance (9-3=4). Berta rolls 6 damage
+> which kills the goblin (both Endurance and Life are reduced to
+> zero), but the other still stands.
 
 When an advantage is gained through tactics, the result is often a
 surprise round where the opponent cannot strike back. That can become
@@ -421,6 +421,8 @@ Don't write a setting with a timeline, a map, and names. Instead, write a pamphl
 
 ## Reading material
 
-[Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game where characters start with lots of talents
+[Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 
-[Knave](https://alexschroeder.ch/pdfs/Knave_1.0_EN.pdf), a game where characters are determined largely by the equipment they carry
+[Knave](https://questingbeast.itch.io/knave), a d20 game
+
+[Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a 2d6 game

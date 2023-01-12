@@ -255,7 +255,12 @@ Life drops to 0, they die.
 > Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
-<div style="break-after: always;"></div>
+Hitting opponents wearing a metal cuirass is hard: roll 3d6 ≤
+attribute + talent. The reason metal cuirasses are so rare is that
+they are so hard to make. They are kept in armories for times of war.
+You only put them on when marching into battle. They slow you down
+when plundering and when fleeing; they are cumbersome to carry around
+and they give you sores. Soldiers do not like wearing them.
 
 ## Opponents
 

@@ -57,6 +57,9 @@ a {
 a:visited {
     color: green;
 }
+a:hover {
+    text-decoration: underline;
+}
 </style>
 
 <script>
@@ -124,7 +127,7 @@ function parse(data) {
        let value = h.results[table.substring(3)];
        return shuffle(Object.keys(value)).reduce((ac, cur) => value[ac] > value[cur] ? ac : cur, 0);
     }
-    // [@b] take the existing value for b, or does a lookup
+    // [@b] take the existing value for b
     if (table.startsWith('@')) {
        let value = h.results[table.substring(1)];
        if (value === undefined) { console.log("No stored value for " + table); return "…"; }
@@ -234,9 +237,32 @@ function parse(data) {
   return h;
 }
 
-function generate(){
+function render(data) {
+  data = data.replaceAll(/^;(.*)/mg,
+                         (m, t) => {
+                           return ";<strong id=\"" + t.replaceAll(" ", "-").toLowerCase() + "\">"
+                             + t + "</strong>" });
+  data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
+                         (m, t) => {
+                           if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
+                           return "[<a href=\"#" + t.replaceAll(" ", "-").toLowerCase() + "\">"
+                             + t + "</a>]" });
+  return data;
+}
+
+function generate() {
   const data = document.getElementById('data').textContent;
   document.getElementById('target').innerHTML = parse(data).generate("start");
+}
+
+function show() {
+  const data = document.getElementById('data').textContent;
+  document.getElementById('target').innerHTML = data;
+}
+
+function html() {
+  const data = document.getElementById('data').textContent;
+  document.getElementById('target').innerHTML = render(data);
 }
 </script>
 </head>
@@ -245,11 +271,13 @@ function generate(){
 <h1 id="noprintheader">Generator</h1>
 <div id="noprintheader">
   <button type="button" onclick="generate()">Generate</button>
-    <ul id="links">
-      <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
-      <li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>
-      <li><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
-    </ul>
+  <button type="button" onclick="show()">Show tables</button>
+  <button type="button" onclick="html()">Render tables</button>
+  <ul id="links">
+    <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
+    <li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>
+    <li><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+  </ul>
   <hr>
 </div>
 

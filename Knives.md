@@ -355,8 +355,8 @@ also have to live with that. Certain magic talents lend themselves to
 druids, bards, healers.
 
 There is no talent for summoning: instead, this is meant to be handled
-with a gate to another plane, or as a planeswalk. You have to
-subjugate every demon yourself and force it to do its deeds.
+by planeshifting. You have to subjugate every demon yourself and force
+it to do its deeds.
 
 In my games, Charm is always a violent thing: being forced into things
 is nauseating and revolting.

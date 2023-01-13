@@ -421,6 +421,8 @@ Don't write a setting with a timeline, a map, and names. Instead, write a pamphl
 
 ## Reading material
 
+[Generator](https://campaignwiki.org/generator), a generator of characters
+
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 
 [Knave](https://questingbeast.itch.io/knave), a d20 game

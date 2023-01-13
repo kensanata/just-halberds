@@ -279,7 +279,8 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[character]
 
 ;character
-1,[roll-attributes][[1d6] careers][name][nick name] (age [@age])&lt;p&gt;Attributes: [attributes]&lt;p&gt;Careers: [@careers] ([@career history])&lt;p&gt;Tables: [@skill tables]&lt;p&gt;Skills: [@skills]
+1,[roll-attributes][[2d5] careers][name][nick name] (age [@age])&lt;p&gt;Attributes: [attributes]&lt;p&gt;Careers: [@careers]&lt;p&gt;Tables: [@skill tables]&lt;p&gt;Skills: [@skills]
+# ([@career history]) adds the ages and careers picked
 
 ;roll-attributes
 1,[[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
@@ -392,6 +393,7 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?warrior:[[@brains]>=[@smarts]?mage:rapscallion]]
 1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?warrior:[[@brains]>[@smarts]?mage:rapscallion]]
 
+# There are no loops so we have to use recursion
 ;1 careers
 1,[4 skills]
 ;2 careers
@@ -404,6 +406,14 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[4 careers][4 skills]
 ;6 careers
 1,[5 careers][4 skills]
+;7 careers
+1,[6 careers][4 skills]
+;8 careers
+1,[7 careers][4 skills]
+;9 careers
+1,[8 careers][4 skills]
+;10 careers
+1,[9 careers][4 skills]
 
 ;4 skills
 1,[switch career][be a knight][[@age]: [@career]@@career history][[skill]++@skills][[skill]++@skills][[skill]++@skills][[skill]++@skills][[@career]++@careers][[@skill table]++@skill tables][[4d1+[@age]]@age]

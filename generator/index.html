@@ -119,11 +119,12 @@ function parse(data) {
       console.log(`Recursion deeper than 20 for ${table}`);
       return "…";
     }
-    // [@b] take the existing value for b, or does a lookup
+    // [@b++] returns the key with the highest value in map b
     if (table.startsWith('@++')) {
        let value = h.results[table.substring(3)];
        return shuffle(Object.keys(value)).reduce((ac, cur) => value[ac] > value[cur] ? ac : cur, 0);
     }
+    // [@b] take the existing value for b, or does a lookup
     if (table.startsWith('@')) {
        let value = h.results[table.substring(1)];
        if (value === undefined) { console.log("No stored value for " + table); return "…"; }
@@ -167,7 +168,7 @@ function parse(data) {
                              (m, w) => { e = true; return one(w.split('|')); });
       if (e) continue;
       // [x?a:b] choose a or b depending on whether x is true or false
-      text = text.replaceAll(/\[([^\[\]]+)\?([^ \[\]][^\[\]]*):([^ \[\]][^\[\]]*)\]/g,
+      text = text.replaceAll(/\[([^\[\]]+)\?([^\[\]]*):([^\[\]]*)\]/g,
                              (m, x, a, b) => { e = true; return eval(x) ? a : b; });
       if (e) continue;
       // [a] pick an entry from table a
@@ -278,7 +279,13 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[character]
 
 ;character
-1,[roll-attributes][[1d6] careers][name][nick name]&lt;p&gt;Attributes: [attributes]&lt;p&gt;Careers: [@careers] ([@career history])&lt;p&gt;Tables: [@skill tables]&lt;p&gt;Skills: [@skills]
+1,[roll-attributes][[1d6] careers][name][nick name] (age [@age])&lt;p&gt;Attributes: [attributes]&lt;p&gt;Careers: [@careers] ([@career history])&lt;p&gt;Tables: [@skill tables]&lt;p&gt;Skills: [@skills]
+
+;roll-attributes
+1,[[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
+
+;attributes
+1,strength-[@str], dexterity-[@dex], endurance-[@end], intelligence-[@int], education-[@edu], status-[@sta]
 
 ;name
 1,[[gender] name]
@@ -369,12 +376,6 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 ;nick name
 1, the [[@++skills] title]
 
-;attributes
-1,strength-[@str], dexterity-[@dex], endurance-[@end], intelligence-[@int], education-[@edu], status-[@sta] (preferrence: [@preferrence], [@preferred weapon])
-
-;roll-attributes
-1,[[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon without lance]@preferred weapon]
-
 ;preferrence
 1,[best attribute][preferred career]
 
@@ -405,11 +406,16 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[5 careers][4 skills]
 
 ;4 skills
-1,[switch career][[@career]@@career history][[skill]++@skills][[skill]++@skills][[skill]++@skills][[skill]++@skills][[@career]++@careers][[@skill table]++@skill tables]
+1,[switch career][be a knight][[@age]: [@career]@@career history][[skill]++@skills][[skill]++@skills][[skill]++@skills][[skill]++@skills][[@career]++@careers][[@skill table]++@skill tables][[4d1+[@age]]@age]
 
+# every 4 years there's a 25% chance of switching careers
 ;switch career
 1,[[career]@career]
 3,
+
+# if we can ride, prefer the lance
+;be a knight
+1,[[h.results.skills && h.results.skills.riding?lance:[@preferred weapon]]@preferred weapon]
 
 ;skill
 1,[[skill table]]
@@ -444,23 +450,13 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 3,[@preferred weapon]
 1,[weapon]
 
-;preferred weapon
-1,[weapon]
-
-;weapon without lance
+# only learn the lance when you have riding
+;weapon
 2,knife
 2,spear
 1,halberd
 1,épée
 1,bow
-
-;weapon
-1,knife
-1,spear
-1,halberd
-1,épée
-1,bow
-1,lance
 
 ;mercenary
 1,construction

@@ -288,7 +288,7 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
 
 ;attributes
-1,strength-[@str], dexterity-[@dex], endurance-[@end], intelligence-[@int], education-[@edu], status-[@sta]
+1,Strength-[@str], Dexterity-[@dex], Endurance-[@end], Intelligence-[@int], Education-[@edu], Status-[@sta]
 
 ;name
 1,[[gender] name]
@@ -463,9 +463,9 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 # each line does the same thing but the first one prefers warriors
 # the second one mages, the last one rapscallions
 ;preferred career
-1,[[@brawns]>=[@brains]&&[@brawns]>=[@smarts]?warrior:[[@brains]>=[@smarts]?mage:rapscallion]]
-1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?warrior:[[@brains]>=[@smarts]?mage:rapscallion]]
-1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?warrior:[[@brains]>[@smarts]?mage:rapscallion]]
+1,[[@brawns]>=[@brains]&&[@brawns]>=[@smarts]?Warrior:[[@brains]>=[@smarts]?Mage:Rapscallion]]
+1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?Warrior:[[@brains]>=[@smarts]?Mage:Rapscallion]]
+1,[[@brawns]>[@brains]&&[@brawns]>[@smarts]?Warrior:[[@brains]>[@smarts]?Mage:Rapscallion]]
 
 # There are no loops so we have to use recursion
 ;1 careers
@@ -499,7 +499,7 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 
 # if we can ride, prefer the lance
 ;be a knight
-1,[[h.results.skills && h.results.skills.riding?lance:[@preferred weapon]]@preferred weapon]
+1,[[h.results.skills && h.results.skills.riding?Lance:[@preferred weapon]]@preferred weapon]
 
 ;skill
 1,[[skill table]]
@@ -508,278 +508,278 @@ the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
 1,[[@career] skill table]
 
 ;career
-1,warrior
-1,mage
-1,rapscallion
+1,Warrior
+1,Mage
+1,Rapscallion
 
-;warrior skill table
-1,mercenary
-1,guard
-1,rider
-1,officer
+;Warrior skill table
+1,Mercenary
+1,Guard
+1,Rider
+1,Officer
 
-;mage skill table
-1,aggressive
-1,passive
-1,manipulative
-1,transgressive
+;Mage skill table
+1,Aggressive
+1,Passive
+1,Manipulative
+1,Transgressive
 
-;rapscallion skill table
-1,thief
-1,thug
-1,liar
-1,murderer
+;Rapscallion skill table
+1,Thief
+1,Thug
+1,Liar
+1,Murderer
 
-;fighting
+;Fighting
 3,[@preferred weapon]
 1,[weapon]
 
 # only learn the lance when you have riding
 ;weapon
-2,knife
-2,spear
-1,halberd
-1,épée
-1,bow
+2,Knife
+2,Spear
+1,Halberd
+1,Épée
+1,Bow
 
-;mercenary
-1,construction
-1,running
-1,tactics
-1,first aid
-1,craft
-1,[fighting]
+;Mercenary
+1,Construction
+1,Running
+1,Tactics
+1,First Aid
+1,Craft
+1,[Fighting]
 
-;guard
-1,bureaucracy
-1,discipline
-1,construction
-1,brawling
-1,brewing
-1,[fighting]
+;Guard
+1,Bureaucracy
+1,Discipline
+1,Construction
+1,Brawling
+1,Brewing
+1,[Fighting]
 
-;rider
-1,riding
-1,singing
-1,tactics
-1,spying
-1,culture
-1,[fighting]
+;Rider
+1,Riding
+1,Singing
+1,Tactics
+1,Spying
+1,Culture
+1,[Fighting]
 
-;officer
-1,literacy
-1,bureaucracy
-1,tactics
-1,diplomacy
-1,behavior
-1,[fighting]
+;Officer
+1,Literacy
+1,Bureaucracy
+1,Tactics
+1,Diplomacy
+1,Behavior
+1,[Fighting]
 
-;aggressive
-1,fire
-1,air
-1,water
-1,earth
-1,storm
-1,[fighting]
+;Aggressive
+1,Fire
+1,Air
+1,Water
+1,Earth
+1,Storm
+1,[Fighting]
 
-;passive
-1,healing
-1,sleep
-1,eyes
-1,doors
-1,plants
-1,brewing
+;Passive
+1,Healing
+1,Sleep
+1,Eyes
+1,Doors
+1,Plants
+1,Brewing
 
-;manipulative
-1,charm
-1,singing
-1,diplomacy
-1,illusion
-1,people
-1,literacy
+;Manipulative
+1,Charm
+1,Singing
+1,Diplomacy
+1,Illusion
+1,People
+1,Literacy
 
-;transgressive
-1,shapeshift
-1,necromancy
-1,transmutation
-1,fusion
-1,animals
-1,planeswalk
+;Transgressive
+1,Shapeshift
+1,Necromancy
+1,Transmutation
+1,Fusion
+1,Animals
+1,Planeshift
 
-;thief
-1,sneaking
-1,spying
-1,running
-1,climbing
-1,distract
-1,pickpocket
+;Thief
+1,Sneaking
+1,Spying
+1,Running
+1,Climbing
+1,Distract
+1,Pickpocket
 
-;thug
-1,[fighting]
-1,craft
-1,running
-1,first aid
-1,tactics
-1,singing
+;Thug
+1,[Fighting]
+1,Craft
+1,Running
+1,First Aid
+1,Tactics
+1,Singing
 
-;liar
-1,culture
-1,behavior
-1,bureaucracy
-1,literacy
-1,oratory
-1,trading
+;Liar
+1,Culture
+1,Behavior
+1,Bureaucracy
+1,Literacy
+1,Oratory
+1,Trading
 
-;murderer
-1,[fighting]
-1,brewing
-1,first aid
-1,sneaking
-1,behavior
-1,tinker
+;Murderer
+1,[Fighting]
+1,Brewing
+1,First Aid
+1,Sneaking
+1,Behavior
+1,Tinker
 
-;air title
+;Air title
 1,Aeromancer
 
-;animals title
+;Animals title
 1,Whisperer
 
-;behavior title
+;Behavior title
 1,Courtier
 
-;bow title
+;Bow title
 1,Hunter
 
-;brawling title
+;Brawling title
 1,Boxer
 
-;brewing title
+;Brewing title
 1,Brewer
 
-;bureaucracy title
+;Bureaucracy title
 1,Administrator
 
-;charm title
+;Charm title
 1,Hypnotist
 
-;climbing title
+;Climbing title
 1,Mountaineer
 
-;construction title
+;Construction title
 1,Builder
 
-;craft title
+;Craft title
 1,Crafter
 
-;culture title
+;Culture title
 1,Artist
 
-;diplomacy title
+;Diplomacy title
 1,Diplomat
 
-;discipline title
+;Discipline title
 1,Task Master
 
-;distract title
+;Distract title
 1,Magician
 
-;doors title
+;Doors title
 1,Gate Mage
 
-;earth title
+;Earth title
 1,Geomancer
 
-;eyes title
+;Eyes title
 1,Oculomant
 
-;fire title
+;Fire title
 1,Pyromancer
 
-;first aid title
+;First Aid title
 1,Field Medic
 
-;fusion title
+;Fusion title
 1,Vivomancer
 
-;halberd title
+;Halberd title
 1,Halberdier
 
-;healing title
+;Healing title
 1,Healer
 
-;illusion title
+;Illusion title
 1,Illusionist
 
-;knife title
+;Knife title
 1,Knife Fighter
 
-;lance title
+;Lance title
 1,Knight
 
-;literacy title
+;Literacy title
 1,Sage
 
-;necromancy title
+;Necromancy title
 1,Necromancer
 
-;oratory title
+;Oratory title
 1,Orator
 
-;people title
+;People title
 1,Manipulator
 
-;pick title
+;Pick title
 1,Thief
 
-;planeswalk title
-1,Planes Walker
+;Planeshift title
+1,Planeshifter
 
-;plants title
+;Plants title
 1,Botanist
 
-;riding title
+;Riding title
 1,Rider
 
-;running title
+;Running title
 1,Runner
 
-;shapeshift title
+;Shapeshift title
 1,Shapeshifter
 
-;singing title
+;Singing title
 1,Singer
 
-;sleep title
+;Sleep title
 1,Dream Walker
 
-;sneaking title
+;Sneaking title
 1,Sneak
 
-;spear title
+;Spear title
 1,Spear Fighter
 
-;spying title
+;Spying title
 1,Spy
 
-;storm title
+;Storm title
 1,Storm Mage
 
-;tactics title
+;Tactics title
 1,Tactician
 
-;tinker title
+;Tinker title
 1,Tinkerer
 
-;trading title
+;Trading title
 1,Trader
 
-;transmutation title
+;Transmutation title
 1,Transmutater
 
-;water title
+;Water title
 1,Aquamancer
 
-;épée title
+;Épée title
 1,Sword Fighter
 
 </pre>

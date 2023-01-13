@@ -10,6 +10,7 @@ upload: $(FILES)
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 	(echo ""; tail -n +2 images/Farnthal.svg) | \
 	~/bin/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
+	rsync -ai generator/index.html sibirocobombus:campaignwiki.org/generator.html
 
 watch:
 	@echo Regenerating PDFs whenever the .md or .css files get saved...

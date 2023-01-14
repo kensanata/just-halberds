@@ -99,23 +99,16 @@ function parse(data) {
     return table;
   }
 
-  // The list of names ensures that generated names are unique
-  h.names;
-
-  // Return an item for table that isn't a known name.
-  function unique(table) {
-    let t = pick(table);
-    while (h.names[t]) {
-      t = pick(table);
-    }
-    h.names[t] = 1;
-    return t;
-  }
-
   // Save the results of the last call
   h.results = {};
 
-  // Pick an item for the table
+  // The list of names ensures that generated names are unique
+  h.names;
+
+  // Do replacements when you return
+  h.replacements = [];
+
+  // Recursively pick items from tables and process the string
   function pick(table, level) {
     if (level == undefined) {
       level = 1;
@@ -139,10 +132,14 @@ function parse(data) {
     }
     // otherwise, pick an appropriate item
     let text = weighted_pick(table);
-    // look for search and replace suffixes like /a/b/
+    // look for search and replace suffixes like /a/b/ (this only
+    // works for levels > 1)
     const m = text.match(/\/([^\/]+)\/([^\/]*)\/$/);
-    // Kürze den Text um das Suchen und Ersetzen Muster, falls nötig
-    if (m) text = text.substring(0, text.length - m[0].length);
+    // Short by the search & replace pattern, if any.
+    if (m) {
+      text = text.substring(0, text.length - m[0].length);
+      h.replacements.push(m);
+    }
     while (true) {
       let e = false;
       // [2d6] rolls dice
@@ -181,17 +178,32 @@ function parse(data) {
       // "[[a]@b][c]" will call table 'c' before setting 'b'.
       text = text.replace(/\[([^@\[\]]+)\]/,
                           (m, a) => { e = true; return pick(a, level + 1); });
-      if (e) continue;
+      if (e) {
+        h.replacements.forEach((m) => text = text.replace(new RegExp(m[1], m[3]), m[2]));
+        continue;
+      }
       // [@b] use variable b (after all the [a] have been replaced)
       text = text.replaceAll(/\[(@[^\[\]]+)\]/g,
                              (m, b) => { e = true; return pick(b, level + 1); });
       if (e) continue;
       break;
     }
-    // run search and replace, if any
-    if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
+
+    // Retry duplicates
+    if (table.endsWith(" name")) {
+      let key = `${table}: ${text}`;
+      if (h.names[key]) {
+        // console.log(`Seen ${key} before`);
+        text = pick(table, level + 1);
+      } else {
+        // console.log(`Seen ${key} for the first time`);
+        h.names[key] = true;
+      }
+    }
+
     // Save
     h.results[table] = text;
+
     if (level === 1) {
       // emphasis
       text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
@@ -201,6 +213,7 @@ function parse(data) {
     return text;
   }
 
+// Pick an item from the table,
   function weighted_pick(table) {
     const t = h.tables[table];
     if (!t) { console.log(`There is no table ${table}`); return "…"; }
@@ -210,7 +223,7 @@ function parse(data) {
     let i = 0;
     for (const z of t) {
       i += z[1];
-      if (i >= n) { return z[0]; }
+      if (i >= n) return z[0];
     }
     console.log(`The table ${table} has no result for ${n}`);
     return "…";
@@ -337,10 +350,84 @@ own generators! Please do.
 # '[@++b]' gets replaced by the key with the highest value in map b
 
 ;start
-1,[character]
+1,[initial setup]¶[map]
+
+;initial setup
+1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name]@side a][@side a] or [[name]@side b][@side b]? Or will you take to the woods and find [[name]@side c][@side c]?
+1,There is unrest. [[name]@side a][@side a] rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name]@side b][@side b] returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name]@side c][@side c], always ready to exploit a weakness.
+
+# The map always has the same structure, for the moment.
+# - Two towns by the lake
+# - The first town connects to a main valley with three villages.
+# - The second town connects to a main valley with two villages.
+# - All but the last village of the main valley connect to a secondary valley.
+# - These secondary valleys have exactly one village.
+# - In each of these remote villages of secondary valleys stands a wizard tower.
+# - At the end of every valley there is a ruin.
+# - Ruins are inhabited by dragons, giants, or the undead.
+# - The settlements are separated by wild forests, steep ascents or narrow gorges.
+
+;map
+1,[[town name]@next town name][lake]¶[town]¶[town]
+
+;town name
+1,[town qualifier][town noun]
+
+;town qualifier
+1,Ger
+1,Yver
+1,Zur
+1,Lor
+1,Bad
+1,Ror
+
+;town noun
+1,den/dd/d/
+1,san
+1,shen
+1,sel
+1,wyl
+1,ttikon/rtt/tt/
+1,gau
+
+;lake
+1,At the foot of the terrible mountains lies the [lake name].
+
+;lake name
+1,[lake qualifier] Lake
+
+;lake qualifier
+1,Iron[lake noun]
+1,Ice[lake noun]
+1,Blue[lake noun]
+1,Death
+3,[@next town name]
+
+;lake noun
+1,feet
+1,foot
+1,claw
+1,bird
+1,bear
+
+;town
+1,[@next town name] is a town by the [@lake name]. [town description][[town name]@next town name]
+
+;town description
+1,The harbour side of [@next town name] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
+1,[@next town name] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
+1,From the shores of [@lake name] the vinyards rise up and around [@next town name], built on a sunny hill overlooking the lake.
+
+;river name
+1,White River
+1,Black River
+1,Cold River
+1,Run River
+1,Pure River
+1,Green River
 
 ;character
-1,[roll-attributes][[2d5] careers][name][nick name] (age [@age])&lt;p&gt;Attributes: [attributes]&lt;p&gt;Careers: [@careers]&lt;p&gt;Tables: [@skill tables]&lt;p&gt;Skills: [@skills]
+1,[roll-attributes][[2d5] careers][name][nick name] ([[@gender] sign]) (age [@age])¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
 # ([@career history]) adds the ages and careers picked
 
 ;roll-attributes
@@ -397,7 +484,7 @@ own generators! Please do.
 1,[name prefix][male suffix][a|e]
 
 ;long male name
-1,[name prefix][male suffix]/[ie]a/oa/
+1,[name prefix][male suffix]
 
 ;name prefix
 1,Adal
@@ -408,6 +495,7 @@ own generators! Please do.
 1,Bote
 1,Brun
 1,Charde
+1,Charle
 1,Chari
 1,Childe
 1,Chilpe
@@ -474,7 +562,7 @@ own generators! Please do.
 1,trud
 
 ;male suffix
-1,ald
+1,ald/[ie]a/oa/
 1,bart
 1,boge
 1,bung

@@ -344,7 +344,7 @@ own generators! Please do.
 # '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
 # '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
 # '[a++@b]' increments the key 'a' by one for the map 'b'
-# '[@b]' uses the value of variable 'b'
+# '[@b]' uses the value of variable 'b' (don't use [a@b], [[a]@b] and [@b] on the same line: the order can be confusing!)
 # If b is a list, return a comma-separated list.
 # If b is a map, return a sorted, comma-separated list of key-value pairs
 # '[@++b]' gets replaced by the key with the highest value in map b
@@ -368,7 +368,7 @@ own generators! Please do.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[[town name]@next town name][lake]¶[town]¶[town]
+1,[[town name]@next town name][lake]¶[town]¶[[town name]@next town name][town]
 
 ;town name
 1,[town qualifier][town noun]
@@ -411,12 +411,12 @@ own generators! Please do.
 1,bear
 
 ;town
-1,[@next town name] is a town by the [@lake name]. [town description][[town name]@next town name]
+1,[@next town name] is a town by the [@lake name]. [town description]
 
 ;town description
 1,The harbour side of [@next town name] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
 1,[@next town name] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
-1,From the shores of [@lake name] the vinyards rise up and around [@next town name], built on a sunny hill overlooking the lake.
+1,From the shores of [@lake name] the vinyards rise up and around [@next town name]. It is built at the foot of a sunny hill overlooking the lake.
 
 ;river name
 1,White River

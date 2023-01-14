@@ -176,12 +176,14 @@ function parse(data) {
       text = text.replaceAll(/\[([^\[\]]+)\?([^\[\]]*):([^\[\]]*)\]/g,
                              (m, x, a, b) => { e = true; return eval(x) ? a : b; });
       if (e) continue;
-      // [a] pick an entry from table a
-      text = text.replaceAll(/\[([^@\[\]]+)\]/g,
-                             (m, a) => { e = true; return pick(a, level + 1); });
+      // [a] pick an entry from table 'a' – but do this just once and
+      // then restart the process, otherwise something like
+      // "[[a]@b][c]" will call table 'c' before setting 'b'.
+      text = text.replace(/\[([^@\[\]]+)\]/,
+                          (m, a) => { e = true; return pick(a, level + 1); });
       if (e) continue;
       // [@b] use variable b (after all the [a] have been replaced)
-      text = text.replaceAll(/\[([^\[\]]+)\]/g,
+      text = text.replaceAll(/\[(@[^\[\]]+)\]/g,
                              (m, b) => { e = true; return pick(b, level + 1); });
       if (e) continue;
       break;

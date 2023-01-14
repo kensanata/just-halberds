@@ -80,17 +80,13 @@ function parse(data) {
   // Save the data so that h can be reused in multiple calls to generate().
   h.tables = transform(data);
 
-  /**
-   * Generate text. This function is accessible from the outside.
-   */
+  // Generate text. This function is accessible from the outside.
   h.generate = function(start) {
     h.names = {}; // reset
     return pick(start);
   };
 
-  /**
-   * Read data and parse comments, table names and weighted rows.
-   */
+  // Read data and parse comments, table names and weighted rows.
   function transform(data) {
     let table = {};
     let rows;
@@ -106,9 +102,7 @@ function parse(data) {
   // The list of names ensures that generated names are unique
   h.names;
 
-  /**
-   * Return an item for table that isn't a known name.
-   */
+  // Return an item for table that isn't a known name.
   function unique(table) {
     let t = pick(table);
     while (h.names[t]) {
@@ -121,9 +115,7 @@ function parse(data) {
   // Save the results of the last call
   h.results = {};
 
-  /**
-   * Pick an item for the table
-   */
+  // Pick an item for the table
   function pick(table, level) {
     if (level == undefined) {
       level = 1;
@@ -230,16 +222,12 @@ function parse(data) {
     return a;
   }
 
-  /**
-   * Return a random element from arr.
-   */
+  // Return a random element from arr.
   function one(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  /**
-   * Roll dice.
-   */
+  // Roll dice.
   function roll(num, sides = 6, plus = 0) {
     let total = 0;
     for (var i = 0; i < num; i++) {

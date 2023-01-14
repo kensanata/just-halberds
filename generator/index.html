@@ -198,7 +198,12 @@ function parse(data) {
     if (m) text = text.replace(new RegExp(m[1], m[3]), m[2]);
     // Save
     h.results[table] = text;
-    if (level === 1) console.log(h.results);
+    if (level === 1) {
+      console.log(h.results);
+      // emphasis
+      text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, s) => { return `<strong>${s}</strong>` });
+      text = text.replaceAll(/\*(.*?)\*/g, (m, s) => { return `<emph>${s}</emph>` });
+    }
     return text;
   }
 

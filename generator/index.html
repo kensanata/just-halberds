@@ -193,10 +193,10 @@ function parse(data) {
     // Save
     h.results[table] = text;
     if (level === 1) {
-      console.log(h.results);
       // emphasis
-      text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, s) => { return `<strong>${s}</strong>` });
-      text = text.replaceAll(/\*(.*?)\*/g, (m, s) => { return `<emph>${s}</emph>` });
+      text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
+      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+      text = text.replaceAll("¶", "<p>");
     }
     return text;
   }
@@ -253,6 +253,9 @@ function linked(data) {
                            if (m.match(/\?.*:/)) return m;
                            return "[<a href=\"#" + t.replaceAll(" ", "-").toLowerCase() + "\">"
                              + t + "</a>]" });
+  data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
+  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+  data = data.replaceAll("¶", "<p>");
   return data;
 }
 
@@ -299,8 +302,7 @@ function generate(f) {
   <hr>
 </div>
 
-<div id="target">
-This is a stand-alone generator. You can save the HTML file locally and
+<div id="target">This is a stand-alone generator. You can save the HTML file locally and
 it will continue to work. Feel free to use examine, change and distribute
 it elsewhere. No strings attached. It is dedicated to the public domain.
 
@@ -312,9 +314,13 @@ own generators! Please do.
 # Data
 
 # As this data needs to be valid HTML, you need to replace < & > in
-the tables with &lt; &amp; &gt; (less than, ampersand, greater than).
+# the tables with &lt; &amp; &gt; (less than, ampersand, greater
+# than).
 
 # '#' begins a comment
+# '*a*' renders 'a' in italics (emphasis)
+# '**a**' renders 'a' in bold (strong emphasis)
+# ¶ results in a paragraph break (a shorthand for &lt;p&gt;)
 # ';' begins a table, followed by a name, no space
 # A number and a comma begin a weighted entry for the current table
 # /re/to/ at the end replaces regular expression "re" with "to"

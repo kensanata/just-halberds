@@ -50,6 +50,16 @@ body {
 #links li {
     display: inline;
 }
+table {
+    border-collapse: collapse;
+}
+td {
+    padding: 0.5ex;
+    border: 1px solid grey;
+}
+td:first-child {
+    text-align: center;
+}
 a {
     color: chartreuse;
     text-decoration: none;
@@ -237,7 +247,7 @@ function parse(data) {
   return h;
 }
 
-function render(data) {
+function linked(data) {
   data = data.replaceAll(/^;(.*)/mg,
                          (m, t) => {
                            return ";<strong id=\"" + t.replaceAll(" ", "-").toLowerCase() + "\">"
@@ -245,34 +255,47 @@ function render(data) {
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
                          (m, t) => {
                            if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
+                           if (m.match(/\?.*:/)) return m;
                            return "[<a href=\"#" + t.replaceAll(" ", "-").toLowerCase() + "\">"
                              + t + "</a>]" });
   return data;
 }
 
-function generate() {
-  const data = document.getElementById('data').textContent;
-  document.getElementById('target').innerHTML = parse(data).generate("start");
+function paper(data) {
+  let html = "";
+  let n;
+  data.split("\n").forEach(row => {
+    row.replace(/#.*/, ""); // Comments
+    let m;
+    if (row.startsWith(";")) {
+      if (html) html += "</table>\n";
+      html += "<table>\n";
+      html += `<tr><th>Roll</th><th>${row.substring(1)}</th></tr>\n`;
+      n = 1;
+    } else if ((m = row.match(/^(\d+),(.*)/))) {
+      let from = n;
+      let to = n + (Number(m[1]) - 1);
+      n = to + 1;
+      html += `<tr><td>${from == to ? from : from + "-" + to}</td><td>${m[2]}</td></tr>\n`;
+    }
+  });
+  return html;
 }
 
-function show() {
+function generate(f) {
   const data = document.getElementById('data').textContent;
-  document.getElementById('target').innerHTML = data;
+  document.getElementById('target').innerHTML = f(data);
 }
 
-function html() {
-  const data = document.getElementById('data').textContent;
-  document.getElementById('target').innerHTML = render(data);
-}
 </script>
 </head>
 <body>
 
 <h1 id="noprintheader">Generator</h1>
 <div id="noprintheader">
-  <button type="button" onclick="generate()">Generate</button>
-  <button type="button" onclick="show()">Show tables</button>
-  <button type="button" onclick="html()">Render tables</button>
+  <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
+  <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
+  <button type="button" onclick="generate((data) => paper(data))">Printable tables</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>

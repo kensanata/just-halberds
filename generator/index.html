@@ -146,7 +146,7 @@ function parse(data) {
     while (true) {
       let e = false;
       // [2d6] rolls dice
-      text = text.replaceAll(/\[(\d+)d(\d+)(?:\+(\d+))?\]/g,
+      text = text.replaceAll(/\[(\d+)d(\d+)(?:([+-]\d+))?\]/g,
                              (m, n, d, p) => { e = true; return roll(Number(n), Number(d), p ? Number(p) : 0); });
       if (e) continue;
       // [a++@b] increments value of key a in map b

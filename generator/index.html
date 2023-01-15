@@ -247,8 +247,9 @@ function parse(data) {
     return text;
   }
 
-// Pick an item from the table,
+  // Pick an item from the table,
   function weighted_pick(table) {
+
     const t = h.tables[table];
     if (!t) { console.log(`There is no table ${table}`); return "…"; }
     const total = t.reduce((n, x) => n + x[1], 0);

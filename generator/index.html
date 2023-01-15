@@ -445,10 +445,10 @@ own generators! Please do.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -530,18 +530,17 @@ own generators! Please do.
 ;town
 1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]¶[trails]
 
-# Each description must mention the [river name] for it to be established!
 ;town description
-1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
-1,[@[@position]] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
-1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [river name] opens into the lake a bit further away. The swampy delta is called [swamp name].
+1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [@river [@position]] wash away their sins into the [@lake name].
+1,[@[@position]] guards the entrance to the narrow [@river [@position]] valley. The steep rocks cast long shadows.
+1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [@river [@position]] opens into the lake a bit further away. The swampy delta is called [swamp name].
 
 ;village
-1,&lt;h2&gt;[@[@position]]&lt;/h2&gt;¶This village lies along the [@river name]. [village description]¶[young character]¶[trails]
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This village lies along the [@river [@position]]. [village description]¶[young character]¶[trails]
 
 ;village description
-1,On both sides of [@river name] stand a few houses. A bridge connects the two sides.
-1,Perched high above the [@river name], safe from any flooding, stand a few houses.
+1,On both sides of [@river [@position]] stand a few houses. A bridge connects the two sides.
+1,Perched high above the [@river [@position]], safe from any flooding, stand a few houses.
 1,The wooden houses look decrepit and old.
 1,The stone houses were built back when trade was strong along the imperial route and they still stand proud.
 1,The wooden houses were recently rebuilt. You can still see remains of the old village, smashed by an earth slide.
@@ -556,28 +555,28 @@ own generators! Please do.
 1,You can hire fisherfolk to row you across the lake to &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
 
 ;destinations for C
-1,You can go down to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by the [@lake name] or you can ascend further upriver to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
+1,You can go down to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by the [@lake name] or you can ascend further upriver to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There is also a small trail along the [@river H] leading up to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
 
 ;destinations for D
-1,You can go down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make that last climb to the source of the [@river name] at &lt;a href="#E"&gt;[@E]&lt;/a&gt;.
+1,You can go down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make that last climb to the source of the [@river D] at &lt;a href="#E"&gt;[@E]&lt;/a&gt;. A small trail along the [@river I] leads up to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
 
 ;destinations for E
-1,You can follow the [@river name] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
+1,You can follow the [@river E] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
 
 ;destinations for F
-1,You can go down to &lt;a href="#B"&gt;[@B]&lt;/a&gt; by the [@lake name] or you can go to the [@river name] source at &lt;a href="#G"&gt;[@G]&lt;/a&gt;.
+1,You can go down to &lt;a href="#B"&gt;[@B]&lt;/a&gt; by the [@lake name] or you can go to the [@river F] source at &lt;a href="#G"&gt;[@G]&lt;/a&gt;. There is also a small trail along the [@river J] leading up to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;destinations for G
-1,You can follow the [@river name] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
+1,You can follow the [@river G] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
 
 ;destinations for H
-1,
+1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
 
 ;destinations for I
-1,
+1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
 
 ;destinations for J
-1,
+1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
 
 ;swamp name
 1,[swamp qualifier][swamp noun]

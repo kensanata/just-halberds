@@ -712,6 +712,8 @@ rulers of Hintertal instead.
 
 You can't prepare for everything. At some point it has to start.
 
+<div style="break-after: always;"></div>
+
 ## Map
 
 I find a map very atmospheric, but it doesn't have to be.

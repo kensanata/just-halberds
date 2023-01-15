@@ -443,15 +443,15 @@ own generators! Please do.
 # - There is a pass between I and J (K). It is guarded by a giant or a dragon.
 # - There is a swamp between D and E (L). It is guarded by nightlings or a predator.
 # - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
-# - At the end of every valley there is a ruin.
+# - At the end of every valley there is a ruin. (E→P G→Q)
 # - Ruins are inhabited by dragons, giants, or the undead.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -508,6 +508,25 @@ own generators! Please do.
 1,needle
 1,fast
 1,aire
+
+;ruin name
+1,[ruin qualifier] [ruin noun]
+
+;ruin qualifier
+1,[name]'s
+1,Death's
+1,Life's
+1,Light's
+1,Gold
+1,Bone
+
+;ruin noun
+1,End
+1,Demise
+1,Ruin
+1,Desolation
+1,Grave
+1,Maw
 
 ;lake
 1,At the foot of the terrible mountains lies the [lake name].
@@ -621,13 +640,13 @@ own generators! Please do.
 1,You can follow the [@river D] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can venture into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#E"&gt;[@E]&lt;/a&gt;. You can also make that last climb up to the source of the [@river I] up to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
 
 ;destinations for E
-1,You can follow the [@river E] into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
+1,You can follow the [@river E] into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There's also rumours of a long stair leading to &lt;a href="#P"&gt;[@P]&lt;/a&gt;.
 
 ;destinations for F
 1,You can go down to &lt;a href="#B"&gt;[@B]&lt;/a&gt; by the [@lake name] or you can go to the [@river F] source at &lt;a href="#G"&gt;[@G]&lt;/a&gt;. There is also a small trail along the [@river J] leading up to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;destinations for G
-1,You can follow the [@river G] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
+1,You can follow the [@river G] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. There is also a small trail through a narrow gorge leading up to &lt;a href="#Q"&gt;[@Q]&lt;/a&gt;.
 
 ;destinations for H
 1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#M"&gt;[@M]&lt;/a&gt;.
@@ -646,6 +665,12 @@ own generators! Please do.
 
 ;destinations for O
 1,There's a steep descent down to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+
+;destinations for P
+1,There's a long stair down to &lt;a href="#E"&gt;[@E]&lt;/a&gt;.
+
+;destinations for Q
+1,There's a trail through the narrow gorge back down to &lt;a href="#G"&gt;[@G]&lt;/a&gt;.
 
 ;pass destinations
 1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
@@ -685,6 +710,14 @@ own generators! Please do.
 
 ;swamp guardian
 1,An ancient ruin stands in the middle of this swamp.¶[monster]
+
+;ruin
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[ruin description] [monster]¶[destinations for [@position]]
+
+;ruin description
+1,An ancient ruin stands here, shrouded in [shadow|fog].
+1,An ancient ruin stands here, the old imperial road washed away.
+1,An ancient ruin stands here, the place of some last stand or other.
 
 ;giant
 1,**[giant name]**¶[giant stats]
@@ -741,7 +774,7 @@ own generators! Please do.
 
 ;monster
 1,The putrid smell of dead things warns you of the [predator name]s.¶**[@predator name]s**¶[predator stats] Number-[2d6]
-1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[nightling name]s**¶[nightling stats] Number-[2d6]
+1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
 1,The air is cold and shadows start creeping. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
 
 ;undead name

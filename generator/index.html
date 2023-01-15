@@ -501,28 +501,73 @@ own generators! Please do.
 1,bird
 1,bear
 
+;river name
+1,[river qualifier][river noun]
+
+;river qualifier
+1,Ice
+1,Snow
+1,Roaring
+1,Stone
+1,Devil
+1,Aar
+1,White
+1,Black
+1,Cold
+1,Run
+1,Pure
+1,Green
+1,[short female name]
+1,[short male name]
+
+;river noun
+1,creek
+1,runnel
+1,river
+1,stream
+
 ;town
-1,[@next town name] is a town by the [@lake name]. [town description]
+1,&lt;h2&gt;[@next town name]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]
 
 ;town description
 1,The harbour side of [@next town name] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
 1,[@next town name] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
 1,From the shores of [@lake name] the vinyards rise up and around [@next town name]. It is built at the foot of a sunny hill overlooking the lake.
 
-;river name
-1,White River
-1,Black River
-1,Cold River
-1,Run River
-1,Pure River
-1,Green River
+;village
+1,&lt;h2&gt;[@next village name]&lt;/h2&gt;¶This village lies along the [@river name]. [village description]¶[young character]
+
+;village description
+1,On both sides of [@river name] stand a few houses. A bridge connects the two sides.
+1,Perched high above the [@river name], safe from any flooding, stand a few houses.
+1,The wooden houses look decrepit and old.
+1,The stone houses were built back when trade was strong along the imperial route and they still stand proud.
+1,The wooden houses were recently rebuilt. You can still see remains of the old village, smashed by an earth slide.
+
+;young character
+1,[roll-attributes][[1d3] careers]**[character name]** [short character stats]
+
+;powerful character
+1,[roll-attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a member of the [@secret society [1d3]].
 
 ;character
-1,[roll-attributes][[2d5] careers][name][nick name] ([[@gender] sign]) (age [@age])¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
+1,[roll-attributes][[2d5] careers]**[character name]** [character stats]
+
+;character name
+1,[name][nick name] ([[@gender] sign])
+
+;short character stats
+1,(age [@age])¶[attributes] [@skills]
+
+;character stats
+1,(age [@age])[roll-attributes]¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
 # ([@career history]) adds the ages and careers picked
 
 ;roll-attributes
-1,[[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
+1,[reset][[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
+
+;reset
+1,[~career history][~careers][~skill tables][~skills]
 
 ;attributes
 1,Strength-[@str], Dexterity-[@dex], Endurance-[@end], Intelligence-[@int], Education-[@edu], Status-[@sta]
@@ -533,6 +578,12 @@ own generators! Please do.
 ;gender
 1,female
 1,male
+
+;female sign
+1,♀
+
+;male sign
+1,♂
 
 ;female name
 1,[short female name]
@@ -726,6 +777,8 @@ own generators! Please do.
 1,[8 careers][4 skills]
 ;10 careers
 1,[9 careers][4 skills]
+;11 careers
+1,[10 careers][4 skills]
 
 ;4 skills
 1,[switch career][be a knight][[@age]: [@career]@@career history][[skill]++@skills][[skill]++@skills][[skill]++@skills][[skill]++@skills][[@career]++@careers][[@skill table]++@skill tables][[4d1+[@age]]@age]
@@ -1019,6 +1072,10 @@ own generators! Please do.
 
 ;Épée title
 1,Sword Fighter
+
+# Local Variables:
+# sgml-basic-offset: 0
+# End:
 
 </pre>
 </body>

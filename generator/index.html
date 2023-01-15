@@ -438,7 +438,8 @@ own generators! Please do.
 # - The first town connects to a main valley with three villages. (C D E)
 # - The second town connects to a main valley with two villages. (F G)
 # - All but the last village of the main valley connect to a secondary valley.
-# - These secondary valleys have exactly one village. (H I J)
+# - These secondary valleys have exactly one village. (C→H D→I F→J)
+# - There is a pass between I and J.
 # - In each of these remote villages of secondary valleys stands a wizard tower.
 # - At the end of every valley there is a ruin.
 # - Ruins are inhabited by dragons, giants, or the undead.
@@ -448,7 +449,7 @@ own generators! Please do.
 1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@mountain pass]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -518,14 +519,33 @@ own generators! Please do.
 1,Run
 1,Pure
 1,Green
-1,[short female name]
-1,[short male name]
+1,[name]
 
 ;river noun
 1,creek
 1,runnel
 1,river
 1,stream
+
+;mountain pass name
+1,[mountain qualifier] [mountain pass noun]
+
+;mountain qualifier
+1,Dire
+1,Dread
+1,Devil's
+1,Ice
+1,Glacier
+1,[name]
+
+;mountain pass noun
+1,Pass
+1,Traverse
+1,Heights
+1,Trail
+1,Passage
+1,Road
+1,Climb
 
 ;town
 1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]¶[trails]
@@ -573,10 +593,10 @@ own generators! Please do.
 1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
 
 ;destinations for I
-1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
+1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. If you dare the [@mountain pass], you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;destinations for J
-1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
+1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. If you dare the [@mountain pass], you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
 
 ;swamp name
 1,[swamp qualifier][swamp noun]

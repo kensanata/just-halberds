@@ -198,7 +198,7 @@ function parse(data) {
       } else if (m = s.match(/^\[@([^\[\]]+)\]/)) {
         // [@b] use variable b
         let v = h.results[m[1]];
-        if (v === undefined) { console.log("No stored value for " + table); return "…"; }
+        if (v === undefined) { console.log(`No stored value for ${m[1]} in ${table}`); return "…"; }
         else if (Array.isArray(v)) { v = v.join(", "); }
         else if (v === Object(v)) { v = Object.keys(v).sort().map(k => k + "-" + v[k]).join(", "); }
         text = text.substring(0, i)
@@ -398,7 +398,7 @@ own generators! Please do.
 1,¶[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
 
 ;secret society context
-1,Watch out for three secret societies: [@secret society 1], [@secret society 2] and [@secret society 3].
+1,Watch out for three secret societies: the [@secret society 1], the [@secret society 2] and the [@secret society 3].
 1,There are three secret societies fighting a bitter underground war of murder: the [@secret society 1], the [@secret society 2] and the [@secret society 3].
 
 ;secret society name
@@ -442,16 +442,16 @@ own generators! Please do.
 # - These secondary valleys have exactly one village. (C→H D→I F→J)
 # - There is a pass between I and J (K). It is guarded by a giant or a dragon.
 # - There is a swamp between D and E (L). It is guarded by nightlings or a predator.
-# - In each of these remote villages of secondary valleys stands a wizard tower.
+# - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
 # - At the end of every valley there is a ruin.
 # - Ruins are inhabited by dragons, giants, or the undead.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -478,12 +478,36 @@ own generators! Please do.
 1,gau
 1,haus
 1,ren
-1,san
+1,sau
+1,sen
 1,schen
 1,sel
+1,torf/tt/t/
 1,ttikon/[gl]?[dtrg]tt/tt/
 1,wyl
 1,zern/[gt]z/z/
+
+;tower name
+1,[tower qualifier][tower noun]
+
+;tower qualifier
+1,Rock
+1,Eagle
+1,Lions
+1,Wyrm
+1,Hexen
+1,Witch
+1,Merlins
+1,[name]
+
+;tower noun
+1,tower
+1,turm
+1,burg
+1,spire
+1,needle
+1,fast
+1,aire
 
 ;lake
 1,At the foot of the terrible mountains lies the [lake name].
@@ -567,6 +591,18 @@ own generators! Please do.
 1,The stone houses were built back when trade was strong along the imperial route and they still stand proud.
 1,The wooden houses were recently rebuilt. You can still see remains of the old village, smashed by an earth slide.
 
+;tower
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This tower was built upon an exposed cliff far above the valley floor. [tower description]¶[mage character]¶[trails]
+
+;tower description
+1,The building is black like obsidian, like a hole in reality.
+1,The building is a squat structure made of huge stone blocks, as if piled atop each other by a bumbling giant.
+1,The building is old, an empirial border defense tower, including the signal fire platform and the eye [stalk|horns].
+1,The building is ancient, one of the old wight land watch towers, blasted and rebuilt many times over.
+1,The building is wrapped in smoke, as if the ground it was built on burning, or heated by the fires of hell.
+1,The building is always hidden by fog, never quite here in this world.
+1,This is an old devil fortress. Long horns rise into the air and the gate looks like a maw.
+
 ;trails
 1,[destinations for [@position]]
 
@@ -594,13 +630,22 @@ own generators! Please do.
 1,You can follow the [@river G] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
 
 ;destinations for H
-1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
+1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#M"&gt;[@M]&lt;/a&gt;.
 
 ;destinations for I
-1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#N"&gt;[@N]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;destinations for J
-1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#O"&gt;[@O]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+
+;destinations for M
+1,There's a steep descent down to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
+
+;destinations for N
+1,There's a steep descent down to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+
+;destinations for O
+1,There's a steep descent down to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;pass destinations
 1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
@@ -697,7 +742,7 @@ own generators! Please do.
 ;monster
 1,The putrid smell of dead things warns you of the [predator name]s.¶**[@predator name]s**¶[predator stats] Number-[2d6]
 1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[nightling name]s**¶[nightling stats] Number-[2d6]
-1,The air is cold and shadows start creeping. If you know a thing or two about necromancy: these are the warning signs.¶**[@undead name]**¶[undead stats] Number-[2d6]
+1,The air is cold and shadows start creeping. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
 
 ;undead name
 1,[undead qualifier][undead relative]
@@ -769,13 +814,16 @@ own generators! Please do.
 1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
-1,[roll-attributes][[1d3] careers]**[character name]** [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+1,[roll attributes][[1d3] careers]**[character name]** [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
 
 ;powerful character
-1,[roll-attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+1,[roll attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+
+;mage character
+1,[roll mage attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
 
 ;character
-1,[roll-attributes][[2d5] careers]**[character name]** [character stats]
+1,[roll attributes][[2d5] careers]**[character name]** [character stats]
 
 ;character name
 1,[name][epithet] ([[@gender] sign])
@@ -784,11 +832,14 @@ own generators! Please do.
 1,(age [@age])¶[attributes] [@skills]
 
 ;character stats
-1,(age [@age])[roll-attributes]¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
+1,(age [@age])[roll attributes]¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
 # ([@career history]) adds the ages and careers picked
 
-;roll-attributes
+;roll attributes
 1,[reset][[2d6]@str][[2d6]@dex][[2d6]@end][[2d6]@int][[2d6]@edu][[2d6]@sta][[preferrence]@career][[weapon]@preferred weapon][[0d0+16]@age]
+
+;roll mage attributes
+1,[reset][[2d6]@str][[2d6]@dex][[2d6]@end][[1d6+7]@int][[1d6+7]@edu][[2d6]@sta][Mage@career][[weapon]@preferred weapon][[0d0+16]@age]
 
 ;reset
 1,[~career history][~careers][~skill tables][~skills]
@@ -1211,10 +1262,14 @@ own generators! Please do.
 1,Pyromancer
 
 ;First Aid title
-1,Field Medic
+1,Plague Doctor
+1,Bone Setter
+1,Blood Letter
+1,Barber
 
 ;Fusion title
 1,Vivomancer
+1,Fungomancer
 
 ;Halberd title
 1,Halberdier

@@ -440,18 +440,19 @@ own generators! Please do.
 # - The second town connects to a main valley with two villages. (F G)
 # - All but the last village of the main valley connect to a secondary valley.
 # - These secondary valleys have exactly one village. (C→H D→I F→J)
+# - Total settlements: 2 towns and 8 villages (a total of 10).
 # - There is a pass between I and J (K). It is guarded by a giant or a dragon.
-# - There is a swamp between D and E (L). It is guarded by nightlings or a predator.
+# - There is a swamp between D and E (L). It is guarded by monsters (nightlings, predators, undead).
 # - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
-# - At the end of every valley there is a ruin. (E→P G→Q)
-# - Ruins are inhabited by dragons, giants, or the undead.
-# - The settlements are separated by wild forests, steep ascents or narrow gorges.
+# - At the end of every valley there is a ruin. (E→P G→Q) They are guarded by monsters.
+# - There is an island (A→R), a remote valley (B→S), and a lonely mountain nearby (A and B → T), each also guarded.
+# - Total lairs: 3 wizards, 1 giant or dragon, 3 nightling, predator or undead (a total of 7).
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[R@position][island]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[island name]@R][[name]@fisher]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -514,6 +515,7 @@ own generators! Please do.
 
 ;ruin qualifier
 1,[name]'s
+1,[power name]'s
 1,Death's
 1,Life's
 1,Light's
@@ -527,9 +529,52 @@ own generators! Please do.
 1,Desolation
 1,Grave
 1,Maw
+1,Glory
+
+;island name
+1,[island qualifier] [island noun]
+
+;island qualifier
+1,[name]'s
+1,[power name]'s
+1,[Death|Light]'s
+1,[Emperor's|Empress']
+
+;island noun
+1,Sanctuary
+1,Temple
+1,Altar
+1,Mausoleum
+1,Grave
+1,Stone
+
+;power name
+1,Pazuzu
+1,Orcus
+1,Nergal
+1,Isthar
+1,Marduk
+1,Mithra
+1,Set
+1,Odin
+1,Hel
+1,Freya
+1,Thor
+1,Tyr
+1,Sutr
+1,Hecate
+1,Helios
+1,Hades
+1,Ra
+1,Bast
+1,Thoth
+1,Horus
+1,Garaskis
 
 ;lake
 1,At the foot of the terrible mountains lies the [lake name].
+1,At the foot of nameless mountains lies the [lake name].
+1,Somewhere in the mountains there lies the [lake name].
 
 ;lake name
 1,[lake qualifier] Lake
@@ -547,6 +592,7 @@ own generators! Please do.
 1,claw
 1,bird
 1,bear
+1,mere
 
 ;river name
 1,[river qualifier][river noun]
@@ -626,8 +672,8 @@ own generators! Please do.
 1,[destinations for [@position]]
 
 ;destinations for A
-1,You can hire fisherfolk to row you across the lake to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
-1,You can hire crab men to carry you in a sedan chair through the treacherous [swamp name] along the lake shore to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
+1,You can hire fisherfolk to row you across the lake to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. [@fisher] also takes people out to the island of the &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
+1,You can hire crab men to carry you in a sedan chair through the treacherous [swamp name] along the lake shore to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. [@fisher] also takes people out to the island of the &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
 
 ;destinations for B
 1,You can hire fisherfolk to row you across the lake to &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
@@ -671,6 +717,9 @@ own generators! Please do.
 
 ;destinations for Q
 1,There's a trail through the narrow gorge back down to &lt;a href="#G"&gt;[@G]&lt;/a&gt;.
+
+;destinations for R
+1,If you have arranged for a pickup, you can get back to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by boat. Otherwise, you'll have to wait for a day or two. [@fisher] usually fishes around here, so they'll be able to pick you up eventually.
 
 ;pass destinations
 1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
@@ -718,6 +767,20 @@ own generators! Please do.
 1,An ancient ruin stands here, shrouded in [shadow|fog].
 1,An ancient ruin stands here, the old imperial road washed away.
 1,An ancient ruin stands here, the place of some last stand or other.
+
+;island
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[island description] [island monster]¶[destinations for [@position]]
+
+;island description
+1,This island is overgrown with thorny bushes, making landing very difficult. There is no indication of a holy site on this island.
+1,The island is a bare rock, many stories tall. Up at the very top there seems to be some sort of building with a red roof, and some trees. A [chain|rope] runs along the rock until it reaches the water.
+1,The island is overgrown with tall trees. There is no indication of inhabitation.
+
+;island monster
+1,A giant has lives in a big cave at the center of this island.¶[giant]
+1,A dragon has built a nest, here.¶[dragon]
+1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
+1,The air is cold and and the island is shrouded in fog. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
 
 ;giant
 1,**[giant name]**¶[giant stats]
@@ -827,11 +890,12 @@ own generators! Please do.
 1,Moon
 1,Child
 1,Blade
+1,Crab
 
 ;nightling relative
 1,taker
-1,burglar
-1,-eater
+1,burglar/bb/b-b/
+1,eater/ee/e-e/
 1,ling
 
 ;nightling activity
@@ -1321,18 +1385,23 @@ own generators! Please do.
 
 ;Literacy title
 1,Sage
+1,Wise
 
 ;Necromancy title
 1,Necromancer
 
 ;Oratory title
 1,Orator
+1,Speaker
 
 ;People title
 1,Manipulator
+1,Schemer
 
-;Pick title
+;Pickpocket title
 1,Thief
+1,Pickpocket
+1,Cutpurse
 
 ;Planeshift title
 1,Planeshifter

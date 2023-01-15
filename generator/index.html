@@ -445,7 +445,7 @@ own generators! Please do.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[map names][[@A]@next town name][lake]¶[town]¶[[river name]@river][[@C]@next village name][village]¶[[@D]@next village name][village]¶[[@E]@next village name][village]¶[[@B]@next town name][town]
+1,[map names][A@position][lake]¶[town]¶[[river name]@river][C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]
 
 ;map names
 1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J]
@@ -493,7 +493,7 @@ own generators! Please do.
 1,Ice[lake noun]
 1,Blue[lake noun]
 1,Death
-3,[@next town name]
+3,[@[@position]]
 
 ;lake noun
 1,feet
@@ -528,15 +528,15 @@ own generators! Please do.
 1,stream
 
 ;town
-1,&lt;h2&gt;[@next town name]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]
+1,&lt;h2&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]
 
 ;town description
-1,The harbour side of [@next town name] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
-1,[@next town name] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
-1,From the shores of [@lake name] the vinyards rise up and around [@next town name]. It is built at the foot of a sunny hill overlooking the lake.
+1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [river name] wash away their sins into the [@lake name].
+1,[@[@position]] guards the entrance to the narrow [river name] valley. The steep rocks cast long shadows.
+1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake.
 
 ;village
-1,&lt;h2&gt;[@next village name]&lt;/h2&gt;¶This village lies along the [@river name]. [village description]¶[young character]
+1,&lt;h2&gt;[@[@position]]&lt;/h2&gt;¶This village lies along the [@river name]. [village description]¶[young character]
 
 ;village description
 1,On both sides of [@river name] stand a few houses. A bridge connects the two sides.

@@ -436,8 +436,8 @@ own generators! Please do.
 
 # The map always has the same structure, for the moment.
 # - Two towns by the lake (A B)
-# - The first town connects to a main valley with three villages. (C D E)
-# - The second town connects to a main valley with two villages. (F G)
+# - The first town connects to a main valley with three villages. (A→C→D→E)
+# - The second town connects to a main valley with two villages. (B→F→G)
 # - All but the last village of the main valley connect to a secondary valley.
 # - These secondary valleys have exactly one village. (C→H D→I F→J)
 # - Total settlements: 2 towns and 8 villages (a total of 10).
@@ -445,14 +445,15 @@ own generators! Please do.
 # - There is a swamp between D and E (L). It is guarded by monsters (nightlings, predators, undead).
 # - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
 # - At the end of every valley there is a ruin. (E→P G→Q) They are guarded by monsters.
-# - There is an island (A→R), a remote valley (B→S), and a lonely mountain nearby (A and B → T), each also guarded.
-# - Total lairs: 3 wizards, 1 giant or dragon, 3 nightling, predator or undead (a total of 7).
+# - Total lairs: 3 wizards, 1 giant or dragon, 3 nightling, predator or undead,
+# - plus an island (A→R), a remote valley (B→S), and a lonely mountain nearby (A and B → T), each also guarded.
+# - So there's the same number of lairs as there are settlements (a total of 10).
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[R@position][island]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[S@position][ruin]¶[T@position][ruin]¶[R@position][island]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[island name]@R][[name]@fisher]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[ruin name]@S][[ruin name]@T][[island name]@R][[name]@fisher]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -480,9 +481,9 @@ own generators! Please do.
 1,haus
 1,ren
 1,sau
-1,sen
+1,sen/ts/tz/
 1,schen
-1,sel
+1,sel/[dt]s/s/
 1,torf/tt/t/
 1,ttikon/[gl]?[dtrg]tt/tt/
 1,wyl
@@ -538,7 +539,7 @@ own generators! Please do.
 1,[name]'s
 1,[power name]'s
 1,[Death|Light]'s
-1,[Emperor's|Empress']
+1,The [Emperor's|Empress']
 
 ;island noun
 1,Sanctuary
@@ -550,7 +551,7 @@ own generators! Please do.
 
 ;power name
 1,Pazuzu
-1,Orcus
+1,Orcus/s's/s'/
 1,Nergal
 1,Isthar
 1,Marduk
@@ -563,18 +564,24 @@ own generators! Please do.
 1,Tyr
 1,Sutr
 1,Hecate
-1,Helios
-1,Hades
+1,Helios/s's/s'/
+1,Hades/s's/s'/
 1,Ra
 1,Bast
 1,Thoth
-1,Horus
-1,Garaskis
+1,Horus/s's/s'/
+1,Garaskis/s's/s'/
 
 ;lake
+1,[lake location] [lake access]
+
+;lake location
 1,At the foot of the terrible mountains lies the [lake name].
 1,At the foot of nameless mountains lies the [lake name].
 1,Somewhere in the mountains there lies the [lake name].
+
+;lake access
+1,There are two towns by the lake shore, &lt;a href="#A"&gt;[@A]&lt;/a&gt; and &lt;a href="#B"&gt;[@B]&lt;/a&gt;. There's also the island of &lt;a href="#R"&gt;[@R]&lt;/a&gt;, not far from [@A].
 
 ;lake name
 1,[lake qualifier] Lake
@@ -671,13 +678,16 @@ own generators! Please do.
 ;trails
 1,[destinations for [@position]]
 
+;transport to
+1,You can hire fisherfolk to row you across the lake to
+1,You can hire crab men to carry you in a sedan chair through the treacherous [swamp name] along the lake shore to
+1,You can wait for a day of fog and cold when the elf barge comes to pick people up. They'll drop you off at
+
 ;destinations for A
-1,You can hire fisherfolk to row you across the lake to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. [@fisher] also takes people out to the island of the &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
-1,You can hire crab men to carry you in a sedan chair through the treacherous [swamp name] along the lake shore to &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. [@fisher] also takes people out to the island of the &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
+1,[transport to] &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. There's a trail up to the most impressive mountain of [@lake name], to &lt;a href="#T"&gt;[@T]&lt;/a&gt;. [@fisher] also takes people out to the island of &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
 
 ;destinations for B
-1,You can hire fisherfolk to row you across the lake to &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#F"&gt;[@F]&lt;/a&gt;.
-1,You can wait for a day of fog and cold when the elf barge comes to pick people up. They'll drop you off at &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
+1,[transport to] &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. There's a trail up to the most impressive mountain of [@lake name], to &lt;a href="#T"&gt;[@T]&lt;/a&gt;. [name] seems to be the only who knows how to get to the hidden valley of &lt;a href="#S"&gt;[@S]&lt;/a&gt;.
 
 ;destinations for C
 1,You can go down to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by the [@lake name] or you can ascend further upriver to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There is also a small trail along the [@river H] leading up to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
@@ -720,6 +730,12 @@ own generators! Please do.
 
 ;destinations for R
 1,If you have arranged for a pickup, you can get back to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by boat. Otherwise, you'll have to wait for a day or two. [@fisher] usually fishes around here, so they'll be able to pick you up eventually.
+
+;destinations for S
+1,There's a hidden trail through a narrow gorge back down to &lt;a href="#B"&gt;[@B]&lt;/a&gt;.
+
+;destinations for T
+1,There are two trails leading back down to the shores of [@lake name], one leads to &lt;a href="#A"&gt;[@A]&lt;/a&gt;, the other to &lt;a href="#B"&gt;[@B]&lt;/a&gt;.
 
 ;pass destinations
 1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
@@ -777,10 +793,11 @@ own generators! Please do.
 1,The island is overgrown with tall trees. There is no indication of inhabitation.
 
 ;island monster
-1,A giant has lives in a big cave at the center of this island.¶[giant]
+1,A giant lives in a big cave at the center of this island.¶[giant]
 1,A dragon has built a nest, here.¶[dragon]
 1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
 1,The air is cold and and the island is shrouded in fog. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
+1,A simple hut stands here, standing on four long spindly wooden legs.¶[mage character]
 
 ;giant
 1,**[giant name]**¶[giant stats]

@@ -421,7 +421,7 @@ Don't write a setting with a timeline, a map, and names. Instead, write a pamphl
 
 ## Reading material
 
-[Generator](https://campaignwiki.org/generator), a generator of characters
+[Generator](https://campaignwiki.org/generator), a generator of characters and a mini-setting
 
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 

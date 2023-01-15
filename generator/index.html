@@ -117,20 +117,7 @@ function parse(data) {
       console.log(`Recursion deeper than 20 for ${table}`);
       return "…";
     }
-    // [@b++] returns the key with the highest value in map b
-    if (table.startsWith('@++')) {
-       let value = h.results[table.substring(3)];
-       return shuffle(Object.keys(value)).reduce((ac, cur) => value[ac] > value[cur] ? ac : cur, 0);
-    }
-    // [@b] take the existing value for b
-    if (table.startsWith('@')) {
-       let value = h.results[table.substring(1)];
-       if (value === undefined) { console.log("No stored value for " + table); return "…"; }
-       if (Array.isArray(value)) return value.join(", ");
-       if (value === Object(value)) return Object.keys(value).sort().map(key => key + "-" + value[key]).join(", ");
-       return value;
-    }
-    // otherwise, pick an appropriate item
+    // pick an appropriate item
     let text = weighted_pick(table);
     // look for search and replace suffixes like /a/b/ (this only
     // works for levels > 1)
@@ -140,52 +127,97 @@ function parse(data) {
       text = text.substring(0, text.length - m[0].length);
       h.replacements.push(m);
     }
-    while (true) {
-      let e = false;
-      // [2d6] rolls dice
-      text = text.replaceAll(/\[(\d+)d(\d+)(?:([+-]\d+))?\]/g,
-                             (m, n, d, p) => { e = true; return roll(Number(n), Number(d), p ? Number(p) : 0); });
-      if (e) continue;
-      // [a++@b] increments value of key a in map b
-      text = text.replaceAll(/\[([^\[\]]+)\+\+@([^\[\]]+)\]/g,
-                             (m, a, b) => { e = true;
-                                            h.results[b] ||= {};
-                                            h.results[b][a] ||= 0;
-                                            h.results[b][a]++;
-                                            return ''; });
-      if (e) continue;
-      // [a@@b] appends a to list b
-      text = text.replaceAll(/\[([^\[\]]+)@@([^\[\]]+)\]/g,
-                             (m, a, b) => { e = true;
-                                            h.results[b] ||= [];
-                                            h.results[b].push(a);
-                                            return ''; });
-      if (e) continue;
-      // [a@b] saves a as b
-      text = text.replaceAll(/\[([^\[\]]+)@([^\[\]]+)\]/g,
-                             (m, a, b) => { e = true; h.results[b] = a; return ''; });
-      if (e) continue;
-      // [a|b] choose a or b
-      text = text.replaceAll(/\[([^\[\]]+\|[^\[\]]+)\]/g,
-                             (m, w) => { e = true; return one(w.split('|')); });
-      if (e) continue;
-      // [x?a:b] choose a or b depending on whether x is true or false
-      text = text.replaceAll(/\[([^\[\]]+)\?([^\[\]]*):([^\[\]]*)\]/g,
-                             (m, x, a, b) => { e = true; return eval(x) ? a : b; });
-      if (e) continue;
-      // [a] pick an entry from table 'a' – but do this just once and
-      // then restart the process, otherwise something like
-      // "[[a]@b][c]" will call table 'c' before setting 'b'.
-      text = text.replace(/\[([^@\[\]]+)\]/,
-                          (m, a) => { e = true; return pick(a, level + 1); });
-      if (e) {
-        h.replacements.forEach((m) => text = text.replace(new RegExp(m[1], m[3]), m[2]));
+    let i = text.indexOf("[");
+    while (i >= 0) {
+      let s = text.substring(i);
+      let m;
+      let ok = false;
+      if (m = s.match(/^\[(\d+)d(\d+)(?:([+-]\d+))?\]/)) {
+        // [2d6] rolls dice
+        text = text.substring(0, i)
+          + roll(Number(m[1]), Number(m[2]), m[3] ? Number(m[3]) : 0)
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)\+\+@([^\[\]]+)\]/)) {
+        // [a++@b] increments value of key a in map b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] ||= {};
+        h.results[m[2]][m[1]] ||= 0;
+        h.results[m[2]][m[1]]++;
+        ok = true;
+      } else if (m = s.match(/^\[~([^\[\]]+)\]/)) {
+        // [~b] reset map or list b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        delete h.results[m[1]];
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)@@([^\[\]]+)\]/)) {
+        // [a@@b] appends a to list b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] ||= [];
+        h.results[m[2]].push(m[1]);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)@([^\[\]]+)\]/)) {
+        // [a@b] saves a as b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] = m[1];
+        ok = true;
+      } else if (m = s.match(/^\[@\+\+([^\[\]]+)\]/)) {
+        // [@b++] returns the key with the highest value in map b
+        let v = h.results[m[1]];
+        text = text.substring(0, i)
+          + shuffle(Object.keys(v)).reduce((ac, cur) => v[ac] > v[cur] ? ac : cur, 0)
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+\|[^\[\]]+)\]/)) {
+        // [a|b] choose a or b
+        text = text.substring(0, i)
+          + one(m[1].split('|'))
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)\?([^\[\]]*):([^\[\]]*)\]/)) {
+        // [x?a:b] choose a or b depending on whether x is true or false
+        text = text.substring(0, i)
+          + (eval(m[1]) ? m[2] : m[3])
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^@\[\]]+)\]/)) {
+        // [a] pick an entry from table 'a'
+        let p = pick(m[1], level + 1);
+        text = text.substring(0, i)
+          + p
+          + s.substring(m[0].length);
+        h.replacements.forEach((r) => text = text.replace(new RegExp(r[1], r[3]), r[2]));
+        h.replacements = [];
+        ok = true;
+      } else if (m = s.match(/^\[@([^\[\]]+)\]/)) {
+        // [@b] use variable b
+        let v = h.results[m[1]];
+        if (v === undefined) { console.log("No stored value for " + table); return "…"; }
+        else if (Array.isArray(v)) { v = v.join(", "); }
+        else if (v === Object(v)) { v = Object.keys(v).sort().map(k => k + "-" + v[k]).join(", "); }
+        text = text.substring(0, i)
+          + v
+          + s.substring(m[0].length);
+        ok = true;
+      } else {
+        // We did not make a replacement, advance to the next one.
+        let n = s.substring(1).indexOf("[");
+        if (n >= 0) {
+          i = i + 1 + n;
+          continue;
+        }
+      }
+      // We made a replacement, start over.
+      if (ok) {
+        i = text.indexOf("[");
         continue;
       }
-      // [@b] use variable b (after all the [a] have been replaced)
-      text = text.replaceAll(/\[(@[^\[\]]+)\]/g,
-                             (m, b) => { e = true; return pick(b, level + 1); });
-      if (e) continue;
+      // We didn't do a replacement, and we didn't find another
+      // square bracket to look at, so we're done.
       break;
     }
 
@@ -344,51 +376,108 @@ own generators! Please do.
 # '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
 # '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
 # '[a++@b]' increments the key 'a' by one for the map 'b'
-# '[@b]' uses the value of variable 'b' (don't use [a@b], [[a]@b] and [@b] on the same line: the order can be confusing!)
+# '[~a]' resets the list or map 'a'
+# '[@b]' uses the value of variable 'b'
 # If b is a list, return a comma-separated list.
 # If b is a map, return a sorted, comma-separated list of key-value pairs
 # '[@++b]' gets replaced by the key with the highest value in map b
 
 ;start
-1,[initial setup]¶[map]
+# 1,[character]
+1,[initial setup][secret societies]¶[map]
 
 ;initial setup
 1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name]@side a][@side a] or [[name]@side b][@side b]? Or will you take to the woods and find [[name]@side c][@side c]?
 1,There is unrest. [[name]@side a][@side a] rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name]@side b][@side b] returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name]@side c][@side c], always ready to exploit a weakness.
 
+;secret societies
+1,¶[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
+
+;secret society context
+1,Watch out for three secret societies: [@secret society 1], [@secret society 2] and [@secret society 3].
+1,There are three secret societies fighting a bitter underground war of murder: the [@secret society 1], the [@secret society 2] and the [@secret society 3].
+
+;secret society name
+1,[great] [kind] of [goal]
+
+;great
+1,Most Agreeable
+1,Almighty
+1,Great
+1,Formidable
+1,Invisible
+1,Ever Present
+
+;kind
+1,Brothers and Sisters
+1,Friends
+1,Fellowship
+1,Fellows
+1,Soulmates
+1,Cooperative
+1,Association
+1,Bund
+
+;goal
+1,Everlasting Peace
+1,a Glorious Future
+1,Health and Longevity
+1,Joy and Happiness
+1,Revenge
+1,the Rebellion
+1,the Imperial Restoration
+1,the Resurrection of the Emperor
+1,the Resurrection of the Emperess
+1,Daredevils
+
 # The map always has the same structure, for the moment.
-# - Two towns by the lake
-# - The first town connects to a main valley with three villages.
-# - The second town connects to a main valley with two villages.
+# - Two towns by the lake (A B)
+# - The first town connects to a main valley with three villages. (C D E)
+# - The second town connects to a main valley with two villages. (F G)
 # - All but the last village of the main valley connect to a secondary valley.
-# - These secondary valleys have exactly one village.
+# - These secondary valleys have exactly one village. (H I J)
 # - In each of these remote villages of secondary valleys stands a wizard tower.
 # - At the end of every valley there is a ruin.
 # - Ruins are inhabited by dragons, giants, or the undead.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[[town name]@next town name][lake]¶[town]¶[[town name]@next town name][town]
+1,[map names][[@A]@next town name][lake]¶[town]¶[[river name]@river][[@C]@next village name][village]¶[[@D]@next village name][village]¶[[@E]@next village name][village]¶[[@B]@next town name][town]
 
-;town name
-1,[town qualifier][town noun]
+;map names
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J]
 
-;town qualifier
+;settlement name
+1,[settlement qualifier][settlement noun]
+
+;settlement qualifier
+1,Alt
+1,Attig
+1,Bad
+1,Dat
+1,Egg
 1,Ger
+1,Hald
+1,Lor
+1,Lu
+1,Ror
+1,Rut
 1,Yver
 1,Zur
-1,Lor
-1,Bad
-1,Ror
 
-;town noun
+;settlement noun
+1,berg
 1,den/dd/d/
-1,san
-1,shen
-1,sel
-1,wyl
-1,ttikon/rtt/tt/
+1,dorf/dd/d/
 1,gau
+1,haus
+1,ren
+1,san
+1,schen
+1,sel
+1,ttikon/[gl]?[dtrg]tt/tt/
+1,wyl
+1,zern/[gt]z/z/
 
 ;lake
 1,At the foot of the terrible mountains lies the [lake name].

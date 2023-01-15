@@ -736,8 +736,8 @@ short, by Guntram von Wolkenstein.
 for the game. I like the
 [Alpine](https://campaignwiki.org/text-mapper/alpine/random) maps.
 
-[Helmbarten Character Generator](https://campaignwiki.org/helmbarten/)
-to quickly create some characters or an initial situation.
+[Generator](https://campaignwiki.org/generator), a generator of
+characters and a mini-setting
 
 [Farnthal Replay](https://alexschroeder.ch/pdfs/Farnthal.pdf) recounts
 how my first campaign went.

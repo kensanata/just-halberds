@@ -439,17 +439,18 @@ own generators! Please do.
 # - The second town connects to a main valley with two villages. (F G)
 # - All but the last village of the main valley connect to a secondary valley.
 # - These secondary valleys have exactly one village. (C→H D→I F→J)
-# - There is a pass between I and J.
+# - There is a pass between I and J (K).
+# - There is a swamp between D and E (L).
 # - In each of these remote villages of secondary valleys stands a wizard tower.
 # - At the end of every valley there is a ruin.
 # - Ruins are inhabited by dragons, giants, or the undead.
 # - The settlements are separated by wild forests, steep ascents or narrow gorges.
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@mountain pass]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -553,7 +554,7 @@ own generators! Please do.
 ;town description
 1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [@river [@position]] wash away their sins into the [@lake name].
 1,[@[@position]] guards the entrance to the narrow [@river [@position]] valley. The steep rocks cast long shadows.
-1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [@river [@position]] opens into the lake a bit further away. The swampy delta is called [swamp name].
+1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [@river [@position]] opens into the lake a bit further away.
 
 ;village
 1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This village lies along the [@river [@position]]. [village description]¶[young character]¶[trails]
@@ -580,10 +581,10 @@ own generators! Please do.
 1,You can go down to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by the [@lake name] or you can ascend further upriver to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There is also a small trail along the [@river H] leading up to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
 
 ;destinations for D
-1,You can go down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make that last climb to the source of the [@river D] at &lt;a href="#E"&gt;[@E]&lt;/a&gt;. A small trail along the [@river I] leads up to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,You can follow the [@river D] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can venture into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#E"&gt;[@E]&lt;/a&gt;. You can also make that last climb up to the source of the [@river I] up to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
 
 ;destinations for E
-1,You can follow the [@river E] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
+1,You can follow the [@river E] into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#D"&gt;[@D]&lt;/a&gt;.
 
 ;destinations for F
 1,You can go down to &lt;a href="#B"&gt;[@B]&lt;/a&gt; by the [@lake name] or you can go to the [@river F] source at &lt;a href="#G"&gt;[@G]&lt;/a&gt;. There is also a small trail along the [@river J] leading up to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
@@ -595,13 +596,20 @@ own generators! Please do.
 1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt;.
 
 ;destinations for I
-1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. If you dare the [@mountain pass], you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;destinations for J
-1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. If you dare the [@mountain pass], you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+
+;pass destinations
+1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,This pass is the highest point of the old rebel passage that links &lt;a href="#I"&gt;[@I]&lt;/a&gt; and &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+
+;swamp destinations
+1,There are two trails out of the [@L]. The first one leads to &lt;a href="#D"&gt;[@D]&lt;/a&gt; and the other one leads to &lt;a href="#E"&gt;[@E]&lt;/a&gt;.
 
 ;swamp name
-1,[swamp qualifier][swamp noun]
+1,[swamp qualifier] [swamp noun]
 
 ;swamp qualifier
 1,Beggar
@@ -614,10 +622,126 @@ own generators! Please do.
 1,Water
 
 ;swamp noun
-1,fen
-1,marsh
-1,reed
-1,swamp
+1,Fen
+1,Marsh
+1,Reed
+1,Swamp
+
+;pass
+1,&lt;h2 id="K"&gt;[@K]&lt;/h2&gt;¶[pass guardian]¶[pass destinations]
+
+;pass guardian
+1,On this pass sits a massive ruin of a sky fort from the old times. A giant lives here.¶[giant]
+1,One one of the nearby mountains nests a dragon. This pass belongs to its territory and dragons are extremely territorial.¶[dragon]
+
+;swamp
+1,&lt;h2 id="L"&gt;[@L]&lt;/h2&gt;¶[swamp guardian]¶[swamp destinations]
+
+;swamp guardian
+1,An ancient ruin stands in the middle of this swamp.¶[monster]
+
+;giant
+1,**[giant name]**¶[giant stats]
+
+;giant name
+1,[giant qualifier] [giant noun]
+
+;giant qualifier
+1,Ice
+1,Bone
+1,Gold
+1,Iron
+1,Storm
+1,Shadow
+1,Mountain
+1,Cloud
+
+;giant noun
+1,Hammer
+1,Weaver
+1,Grinder
+1,Eye
+1,King
+1,Splitter
+1,Guardian
+
+;giant stats
+1,Damage-[4d6] Endurance-[8d6] Life-[4d6] Attack-[1d6+3] Hit-[1d6+8] Escape-[1d6]
+
+;dragon
+1,**[dragon name]**¶[dragon stats]
+
+;dragon name
+1,[dragon qualifier] [dragon noun]
+
+;dragon qualifier
+1,Fire
+1,Poison
+1,Dread
+1,Sky
+1,Flame
+
+;dragon noun
+1,Fury
+1,Anger
+1,Breath
+1,Curse
+1,Face
+1,Wyrm
+1,Worm
+
+;dragon stats
+1,Damage-[6d6] Endurance-[10d6] Life-[5d6] Attack-[1d6+2] Hit-[1d6+9] Escape-[1d6]
+
+;monster
+1,The putrid smell of dead things warns you of the [predator name].¶**[@predator name]**¶[predator stats]
+1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[nightling name]s**¶[nightling stats]
+
+;predator name
+1,[predator qualifier][predator relative]
+
+;predator qualifier
+1,Feather
+1,Winter
+1,Ice
+1,Claw
+1,Knife
+
+;predator relative
+1,bear
+1,lion
+1,hunter
+1,wolf
+
+;predator stats
+1,Damage-[2d6] Endurance-[3d6] Life-[2d6] Attack-[1d6+5] Hit-[1d6+6] Escape-[1d6+2]
+
+;nightling name
+1,[nightling qualifier][nightling relative]
+
+;nightling qualifier
+1,Bone
+1,Moon
+1,Child
+1,Blade
+
+;nightling relative
+1,taker
+1,burglar
+1,-eater
+1,ling
+
+;nightling activity
+1,talking
+1,fighting
+1,singing
+1,whimpering
+1,bullying one of their own
+1,whispering
+1,rolling dice and snickering
+
+;nightling stats
+1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
 1,[roll-attributes][[1d3] careers]**[character name]** [short character stats]¶[@name] is a junior member of the [@secret society [1d3]].

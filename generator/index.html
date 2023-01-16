@@ -290,20 +290,32 @@ function parse(data) {
   return h;
 }
 
+function slug(s) {
+  return s.replaceAll(/['"-']+/g, "-").toLowerCase();
+}
+
+function menu(data) {
+  let html = "<ul>\n";
+  data.split("\n").forEach(row => {
+    row.replace(/#.*/, ""); // Comments
+    if (row.startsWith(";")) {
+      let t = row.substring(1);
+      html += `<li><a href="javascript:show('${slug(t)}')">${t}</a>\n`;
+    }
+  });
+  return html;
+}
+
 function linked(data) {
   data = data.replaceAll(/^;(.*)/mg,
-                         (m, t) => {
-                           return ";<strong id=\"" + t.replaceAll(" ", "-").toLowerCase() + "\">"
-                             + t + "</strong>" });
+                         (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
                          (m, t) => {
                            if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
                            if (m.match(/\?.*:/)) return m;
-                           return "[<a href=\"#" + t.replaceAll(" ", "-").toLowerCase() + "\">"
-                             + t + "</a>]" });
+                           return `[<a href="#${slug(t)}">${t}</a>]` });
   data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
   data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
-  data = data.replaceAll("¶", "<p>");
   return data;
 }
 
@@ -328,6 +340,11 @@ function paper(data) {
   return html;
 }
 
+function show(t) {
+  generate((data) => parse(data).generate(t)
+  + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`);
+}
+
 function generate(f) {
   const data = document.getElementById('data').textContent;
   document.getElementById('target').innerHTML = f(data);
@@ -340,6 +357,7 @@ function generate(f) {
 <h1 id="noprintheader">Generator</h1>
 <div id="noprintheader">
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
+  <button type="button" onclick="generate((data) => menu(data))">List tables</button>
   <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
   <button type="button" onclick="generate((data) => paper(data))">Printable tables</button>
   <ul id="links">
@@ -375,6 +393,7 @@ own generators! Please do.
 # /re/to/ at the end replaces regular expression "re" with "to"
 # '[2d6]' or '[1d6+3]' are replaced by dice rolls
 # '[a]' gets replaced with a lookup of table 'a'
+# If a ends with ' name' then the result is unique
 # '[a|b]' gets replaced with 'a' or 'b'
 # '[x?a:b]' evaluates x as JavaScript and if "true" it is replaced with 'a' else with 'b'
 # '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
@@ -391,8 +410,8 @@ own generators! Please do.
 1,[initial setup][secret societies]¶[map]
 
 ;initial setup
-1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side 1][@side 1] or [[name] the [Proud|Silent|Strong|Younger]@side 2][@side 2]? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side 3][@side 3]?
-1,There is unrest. [[name] the [Wicked|Strict|Terrible|Old|Allmighty|Glorious]@side 1][@side 1] rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name] the [Proud|Pilgrim|Devout|Fair|Just]@side 2][@side 2] returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name] the [Rebel|Old|Young|Wild|Demon|Blessed]@side 3][@side 3], always ready to exploit a weakness.
+1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side A]&lt;a href="#pA"&gt;[@side A]&lt;/a&gt; or [[name] the [Proud|Silent|Strong|Younger]@side B]&lt;a href="#pB"&gt;[@side B]&lt;/a&gt;? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side C]&lt;a href="#pU"&gt;[@side C]&lt;/a&gt;?
+1,There is unrest. [[name] the [Wicked|Strict|Terrible|Old|Allmighty|Glorious]@side A]&lt;a href="#pA"&gt;[@side A]&lt;/a&gt; rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name] the [Proud|Pilgrim|Devout|Fair|Just]@side B]&lt;a href="#pB"&gt;[@side B]&lt;/a&gt; returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name] the [Rebel|Old|Young|Wild|Demon|Blessed]@side C]&lt;a href="#pU"&gt;[@side C]&lt;/a&gt;, always ready to exploit a weakness.
 
 ;secret societies
 1,¶[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
@@ -402,9 +421,9 @@ own generators! Please do.
 1,There are three secret societies fighting a bitter underground war of murder: the [@secret society 1], the [@secret society 2] and the [@secret society 3].
 
 ;secret society name
-1,[great] [kind] of [goal]
+1,[great name] [kind of name] of [goal name]
 
-;great
+;great name
 1,Most Agreeable
 1,Almighty
 1,Great
@@ -412,7 +431,7 @@ own generators! Please do.
 1,Invisible
 1,Ever Present
 
-;kind
+;kind of name
 1,Brothers and Sisters
 1,Friends
 1,Fellowship
@@ -422,7 +441,7 @@ own generators! Please do.
 1,Association
 1,Bund
 
-;goal
+;goal name
 1,Everlasting Peace
 1,a Glorious Future
 1,Health and Longevity
@@ -443,17 +462,18 @@ own generators! Please do.
 # - Total settlements: 2 towns and 8 villages (a total of 10).
 # - There is a pass between I and J (K). It is guarded by a giant or a dragon.
 # - There is a swamp between D and E (L). It is guarded by monsters (nightlings, predators, undead).
+# - There is a hidden shrine off L (U).
 # - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
 # - At the end of every valley there is a ruin. (E→P G→Q) They are guarded by monsters.
-# - Total lairs: 3 wizards, 1 giant or dragon, 3 nightling, predator or undead,
+# - Total lairs: 3 wizards, 1 rebel, 1 giant or dragon, 3 nightling, predator or undead,
 # - plus an island (A→R), a remote valley (B→S), and a lonely mountain nearby (A and B → T), each also guarded.
-# - So there's the same number of lairs as there are settlements (a total of 10).
+# - So there's roughly the same number of lairs as there are settlements (a total of 11).
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[S@position][ruin]¶[T@position][ruin]¶[R@position][island]
+1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[S@position][ruin]¶[T@position][ruin]¶[R@position][island]¶[U@position][shrine]
 
 ;map names
-1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[ruin name]@S][[ruin name]@T][[island name]@R][[name]@fisher]
+1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[ruin name]@S][[ruin name]@T][[shrine name]@R][[name]@fisher][[shrine name]@U]
 
 ;settlement name
 1,[settlement qualifier][settlement noun]
@@ -474,6 +494,7 @@ own generators! Please do.
 1,Zur
 
 ;settlement noun
+1,ach
 1,berg
 1,den/dd/d/
 1,dorf/dd/d/
@@ -532,16 +553,16 @@ own generators! Please do.
 1,Maw
 1,Glory
 
-;island name
-1,[island qualifier] [island noun]
+;shrine name
+1,[shrine qualifier] [shrine noun]
 
-;island qualifier
+;shrine qualifier
 1,[name]'s
 1,[power name]'s
 1,[Death|Light]'s
 1,The [Emperor's|Empress']
 
-;island noun
+;shrine noun
 1,Sanctuary
 1,Temple
 1,Altar
@@ -646,7 +667,7 @@ own generators! Please do.
 1,Climb
 
 ;town
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[powerful character]¶[trails]
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[[@side [@position]]@character name][powerful character]¶[trails]
 
 ;town description
 1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [@river [@position]] wash away their sins into the [@lake name].
@@ -737,12 +758,15 @@ own generators! Please do.
 ;destinations for T
 1,There are two trails leading back down to the shores of [@lake name], one leads to &lt;a href="#A"&gt;[@A]&lt;/a&gt;, the other to &lt;a href="#B"&gt;[@B]&lt;/a&gt;.
 
+;destinations for U
+1,A hidden trail leads down into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;.
+
 ;pass destinations
 1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 1,This pass is the highest point of the old rebel passage that links &lt;a href="#I"&gt;[@I]&lt;/a&gt; and &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
 
 ;swamp destinations
-1,There are two trails out of the [@L]. The first one leads to &lt;a href="#D"&gt;[@D]&lt;/a&gt; and the other one leads to &lt;a href="#E"&gt;[@E]&lt;/a&gt;.
+1,There are two trails out of the [@L]. The first one leads to &lt;a href="#D"&gt;[@D]&lt;/a&gt; and the other one leads to &lt;a href="#E"&gt;[@E]&lt;/a&gt;. If you know where to look, there is also a hidden trail leading to &lt;a href="#U"&gt;[@U]&lt;/a&gt;
 
 ;swamp name
 1,[swamp qualifier] [swamp noun]
@@ -798,6 +822,12 @@ own generators! Please do.
 1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
 1,The air is cold and and the island is shrouded in fog. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
 1,A simple hut stands here, standing on four long spindly wooden legs.¶[mage character]
+
+;shrine
+1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[shrine description]¶[[@side C]@character name][rebel]¶[destinations for [@position]]
+
+;shrine description
+1,A peaceful valley, too small warrant the keeping of animals, but large enough to allow a hermit to survive, perhaps.
 
 ;giant
 1,**[giant name]**¶[giant stats]
@@ -928,13 +958,18 @@ own generators! Please do.
 1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
-1,[roll attributes][[1d3] careers]**[character name]** [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+1,[roll attributes][[1d3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
 
+# must set @character name, first
 ;powerful character
-1,[roll attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+1,[roll attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
+
+# must set @character name, first
+;rebel
+1,[roll attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is trying to get rid of both &lt;a href="#pA"&gt;[@side A]&lt;/a&gt; and &lt;a href="#pB"&gt;[@side B]&lt;/a&gt;.
 
 ;mage character
-1,[roll mage attributes][[2d4+3] careers]**[character name]** [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [1d3]].
+1,[roll mage attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
 
 ;character
 1,[roll attributes][[2d5] careers]**[character name]** [character stats]

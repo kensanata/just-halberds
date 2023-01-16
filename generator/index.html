@@ -307,6 +307,7 @@ function menu(data) {
 }
 
 function linked(data) {
+  data = data.replaceAll(/</g, "&lt;").replaceAll(/>/g, "&gt;").replaceAll(/&/g, "&amp;");
   data = data.replaceAll(/^;(.*)/mg,
                          (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
@@ -320,6 +321,7 @@ function linked(data) {
 }
 
 function paper(data) {
+  data = data.replaceAll(/</g, "&lt;").replaceAll(/>/g, "&gt;").replaceAll(/&/g, "&amp;");
   let html = "";
   let n;
   data.split("\n").forEach(row => {

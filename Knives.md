@@ -417,6 +417,17 @@ What about treasure? If you find the Book of Redemption for Bishop Gregor, you c
 
 Don't write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
 
+## Names for Monsters
+
+| 1d6 | Night- | -ling    | Preda-   | -tor    | Un-     | -dead   |
+|:---:|--------|----------|----------|---------|---------|---------|
+| 1   | Blade- | -breaker | Claw-    | -bear   | Dream-  | -demon  |
+| 2   | Bone-  | -burglar | Feather- | -hunter | Hell-   | -devil  |
+| 3   | Child- | -dancer  | Ice-     | -lion   | Hollow- | -dead   |
+| 4   | Crab-  | -eater   | Knife-   | -maw    | Necro-  | -eater  |
+| 5   | Moon-  | -ling    | Tiger-   | -spider | Shadow- | -knight |
+| 6   | Tooth- | -taker   | Winter-  | -wolf   | Spine-  | -lord   |
+
 <div style="break-after: always;"></div>
 
 ## Reading material

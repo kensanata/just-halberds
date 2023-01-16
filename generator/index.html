@@ -407,7 +407,7 @@ own generators! Please do.
 
 ;start
 # 1,[character]
-1,[initial setup][secret societies]¶[map]
+1,[initial setup][secret societies][powers]¶[map]
 
 ;initial setup
 1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side A]&lt;a href="#pA"&gt;[@side A]&lt;/a&gt; or [[name] the [Proud|Silent|Strong|Younger]@side B]&lt;a href="#pB"&gt;[@side B]&lt;/a&gt;? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side C]&lt;a href="#pU"&gt;[@side C]&lt;/a&gt;?
@@ -452,6 +452,9 @@ own generators! Please do.
 1,the Resurrection of the Emperor
 1,the Resurrection of the Emperess
 1,Daredevils
+
+;powers
+1,¶[[power name]@power 1][[power name]@power 2][[power name]@power 3]The popular powers in this area are [@power 1], [@power 2] and [@power 3].
 
 # The map always has the same structure, for the moment.
 # - Two towns by the lake (A B)
@@ -958,18 +961,18 @@ own generators! Please do.
 1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
-1,[roll attributes][[1d3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
+1,[roll attributes][[1d3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
+
+;mage character
+1,[roll mage attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
 
 # must set @character name, first
 ;powerful character
-1,[roll attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
+1,[roll attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 # must set @character name, first
 ;rebel
-1,[roll attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is trying to get rid of both &lt;a href="#pA"&gt;[@side A]&lt;/a&gt; and &lt;a href="#pB"&gt;[@side B]&lt;/a&gt;.
-
-;mage character
-1,[roll mage attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]].
+1,[roll attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is trying to get rid of both &lt;a href="#pA"&gt;[@side A]&lt;/a&gt; and &lt;a href="#pB"&gt;[@side B]&lt;/a&gt;. They are also a former member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 ;character
 1,[roll attributes][[2d5] careers]**[character name]** [character stats]

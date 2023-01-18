@@ -172,38 +172,38 @@ skill even though you own a knife.
 If you’ve spent the summer doing warrior things, pick one of the
 following tables to roll on.
 
-| 1d6 |    Mercenary |        Guard |    Rider |     Officer |
-|:---:|-------------:|-------------:|---------:|------------:|
-| 1   | Construction |  Bureaucracy |   Riding |    Literacy |
-| 2   |      Running |   Discipline |  Singing | Bureaucracy |
-| 3   |      Tactics | Construction |  Tactics |     Tactics |
-| 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
-| 5   |        Craft |      Brewing |  Culture |    Behavior |
-| 6   |     Fighting |     Fighting | Fighting |    Fighting |
+| 1d6 | Mercenary    | Guard        | Rider    | Officer     |
+|:---:|--------------|--------------|----------|-------------|
+| 1   | Construction | Bureaucracy  | Riding   | Literacy    |
+| 2   | Running      | Discipline   | Singing  | Bureaucracy |
+| 3   | Tactics      | Construction | Tactics  | Tactics     |
+| 4   | First Aid    | Brawling     | Spying   | Diplomacy   |
+| 5   | Craft        | Brewing      | Culture  | Behavior    |
+| 6   | Fighting     | Fighting     | Fighting | Fighting    |
 
 If you’ve spent the summer doing mage things, pick one of the
 following tables to roll on.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
-|:---:|-----------:|--------:|-------------:|--------------:|
-| 1   |       Fire | Healing |        Charm |    Shapeshift |
-| 2   |        Air |   Sleep |      Singing |    Necromancy |
-| 3   |      Water |    Eyes |    Diplomacy | Transmutation |
-| 4   |      Earth |   Doors |     Illusion |        Fusion |
-| 5   |      Storm |  Plants |       People |       Animals |
-| 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
+|:---:|------------|---------|--------------|---------------|
+| 1   | Fire       | Healing | Charm        | Shapeshift    |
+| 2   | Air        | Sleep   | Singing      | Necromancy    |
+| 3   | Water      | Eyes    | Diplomacy    | Transmutation |
+| 4   | Earth      | Doors   | Illusion     | Fusion        |
+| 5   | Storm      | Plants  | People       | Animals       |
+| 6   | Fighting   | Brewing | Literacy     | Planeswalk    |
 
 If you’ve spent the summer living a life of crime, pick one of the
 following tables to roll on.
 
-| 1d6 |    Thief |      Thug |        Liar |  Murderer |
-|:---:|---------:|----------:|------------:|----------:|
-| 1   | Sneaking |  Fighting |     Culture |  Fighting |
-| 2   |   Spying |  Crafting |    Behavior |   Brewing |
-| 3   |  Running |   Running | Bureaucracy | First Aid |
-| 4   | Climbing | First Aid |    Literacy |  Sneaking |
-| 5   | Distract |   Tactics |     Oratory |  Behavior |
-| 6   |     Pick |   Singing |     Trading |    Tinker |
+| 1d6 | Thief    | Thug      | Liar        | Murderer  |
+|:---:|----------|-----------|-------------|-----------|
+| 1   | Sneaking | Fighting  | Culture     | Fighting  |
+| 2   | Spying   | Crafting  | Behavior    | Brewing   |
+| 3   | Running  | Running   | Bureaucracy | First Aid |
+| 4   | Climbing | First Aid | Literacy    | Sneaking  |
+| 5   | Distract | Tactics   | Oratory     | Behavior  |
+| 6   | Pick     | Singing   | Trading     | Tinker    |
 
 ## Adventurer's Life
 
@@ -280,14 +280,14 @@ attack); hit determines how well they hit (2d6 ≤ hit), and escape
 determines if they attempt to escape when they’re not attacking (2d6 ≤
 escape). If they neither attack nor escape, we talk.
 
-| 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |
-|:---:|-----------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
+| 1d6 | Opponents  | Damage | Endurance | Life | Attack | Hit   | Escape |
+|:---:|------------|:------:|:---------:|:----:|:------:|:-----:|:------:|
 | 1   | Nightlings | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
-| 2   |  Predators | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
-| 3   |     Undead | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
-| 4   |     Mounts | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
-| 5   |     Giants | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
-| 6   |    Dragons | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
+| 2   | Predators  | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
+| 3   | Undead     | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
+| 4   | Mounts     | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
+| 5   | Giants     | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
+| 6   | Dragons    | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
 
 For each world, the stats will be slightly different. Note down when
 you roll something and stick to it! For the number of enemies, roll

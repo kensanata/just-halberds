@@ -83,13 +83,14 @@ guilds, the are looking for artisans. If they are magic schools,
 they’re looking for mages. Prove your worth and you’ll be allowed to
 join.
 
-**Companion**: A young apprentice looking to learn from you, or an
-intelligent animal such as a cat, an owl, or a raven. If your
-companion is human, roll the six attributes (2d6 each for Strength,
-Dexterity, Endurance, Intelligence, Education, and Status).
+**Companion**: A young apprentice looking to learn from you, or a
+talking animal such as a cat, an owl, or a raven. If your companion is
+human, roll the six attributes (2d6 each for Strength, Dexterity,
+Endurance, Intelligence, Education, and Status). They gain skills,
+just like you. If they surpass you in your best skill, they leave.
 
-**Dog**: Adventuring might lead you to find a loyal friend. Damage
-2d6; Endurance 3d6; Life 2d6.
+**Dog**: You find a loyal friend. Damage 2d6; Endurance 3d6; Life 2d6.
+Dogs require food.
 
 **Horse**: Knighthood earns you a loyal mount from your liege. Riding
 a horse allows you to wield a lance. The horse requires care and

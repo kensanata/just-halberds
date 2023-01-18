@@ -110,7 +110,15 @@ for you, they’ll think of you.
 
 We roll checks as follows: 2d6 ≤ attribute + talent. On very hard
 tests: 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then +0.
+talent is missing, then -2. A +1 talent is good enough to do it for a
+living.
+
+The chance of rolling a target number or less on 2d6:
+
+| 2    | 3    | 4    | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
+|:----:|:----:|:----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 3%   | 8%   | 17%  | 28%   | 42%   | 58%   | 72%   | 83%   | 92%   | 97%   | 100%  |
+| 1/36 | 3/36 | 6/36 | 10/36 | 15/36 | 21/36 | 26/36 | 30/36 | 33/36 | 35/36 | 36/36 |
 
 A few key words about the individual talents.
 **Air**: Magic related to wind, movement, and sound.

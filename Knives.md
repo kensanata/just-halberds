@@ -165,8 +165,6 @@ A few key words about the individual talents.
 **Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
 
-<div style="break-after: always;"></div>
-
 ## Gaining talents
 
 With every year that passes, you get to gain new skills. Pick an

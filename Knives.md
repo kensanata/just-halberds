@@ -424,16 +424,65 @@ What about treasure? If you find the Book of Redemption for Bishop Gregor, you c
 
 Don't write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
 
-## Names for Monsters
+<div style="break-after: always;"></div>
 
-| 1d6 | Night- | -ling    | Preda-   | -tor    | Un-     | -dead   |
-|:---:|--------|----------|----------|---------|---------|---------|
-| 1   | Blade- | -breaker | Claw-    | -bear   | Dream-  | -demon  |
-| 2   | Bone-  | -burglar | Feather- | -hunter | Hell-   | -devil  |
-| 3   | Child- | -dancer  | Ice-     | -lion   | Hollow- | -dead   |
-| 4   | Crab-  | -eater   | Knife-   | -maw    | Necro-  | -eater  |
-| 5   | Moon-  | -ling    | Tiger-   | -spider | Shadow- | -knight |
-| 6   | Tooth- | -taker   | Winter-  | -wolf   | Spine-  | -lord   |
+## Monsters
+
+Names are important for the suspension of disbelief. People, monsters,
+places, all of them need names. One way to generate a large number of
+names is to smash two words together.
+
+| 1d6 | Nightling |          | Predator |         |  Undead |         |
+|:---:|----------:|----------|---------:|---------|--------:|---------|
+| 1   |    Blade- | -breaker |    Claw- | -bear   |  Dream- | -demon  |
+| 2   |     Bone- | -burglar | Feather- | -hunter |   Hell- | -devil  |
+| 3   |    Child- | -dancer  |     Ice- | -lion   | Hollow- | -dead   |
+| 4   |     Crab- | -eater   |   Knife- | -maw    |  Necro- | -eater  |
+| 5   |     Moon- | -ling    |   Tiger- | -spider | Shadow- | -knight |
+| 6   |    Tooth- | -taker   |  Winter- | -wolf   |  Spine- | -lord   |
+
+| 1d6 |     Giant |           |  Dragon |         |   |   |
+|:---:|----------:|-----------|--------:|---------|--:|---|
+| 1   |    Cloud- | -eye      |   Fire- | -anger  |   |   |
+| 2   |     Gold- | -grinder  |  Flame- | -breath |   |   |
+| 3   |     Iron- | -hammer   | Poison- | -curse  |   |   |
+| 4   | Mountain- | -king     |    Sky- | -fury   |   |   |
+| 5   |    Storm- | -splitter |   Snow- | -wyrm   |   |   |
+| 6   |     Soul- | -weaver   |   Void- | -worm   |   |   |
+
+<div style="break-after: always;"></div>
+
+## Humans
+
+Roll 2d8 for the prefix.
+
+| 1d8 | 1      | 2      | 3     | 4     | 5    | 6    | 7      | 8     |
+|:---:|--------|--------|-------|-------|------|------|--------|-------|
+| 1   | Adal   | Chari  | Dago  | Gote  | Hu   | Ort  | Rum    | Vorti |
+| 2   | Albe   | Charle | Dank  | Gunde | Ingo | Os   | Schili | Vulde |
+| 3   | Amal   | Childe | Ecke  | Gunt  | Krim | Pil  | Schru  | Walt  |
+| 4   | Bald   | Chilpe | Gel   | Hade  | Lude | Ram  | Sieg   | Werb  |
+| 5   | Bert   | Chlodo | Ger   | Hel   | Man  | Rich | Sigi   | Wich  |
+| 6   | Bote   | Chrodo | Ger   | Her   | Mero | Rit  | Sind   | Wisi  |
+| 7   | Brun   | Clot   | Gib   | Hilde | Nant | Ro   | Theude | Wite  |
+| 8   | Charde | Crot   | Gisel | Horn  | Nor  | Rudi | Ul     | Wolf  |
+
+Sometimes, people have a short name.
+
+| 1d12 | Women  | Men      |
+|:----:|--------|----------|
+| 1    | Ada    | Ardo     |
+| 2    | Anna   | Dodo     |
+| 3    | Berta  | Else     |
+| 4    | Chloe  | Etzel    |
+| 5    | Dora   | Gregor   |
+| 6    | Elsa   | Gundobad |
+| 7    | Frieda | Gyso     |
+| 8    | Gisela | Hagen    |
+| 9    | Hilde  | Iring    |
+| 10   | Inge   | Otto     |
+| 11   | Ulrike | Siggo    |
+| 12   | Ute    | Werbel   |
 
 <div style="break-after: always;"></div>
 

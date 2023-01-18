@@ -443,6 +443,8 @@ Don't write a setting with a timeline, a map, and names. Instead, write a pamphl
 
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 
+[2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf), some thoughts on probabilities
+
 [Knave](https://questingbeast.itch.io/knave), a d20 game
 
 [Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a 2d6 game

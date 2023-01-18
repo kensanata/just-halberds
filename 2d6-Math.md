@@ -17,17 +17,21 @@ and their sums.
 | ⚄ | 6 | 7 | 8 | 9  | 10 | 11 |
 | ⚅ | 7 | 8 | 9 | 10 | 11 | 12 | 
 
-Now, let's count how often the various sums show up. I like how the
-numbers form diagonal "lines". Check out 7, for example: from the
-bottom left to the top right. Anyway, here are the occurrences:
+Now, let's count how often the various sums show up. Start with 2. How
+many are there? Just one, in the top left corner. How many occurences
+of 3? Two, also in the top left corner. How many occurences of 4?
+Three. And so on. Let's put the numbers in a table showing the results
+and the number of occurences for each.
+
+![The 2d6 distribution](2d6-distribution.png){.right}
 
 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|
-| 1 | 2 | 3 | 4 | 5 | 6 | 5 | 4 |  3 |  2 |  1 |
+| 1 | 2 | 3 | 4 | 5 | 6 | 5 | 4 | 3  | 2  | 1  |
 
-And this is the histogram:
-
-![The 2d6 distribution](2d6-distribution.png)
+The graph next to the table shows the distribution. Since we're only
+rolling two dice, the famous bell curve is not visible. We get just a
+triangle. 7 is the most likely result.
 
 ## The odds of reaching a target number
 
@@ -55,11 +59,13 @@ add up the highlighted numbers: 21:36, i.e. 7/12 or about 58%.
 | 1 | 2 | 3 | 4 | 5 | 6¡ | 5¡ | 4¡ |  3¡ |  2¡ |  1¡ |
 
 Actually, we can compute this for all the results and simply list our
-chances of reaching a target number using 2d6.
+chances of rolling a target number or more using 2d6:
 
 |    2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |   10 |  11 |  12 | 13 |
 |:----:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:---:|:---:|:--:|
 | 100% | 97% | 92% | 83% | 72% | 58% | 42% | 28% |  17% |  8% |  3% | 0% |
+
+![2d6 vs. a target number](2d6-target.png){.right}
 
 You can verify this on anydice.com. If you enter `loop N over
 {2..13}{output 2d6 >= N named "Rolling [N] or higher"}` and click on
@@ -67,9 +73,14 @@ the *Calculate* button, you get two results for each target number: 0
 are your chances of not making it, 1 are your chances of making it.
 
 And this is the visualisation of the numbers above. As the target
-number goes up, your chances go down.
+number goes up, your chances go down. You're starting to see an
+S-curve.
 
-![2d6 vs. a target number](2d6-target.png)
+Conversely, the odds of rolling a target number or less using 2d6:
+
+| 2  | 3  | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12   |
+|:--:|:--:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
+| 3% | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% | 97% | 100% |
 
 ## The odds of beating an opponent
 
@@ -135,6 +146,8 @@ chance of winning is 56%. Remember, however, that nobody wins when you
 both get the same result. Therefore, your chance of winning with a
 penalty is worse: it's 100-66=34%.
 
+![2d6 + bonus vs. 2d6](2d6-beating.png){.right}
+
 You can verify this on anydice.com. If you enter `loop N over
 {-11..11}{output 2d6-2d6<N named "with modifier [N]"}` and click on the
 *Calculate* button, you get two results for each target number: 0 are
@@ -142,6 +155,3 @@ your chances of not making it, 1 are your chances of making it.
 
 And this is the visualisation of the numbers above. As the advantage
 goes up, your chances go up.
-
-![2d6 + bonus vs. 2d6](2d6-beating.png)
-

@@ -62,6 +62,7 @@ blockquote {
 }
 th {
     padding-right: 1em;
+    text-align: center;
 }
 td {
     padding-right: 1em;
@@ -70,6 +71,12 @@ td[align="center"] {
     text-align: center;
     white-space: nowrap;
     vertical-align: top;
+}
+td[align="left"] {
+    text-align: left;
+}
+td[align="right"] {
+    text-align: right;
 }
 .right {
     float: right;

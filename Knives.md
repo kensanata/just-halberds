@@ -406,7 +406,163 @@ very important.
 The horror of war (1521), by Urs Graf
 {: .pic }
 
-## Adventures
+## Running the game
+
+Questions can inspire us to think about issues and they make it clear
+that our input is required. Reading a setting or an adventure book is
+less useful because it takes a long time and when you’re in trouble,
+your instinct will be to turn back to the book you’ve been reading.
+This slows you down and you’ll feel inadequate. Don’t do it. Questions
+let you know that whatever you come up with is OK.
+
+There are different kinds of questions that are important to the game.
+Think of them as table techniques.
+
+### A question of style
+
+A simple question to ask is how things are accomplished or how they
+fail. Players announce what they want their characters to achieve, you
+clarify the intent and indicate what a successful outcome would
+entail, you warn them about consequences of failure, you suggest the
+attribute and the skill and whether to roll two or three dice. If the
+players accept, they pick up the dice and roll.
+
+Once we know about success or failure, and having established the
+consequences, you can move on – or you can linger for a bit. Give that
+character a little spotlight and ask about how they did it, why they
+did it, how they felt as they did it. Why did that speech fail, was it
+something they did? Perhaps the player doesn’t have an answer. No
+problem, you already agreed on the consequences. But maybe the player
+feels like embellishing it or putting their own spin on it. This is
+the moment! You ask them a question and they get to tell us about
+their character. It’s an entertaining moment of character exposition
+at the table.
+
+### A question about the past
+
+
+In-game knowledge is not covered by the rules. There is no history or
+geography skill, for example. And yet, characters probably do know
+something. So if the characters are about to enter Hunland, they might
+ask you about the inhabitants. You can turn that around and ask the
+players whether any of their players had previous experience with a
+guest from Hunland or whether their parents had ever taken them there.
+
+These questions are about player characters and their backgrounds. If
+the player likes to improvise these details, they get to entertain us
+at the table and to enrich our game and we get a glimpse into the past
+of our fellow characters. It’s a short moment of spotlight within the
+context of the game. The answer given by the player colours the answer
+you’re going to give about the inhabitants of Hunland. The questions
+build on each other. It’s a virtuous cycle.
+
+### A question of character
+
+Cultivate a sense of wonder about the player characters. What are they
+doing, what are they thinking, what are they feeling? Don’t ask these
+questions at the table but keep them in mind when daydreaming. These
+questions are asked and answered through play. If Isolt and a player
+character are on a ship, start wondering about the player character.
+Are they faithful to their partner? Are they loyal to their king? Let
+Isolt fall in love with the character and we’re going to find out!
+
+The situation develops into a question directed at players. Does the
+character elope with Isolt and prove to be a lover, not a fighter?
+Let’s see. Actions count more than words, both in the game and out of
+the game.
+
+Questions for players work on two levels. The first level is: What do
+you do? The bandits are asking for the tribute they demanded last
+year. Are you helping to defend the village or are you leaving? The
+second level is: How hard is your soul? The headman begs you to stay.
+The miller asks you to protect the mill that’s outside the perimeter.
+The farmer hides his daughter from you. All these questions pop up as
+you daydream about the bandits, the village, the player characters,
+and you wonder: What are they doing, what are they thinking, what are
+they feeling?
+
+### Questions for referees
+
+Players can ask you questions: Are there any consequence for killing
+the baron? Can we get rid of Rasputin?
+
+Sometimes players will let you know what they have in mind. Sometimes
+you’ll have to ask them. Sometimes they don’t know. If player’s don’t
+know what they want, then that’s OK. Present them with more choices.
+It’s your turn to ask them questions. See the next sections.
+
+If you know what the players are wondering, set up situations that
+allow us all to find out. Are there consequences for killing the
+baron, of getting rid of Rasputin? Of course there are! How are the
+players going to find out? An assassination needs to be planned.
+Allies need to be found. Plans for a succession need to be made.
+Friends need to be in place. Moles have to be planted.
+
+As players ask the question, you start to dream. Perhaps you remember
+reading about the assassination of Rasputin? Look it up, think about
+the parts you find fascinating. The tables turn and now you get to ask
+questions. How are the going to find allies? Once they do find allies,
+use the ally to tell players more. The ally is worried about the power
+vacuum. Who’s going to succeed the baron? Who’s going to talk to the
+guards? The players wanted to know, and you’re giving it to them in a
+way that leads to more questions. It’s more of that virtuous cycle.
+
+### Guiding questions
+
+Guiding questions guide you through unfamiliar dreamlands. Why are the
+dwarves undermining the castle? It’s not giant moles, it’s not purple
+worms, it’s small and skinny dwarves like Alberich and Mime from the
+Niebelungenlied. The question implies the existence of dwarves and
+asks you about their motivation. Your input is required.
+
+As you daydream about the setting, imagining landscapes and people and
+problems, the questions can be a guide into an unfamiliar dreamland.
+The questions get you into the mood for a game that’s unfamiliar to
+you.
+
+You often need to make up stuff. You read your notes and remember your
+ideas and then you fill in the gaps at the table. You present a world
+to the players that is apparently seamless and ongoing, forever
+conjuring up new material. Wherever player characters go, there’s more
+to see and more to discover. Sometimes, you didn’t prepare for this.
+In these moments, you fall back to what is familiar. Falling back to
+familiar ideas is something all referees do.
+
+Between sessions, however, you prepare for the game. The conjuration
+at the table are not arbitrary. Sessions are short and between
+sessions, you prepare again. This is why guiding questions are
+important. They help you prepare the unfamiliar. You’ll fall back to
+the familiar at the table, when you’re stressed, and that’s OK.
+
+We’ll talk more about guiding questions as we talk about adventures.
+
+### Taking questions off the list
+
+Review the questions after a few sessions, note which of them have
+been answered and move on. There’s no point in dwelling on them.
+Replace the questions that have been answered and the questions you no
+longer care for with new questions.
+
+![A table full of armed men, one of them with a hand in his purse](images/Urs_Graf_Werbung_(1521).jpg)
+Recruiting (1521), by Urs Graf
+{: .pic }
+
+## Campaigns
+
+A campaign is the long game. If you’re just interested in a handful of
+sessions, pick *Halberts* and start with older, more powerful
+characters, potential movers and shakers in the world. When running
+the long game, you can’t prepare it all. Sure, a random generator can
+help, but even that only goes so far. This section helps you prepare
+and run the long game.
+
+## Long term interest
+
+The following elements are generate and maintain long term interest:
+
+* The changes player actions effect on the game world
+* The changing game play for players as their characters grow in power
+* The changed understanding of the world as time progresses
 
 There is an adventuring season. People go on the adventure in summer, then they return home, work the fields, bring in the harvest, cut wood, help build their communities, raise a barn, study.
 
@@ -414,75 +570,102 @@ Pay attention to the inter-generational game. Raise a family. Play your relative
 
 This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting skill, you get granted an appropriate weapon, if you don't have it already.
 
+## Adventures
+
+There is an adventuring season. People go on the adventure in summer,
+then they return home, work the fields, bring in the harvest, cut
+wood, help build their communities, raise a barn, study.
+
+Pay attention to the inter-generational game. Raise a family. Play
+your relatives and children. Get a land grant. Build a castle. Defend
+it against invasion. Build a community.
+
+How do we get there? Let’s talk about the various aspects.
+
+### Seasonal adventures
+
+It’s difficult for players to focus on multi-year projects if they
+keep getting distracted by "important" work. One way to solve it would
+be to reduce the distractions. But where is the adventure in that? If
+the point is an adventure game, the opposite is our goal: multi-year
+projects manage themselves.
+
+So here’s a classic task: let’s build a castle. You can’t buy a
+castle, so how are you going to build it? Let there be a non-player
+manager, a famous Construction-5 castle builder. He makes the plans
+and spares us the details. What he does is make demands. He tells the
+players what to do. We need tables to roll up his demands and
+associated adventure bones.
+
+*Arrange a marriage abroad.* We need more of the marble from foreign
+lands. Do you know how to get there? Travel there by ship and travel
+up river? Face pirates, cheating merchants, bandits, find a stowaway
+and be chased by their enemies. There is no payment for the marble but
+a promise of marriage for the marble quarry owner. You’re bringing
+pictures and a negotiator to the table. The negotiator is a difficult
+person but if you befriend them, you might have a connection to a
+partner of your own. What kind of partner are you looking for? What
+about the quarry owner’s family? Will you let yourself fall in love,
+risk the mission and make a big career ending move – for your heart’s
+desire?
+   
+*Mines.* There’s a problem with the iron mines, the gypsum dig, the
+coal pit, the freestone cavern. Somebody has to go there, figure
+what’s wrong and solve it: Maybe it is a werewolf has been killing
+miners, or dwarves have shown up from below and demanded that the
+digging stop. Why is that? And what about the robber knight and his
+mercenaries that promised to return and sack the mining town unless
+the protection money is paid are you going to do something about it?
+Perhaps the mine operator has been replaced by a shapechanger who
+loves to drink fine and eat piglets every day, a dozen eggs and more,
+with expensive spices from foreign lands, all paid for by the
+resources of the mine, or so they say. Find out, and decide how much
+violence you are willing to apply in order to find a solution
+agreeable to your lord and lady. Have the miners broken into an
+ancient grave site and seen the dead sorcerers stirring? Calm the
+miners and have them return to work.
+
+*Quarry*. The quarry is in uproar. Kobolds have been pranking the poor
+sods, stealing their clothes, filling their tents with spiders, having
+their meat rot away. Can you find the invisible flying pranksters,
+these cursed fairies, and can you put and end to their antics? They
+hate the rackets the hammers are making, the chisels are grating on
+their ears and the iron saws are turning the milk sour. Can you set
+the necessary traps? Can you catch them and force those contracts that
+will banish them for a year and a day, time enough to finish that
+castle?
+
+*Logging*. The loggers refuse to work. Wild men have been spotted.
+Giants, they say. Or was it hairy beast men, naked and armed with
+clubs? The Alder King is sending them, they say. Is it true? Who is
+the Alder King? Do the spider goblin knights from the deep hills fight
+for him? Is the troll on his side? Can you stop them all? Can you make
+your way to the Alder King and take those long stairs leading you to
+the goblin market? Do you know the rules governing that place?
+
+### Community building
+
+### Love and Marriage
+
+### Misfortune
+
+
+
+
+
+
+
+This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting skill, you get granted an appropriate weapon, if you don’t have it already.
+
 * Bring back the horses the men of Amalgard of Bearhall stole. If you do it, roll on the Thief or Mercenary list.
 * Bring these donkeys and their load to Falconthorpe. If you do it, roll on the Guard. If you befriended Chrodotrud, you may roll on the Passive list instead.
 * Go to the ruins of Frosthall and see if you can catch an Owl-wolf for Siggo the Aeromant. If you do it, roll on the Mercenary or Aggressive table. If you decide to spend the winter in Ramdale, receive a dog companion instead.
 * Join the raid against Amalgard of Bearhall. If you do it, roll on the Mercenary table. If you helped steal any horses, you may keep one.
 * Falconthorpe has been struggling with a manipulator. If you manage to drive him away, roll on the Mercenary table. If you decide to spend the winter there, in his house, studying the books, roll on the Manipulative or Transgressive table and tell us what sort of books you read.
 
-What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There's no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book.
+What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There’s no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book.
 
-Don't write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
-
-<div style="break-after: always;"></div>
-
-## Monsters
-
-Names are important for the suspension of disbelief. People, monsters,
-places, all of them need names. One way to generate a large number of
-names is to smash two words together.
-
-| 1d6 | Nightling |          | Predator |         |  Undead |         |
-|:---:|----------:|----------|---------:|---------|--------:|---------|
-| 1   |    Blade- | -breaker |    Claw- | -bear   |  Dream- | -demon  |
-| 2   |     Bone- | -burglar | Feather- | -hunter |   Hell- | -devil  |
-| 3   |    Child- | -dancer  |     Ice- | -lion   | Hollow- | -dead   |
-| 4   |     Crab- | -eater   |   Knife- | -maw    |  Necro- | -eater  |
-| 5   |     Moon- | -ling    |   Tiger- | -spider | Shadow- | -knight |
-| 6   |    Tooth- | -taker   |  Winter- | -wolf   |  Spine- | -lord   |
-
-| 1d6 |     Giant |           |  Dragon |         |   |   |
-|:---:|----------:|-----------|--------:|---------|--:|---|
-| 1   |    Cloud- | -eye      |   Fire- | -anger  |   |   |
-| 2   |     Gold- | -grinder  |  Flame- | -breath |   |   |
-| 3   |     Iron- | -hammer   | Poison- | -curse  |   |   |
-| 4   | Mountain- | -king     |    Sky- | -fury   |   |   |
-| 5   |    Storm- | -splitter |   Snow- | -wyrm   |   |   |
-| 6   |     Soul- | -weaver   |   Void- | -worm   |   |   |
-
-<div style="break-after: always;"></div>
-
-## Humans
-
-Roll 2d8 for the prefix.
-
-| 1d8 | 1      | 2      | 3     | 4     | 5    | 6    | 7      | 8     |
-|:---:|--------|--------|-------|-------|------|------|--------|-------|
-| 1   | Adal   | Chari  | Dago  | Gote  | Hu   | Ort  | Rum    | Vorti |
-| 2   | Albe   | Charle | Dank  | Gunde | Ingo | Os   | Schili | Vulde |
-| 3   | Amal   | Childe | Ecke  | Gunt  | Krim | Pil  | Schru  | Walt  |
-| 4   | Bald   | Chilpe | Gel   | Hade  | Lude | Ram  | Sieg   | Werb  |
-| 5   | Bert   | Chlodo | Ger   | Hel   | Man  | Rich | Sigi   | Wich  |
-| 6   | Bote   | Chrodo | Ger   | Her   | Mero | Rit  | Sind   | Wisi  |
-| 7   | Brun   | Clot   | Gib   | Hilde | Nant | Ro   | Theude | Wite  |
-| 8   | Charde | Crot   | Gisel | Horn  | Nor  | Rudi | Ul     | Wolf  |
-
-Sometimes, people have a short name.
-
-| 1d12 | Women  | Men      |
-|:----:|--------|----------|
-| 1    | Ada    | Ardo     |
-| 2    | Anna   | Dodo     |
-| 3    | Berta  | Else     |
-| 4    | Chloe  | Etzel    |
-| 5    | Dora   | Gregor   |
-| 6    | Elsa   | Gundobad |
-| 7    | Frieda | Gyso     |
-| 8    | Gisela | Hagen    |
-| 9    | Hilde  | Iring    |
-| 10   | Inge   | Otto     |
-| 11   | Ulrike | Siggo    |
-| 12   | Ute    | Werbel   |
+Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
 
 <div style="break-after: always;"></div>
 

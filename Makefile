@@ -49,7 +49,7 @@ Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg images/Urs_Graf_Schrecken_d
 
 Halberts.pdf: images/Helmbarten.png Helmbarten.jpg images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg
 
-Knives.pdf: Knives.jpg Knives.css Knives-prefix images/Schweizerkrieger_(1515)_Urs_Graf.jpg
+Knives.pdf: Knives.jpg Knives.css Knives-prefix images/Schweizerkrieger_(1515)_Urs_Graf.jpg images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg images/Urs_Graf_Werbung_(1521).jpg
 
 Halbardier.pdf: Halbardier.jpg
 

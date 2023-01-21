@@ -512,8 +512,8 @@ When an advantage is gained through tactics, the result is often a
 surprise round where the opponent cannot strike back. That can become
 very important.
 
-![The horror of war (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
-The horror of war (1521), by Urs Graf
+![](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Battlefield (1521), by Urs Graf
 {: .pic }
 
 ## Worldbuilding

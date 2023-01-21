@@ -527,8 +527,8 @@ es, dem Kampf aus dem Weg zu gehen.
 > ist der erste Goblin tödlich verwundet (Ausdauer und Leben beide auf
 > 0), doch der andere steht noch.
 
-![Schrecken des Krieges (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
-Der Schrecken des Krieges (1521), von Urs Graf
+![](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Schlachtfeld (1521), von Urs Graf
 {: .pic }
 
 ## Weltenbau

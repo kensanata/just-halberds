@@ -5,7 +5,7 @@ neighboring rights to this work.</address>
 
 # Knives
 
-<p class="title"><img src="Knives.jpg" /></p>
+<p class="title"><img src="Knives.jpg" alt="A young man with an eye patch"/></p>
 
 ## What are we even doing?
 
@@ -43,8 +43,8 @@ want to begin the game with more experience, take a look at the
 
 Your first job will be to make friends and connections.
 
-![Schweizerkrieger (1515), Urs Graf](images/Schweizerkrieger_(1515)_Urs_Graf.jpg)
-Schweizerkrieger (1515), by Urs Graf
+![A warrior looking out at a lake](images/Urs_Graf_Stehender_Reisläufer_vor_Seelandschaft_in_Rückansicht_(1514).jpg)
+A mercenary looking at a lake (1514), by Urs Graf
 {: .pic .small }
 
 <div style="break-after: always;"></div>
@@ -402,9 +402,22 @@ When an advantage is gained through tactics, the result is often a
 surprise round where the opponent cannot strike back. That can become
 very important.
 
-![The horror of war (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
-The horror of war (1521), by Urs Graf
+![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Battlefield (1521), by Urs Graf
 {: .pic }
+
+## Campaigns
+
+A campaign is the long game. The long game promises ever changing
+game-play. The following sections discuss how to run such a long game.
+
+
+
+When running the long game, you can’t prepare it all. Sure, a random
+generator can help, but even that only goes so far. This section helps
+you prepare and run the long game.
+
+<div style="break-after: always;"></div>
 
 ## Running the game
 
@@ -439,7 +452,6 @@ their character. It’s an entertaining moment of character exposition
 at the table.
 
 ### A question about the past
-
 
 In-game knowledge is not covered by the rules. There is no history or
 geography skill, for example. And yet, characters probably do know
@@ -543,32 +555,27 @@ been answered and move on. There’s no point in dwelling on them.
 Replace the questions that have been answered and the questions you no
 longer care for with new questions.
 
-![A table full of armed men, one of them with a hand in his purse](images/Urs_Graf_Werbung_(1521).jpg)
+![A table full of armed men, one of them with a hand in his purse](images/Urs_Graf_Anwerbung_eines_Landsknechtes_im_Zunftsaal_(1521).jpg)
 Recruiting (1521), by Urs Graf
 {: .pic }
 
-## Campaigns
+### Long term interest
 
-A campaign is the long game. If you’re just interested in a handful of
-sessions, pick *Halberts* and start with older, more powerful
-characters, potential movers and shakers in the world. When running
-the long game, you can’t prepare it all. Sure, a random generator can
-help, but even that only goes so far. This section helps you prepare
-and run the long game.
-
-## Long term interest
-
-The following elements are generate and maintain long term interest:
+The following elements all generate and maintain long term interest:
 
 * The changes player actions effect on the game world
 * The changing game play for players as their characters grow in power
 * The changed understanding of the world as time progresses
 
-There is an adventuring season. People go on the adventure in summer, then they return home, work the fields, bring in the harvest, cut wood, help build their communities, raise a barn, study.
 
-Pay attention to the inter-generational game. Raise a family. Play your relatives and children. Get a land grant. Build a castle. Defend it against invasion. Build a community. I would love to see this work!
 
-This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting skill, you get granted an appropriate weapon, if you don't have it already.
+, grow weak in
+old age, get replaced by young ones that go their own way and grow
+again in power. The circle of life, always different, always changing.
+
+If you’re just interested in a handful of sessions, pick *Halberts*
+and start with older, more powerful characters, potential movers and
+shakers in the world.
 
 ## Adventures
 
@@ -608,7 +615,7 @@ partner of your own. What kind of partner are you looking for? What
 about the quarry owner’s family? Will you let yourself fall in love,
 risk the mission and make a big career ending move – for your heart’s
 desire?
-   
+
 *Mines.* There’s a problem with the iron mines, the gypsum dig, the
 coal pit, the freestone cavern. Somebody has to go there, figure
 what’s wrong and solve it: Maybe it is a werewolf has been killing

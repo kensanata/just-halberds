@@ -11,7 +11,7 @@ neighboring rights to this work.</address>
 
 You have a super simple RPG in front of you. All you need are some
 friends and two regular six-sided dice, maybe some pen and paper, and
-you're good to go. One of you will referee the game. Is that you? All
+you’re good to go. One of you will referee the game. Is that you? All
 other players think up a person. The referee dreams up a world and
 situations for these imaginary people; the players say how they react
 and the referee says how the world reacts, and so it goes on and on.
@@ -21,9 +21,9 @@ The dice are rolled when something with exciting consequences happens
 and we want to leave the outcome to chance. Do our people succeed in
 their project or not? And what happens afterwards?
 
-This is a variant of the *Halberts* game where your character doesn't
+This is a variant of the *Halberts* game where your character doesn’t
 start fully fleshed out. Instead, you start as a young adult, with
-nothing but a knife. And you're not trained in knife fighting.
+nothing but a knife. And you’re not trained in knife fighting.
 
 ## Character Creation
 
@@ -148,7 +148,7 @@ A few key words about the individual talents.
 **Literacy**: Reading and writing.
 **Necromancy**: Magic that allows resurrection and contact with the dead.
 **Oratory**: Convincing with well-chosen words.
-**People**: Magic used to read people's minds and emotions.
+**People**: Magic used to read people’s minds and emotions.
 **Pick**: Opening locks and doors.
 **Planeswalk**: Magic that has to do with contact with other worlds and transition into them.
 **Plants**: Magic related to plants and their growth.
@@ -212,11 +212,11 @@ following tables to roll on.
 | 5   | Distract | Tactics   | Oratory     | Behavior  |
 | 6   | Pick     | Singing   | Trading     | Tinker    |
 
-## Adventurer's Life
+## Adventurer’s Life
 
 If you want to do something and the outcome is uncertain, discuss with
 the referee an attribute and a talent to use, provided there is a
-suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
+suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it’s very
 hard, you might have to roll 3d6 ≤ attribute + talent.
 
 If you attack successfully, you deal 2d6 damage unless you use a
@@ -235,9 +235,9 @@ pass out. After 10 minutes you wake up again.
 > Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She
 > gets hit for the first time and has to subtract 4+5=9 damage. Berta
 > rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1). She
-> won't pass out! The second time she has to subtract 2+6=8 hits and
+> won’t pass out! The second time she has to subtract 2+6=8 hits and
 > chooses to subtract 2 from Dexterity (6-2=4) and 6 from Endurance
-> (9-6=3). Now it's getting close…
+> (9-6=3). Now it’s getting close…
 
 After the fight, all attributes recover half of the missing amount
 (round down). If you are being treated by First Aid or a healer, you
@@ -245,11 +245,11 @@ will be fit again in 30 minutes, otherwise the recovery will take 3
 days.
 
 > Example: After being treated with First Aid, she recovers.
-> Brunhilde's attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
+> Brunhilde’s attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
 > 3+3=6.
 
 If two of your attributes drop to 0, you are severely wounded and pass
-out. You don't wake up again for 3h and only the attributes from 0
+out. You don’t wake up again for 3h and only the attributes from 0
 recover to 1. With First Aid-3 or Healing-3 you can recover in an
 infirmary in 5d6 days, otherwise you die.
 
@@ -259,7 +259,7 @@ For all other creatures there are only Endurance and Life instead of
 the known six attributes. When Endurance drops to 0, they faint; when
 Life drops to 0, they die.
 
-> Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
+> Example: Adalric’s dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
 Hitting opponents wearing a metal cuirass is hard: roll 3d6 ≤
@@ -338,7 +338,7 @@ it!
 > **Lightning**: hits an enemy and what they are carrying for 5d6 damage each  
 > **Chain Lightning**: hits up to 5 enemies for 2d6 damage each
 
-Since spells are stronger than weapon attacks, one shouldn't be able
+Since spells are stronger than weapon attacks, one shouldn’t be able
 to cast any number of them. With each spell cast, the risk of
 exhaustion increases. Therefore, when casting spells, the modified
 rule applies: roll 2d6 + number of spells cast today ≤ attribute +
@@ -347,7 +347,7 @@ used today.
 
 > Example: Adalric conjures rain for privacy. He has Education 9,
 > Water-1, making a total of 10. Alex rolls 10 + 0 since this was the
-> first spell of the day. It's raining because 10 ≤ 10. Chain
+> first spell of the day. It’s raining because 10 ≤ 10. Chain
 > Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills five
 > goblins.
 
@@ -383,7 +383,7 @@ roll the dice and evaluate. Everything happens at the same time.
 
 In some role-playing games, combat tends to be front and center. In
 this game, after one round, perhaps half of those involved are already
-on the ground. War is terrible. Most of the time it's about avoiding
+on the ground. War is terrible. Most of the time it’s about avoiding
 the fight.
 
 > Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9, and

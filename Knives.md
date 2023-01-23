@@ -408,14 +408,143 @@ Battlefield (1521), by Urs Graf
 
 ## Campaigns
 
-A campaign is the long game. The long game promises ever changing
-game-play. The following sections discuss how to run such a long game.
+A campaign is the long game. Maintaining interest over multiple years
+time can be tricky. In addition to that, you can’t prepare the whole
+game before it starts. This section helps you run the long game.
 
+The following elements all generate and maintain long term interest:
 
+* The changes player actions effect on the game world
+* The changing game play for players as their characters grow in power
+* The changed understanding of the world as time progresses
 
-When running the long game, you can’t prepare it all. Sure, a random
-generator can help, but even that only goes so far. This section helps
-you prepare and run the long game.
+The long game promises ever changing game-play. Here are some
+suggested changes you can first foreshadow and then institute:
+
+*Interventions*. People ask for help and when player characters help
+out, the situation changes for the better – visibly, permanently.
+
+An example would be a village that suffer from raids by spider
+goblins. As the party arrives, the villagers beg the party to rid the
+village of the goblins. If the party succeeds, the villagers will
+remember. Whenever the party passes through, there is a feast and the
+villagers sing their song.
+
+To foreshadow this, make a list of a handful of interventions that
+non-player characters have made, such as: “Thidrek slew the giant Grim
+sword Nagelring which the dwarf Alberich had made for Thidrek.” It
+connects two non-player characters that can be met, it introduces an
+important item that can be gained, it establishes a bit of history of
+the setting that promises more to learn – this one sentence pulls a
+lot of weight.
+
+![A small town with castle and church by a lake](images/Urs_Graf_Stadt_am_Seeufer_(1514).jpg)
+A town by the lake shore (1514), by Urs Graf
+{: .pic .small }
+
+*Reputation.* Non-player characters have a reputation for at least
+one thing they did in the past, big or small. The sentence above
+with Thidrek slaying the giant is a non-player character having a
+reputation. It foreshadows that reputation can be gained.
+
+As soon as the player characters have done something similar, have
+people react to the reputation this engenders. Give players epithets
+like “dragon slayers” or have people remember how they stole
+Alberich’s cloak of invisibility. This is the reputation they gain.
+
+*Reactions*. The reputation gained has an effect on the world. When
+the player characters are young, the beggar king of Signisport
+harasses them. When the player characters are older, the beggars of
+Signisport report to them and try to win their favour.
+
+Don’t hold back with positive reactions. This is not a valley of
+tears. The adventure game is entertaining because it allows us to
+overcome adversity. We are powerless enough in the real world. Let’s
+not put that into our games for the sake of “realism”.
+
+*Power levels*. Every increase in skill unlocks new powers. You need
+to decide what the range of power levels is going to look like. A good
+range would be from 1 to 5. An Education-11 Fire-5 Pyromancer is able
+to pass a difficult check with 3d6 ≤ 16 with 98% chance of success.
+Thus between 1 and 5, we have the entire span of talents: First Aid-1
+is good enough to do the job of a field medic, but only a First Aid-3
+or Healing-3 will save a man doomed to die. Similarly, a sorceress
+with Fire-5 knows the secrets of Muspelheim and has spoken with Sutr,
+the lord of fire.
+
+![Men with polearms gather beneath a flag](images/Urs_Graf_Versammlung_von_Reisläufern,_(1515).jpg)
+Mercenaries gathering (1515), by Urs Graf
+{: .pic .right }
+
+*World changing events*. The world we care about is the setting of the
+game. If the players aren’t changing it, it changes of its own accord.
+This is why you shouldn’t invest too much in the present state of
+affairs. Instead of thinking about the 28 cousins of the duke, invest
+some time in 4 cousins of the duke and be ready to overthrow the duke
+and his family.
+
+To foreshadow this, make sure that you occasionally mention how things
+used to be different. Remember how quickly times change. Here are
+Celts, they want to move but Caesar conquers Gaul instead. Not long
+after that, the Romans leave, the Goths come. Then the Franks. Then
+the Vikings. The Normans. All of that in the span of a few hundred
+years. Have a list of two or three previous periods to refer to. The
+invasion of the Huns. The reign of the Völsung.
+
+Make sure these are not periods in the distant past. The era when
+giants ruled the earth is interesting lore and explains the existence
+of giant castles, but it doesn’t foreshadow anything unless they’re
+coming back. Then again, if they are – more power to you!
+
+Another way to foreshadow world changing events is to highlight agents
+of future change. There are rebels in the imperial capital. There are
+warbands of the coming invasion. There are refugees from the coming
+flood. These people show up. There’s that village the party has been
+to two or three times, and now there’s a refugee camp. Change is
+afoot!
+
+*Understanding*. Some players feel happy when they find an explanation
+for how things work, why things are the way they are. Perhaps humans
+have a tendency towards searching for causes. In order to satisfy this
+curiosity, create (very short) histories for places and cultures that
+can be discovered through play. Don’t have players learn about these
+through books or sages. Have them discover these secrets.
+
+To foreshadow this, knowledgeable non-player characters are always
+eager to learn more, willingly part with information they have and are
+always happy to get updates from player characters. Don’t lock
+knowledge away. Don’t make sages tight-lipped and cagey. Instead, let
+them be librarians, always eager to add new books to the library (and
+place books liberally in your setting). In exchange for books found,
+librarians divulge more secrets, and place new burial mounds, new
+ruined castles and new entrances to the underworld onto the players’
+map. This is easily combined with “interventions” above: The sages and
+librarians ask the players to follow up on cues and are grateful when
+they do. Another virtuous cycle ensues.
+
+An example for such a chain of secrets would be this: The power of the
+king is due to the riches he amassed → he got these riches from a
+dragon’s hoard → he got this heard with an invisibility cape → he got
+this cape from a dwarf king → this dwarf king still lives in Niflheim
+and has cursed the gold. These chains don’t have to be too long. Five
+steps is a good start. Make sure to have several such chains.
+
+Here’s another example: The king’s wife used to be a ferocious fighter
+→ she had promised to marry only the one would best her in a wrestling
+match → the king didn’t stand a chance and had implored his best
+friend to help him – using the invisibility cape → this best friend
+then got to marry the most beautiful woman in the land.
+
+Each link in the chain is a secret to be uncovered, each can be an
+aside learned in an adventure. The adventure is never just about
+learning such a secret. The secret is icing on the cake.
+
+*The short game*. If you’re just interested in a handful of sessions,
+pick *Halberts* and start with older, more powerful characters,
+potential movers and shakers in the world. *Knives* doesn’t have long
+lists of monsters to fight, or magic items to win, or spells to learn.
+Those imply a kind of changing game-play over time. That’s why you
+need to focus on all the other aspects touched upon in this section.
 
 <div style="break-after: always;"></div>
 
@@ -559,24 +688,6 @@ longer care for with new questions.
 Recruiting (1521), by Urs Graf
 {: .pic }
 
-### Long term interest
-
-The following elements all generate and maintain long term interest:
-
-* The changes player actions effect on the game world
-* The changing game play for players as their characters grow in power
-* The changed understanding of the world as time progresses
-
-
-
-, grow weak in
-old age, get replaced by young ones that go their own way and grow
-again in power. The circle of life, always different, always changing.
-
-If you’re just interested in a handful of sessions, pick *Halberts*
-and start with older, more powerful characters, potential movers and
-shakers in the world.
-
 ## Adventures
 
 There is an adventuring season. People go on the adventure in summer,
@@ -687,3 +798,8 @@ Don’t write a setting with a timeline, a map, and names. Instead, write a pamp
 [Knave](https://questingbeast.itch.io/knave), a d20 game
 
 [Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a 2d6 game
+
+The images used are by Urs Graf. He lived in Solothurn, Switzerland,
+around 1485–1527/28. The images are in the public domain. I got them
+from the [online collection of the Kunstmuseum
+Basel](https://sammlungonline.kunstmuseumbasel.ch/eMP/eMuseumPlus ).

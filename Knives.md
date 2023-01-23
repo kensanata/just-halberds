@@ -491,17 +491,18 @@ the Vikings. The Normans. All of that in the span of a few hundred
 years. Have a list of two or three previous periods to refer to. The
 invasion of the Huns. The reign of the Völsung.
 
-Make sure these are not periods in the distant past. The era when
-giants ruled the earth is interesting lore and explains the existence
-of giant castles, but it doesn’t foreshadow anything unless they’re
-coming back. Then again, if they are – more power to you!
+*The present*. Make sure big changes are not a thing of the distant
+past. The era when giants ruled the earth is interesting lore and
+explains the existence of giant castles, but it doesn’t mean much
+unless they’re coming back in the next handful of sessions. Then
+again, if they are – more power to you!
 
-Another way to foreshadow world changing events is to highlight agents
-of future change. There are rebels in the imperial capital. There are
-warbands of the coming invasion. There are refugees from the coming
-flood. These people show up. There’s that village the party has been
-to two or three times, and now there’s a refugee camp. Change is
-afoot!
+To foreshadow this, have visible agents of future change show up.
+There are rebels in the imperial capital – the rebellion is brewing
+right here, right now. There are reports of war bands signalling
+coming invasion. There are refugees from the recent floods and the
+oracles say it’s going to get worse come rainy season. These people
+show up in the next session. Change is afoot!
 
 *Understanding*. Some players feel happy when they find an explanation
 for how things work, why things are the way they are. Perhaps humans
@@ -545,8 +546,6 @@ potential movers and shakers in the world. *Knives* doesn’t have long
 lists of monsters to fight, or magic items to win, or spells to learn.
 Those imply a kind of changing game-play over time. That’s why you
 need to focus on all the other aspects touched upon in this section.
-
-<div style="break-after: always;"></div>
 
 ## Running the game
 

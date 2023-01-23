@@ -349,45 +349,44 @@ People can be depicted with the well-known six attributes. You may
 choose these freely or roll them (2d6). Talents are also freely
 determined (often 1 or 2).
 
-Monsters and animals have different characteristics that describe
-their behavior: damage determines how much damage they deal if they
-hit; endurance determines how many rounds they will fight and how much
-damage they can take; if it drops to zero, they faint; excess damage
-is substracted from life; if it drops to zero, they are mortally
-wounded; attack determines whether they attack in an encounter (2d6 ≤
-attack); hit determines how well they hit (2d6 ≤ hit), and escape
-determines if they attempt to escape when they’re not attacking (2d6 ≤
-escape). If they neither attack nor escape, we talk.
+Other creatures, bots and mechs on the battlefield have different
+characteristics that describe their behavior: damage determines how
+much damage they deal if they hit; endurance determines how many
+rounds they will fight and how much damage they can take; if it drops
+to zero, they faint; excess damage is substracted from life; if it
+drops to zero, they are mortally wounded; attack determines whether
+they attack in an encounter (2d6 ≤ attack); hit determines how well
+they hit (2d6 ≤ hit), and escape determines if they attempt to escape
+when they’re not attacking (2d6 ≤ escape). If they neither attack nor
+escape, we talk.
 
 | 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |
 |:---:|-----------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
-| 1   | Nightlings | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
-| 2   |  Predators | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
-| 3   |     Undead | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
-| 4   |     Mounts | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
-| 5   |     Giants | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
-| 6   |    Dragons | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
+| 1   |   Critters | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
+| 2   |   Sophonts | 2d6    | 2d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
+| 3   | Xenomorphs | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
+| 4   |       Bots | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
+| 5   |      Mechs | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
 
-For each world, the stats will be slightly different. Note down when
-you roll something and stick to it! For the number of enemies, roll
-2d6 for nightlings and predators, or 1d6 for undead. Giants and
-dragons are always loners.
+For each species, for each model, the stats will be slightly
+different. Note down when you roll something and stick to it! For the
+number of enemies, roll 2d6 for critters and sophont, or 1d6 for
+xenomorphs. Bots and mechs are usually loners.
 
-> Example: Claudia referees the game and needs goblins that
-> ride on giant spiders that ambush the vanguard. There are 7.
-> She uses the line of nightlings and mounts. Goblins:
-> Damage-3, Endurance-1, Life-5, Attack-5, Hit-9, Escape-4.
-> Giant Spiders: Damage-15, Endurance-16, Life-12, Attack-9,
-> Hit-5, Escape-7. In this world, goblins are rather harmless
-> opponents who ride on terrible giant spiders, which,
-> oddly enough, are not very good at hitting things.
+> Example: Claudia referees the game and needs sophonts that ride on a
+> giant bot that ambushes the vanguard. There are 7. She rolls them
+> up. Gao Ish critters: Damage-3, Endurance-1, Life-5, Attack-5,
+> Hit-9, Escape-4. AUK Security Carrier bot: Damage-15, Endurance-16,
+> Life-12, Attack-9, Hit-5, Escape-7. The Gao Ish are rather harmless
+> opponents who ride on terrible bots, which, oddly enough, are not
+> very good at hitting things.
 
 Announce impending danger is always clearly, so that the players can
 decide for themselves whether they want to engage in a fight.
 
-> Example: Claudia describes how the car-sized shadows
-> push through the undergrowth, how their acrid smell spreads
-> and the animals in the barn panic.
+> Example: Claudia describes how the shadow of the carrier bot push
+> through the undergrowth, the seismometers nervously highlighting the
+> location.
 
 If possible, the players should roll the dice, not the referee. For
 example, if they want to lure the opponent into an ambush, or notice
@@ -396,40 +395,20 @@ cases.
 
 ## Spaceships, Travel, Combat
 
+...
+
 ## Personal and Vehicle Combat
 
 Combat is divided into rounds. Everyone may attack, cast magic, or do
 something else 1×/round. All participants announce their action, roll
 the dice and evaluate. Everything happens at the same time.
 
-> Example: Aapeli casts chain lightning and he is protected by the
-> rain. A goblin has seen him anyway and shoots at him with his bow.
-> The goblin has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
-
 In some role-playing games, combat tends to be front and center. In
 this game, after one round, perhaps half of those involved are already
 on the ground. War is terrible. Most of the time it's about avoiding
 the fight.
 
-> Example: Bellatrix has Strength 10, Dexterity 6, Endurance 9, and
-> Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
-> Escape-4. She turns to fight. First round: Berta rolls 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6, two hits for the goblins,
-> since 6 ≤ 9. With the first hit, chance decides which attribute
-> Bellatrix must reduce: Berta rolls a 4, which is Dexterity (6-3=3).
-> The goblins deal 3 every time they hit. The second hit Bellatrix
-> deducts from her Endurance (9-3=4). Berta rolls 6 damage which kills
-> the goblin (both Endurance and Life are reduced to zero), but the
-> other still stands.
-
-When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back. That can become
-very important.
-
-![The horror of war (1521), Urs Graf](images/Urs_Graf_Schrecken_des_Kriegs_1521.jpg)
-The horror of war (1521), by Urs Graf
-{: .pic }
+...
 
 ## Worldbuilding
 
@@ -442,8 +421,8 @@ The game does not offer a "reward" in the sense of gaining power.
 Finding money is not worth it, there's no special equipment to buy, no
 experience points to gain. That's another reason why it's important to
 find out what interests the players. A tragic end? A love story?
-Owning a castle? To be knighted? Take over a gang? To travel the
-world? And then you add helpers, competitors, villains, and
+Owning an orbital station? To be knighted? Take over a gang? To travel
+the world? And then you add helpers, competitors, villains, and
 troublemakers to the world. This friction sharpens the profile. Here
 we see what kind of people our characters are.
 
@@ -456,70 +435,7 @@ organizations want three things each and offer three rewards each. If
 those wishes partly overlap and contradict each other, so much the
 better.
 
-| 1d6 | Activity  | Secret Society 1 | Secret Society 2 | Gods   | Demons   |
-|:---:|-----------|------------------|------------------|--------|----------|
-| 1   | Knight    | Militia          | of the pyramid   | Odin   | Set      |
-| 2   | Bard      | Scribes          | of the moon      | Freya  | Orcus    |
-| 3   | Thief     | Pentarchs        | of the circle    | Thor   | Pazuzu   |
-| 4   | Mage      | Students         | of history       | Mitra  | Nergal   |
-| 5   | Librarian | Servants         | of consciousness | Marduk | Hel      |
-| 6   | Merchant  | Cooperation      | of order         | Ishtar | Zathogga |
-
-The first few names of villages, castles and witch towers can be
-generated with the following tables.
-
-| 1d6 | Castle 1 | Castle 2 | Castle 3 | Village | Magic 1 | Magic 2 | Magic 3 |
-|:---:|----------|----------|----------|---------|---------|---------|---------|
-| 1   | Watch-   | Falcon-  | -fort    | -thrope | Witch-  | Flame-  | -tower  |
-| 2   | Olden-   | Fern-    | -hill    | -dale   | Raven-  | Death-  | -watch  |
-| 3   | Bear-    | Glad-    | -rock    | -wick   | Devil-  | Temple- | -crest  |
-| 4   | New-     | Blade-   | -stone   | -ley    | Fell-   | High-   | -wood   |
-| 5   | Good-    | Ram-     | -ward    | -ton    | Dark-   | Sky-    | -hole   |
-| 6   | Star-    | Frost-   | -hall    | -ford   | Ice-    | Cat-    | -stead  |
-
-For people's names, I like to look up a baby name list online and use
-that for my world. Here are a few tables for names with a Franconian
-touch. Easily add -o, -a or -e at the end, or reverse (Chlodobert,
-Theudebald, Hildebart, Gertrud).
-
-| 1d6 | Name 1 | Name 2  | Name 3 | Name 4 | Name 5 | Name 6 |
-|:---:|--------|---------|--------|--------|--------|--------|
-| 1   | Adal-  | Chlodo- | -ger   | -burg  | Ada    | Chloe  |
-| 2   | Amal-  | Charde- | -man   | -gard  | Berta  | Gregor |
-| 3   | Bald-  | Gunde-  | -mund  | -gund  | Gyso   | Frieda |
-| 4   | Bert-  | Os-     | -ric   | -hild  | Dodo   | Siggo  |
-| 5   | Brun-  | Sigi-   | -hard  | -lind  | Hilde  | Ardo   |
-| 6   | Ger-   | Theude- | -sind  | -trud  | Inge   | Gisela |
-
-Intelligent monsters and mountains should also have names. For giants
-and dragons, I like to use names that indicate forces of nature.
-
-| 1d6 | Name 1 | Dragons  | Giants  | Mountain 1 | Mountain 2 |
-|:---:|--------|----------|---------|------------|------------|
-| 1   | Ice    | -pharynx | -hammer | Needle     | -mount     |
-| 2   | Frost  | -breath  | -smith  | Hell       | -horn      |
-| 3   | Fire   | -spout   | -maker  | Division   | -crag      |
-| 4   | Poison | -needle  | -father | Dark       | -height    |
-| 5   | Plague | -puff    | -mother | Red        | -ridge     |
-| 6   | Shadow | -smoke   | -tooth  | Frozen     | -peak      |
-
-Treasures that these people, giants, and dragons may have and that
-they might want to steal from each other. For this you should make up
-two or three important people from the past: prophets, heroines, and
-so on, as well as the name of a dark lord and his realm. Names matter!
-
-| 1d6 | What    | What for         | Who invented it?                 |
-|:---:|---------|------------------|----------------------------------|
-| 1   | Ring    | of Invisibility  | The Ruler of the Night           |
-| 2   | Sword   | of Invincibility | The Lady of the Lake             |
-| 3   | Crown   | of Power         | The First Judge                  |
-| 4   | Spear   | of Destruction   | from the Last Days of the Empire |
-| 5   | Book    | of the Saint     | (a well-known person)            |
-| 6   | Chalice | of Redemption    | (a god, goddess, or demon)       |
-
-All these things are recorded and hopefully lead to cross-connections
-and inspiration. The next chapter presents the beginning of such an
-initial setting – but you have to finish writing it yourself!
+...
 
 ## Example
 

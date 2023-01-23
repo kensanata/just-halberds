@@ -689,13 +689,43 @@ Recruiting (1521), by Urs Graf
 
 ## Adventures
 
-There is an adventuring season. People go on the adventure in summer,
-then they return home, work the fields, bring in the harvest, cut
-wood, help build their communities, raise a barn, study.
+The thing to foster at the table is mutual entertainment and player
+agency. These are player needs that must be met.
 
-Pay attention to the inter-generational game. Raise a family. Play
-your relatives and children. Get a land grant. Build a castle. Defend
-it against invasion. Build a community.
+*Player needs come first*. The character needs are only of interest in
+so far as consistency increases our willingness to believe in the
+fantasy world and therefore it entertains us. If the actions of
+characters hurt a player, then it’s time for them to go. Let the
+player make a new character who’s a better fit. If the adventure bores
+the table, then it’s time to change track. Move the characters into a
+different situation.
+
+*Mutual entertainment*. This means that we must care for the other
+players at the table. Lift each other up. Engage with each other and
+the situation. If one character is a morose pyromaniac or a secret
+devil worshipper, try to be a good friend to them and see where that
+tension takes you. If one character is a lighthearted religious
+fighter, try to be a serious religious fanatic, a serious atheist. If
+one characters is a fighting machine, call upon them to solve problems
+with violence, treat them like a thug. Or try to educate them and lift
+them up. The point is to pick something in your friends’ characters
+that you can engage with, and do it. Don’t make their lives miserable
+– look for just the right level of banter between the characters.
+Something to say to each other during the game.
+
+*Player agency*. Decisions must count.
+
+*Risk*. It’s betting.
+
+*Community*. Get a land grant from a powerful friend. Build a castle
+to defend your village against invasion. Build a community.
+
+*Family*. Pay attention to the inter-generational game. Raise a
+family. Play your relatives and children.
+
+*Growing old*. There is an adventuring season. People work the fields
+in spring, go on adventure in summer, bring in the harvest in autumn,
+cut wood, raise a barn, study.
 
 How do we get there? Let’s talk about the various aspects.
 

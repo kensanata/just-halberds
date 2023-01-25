@@ -713,9 +713,27 @@ that you can engage with, and do it. Don’t make their lives miserable
 – look for just the right level of banter between the characters.
 Something to say to each other during the game.
 
-*Player agency*. Decisions must count.
+*Player agency*. In a game that takes place in our imagination, the
+greatest asset we have is the freedom of it all. We can make decisions
+and the imaginary world reacts. We can try things we don’t usually, be
+the people we don’t usually are. This is why decision making is
+essential. Skip the long monologues, the long descriptions, the long
+transitions – move quickly until the game needs players to make a
+decision. “What do you do?” These can be big decisions or small
+decisions. Do you join the court of Etzel? Do you fight the dragon? Do
+you support the dwarves? Do you taunt the mermaids? Are you courteous
+to the librarian? Do you flirt with the mercenary? Don’t invalidate
+choice by asking for a decision that has no weight.
 
-*Risk*. It’s betting.
+*Risk*. Making a decision is exciting when there’s something at risk.
+This includes all the variants of making a bet. A character stays in
+the fight because the player is betting on them winning that last
+exchange. A character flirts with the mercenary betting to win them
+over without a fight. Emphasise the danger and highlight the reward
+until it’s a hard decision to make. The risks must always be worth it.
+Some players like to play it safer than others. Encourage them with
+non-player characters, help them control the risk, don’t push them too
+hard. Aim for those butterflies.
 
 *Community*. Get a land grant from a powerful friend. Build a castle
 to defend your village against invasion. Build a community.

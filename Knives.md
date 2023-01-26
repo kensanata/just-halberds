@@ -31,11 +31,13 @@ If you are a player, you play a fictional person, your character.
 
 First you choose your name, then you roll your attributes. You have
 six attributes: Strength, Dexterity, Endurance, Intelligence,
-Education, and Status. Roll two six-sided dice for each attribute, add
-them together (short: 2d6) and write it down.
+Education, and Status. Roll two six-sided dice for the first five
+attributes, add the two dice together (short: 2d6) and write it down.
+You either inherit Status from your parents (if you’ve played them),
+or you start as an orphan with Status-2.
 
-> Example: Alex names his character Adalric and rolls 8 8 7 9 10
-> 8; Berta names her character Brunhilde and rolls 10 6 9 5 4 4.
+> Example: Alex names his character Adalric and rolls 8 8 7 9 10;
+> Berta names her character Brunhilde and rolls 10 6 9 5 4.
 
 Your character begins at age 16. You have no special talents. If you
 want to begin the game with more experience, take a look at the
@@ -65,10 +67,10 @@ powerful friend.
 
 ### Gifts and boons
 
-**Talent**: With every year that passes, you get to gain new skills.
-Naturally you’re just not focusing on a single skill. The year is
+**Talent**: With every year that passes, you get to gain new talents.
+Naturally you’re just not focusing on a single talent. The year is
 long, after all. This is why you get to pick an appropriate table to
-roll on during the winter phase. You’ll get one of the skills on the
+roll on during the winter phase. You’ll get one of the talents on the
 list, but chance still plays a role.
 
 **Weapon**: Join a militia and get a spear to fight with. Go to war
@@ -86,8 +88,8 @@ join.
 **Companion**: A young apprentice looking to learn from you, or a
 talking animal such as a cat, an owl, or a raven. If your companion is
 human, roll the six attributes (2d6 each for Strength, Dexterity,
-Endurance, Intelligence, Education, and Status). They gain skills,
-just like you. If they surpass you in your best skill, they leave.
+Endurance, Intelligence, Education, and Status). They gain talents,
+just like you. If they surpass you in your best talent, they leave.
 
 **Dog**: You find a loyal friend. Damage 2d6; Endurance 3d6; Life 2d6.
 Dogs require food.
@@ -100,7 +102,7 @@ feeding. Damage 3d6; Endurance 6d6; Life 3d6.
 get you a grant to a piece of land in the wilderness. Taking
 possession of said land is up to you, of course.
 
-**Chair**: Your skills as a mage have been recognised and a sponsor
+**Chair**: Your talents as a mage have been recognised and a sponsor
 offers you a teaching position at a magic school.
 
 **Posts**: Your services to a community, be it gangsters or
@@ -168,13 +170,14 @@ A few key words about the individual talents.
 
 ## Gaining talents
 
-With every year that passes, you get to gain new skills. Pick an
+With every year that passes, you get to gain new talents. Pick an
 appropriate table to roll on during the winter phase and gain the
-skill or increase the skill if you already have it.
+talent or increase the talent if you already have it.
+{ #gaining-talents }
 
 When you learn "Fighting", choose a weapon instead: knife, spear,
 halberd, épée, bow, lance. Note that you do not start with the Knife
-skill even though you own a knife.
+talent even though you own a knife.
 
 If you’ve spent the summer doing warrior things, pick one of the
 following tables to roll on.
@@ -212,6 +215,9 @@ following tables to roll on.
 | 5   | Distract | Tactics   | Oratory     | Behavior  |
 | 6   | Pick     | Singing   | Trading     | Tinker    |
 
+Players can also [increase their status](#status-increase) by doing
+appropriate deeds.
+
 ## Adventurer’s Life
 
 If you want to do something and the outcome is uncertain, discuss with
@@ -232,7 +238,7 @@ subtract any carryover from another physical attribute.
 If one of your attributes drops to 0, you are slightly injured and
 pass out. After 10 minutes you wake up again.
 
-> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She
+> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9. She
 > gets hit for the first time and has to subtract 4+5=9 damage. Berta
 > rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1). She
 > won’t pass out! The second time she has to subtract 2+6=8 hits and
@@ -322,6 +328,39 @@ example, if they want to lure the opponent into an ambush, or notice
 an ambush, someone should roll against Intelligence + Tactics in both
 cases.
 
+## Combat
+
+Combat is divided into rounds. Everyone may attack, cast magic, or do
+something else once per round. All participants announce their action
+and roll the dice. Everything happens at the same time so it is
+possible for two opponents to take each other out in the same round.
+
+> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9, and
+> Fighting-1. She tries to reach the farm, but two goblins are hot on
+> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
+> Escape-4. She turns to fight. First round: Berta rolls a 6 and hits
+> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
+> twice since 6 ≤ 9. Berta rolls 6 damage which kills a goblin (both
+> Endurance and Life are reduced to zero), but the other still stands.
+> When Brunhilde takes the first hit, chance decides which attribute
+> to reduce: Berta rolls a 4, which is Dexterity. The goblins deal 3
+> every time they hit (6-3=3). Berta decides to deduct the second hit
+> from Brunhilde’s Endurance (9-3=4).
+
+When an advantage is gained through tactics, the result is often a
+surprise round where the opponent cannot strike back.
+
+Expect to see half the participants down or dying after the first
+round. War is terrible. Try to avoid it.
+
+![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Battlefield (1521), by Urs Graf
+{: .pic }
+
+And with that we come to the end of the player facing rules. The rest
+of this book is advice for the referee. If you want to referee a game,
+read on!
+
 ## Magic
 
 Just like you slowly build up a pool of enemies, you need to work out
@@ -361,50 +400,16 @@ Not all magic talents are equally powerful, or equally useful. You
 also have to live with that. Certain magic talents lend themselves to
 druids, bards, healers.
 
-There is no talent for summoning: instead, this is meant to be handled
-by planeshifting. You have to subjugate every demon yourself and force
-it to do its deeds.
+### Some notes on particular spell effects
 
-In my games, Charm is always a violent thing: being forced into things
-is nauseating and revolting.
+*Summoning*. There is no talent to summon demons or elementals.
+Instead, use planeshifting and subjugate some demons in person.
 
-It is not possible to foresee the future. That would incapacitate
-players. A role-playing game is not a saga; fate is not predetermined.
+*Charm*. Being forced into doing things you don’t want to do is
+nauseating and revolting. When the magic ends, the anger starts.
 
-## Combat
-
-Combat is divided into rounds. Everyone may attack, cast magic, or do
-something else once per round. All participants announce their action,
-roll the dice and evaluate. Everything happens at the same time.
-
-> Example: Adalric casts chain lightning and he is protected by the
-> rain. A goblin has seen him anyway and shoots at him with his bow.
-> The goblin has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
-
-In some role-playing games, combat tends to be front and center. In
-this game, after one round, perhaps half of those involved are already
-on the ground. War is terrible. Most of the time it’s about avoiding
-the fight.
-
-> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9, and
-> Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
-> Escape-4. She turns to fight. First round: Berta rolls 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
-> twice since 6 ≤ 9. With the first hit, chance decides which
-> attribute Brunhilde must reduce: Berta rolls a 4, which is Dexterity
-> (6-3=3). The goblins deal 3 every time they hit. The second hit
-> Brunhilde deducts from her Endurance (9-3=4). Berta rolls 6 damage
-> which kills the goblin (both Endurance and Life are reduced to
-> zero), but the other still stands.
-
-When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back. That can become
-very important.
-
-![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
-Battlefield (1521), by Urs Graf
-{: .pic }
+*Prophecy*. It is not possible to foresee the future. A role-playing
+game is not a saga; fate is not predetermined.
 
 ## Campaigns
 
@@ -462,7 +467,7 @@ tears. The adventure game is entertaining because it allows us to
 overcome adversity. We are powerless enough in the real world. Let’s
 not put that into our games for the sake of “realism”.
 
-*Power levels*. Every increase in skill unlocks new powers. You need
+*Power levels*. Every increase in talent unlocks new powers. You need
 to decide what the range of power levels is going to look like. A good
 range would be from 1 to 5. An Education-11 Fire-5 Pyromancer is able
 to pass a difficult check with 3d6 ≤ 16 with 98% chance of success.
@@ -565,7 +570,7 @@ A simple question to ask is how things are accomplished or how they
 fail. Players announce what they want their characters to achieve, you
 clarify the intent and indicate what a successful outcome would
 entail, you warn them about consequences of failure, you suggest the
-attribute and the skill and whether to roll two or three dice. If the
+attribute and the talent and whether to roll two or three dice. If the
 players accept, they pick up the dice and roll.
 
 Once we know about success or failure, and having established the
@@ -582,7 +587,7 @@ at the table.
 ### A question about the past
 
 In-game knowledge is not covered by the rules. There is no history or
-geography skill, for example. And yet, characters probably do know
+geography talent, for example. And yet, characters probably do know
 something. So if the characters are about to enter Hunland, they might
 ask you about the inhabitants. You can turn that around and ask the
 players whether any of their players had previous experience with a
@@ -725,27 +730,78 @@ you support the dwarves? Do you taunt the mermaids? Are you courteous
 to the librarian? Do you flirt with the mercenary? Don’t invalidate
 choice by asking for a decision that has no weight.
 
-*Risk*. Making a decision is exciting when there’s something at risk.
-This includes all the variants of making a bet. A character stays in
-the fight because the player is betting on them winning that last
-exchange. A character flirts with the mercenary betting to win them
-over without a fight. Emphasise the danger and highlight the reward
-until it’s a hard decision to make. The risks must always be worth it.
-Some players like to play it safer than others. Encourage them with
-non-player characters, help them control the risk, don’t push them too
-hard. Aim for those butterflies.
+*Risk taking*. Making a decision is exciting when there’s something at
+risk. It’s like betting. A character stays in the fight because the
+player is betting on them winning that last exchange. A character
+flirts with the mercenary betting to win them over without a fight.
+Emphasise the danger and highlight the reward until it’s a hard
+decision to make. The risks must always be worth it. Some players like
+to play it safer than others. Encourage them with non-player
+characters, help them control the risk, don’t push them too hard. Aim
+for those butterflies.
 
-*Community*. Get a land grant from a powerful friend. Build a castle
-to defend your village against invasion. Build a community.
+*Community building*. When villagers are grateful, when prisoners are
+rescued, when the downtrodden are lifted up, there’s your opportunity
+to get into community building. This is an example of goals players
+can set themselves. Encourage this by having non-player characters
+suggest it. Have the grateful ruler present a character with a land
+grant. Once community building begins, the community members have
+needs that must be met. Use these as inspiration for future
+adventures.
 
-*Family*. Pay attention to the inter-generational game. Raise a
-family. Play your relatives and children.
+*Buildings*. Buildings can house your community or they can act as
+signs of power and influence. Build a castle to house retainers. Build
+a ditch, a palisade or a wall to protect the village. Build a
+fortified bridge to defend against pirates raiding inland on their
+ships. Have non-player characters suggest and organise it so that you
+can take their needs into account when thinking about future
+adventures.
+
+Usually nobody at the table knows what exactly is required for
+buildings. Assume that everything is handled by the builder with a few
+exceptions. It’s these exceptions that turn into adventures: These are
+building blocks that the builder could not organise. Organising them
+involves an adventure.
+
+*Family*. Encourage characters to raise a family. You can look at it
+as a particular way of building community, but it also plays into our
+expectations. Let players play the relatives and children of their
+deceased character. This encourages other players to raise a family.
+Finding a partner and rising in status to find a good match provides
+more ideas for adventures.
+
+*Status*. Each Status score qualifies a character for certain events
+that raise their status even further. In marriage proposals and in the
+choice of boons granted by superiors, the current status of a
+character is essential. Families do not consent to a child’s marriage
+below their station. Lord and ladies don’t grant land to orphans.
+{ #status-increase }
+
+The following table reflects a society of nobles and warriors where an
+intellectual is always inferior to a warrior and a warrior is always
+inferior to a noble. The last column provides ideas for future
+adventures. By succeeding in an appropriate adventure, player
+characters get the option of increasing their Status by 1 that year,
+in addition to [rolling for a talent increase](#gaining-talents).
+
+| Status | Examples                 | Qualifies for…                    |
+|:------:|--------------------------|-----------------------------------|
+| 2      | orphan, beggar           | a job                             |
+| 3      | worker, peasant, artisan | confidence, secret plans          |
+| 4      | citizen of good standing | secret society membership         |
+| 5      | member of society        | public office, public works       |
+| 6      | officer                  | a position to teach               |
+| 7      | magister                 | a position as an advisor at court |
+| 8      | warrior                  | being knighted, a land grant      |
+| 9      | knight, lady             | building a castle                 |
+| 10     | baron, baroness          | leading an army                   |
+| 11     | duke, duchess            | being crowned, winning a war      |
+| 12     | royalty                  | empire, conquest                  |
+| 13     | emperor                  | eternal life and undeath          |
 
 *Growing old*. There is an adventuring season. People work the fields
 in spring, go on adventure in summer, bring in the harvest in autumn,
-cut wood, raise a barn, study.
-
-How do we get there? Let’s talk about the various aspects.
+cut wood, raise a barn, study. They grow old.
 
 ### Seasonal adventures
 
@@ -820,7 +876,7 @@ the goblin market? Do you know the rules governing that place?
 
 
 
-This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting skill, you get granted an appropriate weapon, if you don’t have it already.
+This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already.
 
 * Bring back the horses the men of Amalgard of Bearhall stole. If you do it, roll on the Thief or Mercenary list.
 * Bring these donkeys and their load to Falconthorpe. If you do it, roll on the Guard. If you befriended Chrodotrud, you may roll on the Passive list instead.

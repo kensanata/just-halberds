@@ -853,6 +853,7 @@ characters get the option of increasing their Education by 1 that
 year, in addition to [rolling for a talent increase](#gaining-talents).
 What are appropriate adventures? Diplomatic missions, expeditions to
 foreign lands, time spent in other realms, library adventures.
+{ #education-increase }
 
 *Growing old*. People work the fields in spring, go on adventure in
 summer, bring in the harvest in autumn, cut wood, raise a barn, study.
@@ -893,7 +894,49 @@ A warrior with woman and two children (1508), by Urs Graf
 
 ## Fragments of Play
 
-This section offers 
+This section offers examples from an imaginary game illustrating all
+the ideas. The three people involved Alex, Berta and Claudia. Alex and
+Berta are players and Claudia is the referee.
+
+### Preparation for the first game
+
+Before meeting for the first time, Claudia already knows that the two
+characters have Status-2 because it’s the start of the campaign. These
+two kids did not inherit Education or Status. Looking at the
+[Status](#status-increase) table, this means they’ll need a job. The
+[Education](#education-increase) section mentions library adventures.
+Should either of the two plan on playing a mage, increasing Education
+is going to be on their mind.
+
+So visiting somebody in a library and getting a book is an adventure.
+Who might be opposed? Other urchins that didn’t get the job: Urs the
+bully, with Status-3 (also an orphan but with slightly better Status)
+and Discipline-1 (which I just assigned). He’s not much of a boss, but
+there’s also Strength-8 (above average) and Brawling-1 (also
+assigned). If Discipline and Brawling are his only skills, he’s 18
+years old, two years older than the new characters Alex and Berta are
+going to make.
+
+Here’s a question for later: Does Urs have friends? Does he have
+enemies? Play to find out! I have a feeling he probably has a lackey,
+and there’s probably a love interest as well.
+
+The library probably belongs to a wizard. Let’s call her Ulrike the
+Beautiful. The starting village also needs a name. Maybe the village
+has always belonged to her family and the rulers all have names that
+sound similar: Ulrich, Ulberth, Ulberga. Let’s call the village
+Ulrichen.
+
+This makes me wonder about Urs the bully. His name sounds similar to
+Ulrike. Are they related? A question to save for later.
+
+Let’s try and think of more adventures. How about adding a secret
+society? The Brothers and Sisters of Horned Mask – a society that
+wears masks at their meetings. They all know each other in real life
+but within their society, they also represent the animal or demon of
+their mask. 
+
+⁂
 
 It’s difficult for players to focus on multi-year projects if they
 keep getting distracted by "important" work. One way to solve it would

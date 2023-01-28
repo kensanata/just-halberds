@@ -18,8 +18,8 @@ and the referee says how the world reacts, and so it goes on and on.
 The story of these people is our story.
 
 The dice are rolled when something with exciting consequences happens
-and we want to leave the outcome to chance. Do our people succeed in
-their project or not? And what happens afterwards?
+and you want to leave the outcome to chance. Do people succeed in
+their project or not?
 
 This is a variant of the *Halberts* game where your character doesn’t
 start fully fleshed out. Instead, you start as a young adult, with
@@ -112,8 +112,8 @@ for you, they’ll think of you.
 
 ## Talents
 
-We roll checks as follows: 2d6 ≤ attribute + talent. On very hard
-tests: 3d6 ≤ attribute + talent. If no talent fits, or the matching
+Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
+roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
 talent is missing, then -2. A +1 talent is good enough to do it for a
 living.
 
@@ -378,7 +378,7 @@ it drops to zero, they are mortally wounded; Attack determines whether
 they attack in an encounter (2d6 ≤ attack); Hit determines how well
 they hit (2d6 ≤ hit), and Escape determines if they attempt to escape
 when they’re not attacking (2d6 ≤ escape). If they neither attack nor
-escape, we talk.
+escape, they want to talk or interact in some other way.
 
 | 1d6 | Opponents  | Count | Damage | Endurance | Life | Attack | Hit   | Escape |
 |:---:|------------|:------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
@@ -523,22 +523,21 @@ not put that into our games for the sake of “realism”.
 to decide what the range of power levels is going to look like. A good
 range would be from 1 to 5. An Education-11 Fire-5 Pyromancer is able
 to pass a difficult check with 3d6 ≤ 16 with 98% chance of success.
-Thus between 1 and 5, we have the entire span of talents: First Aid-1
-is good enough to do the job of a field medic, but only a First Aid-3
-or Healing-3 will save a man doomed to die. Similarly, a sorceress
-with Fire-5 knows the secrets of Muspelheim and has spoken with Sutr,
-the lord of fire.
+Thus the entire span of talents fits into the range from 1 to 5: First
+Aid-1 is good enough to do the job of a field medic, but only a First
+Aid-3 or Healing-3 will save a man doomed to die. Similarly, a
+sorceress with Fire-5 knows the secrets of Muspelheim and has spoken
+with Sutr, the lord of fire.
 
 ![Men with polearms gather beneath a flag](images/Urs_Graf_Versammlung_von_Reisläufern,_(1515).jpg)
 Mercenaries gathering (1515), by Urs Graf
 {: .pic .right }
 
-*World changing events*. The world we care about is the setting of the
-game. If the players aren’t changing it, it changes of its own accord.
-This is why you shouldn’t invest too much in the present state of
-affairs. Instead of thinking about the 28 cousins of the duke, invest
-some time in 4 cousins of the duke and be ready to overthrow the duke
-and his family.
+*World changing events*. If the players aren’t changing the setting,
+it changes of its own accord. This is why you shouldn’t invest too
+much in the present state of affairs. Instead of thinking about the 28
+cousins of the duke, invest some time in 4 cousins of the duke and be
+ready to overthrow the duke and his family.
 
 To foreshadow this, make sure that you occasionally mention how things
 used to be different. Remember how quickly times change. Here are
@@ -625,7 +624,7 @@ entail, you warn them about consequences of failure, you suggest the
 attribute and the talent and whether to roll two or three dice. If the
 players accept, they pick up the dice and roll.
 
-Once we know about success or failure, and having established the
+Once you know about success or failure, and having established the
 consequences, you can move on – or you can linger for a bit. Give that
 character a little spotlight and ask about how they did it, why they
 did it, how they felt as they did it. Why did that speech fail, was it
@@ -646,12 +645,12 @@ players whether any of their players had previous experience with a
 guest from Hunland or whether their parents had ever taken them there.
 
 These questions are about player characters and their backgrounds. If
-the player likes to improvise these details, they get to entertain us
-at the table and to enrich our game and we get a glimpse into the past
-of our fellow characters. It’s a short moment of spotlight within the
-context of the game. The answer given by the player colours the answer
-you’re going to give about the inhabitants of Hunland. The questions
-build on each other. It’s a virtuous cycle.
+the player likes to improvise these details, they get to entertain
+everybody at the table and to enrich the game and everybody gets a
+glimpse into the past of a fellow character. It’s a short moment of
+spotlight within the context of the game. The answer given by the
+player colours the answer you’re going to give about the inhabitants
+of Hunland. The questions build on each other. It’s a virtuous cycle.
 
 ### A question of character
 
@@ -661,7 +660,8 @@ questions at the table but keep them in mind when daydreaming. These
 questions are asked and answered through play. If Isolt and a player
 character are on a ship, start wondering about the player character.
 Are they faithful to their partner? Are they loyal to their king? Let
-Isolt fall in love with the character and we’re going to find out!
+Isolt fall in love with the character and you’re all going to find
+out!
 
 The situation develops into a question directed at players. Does the
 character elope with Isolt and prove to be a lover, not a fighter?
@@ -731,8 +731,6 @@ sessions, you prepare again. This is why guiding questions are
 important. They help you prepare the unfamiliar. You’ll fall back to
 the familiar at the table, when you’re stressed, and that’s OK.
 
-We’ll talk more about guiding questions as we talk about adventures.
-
 ### Taking questions off the list
 
 Review the questions after a few sessions, note which of them have
@@ -746,8 +744,7 @@ Recruiting (1521), by Urs Graf
 
 ## Adventures
 
-The thing to foster at the table is mutual entertainment and player
-agency. These are player needs that must be met.
+Where do ideas for adventures come from?
 
 *Player needs come first*. The character needs are only of interest in
 so far as consistency increases our willingness to believe in the
@@ -757,9 +754,9 @@ player make a new character who’s a better fit. If the adventure bores
 the table, then it’s time to change track. Move the characters into a
 different situation.
 
-*Mutual entertainment*. This means that we must care for the other
-players at the table. Lift each other up. Engage with each other and
-the situation. If one character is a morose pyromaniac or a secret
+*Mutual entertainment*. This means that players must care for the
+other players at the table. Lift each other up. Engage with each other
+and the situation. If one character is a morose pyromaniac or a secret
 devil worshipper, try to be a good friend to them and see where that
 tension takes you. If one character is a lighthearted religious
 fighter, try to be a serious religious fanatic, a serious atheist. If
@@ -770,7 +767,7 @@ that you can engage with, and do it. Don’t make their lives miserable
 – look for just the right level of banter between the characters.
 Something to say to each other during the game.
 
-*Player agency*. In a game that takes place in our imagination, the
+*Player agency*. In a game that takes place in your imagination, the
 greatest asset we have is the freedom of it all. We can make decisions
 and the imaginary world reacts. We can try things we don’t usually do, be
 the people we don’t usually are. This is why decision making is
@@ -894,7 +891,9 @@ with leading different lives.
 A warrior with woman and two children (1508), by Urs Graf
 {: .pic .small }
 
-### Seasonal adventures
+## Fragments of Play
+
+This section offers 
 
 It’s difficult for players to focus on multi-year projects if they
 keep getting distracted by "important" work. One way to solve it would
@@ -909,7 +908,7 @@ and spares us the details. What he does is make demands. He tells the
 players what to do. We need tables to roll up his demands and
 associated adventure bones.
 
-*Arrange a marriage abroad.* We need more of the marble from foreign
+*Arrange a marriage abroad.* You need more of the marble from foreign
 lands. Do you know how to get there? Travel there by ship and travel
 up river? Face pirates, cheating merchants, bandits, find a stowaway
 and be chased by their enemies. There is no payment for the marble but

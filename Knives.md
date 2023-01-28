@@ -275,6 +275,58 @@ You only put them on when marching into battle. They slow you down
 when plundering and when fleeing; they are cumbersome to carry around
 and they give you sores. Soldiers do not like wearing them.
 
+## Character Sheet
+
+<table>
+<tr><th colspan="2">Attributes</th><th colspan="2">Weapons</th></tr>
+<tr><td>Strength</td><td>__</td><td>Knife</td><td>__</td><td>Secret societies</td><td colspan="3">_____________________</td></tr>
+<tr><td>Dexterity</td><td>__</td><td>Spear</td><td>__</td><td></td><td colspan="3">_____________________</td></tr></tr>
+<tr><td>Endurance</td><td>__</td><td>Halberd</td><td>__</td><td>Allegiances</td><td colspan="3">_____________________</td></tr>
+<tr><td>Intelligence</td><td>__</td><td>Épée</td><td>__</td><td></td><td colspan="3">_____________________</td></tr></tr>
+<tr><td>Education</td><td>__</td><td>Bow</td><td>__</td><td>Patrons</td><td colspan="3">_____________________</td></tr>
+<tr><td>Status</td><td>__</td><td>Lance</td><td>__</td><td></td><td colspan="3">_____________________</td></tr>
+<tr><th style="padding-top: 1em" colspan="4">Mundane Talents</th><th style="padding-top: 1em" colspan="4">Magic Talents</th></tr>
+<tr><td>Behaviour</td><td>__</td><td>Brawling</td><td>__</td><td>Air</td><td>__</td><td>Animals</td><td>__</td></tr>
+<tr><td>Brewing</td><td>__</td><td>Bureaucracy</td><td>__</td><td>Charm</td><td>__</td><td>Doors</td><td>__</td></tr>
+<tr><td>Climbing</td><td>__</td><td>Construction</td><td>__</td><td>Earth</td><td>__</td><td>Eyes</td><td>__</td></tr>
+<tr><td>Crafts</td><td>__</td><td>Culture</td><td>__</td><td>Fire</td><td>__</td><td>Fusion</td><td>__</td></tr>
+<tr><td>Diplomacy</td><td>__</td><td>Discipline</td><td>__</td><td>Healing</td><td>__</td><td>Illusion</td><td>__</td></tr>
+<tr><td>Distract</td><td>__</td><td>First Aid</td><td>__</td><td>Necromancy</td><td>__</td><td>People</td><td>__</td></tr>
+<tr><td>Literacy</td><td>__</td><td>Oratory</td><td>__</td><td>Planeswalk</td><td>__</td><td>Plants</td><td>__</td></tr>
+<tr><td>Pick</td><td>__</td><td>Riding</td><td>__</td><td>Shapeshift</td><td>__</td><td>Sleep</td><td>__</td></tr>
+<tr><td>Running</td><td>__</td><td>Singing</td><td>__</td><td>Storm</td><td>__</td><td>Transmutation</td><td>__</td></tr>
+<tr><td>Sneaking</td><td>__</td><td>Spying</td><td>__</td><td>Water</td><td>__</td><td></td><td></td></tr>
+<tr><td>Tactics</td><td>__</td><td>Tinker</td><td>__</td></tr>
+<tr><td>Trading</td><td>__</td><td></td><td></td></tr>
+</tbody>
+</table>
+
+### Summary of the rules
+
+Character creation: Roll 2d6 for Strength, Dexterity, Endurance and
+Intelligence. Use Education-2 and Status-2 unless you’re inheriting
+from your parents. You start without talents.
+
+Task resolution: Roll 2d6 ≤ attribute + talent to succeed. If it’s
+very hard, you might have to roll 3d6 ≤ attribute + talent. If you
+hit, you deal 2d6 damage unless you use a halberd. This deals 3d6
+damage. You can only attack as many times in a fight as you have
+Endurance.
+
+When you are first hit in a fight, you must subtract the damage from a
+random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
+Dexterity, 5–6 is Endurance. For all other hits, you may distribute
+the hit dice yourself among the three physical attributes. You must
+subtract any carryover from another physical attribute (Strength,
+Dexterity or Endurance).
+
+If one of your attributes drops to 0, you are lightly wounded and pass
+out. If two of your attributes drop to 0, you are mortally wounded and
+you’ll die unless you are treated by somebody with First Aid-3 or
+Healing-3. If three of your attributes drop to 0, you die.
+
+<div style="break-after: always;"></div>
+
 ## Combat
 
 Combat is divided into rounds. Everyone may attack, cast magic, or do
@@ -935,3 +987,7 @@ The images used are by Urs Graf. He lived in Solothurn, Switzerland,
 around 1485–1527/28. The images are in the public domain. I got them
 from the [online collection of the Kunstmuseum
 Basel](https://sammlungonline.kunstmuseumbasel.ch/eMP/eMuseumPlus ).
+
+![Four well armed men playing the flute under a tree](images/Urs_Graf_Zwei_Eidgenossen_und_zwei_Landsknechte_blasen_die_Querpfeife_(1523).jpg)
+Four mercenaries playing the transverse flute (1514), by Urs Graf
+{: .pic .small }

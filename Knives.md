@@ -31,13 +31,14 @@ If you are a player, you play a fictional person, your character.
 
 First you choose your name, then you roll your attributes. You have
 six attributes: Strength, Dexterity, Endurance, Intelligence,
-Education, and Status. Roll two six-sided dice for the first five
+Education, and Status. Roll two six-sided dice for the first four
 attributes, add the two dice together (short: 2d6) and write it down.
-You either inherit Status from your parents (if you’ve played them),
-or you start as an orphan with Status-2.
+You either inherit Education and Status from your parents (if you’ve
+played them, up to a maximum of 7), or you start as an orphan with
+Education-2 and Status-2.
 
-> Example: Alex names his character Adalric and rolls 8 8 7 9 10;
-> Berta names her character Brunhilde and rolls 10 6 9 5 4.
+> Example: Alex names his character Adalric and rolls 8 8 7 9;
+> Berta names her character Brunhilde and rolls 10 6 9 5.
 
 Your character begins at age 16. You have no special talents. If you
 want to begin the game with more experience, take a look at the
@@ -53,9 +54,9 @@ A mercenary looking at a lake (1514), by Urs Graf
 
 ## No money, no items
 
-The only item of significance you own is a knife. In fact, the only
-items of significance in this game are weapons: knife, spear, halberd,
-épée, bow, lance.
+The only item of significance you own at first is a knife. In fact,
+the only items of significance in this game are weapons: knife, spear,
+halberd, épée, bow, lance.
 
 The world of adventure is a medieval world beyond the reaches of
 empire. There are no taxes to pay, no coins to earn and nothing to
@@ -247,8 +248,7 @@ pass out. After 10 minutes you wake up again.
 
 After the fight, all attributes recover half of the missing amount
 (round down). If you are being treated by First Aid or a healer, you
-will be fit again in 30 minutes, otherwise the recovery will take 3
-days.
+are fit again in 30 minutes, otherwise the recovery takes 3 days.
 
 > Example: After being treated with First Aid, she recovers.
 > Brunhilde’s attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
@@ -274,59 +274,6 @@ they are so hard to make. They are kept in armories for times of war.
 You only put them on when marching into battle. They slow you down
 when plundering and when fleeing; they are cumbersome to carry around
 and they give you sores. Soldiers do not like wearing them.
-
-## Opponents
-
-All other chapters in this book are intended for the referee. So for you!
-
-People can be depicted with the well-known six attributes. You may
-choose these freely or roll them (2d6). Talents are also freely
-determined (often 1 or 2).
-
-Monsters and animals have different characteristics that describe
-their behavior: damage determines how much damage they deal if they
-hit; endurance determines how many rounds they will fight and how much
-damage they can take; if it drops to zero, they faint; excess damage
-is substracted from life; if it drops to zero, they are mortally
-wounded; attack determines whether they attack in an encounter (2d6 ≤
-attack); hit determines how well they hit (2d6 ≤ hit), and escape
-determines if they attempt to escape when they’re not attacking (2d6 ≤
-escape). If they neither attack nor escape, we talk.
-
-| 1d6 | Opponents  | Damage | Endurance | Life | Attack | Hit   | Escape |
-|:---:|------------|:------:|:---------:|:----:|:------:|:-----:|:------:|
-| 1   | Nightlings | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
-| 2   | Predators  | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
-| 3   | Undead     | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
-| 4   | Mounts     | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
-| 5   | Giants     | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
-| 6   | Dragons    | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
-
-For each world, the stats will be slightly different. Note down when
-you roll something and stick to it! For the number of enemies, roll
-2d6 for nightlings and predators, or 1d6 for undead. Giants and
-dragons are always loners.
-
-> Example: Claudia referees the game and needs goblins that
-> ride on giant spiders that ambush the vanguard. There are 7.
-> She uses the line of nightlings and mounts. Goblins:
-> Damage-3, Endurance-1, Life-5, Attack-5, Hit-9, Escape-4.
-> Giant Spiders: Damage-15, Endurance-16, Life-12, Attack-9,
-> Hit-5, Escape-7. In this world, goblins are rather harmless
-> opponents who ride on terrible giant spiders, which,
-> oddly enough, are not very good at hitting things.
-
-Always announce impending danger clearly, so that the players can
-decide for themselves whether they want to engage in a fight.
-
-> Example: Claudia describes how the car-sized shadows
-> push through the undergrowth, how their acrid smell spreads
-> and the animals in the barn panic.
-
-If possible, the players should roll the dice, not the referee. For
-example, if they want to lure the opponent into an ambush, or notice
-an ambush, someone should roll against Intelligence + Tactics in both
-cases.
 
 ## Combat
 
@@ -361,6 +308,59 @@ And with that we come to the end of the player facing rules. The rest
 of this book is advice for the referee. If you want to referee a game,
 read on!
 
+## Opponents
+
+People can be described with a few words. If they attempt to do things
+that can succeed or fail and it might result in an interesting plot
+twist, use one of the well-known six attributes: either choose freely
+(the average is 7) or roll for the attribute you need right now (2d6).
+Talents are also freely determined (often 1 or 2).
+
+Monsters and animals have different characteristics that describe
+their behaviour: Count determines how many one is most likely to
+encounter (the number of mounts matches the number of riders); Damage
+determines how much damage they deal if they hit; Endurance determines
+how many rounds they’ll fight and how much damage they can take; if it
+drops to zero, they faint; excess damage is subtracted from Life; if
+it drops to zero, they are mortally wounded; Attack determines whether
+they attack in an encounter (2d6 ≤ attack); Hit determines how well
+they hit (2d6 ≤ hit), and Escape determines if they attempt to escape
+when they’re not attacking (2d6 ≤ escape). If they neither attack nor
+escape, we talk.
+
+| 1d6 | Opponents  | Count | Damage | Endurance | Life | Attack | Hit   | Escape |
+|:---:|------------|:------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
+| 1   | Nightlings | 2d6    | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
+| 2   | Predators  | 1d6    | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
+| 3   | Undead     | 1d6    | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
+| 4   | Mounts     | varies | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
+| 5   | Giants     | 1      | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
+| 6   | Dragons    | 1      | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
+
+Note down when you roll something and keep using those numbers. This
+is how players learn about the strengths and weaknesses of the
+opposition.
+
+> Example: Claudia referees the game and needs goblins that ride on
+> giant spiders that ambush the vanguard. There are 7. She uses the
+> line of nightlings and mounts. Goblins: Damage-3, Endurance-1,
+> Life-5, Attack-5, Hit-9, Escape-4. Giant Spiders: Damage-15,
+> Endurance-16, Life-12, Attack-9, Hit-5, Escape-7. In this campaign,
+> goblins are rather harmless opponents who ride on terrible giant
+> spiders, which, oddly enough, are not very good at hitting things.
+
+Always announce impending danger clearly, so that the players can
+decide for themselves whether they want to engage in a fight.
+
+> Example: Claudia describes how the car-sized shadows push through
+> the undergrowth, how their acrid smell spreads and the animals in
+> the barn panic.
+
+If possible, the players should roll the dice, not the referee. For
+example, if they want to lure the opponent into an ambush, or notice
+an ambush, someone should roll against Intelligence + Tactics in both
+cases.
+
 ## Magic
 
 Just like you slowly build up a pool of enemies, you need to work out
@@ -384,7 +384,7 @@ rule applies: roll 2d6 + number of spells cast today ≤ attribute +
 talent to succeed. If the check fails, the talent can no longer be
 used today.
 
-> Example: Adalric conjures rain for privacy. He has Education 9,
+> Example: Adalric conjures rain for privacy. He has Intelligence 9,
 > Water-1, making a total of 10. Alex rolls 10 + 0 since this was the
 > first spell of the day. It’s raining because 10 ≤ 10. Chain
 > Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills five
@@ -720,7 +720,7 @@ Something to say to each other during the game.
 
 *Player agency*. In a game that takes place in our imagination, the
 greatest asset we have is the freedom of it all. We can make decisions
-and the imaginary world reacts. We can try things we don’t usually, be
+and the imaginary world reacts. We can try things we don’t usually do, be
 the people we don’t usually are. This is why decision making is
 essential. Skip the long monologues, the long descriptions, the long
 transitions – move quickly until the game needs players to make a
@@ -799,9 +799,48 @@ in addition to [rolling for a talent increase](#gaining-talents).
 | 12     | royalty                  | empire, conquest                  |
 | 13     | emperor                  | eternal life and undeath          |
 
-*Growing old*. There is an adventuring season. People work the fields
-in spring, go on adventure in summer, bring in the harvest in autumn,
-cut wood, raise a barn, study. They grow old.
+*Education*. By succeeding in an appropriate adventure, player
+characters get the option of increasing their Education by 1 that
+year, in addition to [rolling for a talent increase](#gaining-talents).
+What are appropriate adventures? Diplomatic missions, expeditions to
+foreign lands, time spent in other realms, library adventures.
+
+*Growing old*. People work the fields in spring, go on adventure in
+summer, bring in the harvest in autumn, cut wood, raise a barn, study.
+They grow old. When characters or their companions are 36 years old,
+and every four years after that, they need to check for physical
+decline. If an attribute falls to zero, the character dies.
+
+| 1d6 |     Aging Table |
+|:---:|----------------:|
+| 1   |     Strength -1 |
+| 2   |    Dexterity -1 |
+| 3   |    Endurance -1 |
+| 4   | Intelligence -1 |
+| 5   |          Lucky! |
+| 6   |          Lucky! |
+
+After a certain number of years, the health of animals starts to
+decline as well. Horses start to lose 1 Life per year after 20 years
+of service. Dogs start to lose 1 Life per year after 10 years of
+service.
+
+*Death*. When a character dies, their land, buildings, animals, and
+weapons are divided fairly between surviving partners and children.
+
+*Children*. Raising a child as your own, allows it to inherit
+Education and Status up to 7 when it reaches 16 years of age. Children
+raised by more than one parent get to chose which Education and Status
+they inherit.
+
+This game doesn’t care about the dangers of child birth, of disease,
+the difficulty of raising a family, the sanctity of marriage, the sex
+lives of characters. Run the game you want and let players experiment
+with leading different lives.
+
+![A warrior looking at woman who carries a child in her arm and has another child play with her dress](images/Urs_Graf_Krieger_und_Frau_mit_zwei_Kindern_(1508).jpg)
+A warrior with woman and two children (1508), by Urs Graf
+{: .pic .small }
 
 ### Seasonal adventures
 
@@ -864,17 +903,7 @@ for him? Is the troll on his side? Can you stop them all? Can you make
 your way to the Alder King and take those long stairs leading you to
 the goblin market? Do you know the rules governing that place?
 
-### Community building
-
-### Love and Marriage
-
-### Misfortune
-
-
-
-
-
-
+### More
 
 This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already.
 

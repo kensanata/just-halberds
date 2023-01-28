@@ -65,11 +65,17 @@ blockquote {
     border-left: 1ex solid #bbb;
 }
 th {
-    padding-right: 1em;
+    padding: 0 1ex;
     text-align: center;
 }
 td {
-    padding-right: 1em;
+    padding: 0 1ex;
+}
+th:first-child, td:first-child {
+    padding-left: 0;
+}
+th:last-child, td:last-child {
+    padding-right: 0;
 }
 td[align="center"] {
     text-align: center;

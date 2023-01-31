@@ -931,12 +931,87 @@ This makes me wonder about Urs the bully. His name sounds similar to
 Ulrike. Are they related? A question to save for later.
 
 Let’s try and think of more adventures. How about adding a secret
-society? The Brothers and Sisters of Horned Mask – a society that
+society? “The Brothers and Sisters of Horned Mask” – a society that
 wears masks at their meetings. They all know each other in real life
 but within their society, they also represent the animal or demon of
-their mask. 
+their mask. So miss Trudeberg, the head of a large family farm, wears
+the wooden mask of a devil with deer horns and red pearls hanging from
+its ears. It’s the local “Cherry Devil”, known to tempt the young with
+poisonous fruit. And indeed, she is a talented brewer of potions and
+poisons.
 
-⁂
+Trudeberg is looking for a particular fruit, the “Black Eye Grape”. It
+grows in the ruin of Hawk Rock, rumoured to be home to a “wild man”,
+a forest creature that doesn’t speak and hates all humans.
+
+All of these ideas show that some random tables for quick name
+generation are in order because names are important. They allow
+everybody at the table to write down a name and add more information.
+This is how the imaginary world gets fixed in our imagination.
+
+### Secret societies
+
+Secret societies consist of three parts: a pompous prefix, the kind of
+organisation, the word “of” and some sort of political goal or
+aspiration.
+
+Pompous prefixes: Most Agreeable, Almighty, Great, Formidable,
+Invisible, Ever Present.
+
+Kinds of organisations: Association, Brothers and Sisters, Bund,
+Cooperative, Fellows, Fellowship, Friends, Soulmates.
+
+Goals: Daredevils, Everlasting Peace, Health and Longevity, Joy and
+Happiness, Revenge, a Glorious Future, the Imperial Restoration, the
+Rebellion, the Resurrection of the Emperess, the Resurrection of the
+Emperor.
+
+Examples: The Most Agreeable Association of Everlasting
+Peace, The Formidable Friends of the Imperial Restoration. The Ever
+Present Cooperative of a Glorious Future.
+
+### Short names
+
+Women: Ada, Anna, Berta, Chloe, Dora, Elsa, Frieda,
+Gisela, Hilde, Inge, Ulrike.
+
+Men: Ardo, Dodo, Else, Etzel, Gregor, Gundobad, Gyso, Hagen, Iring,
+Otto, Siggo.
+
+### Long names
+
+Long names consist of a prefix and a suffix. You can generate a name
+for a man and append either -a or -e to turn it into a name for a
+woman. Examples: Gerfrieda, Osrate, Sigisinde.
+
+Prefixes: Adal-, Albe-, Amal-, Bald-, Bert-, Bote-, Brun-, Charde-,
+Chari-, Charle-, Childe-, Chilpe-, Chlodo-, Chrodo-, Clot-, Crot-,
+Dago-, Dank-, Ecke-, Gel-, Ger-, Ger-, Gib-, Gisel-, Gote-, Gunde-,
+Gunt-, Hade-, Hel-, Her-, Hilde-, Horn-, Hu-, Ingo-, Krim-, Lude-,
+Man-, Mero-, Nant-, Nor-, Ort-, Os-, Pil-, Ram-, Rich-, Rit-, Ro-,
+Rudi-, Rum-, Schili-, Schru-, Sieg-, Sigi-, Sind-, Theude-, Tris-,
+Ul-, Vorti-, Vulde-, Wal-, Walt-, Werb-, Wich-, Wisi-, Wite-, Wolf-.
+
+Suffixes for women: -berga, -burg, -fled, -gard, -gund, -hild, -lind,
+-trud. Examples: Adalberga, Waltburg, Gerfled, Rogund, Sindgard,
+Wolftrud.
+
+Suffixes for men: -ald, -bart, -bert, -boge, -bung, -brand, -chart,
+-dung, -fried, -ger, -gang, -gast, -grim, -hard, -her, -land, -lieb,
+-lung, -man, -mer, -mund, -mung, -nold, -not, -old, -rat, -ric, -sind,
+-tan, -tram, -wart, -wech, -win. Examples: Dagobart, Manhard,
+Tristram.
+
+### Village names
+
+Use a name of a person or an animal and a village suffix to name
+villages.
+
+Suffixes for villages: -ach, -berg, -burg, -en, -gau, -ingen, -lingen.
+Examples: Hornach, Normungen, Ritliebingen, Ulrichen, Eelgau,
+Lioningen, Ravensburg.
+
+### Running the first session
 
 It’s difficult for players to focus on multi-year projects if they
 keep getting distracted by "important" work. One way to solve it would

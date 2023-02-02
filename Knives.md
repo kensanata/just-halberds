@@ -39,6 +39,7 @@ Education-2 and Status-2.
 
 > Example: Alex names his character Adalric and rolls 8 8 7 9;
 > Berta names her character Brunhilde and rolls 10 6 9 5.
+{ #stats }
 
 Your character begins at age 16. You have no special talents. If you
 want to begin the game with more experience, take a look at the
@@ -895,8 +896,8 @@ A warrior with woman and two children (1508), by Urs Graf
 ## Fragments of Play
 
 This section offers examples from an imaginary game illustrating all
-the ideas. The three people involved Alex, Berta and Claudia. Alex and
-Berta are players and Claudia is the referee.
+the ideas. The three people involved Alex, Berta and Claudia. Alex
+plays Adalric and Berta plays Brunhilde; Claudia is the referee.
 
 ### Preparation for the first game
 
@@ -909,13 +910,13 @@ Should either of the two plan on playing a mage, increasing Education
 is going to be on their mind.
 
 So visiting somebody in a library and getting a book is an adventure.
-Who might be opposed? Other urchins that didn’t get the job: Urs the
-bully, with Status-3 (also an orphan but with slightly better Status)
-and Discipline-1 (which I just assigned). He’s not much of a boss, but
-there’s also Strength-8 (above average) and Brawling-1 (also
-assigned). If Discipline and Brawling are his only skills, he’s 18
-years old, two years older than the new characters Alex and Berta are
-going to make.
+Who needs the book? Who might be opposed? Other urchins that didn’t
+get the job: Urs the bully, with Status-3 (also an orphan but with
+slightly better Status) and Discipline-1 (which I just assigned). He’s
+not much of a boss, but there’s also Strength-8 (above average) and
+Brawling-1 (also assigned). If Discipline and Brawling are his only
+talents, he’s 18 years old, two years older than the new characters
+Alex and Berta are going to make.
 
 Here’s a question for later: Does Urs have friends? Does he have
 enemies? Play to find out! I have a feeling he probably has a lackey,
@@ -938,7 +939,7 @@ their mask. So miss Trudeberg, the head of a large family farm, wears
 the wooden mask of a devil with deer horns and red pearls hanging from
 its ears. It’s the local “Cherry Devil”, known to tempt the young with
 poisonous fruit. And indeed, she is a talented brewer of potions and
-poisons.
+poisons. Maybe she needs the book. Why doesn’t she fetch it herself?
 
 Trudeberg is looking for a particular fruit, the “Black Eye Grape”. It
 grows in the ruin of Hawk Rock, rumoured to be home to a “wild man”,
@@ -1011,7 +1012,124 @@ Suffixes for villages: -ach, -berg, -burg, -en, -gau, -ingen, -lingen.
 Examples: Hornach, Normungen, Ritliebingen, Ulrichen, Eelgau,
 Lioningen, Ravensburg.
 
-### Running the first session
+### Starting the first session
+
+Claudia says, “Alright, Adalric and Brunhilde live in Ulrichen.
+Anything we need to know about them? Parents? Siblings?”
+
+Alex says, “Adalric is a slightly above average guy. Pretty smart.
+He’d like to be a mage one day. He has a cloak and that’s more than
+many kids his age have.”
+
+Berta says, “Brunhilde is not very smart by pretty strong. I’m sure
+she’ll be a good fighter one day. She has long brown hair in a thick
+braid.”
+
+Claudia says, “Right. Ulrichen has the tower of Ulrike the Beautiful,
+a recluse and a wizard. You’ve both been called by lady Trudeberg, a
+powerful head of a large farm, mother of many and grandmother of
+countless children. She looks at you and says: ‘Adalric, I need you to
+go up to the tower and ask lady Ulrike for a book called The Grapes of
+Eelgau. Brunhilde will look after you.’ She waits. Do you agree?”
+
+Alex says, “Sure, I want to meet the wizard!”
+
+Berta says, “Brunhilde grumbles, why am I being commanded to be his
+bodyguard?”
+
+Claudia says, “You’re asking Trudeberg, yeah? She says she is sending
+you because she knows you’re not afraid of anything and if you she’ll
+have her daughter Gerfled teach you about stick fighting.”
+
+Berta nods. “Let’s go.”
+
+As you can see, Claudia improvised as she was talking. Berta seemed to
+expect some sort of reward and she hadn’t prepared anything so she
+looked at the list of names and picked a name for the stick fighting
+daughter without missing a beat. At the end of the year, the players
+get to pick one talent to increase. There is no stick-fighting talent
+so this is an invitation to have Brunhilde learn Brawling-1, if Berta
+wants to.
+
+Note how neither of the players asked why protection was needed or why
+the book was required. That’s fine. No exposition is necessary if
+nobody is asking.
+
+At the beginning we see how neither Alex nor Berta are into describing
+their characters. A detail like a piece of clothing or a detail about
+their looks is all it takes. Both looked at [their stats](#stats) and
+improvised a little description. That’s all that’s required.
+
+Claudia says, “As you walk through the village, you see some kids
+driving pigs along the way. One of them is Urs. He sees you two with
+your clean clothes and smirks. Then he drives the pigs your way.”
+
+Alex says: “Ugh.”
+
+Berta says, “Are you looking for a fight, Urs? I’ll give you a fight
+if you want to.”
+
+### Asking for rolls
+
+Claudia says, “It’s a question of self-discipline to face a dozen pigs
+on a muddy road without making a fool of yourself. How about a roll of
+Intelligence + Discipline?”
+
+Berta says, “Maybe. But courage in the face of a dozen pigs doesn’t
+seem like something that depends on brains. How about brawns? Strength
+gives confidence!”
+
+Claudia says, “Allright, Strength + Discipline it is. If you fail, you
+have to fall back. There’s no -2 penalty because I don’t think this
+requires military discipline and experience. This is just a question
+of courage.”
+
+Berta rolls 2d6 and gets an 8 which is ≤ 10, Brunhilde’s Strength.
+“Come here, Urs! Come and face me! Brunhilde pushes through the pig
+herd.”
+
+Alex rolls 2d6 and also gets an 8 which is ≤ 8, Adalric’s Strength.
+“Yeah, Urs! You can’t hide behind the pigs. I see you!”
+
+Claudia says, “I think he’s going to try and punch Adalric.”
+
+Berta says, “And I’m going to punch him!”
+
+Claudia rolls 2d6 and gets 5 which is ≤ 8 + 1; Berta rolls 2d6 and
+gets 8 again, which is ≤ 10 - 2 (no Brawling!) – both Urs and
+Brunhilde hit!
+
+Claudia says, “As you beat Urs with a higher result, you have no
+problem getting to him. You punch him just as he shoved Adalric into
+the mud. I don’t think there’s going to be much of fight here, right?
+They all just part ways?”
+
+Berta says, “Yeah. I tell him: Don’t you ever touch my friend again,
+you understand?”
+
+Claudia says, “He’s holding his jaw and follows his pigs. This might
+not have been the last of him.”
+
+Claudia improvised the pigs. All she knew is that Urs was going to
+show up and establish that he was not friendly, giving Brunhilde a
+chance to show what kind of bodyguard she was. Apparently she’s loyal
+and quick to strike. Adalric, on the other hand, appears to be meek
+and willing to let her do the talking and posturing. We learned
+something about player and non-player characters!
+
+The part where Berta suggests a different attribute to use for the
+roll is par for the course. The whole table gets to decide how things
+are going to be resolved. It’s the referee’s responsibility to figure
+out how to the world reacts to the player characters, but it is not
+the case that the referee is the only one to decide what rules to
+apply.
+
+The fact that when both sides roll a success the one who rolls higher
+is somehow more successful than the other is something Claudia decided
+on the spot, based on her experience with another game she played a
+few years ago.
+
+### Other stuff
 
 It’s difficult for players to focus on multi-year projects if they
 keep getting distracted by "important" work. One way to solve it would

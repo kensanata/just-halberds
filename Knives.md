@@ -337,7 +337,7 @@ possible for two opponents to take each other out in the same round.
 
 > Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9, and
 > Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
+> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
 > Escape-4. She turns to fight. First round: Berta rolls a 6 and hits
 > because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
 > twice since 6 ≤ 9. Berta rolls 6 damage which kills a goblin (both
@@ -375,13 +375,14 @@ encounter (the number of mounts matches the number of riders); Damage
 determines how much damage they deal if they hit; Endurance determines
 how many rounds they’ll fight and how much damage they can take; if it
 drops to zero, they faint; excess damage is subtracted from Life; if
-it drops to zero, they are mortally wounded; Attack determines whether
-they attack in an encounter (2d6 ≤ attack); Hit determines how well
-they hit (2d6 ≤ hit), and Escape determines if they attempt to escape
-when they’re not attacking (2d6 ≤ escape). If they neither attack nor
-escape, they want to talk or interact in some other way.
+it drops to zero, they are mortally wounded; Fight determines whether
+they fight when encountered (2d6 ≤ fight); Attack determines how well
+they hit (2d6 ≤ attack), and Escape determines if they attempt to
+escape when they’re not attacking (2d6 ≤ escape). If they neither
+fight nor escape, they want to talk or interact in some other way.
+{ #opponents }
 
-| 1d6 | Opponents  | Count | Damage | Endurance | Life | Attack | Hit   | Escape |
+| 1d6 | Opponents  | Count | Damage | Endurance | Life | Fight | Hit   | Escape |
 |:---:|------------|:------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
 | 1   | Nightlings | 2d6    | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
 | 2   | Predators  | 1d6    | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
@@ -397,10 +398,11 @@ opposition.
 > Example: Claudia referees the game and needs goblins that ride on
 > giant spiders that ambush the vanguard. There are 7. She uses the
 > line of nightlings and mounts. Goblins: Damage-3, Endurance-1,
-> Life-5, Attack-5, Hit-9, Escape-4. Giant Spiders: Damage-15,
-> Endurance-16, Life-12, Attack-9, Hit-5, Escape-7. In this campaign,
-> goblins are rather harmless opponents who ride on terrible giant
-> spiders, which, oddly enough, are not very good at hitting things.
+> Life-5, Fight-5, Attack-9, Escape-4. Giant Spiders: Damage-15,
+> Endurance-16, Life-12, Fight-9, Attack-5, Escape-7. In this
+> campaign, goblins are rather harmless opponents who ride on terrible
+> giant spiders, which, oddly enough, are not very good at hitting
+> things.
 
 Always announce impending danger clearly, so that the players can
 decide for themselves whether they want to engage in a fight.

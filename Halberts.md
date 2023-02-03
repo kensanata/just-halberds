@@ -414,9 +414,9 @@ dragons are always loners.
 > Example: Claudia referees the game and needs goblins that
 > ride on giant spiders that ambush the vanguard. There are 7.
 > She uses the line of nightlings and mounts. Goblins:
-> Damage-3, Endurance-1, Life-5, Attack-5, Hit-9, Escape-4.
-> Giant Spiders: Damage-15, Endurance-16, Life-12, Attack-9,
-> Hit-5, Escape-7. In this world, goblins are rather harmless
+> Damage-3, Endurance-1, Life-5, Fight-5, Attack-9, Escape-4.
+> Giant Spiders: Damage-15, Endurance-16, Life-12, Fight-9,
+> Attack-5, Escape-7. In this world, goblins are rather harmless
 > opponents who ride on terrible giant spiders, which,
 > oddly enough, are not very good at hitting things.
 
@@ -498,7 +498,7 @@ the fight.
 
 > Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9, and
 > Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Attack-5, Hit-9,
+> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
 > Escape-4. She turns to fight. First round: Berta rolls 6 and hits
 > because 6 ≤ 10+1. Claudia rolls 5 and 6, two hits for the goblins,
 > since 6 ≤ 9. With the first hit, chance decides which attribute
@@ -667,7 +667,7 @@ surrounded by a hundred rice runners. The leader of her rear guard is
 Siegbert. She wants to find the sword of Osrica.
 
 **Rice Runner**...mercenaries. Warriors with halberds: Damage-3d6,
-Endurance-9, Life-9, Attack-9, Escape-5, Count: 10.
+Endurance-9, Life-9, Fight-9, Attack-8, Escape-5, Count: 10.
 
 ⑦ **Gyso** of the Feathers is Chairman of the Silver Scribes, a secret
 society of chroniclers and scholars, who copy books and save the

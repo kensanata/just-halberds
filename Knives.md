@@ -1131,80 +1131,217 @@ is somehow more successful than the other is something Claudia decided
 on the spot, based on her experience with another game she played a
 few years ago.
 
-### Other stuff
+### A powerful non-player character
 
-It’s difficult for players to focus on multi-year projects if they
-keep getting distracted by "important" work. One way to solve it would
-be to reduce the distractions. But where is the adventure in that? If
-the point is an adventure game, the opposite is our goal: multi-year
-projects manage themselves.
+Claudia says, “Adalric and Brunhilde are climbing the winding trail
+that leads up to the tower of Ulrike the Beautiful. It’s a hot day in
+spring and the crickets are loud. A crow seems to be watching you,
+always retreating uphill as you approach.”
 
-So here’s a classic task: let’s build a castle. You can’t buy a
-castle, so how are you going to build it? Let there be a non-player
-manager, a famous Construction-5 castle builder. He makes the plans
-and spares us the details. What he does is make demands. He tells the
-players what to do. We need tables to roll up his demands and
-associated adventure bones.
+Silence. Alex and Berta don’t know what to do with the crow info.
 
-*Arrange a marriage abroad.* You need more of the marble from foreign
-lands. Do you know how to get there? Travel there by ship and travel
-up river? Face pirates, cheating merchants, bandits, find a stowaway
-and be chased by their enemies. There is no payment for the marble but
-a promise of marriage for the marble quarry owner. You’re bringing
-pictures and a negotiator to the table. The negotiator is a difficult
-person but if you befriend them, you might have a connection to a
-partner of your own. What kind of partner are you looking for? What
-about the quarry owner’s family? Will you let yourself fall in love,
-risk the mission and make a big career ending move – for your heart’s
-desire?
+Claudia jumps forward in time, “You arrive at the tower. It stands
+right at the precipice overlooking the Ulrichen valley. You see that a
+gap of a few meters separates Ulrike’s tower from the rest of the
+mountain. It stands on a stone column of its own.”
 
-*Mines.* There’s a problem with the iron mines, the gypsum dig, the
-coal pit, the freestone cavern. Somebody has to go there, figure
-what’s wrong and solve it: Maybe it is a werewolf has been killing
-miners, or dwarves have shown up from below and demanded that the
-digging stop. Why is that? And what about the robber knight and his
-mercenaries that promised to return and sack the mining town unless
-the protection money is paid are you going to do something about it?
-Perhaps the mine operator has been replaced by a shapechanger who
-loves to drink fine and eat piglets every day, a dozen eggs and more,
-with expensive spices from foreign lands, all paid for by the
-resources of the mine, or so they say. Find out, and decide how much
-violence you are willing to apply in order to find a solution
-agreeable to your lord and lady. Have the miners broken into an
-ancient grave site and seen the dead sorcerers stirring? Calm the
-miners and have them return to work.
+Berta says, “It’s well defended. Do we see the witch?”
 
-*Quarry*. The quarry is in uproar. Kobolds have been pranking the poor
-sods, stealing their clothes, filling their tents with spiders, having
-their meat rot away. Can you find the invisible flying pranksters,
-these cursed fairies, and can you put and end to their antics? They
-hate the rackets the hammers are making, the chisels are grating on
-their ears and the iron saws are turning the milk sour. Can you set
-the necessary traps? Can you catch them and force those contracts that
-will banish them for a year and a day, time enough to finish that
-castle?
+Claudia says, “As you look around, you see the face of a woman
+appearing in a narrow window above the gate that opens into the void
+separating the tower from you. ‘What do you want, kids?’”
 
-*Logging*. The loggers refuse to work. Wild men have been spotted.
-Giants, they say. Or was it hairy beast men, naked and armed with
-clubs? The Alder King is sending them, they say. Is it true? Who is
-the Alder King? Do the spider goblin knights from the deep hills fight
-for him? Is the troll on his side? Can you stop them all? Can you make
-your way to the Alder King and take those long stairs leading you to
-the goblin market? Do you know the rules governing that place?
+Alex says, “I’ve come to fetch the Grapes of Eelgau for lady
+Trudeberg!”
 
-### More
+Claudia says, “I see… she wiggles her head and mumbles a few words.
+The stone on both sides of the gap stretches, as if there were giant
+hands beneath the surface trying to touch each other. You can walk
+over these stone fingers to the door. It opens and there she is,
+Ulrike the Beautiful.”
 
-This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already.
+Alex says, “All right! I explain about the book. Lady Trudeberg needs
+it. We’re just here to fetch the book. Or is she going to teach me a
+spell?”
 
-* Bring back the horses the men of Amalgard of Bearhall stole. If you do it, roll on the Thief or Mercenary list.
-* Bring these donkeys and their load to Falconthorpe. If you do it, roll on the Guard. If you befriended Chrodotrud, you may roll on the Passive list instead.
-* Go to the ruins of Frosthall and see if you can catch an Owl-wolf for Siggo the Aeromant. If you do it, roll on the Mercenary or Aggressive table. If you decide to spend the winter in Ramdale, receive a dog companion instead.
-* Join the raid against Amalgard of Bearhall. If you do it, roll on the Mercenary table. If you helped steal any horses, you may keep one.
-* Falconthorpe has been struggling with a manipulator. If you manage to drive him away, roll on the Mercenary table. If you decide to spend the winter there, in his house, studying the books, roll on the Manipulative or Transgressive table and tell us what sort of books you read.
+Claudia says, “She’ll let you take a look at her books for a day if
+you’ll go up the mountain and pick some Blue Roaring Ears at the Lake
+of Tears. Just be nice to the marmot man who lives by the lake. You
+get the feeling that this could be the start of a working
+relationship. Maybe also not the last errand you’ll run for her if you
+agree.”
 
-What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There’s no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book.
+Alex looks at Berta and she shrugs. He says, “OK, we’ll do it.”
 
-Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables.
+When the players handled Urs, Claudia realised she hadn’t prepared
+much for Ulrike. What sort magic did she have? No time to roll dice.
+That would have to come later. So a quick look at the
+[list](#gaining-talents) and she jotted down Healing, Sleep, Doors,
+Plants, Brewing, Charm, Diplomacy, Illusion, Literacy – classic
+Passive and Manipulative careers!
+
+After the game, Claudia pick Ulrike’s age, say 50. So we have about 34
+years and therefore 34 dicet roll. Let’s take 4d6 and roll four times
+on the Passive table, four times on the Manipulative table, and add
+each of the skills we listed above at 1. Using 2d6 for attributes,
+this is Ulrike the Beautiful: Strength-8 Dexterity-8 Endurance-12
+Intelligence-6 Education-8 Status-3 Healing-2 Sleep-6 Eyes-4 Doors-2
+Plants-5 Brewing-2 Charm-5 Singing-4 Diplomacy-4 Illusion-3 People-3
+Literacy-4. Surprisingly fit! She probably does a lot of hiking up
+here in the mountains. And fantastic Sleep, Plants and Charm talents!
+
+### Encounters
+
+The players are heading up into the mountains. Why is the lake called
+the Lake of Tears?
+
+Claudia says, “The way up is hard going. It’s steep and the wind is
+cold. You’ve been hearing the marmots whistling and you’ve been seeing
+the bearded vultures circling. How about you give me an Endurance roll
+to see how well you’re holding up.”
+
+Alex says, “What happens when we fail?”
+
+Claudia says, “How about you need to send the night because you’re
+exhausted?”
+
+Alex rolls 10 which is higher than 7. Berta rolls a 12 which is higher
+than 9. Neither has the Climb talent. Berta says, “It’s going to be a
+long night.”
+
+When Claudia had mentioned the marmot man, she didn’t have anything
+particular in mind. Some kind of fay creatures – and so she rolls for
+a [Nightling](#opponents): Damage-10 Endurance-6 Life-4 Fight-9
+Attack-6 Escape-7. It’s aggressive and deals a lot of damage! Maybe he
+wields a devil blade? Or is it some sort of desiccation magic that he
+wields via the twigs of a sacred tree? She goes with that.
+
+Now, questions: Is the marmot man evil? Why is he opposed to humans
+gathering Blue Roaring Ears? How might he be convinced to part with
+them?
+
+![A bearded man with a branch and pointy hat](images/Urs_Graf_Bärtiger_Mann_mit_Zweig_und_spitzem_Hut_(1512).jpg)
+A bearded man bearing a twig and wearing a pointy hat (1515), by Urs Graf
+{: .pic .right }
+
+Now, it’s always easy to feel that the answers to these questions
+should have been prepared. But sometimes the players go in unexpected
+directions and the world needs to expand, seamlessly. Wherever players
+look, more stuff gets added.
+
+| 2d6 | Reaction                              |
+|:---:|---------------------------------------|
+| 2   | attempt to kidnap and ransom you      |
+| 3   | rob you, take your stuff              |
+| 4   | threaten you and your friends         |
+| 5   | demand help and cooperation           |
+| 6   | refuse to cooperate                   |
+| 7   | be sceptical, doubt your competence   |
+| 8   | be wavering, doubt your success       |
+| 9   | only take safe bets, stay in the back |
+| 10  | cooperate, take reasonable orders     |
+| 11  | be friendly, offer sympathy           |
+| 12  | be helpful, offer advice              |
+
+<!-- ### Work in progress -->
+
+<!-- It’s difficult for players to focus on multi-year projects if they -->
+<!-- keep getting distracted by "important" work. One way to solve it would -->
+<!-- be to reduce the distractions. But where is the adventure in that? If -->
+<!-- the point is an adventure game, the opposite is our goal: multi-year -->
+<!-- projects manage themselves. -->
+
+<!-- So here’s a classic task: let’s build a castle. You can’t buy a -->
+<!-- castle, so how are you going to build it? Let there be a non-player -->
+<!-- manager, a famous Construction-5 castle builder. He makes the plans -->
+<!-- and spares us the details. What he does is make demands. He tells the -->
+<!-- players what to do. We need tables to roll up his demands and -->
+<!-- associated adventure bones. -->
+
+<!-- *Arrange a marriage abroad.* You need more of the marble from foreign -->
+<!-- lands. Do you know how to get there? Travel there by ship and travel -->
+<!-- up river? Face pirates, cheating merchants, bandits, find a stowaway -->
+<!-- and be chased by their enemies. There is no payment for the marble but -->
+<!-- a promise of marriage for the marble quarry owner. You’re bringing -->
+<!-- pictures and a negotiator to the table. The negotiator is a difficult -->
+<!-- person but if you befriend them, you might have a connection to a -->
+<!-- partner of your own. What kind of partner are you looking for? What -->
+<!-- about the quarry owner’s family? Will you let yourself fall in love, -->
+<!-- risk the mission and make a big career ending move – for your heart’s -->
+<!-- desire? -->
+
+<!-- *Mines.* There’s a problem with the iron mines, the gypsum dig, the -->
+<!-- coal pit, the freestone cavern. Somebody has to go there, figure -->
+<!-- what’s wrong and solve it: Maybe it is a werewolf has been killing -->
+<!-- miners, or dwarves have shown up from below and demanded that the -->
+<!-- digging stop. Why is that? And what about the robber knight and his -->
+<!-- mercenaries that promised to return and sack the mining town unless -->
+<!-- the protection money is paid are you going to do something about it? -->
+<!-- Perhaps the mine operator has been replaced by a shapechanger who -->
+<!-- loves to drink fine and eat piglets every day, a dozen eggs and more, -->
+<!-- with expensive spices from foreign lands, all paid for by the -->
+<!-- resources of the mine, or so they say. Find out, and decide how much -->
+<!-- violence you are willing to apply in order to find a solution -->
+<!-- agreeable to your lord and lady. Have the miners broken into an -->
+<!-- ancient grave site and seen the dead sorcerers stirring? Calm the -->
+<!-- miners and have them return to work. -->
+
+<!-- *Quarry*. The quarry is in uproar. Kobolds have been pranking the poor -->
+<!-- sods, stealing their clothes, filling their tents with spiders, having -->
+<!-- their meat rot away. Can you find the invisible flying pranksters, -->
+<!-- these cursed fairies, and can you put and end to their antics? They -->
+<!-- hate the rackets the hammers are making, the chisels are grating on -->
+<!-- their ears and the iron saws are turning the milk sour. Can you set -->
+<!-- the necessary traps? Can you catch them and force those contracts that -->
+<!-- will banish them for a year and a day, time enough to finish that -->
+<!-- castle? -->
+
+<!-- *Logging*. The loggers refuse to work. Wild men have been spotted. -->
+<!-- Giants, they say. Or was it hairy beast men, naked and armed with -->
+<!-- clubs? The Alder King is sending them, they say. Is it true? Who is -->
+<!-- the Alder King? Do the spider goblin knights from the deep hills fight -->
+<!-- for him? Is the troll on his side? Can you stop them all? Can you make -->
+<!-- your way to the Alder King and take those long stairs leading you to -->
+<!-- the goblin market? Do you know the rules governing that place? -->
+
+<!-- ### More -->
+
+<!-- This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already. -->
+
+<!-- * Bring back the horses the men of Amalgard of Bearhall stole. If you do it, roll on the Thief or Mercenary list. -->
+<!-- * Bring these donkeys and their load to Falconthorpe. If you do it, roll on the Guard. If you befriended Chrodotrud, you may roll on the Passive list instead. -->
+<!-- * Go to the ruins of Frosthall and see if you can catch an Owl-wolf for Siggo the Aeromant. If you do it, roll on the Mercenary or Aggressive table. If you decide to spend the winter in Ramdale, receive a dog companion instead. -->
+<!-- * Join the raid against Amalgard of Bearhall. If you do it, roll on the Mercenary table. If you helped steal any horses, you may keep one. -->
+<!-- * Falconthorpe has been struggling with a manipulator. If you manage to drive him away, roll on the Mercenary table. If you decide to spend the winter there, in his house, studying the books, roll on the Manipulative or Transgressive table and tell us what sort of books you read. -->
+
+<!-- What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There’s no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book. -->
+
+<!-- Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables. -->
+
+<!-- ⁂ -->
+
+<!-- Ideas by Judd Karlmann: -->
+<!-- https://www.reddit.com/r/DMAcademy/comments/10rymic/comment/j6yka56/ -->
+
+<!-- Build: Cathedral, Castle, Bridge, Tunnel, Mine -->
+
+<!-- Diplomacy: End long war, stop war before it happens, support kingdom on the edge of chaos, support creation of a republic -->
+
+<!-- Study: Ancient ruins, ancient technology, lost people, lost deity, alien incursion -->
+
+<!-- Support (a cool organization that everyone believes in): an arcane library, a well meaning hospital, a diverse city, a wise temple, a druid's grove -->
+
+<!-- Destroy: a tyrant, systemic monsters, colonial oppression, a corrupt government -->
+
+<!-- ⁂ -->
+
+<!-- @starmonkey@dice.camp says: Feels like what I wanted Burning Wheel to -->
+<!-- be like. Beliefs from BW feel like "personal questions" to be answered -->
+<!-- in Knives. -->
+
+<!-- Idea: Halberds Spells & Spellcasters PDFs with Knives - replace all -->
+<!-- the magic talents with spells, go study with a mage to learn new ones. -->
+<!-- Keep the exhaustion mechanic from Knives. -->
 
 <div style="break-after: always;"></div>
 

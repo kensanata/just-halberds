@@ -1178,12 +1178,12 @@ much for Ulrike. What sort magic did she have? No time to roll dice.
 That would have to come later. So a quick look at the
 [list](#gaining-talents) and she jotted down Healing, Sleep, Doors,
 Plants, Brewing, Charm, Diplomacy, Illusion, Literacy – classic
-Passive and Manipulative careers!
+Passive and Manipulative careers.
 
-After the game, Claudia pick Ulrike’s age, say 50. So we have about 34
-years and therefore 34 dicet roll. Let’s take 4d6 and roll four times
-on the Passive table, four times on the Manipulative table, and add
-each of the skills we listed above at 1. Using 2d6 for attributes,
+After the game, Claudia picks Ulrike’s age, say 50. So we have about
+34 years and therefore 34 dice to roll. Let’s take 4d6 and roll four
+times on the Passive table, four times on the Manipulative table, and
+add each of the skills we listed above at 1. Using 2d6 for attributes,
 this is Ulrike the Beautiful: Strength-8 Dexterity-8 Endurance-12
 Intelligence-6 Education-8 Status-3 Healing-2 Sleep-6 Eyes-4 Doors-2
 Plants-5 Brewing-2 Charm-5 Singing-4 Diplomacy-4 Illusion-3 People-3

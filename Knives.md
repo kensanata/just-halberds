@@ -177,7 +177,7 @@ appropriate table to roll on during the winter phase and gain the
 talent or increase the talent if you already have it.
 { #gaining-talents }
 
-When you learn "Fighting", choose a weapon instead: knife, spear,
+When you learn “Fighting”, choose a weapon instead: knife, spear,
 halberd, épée, bow, lance. Note that you do not start with the Knife
 talent even though you own a knife.
 
@@ -382,14 +382,14 @@ escape when they’re not attacking (2d6 ≤ escape). If they neither
 fight nor escape, they want to talk or interact in some other way.
 { #opponents }
 
-| 1d6 | Opponents  | Count | Damage | Endurance | Life | Fight | Hit   | Escape |
-|:---:|------------|:------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
-| 1   | Nightlings | 2d6    | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
-| 2   | Predators  | 1d6    | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
-| 3   | Undead     | 1d6    | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
-| 4   | Mounts     | varies | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
-| 5   | Giants     | 1      | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
-| 6   | Dragons    | 1      | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
+| 1d6 | Opponents  | Count  | Damage | Endurance | Life | Fight | Attack | Escape |
+|:---:|------------|:------:|:------:|:---------:|:----:|:-----:|:------:|:------:|
+| 1   | Nightlings | 2d6    | 2d6    | 1d6       | 1d6  | 1d6+4 | 1d6+5  | 1d6+3  |
+| 2   | Predators  | 1d6    | 2d6    | 3d6       | 2d6  | 1d6+5 | 1d6+6  | 1d6+2  |
+| 3   | Undead     | 1d6    | 2d6    | 3d6       | 4d6  | 1d6+6 | 1d6+7  | 1d6+0  |
+| 4   | Mounts     | varies | 3d6    | 6d6       | 3d6  | 1d6+4 | 1d6+4  | 1d6+2  |
+| 5   | Giants     | 1      | 4d6    | 8d6       | 4d6  | 1d6+3 | 1d6+8  | 1d6+0  |
+| 6   | Dragons    | 1      | 6d6    | 10d6      | 5d6  | 1d6+2 | 1d6+9  | 1d6+0  |
 
 Note down when you roll something and keep using those numbers. This
 is how players learn about the strengths and weaknesses of the
@@ -911,29 +911,28 @@ two kids did not inherit Education or Status. Looking at the
 Should either of the two plan on playing a mage, increasing Education
 is going to be on their mind.
 
-So visiting somebody in a library and getting a book is an adventure.
-Who needs the book? Who might be opposed? Other urchins that didn’t
-get the job: Urs the bully, with Status-3 (also an orphan but with
-slightly better Status) and Discipline-1 (which I just assigned). He’s
-not much of a boss, but there’s also Strength-8 (above average) and
-Brawling-1 (also assigned). If Discipline and Brawling are his only
-talents, he’s 18 years old, two years older than the new characters
-Alex and Berta are going to make.
+Visiting somebody in a library and getting a book is the adventure.
+Questions: Who needs the book? Who opposes this? Other urchins that
+didn’t get the job: Urs the bully, with Status-3 (also an orphan but
+with slightly better Status) and Discipline-1 (which I just assigned).
+He’s not much of a boss, but there’s also Strength-8 (above average)
+and Brawling-1 (also assigned). If Discipline and Brawling are his
+only talents, he’s 18 years old, two years older than the new
+characters Alex and Berta are going to make.
 
-Here’s a question for later: Does Urs have friends? Does he have
-enemies? Play to find out! I have a feeling he probably has a lackey,
-and there’s probably a love interest as well.
+Question for later: Does Urs have friends? Does he have enemies? Play
+to find out! He probably has a lackey, and there’s probably a love
+interest as well, right?
 
-The library probably belongs to a wizard. Let’s call her Ulrike the
-Beautiful. The starting village also needs a name. Maybe the village
-has always belonged to her family and the rulers all have names that
-sound similar: Ulrich, Ulberth, Ulberga. Let’s call the village
-Ulrichen.
+The library belongs to a wizard. Claudia needs a name and picks
+“Ulrike the Beautiful”. The starting village also needs a name. Maybe
+the village has always belonged to Ulrike’s family and the rulers all
+have names that sound similar: Ulrich, Ulberth, Ulberga. Ulrichen!
 
-This makes me wonder about Urs the bully. His name sounds similar to
+This makes her wonder about Urs the bully. The name sounds similar to
 Ulrike. Are they related? A question to save for later.
 
-Let’s try and think of more adventures. How about adding a secret
+Claudia needs some more adventure ideas. How about adding a secret
 society? “The Brothers and Sisters of Horned Mask” – a society that
 wears masks at their meetings. They all know each other in real life
 but within their society, they also represent the animal or demon of
@@ -1218,16 +1217,12 @@ wields via the twigs of a sacred tree? She goes with that.
 
 Now, questions: Is the marmot man evil? Why is he opposed to humans
 gathering Blue Roaring Ears? How might he be convinced to part with
-them?
+them? Why does he live up there? She jots down some ideas for later:
+devil, giant, ice magic. How does he react?
 
 ![A bearded man with a branch and pointy hat](images/Urs_Graf_Bärtiger_Mann_mit_Zweig_und_spitzem_Hut_(1512).jpg)
 A bearded man bearing a twig and wearing a pointy hat (1515), by Urs Graf
 {: .pic .right }
-
-Now, it’s always easy to feel that the answers to these questions
-should have been prepared. But sometimes the players go in unexpected
-directions and the world needs to expand, seamlessly. Wherever players
-look, more stuff gets added.
 
 | 2d6 | Reaction                              |
 |:---:|---------------------------------------|
@@ -1243,10 +1238,75 @@ look, more stuff gets added.
 | 11  | be friendly, offer sympathy           |
 | 12  | be helpful, offer advice              |
 
+Don’t feel that the answers to all these questions should have been
+prepared ahead of time. The players go in unexpected directions and
+the world needs to expand, seamlessly. Wherever players look, more
+stuff gets added. What we need to do is prepare the bones. Assembly
+happens at the table.
+
+### Between sessions
+
+Adalric and Brunhilde spent then night up in the mountains, managed to
+run from the wolves, met the marmot man and were courteous and he let
+them gather some Blue Roaring Ears if they brought back Little Man
+Moss to Ulrike and made sure she taught it all she knew about botany
+for a year and a day. They agreed to that and went back, convinced
+Ulrike to take the little green creature, got the book, brought it to
+Lady Trudeberg, and Adalric was invited to read some books along with
+Little Man Moss and Brunhilde was invited to come train with Lady
+Trudeberg’s daughter Waltrud.
+
+The sessions, people go home or log off, and Claudia is daydreaming
+about the game. Time to think about all the non-player characters and
+add some notes. Are Ulrike and the Marmot Man friends or foes? Maybe a
+competitive relationship? Power over the plants and mushrooms? Is
+there a passage to Myrkheim and the Ur-forest of the mushroom king?
+Which side would the players pick? If they meet again, Marmot Man is
+going to send them on a mission to Myrkheim. Ulrike is going to tell
+them how to steal the secret of sleeping spores from the mushroom king
+and the players will have to decide where their loyalties lie.
+
+And what about Ulrike? With Sleep-6 she must have been to the
+dreamlands, maybe she had a long love affair with Orpheus himself
+which ended in opium-fueled nightmare battles and charms and counter
+charms. And finally she left, retired to this place, started weaving a
+net of plants and charms. This would be something to discover. What
+would be the little secrets along the way? Orpheus’ ring. Also a great
+treasure that somebody might want to steal – a new secret society,
+perhaps? Books of nightmares and curses, dreamland violence. Those
+books might be there for Adalric to discover, to ask Ulrike about
+them, to see her mien freeze and hear her speak in the fell voice of
+Cold Charm…
+
+Claudia is throwing out words without knowing what they mean, but
+it’ll be easy to add more words later, once she knows that the players
+are in fact going to be interested. She just wants to stay one or two
+steps ahead. If more stuff gets added wherever players look, that also
+means that stuff remains open and vague as long as nobody is looking.
+For now, she needs more seeds of conflicting loyalties, of love
+interests, of envy and jealousy…
+
+Lady Trudeberg and The Brothers and Sisters of Horned Mask, what about
+them? Claudia reviews her notes and sees the grape was supposed to
+grows in the ruin of Hawk Rock, which didn’t make an appearance and
+that the “forest creature” there hates all humans. Since Claudia had
+forgotten about it, Hawk Rock must be a ruin somewhere else and the
+forest creatures is probably a bugbear. She prepares bugbears and
+rolls on the [Nightling](#opponents) table again: Damage-5 Endurance-3
+Life-5 Fight-9 Attack-9 Escape-9. Quick to attack, quick to run,
+squishy, that’s the local bugbears.
+
+What about Urs and his love interest? Claudia doesn’t want to add
+domestic violence to the game, so perhaps the girl is Krimlind,
+daughter of Krimhild, and there should be a scene where The Brothers
+and Sisters of Horned Mask meet and some potion is shared, and
+Krimlind is there and looking at Adalric and Brunhild across the room.
+Let’s see if either of them reacts.
+
 <!-- ### Work in progress -->
 
 <!-- It’s difficult for players to focus on multi-year projects if they -->
-<!-- keep getting distracted by "important" work. One way to solve it would -->
+<!-- keep getting distracted by “important” work. One way to solve it would -->
 <!-- be to reduce the distractions. But where is the adventure in that? If -->
 <!-- the point is an adventure game, the opposite is our goal: multi-year -->
 <!-- projects manage themselves. -->
@@ -1329,14 +1389,14 @@ look, more stuff gets added.
 
 <!-- Study: Ancient ruins, ancient technology, lost people, lost deity, alien incursion -->
 
-<!-- Support (a cool organization that everyone believes in): an arcane library, a well meaning hospital, a diverse city, a wise temple, a druid's grove -->
+<!-- Support (a cool organization that everyone believes in): an arcane library, a well meaning hospital, a diverse city, a wise temple, a druid’s grove -->
 
 <!-- Destroy: a tyrant, systemic monsters, colonial oppression, a corrupt government -->
 
 <!-- ⁂ -->
 
 <!-- @starmonkey@dice.camp says: Feels like what I wanted Burning Wheel to -->
-<!-- be like. Beliefs from BW feel like "personal questions" to be answered -->
+<!-- be like. Beliefs from BW feel like “personal questions” to be answered -->
 <!-- in Knives. -->
 
 <!-- Idea: Halberds Spells & Spellcasters PDFs with Knives - replace all -->

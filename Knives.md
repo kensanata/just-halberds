@@ -534,7 +534,7 @@ with Sutr, the lord of fire.
 
 ![Men with polearms gather beneath a flag](images/Urs_Graf_Versammlung_von_Reisläufern,_(1515).jpg)
 Mercenaries gathering (1515), by Urs Graf
-{: .pic .right }
+{: .pic .left }
 
 *World changing events*. If the players aren’t changing the setting,
 it changes of its own accord. This is why you shouldn’t invest too
@@ -1256,9 +1256,19 @@ Lady Trudeberg, and Adalric was invited to read some books along with
 Little Man Moss and Brunhilde was invited to come train with Lady
 Trudeberg’s daughter Waltrud.
 
-The sessions, people go home or log off, and Claudia is daydreaming
-about the game. Time to think about all the non-player characters and
-add some notes. Are Ulrike and the Marmot Man friends or foes? Maybe a
+Time to level up! What did they learn? Adalric spent time doing
+Passive magic, so he rolls a d6 and gets a 4: Doors! Is he sneaking
+around in Ulrike’s tower, going through her stuff? Claudia decides to
+add some hidden secrets for Adalric to find, if he wants to risk it.
+
+And what about Brunhilde? It was physical, being Adalric’s bodyguard,
+and surviving in the wilderness. She rolls a d6 and gets a 3:
+Construction! Building shelters, helping out on the farm, it made her
+better at building things.
+
+Time for players to go home or log off, and Claudia is daydreaming
+about the game, thinking about the non-player characters and taking
+notes. Are Ulrike and the Marmot Man friends or foes? Maybe a
 competitive relationship? Power over the plants and mushrooms? Is
 there a passage to Myrkheim and the Ur-forest of the mushroom king?
 Which side would the players pick? If they meet again, Marmot Man is
@@ -1270,13 +1280,20 @@ And what about Ulrike? With Sleep-6 she must have been to the
 dreamlands, maybe she had a long love affair with Orpheus himself
 which ended in opium-fueled nightmare battles and charms and counter
 charms. And finally she left, retired to this place, started weaving a
-net of plants and charms. This would be something to discover. What
-would be the little secrets along the way? Orpheus’ ring. Also a great
-treasure that somebody might want to steal – a new secret society,
-perhaps? Books of nightmares and curses, dreamland violence. Those
-books might be there for Adalric to discover, to ask Ulrike about
-them, to see her mien freeze and hear her speak in the fell voice of
-Cold Charm…
+net of plants and charms. What would be the little secrets to discover
+along the way? No-go zones around the house → dream hounds → trails to
+the shadow lands → Orpheus’ ring.
+
+The ring is also a great treasure that somebody might want to steal –
+a new secret society, perhaps? The Great Association Joy and
+Happiness, agents of free love, no rulers, drunken revelry and fairy.
+The ring grants them a favour by Lady Butterflies, ruler of Change and
+Transformation.
+
+Another thing to find: books of nightmares and curses, dreamland
+violence. Those books might be there for Adalric to discover, to ask
+Ulrike about them, to see her mien freeze and hear her speak in the
+fell voice of Cold Charm…
 
 Claudia is throwing out words without knowing what they mean, but
 it’ll be easy to add more words later, once she knows that the players
@@ -1286,9 +1303,11 @@ means that stuff remains open and vague as long as nobody is looking.
 For now, she needs more seeds of conflicting loyalties, of love
 interests, of envy and jealousy…
 
+### The plans of non-player characters
+
 Lady Trudeberg and The Brothers and Sisters of Horned Mask, what about
 them? Claudia reviews her notes and sees the grape was supposed to
-grows in the ruin of Hawk Rock, which didn’t make an appearance and
+grow in the ruin of Hawk Rock, which didn’t make an appearance and
 that the “forest creature” there hates all humans. Since Claudia had
 forgotten about it, Hawk Rock must be a ruin somewhere else and the
 forest creatures is probably a bugbear. She prepares bugbears and
@@ -1300,8 +1319,30 @@ What about Urs and his love interest? Claudia doesn’t want to add
 domestic violence to the game, so perhaps the girl is Krimlind,
 daughter of Krimhild, and there should be a scene where The Brothers
 and Sisters of Horned Mask meet and some potion is shared, and
-Krimlind is there and looking at Adalric and Brunhild across the room.
+Krimlind is there and looking at Adalric and Brunhilde across the room.
 Let’s see if either of them reacts.
+
+Claudia wants to show how the world changed due to things the players
+did: reputation gained. Here’s a boon for them: Little Man Moss comes
+by and thanks them before the year is up. He gives them the magic word
+that allows Adalric or Brunhilde to contact it three times when spoken
+to a patch of moss.
+
+Claudia also wants to foreshadow events to come. These events should
+be unrelated to the dreamlands and to magic users. Something for
+fighters or rapscallions. Lord Obersaxo is recruiting mercenaries to
+fight in the war of city states to the south. Perhaps such a campaign
+might end up being the actual campaign, if players let themselves get
+drawn into it. Perhaps the actual campaign is about overthrowing Lord
+Obersaxo. Before doing anything, however, his plans needs to be
+introduced. Witegund is his delegate, come here to recruit. Urs is one
+of the first to be recruited. When next Adalric and Brunhilde meet,
+Urs is armed with a spear and he has armed friends at his side. Now
+what?
+
+![Eight warriors and a rider](images/Urs_Graf_Acht_Krieger_und_ein_Reiter_in Landschaft_(1507).jpg)
+Eight fighters and a rider (1507), by Urs Graf
+{: .pic .small }
 
 <!-- ### Work in progress -->
 

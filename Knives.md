@@ -1344,66 +1344,125 @@ what?
 Eight fighters and a rider (1507), by Urs Graf
 {: .pic .small }
 
-<!-- ### Work in progress -->
+### Player goals
 
-<!-- It’s difficult for players to focus on multi-year projects if they -->
-<!-- keep getting distracted by “important” work. One way to solve it would -->
-<!-- be to reduce the distractions. But where is the adventure in that? If -->
-<!-- the point is an adventure game, the opposite is our goal: multi-year -->
-<!-- projects manage themselves. -->
+After a two or three sessions, Adalric and Brunhilde have defeated
+some nightlings, they have made new friends, they have been of service
+to people of power, what now? Time to find out what their long term
+goals are. Claudia could ask the two players, Alex and Berta. Often
+people don’t actually know what they want when asked directly. It’s
+therefore often better to offer options within the game and see how
+players react.
 
-<!-- So here’s a classic task: let’s build a castle. You can’t buy a -->
-<!-- castle, so how are you going to build it? Let there be a non-player -->
-<!-- manager, a famous Construction-5 castle builder. He makes the plans -->
-<!-- and spares us the details. What he does is make demands. He tells the -->
-<!-- players what to do. We need tables to roll up his demands and -->
-<!-- associated adventure bones. -->
+Do they want to improve the infrastructure? A non-player character
+sighs and complains about there being no alchemist. If the players ask
+how one would find an alchemist, Claudia tells them they should ask
+Ulrike or Trudeberg and she quickly sketches out a solution in her
+notebook: travel to some place, find an alchemist, talk to them about
+their apprentice, solve some sort of problem, come back, secure a
+place, organise the town folks to build that house, contact three
+different fay creatures and the devil to get the first four weird
+ingredients. If players actually go and do the first step, Claudia
+prepares the next two steps for upcoming sessions. She tries to stay
+ahead of the game and she has some adventure bones ready to improvise
+for half a session if necessary, that’s it.
 
-<!-- *Arrange a marriage abroad.* You need more of the marble from foreign -->
-<!-- lands. Do you know how to get there? Travel there by ship and travel -->
-<!-- up river? Face pirates, cheating merchants, bandits, find a stowaway -->
-<!-- and be chased by their enemies. There is no payment for the marble but -->
-<!-- a promise of marriage for the marble quarry owner. You’re bringing -->
-<!-- pictures and a negotiator to the table. The negotiator is a difficult -->
-<!-- person but if you befriend them, you might have a connection to a -->
-<!-- partner of your own. What kind of partner are you looking for? What -->
-<!-- about the quarry owner’s family? Will you let yourself fall in love, -->
-<!-- risk the mission and make a big career ending move – for your heart’s -->
-<!-- desire? -->
+Do the players solve problems by talking? A local complains about the
+bandits again. If the players ask about the origin of the bandits or
+their leader, Claudia tells them to speak to Krimhild or Waltrud and
+she quickly sketches out a solution in her notebook: travel to a
+village nearby where relatives of bandits live and talk to them, meet
+bandits and talk to them, return and talk to a person of authority,
+broker a deal. Maybe she looks at this and thinks it needs a
+complication. Lord Obersaxo wants to recruit the bandits, too. This
+leads to looting and the authorities look the other way. Maybe a third
+party can be convinced to intervene.
 
-<!-- *Mines.* There’s a problem with the iron mines, the gypsum dig, the -->
-<!-- coal pit, the freestone cavern. Somebody has to go there, figure -->
-<!-- what’s wrong and solve it: Maybe it is a werewolf has been killing -->
-<!-- miners, or dwarves have shown up from below and demanded that the -->
-<!-- digging stop. Why is that? And what about the robber knight and his -->
-<!-- mercenaries that promised to return and sack the mining town unless -->
-<!-- the protection money is paid are you going to do something about it? -->
-<!-- Perhaps the mine operator has been replaced by a shapechanger who -->
-<!-- loves to drink fine and eat piglets every day, a dozen eggs and more, -->
-<!-- with expensive spices from foreign lands, all paid for by the -->
-<!-- resources of the mine, or so they say. Find out, and decide how much -->
-<!-- violence you are willing to apply in order to find a solution -->
-<!-- agreeable to your lord and lady. Have the miners broken into an -->
-<!-- ancient grave site and seen the dead sorcerers stirring? Calm the -->
-<!-- miners and have them return to work. -->
+As you can see, the sketch of the solution to a long term goal is a
+sequence of tasks that the players may or may not pursue. It’s OK for
+players not to pursue or abandon these goals. No harm done, Claudia
+didn’t prepare too far ahead. If goals are abandoned, Claudia is free
+to narrate an ending she likes. If the players didn’t organise and
+alchemist, perhaps the complaints reach the ears of Lord Obersaxo and
+an alchemist settles in the castle of Brugg downriver, outside the
+player character’s current sphere of influence. Complications can
+arise!
 
-<!-- *Quarry*. The quarry is in uproar. Kobolds have been pranking the poor -->
-<!-- sods, stealing their clothes, filling their tents with spiders, having -->
-<!-- their meat rot away. Can you find the invisible flying pranksters, -->
-<!-- these cursed fairies, and can you put and end to their antics? They -->
-<!-- hate the rackets the hammers are making, the chisels are grating on -->
-<!-- their ears and the iron saws are turning the milk sour. Can you set -->
-<!-- the necessary traps? Can you catch them and force those contracts that -->
-<!-- will banish them for a year and a day, time enough to finish that -->
-<!-- castle? -->
+If players do not want to abandon a goal, Claudia makes sure there are
+always non-player characters around to give advice and point at the
+next task (or offer an interesting choice). The interesting choices
+arise when there are multiple goals that need completion, or when
+trouble has to be left brewing in order to get closer to the goal.
+This is frustrating for players but also important for them to prove
+to themselves how important their goals are. How far are they willing
+to go for what they believe in?
 
-<!-- *Logging*. The loggers refuse to work. Wild men have been spotted. -->
-<!-- Giants, they say. Or was it hairy beast men, naked and armed with -->
-<!-- clubs? The Alder King is sending them, they say. Is it true? Who is -->
-<!-- the Alder King? Do the spider goblin knights from the deep hills fight -->
-<!-- for him? Is the troll on his side? Can you stop them all? Can you make -->
-<!-- your way to the Alder King and take those long stairs leading you to -->
-<!-- the goblin market? Do you know the rules governing that place? -->
+Some ideas: stop an ongoing war, prevent a war from breaking out, get
+rich during the war (yikes!); build a wall, a castle, a bridge, a
+mill, a dam; fight against cruel lords and ladies and overthrow the
+government, end serfdom, run a revolution; fight evil wizards and
+witches, hunt monsters like shapeshifters and devils, kill a nightmare
+demigod; explore the underworld and reach a plane of spiders and
+mushrooms, or of fire devils and ancient nobility, or of an endless
+prisons full of confused wardens and victims.
+
+<div style="break-after: always;"></div>
+
+### Building a castle
+
+Years later, Brunhilde wants build a castle. She can’t buy a castle,
+so how is she going to build it? Let there be a non-player manager, a
+famous Construction-5 castle builder called Osgrim. He makes the plans
+and spares Alex, Berta and Claudia the details. He just makes demands.
+He tells Adalric and Brunhilde what he needs.
+
+*Marble*. The castle needs marble from foreign lands. Do the players
+know how to get there? Travel there by ship? Face pirates, cheating
+merchants, bandits, find a stowaway? There is no payment for the
+marble but a promise of marriage for the marble quarry owner. The
+player characters are bringing pictures and a negotiator to the table.
+The negotiator is a difficult person but if they are befriended,
+Adalric or Brunhilde might have a connection to find a partner of
+their own. What kind of partner are they looking for? What about the
+quarry owner’s family? Will they let themselves fall in love, risk the
+mission and make a big career ending move – for their heart’s desire?
+As always, daydreaming and questions are the guide for Claudia. She
+prepares the bones adventures and then people play to find out.
+
+*Mines.* There’s a problem in the freestone cavern. Somebody has to go
+there, figure what’s wrong and solve it: Maybe it is a werewolf has
+been killing miners, or dwarves have shown up from below and demanded
+that the digging stop. Why is that? And what about the robber knight
+and his mercenaries that promised to return and sack the mining town
+unless the protection money is paid are you going to do something
+about it? Perhaps the mine operator has been replaced by a
+shapechanger who loves to drink fine and eat piglets every day, a
+dozen eggs and more, with expensive spices from foreign lands, all
+paid for by the resources of the mine, or so they say. Adalric and
+Brunhilde can find out and Alex and Berta get to decide how much
+violence they are willing to apply in order to find a solution
+agreeable to Lord Obersaxo. Have the miners broken into an ancient
+grave site and seen the dead sorcerers stirring? Calm the miners and
+have them return to work. So many ideas!
+
+*Quarry*. The quarry is in uproar. Kobolds have been pranking the poor
+sods, stealing their clothes, filling their tents with spiders, having
+their meat rot away. Can Adalric find the invisible flying pranksters,
+these cursed fairies, and can he put and end to their antics? They
+hate the hammering, the chisels are grating on their ears and the iron
+saws are turning the milk sour. Can Brunhilde set the necessary traps?
+Can the players catch the kobolds and force them to sign a contract
+that banishes them for a year and a day, time enough to finish that
+castle?
+
+*Logging*. The loggers refuse to work. Wild men have been spotted.
+Giants, they say. Or was it hairy beast men, naked and armed with
+clubs? The Alder King is sending them, they say. Is it true? Who is
+the Alder King? Do the spider goblin knights from the deep hills fight
+for him? Is the troll on his side? Can Adalric and Brunhilde stop them
+all? Can they make their way to the Alder King and take those long
+stairs leading down to the goblin market? Do they know the rules
+governing that place?
 
 <!-- ### More -->
 
@@ -1418,31 +1477,6 @@ Eight fighters and a rider (1507), by Urs Graf
 <!-- What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There’s no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book. -->
 
 <!-- Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables. -->
-
-<!-- ⁂ -->
-
-<!-- Ideas by Judd Karlmann: -->
-<!-- https://www.reddit.com/r/DMAcademy/comments/10rymic/comment/j6yka56/ -->
-
-<!-- Build: Cathedral, Castle, Bridge, Tunnel, Mine -->
-
-<!-- Diplomacy: End long war, stop war before it happens, support kingdom on the edge of chaos, support creation of a republic -->
-
-<!-- Study: Ancient ruins, ancient technology, lost people, lost deity, alien incursion -->
-
-<!-- Support (a cool organization that everyone believes in): an arcane library, a well meaning hospital, a diverse city, a wise temple, a druid’s grove -->
-
-<!-- Destroy: a tyrant, systemic monsters, colonial oppression, a corrupt government -->
-
-<!-- ⁂ -->
-
-<!-- @starmonkey@dice.camp says: Feels like what I wanted Burning Wheel to -->
-<!-- be like. Beliefs from BW feel like “personal questions” to be answered -->
-<!-- in Knives. -->
-
-<!-- Idea: Halberds Spells & Spellcasters PDFs with Knives - replace all -->
-<!-- the magic talents with spells, go study with a mage to learn new ones. -->
-<!-- Keep the exhaustion mechanic from Knives. -->
 
 <div style="break-after: always;"></div>
 

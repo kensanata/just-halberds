@@ -108,4 +108,4 @@ td[align="right"] {
     }
 }
 /* bookmarks, table of contents */
-h1, h3 { bookmark-level: none }
+h1 { bookmark-level: none }

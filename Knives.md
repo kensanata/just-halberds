@@ -366,8 +366,8 @@ read on!
 People can be described with a few words. If they attempt to do things
 that can succeed or fail and it might result in an interesting plot
 twist, use one of the well-known six attributes: either choose freely
-(the average is 7) or roll for the attribute you need right now (2d6).
-Talents are also freely determined (often 1 or 2).
+(the average is 7) or roll for the attribute (2d6). Talents are also
+freely determined (often 1 or 2).
 
 Monsters and animals have different characteristics that describe
 their behaviour: Count determines how many one is most likely to
@@ -1344,15 +1344,15 @@ what?
 Eight fighters and a rider (1507), by Urs Graf
 {: .pic .small }
 
-### Player goals
+### Long term goals
 
 After a two or three sessions, Adalric and Brunhilde have defeated
 some nightlings, they have made new friends, they have been of service
 to people of power, what now? Time to find out what their long term
-goals are. Claudia could ask the two players, Alex and Berta. Often
-people don’t actually know what they want when asked directly. It’s
-therefore often better to offer options within the game and see how
-players react.
+goals are. Claudia could ask the two players, Alex and Berta, but
+sometimes people don’t actually know what they want when asked
+directly. It is therefore often better to offer options within the
+game and see how players react.
 
 Do they want to improve the infrastructure? A non-player character
 sighs and complains about there being no alchemist. If the players ask
@@ -1363,9 +1363,9 @@ their apprentice, solve some sort of problem, come back, secure a
 place, organise the town folks to build that house, contact three
 different fay creatures and the devil to get the first four weird
 ingredients. If players actually go and do the first step, Claudia
-prepares the next two steps for upcoming sessions. She tries to stay
-ahead of the game and she has some adventure bones ready to improvise
-for half a session if necessary, that’s it.
+prepares the next two steps for upcoming sessions. If the players
+change plans, Claudia adapts her sketch. She tries to stay ahead of
+the game and her sketch has some adventure bones ready to improvise.
 
 Do the players solve problems by talking? A local complains about the
 bandits again. If the players ask about the origin of the bandits or
@@ -1382,7 +1382,7 @@ As you can see, the sketch of the solution to a long term goal is a
 sequence of tasks that the players may or may not pursue. It’s OK for
 players not to pursue or abandon these goals. No harm done, Claudia
 didn’t prepare too far ahead. If goals are abandoned, Claudia is free
-to narrate an ending she likes. If the players didn’t organise and
+to narrate an ending she likes. If the players didn’t organise an
 alchemist, perhaps the complaints reach the ears of Lord Obersaxo and
 an alchemist settles in the castle of Brugg downriver, outside the
 player character’s current sphere of influence. Complications can
@@ -1392,21 +1392,19 @@ If players do not want to abandon a goal, Claudia makes sure there are
 always non-player characters around to give advice and point at the
 next task (or offer an interesting choice). The interesting choices
 arise when there are multiple goals that need completion, or when
-trouble has to be left brewing in order to get closer to the goal.
-This is frustrating for players but also important for them to prove
-to themselves how important their goals are. How far are they willing
-to go for what they believe in?
+trouble has to be left brewing elsewhere in order to get closer to the
+goal. This is frustrating for players but also important for them to
+prove to themselves how important their goals are. How far are they
+willing to go for what they believe in?
 
-Some ideas: stop an ongoing war, prevent a war from breaking out, get
-rich during the war (yikes!); build a wall, a castle, a bridge, a
-mill, a dam; fight against cruel lords and ladies and overthrow the
-government, end serfdom, run a revolution; fight evil wizards and
-witches, hunt monsters like shapeshifters and devils, kill a nightmare
+Some ideas: stop an ongoing war; prevent a war from breaking out; get
+rich during the war (yikes!); build a wall, a castle, a bridge, a mill
+or a dam; fight against cruel lords and ladies and overthrow the
+government; end serfdom; run a revolution; fight evil wizards and
+witches; hunt monsters like shapeshifters and devils; kill a nightmare
 demigod; explore the underworld and reach a plane of spiders and
 mushrooms, or of fire devils and ancient nobility, or of an endless
 prisons full of confused wardens and victims.
-
-<div style="break-after: always;"></div>
 
 ### Building a castle
 

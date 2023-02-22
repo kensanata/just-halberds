@@ -128,7 +128,7 @@ The chance of rolling a target number or less on 2d6:
 A few key words about the individual talents.
 **Air**: Magic related to wind, movement, and sound.
 **Animals**: Magic related to animals and handling them.
-**Behavior**: How to behave in noble company.
+**Behaviour**: How to behave in noble company.
 **Brawling**: The unarmed force, threats, and infliction of pain.
 **Brewing**: Brew beer, concoct herbal tea, brew potions, mix poison.
 **Bureaucracy**: An understanding of every administrative apparatus and the people who work there.
@@ -190,7 +190,7 @@ following tables to roll on.
 | 2   | Running      | Discipline   | Singing  | Bureaucracy |
 | 3   | Tactics      | Construction | Tactics  | Tactics     |
 | 4   | First Aid    | Brawling     | Spying   | Diplomacy   |
-| 5   | Craft        | Brewing      | Culture  | Behavior    |
+| 5   | Craft        | Brewing      | Culture  | Behaviour   |
 | 6   | Fighting     | Fighting     | Fighting | Fighting    |
 
 If you’ve spent the summer doing mage things, pick one of the
@@ -211,10 +211,10 @@ following tables to roll on.
 | 1d6 | Thief    | Thug      | Liar        | Murderer  |
 |:---:|----------|-----------|-------------|-----------|
 | 1   | Sneaking | Fighting  | Culture     | Fighting  |
-| 2   | Spying   | Crafting  | Behavior    | Brewing   |
+| 2   | Spying   | Crafting  | Behaviour   | Brewing   |
 | 3   | Running  | Running   | Bureaucracy | First Aid |
 | 4   | Climbing | First Aid | Literacy    | Sneaking  |
-| 5   | Distract | Tactics   | Oratory     | Behavior  |
+| 5   | Distract | Tactics   | Oratory     | Behaviour |
 | 6   | Pick     | Singing   | Trading     | Tinker    |
 
 Players can also [increase their status](#status-increase) by doing

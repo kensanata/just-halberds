@@ -1462,6 +1462,67 @@ all? Can they make their way to the Alder King and take those long
 stairs leading down to the goblin market? Do they know the rules
 governing that place?
 
+### Family
+
+Claudia says, “Krimlind, the daughter of Krimhild, addresses you:
+‘Adalric, you have returned and I am glad. These cold halls cannot
+wait to hear your laughter again, and neither can I.’ Behind her, you
+see her mother, watching you.”
+
+Alex says, “Uh, you honour my, mylady…”
+
+Claudia says, “She blushes and quickly says, ‘oh no, fair Adalric,
+please do not call me so. My mother Krimhild rules this court and I am
+but a maiden here.’ Her mother smiles and gets up, ‘Come now, child.
+Leave us. We want to talk to our messenger. Sit, Adalric, and tell us
+about Lord Obersaxo and what he has to said about the bandits.’”
+
+Berta says, “Yeah, we’ll tell her all about that treacherous warmonger
+who is recruiting the bandits and letting their brethren plunder the
+upper valley for fear of losing them again.”
+
+Claudia says, “Krimhild is not pleased, that’s for sure. You discuss
+the situation. She’s worried but it seems you can help her. Is there
+anything you want to get from this discussion?”
+
+Alex says, “Actually, can I get some time with Krimlind? She seems
+interested in Adalric.”
+
+Claudia says, “How about rolling Intelligence + Culture or Status +
+Behaviour to get that? If you do, you’re granted half an hour but
+there’s a lady-in-waiting in the garden with you. If you fail, you’re
+overstepping.”
+
+Alex says, “My Status is 3, so I’m still an outsider, here. I’ll go
+for Intelligence + Culture, which I don’t have. My Intelligence is 9.”
+
+Claudia says, “You need to know how to talk to nobility, so there’s a
+-2 penalty. Roll 7 or lower. Also, if you do roll a seven, Krimhild
+lets you in to her secret plans.”
+
+Alex says, “All right, I rolled a 5!”
+
+Claudia says, “Sure enough, after a while Krimhild says, ‘All right,
+enough for today. Adalric, why don’t you tell my daughter all about
+Lord Obersaxo in the garden while Brunhilde and I discuss the matter
+of Mayor Hellung, a suspected werewolf.”
+
+Intimacy requires vulnerability. It’s OK if non-player characters make
+opening moves, be it parents, children or match-makers. Intimacy can
+be awkward at the table and everybody has their own approach. Claudia
+did bring up “Lines & Veils” at the beginning of the game – what are
+the lines people don’t want to cross and what are the things that are
+hinted at but not shown. Alex and Berta didn’t know what was coming so
+it wasn’t easy to answer. Alex knew he doesn’t like cruelty and
+torture. Berta didn’t want sexual violence and didn’t want to flirt at
+the table. So now is the time moment, where Alex and Claudia need to
+come to a quick understanding of how far they want to take the scene
+in the garden.
+
+Alex says, “The lady-in-waiting is still there, right? We’re not going
+to do anything indecent, that’s for sure. Adalric does pluck a sword
+lily on the way…”
+
 <!-- ### More -->
 
 <!-- This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already. -->

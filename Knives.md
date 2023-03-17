@@ -277,6 +277,40 @@ You only put them on when marching into battle. They slow you down
 when plundering and when fleeing; they are cumbersome to carry around
 and they give you sores. Soldiers do not like wearing them.
 
+## Combat
+
+Combat is divided into rounds. Everyone may attack, cast magic, or do
+something else once per round. All participants announce their action
+and roll the dice. Everything happens at the same time so it is
+possible for two opponents to take each other out in the same round.
+
+> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9, and
+> Fighting-1. She tries to reach the farm, but two goblins are hot on
+> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
+> Escape-4. She turns to fight. First round: Berta rolls a 6 and hits
+> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
+> twice since 6 ≤ 9. Berta rolls 6 damage which kills a goblin (both
+> Endurance and Life are reduced to zero), but the other still stands.
+> When Brunhilde takes the first hit, chance decides which attribute
+> to reduce: Berta rolls a 4, which is Dexterity. The goblins deal 3
+> every time they hit (6-3=3). Berta decides to deduct the second hit
+> from Brunhilde’s Endurance (9-3=4).
+
+When an advantage is gained through tactics, the result is often a
+surprise round where the opponent cannot strike back.
+
+Expect to see half the participants down or dying after the first
+round. War is terrible. Try to avoid it.
+
+![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Battlefield (1521), by Urs Graf
+{: .pic }
+
+And with that we come to the end of the player facing rules. The next
+page has an example character sheet for your to use and the rest of
+the book is advice for the referee. If you want to referee a game,
+read on!
+
 ## Character Sheet
 
 <table>
@@ -310,10 +344,12 @@ Intelligence. Use Education-2 and Status-2 unless you’re inheriting
 from your parents. You start without talents.
 
 Task resolution: Roll 2d6 ≤ attribute + talent to succeed. If it’s
-very hard, you might have to roll 3d6 ≤ attribute + talent. If you
-hit, you deal 2d6 damage unless you use a halberd. This deals 3d6
-damage. You can only attack as many times in a fight as you have
-Endurance.
+very hard, you might have to roll 3d6 ≤ attribute + talent. If you do
+not have the talent, then roll 2d6 ≤ attribute - 2.
+
+Combat: Roll 2d6 ≤ attribute + weapon to hit. If you do, you deal 2d6
+damage unless you use a halberd. This deals 3d6 damage. You can only
+attack as many times as you have Endurance.
 
 When you are first hit in a fight, you must subtract the damage from a
 random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
@@ -326,41 +362,6 @@ If one of your attributes drops to 0, you are lightly wounded and pass
 out. If two of your attributes drop to 0, you are mortally wounded and
 you’ll die unless you are treated by somebody with First Aid-3 or
 Healing-3. If three of your attributes drop to 0, you die.
-
-<div style="break-after: always;"></div>
-
-## Combat
-
-Combat is divided into rounds. Everyone may attack, cast magic, or do
-something else once per round. All participants announce their action
-and roll the dice. Everything happens at the same time so it is
-possible for two opponents to take each other out in the same round.
-
-> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9, and
-> Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
-> Escape-4. She turns to fight. First round: Berta rolls a 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
-> twice since 6 ≤ 9. Berta rolls 6 damage which kills a goblin (both
-> Endurance and Life are reduced to zero), but the other still stands.
-> When Brunhilde takes the first hit, chance decides which attribute
-> to reduce: Berta rolls a 4, which is Dexterity. The goblins deal 3
-> every time they hit (6-3=3). Berta decides to deduct the second hit
-> from Brunhilde’s Endurance (9-3=4).
-
-When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back.
-
-Expect to see half the participants down or dying after the first
-round. War is terrible. Try to avoid it.
-
-![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
-Battlefield (1521), by Urs Graf
-{: .pic }
-
-And with that we come to the end of the player facing rules. The rest
-of this book is advice for the referee. If you want to referee a game,
-read on!
 
 ## Opponents
 

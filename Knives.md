@@ -70,28 +70,29 @@ powerful friend.
 ### Gifts and boons
 
 **Talent**: With every year that passes, you get to gain new talents.
-Naturally you’re just not focusing on a single talent. The year is
+Naturally you’re not just focusing on a single talent. The year is
 long, after all. This is why you get to pick an appropriate table to
 roll on during the winter phase. You’ll get one of the talents on the
-list, but chance still plays a role.
+list, but maybe not the one you were hoping for.
 
-**Weapon**: Join a militia and get a spear to fight with. Go to war
-and you’ll be given a halberd. Rise to the rank of nobility and your
-lord or lady gifts you an épée. Become a hunter and make your own bow.
-Be knighted and get a lance and a horse.
+**Weapon**: If people want you to have a weapon, they'll give it to
+you: join a militia and get a spear; go to war get a halberd; join a
+court and your lord or lady gifts you an épée; get knighted and your
+liege gifts a lance and a horse; apprentice with a hunter and get a
+bow.
 
-**Secret Society**: Secret societies are always looking for new
-members. There are secret societies for all walks of life. If they are
-are crime rings, they’re looking for gangsters and thugs. If they are
-guilds, the are looking for artisans. If they are magic schools,
-they’re looking for mages. Prove your worth and you’ll be allowed to
-join.
+**Secret Society**: There are secret societies for all walks of life.
+Crime rings look for gangsters and thugs, guilds look for engineers
+and tradespeople, covens look for wizards and witches. This were new
+talents are gained. Prove your worth and join them.
 
-**Companion**: A young apprentice looking to learn from you, or a
-talking animal such as a cat, an owl, or a raven. If your companion is
-human, roll the six attributes (2d6 each for Strength, Dexterity,
-Endurance, Intelligence, Education, and Status). They gain talents,
-just like you. If they surpass you in your best talent, they leave.
+**Companion**: A young apprentice looking to learn from you. Roll 2d6
+each for Strength, Dexterity, Endurance and Intelligence; both
+Education and Status are 2. They gain talents, just like you. If they
+surpass you in your best talent, they leave.
+
+**Familiar**: You befriend a talking animal such as a cat, an owl, or
+a raven.
 
 **Dog**: You find a loyal friend. Damage 2d6; Endurance 3d6; Life 2d6.
 Dogs require food.
@@ -108,15 +109,15 @@ possession of said land is up to you, of course.
 offers you a teaching position at a magic school.
 
 **Posts**: Your services to a community, be it gangsters or
-administrators of the realm are recognised and once there’s a position
-for you, they’ll think of you.
+administrators of the realm are recognised and once there’s an
+opening, they think of you.
 
 ## Talents
 
 Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
 roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then -2. A +1 talent is good enough to do it for a
-living.
+talent is missing, then roll 2d6 ≤ attribute - 2. A +1 talent is good
+enough to do it for a living.
 
 The chance of rolling a target number or less on 2d6:
 
@@ -130,9 +131,9 @@ A few key words about the individual talents.
 **Animals**: Magic related to animals and handling them.
 **Behaviour**: How to behave in noble company.
 **Brawling**: The unarmed force, threats, and infliction of pain.
-**Brewing**: Brew beer, concoct herbal tea, brew potions, mix poison.
+**Brewing**: Brew beer, brew potions, mix poison.
 **Bureaucracy**: An understanding of every administrative apparatus and the people who work there.
-**Charm**: Magic that subdues people, controls their emotions.
+**Charm**: Magic that subdues people and controls their emotions.
 **Climbing**: Climbing rocks and walls, moving in the mountains.
 **Construction**: Building houses, castles, siege engines, digging pits and shafts.
 **Crafts**: Woodworking, metalworking, filing, sawing, decorating and painting things.
@@ -146,7 +147,7 @@ A few key words about the individual talents.
 **Fighting**: Weapon handling and killing.
 **Fire**: Magic dealing with flames, explosions and destruction.
 **First Aid**: Cleaning and stitching up wounds, setting bones, caring for the sick.
-**Fusion**: Magic that fuses living things with other living things and things.
+**Fusion**: Magic that fuses living beings with other living beings or with inanimate objects.
 **Healing**: Magic that restores power to living beings and breaks curses.
 **Illusion**: Magic that makes others believe things that are not true.
 **Literacy**: Reading and writing.
@@ -154,10 +155,10 @@ A few key words about the individual talents.
 **Oratory**: Convincing with well-chosen words.
 **People**: Magic used to read people’s minds and emotions.
 **Pick**: Opening locks and doors.
-**Planeswalk**: Magic that has to do with contact with other worlds and transition into them.
+**Planeswalk**: Magic that allows you to contact and visit other realms.
 **Plants**: Magic related to plants and their growth.
 **Riding**: Riding on animals, mostly horses.
-**Running**: Long Distance Run, Short Distance Run, Rush.
+**Running**: Long distance running and sprinting, chasing and escaping.
 **Shapeshift**: Magic that allows you to change shape.
 **Singing**: Singing songs and playing instruments.
 **Sleep**: Magic related to sleep and fainting.
@@ -849,7 +850,7 @@ in addition to [rolling for a talent increase](#gaining-talents).
 | 10     | baron, baroness          | leading an army                   |
 | 11     | duke, duchess            | being crowned, winning a war      |
 | 12     | royalty                  | empire, conquest                  |
-| 13     | emperor                  | eternal life and undeath          |
+| 13     | emperor, empress         | eternal life and undeath          |
 
 *Education*. By succeeding in an appropriate adventure, player
 characters get the option of increasing their Education by 1 that
@@ -881,10 +882,10 @@ service.
 *Death*. When a character dies, their land, buildings, animals, and
 weapons are divided fairly between surviving partners and children.
 
-*Children*. Raising a child as your own, allows it to inherit
-Education and Status up to 7 when it reaches 16 years of age. Children
-raised by more than one parent get to chose which Education and Status
-they inherit.
+*Children*. Raising a child as your own allows it to inherit Education
+and Status up to 7 when it reaches 16 years of age. Children raised by
+more than one parent get to chose which Education and Status they
+inherit.
 
 This game doesn’t care about the dangers of child birth, of disease,
 the difficulty of raising a family, the sanctity of marriage, the sex
@@ -1182,12 +1183,13 @@ Passive and Manipulative careers.
 After the game, Claudia picks Ulrike’s age, say 50. So we have about
 34 years and therefore 34 dice to roll. Let’s take 4d6 and roll four
 times on the Passive table, four times on the Manipulative table, and
-add each of the skills we listed above at 1. Using 2d6 for attributes,
-this is Ulrike the Beautiful: Strength-8 Dexterity-8 Endurance-12
-Intelligence-6 Education-8 Status-3 Healing-2 Sleep-6 Eyes-4 Doors-2
-Plants-5 Brewing-2 Charm-5 Singing-4 Diplomacy-4 Illusion-3 People-3
-Literacy-4. Surprisingly fit! She probably does a lot of hiking up
-here in the mountains. And fantastic Sleep, Plants and Charm talents!
+add each of the talents we listed above at 1. Using 2d6 for
+attributes, this is Ulrike the Beautiful: Strength-8 Dexterity-8
+Endurance-12 Intelligence-6 Education-8 Status-3 Healing-2 Sleep-6
+Eyes-4 Doors-2 Plants-5 Brewing-2 Charm-5 Singing-4 Diplomacy-4
+Illusion-3 People-3 Literacy-4. Surprisingly fit! She probably does a
+lot of hiking up here in the mountains. And fantastic Sleep, Plants
+and Charm talents!
 
 ### Encounters
 
@@ -1538,6 +1540,61 @@ lily on the way…”
 <!-- Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables. -->
 
 <div style="break-after: always;"></div>
+
+## Adapting the game
+
+The simplest changes, mechanically, would be to change the list of
+talents. Pick a theme, decide upon careers, imagine the rolls you want
+to make. Don't focus on the activities: only the activities where you
+want randomized outcomes are important.
+
+For a science fiction game like Dune… People like Sardaukar and Fremen
+need Fighting talents: Swords, Knives, Bolters, Unarmed. Is the use of
+Shields or Battledress something to roll for? Are there characters
+that don't know how to use shields? Perhaps it's better to just assume
+that without Shields you're a soft target and bolters deal 5d6 damage.
+
+Would it make sense to bring mentats on adventure? Is that like
+bringing librarians to the dungeon? Can you outcompute your opponents?
+Perhaps if the game also involves management of estates and intrigue
+at court. So skills like Calculation, Logistics, Management,
+Production. Production would cover both agriculture and industry. It’s
+all about producing things, managing the employees, bringing the
+products to markets, profit margins – interfering with it, rising in
+the ranks because you’ve won a battle of logistics. Is this
+interesting? Maybe if there is a connection to mercenary companies
+doing assaults. Again, Logistics could determine the quality of the
+outfit, or the quantity of gear available at the drop zone. Management
+would determine how far enemies can penetrate into your hold before
+security realises what’s going on.
+
+Supernatural talents are fascinating because they remind us that we’re
+free to indulge our fantasy. The presence of supernatural talents
+makes sure that the rest of the game isn’t mundane. So Manipulation to
+control others, Discipline to stand terrible suffering, Etiquette to
+behave appropriately. Is Warp a talent that characters have or is
+faster-than-light travel something that just happens, under the
+control of huge intelligent ships? Maybe there can be simpler
+applications of this: The breaking of a human mind, similar to
+Manipulation but always corrupting where as Manipulation is not. It
+depends on how you view the Bene Gesserit…
+
+Find names for these careers: Lancer for martial activity, Bureaucrat
+for economic activity, Disciple for the supernatural?
+
+Is prospecting something characters do? Do people find things? Do poor
+people scrounge for stuff? Perhaps an interesting dynamic: The talent
+is called Scrounge for city dwellers, Forage for loners, and Resources
+for the upper class. You could have all three, or just one. You’d have
+to make sure that the three don’t appear on the same table to make
+them less likely to show up together.
+
+Don’t think too hard about adding more mechanics for armour or special
+rules for weapons. Optimising such numbers is a separate
+entertainment. Similarly, as soon as there’s an equipment lists
+players wonder about buying and selling things. There are plenty of
+games that do this. Just think of Traveller or D&D. It’s better to
+keep the mechanics different.
 
 ## Reading material
 

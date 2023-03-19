@@ -75,7 +75,7 @@ long, after all. This is why you get to pick an appropriate table to
 roll on during the winter phase. You’ll get one of the talents on the
 list, but maybe not the one you were hoping for.
 
-**Weapon**: If people want you to have a weapon, they'll give it to
+**Weapon**: If people want you to have a weapon, they’ll give it to
 you: join a militia and get a spear; go to war get a halberd; join a
 court and your lord or lady gifts you an épée; get knighted and your
 liege gifts a lance and a horse; apprentice with a hunter and get a
@@ -431,21 +431,21 @@ an understanding of just how powerful magic is with the players.
 The same applies here: Make a note of what you negotiate and stick to
 it!
 
-> **Lightning**: hits an enemy and what they are carrying for 5d6 damage each  
+> **Lightning**: hits an enemy and what they are carrying for 5d6 damage  
 > **Chain Lightning**: hits up to 5 enemies for 2d6 damage each
 
-Since spells are stronger than weapon attacks, one shouldn’t be able
-to cast any number of them. With each spell cast, the risk of
-exhaustion increases. Therefore, when casting spells, the modified
-rule applies: roll 2d6 + number of spells cast today ≤ attribute +
-talent to succeed. If the check fails, the talent can no longer be
-used today.
+Spells can be stronger than weapon attacks but spell casting is not
+limited by Endurance. Instead, the risk of exhaustion increases with
+each spell cast. When casting spells, roll 2d6 + number of spells cast
+today ≤ attribute + talent to succeed. If the check fails, this
+particular talent can no longer be used today.
 
-> Example: Adalric conjures rain for privacy. He has Intelligence 9,
-> Water-1, making a total of 10. Alex rolls 10 + 0 since this was the
-> first spell of the day. It’s raining because 10 ≤ 10. Chain
-> Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills five
-> goblins.
+> Example: Adalric conjures rain for privacy. He has Intelligence-9,
+> Water-1, for a total of 10. Alex rolls 10 + 0 since this was the
+> first spell of the day and it rain because 10 ≤ 10. Chain Lightning
+> follows: Alex rolls 5+1=6 and 6 ≤ 10. For damage he rolls 3+4=7 and
+> that kills five goblins since they have Endurance-1 and Life-5 for a
+> total of 6.
 
 Magic always leads to discussions. You have to like that – otherwise
 you should skip the Mage career. How long can you breathe underwater?
@@ -455,7 +455,9 @@ down the result.
 
 Not all magic talents are equally powerful, or equally useful. You
 also have to live with that. Certain magic talents lend themselves to
-druids, bards, healers.
+druids, bards, healers, necromancers, elementalists and seers. It’s up
+players to find an interesting use for their talents and it is up to
+the referee to enable such situation.
 
 ### Some notes on particular spell effects
 
@@ -494,10 +496,10 @@ villagers sing their song.
 
 To foreshadow this, make a list of a handful of interventions that
 non-player characters have made, such as: “Thidrek slew the giant Grim
-sword Nagelring which the dwarf Alberich had made for Thidrek.” It
-connects two non-player characters that can be met, it introduces an
-important item that can be gained, it establishes a bit of history of
-the setting that promises more to learn – this one sentence pulls a
+we the sword Nagelring which the dwarf Alberich had made for Thidrek.”
+It connects two non-player characters that can be met, it introduces
+an important item that can be gained, it establishes a bit of history
+of the setting that promises more to learn – this one sentence pulls a
 lot of weight.
 
 ![A small town with castle and church by a lake](images/Urs_Graf_Stadt_am_Seeufer_(1514).jpg)
@@ -586,10 +588,11 @@ they do. Another virtuous cycle ensues.
 
 An example for such a chain of secrets would be this: The power of the
 king is due to the riches he amassed → he got these riches from a
-dragon’s hoard → he got this heard with an invisibility cape → he got
+dragon’s hoard → he got this hoard with an invisibility cape → he got
 this cape from a dwarf king → this dwarf king still lives in Niflheim
 and has cursed the gold. These chains don’t have to be too long. Five
-steps is a good start. Make sure to have several such chains.
+steps is a good start. Make sure to have several such chains for
+players to learn about.
 
 Here’s another example: The king’s wife used to be a ferocious fighter
 → she had promised to marry only the one would best her in a wrestling
@@ -711,16 +714,17 @@ way that leads to more questions. It’s more of that virtuous cycle.
 
 ### Guiding questions
 
-Guiding questions guide you through unfamiliar dreamlands. Why are the
-dwarves undermining the castle? It’s not giant moles, it’s not purple
-worms, it’s small and skinny dwarves like Alberich and Mime from the
-Niebelungenlied. The question implies the existence of dwarves and
-asks you about their motivation. Your input is required.
-
 As you daydream about the setting, imagining landscapes and people and
 problems, the questions can be a guide into an unfamiliar dreamland.
 The questions get you into the mood for a game that’s unfamiliar to
 you.
+
+Why are the dwarves undermining the castle? The question already
+implies that no giant moles or purple worms are going to be involved.
+You start thinking of the dwarves. Are these the strong dwarves
+wielding axes or are these sly and skinny dwarves? The first question
+leads to more questions, guides you imagination. Your input is
+required.
 
 You often need to make up stuff. You read your notes and remember your
 ideas and then you fill in the gaps at the table. You present a world
@@ -769,8 +773,9 @@ one characters is a fighting machine, call upon them to solve problems
 with violence, treat them like a thug. Or try to educate them and lift
 them up. The point is to pick something in your friends’ characters
 that you can engage with, and do it. Don’t make their lives miserable
-– look for just the right level of banter between the characters.
-Something to say to each other during the game.
+– look for just the right level of banter. Show your interested in
+their character. Look for something to say to each other during the
+game.
 
 *Player agency*. In a game that takes place in your imagination, the
 greatest asset we have is the freedom of it all. We can make decisions
@@ -1546,14 +1551,14 @@ lily on the way…”
 
 The simplest changes, mechanically, would be to change the list of
 talents. Pick a theme, decide upon careers, imagine the rolls you want
-to make. Don't focus on the activities: only the activities where you
+to make. Don’t focus on the activities: only the activities where you
 want randomized outcomes are important.
 
 For a science fiction game like Dune… People like Sardaukar and Fremen
 need Fighting talents: Swords, Knives, Bolters, Unarmed. Is the use of
 Shields or Battledress something to roll for? Are there characters
-that don't know how to use shields? Perhaps it's better to just assume
-that without Shields you're a soft target and bolters deal 5d6 damage.
+that don’t know how to use shields? Perhaps it’s better to just assume
+that without Shields you’re a soft target and bolters deal 5d6 damage.
 
 Would it make sense to bring mentats on adventure? Is that like
 bringing librarians to the dungeon? Can you outcompute your opponents?

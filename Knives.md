@@ -1551,10 +1551,10 @@ lily on the way…”
 
 The simplest changes, mechanically, would be to change the list of
 talents. Pick a theme, decide upon careers, imagine the rolls you want
-to make. Don’t focus on the activities: only the activities where you
-want randomized outcomes are important.
+to make. Focus on character actions where outcomes need a random
+component.
 
-For a science fiction game like Dune… People like Sardaukar and Fremen
+For a science fiction game like Dune: People like Sardaukar and Fremen
 need Fighting talents: Swords, Knives, Bolters, Unarmed. Is the use of
 Shields or Battledress something to roll for? Are there characters
 that don’t know how to use shields? Perhaps it’s better to just assume
@@ -1562,17 +1562,18 @@ that without Shields you’re a soft target and bolters deal 5d6 damage.
 
 Would it make sense to bring mentats on adventure? Is that like
 bringing librarians to the dungeon? Can you outcompute your opponents?
-Perhaps if the game also involves management of estates and intrigue
-at court. So skills like Calculation, Logistics, Management,
-Production. Production would cover both agriculture and industry. It’s
-all about producing things, managing the employees, bringing the
-products to markets, profit margins – interfering with it, rising in
-the ranks because you’ve won a battle of logistics. Is this
-interesting? Maybe if there is a connection to mercenary companies
-doing assaults. Again, Logistics could determine the quality of the
-outfit, or the quantity of gear available at the drop zone. Management
-would determine how far enemies can penetrate into your hold before
-security realises what’s going on.
+If the management of estates is important, skills like Calculation,
+Logistics, Management and Production are required.
+
+If Production covers both agriculture and industry the game is all
+about producing things, managing the employees, bringing the products
+to markets, profit margins – interfering with it, rising in the ranks
+because you’ve won a battle of logistics. Is this interesting? Maybe
+if there is a connection to mercenary companies doing assaults. Again,
+Logistics could determine the quality of the outfit, or the quantity
+of gear available at the drop zone. Management would determine how far
+enemies can penetrate into your hold before security realises what’s
+going on.
 
 Supernatural talents are fascinating because they remind us that we’re
 free to indulge our fantasy. The presence of supernatural talents
@@ -1581,9 +1582,9 @@ control others, Discipline to stand terrible suffering, Etiquette to
 behave appropriately. Is Warp a talent that characters have or is
 faster-than-light travel something that just happens, under the
 control of huge intelligent ships? Maybe there can be simpler
-applications of this: The breaking of a human mind, similar to
-Manipulation but always corrupting where as Manipulation is not. It
-depends on how you view the Bene Gesserit…
+applications of Warp: It breaks a human mind. It’s similar to
+Manipulation but corrupt. Do the Bene Gesserit use Manipulation or
+Warp? Interesting question!
 
 Find names for these careers: Lancer for martial activity, Bureaucrat
 for economic activity, Disciple for the supernatural?
@@ -1591,9 +1592,9 @@ for economic activity, Disciple for the supernatural?
 Is prospecting something characters do? Do people find things? Do poor
 people scrounge for stuff? Perhaps an interesting dynamic: The talent
 is called Scrounge for city dwellers, Forage for loners, and Resources
-for the upper class. You could have all three, or just one. You’d have
-to make sure that the three don’t appear on the same table to make
-them less likely to show up together.
+for the upper class. You could have all three, or just one. Having
+separate skills means people used to forage in the wilderness don’t
+automatically get to scrounge for stuff in cities.
 
 Don’t think too hard about adding more mechanics for armour or special
 rules for weapons. Optimising such numbers is a separate

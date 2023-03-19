@@ -41,6 +41,15 @@ watch:
 	| sed 's/YYYY-MM-DD/$(shell date -I)/' \
 	> $@
 
+%-no-cover.html: %.html
+	hxprune -c title $< > $@
+
+%.epub: %-no-cover.html %.jpg
+	ebook-convert $< $@ --embed-all-fonts --authors "Alex Schroeder" \
+		--title $(basename $@) \
+		--chapter "//h:h2" \
+		--preserve-cover-aspect-ratio --cover $(word 2, $^)
+
 Altenstein.pdf: images/Altenstein.svg
 
 Farnthal.pdf: images/Farnthal.svg

@@ -1709,8 +1709,17 @@ and freeing the moon would be a worthy goal indeed. The plight of
 lycanthropes would remain, however.
 
 Claudia wants a second plot line that ties in with fungi and thinks of
-giant flies feasting on fungi, the flies being protected by the toad
-priests of Tsathoggua, .
+giant flies feasting on fungi and the flies being protected by the
+toad priests of Tsathoggua. What are the fungi going to do? They take
+their grievances to the Naga of Darkest Night, a snake spirit who
+controls goblin assassins, spider sorcerers and shape-shifting ghouls.
+And so a slow war starts.
+
+To link the threads, Claudia decides that the elves resent the naga
+making its moves and they start blocking its agents. The goblin
+assassins put pressure on the labyrinth goblins so the devil starts
+opposing the naga. Does that mean, the elves and the devil are now on
+the same side? Let’s play to find out!
 
 ## Reading material
 

@@ -1603,6 +1603,115 @@ players wonder about buying and selling things. There are plenty of
 games that do this. Just think of Traveller or D&D. It’s better to
 keep the mechanics different.
 
+## Adapting the setting
+
+Alex, Berta and Claudia played the default game: villages along
+rivers, towns ruling over lakes, inhospitable mountains where giants
+and dragons rule, weird creatures that roam the forests and swamps –
+but now Alderic and Brunhilde followed that trail left by the giant
+Schattenschmied and lost themselves in Myrkheim, the realm of frogs,
+spiders and fungi. What to do?
+
+Figure out what the major civilised factions are. Are there fancy
+weapons? New magic talents? Name some creatures. Roll up some stats.
+Think of some surface tensions. Think of some secrets to learn. Draw a
+map. Create name lists, non-player characters, locations.
+
+The goblin kings. Small kings over warrens and labyrinths. Some of
+them are funny furry creatures but others are cruel. Wolfmen. Hairy
+creatures with carnivore teeth. Hunters, prone to attack if you show
+fear, and they can smell fear. Mykonoids. Slow moving creatures with
+strong mental powers. Circles of power. Nagas. Earth demons.
+Half-snakes.
+
+The creatures here use spears and knives, there’s no need for extra
+weapons. Some magic spells would need replacing: Storm → Thorns, the
+magic of growing thorns out of everything; People → Thoughts, to be
+more generic; Fusion → Fungi, since we don’t care about chimeras all
+that much down here but we do care about mykonoids; Plants → Blood,
+the evil power of gaining power by drinking blood. Maybe that’s it?
+Some talents just need a new focus: Animals is mostly spiders, worms,
+flies; Sleep is also about dreams, nightmares, paralysis.
+
+As for monster stats, just roll for Nightlings, Predators, Undead,
+like you usually would. Magic talents are usually set at 7–9 and
+aren’t added to Intelligence or Education as those attributes don’t
+exist for monsters.
+
+**Ghouls**: Damage-7 Endurance-12 Life-11 Attack-8 Hit-11 Escape-4,
+Shapeshift-7, relentless, bloodthirsty. **Goblins**: Damage-3
+Endurance-2 Life-6 Attack-5 Hit-6 Escape-8, weak, cautious.
+**Spiders**: Damage-6 Endurance-11 Life-5 Attack-6 Hit-8 Escape-3,
+intelligent, tough ambush predators. **Mykonoids**: Damage-6
+Endurance-4 Life-2 Attack-5 Hit-7 Escape-4, Sleep-9, collectivist
+dreamers. **Wolfmen**: Damage-9 Endurance-7 Life-8 Attack-8 Hit-11
+Escape-3, deadly monster, brutal hunters. **Naga**: Damage-7
+Endurance-9 Life-12 Attack-6 Hit-7 Escape-4, Charm-8, Shapeshift-9,
+Sleep-7, Thoughts-8, sly. **Fire giants**: Damage-19 Endurance-33
+Life-6 Attack-6 Hit-13 Escape-4, Fire-7, Transmutation-7.
+
+Surface tensions: The ghoul empire is spreading. The goblins are
+everywhere, fleeing the ghouls, cute and funny, but also spies and
+kidnappers. The fungal forests are home to myconoids, and in the dark
+corners are wolfmen. Old night elf cities still exist, half abandoned.
+They cannot fight the ghouls and must fall back. Spider knights.
+Desperate dwarves.
+
+Beneath all that: What undead blood sorcery unifies the ghouls? Who
+can wake the nagas from their isolation? The numbing power of the
+Mushroom Father. Why are the night elves an all female society? What
+about wolfmen? What divides the dwarves?
+
+## Adapting adventures
+
+Alderic and Brunhilde are lost in Myrkheim. Claudia starts wondering
+about the two. Is Alderic going to learn some of the underworld magic
+talents? We need potential teachers, each with some sort of challenge
+to overcome.
+
+**Thorns**: A mad devil in a labyrinth of hedges, served by spiders
+and goblins (see previous section for stats); blind satyrs stalking
+the passages, with stolen eyes. **Satyrs**: Damage-11 Endurance-1
+Life-4 Attack-6 Hit-10 Escape-8; a terrible mental torrent of
+corrupting transmutation if all their eyes focus on you. But they
+don’t have enough Endurance for a second blast. **Thorn devil**:
+Damage-7 Endurance-11 Life-10 Attack-9 Hit-12 Escape-2; Thorn-5.
+Thorny hedges dealing 1d6 damage to anybody pushing through; thorn
+trees spear anybody passing by for 2d6; death by impalement for 5d6
+against a single target.
+
+**Fungi**: How do you reach the Shroom King in the Dreamlands? Sink
+into the Maggot Sea, loose your first two eyes in order to open that
+third one, follow the Spore Trail, regrow your eyes once you reach the
+Obelisk of Change. Exchange memories of love for power of colours.
+Gain access to yellow, green and red and open the Gate of Rot and
+Rebirth. Claudia is throwing out words and seeing what sticks. It’s
+all images right now, but there must be a first encounter with
+myconids so that Alderic can learn of the Shroom King and the Maggot
+Sea.
+
+As for Brunhilde with her werewolf experience, would she want to learn
+the secrets of the wolfmen? Claudia starts thinking of a chain of
+secrets. She remembers that Berta didn’t want any sexual violence, so
+the link between wolfmen and elf women must be something else. An
+ancient betrayal, perhaps. In the old days, Myrkheim did have
+moonlight, but it was captured in shining crystals by the elves,
+plunging the world into darkness, earning the name Myrkheim, the home
+of darkness. And without moonlight, the lycanthropy of men spread
+wider, no longer turning into madness and bloodlust on nights of the
+full moon but infiltrating the soul of every man, every day. The chain
+of secrets would therefore be: The wolfmen are filled by inexplicable
+rage → the homes of elves are filled with inexplicable peace → wolfmen
+cannot approach elf homes without succumbing to uncontrollable rage →
+the names of the elves that captured all the moonlight → the fortress
+built on top of the moon lake, binding it. Tearing down this fortress
+and freeing the moon would be a worthy goal indeed. The plight of
+lycanthropes would remain, however.
+
+Claudia wants a second plot line that ties in with fungi and thinks of
+giant flies feasting on fungi, the flies being protected by the toad
+priests of Tsathoggua, .
+
 ## Reading material
 
 [Generator](https://campaignwiki.org/generator), a generator of characters and a mini-setting

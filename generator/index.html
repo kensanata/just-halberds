@@ -198,7 +198,7 @@ function parse(data) {
       } else if (m = s.match(/^\[@([^\[\]]+)\]/)) {
         // [@b] use variable b
         let v = h.results[m[1]];
-        if (v === undefined) { console.log(`No stored value for ${m[1]} in ${table}`); return "…"; }
+        if (v === undefined) { console.log(`No stored value for ${m[1]} in ${table}`); v = "…"; }
         else if (Array.isArray(v)) { v = v.join(", "); }
         else if (v === Object(v)) { v = Object.keys(v).sort().map(k => k + "-" + v[k]).join(", "); }
         text = text.substring(0, i)
@@ -379,17 +379,16 @@ You can replace all the tables in this file with your own and make your
 own generators! Please do.
 </div>
 
-<pre id="data" style="display: none">
-# Data
+<script id="data" type="text/x-generator">
+# The strange type here ↑ means that it won't get executed and no HTML escaping
+# is required in here!
 
-# As this data needs to be valid HTML, you need to replace < & > in
-# the tables with &lt; &amp; &gt; (less than, ampersand, greater
-# than).
+# Data
 
 # '#' begins a comment
 # '*a*' renders 'a' in italics (emphasis)
 # '**a**' renders 'a' in bold (strong emphasis)
-# ¶ results in a paragraph break (a shorthand for &lt;p&gt;)
+# ¶ results in a paragraph break (a shorthand for <p>)
 # ';' begins a table, followed by a name, no space
 # A number and a comma begin a weighted entry for the current table
 # /re/to/ at the end replaces regular expression "re" with "to"
@@ -412,8 +411,8 @@ own generators! Please do.
 1,[initial setup][secret societies][powers]¶[map]
 
 ;initial setup
-1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side A]&lt;a href="#pA"&gt;[@side A]&lt;/a&gt; or [[name] the [Proud|Silent|Strong|Younger]@side B]&lt;a href="#pB"&gt;[@side B]&lt;/a&gt;? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side C]&lt;a href="#pU"&gt;[@side C]&lt;/a&gt;?
-1,There is unrest. [[name] the [Wicked|Strict|Terrible|Old|Allmighty|Glorious]@side A]&lt;a href="#pA"&gt;[@side A]&lt;/a&gt; rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name] the [Proud|Pilgrim|Devout|Fair|Just]@side B]&lt;a href="#pB"&gt;[@side B]&lt;/a&gt; returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name] the [Rebel|Old|Young|Wild|Demon|Blessed]@side C]&lt;a href="#pU"&gt;[@side C]&lt;/a&gt;, always ready to exploit a weakness.
+1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side A]<a href="#pA">[@side A]</a> or [[name] the [Proud|Silent|Strong|Younger]@side B]<a href="#pB">[@side B]</a>? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side C]<a href="#pU">[@side C]</a>?
+1,There is unrest. [[name] the [Wicked|Strict|Terrible|Old|Allmighty|Glorious]@side A]<a href="#pA">[@side A]</a> rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name] the [Proud|Pilgrim|Devout|Fair|Just]@side B]<a href="#pB">[@side B]</a> returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name] the [Rebel|Old|Young|Wild|Demon|Blessed]@side C]<a href="#pU">[@side C]</a>, always ready to exploit a weakness.
 
 ;secret societies
 1,¶[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
@@ -607,7 +606,7 @@ own generators! Please do.
 1,Somewhere in the mountains there lies the [lake name].
 
 ;lake access
-1,There are two towns by the lake shore, &lt;a href="#A"&gt;[@A]&lt;/a&gt; and &lt;a href="#B"&gt;[@B]&lt;/a&gt;. There's also the island of &lt;a href="#R"&gt;[@R]&lt;/a&gt;, not far from [@A].
+1,There are two towns by the lake shore, <a href="#A">[@A]</a> and <a href="#B">[@B]</a>. There's also the island of <a href="#R">[@R]</a>, not far from [@A].
 
 ;lake name
 1,[lake qualifier] Lake
@@ -672,7 +671,7 @@ own generators! Please do.
 1,Climb
 
 ;town
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This town lies at the shores of [@lake name]. [town description]¶[[@side [@position]]@character name][powerful character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2>¶This town lies at the shores of [@lake name]. [town description]¶[[@side [@position]]@character name][powerful character]¶[trails]
 
 ;town description
 1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [@river [@position]] wash away their sins into the [@lake name].
@@ -680,7 +679,7 @@ own generators! Please do.
 1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [@river [@position]] opens into the lake a bit further away.
 
 ;village
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This village lies along the [@river [@position]]. [village description]¶[young character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2>¶This village lies along the [@river [@position]]. [village description]¶[young character]¶[trails]
 
 ;village description
 1,On both sides of [@river [@position]] stand a few houses. A bridge connects the two sides.
@@ -690,7 +689,7 @@ own generators! Please do.
 1,The wooden houses were recently rebuilt. You can still see remains of the old village, smashed by an earth slide.
 
 ;tower
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶This tower was built upon an exposed cliff far above the valley floor. [tower description]¶[mage character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2>¶This tower was built upon an exposed cliff far above the valley floor. [tower description]¶[mage character]¶[trails]
 
 ;tower description
 1,The building is black like obsidian, like a hole in reality.
@@ -710,68 +709,68 @@ own generators! Please do.
 1,You can wait for a day of fog and cold when the elf barge comes to pick people up. They'll drop you off at
 
 ;destinations for A
-1,[transport to] &lt;a href="#B"&gt;[@B]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#C"&gt;[@C]&lt;/a&gt;. There's a trail up to the most impressive mountain of [@lake name], to &lt;a href="#T"&gt;[@T]&lt;/a&gt;. [@fisher] also takes people out to the island of &lt;a href="#R"&gt;[@R]&lt;/a&gt;.
+1,[transport to] <a href="#B">[@B]</a> or you can take the trail upriver to <a href="#C">[@C]</a>. There's a trail up to the most impressive mountain of [@lake name], to <a href="#T">[@T]</a>. [@fisher] also takes people out to the island of <a href="#R">[@R]</a>.
 
 ;destinations for B
-1,[transport to] &lt;a href="#A"&gt;[@A]&lt;/a&gt; or you can take the trail upriver to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. There's a trail up to the most impressive mountain of [@lake name], to &lt;a href="#T"&gt;[@T]&lt;/a&gt;. [name] seems to be the only who knows how to get to the hidden valley of &lt;a href="#S"&gt;[@S]&lt;/a&gt;.
+1,[transport to] <a href="#A">[@A]</a> or you can take the trail upriver to <a href="#F">[@F]</a>. There's a trail up to the most impressive mountain of [@lake name], to <a href="#T">[@T]</a>. [name] seems to be the only who knows how to get to the hidden valley of <a href="#S">[@S]</a>.
 
 ;destinations for C
-1,You can go down to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by the [@lake name] or you can ascend further upriver to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There is also a small trail along the [@river H] leading up to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
+1,You can go down to <a href="#A">[@A]</a> by the [@lake name] or you can ascend further upriver to <a href="#D">[@D]</a>. There is also a small trail along the [@river H] leading up to <a href="#H">[@H]</a>.
 
 ;destinations for D
-1,You can follow the [@river D] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can venture into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#E"&gt;[@E]&lt;/a&gt;. You can also make that last climb up to the source of the [@river I] up to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,You can follow the [@river D] down to <a href="#C">[@C]</a> or you can venture into the <a href="#L">[@L]</a>, hoping to make it to <a href="#E">[@E]</a>. You can also make that last climb up to the source of the [@river I] up to <a href="#I">[@I]</a>.
 
 ;destinations for E
-1,You can follow the [@river E] into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;, hoping to make it to &lt;a href="#D"&gt;[@D]&lt;/a&gt;. There's also rumours of a long stair leading to &lt;a href="#P"&gt;[@P]&lt;/a&gt;.
+1,You can follow the [@river E] into the <a href="#L">[@L]</a>, hoping to make it to <a href="#D">[@D]</a>. There's also rumours of a long stair leading to <a href="#P">[@P]</a>.
 
 ;destinations for F
-1,You can go down to &lt;a href="#B"&gt;[@B]&lt;/a&gt; by the [@lake name] or you can go to the [@river F] source at &lt;a href="#G"&gt;[@G]&lt;/a&gt;. There is also a small trail along the [@river J] leading up to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,You can go down to <a href="#B">[@B]</a> by the [@lake name] or you can go to the [@river F] source at <a href="#G">[@G]</a>. There is also a small trail along the [@river J] leading up to <a href="#J">[@J]</a>.
 
 ;destinations for G
-1,You can follow the [@river G] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt;. There is also a small trail through a narrow gorge leading up to &lt;a href="#Q"&gt;[@Q]&lt;/a&gt;.
+1,You can follow the [@river G] down to <a href="#F">[@F]</a>. There is also a small trail through a narrow gorge leading up to <a href="#Q">[@Q]</a>.
 
 ;destinations for H
-1,You can follow the [@river H] down to &lt;a href="#C"&gt;[@C]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#M"&gt;[@M]&lt;/a&gt;.
+1,You can follow the [@river H] down to <a href="#C">[@C]</a> or you can make the steep ascent to <a href="#M">[@M]</a>.
 
 ;destinations for I
-1,You can follow the [@river I] down to &lt;a href="#D"&gt;[@D]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#N"&gt;[@N]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,You can follow the [@river I] down to <a href="#D">[@D]</a> or you can make the steep ascent to <a href="#N">[@N]</a>. If you dare the <a href="#K">[@K]</a>, you can cross over to <a href="#J">[@J]</a>.
 
 ;destinations for J
-1,You can follow the [@river J] down to &lt;a href="#F"&gt;[@F]&lt;/a&gt; or you can make the steep ascent to &lt;a href="#O"&gt;[@O]&lt;/a&gt;. If you dare the &lt;a href="#K"&gt;[@K]&lt;/a&gt;, you can cross over to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,You can follow the [@river J] down to <a href="#F">[@F]</a> or you can make the steep ascent to <a href="#O">[@O]</a>. If you dare the <a href="#K">[@K]</a>, you can cross over to <a href="#I">[@I]</a>.
 
 ;destinations for M
-1,There's a steep descent down to &lt;a href="#H"&gt;[@H]&lt;/a&gt;.
+1,There's a steep descent down to <a href="#H">[@H]</a>.
 
 ;destinations for N
-1,There's a steep descent down to &lt;a href="#I"&gt;[@I]&lt;/a&gt;.
+1,There's a steep descent down to <a href="#I">[@I]</a>.
 
 ;destinations for O
-1,There's a steep descent down to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,There's a steep descent down to <a href="#J">[@J]</a>.
 
 ;destinations for P
-1,There's a long stair down to &lt;a href="#E"&gt;[@E]&lt;/a&gt;.
+1,There's a long stair down to <a href="#E">[@E]</a>.
 
 ;destinations for Q
-1,There's a trail through the narrow gorge back down to &lt;a href="#G"&gt;[@G]&lt;/a&gt;.
+1,There's a trail through the narrow gorge back down to <a href="#G">[@G]</a>.
 
 ;destinations for R
-1,If you have arranged for a pickup, you can get back to &lt;a href="#A"&gt;[@A]&lt;/a&gt; by boat. Otherwise, you'll have to wait for a day or two. [@fisher] usually fishes around here, so they'll be able to pick you up eventually.
+1,If you have arranged for a pickup, you can get back to <a href="#A">[@A]</a> by boat. Otherwise, you'll have to wait for a day or two. [@fisher] usually fishes around here, so they'll be able to pick you up eventually.
 
 ;destinations for S
-1,There's a hidden trail through a narrow gorge back down to &lt;a href="#B"&gt;[@B]&lt;/a&gt;.
+1,There's a hidden trail through a narrow gorge back down to <a href="#B">[@B]</a>.
 
 ;destinations for T
-1,There are two trails leading back down to the shores of [@lake name], one leads to &lt;a href="#A"&gt;[@A]&lt;/a&gt;, the other to &lt;a href="#B"&gt;[@B]&lt;/a&gt;.
+1,There are two trails leading back down to the shores of [@lake name], one leads to <a href="#A">[@A]</a>, the other to <a href="#B">[@B]</a>.
 
 ;destinations for U
-1,A hidden trail leads down into the &lt;a href="#L"&gt;[@L]&lt;/a&gt;.
+1,A hidden trail leads down into the <a href="#L">[@L]</a>.
 
 ;pass destinations
-1,There are two trails down from [@K]. The first one leads to &lt;a href="#I"&gt;[@I]&lt;/a&gt; and the other one leads to &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
-1,This pass is the highest point of the old rebel passage that links &lt;a href="#I"&gt;[@I]&lt;/a&gt; and &lt;a href="#J"&gt;[@J]&lt;/a&gt;.
+1,There are two trails down from [@K]. The first one leads to <a href="#I">[@I]</a> and the other one leads to <a href="#J">[@J]</a>.
+1,This pass is the highest point of the old rebel passage that links <a href="#I">[@I]</a> and <a href="#J">[@J]</a>.
 
 ;swamp destinations
-1,There are two trails out of the [@L]. The first one leads to &lt;a href="#D"&gt;[@D]&lt;/a&gt; and the other one leads to &lt;a href="#E"&gt;[@E]&lt;/a&gt;. If you know where to look, there is also a hidden trail leading to &lt;a href="#U"&gt;[@U]&lt;/a&gt;
+1,There are two trails out of the [@L]. The first one leads to <a href="#D">[@D]</a> and the other one leads to <a href="#E">[@E]</a>. If you know where to look, there is also a hidden trail leading to <a href="#U">[@U]</a>
 
 ;swamp name
 1,[swamp qualifier] [swamp noun]
@@ -793,20 +792,20 @@ own generators! Please do.
 1,Swamp
 
 ;pass
-1,&lt;h2 id="K"&gt;[@K]&lt;/h2&gt;¶[pass guardian]¶[pass destinations]
+1,<h2 id="K">[@K]</h2>¶[pass guardian]¶[pass destinations]
 
 ;pass guardian
 1,On this pass sits a massive ruin of a sky fort from the old times. A giant lives here.¶[giant]
 1,On one of the nearby mountains nests a dragon. This pass belongs to its territory and dragons are extremely territorial.¶[dragon]
 
 ;swamp
-1,&lt;h2 id="L"&gt;[@L]&lt;/h2&gt;¶[swamp guardian]¶[swamp destinations]
+1,<h2 id="L">[@L]</h2>¶[swamp guardian]¶[swamp destinations]
 
 ;swamp guardian
 1,An ancient ruin stands in the middle of this swamp.¶[monster]
 
 ;ruin
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[ruin description] [monster]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2>¶[ruin description] [monster]¶[destinations for [@position]]
 
 ;ruin description
 1,An ancient ruin stands here, shrouded in [shadow|fog].
@@ -814,7 +813,7 @@ own generators! Please do.
 1,An ancient ruin stands here, the place of some last stand or other.
 
 ;island
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[island description] [island monster]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2>¶[island description] [island monster]¶[destinations for [@position]]
 
 ;island description
 1,This island is overgrown with thorny bushes, making landing very difficult. There is no indication of a holy site on this island.
@@ -829,10 +828,10 @@ own generators! Please do.
 1,A simple hut stands here, standing on four long spindly wooden legs.¶[mage character]
 
 ;shrine
-1,&lt;h2 id="[@position]"&gt;[@[@position]]&lt;/h2&gt;¶[shrine description]¶[[@side C]@character name][rebel]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2>¶[shrine description]¶[[@side C]@character name][rebel]¶[destinations for [@position]]
 
 ;shrine description
-1,A peaceful valley, too small warrant the keeping of animals, but large enough to allow a hermit to survive, perhaps.
+1,A peaceful valley, too small to warrant the keeping of animals, but large enough to allow a hermit to survive, perhaps.
 
 ;giant
 1,**[giant name]**¶[giant stats]
@@ -963,18 +962,18 @@ own generators! Please do.
 1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
-1,[roll attributes][[1d3] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
+1,[roll attributes][[1d3] careers]<strong id="p[@position]">[character name]</strong> [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
 
 ;mage character
-1,[roll mage attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[character name]&lt;/strong&gt; [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
+1,[roll mage attributes][[2d4+1] careers]<strong id="p[@position]">[character name]</strong> [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
 
 # must set @character name, first
 ;powerful character
-1,[roll attributes][[2d4+3] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and their patron is [@power [1d3]].
+1,[roll attributes][[2d4+3] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 # must set @character name, first
 ;rebel
-1,[roll attributes][[2d4+1] careers]&lt;strong id="p[@position]"&gt;[@character name]&lt;/strong&gt; [short character stats]¶[@character name] is trying to get rid of both &lt;a href="#pA"&gt;[@side A]&lt;/a&gt; and &lt;a href="#pB"&gt;[@side B]&lt;/a&gt;. They are also a former member of the [@secret society [1d3]] and their patron is [@power [1d3]].
+1,[roll attributes][[2d4+1] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]¶[@character name] is trying to get rid of both <a href="#pA">[@side A]</a> and <a href="#pB">[@side B]</a>. They are also a former member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 ;character
 1,[roll attributes][[2d5] careers]**[character name]** [character stats]
@@ -1516,6 +1515,6 @@ own generators! Please do.
 # sgml-basic-offset: 0
 # End:
 
-</pre>
+</script>
 </body>
 </html>

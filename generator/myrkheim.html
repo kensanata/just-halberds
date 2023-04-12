@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Change this for hyphenation in other languages! -->
+<head>
+<meta charset="utf-8">
+<title>Myrkheim</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+@media screen {
+    body {
+        background: #000;
+        color: #fff;
+    }
+    #noprintheader hr {
+        background: green;
+        border: 0;
+        height: 1px;
+        margin: 0.25em 0em 1.5em -10em;
+    }
+}
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+    #noprintheader hr {
+        display: none;
+    }
+    #noprintheader {
+        display: none;
+    }
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
+    font-size: 12pt;
+    margin: 1em;
+    margin-left: clamp(1ex, 5%, 4em);
+    hyphens: auto;
+}
+blockquote {
+    margin-left: 0;
+    padding-left: 1ex;
+    border-left: 0.5ex solid #cdcd00;
+}
+#target {
+    white-space: pre-wrap;
+    max-width: 45em;
+}
+#links {
+    padding: 0;
+    font-size: smaller;
+}
+#links li {
+    display: inline;
+}
+table {
+    margin-top: 1ch;
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    padding: 0.5ex;
+}
+.c {
+    text-align: center;
+    min-width: 2em;
+}
+a {
+    color: chartreuse;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<script>
+function parse(data) {
+  // This is the return of parse().
+  let h = {};
+
+  // Save the data so that h can be reused in multiple calls to generate().
+  h.tables = transform(data);
+
+  // Generate text. This function is accessible from the outside.
+  h.generate = function(start) {
+    h.names = {}; // reset
+    return pick(start);
+  };
+
+  // Read data and parse comments, table names and weighted rows.
+  function transform(data) {
+    let table = {};
+    let rows;
+    data.split("\n").forEach(row => {
+      let m;
+      if (row.match(/^\s*#/)) { /* Comments */ }
+      else if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; }
+      else if ((m = row.match(/^(\d+),(.*)/))) { rows.push([m[2], Number(m[1])]); }
+      else if (row.match(/\S/)) { rows[rows.length - 1][0] += row; } // append
+    });
+    return table;
+  }
+
+  // Save the results of the last call
+  h.results = {};
+
+  // The list of names ensures that generated names are unique
+  h.names;
+
+  // Do replacements when you return
+  h.replacements = [];
+
+  // Recursively pick items from tables and process the string
+  function pick(table, level) {
+    if (level == undefined) {
+      level = 1;
+      h.results = {};
+    } else if (level > 20) {
+      console.log(`Recursion deeper than 20 for ${table}`);
+      return "…";
+    }
+    // pick an appropriate item
+    let text = weighted_pick(table);
+    // look for search and replace suffixes like /a/b/ (this only
+    // works for levels > 1)
+    const m = text.match(/\/([^\/]+)\/([^\/]*)\/$/);
+    // Short by the search & replace pattern, if any.
+    if (m) {
+      text = text.substring(0, text.length - m[0].length);
+      h.replacements.push(m);
+    }
+    let i = text.indexOf("[");
+    while (i >= 0) {
+      let s = text.substring(i);
+      let m;
+      let ok = false;
+      if (m = s.match(/^\[(\d+)d(\d+)(?:([+-]\d+))?\]/)) {
+        // [2d6] rolls dice
+        text = text.substring(0, i)
+          + roll(Number(m[1]), Number(m[2]), m[3] ? Number(m[3]) : 0)
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)\+\+@([^\[\]]+)\]/)) {
+        // [a++@b] increments value of key a in map b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] ||= {};
+        h.results[m[2]][m[1]] ||= 0;
+        h.results[m[2]][m[1]]++;
+        ok = true;
+      } else if (m = s.match(/^\[~([^\[\]]+)\]/)) {
+        // [~b] reset map or list b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        delete h.results[m[1]];
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)@@([^\[\]]+)\]/)) {
+        // [a@@b] appends a to list b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] ||= [];
+        h.results[m[2]].push(m[1]);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)@([^\[\]]+)\]/)) {
+        // [a@b] saves a as b
+        text = text.substring(0, i)
+          + s.substring(m[0].length);
+        h.results[m[2]] = m[1];
+        ok = true;
+      } else if (m = s.match(/^\[@\+\+([^\[\]]+)\]/)) {
+        // [@b++] returns the key with the highest value in map b
+        let v = h.results[m[1]];
+        text = text.substring(0, i)
+          + shuffle(Object.keys(v)).reduce((ac, cur) => v[ac] > v[cur] ? ac : cur, 0)
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+\|[^\[\]]+)\]/)) {
+        // [a|b] choose a or b
+        text = text.substring(0, i)
+          + one(m[1].split('|'))
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^\[\]]+)\?([^\[\]]*):([^\[\]]*)\]/)) {
+        // [x?a:b] choose a or b depending on whether x is true or false
+        text = text.substring(0, i)
+          + (eval(m[1]) ? m[2] : m[3])
+          + s.substring(m[0].length);
+        ok = true;
+      } else if (m = s.match(/^\[([^@\[\]]+)\]/)) {
+        // [a] pick an entry from table 'a'
+        let p = pick(m[1], level + 1);
+        text = text.substring(0, i)
+          + p
+          + s.substring(m[0].length);
+        h.replacements.forEach((r) => text = text.replace(new RegExp(r[1], r[3]), r[2]));
+        h.replacements = [];
+        ok = true;
+      } else if (m = s.match(/^\[@([^\[\]]+)\]/)) {
+        // [@b] use variable b
+        let v = h.results[m[1]];
+        if (v === undefined) { console.log(`No stored value for ${m[1]} in ${table}`); v = "…"; }
+        else if (Array.isArray(v)) { v = v.join(", "); }
+        else if (v === Object(v)) { v = Object.keys(v).sort().map(k => k + "-" + v[k]).join(", "); }
+        text = text.substring(0, i)
+          + v
+          + s.substring(m[0].length);
+        ok = true;
+      } else {
+        // We did not make a replacement, advance to the next one.
+        let n = s.substring(1).indexOf("[");
+        if (n >= 0) {
+          i = i + 1 + n;
+          continue;
+        }
+      }
+      // We made a replacement, start over.
+      if (ok) {
+        i = text.indexOf("[");
+        continue;
+      }
+      // We didn't do a replacement, and we didn't find another
+      // square bracket to look at, so we're done.
+      break;
+    }
+
+    // Retry duplicates
+    if (table.endsWith(" name")) {
+      let key = `${table}: ${text}`;
+      if (h.names[key]) {
+        // console.log(`Seen ${key} before`);
+        text = pick(table, level + 1);
+      } else {
+        // console.log(`Seen ${key} for the first time`);
+        h.names[key] = true;
+      }
+    }
+
+    // Save
+    h.results[table] = text;
+
+    if (level === 1) {
+      // emphasis
+      text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
+      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+    }
+    return text;
+  }
+
+  // Pick an item from the table,
+  function weighted_pick(table) {
+
+    const t = h.tables[table];
+    if (!t) { console.log(`There is no table ${table}`); return "…"; }
+    const total = t.reduce((n, x) => n + x[1], 0);
+    // start with 1
+    const n = Math.floor(Math.random() * total) + 1;
+    let i = 0;
+    for (const z of t) {
+      i += z[1];
+      if (i >= n) return z[0];
+    }
+    console.log(`The table ${table} has no result for ${n}`);
+    return "…";
+  }
+
+  function shuffle(a) {
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // Return a random element from arr.
+  function one(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  // Roll dice.
+  function roll(num, sides = 6, plus = 0) {
+    let total = 0;
+    for (var i = 0; i < num; i++) {
+      total += Math.floor(Math.random() * sides + 1);
+    }
+    return total + plus;
+  }
+
+  // To do anything, call generate().
+  return h;
+}
+
+function slug(s) {
+  return s.replaceAll(/['"-']+/g, "-").toLowerCase();
+}
+
+function menu(data) {
+  let html = "<ul>\n";
+  data.split("\n").forEach(row => {
+    if (row.startsWith(";")) {
+      let t = row.substring(1);
+      html += `<li><a href="javascript:show('${slug(t)}')">${t}</a>\n`;
+    }
+  });
+  return html;
+}
+
+function linked(data) {
+  data = data.replaceAll(/^;(.*)/mg,
+                         (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
+  data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
+                         (m, t) => {
+                           if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
+                           if (m.match(/\?.*:/)) return m;
+                           return `[<a href="#${slug(t)}">${t}</a>]` });
+  data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
+  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+  return data;
+}
+
+function paper(data) {
+  let html = "";
+  let n;
+  data.split("\n").forEach(row => {
+    let m;
+    if (row.match(/^\s*#/)) {
+      // Comment
+    } else if (row.startsWith(";")) {
+      // Table
+      if (html) html += "</table>\n";
+      html += "<table>\n";
+      html += `<tr><th>Roll</th><th>${row.substring(1)}</th></tr>\n`;
+      n = 1;
+      // Row
+    } else if ((m = row.match(/^(\d+),(.*)/))) {
+      let from = n;
+      let to = n + (Number(m[1]) - 1);
+      n = to + 1;
+      html += `<tr><td>${from == to ? from : from + "-" + to}</td><td>${m[2]}</td></tr>\n`;
+    }
+  });
+  return html;
+}
+
+function show(t) {
+  generate((data) => parse(data).generate(t)
+  + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`);
+}
+
+function generate(f) {
+  const data = document.getElementById('data').textContent;
+  document.getElementById('target').innerHTML = f(data);
+}
+
+</script>
+</head>
+<body>
+
+<h1 id="noprintheader">Generator</h1>
+<div id="noprintheader">
+  <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
+  <button type="button" onclick="generate((data) => menu(data))">List tables</button>
+  <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
+  <button type="button" onclick="generate((data) => paper(data))">Printable tables</button>
+  <ul id="links">
+    <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
+    <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>
+    <li><a href="https://alexschroeder.ch/wiki/Contact">Alex Schröder</a>
+    <li><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+  </ul>
+  <hr>
+</div>
+
+<div id="target">
+This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
+
+You can replace all the tables in this file with your own and make your own generators! Please do.
+</div>
+
+<script id="data" type="text/x-generator">
+# The strange type here ↑ means that it won't get executed and no HTML escaping
+# is required in here!
+
+# Data
+
+# lines beginning with optional whitespace and a '#' are comments
+# '*a*' renders 'a' in italics (emphasis)
+# '**a**' renders 'a' in bold (strong emphasis)
+# ';' begins a table, followed by a name, no space
+# A number and a comma begin a weighted entry for the current table
+# All other lines are appended. Begin them with a space if you need one, because newlines are stripped. Use <p>.
+# /re/to/ at the end replaces regular expression "re" with "to"
+# '[2d6]' or '[1d6+3]' are replaced by dice rolls
+# '[a]' gets replaced with a lookup of table 'a'
+# If a ends with ' name' then the result is unique
+# '[a|b]' gets replaced with 'a' or 'b'
+# '[x?a:b]' evaluates x as JavaScript and if "true" it is replaced with 'a' else with 'b'
+# '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
+# '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
+# '[a++@b]' increments the key 'a' by one for the map 'b'
+# '[~a]' resets the list or map 'a'
+# '[@b]' uses the value of variable 'b'
+# If b is a list, return a comma-separated list.
+# If b is a map, return a sorted, comma-separated list of key-value pairs
+# '[@++b]' gets replaced by the key with the highest value in map b
+
+;start
+1,[initial setup]
+[map setup]
+[tunnels random encounters]
+[map description]
+
+;initial setup
+1,<p>The underworld is in turmoil.
+
+# The map always has the same structure, for the moment.
+# Each location has either three exists, or it's a dead end with just one exit.
+#
+#                  S                 T
+#                    \             /
+#                      R -- G -- N
+#                    /      |      \
+#                   |       A       |
+#          X        Q __   / \   __ M       U
+#            \    /      F     B      \   /
+#               P      /         \      O
+#              |      E --- D --- C      |
+#               \   /       |       \   /
+#                 H         J         I
+#                   \_ K _/   \_ L _/
+#                      |         |
+#                      W         V
+#
+# Each location is defined by a set of variables.
+# The single letter variable we see above contains the unique name.
+# The single letter + "_type" is the location type.
+# This is done so that the name and content matches the locatino type.
+#
+# Note that names are unique! There must be plenty of alternatives or you'll
+# get recursion "Recursion deeper than 20" errors in the log.
+
+;map setup
+1,[A@location][setup]
+[B@location][setup]
+[C@location][setup]
+[D@location][setup]
+[E@location][setup]
+[F@location][setup]
+[G@location][setup]
+[H@location][setup]
+[I@location][setup]
+[J@location][setup]
+[K@location][setup]
+[L@location][setup]
+[M@location][setup]
+[N@location][setup]
+[O@location][setup]
+[P@location][setup]
+[Q@location][setup]
+[R@location][setup]
+[S@location][setup]
+[T@location][setup]
+[U@location][setup]
+[V@location][setup]
+[W@location][setup]
+[X@location][setup]
+
+# [@location] is a letter like A
+# [[location type]@[@location]_type] is [[location type]@A_type] is the location type and storing it in variable A_type.
+# [[[@[@location]_type] name]@[@location]] is [[[@A_type] name]@A] is [[tunnels name]@A] is a tunnel name storing it in A.
+
+;setup
+1,[[location type]@[@location]_type][[[@[@location]_type] name]@[@location]]
+
+;map description
+1,[A@location][description]
+[B@location][description]
+[C@location][description]
+[D@location][description]
+[E@location][description]
+[F@location][description]
+[G@location][description]
+[H@location][description]
+[I@location][description]
+[J@location][description]
+[K@location][description]
+[L@location][description]
+[M@location][description]
+[N@location][description]
+[O@location][description]
+[P@location][description]
+[Q@location][description]
+[R@location][description]
+[S@location][description]
+[T@location][description]
+[U@location][description]
+[V@location][description]
+[W@location][description]
+[X@location][description]
+
+# [@location] is a letter like A
+# [@[@location]] is [@A] is the name of a location like "The Caves of Spiders"
+# [@[@location]_type] is [@A_type] is the location type like "spider lair"
+# [[@[@location]_type] description] is [[@A_type] description] is [spider lair description] is the actual description
+
+;description
+1,<h2 id="[@location]">[@[@location]]</h2>
+<p>[[@[@location]_type] description]
+<p>From here, tunnels lead to [[@location] neighbours].
+
+;A neighbours
+1,[F@1][G@2][B@3][neighbour links]
+;B neighbours
+1,[A@1][M@2][C@3][neighbour links]
+;C neighbours
+1,[D@1][B@2][I@3][neighbour links]
+;D neighbours
+1,[E@1][C@2][J@3][neighbour links]
+;E neighbours
+1,[H@1][F@2][D@3][neighbour links]
+;F neighbours
+1,[E@1][Q@2][A@3][neighbour links]
+;G neighbours
+1,[A@1][R@2][N@3][neighbour links]
+;H neighbours
+1,[P@1][E@2][K@3][neighbour links]
+;I neighbours
+1,[L@1][C@2][O@3][neighbour links]
+;J neighbours
+1,[K@1][D@2][L@3][neighbour links]
+;K neighbours
+1,[W@1][H@2][J@3][neighbour links]
+;L neighbours
+1,[V@1][J@2][I@3][neighbour links]
+;M neighbours
+1,[B@1][N@2][O@3][neighbour links]
+;N neighbours
+1,[G@1][T@2][M@3][neighbour links]
+;O neighbours
+1,[M@1][U@2][I@3][neighbour links]
+;P neighbours
+1,[X@1][Q@2][H@3][neighbour links]
+;Q neighbours
+1,[P@1][R@2][F@3][neighbour links]
+;R neighbours
+1,[Q@1][S@2][G@3][neighbour links]
+;S neighbours
+1,<a href="#R">[@R]</a>
+;T neighbours
+1,<a href="#N">[@N]</a>
+;U neighbours
+1,<a href="#O">[@O]</a>
+;V neighbours
+1,<a href="#L">[@L]</a>
+;W neighbours
+1,<a href="#K">[@K]</a>
+;X neighbours
+1,<a href="#P">[@P]</a>
+
+;neighbour links
+1,<a href="#[@1]">[@[@1]]</a>, <a href="#[@2]">[@[@2]]</a> and <a href="#[@3]">[@[@3]]</a>
+
+;location type
+1,tunnels
+1,shrine to [power]
+1,[lair]
+
+;power
+1,Set
+1,Pazuzu
+1,Orcus
+1,Hecate
+1,Mitra
+
+;lair
+1,spider lair
+1,goblin lair
+1,ghoul lair
+1,mushroom lair
+1,naga lair
+1,salamander lair
+1,newt lair
+
+# Each tunnel has a monster and the name of the monster gives it away.
+# Expects @location to be set.
+# Sets: @A_monster and @A_condition.
+
+;tunnels name
+1,The [Warrens|Tunnels|Caves|Caverns|Passage|Long Crawlies|Low Passage] of [tunnel creature name]
+
+;tunnel creature name
+1,Worms[worm@[@location]_monster][dry@[@location]_condition]
+1,Wyrms[worm@[@location]_monster][dry@[@location]_condition]
+1,Eels[eel@[@location]_monster][wet@[@location]_condition]
+1,Darkness[spider@[@location]_monster][dry@[@location]_condition]
+1,Spiders[spider@[@location]_monster][dry@[@location]_condition]
+1,Crabs[crab@[@location]_monster][wet@[@location]_condition]
+1,Night[undead@[@location]_monster][dry@[@location]_condition]
+1,Troglodytes[human@[@location]_monster][dry@[@location]_condition]
+1,Cannibals[human@[@location]_monster][dry@[@location]_condition]
+1,Ticks[spider@[@location]_monster][dry@[@location]_condition]
+1,Lampreys[eel@[@location]_monster][wet@[@location]_condition]
+1,Crocs[croc@[@location]_monster][wet@[@location]_condition]
+1,Slime[slime@[@location]_monster][wet@[@location]_condition]
+1,Disease[warp@[@location]_monster][dry@[@location]_condition]
+1,the Dead[undead@[@location]_monster][dry@[@location]_condition]
+1,Entrails[warp@[@location]_monster][wet@[@location]_condition]
+1,the Choker[human@[@location]_monster][dry@[@location]_condition]
+1,Bones[undead@[@location]_monster][dry@[@location]_condition]
+
+;shrine to Set name
+1,The Great Set [shrine type]
+1,The [shrine type] of the [Serpent|Naga|Seven-Headed] King
+1,The [shrine type] for the Lord of [Assassins|Murderers|Poisoners|Thieves|Sweet Words]
+1,The [shrine type] of [Retribution|Revenge|Justice|Punishment]
+1,The [shrine type] for the Prince of [Intrigue|Whispers|Flatteries|Charms]
+1,The [shrine type] of the Great [Snake|Serpent|Whisperer|Stare|Maw]
+1,The [shrine type] of the [Deadly|Silent|Slow] Hunter
+1,The [shrine type] for the King of [the Underworld|the Earth|All Snakes]
+
+;shrine to Pazuzu name
+1,The Last Pazuzu [shrine type]
+1,The [shrine type] of the [Vulture|Dark Sky|Four-Winged] King
+1,The [shrine type] for the Lord of [Disease|Pestilence|Miasmas]
+1,The [shrine type] of [Wishes|Fulfilment|Satisfaction|Promises]
+1,The [shrine type] for the Prince of [Promises|Delusion|Dreams]
+1,The [shrine type] of the Great [Deliverer|Vulture|Winged One]
+1,The [shrine type] for the King of [the Underworld|Red Skies|Birds]
+
+;shrine to Orcus name
+1,The Main Orcus [shrine type]
+1,The [shrine type] of the [Goat|Horned|Hairy|Pot-Bellied|Trickster] King
+1,The [shrine type] for the Lord of [Lies|Deception|the Dead]
+1,The [shrine type] of [Rebirth|the Afterlife|the Dead|Undeath|Preservation|Dancing Bones]
+1,The [shrine type] for the Prince of [Undeath|the Underworld|Bones|Skeletons]
+1,The [shrine type] of the Great [Horned One|Deceiver]
+
+;shrine to Hecate name
+1,The Dark [shrine type] of Hecate
+1,The [shrine type] of the [Hell-Hound|Three-Faced] Queen
+1,The [shrine type] at the [Crossroads|Intersection|Fork]
+1,The [shrine type] for the Queen of [Magic|Wild Hogs|Ravens|Dogs|All Ages|Warp and Weft]
+1,The [shrine type] of [Stars|the Three Black Hounds]
+1,The [shrine type] for the [Princess of Eternal Youth|Old Crone]
+1,The [shrine type] of the Great [Weaver|Spinster|Warp|Weft]
+
+;shrine to Mitra name
+1,The Great Underground Flame of Mitra
+1,The [shrine type] of the [Eternal Flame|Glorious Bull|Promises Kept|Loyalty Unwavering|Oath Bound]
+1,The [shrine type] of the Protector of all [Oaths Sworn|Promises Made|Ties|Frienship|Family|Friends]
+1,The [shrine type] of the Lady of [All Bulls|Underground Loyalty|All Bonding]
+1,The [shrine type] of [Candles|Fires]
+1,The [shrine type] of [Copper|Brass|Bronze] Braziers
+
+;shrine type
+1,Shrine
+1,Altar
+
+;spider lair name
+1,The Great [Web|Net]
+1,The City of [Webs|Weavers]
+1,The City Above
+1,The Field of Bones
+
+;goblin lair name
+1,The Great Market
+1,The City of Opportunity
+1,The Labyrinth
+1,The Home of the Spider Knights
+1,The Fortress of Assassins
+
+;ghoul lair name
+1,The Old Battlefield
+1,The Fields of Graves
+1,The Restless Dead
+1,The Maggots of the Earth
+1,The Cemetery of Despair
+
+;mushroom lair name
+1,The Garden of Darkness
+1,The Sunless Forest
+1,The Dreamlands
+1,The Great Rot
+1,The Poisoned Lands
+
+;naga lair name
+1,The Palace of Delight
+1,The Castle of Dreams
+1,The Baths of Sloth
+1,The Hatchery of Dreams
+
+;newt lair name
+1,The Water Palace
+1,The Cold Palace
+1,The Watery Grave
+1,The Sunken City
+
+;salamander lair name
+1,The Quiet Palace
+1,The Palace of Dreams
+1,The Garden of Delight
+
+# We expect @location to be set to a letter such as A, as well as @A_condition and @A_monster.
+
+;tunnels description
+1,[[@[@location]_condition] tunnels description]
+
+;wet tunnels description
+1,There’s is water from above somewhere.
+ Did it rain or does it always flow through these tunnels?
+ You’re knee-deep in muddy water. It’s cold.
+<p>[[@[@location]_monster] tunnels]
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+1,The tunnels are flooded. Perhaps you though you could walk, but you cannot.
+ Others have faced similar problems over the years. There are old boats to be found.
+ Ancient traditions maintain them. You can row through these tunnels.
+<p>[[@[@location]_monster] tunnels]
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+1,Everything is under water. Movement is slow. If you slip, you might drown. You move carefully.
+ If only you could see the ground.
+<p>[[@[@location]_monster] tunnels]
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+
+;eel tunnels
+1,There are eels to be found, here.
+1,There are lampreys to be found, here.
+
+;crab tunnels
+1,The rocks rising out of the water are full of small animals, waving their claws at you.
+ If you move towards them, they move back. If you don’t budge, they come closer.
+ The clicking of their claws, the clacking of their spindly legs, there must be many thousands down there.
+1,The water is cloudy with a gelatinous substance full of gelatinous balls.
+ Crab eggs. With every step, you have to tear through it.
+ They’re surprisingly large.
+<table>
+<thead>
+<tr><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
+<tr><td class="c">[1d4+1]</td><td>[crab name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td></tr>
+</thead>
+<tbody>
+<tr></tr>
+</tbody>
+</table>
+
+;crab name
+1,[Chthonic|Night|Meat|Red|Blue|Blind|Giant|Spider] [Crab|Pincer]
+
+;croc tunnels
+1,The water is dead still but if you shine a light into the distance, dozens of eyes reflect back.
+ Underworld crocodiles lie under the water surface like dead logs, endlessly patient, saving the energy of a year for that one sprint after their victim.
+ They’re just waiting for you to make a mistake.[croc table]
+1,What looks like logs floating in the water are actually crocodiles. They seem to be in some sort of deep cold stupor.
+ Saving energy, waiting for that disturbance in the flow. Those warm water eddies to that say in a thousand sweet words:
+ food.[croc table]
+
+;croc table
+1,<table>
+<thead>
+<tr><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
+<tr><td class="c">[1d4+1]</td><td>[croc name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td></tr>
+</thead>
+<tbody>
+<tr></tr>
+</tbody>
+</table>
+
+;croc name
+1,[Chthonic|Carnivorous|Slow|Deep|Zombie|Shark|Blind] [Croc|Gator|Crocodile]
+
+;slime tunnels
+1,The light catches huge blogs of [red|green|purple] slime along the ceiling.
+ Slowly, a thousand drops glide down long threads into the water below.
+<blockquote>Make a Dexterity check to avoid [1d4] Damage.</blockquote>
+1,Whenever a stone rises out of the water it’s covered in [red|green|purple] slime.
+ It’s tricky to avoid when getting into or out of the water.
+<blockquote>Make a Dexterity check to avoid [1d4] Damage.</blockquote>
+
+;dry tunnels description
+1,This is one of the veins of the earth, a shaft going down and down and down into the blackness.
+ An ancient civilisation has carved footholds into the walls.
+ There are platforms to rest every now and then.
+ None of this is secured.
+ You tie yourselves to the walls when you sleep.
+ Small rings have been used for this purpose by a thousand travellers before you.
+<p>[[@[@location]_monster] tunnels]
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+1,The passage winds and twists, the walls coming closer and closer.
+ At last, you squeeze sideways through narrow passages, the weight of the rocks preventing you from taking a deep breath.
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+1,The passages have been dug by goblins and dwarves.
+ First, you stoop. Then you crawl.
+ On your ellbows and belly, sliding between wet stones, pulling bags on ropes after you, trusting the signs, praying that you never get stuck.
+<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+
+;worm tunnels
+1,There are worms to be found, here.
+
+;spider tunnels
+1,You crush chitinous husks and thin bones beneath your feet.
+ Where do they come from? The ceiling is far above you in this narrow cleft deep beneath the surface.
+ Occasionally, you hear a struggle up above in the darkness.
+ Soon, another empty arthropod husk drops from above.
+1,Spiders, ticks, what’s the difference?
+
+;undead tunnels
+1,There are undead to be found, here.
+
+;human tunnels
+1,There are feral humans to be found, here.
+1,There are cannibals to be found, here.
+1,There are troglodytes to be found, here.
+
+;warp tunnels
+1,There is madness to be found, here.
+1,The warp is howling in these tunnels.
+
+;tunnels random encounters
+1,<h2 id="Y">Random Tunnel Encounters</h2>
+<table>
+<thead>
+<tr><th class="c">2d6</th><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
+</thead>
+<tbody>
+<tr><td class="c">2</td>[random dragon]</tr>
+<tr><td class="c">3</td>[random undead]</tr>
+<tr><td class="c">4</td>[random predator]</tr>
+<tr><td class="c">5</td>[random nightling]</tr>
+<tr><td class="c">6</td>[random nightling]</tr>
+<tr><td class="c">7</td><td colspan="8">Known characters (see below)</td></tr>
+<tr><td class="c">8</td>[random myconids]</tr>
+<tr><td class="c">9</td>[random snakelings]</tr>
+<tr><td class="c">10</td>[random predator]</tr>
+<tr><td class="c">11</td>[random undead]</tr>
+<tr><td class="c">12</td>[random giant]</tr>
+</tbody>
+</table>
+<p>A 2 is always a dragon, a 12 is always a giant.</p>
+<p>Add to the list of known characters for 7 as play progresses.
+ Whenver players enjoy some interaction with non-player characters, add them and make it work when you roll them up.</p>
+<ol>
+<li>Brá the dwarf, trying to find and kill Banupal of Tsathoggua’s grace
+<li>
+<li>
+<li>
+<li>
+<li>
+</ol>
+
+;random nightling
+1,<td class="c">[1d6]</td><td>[nightling name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+
+;nightling name
+1,[Night|Earth|Cave|Under|Stone|Fire|Tar|Chthonic|Nimble|Myrk][ Hunter| Goblin| Nomad|dwarf|jäger| Stalker|ling| Knive]s
+
+;random myconids
+1,<td class="c">[1d6]</td><td>[myconid name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+
+;myconid name
+1,[Red|Blue|Death|Scaly|Club] [Cap|Horn|Tooth] [Myconids|Fungus People]
+1,[Toad|Fly|Panther] [Myconids|Fungus People]
+1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Myconids|Fungus People]
+
+;random snakelings
+1,<td class="c">[1d6]</td><td>[snakeling name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+
+;snakeling name
+1,[Black|White|Coral|Crowned|Fierce|Ground|Stone|Indigo|Orange|Mud|Blood] [Asp|Viper|Adder|Anaconda|Snake|Cobra|Krait] People
+
+;random predator
+1,<td class="c">1</td><td>[predator name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+5,<td class="c">[1d5+1]</td><td>[predator name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+
+;predator name
+2,[Cave|Under|Dark|Earth][lion|bear|gator|worm|choker]
+1,[Chthonic|Carnivorous|Slow|Deep] [Lion|Bear|Croc|Worm|Choker]
+
+;random undead
+1,<td class="c">1</td><td>[undead name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+5,<td class="c">[1d5+1]</td><td>[undead name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+
+;undead name
+1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder]
+
+;random giant
+1,<td class="c">1</td><td>[giant name]</td><td class="c">[4d6]</td><td class="c">[8d6]</td><td class="c">[4d6]</td><td class="c">[1d6+3]</td><td class="c">[1d6+8]</td><td class="c">[1d6]</td>
+
+;giant name
+1,Nazarbubu the Raging
+1,Dapānu the Violent
+1,Emūqattam the Forceful
+1,Lapātu the Iron Fist
+1,Parzillu the Iron
+1,Līlum the Dark
+1,Gilittu the Terror
+1,Kuppû the Cold
+1,Naḫarmuṭu the Dissolver
+
+;random dragon
+1,<td class="c">1</td><td>[dragon name]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td><td class="c">[1d6+2]</td><td class="c">[1d6+9]</td><td class="c">[1d6]</td>
+
+;dragon name
+1,Mušḫuššhu the Serpent
+1,Šēzuzu the Fierce
+1,Ušumgallatu the Monarch
+1,Akālu the Hungry
+1,Belû the Extinguisher
+1,Gīru the Flame
+1,Ḫamātu the Burning
+1,Qalû the Burning
+1,Qadû the Ardent
+1,Šitpû the Flare
+
+;shrine to Set description
+1,This is a Set shrine.
+
+;shrine to Pazuzu description
+1,This is a Pazuzu shrine.
+
+;shrine to Orcus description
+1,This is an Orcus shrine.
+
+;shrine to Hecate description
+1,This is a Hecate shrine.
+
+;shrine to Mitra description
+1,This is a Mitra shrine.
+
+;spider lair description
+1,This is a spider lair.
+
+;goblin lair description
+1,This is a goblin lair.
+
+;ghoul lair description
+1,This is a ghoul lair.
+
+;mushroom lair description
+1,This is a myconid lair
+
+;naga lair description
+1,This is a naga lair.
+
+;salamander lair description
+1,This is a salamander lair.
+
+;newt lair description
+1,This a newt lair.
+
+# girtablilu = scorpion men
+
+# Local Variables:
+# sgml-basic-offset: 0
+# End:
+</script>
+</body>
+</html>

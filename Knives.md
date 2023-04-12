@@ -1625,13 +1625,13 @@ strong mental powers. Circles of power. Nagas. Earth demons.
 Half-snakes.
 
 The creatures here use spears and knives, there’s no need for extra
-weapons. Some magic spells would need replacing: Storm → Thorns, the
-magic of growing thorns out of everything; People → Thoughts, to be
-more generic; Fusion → Fungi, since we don’t care about chimeras all
-that much down here but we do care about mykonoids; Plants → Blood,
-the evil power of gaining power by drinking blood. Maybe that’s it?
-Some talents just need a new focus: Animals is mostly spiders, worms,
-flies; Sleep is also about dreams, nightmares, paralysis.
+weapons. Some magic spells would need replacing: Bureaucracy → Thorns,
+the magic of growing thorns out of everything; People → Thoughts, to
+be more generic; Fusion → Fungi, since we don’t care about chimeras
+all that much down here but we do care about mykonoids; Plants →
+Blood, the evil power of gaining power by drinking blood. Maybe that’s
+it? Some talents just need a new focus: Animals is mostly spiders,
+worms, flies; Sleep is also about dreams, nightmares, paralysis.
 
 As for monster stats, just roll for Nightlings, Predators, Undead,
 like you usually would. Magic talents are usually set at 7–9 and

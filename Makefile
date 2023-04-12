@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 FILES=Halberts.pdf Helmbarten.pdf Farnthal.pdf Just-Halberds.pdf Helle-Barden.pdf To-Rob-A-Witch.pdf 2d6-Math.pdf \
-	Altenstein.pdf Halbardier.pdf Knives.pdf
+	Altenstein.pdf Halbardier.pdf Knives.pdf Myrkheim.pdf
 all: $(FILES)
 
 clean:
@@ -10,7 +10,7 @@ upload: $(FILES)
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 	(echo ""; tail -n +2 images/Farnthal.svg) | \
 	~/bin/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
-	rsync -ai generator/index.html sibirocobombus:campaignwiki.org/generator.html
+	rsync -ai generator/generator.html generator/myrkheim.html sibirocobombus:campaignwiki.org/
 
 watch:
 	@echo Regenerating PDFs whenever the .md or .css files get saved...

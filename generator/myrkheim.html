@@ -872,16 +872,16 @@ You can replace all the tables in this file with your own and make your own gene
 1,[Black|White|Coral|Crowned|Fierce|Ground|Stone|Indigo|Orange|Mud|Blood] [Asp|Viper|Adder|Anaconda|Snake|Cobra|Krait] People
 
 ;random predator
-1,<td class="c">1</td><td>[predator name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
-5,<td class="c">[1d5+1]</td><td>[predator name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+1,<td class="c">1</td><td>[predator name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td><td class="c">[1d6+5]</td><td class="c">[1d6+6]</td><td class="c">[1d6+2]</td>
+5,<td class="c">[1d5+1]</td><td>[predator name]s</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td><td class="c">[1d6+5]</td><td class="c">[1d6+6]</td><td class="c">[1d6+2]</td>
 
 ;predator name
 2,[Cave|Under|Dark|Earth][lion|bear|gator|worm|choker]
 1,[Chthonic|Carnivorous|Slow|Deep] [Lion|Bear|Croc|Worm|Choker]
 
 ;random undead
-1,<td class="c">1</td><td>[undead name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
-5,<td class="c">[1d5+1]</td><td>[undead name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+1,<td class="c">1</td><td>[undead name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td>
+5,<td class="c">[1d5+1]</td><td>[undead name]s</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td>
 
 ;undead name
 1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder]
@@ -937,7 +937,35 @@ You can replace all the tables in this file with your own and make your own gene
 1,This is a goblin lair.
 
 ;ghoul lair description
-1,This is a ghoul lair.
+1,The ceiling recedes up into the darkness and there are niches along the walls and further up, too.
+ In each niche there is a statue looking down on you. The graves of a dead civilisation.
+ The deep resting places of a people that no longer survives on the surface. There are no new dead to arrive from above.
+ There’s only you. As you look up, you notice movement. Ghouls.
+ <p>[ghouls]
+1,Up ahead is a bigger cavern. In it stands a hill covered in graves. An endles amount of gravestones and mausoleums.
+ Amidst these graves you see movement. Somebody or something is trying to remain out of sight. Ghouls.
+ <p>[ghouls]
+
+;ghouls
+1,<table>
+<thead>
+<tr><th>Number</th><th>Leader</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
+<tr><td class="c">[1d4+1]</td><td>[ghoul name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td></tr>
+</thead>
+<tbody>
+<tr></tr>
+</tbody>
+</table>
+
+;ghoul name
+1,Ardanānu the Phantom
+1,Dingiruggû the Ancient
+1,Eṣemtu the Bony
+1,Eṭemmu the Ghost
+1,Imtu the Poisoner
+1,Mâtu the Killer
+1,Miqittu the Carcass Eater
+1,Naḫāru the Withered
 
 ;mushroom lair description
 1,This is a myconid lair

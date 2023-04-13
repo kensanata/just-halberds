@@ -401,7 +401,7 @@ You can replace all the tables in this file with your own and make your own gene
 # '[a|b]' gets replaced with 'a' or 'b'
 # '[x?a:b]' evaluates x as JavaScript and if "true" it is replaced with 'a' else with 'b'
 # '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
-# '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
+# '[a@@b]' appends 'a' to the list 'b'
 # '[a++@b]' increments the key 'a' by one for the map 'b'
 # '[~a]' resets the list or map 'a'
 # '[@b]' uses the value of variable 'b'
@@ -737,15 +737,10 @@ You can replace all the tables in this file with your own and make your own gene
 1,The water is cloudy with a gelatinous substance full of gelatinous balls.
  Crab eggs. With every step, you have to tear through it.
  They’re surprisingly large.
-<table>
-<thead>
-<tr><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
-<tr><td class="c">[1d4+1]</td><td>[crab name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td></tr>
-</thead>
-<tbody>
-<tr></tr>
-</tbody>
-</table>
+ [crabs]
+
+;crabs
+1,<blockquote>[crab name]s: [nightling]</blockquote>
 
 ;crab name
 1,[Chthonic|Night|Meat|Red|Blue|Blind|Giant|Spider] [Crab|Pincer]
@@ -759,18 +754,10 @@ You can replace all the tables in this file with your own and make your own gene
  food.[croc table]
 
 ;croc table
-1,<table>
-<thead>
-<tr><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
-<tr><td class="c">[1d4+1]</td><td>[croc name]s</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td></tr>
-</thead>
-<tbody>
-<tr></tr>
-</tbody>
-</table>
+1,<blockquote>[croc name]s: [predator]</blockquote>
 
 ;croc name
-1,[Chthonic|Carnivorous|Slow|Deep|Zombie|Shark|Blind] [Croc|Gator|Crocodile]
+1,[Chthonic|Sleeper|Slow|Deep Time|Zombie|Shark|Blind] [Croc|Gator|Crocodile]
 
 ;slime tunnels
 1,The light catches huge blogs of [red|green|purple] slime along the ceiling.
@@ -821,9 +808,19 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;tunnels random encounters
 1,<h2 id="Y">Random Tunnel Encounters</h2>
+<p>Monster stats: Roll 2d6 ≤ attributes for checks.
+ <em>Numbers</em> is the number of creatures encountered.
+ Check <em>Attack</em> to see whether they want to fight.
+ If not, check <em>Escape</em> to see if they want to retreat.
+ If not, they want to talk.
+ In a fight, check <em>Hit</em> to see if they land a hit.
+ If so, check <em>Damage</em> to see how much damage they deal.
+ If they are hit, <em>Endurance</em> is how much damage they can take and stay conscious,
+ as well as the number of attacks they can make.
+ <em>Life</em> is how much damage they can recover from. If it runs out, they die.
 <table>
 <thead>
-<tr><th class="c">2d6</th><th>Number</th><th>Name</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
+<tr><th class="c">2d6</th><th>Name</th><th>Number</th><th>Attack</th><th>Escape</th><th>Hit</th><th>Damage</th><th>Endurance</th><th>Life</th></tr>
 </thead>
 <tbody>
 <tr><td class="c">2</td>[random dragon]</tr>
@@ -851,14 +848,17 @@ You can replace all the tables in this file with your own and make your own gene
 <li>
 </ol>
 
+;nightling
+1,Number-[2d6] Attack-[1d6+4] Escape-[1d6+3] Hit-[1d6+5] Damage-[2d6] Endurance-[1d6] Life-[1d6]
+
 ;random nightling
-1,<td class="c">[1d6]</td><td>[nightling name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+1,<td>[nightling name]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;nightling name
 1,[Night|Earth|Cave|Under|Stone|Fire|Tar|Chthonic|Nimble|Myrk][ Hunter| Goblin| Nomad|dwarf|jäger| Stalker|ling| Knive]s
 
 ;random myconids
-1,<td class="c">[1d6]</td><td>[myconid name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+1,<td>[myconid name]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;myconid name
 1,[Red|Blue|Death|Scaly|Club] [Cap|Horn|Tooth] [Myconids|Fungus People]
@@ -866,28 +866,37 @@ You can replace all the tables in this file with your own and make your own gene
 1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Myconids|Fungus People]
 
 ;random snakelings
-1,<td class="c">[1d6]</td><td>[snakeling name]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+5]</td><td class="c">[1d6+3]</td>
+1,<td>[snakeling name]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;snakeling name
 1,[Black|White|Coral|Crowned|Fierce|Ground|Stone|Indigo|Orange|Mud|Blood] [Asp|Viper|Adder|Anaconda|Snake|Cobra|Krait] People
 
+;predator
+1,Number-[2d6] Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]
+
 ;random predator
-1,<td class="c">1</td><td>[predator name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td><td class="c">[1d6+5]</td><td class="c">[1d6+6]</td><td class="c">[1d6+2]</td>
-5,<td class="c">[1d5+1]</td><td>[predator name]s</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td><td class="c">[1d6+5]</td><td class="c">[1d6+6]</td><td class="c">[1d6+2]</td>
+1,<td>[predator name]</td><td class="c">1</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
+5,<td>[predator name]s</td><td class="c">[1d5+1]</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
 
 ;predator name
 2,[Cave|Under|Dark|Earth][lion|bear|gator|worm|choker]
 1,[Chthonic|Carnivorous|Slow|Deep] [Lion|Bear|Croc|Worm|Choker]
 
+;undead
+1,Number-[2d6] Attack-[1d6+6] Escape-[1d6] Hit-[1d6+7] Damage-[2d6] Endurance-[3d6] Life-[4d6]
+
 ;random undead
-1,<td class="c">1</td><td>[undead name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td>
-5,<td class="c">[1d5+1]</td><td>[undead name]s</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td>
+1,<td>[undead name]</td><td class="c">1</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
+5,<td>[undead name]s</td><td class="c">[1d5+1]</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
 
 ;undead name
 1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder]
 
+;giant
+1,Number-1 Attack-[1d6+3] Escape-[1d6] Hit-[1d6+8] Damage-[4d6] Endurance-[8d6] Life-[4d6]
+
 ;random giant
-1,<td class="c">1</td><td>[giant name]</td><td class="c">[4d6]</td><td class="c">[8d6]</td><td class="c">[4d6]</td><td class="c">[1d6+3]</td><td class="c">[1d6+8]</td><td class="c">[1d6]</td>
+1,<td>[giant name]</td><td class="c">1</td><td class="c">[1d6+3]</td><td class="c">[1d6]</td><td class="c">[1d6+8]</td><td class="c">[4d6]</td><td class="c">[8d6]</td><td class="c">[4d6]</td>
 
 ;giant name
 1,Nazarbubu the Raging
@@ -900,8 +909,11 @@ You can replace all the tables in this file with your own and make your own gene
 1,Kuppû the Cold
 1,Naḫarmuṭu the Dissolver
 
+;dragon
+1,Number-1 Attack-[1d6+2] Escape-[1d6] Hit-[1d6+9] Damage-[5d6] Endurance-[10d6] Life-[5d6]
+
 ;random dragon
-1,<td class="c">1</td><td>[dragon name]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td><td class="c">[1d6+2]</td><td class="c">[1d6+9]</td><td class="c">[1d6]</td>
+1,<td>[dragon name]</td><td class="c">1</td><td class="c">[1d6+2]</td><td class="c">[1d6]</td><td class="c">[1d6+9]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td>
 
 ;dragon name
 1,Mušḫuššhu the Serpent
@@ -941,21 +953,13 @@ You can replace all the tables in this file with your own and make your own gene
  In each niche there is a statue looking down on you. The graves of a dead civilisation.
  The deep resting places of a people that no longer survives on the surface. There are no new dead to arrive from above.
  There’s only you. As you look up, you notice movement. Ghouls.
- <p>[ghouls]
+ [ghouls]
 1,Up ahead is a bigger cavern. In it stands a hill covered in graves. An endles amount of gravestones and mausoleums.
  Amidst these graves you see movement. Somebody or something is trying to remain out of sight. Ghouls.
- <p>[ghouls]
+ [ghouls]
 
 ;ghouls
-1,<table>
-<thead>
-<tr><th>Number</th><th>Leader</th><th>Damage</th><th>Endurance</th><th>Life</th><th>Attack</th><th>Hit</th><th>Escape</th></tr>
-<tr><td class="c">[1d4+1]</td><td>[ghoul name]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td><td class="c">[1d6+6]</td><td class="c">[1d6+7]</td><td class="c">[1d6]</td></tr>
-</thead>
-<tbody>
-<tr></tr>
-</tbody>
-</table>
+1,<blockquote>[ghoul name] and followers: [undead]</blockquote>
 
 ;ghoul name
 1,Ardanānu the Phantom
@@ -974,10 +978,42 @@ You can replace all the tables in this file with your own and make your own gene
 1,This is a naga lair.
 
 ;salamander lair description
-1,This is a salamander lair.
+1,Black boulders lie in this caverns, coated with some sort of organic slime.
+ Water drips from the ceiling above, forming shallow pools below.
+ The ground is slippery.
+ And yet, there are people where that move with grace. Salamanders.
+ [salamanders]
+1,A huge cavern was dug, a subterranean church. Blue light is filtering through the haze above.
+ It cannot be daylight, and it’s not moon light. Something glows coldly, up there.
+ Huge chains dangle from ancient cranes, creaking softly.
+ Below them, the ground is black and red for rust and iron deposits.
+ Piles of wreckage, faintly iluminated. And there, humanoids with long tails and spears. Salamanders.
+ [salamanders]
+
+;salamanders
+1,<blockquote>[salamander name] and followers: [nightling]</blockquote>
+
+;salamander name
+1,Kitturru the Toad Face
+1,Bizazû the Unmoved
+1,Muṣârānu the Healer
+1,Pirinzaḫu the True
+1,Dabābu Kīnu the Honest
+
+# newts are water salamanders
 
 ;newt lair description
-1,This a newt lair.
+1,Warm waters fill these tunnels. Mist rises from the surface.
+ The constant murmur of water falling and endless echoes fill the air.
+ Orange light below the surface show humanoids with long tails moving about.
+ Some of them have spears.
+ This is a meeting ground of newts.
+ [salamanders]
+1,Ancient water-filled halls, domed arches, alcoves with orange light pointing up, reflections dancing on the water’s surface.
+ Rows of columns support ceilings. Stairs rise up and lead to benches.
+ This looks like an ancient cistern, bath or a flooded temple.
+ Except that in the water below, newts are moving about.
+ [salamanders]
 
 # girtablilu = scorpion men
 

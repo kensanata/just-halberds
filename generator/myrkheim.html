@@ -396,16 +396,17 @@ You can replace all the tables in this file with your own and make your own gene
 ;initial setup
 1,<p>Myrkheim is a realm of darkness.
  If you can find <a href="#X">The Crown of Darkness</a>, you could be the next ruler of this realm.
+ If you can unite the dwarf families, you could bring back peace and prosperity.
 
 # The map always has the same structure, for the moment.
 # Each location has either three exists, or it's a dead end with just one exit.
 #
-#                  S                 T
+#                  S                 T*
 #                    \             /
 #                      R -- G -- N
 #                    /      |      \
 #                   |       A       |
-#          X        Q __   / \   __ M       U
+#          X*       Q __   / \   __ M       U
 #            \    /      F    B      \   /
 #               P      /        \      O
 #              |      E --- D --- C      |
@@ -413,7 +414,7 @@ You can replace all the tables in this file with your own and make your own gene
 #                 H         J         I
 #                   \_ K _/   \_ L _/
 #                      |         |
-#                      W         V
+#                      W         V*
 #
 # Each location is defined by a set of variables.
 # The single letter variable we see above contains the unique name.
@@ -443,7 +444,7 @@ You can replace all the tables in this file with your own and make your own gene
 [Q@location][setup]
 [R@location][setup]
 [S@location][setup]
-[T@location][setup]
+[[newt court name]@T]
 [U@location][setup]
 [[spider city name]@V]
 [W@location][setup]
@@ -476,7 +477,7 @@ You can replace all the tables in this file with your own and make your own gene
 [Q@location][description]
 [R@location][description]
 [S@location][description]
-[T@location][description]
+[T@location][newt court]
 [U@location][description]
 [V@location][spider city]
 [W@location][description]
@@ -730,7 +731,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,The water is cloudy with a gelatinous substance full of gelatinous balls.
  Crab eggs. With every step, you have to tear through it.
  They’re surprisingly large.
- [crabs]
+[crabs]
 
 ;crabs
 1,<blockquote>[crab name]s: [nightling]</blockquote>
@@ -952,13 +953,13 @@ You can replace all the tables in this file with your own and make your own gene
  In each niche there is a statue looking down on you. The graves of a dead civilisation.
  The deep resting places of a people that no longer survives on the surface. There are no new dead to arrive from above.
  There’s only you. As you look up, you notice movement. Ghouls.
- [ghouls]
+[ghouls]
 1,Up ahead is a bigger cavern. In it stands a hill covered in graves. An endles amount of gravestones and mausoleums.
  Amidst these graves you see movement. Somebody or something is trying to remain out of sight. Ghouls.
- [ghouls]
+[ghouls]
 
 ;ghouls
-1,<blockquote>[ghoul name] and followers: [undead]</blockquote>
+1,<blockquote>[ghoul name] and their followers: [undead] Necromancy-[2d6]</blockquote>
 
 ;ghoul name
 1,Ardanānu the Phantom
@@ -981,16 +982,16 @@ You can replace all the tables in this file with your own and make your own gene
  Water drips from the ceiling above, forming shallow pools below.
  The ground is slippery.
  And yet, there are people where that move with grace. Salamanders.
- [salamanders]
+[salamanders]
 1,A huge cavern was dug, a subterranean church. Blue light is filtering through the haze above.
  It cannot be daylight, and it’s not moon light. Something glows coldly, up there.
  Huge chains dangle from ancient cranes, creaking softly.
  Below them, the ground is black and red for rust and iron deposits.
  Piles of wreckage, faintly iluminated. And there, humanoids with long tails and spears. Salamanders.
- [salamanders]
+[salamanders]
 
 ;salamanders
-1,<blockquote>[salamander name] and followers: [nightling]</blockquote>
+1,<blockquote>[salamander name] and their followers: [nightling]</blockquote>
 
 ;salamander name
 1,Kitturru the Toad Face
@@ -998,8 +999,12 @@ You can replace all the tables in this file with your own and make your own gene
 1,Muṣârānu the Healer
 1,Pirinzaḫu the True
 1,Dabābu Kīnu the Honest
+1,Šēḫu the Wind Breather
+1,Napāšu the Breath of Life
+1,Na’āšu the Wheezer
+1,Rēmu the Compassionate
 
-# newts are water salamanders
+# Newts are water salamanders; olms are cave salamanders. They all use the same name list.
 
 ;newt lair description
 1,Warm waters fill these tunnels. Mist rises from the surface.
@@ -1007,50 +1012,95 @@ You can replace all the tables in this file with your own and make your own gene
  Orange light below the surface show humanoids with long tails moving about.
  Some of them have spears.
  This is a meeting ground of newts.
- [salamanders]
+[salamanders]
 1,Ancient water-filled halls, domed arches, alcoves with orange light pointing up, reflections dancing on the water’s surface.
  Rows of columns support ceilings. Stairs rise up and lead to benches.
  This looks like an ancient cistern, bath or a flooded temple.
  Except that in the water below, newts are moving about.
- [salamanders]
+[salamanders]
+1,Huge boulders lie here, and between the boulders, the water-filled cracks go deep.
+ In the blackness below, pale creatures cling to the walls.
+ These are olms. Cave salamanders with external gills.
+ They don’t seem to be interested in coming up to the surface.
+[salamanders]
+
+;newt court name
+1,The Ten Thousand Guardians
+1,The Caverns of Silence
+1,The Benthic Court
+1,The Olm Court
+
+;newt court
+1,<h2 id="[@location]">[@[@location]]</h2>
+<p>🦎 There is a lake at the bottom of a deep pit and a wonderful light.[[realm]@to]
+ If you look down from above it looks like [[@to] gate description].
+ Tiny waterfalls drizzle into the abyss as the trail winds itself down, round and round, deeper and deeper.
+<p>From the shores of the lake, you can see that below the surface, a giant crystal shines.
+ Light spills into this world as if through a tear in the fabric of the realm.
+ It is so unreal.
+<p>This is the Olm Court.
+ They stand below the water, in long rows, holding their spears.
+ Their red external gills forming fantastic neck wreaths.
+ They are guarding their queen.
+[olms]
+<p>The power of Air is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
+ Here is where you could learn it.
+ This is also one of the places where you could leave Myrkheim on your own: the crystal leads to [@to].
+
+;realm
+1,Muspelheim
+1,Jötunheim
+1,Vanaheim
+
+;Muspelheim gate description
+1,the eye of a fire dragon, like liquid fire
+
+;Jötunheim gate description
+1,the eye of an ice queen, like glacier light
+
+;Vanaheim gate description
+1,the green eye of a forest in spring, like leaves
+
+;olms
+1,<blockquote>[salamander name] and her followers: [nightling] Air-[2d6] Water-[2d6]</blockquote>
 
 ;spider lair description
 1,A dark cave that reeks of death. Bones cover the ground, they crack underfoot.
  In the center, a pedestal on which shines a golden ring.
  The spider drops from the ceiling, web stretched across its front legs, right on top of you.
- [spider]
+[spider]
 1,A long corridor littered with the chitin of dead fire beetles.
  The wolf spider waits above the entrance, ready to chase you down.
  You can't outrun it, but a meal may slow it down long enough to reach safety.
- [spider]
+[spider]
 1,Bio-luminescent mushrooms cover the ceiling, a fascinating sight.
  The trapdoor spider pounces out of its burrow to catch the unwary.
  Once the prey has been brought in, the study woven door closes, nigh impossible to open from outside.
- [spider]
+[spider]
 1,A maze of tight squeezes. A single long thread of silk goes through: a spider's lifeline.
  Does it lead to the exit, or to its owner?
- [spider]
+[spider]
 1,A bottomless sinkhole. Webbed parachutes of silk are suspended next to the entrance.
  What could await below?
- [spiders]
+[spiders]
 1,A wide cavern crisscrossed with thin silk threads. They seem solid enough to be walked on.
  The non-sticky ones do not attract dust, they are barely visible.
- [spiders]
+[spiders]
 1,A decaying spiderweb at an intersection. Inside, the giant spider's corpse.
  Slight twitches: the parasitic wasp's larvae are ready to burst out.
- [larvae]
+[larvae]
 1,A web funnel spun on charred stone walls.
  Mummified victims are interspersed with silk sacks full of water for fire protection.
  This den won't be burnt twice.
- [spider]
+[spider]
 1,A glacial chasm crossed by a cobweb covered in hoarfrost. It's sturdy, but slippery.
  An open flame is enough to thaw the threads… And warn the ice tarantula that a prey has arrived.
- [ice spider]
+[ice spider]
 1,A water-filled cavity, too wide to be crossed in a single breath.
  Down below are water spiders hunting olms in these dark depths.
  They carry large air bubbles between their legs.
  They do not seem keen to share their oxygen tank.
- [spiders]
+[spiders]
 
 ;spiders
 1,<blockquote>Spiders: [predator]</blockquote>
@@ -1067,7 +1117,7 @@ You can replace all the tables in this file with your own and make your own gene
 ;spider city
 1,<h2 id="[@location]">[@[@location]]</h2>
 <p>Greyness filters down from above.
- The light detritus sinks to the bottom every so slowly, reflected a thousand times by dew and spider silk.
+ The detritus of light sinks to the bottom every so slowly, reflected a thousand times by dew and spider silk.
  The hollow husk of dead smell is all that remains.
 <p>The spiders that live in this skyhole are [Silver|Moon|Orb|Mirror|Glass|Ice] Phase Spiders.
  Way up, where the air is thin and the light is stronger, the boundaries between the realms starts flickering.
@@ -1080,7 +1130,7 @@ You can replace all the tables in this file with your own and make your own gene
 <p>From here, a tunnel lead to [[@location] neighbours].
 
 ;phase spiders
-1,<blockquote>[phase spider name] and followers: [predator] Planeswalk-[2d6]</blockquote>
+1,<blockquote>[phase spider name] and her followers: [predator] Planeswalk-[2d6]</blockquote>
 
 ;phase spider name
 1,Ettūtu the Spider
@@ -1104,17 +1154,17 @@ You can replace all the tables in this file with your own and make your own gene
  Beneath the Waterfall of a Thousand Tears lies the Black Pool of Pain.
  Down there is the Cavern of Bones.
  How these leviathans came here to die, nobody knows.
- At the bottom of this watery grave, with all the weight of Myrkheim above you, the boundaries between the realms is weakened.
+ In this benthic graveyard, with all the bulk of Myrkheim above you, the boundaries between the realms is weakened.
  Gravity flickers.
  The void groans.
- If you managed to bring your own air into the deep, you’ll live.
- If you know the secret of phase transitions, you can stabilize the gate.
+ If you managed to bring your own air into the deep, you’ll see the fickle slivers of the phase transition.
+ If you know the secret of planeswalking, you can stabilize the gate.
  If you have a ghoul mind, you can make the transition into the Grave of Nagabbiš.
  Here sleeps the Old Master of Myrkheim.
  Here lies his crown, Agê Uzzu, the Crown of Wrath.
  Take it and rule it.
 <blockquote>The prerequisites:
- Know how to live underwater like a newt.
+ Master <a href="#T">Air</a>.
  Master <a href="#V">Planeswalk</a>.
  Be dead inside like a ghoul.</blockquote>
 <p>A tunnels leads back to [[@location] neighbours].

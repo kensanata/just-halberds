@@ -7,10 +7,6 @@
 
 <style>
 @media screen {
-    body {
-        background: #000;
-        color: #fff;
-    }
     #noprintheader hr {
         background: green;
         border: 0;
@@ -32,7 +28,7 @@
 }
 body {
     background: #000;
-    color: #fff;
+    color: #dfd;
     font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
     font-size: 12pt;
     margin: 1em;
@@ -423,7 +419,8 @@ You can replace all the tables in this file with your own and make your own gene
  <a href="https://www.whidou.fr/">Whidou</a>
 
 ;initial setup
-1,<p>The underworld is in turmoil.
+1,<p>Myrkheim is a realm of darkness.
+ If you can find <a href="#X">The Crown of Darkness</a>, you could be the next ruler of this realm.
 
 # The map always has the same structure, for the moment.
 # Each location has either three exists, or it's a dead end with just one exit.
@@ -434,8 +431,8 @@ You can replace all the tables in this file with your own and make your own gene
 #                    /      |      \
 #                   |       A       |
 #          X        Q __   / \   __ M       U
-#            \    /      F     B      \   /
-#               P      /         \      O
+#            \    /      F    B      \   /
+#               P      /        \      O
 #              |      E --- D --- C      |
 #               \   /       |       \   /
 #                 H         J         I
@@ -473,9 +470,9 @@ You can replace all the tables in this file with your own and make your own gene
 [S@location][setup]
 [T@location][setup]
 [U@location][setup]
-[V@location][setup]
+[[spider city name]@V]
 [W@location][setup]
-[X@location][setup]
+[[myrkheim crown name]@X]
 
 # [@location] is a letter like A
 # [[location type]@[@location]_type] is [[location type]@A_type] is the location type and storing it in variable A_type.
@@ -506,11 +503,11 @@ You can replace all the tables in this file with your own and make your own gene
 [S@location][description]
 [T@location][description]
 [U@location][description]
-[V@location][description]
+[V@location][spider city]
 [W@location][description]
-[X@location][description]
+[X@location][myrkheim crown]
 
-# [@location] is a letter like A
+# [@Location] is a letter like A
 # [@[@location]] is [@A] is the name of a location like "The Caves of Spiders"
 # [@[@location]_type] is [@A_type] is the location type like "spider lair"
 # [[@[@location]_type] description] is [[@A_type] description] is [spider lair description] is the actual description
@@ -669,22 +666,24 @@ You can replace all the tables in this file with your own and make your own gene
 1,Altar
 
 ;spider lair name
-1,The Great [Web|Net]
-1,The City of [Webs|Weavers]
-1,The City Above
-1,The Field of Bones
-1,The [Web|Net] of Thousands
 1,The [Silk|Web|Net] [Spinner|Crafter|Maker|Weaver]'s [Den|Hole|Abode|Hideout|Lair]
 1,The [Silky|Webbed|Netted|Many-legged] [Trap|Pit|Chasm|Hole|Shaft]
 1,She-Who-[Waits|Hunts|Preys|Spins]-In-[The-Dark|Silk|Silence]
 1,The Silk Mummies
 1,The [World|Cave|Underworld] [Wide|Spanning|Covering] Web
 1,The Threads of [Time|Death|Silk|Agony|No Return|Hope]
-1,Arachnopolis
 1,The [Pantry|Garde manger|Graveyard|Gallows]
 1,Where Bugs Used To Roam
 1,The Lace of [Dreams|Nightmares|Silk]
 1,Mommy-Eight-Legs
+
+;spider city name
+1,The Great [Web|Net]
+1,Arachnopolis
+1,The City of [Webs|Weavers]
+1,The City Above
+1,The Field of Bones
+1,The [Web|Net] of Thousands
 
 ;goblin lair name
 1,The Great Market
@@ -970,56 +969,6 @@ You can replace all the tables in this file with your own and make your own gene
 ;shrine to Mitra description
 1,This is a Mitra shrine.
 
-;spider lair description
-1,A dark cave that reeks of death. Bones cover the ground, they crack underfoot.
- In the center, a pedestal on which shines a golden ring.
- The spider drops from the ceiling, web stretched across its front legs, right on top of you.
- [spider]
-1,A long corridor littered with the chitin of dead fire beetles.
- The wolf spider waits above the entrance, ready to chase you down.
- You can't outrun it, but a meal may slow it down long enough to reach safety.
- [spider]
-1,Bio-luminescent mushrooms cover the ceiling, a fascinating sight.
- The trapdoor spider pounces out of its burrow to catch the unwary.
- Once the prey has been brought in, the study woven door closes, nigh impossible to open from outside.
- [spider]
-1,A maze of tight squeezes. A single long thread of silk goes through: a spider's lifeline.
- Does it lead to the exit, or to its owner?
- [spider]
-1,A bottomless sinkhole. Webbed parachutes of silk are suspended next to the entrance.
- What could await below?
- [spiders]
-1,A wide cavern crisscrossed with thin silk threads. They seem solid enough to be walked on.
- The non-sticky ones do not attract dust, they are barely visible.
- [spiders]
-1,A decaying spiderweb at an intersection. Inside, the giant spider's corpse.
- Slight twitches: the parasitic wasp's larvae are ready to burst out.
- [larvae]
-1,A web funnel spun on charred stone walls.
- Mummified victims are interspersed with silk sacks full of water for fire protection.
- This den won't be burnt twice.
-nn [spider]
-1,A glacial chasm crossed by a cobweb covered in hoarfrost. It's sturdy, but slippery.
- An open flame is enough to thaw the threads… And warn the ice tarantula that a prey has arrived.
- [ice spider]
-1,A water-filled cavity, too wide to be crossed in a single breath.
- Down below are water spiders hunting olms in these dark depths.
- They carry large air bubbles between their legs.
- They do not seem keen to share their oxygen tank.
- [spiders]
-
-;spiders
-1,<blockquote>Spiders: [predator]</blockquote>
-
-;spider
-1,<blockquote>Spider: Number-1 Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]</blockquote>
-
-;ice spider
-1,<blockquote>Ice [Spider|Tarantula|Hunter]: Number-1 Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]; Ice-[2d6] to freeze the air, check Endurance to keep acting</blockquote>
-
-;larvae
-1,<blockquote>Larvae: Number-[3d6] Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+3] Damage-[1d4] Endurance-[1d6] Life-[1d6]</blockquote>
-
 ;goblin lair description
 1,This is a goblin lair.
 
@@ -1089,6 +1038,111 @@ nn [spider]
  This looks like an ancient cistern, bath or a flooded temple.
  Except that in the water below, newts are moving about.
  [salamanders]
+
+;spider lair description
+1,A dark cave that reeks of death. Bones cover the ground, they crack underfoot.
+ In the center, a pedestal on which shines a golden ring.
+ The spider drops from the ceiling, web stretched across its front legs, right on top of you.
+ [spider]
+1,A long corridor littered with the chitin of dead fire beetles.
+ The wolf spider waits above the entrance, ready to chase you down.
+ You can't outrun it, but a meal may slow it down long enough to reach safety.
+ [spider]
+1,Bio-luminescent mushrooms cover the ceiling, a fascinating sight.
+ The trapdoor spider pounces out of its burrow to catch the unwary.
+ Once the prey has been brought in, the study woven door closes, nigh impossible to open from outside.
+ [spider]
+1,A maze of tight squeezes. A single long thread of silk goes through: a spider's lifeline.
+ Does it lead to the exit, or to its owner?
+ [spider]
+1,A bottomless sinkhole. Webbed parachutes of silk are suspended next to the entrance.
+ What could await below?
+ [spiders]
+1,A wide cavern crisscrossed with thin silk threads. They seem solid enough to be walked on.
+ The non-sticky ones do not attract dust, they are barely visible.
+ [spiders]
+1,A decaying spiderweb at an intersection. Inside, the giant spider's corpse.
+ Slight twitches: the parasitic wasp's larvae are ready to burst out.
+ [larvae]
+1,A web funnel spun on charred stone walls.
+ Mummified victims are interspersed with silk sacks full of water for fire protection.
+ This den won't be burnt twice.
+ [spider]
+1,A glacial chasm crossed by a cobweb covered in hoarfrost. It's sturdy, but slippery.
+ An open flame is enough to thaw the threads… And warn the ice tarantula that a prey has arrived.
+ [ice spider]
+1,A water-filled cavity, too wide to be crossed in a single breath.
+ Down below are water spiders hunting olms in these dark depths.
+ They carry large air bubbles between their legs.
+ They do not seem keen to share their oxygen tank.
+ [spiders]
+
+;spiders
+1,<blockquote>Spiders: [predator]</blockquote>
+
+;spider
+1,<blockquote>Spider: Number-1 Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]</blockquote>
+
+;ice spider
+1,<blockquote>Ice [Spider|Tarantula|Hunter]: Number-1 Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]; Ice-[2d6] to freeze the air, check Endurance to keep acting</blockquote>
+
+;larvae
+1,<blockquote>Larvae: Number-[3d6] Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+3] Damage-[1d4] Endurance-[1d6] Life-[1d6]</blockquote>
+
+;spider city
+1,<h2 id="[@location]">[@[@location]]</h2>
+<p>Greyness filters down from above.
+ The light detritus sinks to the bottom every so slowly, reflected a thousand times by dew and spider silk.
+ The hollow husk of dead smell is all that remains.
+<p>The spiders that live in this skyhole are [Silver|Moon|Orb|Mirror|Glass|Ice] Phase Spiders.
+ Way up, where the air is thin and the light is stronger, the boundaries between the realms starts flickering.
+ The Phase Spiders have attuned to this. This is how they manage to cross over into other realms.
+ It is what gives them their name.
+[phase spiders]
+<p>The power of Planeswalk is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
+ Here is where you could learn it.
+ This is also one of the places where you could leave Myrkheim on your own: by climbing this shaft for two weeks.
+<p>From here, a tunnel lead to [[@location] neighbours].
+
+;phase spiders
+1,<blockquote>[phase spider name] and followers: [predator] Planeswalk-[2d6]</blockquote>
+
+;phase spider name
+1,Ettūtu the Spider
+1,Būnzerru the Hidden
+1,Anzūzu the Wise
+1,Ḫadālu the Tier of Knots
+1,Lummû the Dissolver
+1,Qû the Weaver
+1,Šatû the Entangler
+1,Tūya the Weaver
+
+;myrkheim crown name
+1,The Oldest Grave
+1,The Black Pool of Pain
+1,The Waterfall of a Thousand Tears
+1,The Graveyard of Leviathans
+1,The Curse of the Old One
+
+;myrkheim crown
+1,<h2 id="[@location]">[@[@location]]</h2><p>👑
+ Beneath the Waterfall of a Thousand Tears lies the Black Pool of Pain.
+ Down there is the Cavern of Bones.
+ How these leviathans came here to die, nobody knows.
+ At the bottom of this watery grave, with all the weight of Myrkheim above you, the boundaries between the realms is weakened.
+ Gravity flickers.
+ The void groans.
+ If you managed to bring your own air into the deep, you’ll live.
+ If you know the secret of phase transitions, you can stabilize the gate.
+ If you have a ghoul mind, you can make the transition into the Grave of Nagabbiš.
+ Here sleeps the Old Master of Myrkheim.
+ Here lies his crown, Agê Uzzu, the Crown of Wrath.
+ Take it and rule it.
+<blockquote>The prerequisites:
+ Know how to live underwater like a newt.
+ Master <a href="#V">Planeswalk</a>.
+ Be dead inside like a ghoul.</blockquote>
+<p>A tunnels leads back to [[@location] neighbours].
 
 # girtablilu = scorpion men
 

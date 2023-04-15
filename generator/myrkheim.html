@@ -319,30 +319,6 @@ function linked(data) {
   return data;
 }
 
-function paper(data) {
-  let html = "";
-  let n;
-  data.split("\n").forEach(row => {
-    let m;
-    if (row.match(/^\s*#/)) {
-      // Comment
-    } else if (row.startsWith(";")) {
-      // Table
-      if (html) html += "</table>\n";
-      html += "<table>\n";
-      html += `<tr><th>Roll</th><th>${row.substring(1)}</th></tr>\n`;
-      n = 1;
-      // Row
-    } else if ((m = row.match(/^(\d+),(.*)/))) {
-      let from = n;
-      let to = n + (Number(m[1]) - 1);
-      n = to + 1;
-      html += `<tr><td>${from == to ? from : from + "-" + to}</td><td>${m[2]}</td></tr>\n`;
-    }
-  });
-  return html;
-}
-
 function show(t) {
   generate((data) => parse(data).generate(t)
   + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`);
@@ -362,7 +338,6 @@ function generate(f) {
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
   <button type="button" onclick="generate((data) => menu(data))">List tables</button>
   <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
-  <button type="button" onclick="generate((data) => paper(data))">Printable tables</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>

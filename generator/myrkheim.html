@@ -13,18 +13,43 @@
         height: 1px;
         margin: 0.25em 0em 1.5em -10em;
     }
+    address ul {
+        display: block;
+        padding: 0;
+    }
+    address li {
+        display: inline;
+    }
+    address li:first-child::before {
+        content: "Authors: ";
+    }
+    address li::before {
+        content: ", ";
+    }
 }
 @media print {
     body {
         background: #fff;
         color: #000;
+        font-size: 10pt;
     }
-    #noprintheader hr {
+    #Z, #map {
         display: none;
     }
     #noprintheader {
         display: none;
     }
+    a, a:visited {
+        color: #000;
+        font-style: italic;
+    }
+    address ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    address a::after {
+      content: " <" attr(href) ">";
+  }
 }
 body {
     background: #000;
@@ -465,9 +490,14 @@ You can replace all the tables in this file with your own and make your own gene
 [footer]
 
 ;footer
-1,Authors:
- <a href="https://alexschroeder.ch/">Alex Schroeder</a>,
- <a href="https://www.whidou.fr/">Whidou</a>
+1,<footer>
+<address>
+<ul>
+<li><a href="https://alexschroeder.ch/">Alex Schroeder</a>
+<li><a href="https://www.whidou.fr/">Whidou</a>
+</ul>
+</address>
+</footer>
 
 ;initial setup
 1,<p>Myrkheim is a realm of darkness.

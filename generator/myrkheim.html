@@ -35,6 +35,18 @@ body {
     margin-left: clamp(1ex, 5%, 4em);
     hyphens: auto;
 }
+line, circle {
+    stroke: chartreuse;
+}
+text {
+    fill: chartreuse;
+    text-anchor: middle;
+    dominant-baseline: central;
+    font-size: 8pt;
+}
+circle {
+    fill: black;
+}
 blockquote {
     margin-left: 0;
     padding-left: 1ex;
@@ -42,7 +54,7 @@ blockquote {
 }
 #target {
     white-space: pre-wrap;
-    max-width: 45em;
+    max-width: 800px;
 }
 #links {
     padding: 0;
@@ -281,7 +293,7 @@ function parse(data) {
   // Roll dice.
   function roll(num, sides = 6, plus = 0) {
     let total = 0;
-    for (var i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {
       total += Math.floor(Math.random() * sides + 1);
     }
     return total + plus;
@@ -289,6 +301,69 @@ function parse(data) {
 
   // To do anything, call generate().
   return h;
+}
+
+function create_map(svg) {
+  let svgNs = 'http://www.w3.org/2000/svg';
+  let mx = 400;
+  let my = 200;
+  let mr = 50;
+  // compute all the points
+  let points = [];
+  for (let ring = 1; ring <= 2; ring++) {
+    for (let i = 0; i < 6 * ring; i++) {
+      points.push({x: mx + mr * ring * Math.sin(i * Math.PI / 3 / ring),
+                     y: my + mr * ring * Math.cos(i * Math.PI / 3 / ring)});
+    }
+  }
+  for (let i = 0; i < 6; i++) {
+    points.push({x: mx + mr * 3 * Math.sin((i + 0.5) * Math.PI / 3),
+                 y: my + mr * 3 * Math.cos((i + 0.5) * Math.PI / 3)});
+  }
+  // draw a line using SVG
+  let f = (x1, y1, x2, y2) => {
+    let l = svg.ownerDocument.createElementNS(svgNs, 'line');
+    l.setAttribute('x1', x1);
+    l.setAttribute('y1', y1);
+    l.setAttribute('x2', x2);
+    l.setAttribute('y2', y2);
+    svg.appendChild(l);
+  };
+  // inner ring
+  for (let last = points[5], p = points[0], i = 0; i < 6; last = p, p = points[++i]) {
+    f(last.x, last.y, p.x, p.y);
+  }
+  // outer ring
+  for (let last = points[17], p = points[6], i = 6; i < 18; last = p, p = points[++i]) {
+    f(last.x, last.y, p.x, p.y);
+  }
+  // inner spokes
+  for (let i = 0, p1 = points[0], p2 = points[6]; i < 6; i++, p1 = points[i], p2 = points[6 + 2*i]) {
+    f(p1.x, p1.y, p2.x, p2.y);
+  }
+  // outer spokes
+  for (let i = 0, p1 = points[7], p2 = points[18]; i < 6; i++, p1 = points[7+2*i], p2 = points[18 + i]) {
+    f(p1.x, p1.y, p2.x, p2.y);
+  }
+  // draw a circle using SVG
+  f = (cx, cy, i) => {
+    let code = String.fromCharCode(65 + i);
+    let a = svg.ownerDocument.createElementNS(svgNs, 'a');
+    a.setAttribute('href', '#' + code);
+    svg.appendChild(a);
+    let c = svg.ownerDocument.createElementNS(svgNs, 'circle');
+    c.setAttribute('cx', cx);
+    c.setAttribute('cy', cy);
+    c.setAttribute('r', '10');
+    a.appendChild(c);
+    let t = svg.ownerDocument.createElementNS(svgNs, 'text');
+    t.setAttribute('x', cx);
+    t.setAttribute('y', cy);
+    t.textContent = code;
+    a.appendChild(t);
+  };
+  // circles
+  for (let i = 0; i < points.length; i++) { f(points[i].x, points[i].y, i) };
 }
 
 function slug(s) {
@@ -327,13 +402,14 @@ function show(t) {
 function generate(f) {
   const data = document.getElementById('data').textContent;
   document.getElementById('target').innerHTML = f(data);
+  create_map(document.getElementById('map'));
 }
 
 </script>
 </head>
 <body>
 
-<h1 id="noprintheader">Generator</h1>
+<h1>Myrkheim</h1>
 <div id="noprintheader">
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
   <button type="button" onclick="generate((data) => menu(data))">List tables</button>
@@ -382,7 +458,7 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;start
 1,[initial setup]
-[map setup]
+[map setup][svg map]
 [tunnels random encounters]
 [map description]
 <hr>
@@ -496,51 +572,58 @@ You can replace all the tables in this file with your own and make your own gene
 ;A neighbours
 1,[F@1][G@2][B@3][neighbour links]
 ;B neighbours
-1,[A@1][M@2][C@3][neighbour links]
+1,[A@1][I@2][C@3][neighbour links]
 ;C neighbours
-1,[D@1][B@2][I@3][neighbour links]
+1,[D@1][B@2][K@3][neighbour links]
 ;D neighbours
-1,[E@1][C@2][J@3][neighbour links]
+1,[E@1][M@2][C@3][neighbour links]
 ;E neighbours
-1,[H@1][F@2][D@3][neighbour links]
+1,[O@1][F@2][D@3][neighbour links]
 ;F neighbours
-1,[E@1][Q@2][A@3][neighbour links]
+1,[Q@1][E@2][A@3][neighbour links]
 ;G neighbours
-1,[A@1][R@2][N@3][neighbour links]
+1,[R@1][A@2][H@3][neighbour links]
 ;H neighbours
-1,[P@1][E@2][K@3][neighbour links]
+1,[G@1][S@2][I@3][neighbour links]
 ;I neighbours
-1,[L@1][C@2][O@3][neighbour links]
+1,[B@1][H@2][J@3][neighbour links]
 ;J neighbours
-1,[K@1][D@2][L@3][neighbour links]
+1,[I@1][K@2][T@3][neighbour links]
 ;K neighbours
-1,[W@1][H@2][J@3][neighbour links]
+1,[C@1][L@2][J@3][neighbour links]
 ;L neighbours
-1,[V@1][J@2][I@3][neighbour links]
+1,[M@1][U@2][K@3][neighbour links]
 ;M neighbours
-1,[B@1][N@2][O@3][neighbour links]
+1,[N@1][D@2][L@3][neighbour links]
 ;N neighbours
-1,[G@1][T@2][M@3][neighbour links]
+1,[O@1][V@2][M@3][neighbour links]
 ;O neighbours
-1,[M@1][U@2][I@3][neighbour links]
+1,[P@1][N@2][E@3][neighbour links]
 ;P neighbours
-1,[X@1][Q@2][H@3][neighbour links]
+1,[W@1][Q@2][O@3][neighbour links]
 ;Q neighbours
-1,[P@1][R@2][F@3][neighbour links]
+1,[P@1][F@2][R@3][neighbour links]
 ;R neighbours
-1,[Q@1][S@2][G@3][neighbour links]
+1,[Q@1][X@2][G@3][neighbour links]
 ;S neighbours
-1,<a href="#R">[@R]</a>
+1,<a href="#H">[@R]</a>
 ;T neighbours
-1,<a href="#N">[@N]</a>
+1,<a href="#J">[@J]</a>
 ;U neighbours
-1,<a href="#O">[@O]</a>
-;V neighbours
 1,<a href="#L">[@L]</a>
+;V neighbours
+1,<a href="#N">[@N]</a>
 ;W neighbours
-1,<a href="#K">[@K]</a>
-;X neighbours
 1,<a href="#P">[@P]</a>
+;X neighbours
+1,<a href="#R">[@R]</a>
+
+;svg map
+1,<h2 id="Z">Map</h2>
+<svg id="map"
+  viewBox="0 0 800 400"
+  xmlns="http://www.w3.org/2000/svg">
+</svg>
 
 ;neighbour links
 1,<a href="#[@1]">[@[@1]]</a>, <a href="#[@2]">[@[@2]]</a> and <a href="#[@3]">[@[@3]]</a>
@@ -940,10 +1023,108 @@ You can replace all the tables in this file with your own and make your own gene
 1,This is an Orcus shrine.
 
 ;shrine to Hecate description
-1,This is a Hecate shrine.
+1,A dark cavern opens before you.
+ A fortress lies here, defended by long iron needles embedded into the walls.
+ All approaches are guarded by malevolent red-glowing eyes.
+<p>This is a dwarf fortress.
+ A grim high priest of Hecate protects all travellers with a bitter grin.
+[Eyes@special][dwarves]
+<p>They have hell hounds to support them.
+<blockquote>Hell hounds: [predator] Fire-[2d6]</blockquote>
+<p>What they value most is the safety of travellers.
+<blockquote>[@name] says:
+ “The roads must be safe.
+ Spiders must be eliminated.
+ The wheel turns.
+ Their time has come.”
+</blockquote>
 
 ;shrine to Mitra description
-1,This is a Mitra shrine.
+1,A great cavern opens up.
+ In its middle rises a fortress of massive walls.
+ Embrasures point in all directions, the openings glowing little small eyes.
+ Behind the walls the flickering light of fire promises comfort and warmth.
+<p>This is a dwarf fortress.
+ A high priest of Mitra serves the safekeeper of all oaths and as a keeper of the flame.
+[Fire@special][dwarves]
+<p>What they value most is honesty.
+<blockquote>[@name] says:
+ “Down here, everybody lies.
+ These lies corrode the ties that bind us.
+ The fabric of our society is frail.
+ Lies fester in our souls.
+ Nobody trusts their neighbour anymore.”
+</blockquote>
+
+# needs @special set
+;dwarves
+1,<blockquote>[[dwarf name]@name][@name] and their followers: [nightling] [Brewing|Bureaucracy|Building]-[2d6] [Contruction|Craft|Culture]-[2d6] [Discipline|Diplomacy]-[2d6] [Singing|First Aid]-[2d6] [@special]-[2d6]</blockquote>
+
+;dwarf name
+1,Askur
+1,Balin
+1,Bjarni
+1,Brandur
+1,Draupnir
+1,Dwalin
+1,Fundar
+1,Gudmundur
+1,Gylvi
+1,Haugar
+1,Heptin
+1,Hor
+1,Hugin
+1,Jórmundur
+1,Kilvari
+1,Leivur
+1,Loftur
+1,Mjothar
+1,Nár
+1,Njálur
+1,Nói
+1,Norar
+1,Nori
+1,Nyrin
+1,Ógmundur
+1,Óssur
+1,Regin
+1,Sórin
+1,Suthri
+1,Tróndur
+1,Vindalf
+1,Virfi
+1,Aldís
+1,Ása
+1,Ásvór
+1,Bís
+1,Brá
+1,Dís
+1,Drós
+1,Eina
+1,Fís
+1,Gunna
+1,Hjalma
+1,Hulda
+1,Ida
+1,Ingrún
+1,Jórunn
+1,Kára
+1,Lín
+1,Naina
+1,Nís
+1,Oddní
+1,Revna
+1,Rúna
+1,Salvór
+1,Signí
+1,Sigrun
+1,Sólvá
+1,Tórunn
+1,Unn
+1,Urth
+1,Várdís
+1,Vígdís
+1,Yrsa
 
 ;goblin lair description
 1,This is a goblin lair.
@@ -1032,20 +1213,23 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;newt court
 1,<h2 id="[@location]">[@[@location]]</h2>
-<p>🦎 There is a lake at the bottom of a deep pit and a wonderful light.[[realm]@to]
+<p>There is a lake at the bottom of a deep pit and within it beats a heart of light.[[realm]@to]
  If you look down from above it looks like [[@to] gate description].
  Tiny waterfalls drizzle into the abyss as the trail winds itself down, round and round, deeper and deeper.
-<p>From the shores of the lake, you can see that below the surface, a giant crystal shines.
+<p>[[@to] throne description].
  Light spills into this world as if through a tear in the fabric of the realm.
  It is so unreal.
 <p>This is the Olm Court.
  They stand below the water, in long rows, holding their spears.
- Their red external gills forming fantastic neck wreaths.
+ Their red gills forming fantastic neck wreaths.
  They are guarding their queen.
 [olms]
 <p>The power of Air is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
  Here is where you could learn it.
- This is also one of the places where you could leave Myrkheim on your own: the crystal leads to [@to].
+ This is also one of the places where you could leave Myrkheim on your own: The Olm Gate leads to [@to].
+
+;olms
+1,<blockquote>[salamander name] and her followers: [nightling] Healing-[2d6] Air-[2d6] Water-[2d6]</blockquote>
 
 ;realm
 1,Muspelheim
@@ -1061,8 +1245,14 @@ You can replace all the tables in this file with your own and make your own gene
 ;Vanaheim gate description
 1,the green eye of a forest in spring, like leaves
 
-;olms
-1,<blockquote>[salamander name] and her followers: [nightling] Air-[2d6] Water-[2d6]</blockquote>
+;Muspelheim throne description
+1,In the middle of the lake glows an orange throne, pulsating slowly, like the illuminated heart of a giant
+
+;Jötunheim throne description
+1,In the middle of the lake shines an iceberg throne, bright white at the top and brooding midnight down blow
+
+;Vanaheim throne description
+1,In the middle of the lake grows a tumor of wood, leaves, flowers, reeds, root, illuminated by glowing bugs and worms
 
 ;spider lair description
 1,A dark cave that reeks of death. Bones cover the ground, they crack underfoot.
@@ -1126,11 +1316,11 @@ You can replace all the tables in this file with your own and make your own gene
 [phase spiders]
 <p>The power of Planeswalk is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
  Here is where you could learn it.
- This is also one of the places where you could leave Myrkheim on your own: by climbing this shaft for two weeks.
+ This is also one of the places where you could leave Myrkheim on your own: by climbing this shaft for two weeks you can reach [Midgard|Vanaheim].
 <p>From here, a tunnel lead to [[@location] neighbours].
 
 ;phase spiders
-1,<blockquote>[phase spider name] and her followers: [predator] Planeswalk-[2d6]</blockquote>
+1,<blockquote>[phase spider name] and her followers: [predator] Eyes-[2d6] Planeswalk-[2d6] Spying-[2d6]</blockquote>
 
 ;phase spider name
 1,Ettūtu the Spider
@@ -1150,8 +1340,8 @@ You can replace all the tables in this file with your own and make your own gene
 1,The Curse of the Old One
 
 ;myrkheim crown
-1,<h2 id="[@location]">[@[@location]]</h2><p>👑
- Beneath the Waterfall of a Thousand Tears lies the Black Pool of Pain.
+1,<h2 id="[@location]">[@[@location]]</h2>
+<p>Beneath the Waterfall of a Thousand Tears lies the Black Pool of Pain.
  Down there is the Cavern of Bones.
  How these leviathans came here to die, nobody knows.
  In this benthic graveyard, with all the bulk of Myrkheim above you, the boundaries between the realms is weakened.

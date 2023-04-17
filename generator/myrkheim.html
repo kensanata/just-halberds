@@ -942,7 +942,7 @@ You can replace all the tables in this file with your own and make your own gene
 <tr><td class="c">2</td>[random dragon]</tr>
 <tr><td class="c">3</td>[random undead]</tr>
 <tr><td class="c">4</td>[random predator]</tr>
-<tr><td class="c">5</td>[random nightling]</tr>
+<tr><td class="c">5</td>[random dwarf]</tr>
 <tr><td class="c">6</td>[random nightling]</tr>
 <tr><td class="c">7</td><td colspan="8">Known characters (see below)</td></tr>
 <tr><td class="c">8</td>[random myconids]</tr>
@@ -973,6 +973,9 @@ You can replace all the tables in this file with your own and make your own gene
 ;nightling name
 1,[Night|Earth|Cave|Under|Stone|Fire|Tar|Chthonic|Nimble|Myrk][ Hunter| Goblin| Nomad|dwarf|jäger| Stalker|ling| Knive]s
 
+;random dwarf
+1,<td>[dwarf name] the dwarf and company</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
+
 ;random myconids
 1,<td>[myconid name]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
@@ -982,9 +985,9 @@ You can replace all the tables in this file with your own and make your own gene
 1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Myconids|Fungus People]
 
 ;random snakelings
-1,<td>[snakeling name]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
+1,<td>Snakeling [snakeling name] and some of the [[snakeling people name]@snakeling people][@snakeling people]</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
-;snakeling name
+;snakeling people name
 1,[Black|White|Coral|Crowned|Fierce|Ground|Stone|Indigo|Orange|Mud|Blood] [Asp|Viper|Adder|Anaconda|Snake|Cobra|Krait] People
 
 ;predator
@@ -1034,6 +1037,7 @@ You can replace all the tables in this file with your own and make your own gene
 ;dragon name
 1,Mušḫuššhu the Serpent
 1,Šēzuzu the Fierce
+1,Ušumgallu the Great
 1,Ušumgallatu the Monarch
 1,Akālu the Hungry
 1,Belû the Extinguisher
@@ -1044,7 +1048,58 @@ You can replace all the tables in this file with your own and make your own gene
 1,Šitpû the Flare
 
 ;shrine to Set description
-1,This is a Set shrine.
+1,[set 1]<p>[set 2][Charm@special][[dwarves|snakelings]]
+<p>They serve death and revenge.
+<blockquote>[@name] says:
+ “May your enemies rot in hell.
+ May your competitors die young.
+ May the plague eat their children.”
+</blockquote>
+
+;set 1
+1,Braziers filled with green fire illuminate a pyramid.
+ Stairs lead up to a seven-headed snake statue.
+ This is Set.
+1,A great stone serpent encircles a temple pyramid of Set.
+ A strange liquid forms a kind of moat.
+ If you touch it, the [corrosive|caustic] slime deals [1d4] Damage.
+ To enter, you must cross the serpent bridge and pass beneath the serpent’s head.
+ A constant flow of slime drips from the open mouth, repleneshing the moat.
+<blockquote>Make a Dexterity check to avoid [1d4] Damage.</blockquote>
+<p>The courtyard is illuminated by green vapours rising from a great brazier.
+
+;set 2
+1,At the foot of the pyramid are statues of snakelings, one after another.
+ An endless procession of heroes and dignitaries long forgotten.
+1,Two great stone chimaeras stare each other down at the foot of the pyramid.
+ Their conflict long forgotten, the symbolism of their [lion|horse|monkey] bodies and their [human|eagle|donkey|bird|dragon] heads lost.
+
+;snakelings
+2,<blockquote>[[snakeling name]@name][@name] the snakeling and some of the [@snakeling people]: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
+1,<blockquote>[[snakeling name]@name][@name] the snakeling and some of the [snakeling people name]: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
+
+;snakeling name
+1,Mušgallu the Serpent
+1,Ašartu the Desert
+1,Ašnugallum
+1,Bašmu the Poisonous
+1,Burubalûm the Great
+1,Gappu the Winged
+1,Guṣṣu the Snake
+1,Ḫabābu the Hiss
+1,Imtu the Venomous
+1,Kanānu the Coiled
+1,Kitpulu the Wrestler
+1,Kuppû the Eel
+1,Kusīpu the Snake
+1,Nazzizu the Hiss
+1,Nišku the Biter
+1,Palḫu the Terror
+1,Ṣallamtu the Black
+1,Ṣarṣaru the Giant
+1,Šamāru the Sorcerer
+1,Šammānum the Snake
+1,Urnu the Snake
 
 ;shrine to Pazuzu description
 1,This is a Pazuzu shrine.
@@ -1088,7 +1143,7 @@ You can replace all the tables in this file with your own and make your own gene
 
 # needs @special set
 ;dwarves
-1,<blockquote>[[dwarf name]@name][@name] and their followers: [nightling] [Brewing|Bureaucracy|Building]-[2d6] [Contruction|Craft|Culture]-[2d6] [Discipline|Diplomacy]-[2d6] [Singing|First Aid]-[2d6] [@special]-[2d6]</blockquote>
+1,<blockquote>[[dwarf name]@name][@name] the dwarf and their followers: [nightling] [Brewing|Bureaucracy|Building]-[2d6] [Contruction|Craft|Culture]-[2d6] [Discipline|Diplomacy]-[2d6] [Singing|First Aid]-[2d6] [@special]-[2d6]</blockquote>
 
 ;dwarf name
 1,Askur

@@ -555,7 +555,7 @@ You can replace all the tables in this file with your own and make your own gene
 [[newt court name]@T]
 [U@location][setup]
 [[spider city name]@V]
-[W@location][setup]
+[[ghoul city name]@W]
 [[myrkheim crown name]@X]
 
 # [@location] is a letter like A
@@ -588,7 +588,7 @@ You can replace all the tables in this file with your own and make your own gene
 [T@location][newt court]
 [U@location][description]
 [V@location][spider city]
-[W@location][description]
+[W@location][ghoul city]
 [X@location][myrkheim crown]
 
 # [@Location] is a letter like A
@@ -1233,7 +1233,7 @@ You can replace all the tables in this file with your own and make your own gene
 [ghouls]
 
 ;ghouls
-1,<blockquote>[ghoul name] and their followers: [undead] Necromancy-[2d6]</blockquote>
+1,<blockquote>[[ghoul name]@name][@name] and their followers: [undead] Necromancy-[2d6]</blockquote>
 
 ;ghoul name
 1,Ardanānu the Phantom
@@ -1244,6 +1244,30 @@ You can replace all the tables in this file with your own and make your own gene
 1,Mâtu the Killer
 1,Miqittu the Carcass Eater
 1,Naḫāru the Withered
+
+;ghoul city name
+1,The Eternal City
+1,The Resting Place of Kings
+1,The Graveyard of the Ancients
+1,The Last Resting Place
+1,The End of Life
+1,Eternal Darkness
+
+;ghoul city
+1,<h2 id="[@location]">[@[@location]]</h2>
+<p>The entrance to this tomb was blown open, its ancient seals ripped apart.
+ Beyond it lies cold despair and death. All light dims. The walls are closing in.
+ As you descend into the necropolis, the number of dry husks along the walls are piled higher and higher.
+<p>Past the [Cavern of Bones|Pit of Skulls] lies the [Hall of the King|Throne Room of Death].
+[ghouls]
+<p>An undead army of thousands could be raised, here.
+<blockquote>[@name] says: “If you want to live forever, you must let go of everything you love.
+ Let go of love, of joy, of warmth.
+ The embrance of eternity is cold.
+ I can teach you.”</blockquote>
+<p>The power of Necromancy is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
+ Here is where you could learn it.
+<p>From here, a tunnel lead to [[@location] neighbours].
 
 ;mushroom lair description
 1,This is a myconid lair
@@ -1320,6 +1344,7 @@ You can replace all the tables in this file with your own and make your own gene
 <p>The power of Air is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
  Here is where you could learn it.
  This is also one of the places where you could leave Myrkheim on your own: The Olm Gate leads to [@to].
+<p>From here, a tunnel lead to [[@location] neighbours].
 
 ;olms
 1,<blockquote>[salamander name] and her followers: [nightling] Healing-[2d6] Air-[2d6] Water-[2d6]</blockquote>
@@ -1449,7 +1474,7 @@ You can replace all the tables in this file with your own and make your own gene
 <blockquote>The prerequisites:
  Master <a href="#T">Air</a>.
  Master <a href="#V">Planeswalk</a>.
- Be dead inside like a ghoul.</blockquote>
+ Master <a href="#W">Necromancy</a>.</blockquote>
 <p>A tunnels leads back to [[@location] neighbours].
 
 # girtablilu = scorpion men

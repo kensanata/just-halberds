@@ -34,7 +34,7 @@
         color: #000;
         font-size: 10pt;
     }
-    #Z, #map {
+    #Z, svg {
         display: none;
     }
     #noprintheader {
@@ -49,14 +49,27 @@
         list-style-type: none;
     }
     address a::after {
-      content: " <" attr(href) ">";
-  }
+        content: " <" attr(href) ">";
+    }
+    table#encounters th:first-child + th + th {
+        display: none;
+    }
+    table#encounters td:first-child + td,
+    table#encounters td:first-child + td + td {
+        display: inline;
+    }
+    table#encounters td:first-child + td + td::before {
+        content: "​(";
+    }
+    table#encounters td:first-child + td + td::after {
+        content: ")";
+    }
 }
 
 body {
     background: #000;
     color: #dfd;
-    font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
+    font-family: "Iosevka Etoile", Iosevka, "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
     font-size: 12pt;
     margin: 1em;
     margin-left: clamp(1ex, 5%, 4em);
@@ -111,9 +124,11 @@ a:hover {
     text-decoration: underline;
 }
 
-#map {
-  transform-origin: center;
-  animation: spin 600s linear infinite;
+@media screen {
+    #map {
+        transform-origin: center;
+        animation: spin 600s linear infinite;
+    }
 }
 
 @keyframes spin {
@@ -532,6 +547,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,<p>Myrkheim is a realm of darkness.
  If you can find <a href="#X">The Crown of Darkness</a>, you could be the next ruler of this realm.
  If you can unite the dwarf families, you could bring back peace and prosperity.
+ If you can help the nagas to restore life and stem the tide of undeath, you could find strong allies for your own struggles elsewhere.
 <p>The stats are for <a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>, where you start with a fully formed character, or <a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>, where you start with no talents and are expected to work your way up, gaining a point every year.
  Think of it as some sort of <em>Fantasy Traveller</em> with attributes usually in the 2–12 range.
 
@@ -582,7 +598,7 @@ You can replace all the tables in this file with your own and make your own gene
 [R@location][setup]
 [S@location][setup]
 [[newt court name]@T]
-[U@location][setup]
+[[naga lair@U_type][[[@U_type] name]@U]
 [[spider city name]@V]
 [[ghoul city name]@W]
 [[myrkheim crown name]@X]
@@ -854,16 +870,16 @@ You can replace all the tables in this file with your own and make your own gene
  Did it rain or does it always flow through these tunnels?
  You’re knee-deep in muddy water. It’s cold.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The tunnels are flooded. Perhaps you though you could walk, but you cannot.
  Others have faced similar problems over the years. There are old boats to be found.
  Ancient traditions maintain them. You can row through these tunnels.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,Everything is under water. Movement is slow. If you slip, you might drown. You move carefully.
  If only you could see the ground.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 
 ;eel tunnels
 1,There are eels to be found, here.
@@ -914,23 +930,23 @@ You can replace all the tables in this file with your own and make your own gene
  You tie yourselves to the walls when you sleep.
  Small rings have been used for this purpose by a thousand travellers before you.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The passage winds and twists, the walls coming closer and closer.
  At last, you squeeze sideways through narrow passages, the weight of the rocks preventing you from taking a deep breath.
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The passages have been dug by goblins and dwarves.
  First, you stoop. Then you crawl.
  On your ellbows and belly, sliding between wet stones, pulling bags on ropes after you, trusting the signs, praying that you never get stuck.
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The passage here is a cracks between boulders. Safe passages have been marked by ancient carvings.
  Three scratches, a humanoid may pass. Avoid the ones with the wavey line and circle: those passages require gills.
  The cracks between boulders go deep. Sometimes you can’t see the bottom. Sometimes you see a thousand skulls.
  Ancient burial grounds of troglodytes? Or discard piles for giant cave owls.
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,Again and again, there are walls to climb.
  The existing holes have been used for stakes and wedges by thousands of travellers before you.
  Each one carefully removing the metal spikes when the last one had gone. They are too valuable to leave behind.
-<p>Roll on the <a href="#Y">random encounter table for tunnels</a>.
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 
 ;worm tunnels
 1,There are worms to be found, here.
@@ -955,8 +971,11 @@ You can replace all the tables in this file with your own and make your own gene
 1,The warp is howling in these tunnels.
 
 ;tunnels random encounters
-1,<h2 id="Y">Random Tunnel Encounters</h2>
+1,<h2 id="random">Random Tunnel Encounters</h2>
 <p>Monster stats: Roll 2d6 ≤ attributes for checks.
+ Note that monsters don’t use attribute + talent for checks like player characters do.
+ <em>Special</em> is an extra attribute, possibly magical.
+ The exact effects are to be negotiated.
  <em>Numbers</em> is the number of creatures encountered.
  Check <em>Attack</em> to see whether they want to fight.
  If not, check <em>Escape</em> to see if they want to retreat.
@@ -966,9 +985,9 @@ You can replace all the tables in this file with your own and make your own gene
  If they are hit, <em>Endurance</em> is how much damage they can take and stay conscious,
  as well as the number of attacks they can make.
  <em>Life</em> is how much damage they can recover from. If it runs out, they die.
-<table>
+<table id="encounters">
 <thead>
-<tr><th class="c">2d6</th><th>Name</th><th title="Number">Num.</th><th title="Attack">Att.</th><th title="Escape">Esc.</th><th>Hit</th><th title="Damage">Dam.</th><th title="Endurance">End.</th><th>Life</th></tr>
+<tr><th class="c">2d6</th><th>Name</th><th>Special</th><th title="Number">Num.</th><th title="Attack">Att.</th><th title="Escape">Esc.</th><th>Hit</th><th title="Damage">Dam.</th><th title="Endurance">End.</th><th>Life</th></tr>
 </thead>
 <tbody>
 <tr><td class="c">2</td>[random dragon]</tr>
@@ -984,7 +1003,6 @@ You can replace all the tables in this file with your own and make your own gene
 <tr><td class="c">12</td>[random giant]</tr>
 </tbody>
 </table>
-<p>A 2 is always a dragon, a 12 is always a giant.</p>
 <p>More dwarf names: [dwarf name], [dwarf name], [dwarf name], [dwarf name], [dwarf name], [dwarf name], [dwarf name], [dwarf name].
 <p>More snakeling names: [snakeling name], [snakeling name], [snakeling name], [snakeling name], [snakeling name].
 <h2 id="known">Known characters</h2>
@@ -1003,34 +1021,31 @@ You can replace all the tables in this file with your own and make your own gene
 1,Number-[2d6] Attack-[1d6+4] Escape-[1d6+3] Hit-[1d6+5] Damage-[2d6] Endurance-[1d6] Life-[1d6]
 
 ;random nightling
-1,<td>[nightling name] (nightlings: [Sneaking|Running|Distract]-[2d6])</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
+1,<td>[nightling name], nightlings</td><td>[Sneaking|Running|Distract]-[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;nightling name
 1,[Night|Earth|Cave|Under|Stone|Fire|Tar|Chthonic|Nimble|Myrk][ Hunter| Goblin| Nomad|dwarf|jäger| Stalker|ling| Knive]s
 
 ;random dwarf
-1,<td>[dwarf name] and company (dwarves: [Crafting|Singing|Construction]-[2d6])</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
+1,<td>[dwarf name] and other dwarves</td><td>[Crafting|Singing|Construction]-[2d6]</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;random myconids
-1,<td>[myconid name] (myconids: Charm-[2d6])</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
+1,<td>[myconid name], myconids</td><td>Charm-[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;myconid name
-1,[Red|Blue|Death|Scaly|Club] [Cap|Horn|Tooth] [Myconids|Fungus People]
-1,[Toad|Fly|Panther] [Myconids|Fungus People]
-1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Myconids|Fungus People]
+1,[Red|Blue|Death|Scaly|Club] [Caps|Horns|Toothers]
+1,[Toad|Fly|Panther] [Shrooms|Fungoids]
+1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Shrooms|Fungoids]
 
 ;random snakelings
-1,<td>[snakeling name] and some of the [[snakeling people name]@snakeling people][@snakeling people] (snakelings: [Charm|Shapeshift|Sleep]-[2d6])</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
-
-;snakeling people name
-1,[Black|White|Coral|Crowned|Fierce|Ground|Stone|Indigo|Orange|Mud|Blood] [Asp|Viper|Adder|Anaconda|Snake|Cobra|Krait] People
+1,<td>[snakeling name] and other snakelings</td><td>[Charm|Shapeshift|Sleep]-[2d6]</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;predator
 1,Number-[2d6] Attack-[1d6+5] Escape-[1d6+2] Hit-[1d6+6] Damage-[2d6] Endurance-[3d6] Life-[2d6]
 
 ;random predator
-1,<td>[predator name] (predator: [Sneaking|Tactics]-[2d6])</td><td class="c">1</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
-5,<td>[predator name]s (predators: [Sneaking|Tactics]-[2d6])</td><td class="c">[1d5+1]</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
+1,<td>[predator name], predator</td><td>[Sneaking|Tactics]-[2d6]</td><td class="c">1</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
+5,<td>[predator name]s, predators</td><td>[Sneaking|Tactics]-[2d6]</td><td class="c">[1d5+1]</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
 
 ;predator name
 2,[Cave|Under|Dark|Earth][lion|bear|gator|worm|choker]
@@ -1040,8 +1055,8 @@ You can replace all the tables in this file with your own and make your own gene
 1,Number-[2d6] Attack-[1d6+6] Escape-[1d6] Hit-[1d6+7] Damage-[2d6] Endurance-[3d6] Life-[4d6]
 
 ;random undead
-1,<td>[undead name] (undead: Necromancy-[2d6])</td><td class="c">1</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
-5,<td>[undead name]s (undead: Necromancy-[2d6])</td><td class="c">[1d5+1]</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
+1,<td>[undead name], undead</td><td>Necromancy-[2d6]</td><td class="c">1</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
+5,<td>[undead name]s, undead</td><td>Necromancy-[2d6]</td><td class="c">[1d5+1]</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
 
 ;undead name
 1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder]
@@ -1050,7 +1065,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,Number-1 Attack-[1d6+3] Escape-[1d6] Hit-[1d6+8] Damage-[4d6] Endurance-[8d6] Life-[4d6]
 
 ;random giant
-1,<td>[giant name] (giant: [Fire|Earth]-[2d6])</td><td class="c">1</td><td class="c">[1d6+3]</td><td class="c">[1d6]</td><td class="c">[1d6+8]</td><td class="c">[4d6]</td><td class="c">[8d6]</td><td class="c">[4d6]</td>
+1,<td>[giant name], giant</td><td>[Fire|Earth]-[2d6]</td><td class="c">1</td><td class="c">[1d6+3]</td><td class="c">[1d6]</td><td class="c">[1d6+8]</td><td class="c">[4d6]</td><td class="c">[8d6]</td><td class="c">[4d6]</td>
 
 ;giant name
 1,Nazarbubu the Raging
@@ -1067,8 +1082,8 @@ You can replace all the tables in this file with your own and make your own gene
 1,Number-1 Attack-[1d6+2] Escape-[1d6] Hit-[1d6+9] Damage-[5d6] Endurance-[10d6] Life-[5d6]
 
 ;random dragon
-1,<td>[fire dragon name] (dragon: Fire-[2d6])</td><td class="c">1</td><td class="c">[1d6+2]</td><td class="c">[1d6]</td><td class="c">[1d6+9]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td>
-1,<td>[ice dragon name] (dragon: Cold-[2d6])</td><td class="c">1</td><td class="c">[1d6+2]</td><td class="c">[1d6]</td><td class="c">[1d6+9]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td>
+1,<td>[fire dragon name], dragon</td><td>Fire-[2d6]</td><td class="c">1</td><td class="c">[1d6+2]</td><td class="c">[1d6]</td><td class="c">[1d6+9]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td>
+1,<td>[ice dragon name], dragon</td><td>Cold-[2d6]</td><td class="c">1</td><td class="c">[1d6+2]</td><td class="c">[1d6]</td><td class="c">[1d6+9]</td><td class="c">[5d6]</td><td class="c">[10d6]</td><td class="c">[5d6]</td>
 
 ;fire dragon name
 1,Gīru the Flame
@@ -1113,8 +1128,7 @@ You can replace all the tables in this file with your own and make your own gene
  Their conflict long forgotten, the symbolism of their [lion|horse|monkey] bodies and their [human|eagle|donkey|bird|dragon] heads lost.
 
 ;snakelings
-2,<blockquote>[[snakeling name]@name][@name] the snakeling and some of the [@snakeling people]: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
-1,<blockquote>[[snakeling name]@name][@name] the snakeling and some of the [snakeling people name]: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
+1,<blockquote>[[snakeling name]@name][@name] and other snakelings: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
 
 ;snakeling name
 1,Mušgallu the Serpent
@@ -1303,7 +1317,26 @@ You can replace all the tables in this file with your own and make your own gene
 1,This is a myconid lair
 
 ;naga lair description
-1,This is a naga lair.
+1,The air is warm and there’s light up ahead.
+ Soon, glyphs wriggle on the stone walls spilling lemon light.
+<p>The cavern is a vertical garden.
+ Yellow globes shine warmly.
+ Water drips merrily over mossy terrasses.
+ Red and blue fishes are swimming in ponds.
+ Giant Green Ferns and bushes with white flowers crowd the space.
+<p>In the middle of it all stands a wooden temple with open sides.
+ Snake guardians made of stone stand guard.
+[nagas]
+<p>Big snake people are reading scrolls, playing a flute or meditating.
+ The intricate patterns on their skin seem to flow as if blown by the softest breeze.
+ Their living halberts are never far from their hands.
+ Their unblinking eyes are yellow and blue, with vertical pupils. These are snake eyes.
+<blockquote>[@name] says: “The nagas have kept the rivers and forests spirits at bay in Midgard.
+ But now it is us that need your help.
+ How do we restore life in Myrkheim?”</blockquote>
+
+;nagas
+1,<blockquote>[[snakeling name]@name][@name] and other nagas: [undead] [Sleep|Charm]-[2d6] [Culture|Literacy]-[2d6] Earth-[2d6] Plants-[2d6]</blockquote>
 
 ;salamander lair description
 1,Black boulders lie in this caverns, coated with some sort of organic slime.

@@ -132,9 +132,6 @@ a:hover {
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
   to {
     transform: rotate(360deg);
   }
@@ -598,7 +595,7 @@ You can replace all the tables in this file with your own and make your own gene
 [R@location][setup]
 [S@location][setup]
 [[newt court name]@T]
-[[naga lair@U_type][[[@U_type] name]@U]
+[naga lair@U_type][[[@U_type] name]@U]
 [[spider city name]@V]
 [[ghoul city name]@W]
 [[myrkheim crown name]@X]
@@ -1308,7 +1305,9 @@ You can replace all the tables in this file with your own and make your own gene
 <blockquote>[@name] says: “If you want to live forever, you must let go of everything you love.
  Let go of love, of joy, of warmth.
  The embrance of eternity is cold.
- I can teach you.”</blockquote>
+ I can teach you.
+ Before I do, however, you must burn down the festering cancer of <a href="#U">[@U]</a>.
+ Nothing can remain immortal and pure while the nagas keep meddling.”</blockquote>
 <p>The power of Necromancy is one of the skills one needs to master to gain <a href="#X">The Crown of Darkness</a>.
  Here is where you could learn it.
 <p>From here, a tunnel lead to [[@location] neighbours].
@@ -1333,7 +1332,8 @@ You can replace all the tables in this file with your own and make your own gene
  Their unblinking eyes are yellow and blue, with vertical pupils. These are snake eyes.
 <blockquote>[@name] says: “The nagas have kept the rivers and forests spirits at bay in Midgard.
  But now it is us that need your help.
- How do we restore life in Myrkheim?”</blockquote>
+ We need to destroy the evil haunting <a href="#W">[@W]</a>.
+ The tide of death must be stopped.”</blockquote>
 
 ;nagas
 1,<blockquote>[[snakeling name]@name][@name] and other nagas: [undead] [Sleep|Charm]-[2d6] [Culture|Literacy]-[2d6] Earth-[2d6] Plants-[2d6]</blockquote>

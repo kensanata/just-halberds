@@ -370,6 +370,7 @@ function parse(data) {
 }
 
 function create_map(svg) {
+  if (!svg) return;
   let svgNs = 'http://www.w3.org/2000/svg';
   let mx = 400;
   let my = 200;

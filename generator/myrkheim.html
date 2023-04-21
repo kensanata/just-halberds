@@ -127,7 +127,7 @@ a:hover {
 @media screen {
     #map {
         transform-origin: center;
-        animation: spin 600s linear infinite;
+        animation: 600s linear infinite spin;
     }
 }
 
@@ -706,7 +706,7 @@ You can replace all the tables in this file with your own and make your own gene
 ;location type
 1,tunnels
 1,shrine to [power]
-1,[lair]
+2,[lair]
 
 ;power
 1,Set
@@ -840,11 +840,30 @@ You can replace all the tables in this file with your own and make your own gene
 1,The Great Rot
 1,The Poisoned Lands
 
+# all of these end in “name” so that we don’t get repeats
+
 ;naga lair name
-1,The Palace of Delight
-1,The Castle of Dreams
-1,The Baths of Sloth
-1,The Hatchery of Dreams
+1,The [naga lair 1 name] of [naga lair 2 name]
+
+;naga lair 1 name
+1,Baths
+1,Castle
+1,Citadel
+1,Hatchery
+1,Library
+1,Palace
+1,Refuge
+1,Well
+
+;naga lair 2 name
+1,Delight
+1,Dreams
+1,Paradise
+1,Peace
+1,Wisdom
+1,Knowledge
+1,the Deep
+1,Souls
 
 ;newt lair name
 1,The Water Palace
@@ -1056,7 +1075,7 @@ You can replace all the tables in this file with your own and make your own gene
 5,<td>[undead name]s, undead</td><td>Necromancy-[2d6]</td><td class="c">[1d5+1]</td><td class="c">[1d6+6]</td><td class="c">[1d6]</td><td class="c">[1d6+7]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[4d6]</td>
 
 ;undead name
-1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder]
+1,[Bone|Meat|Flesh|Soul|Life][breaker|biter|breaker|sucker|grinder|rot]
 
 ;giant
 1,Number-1 Attack-[1d6+3] Escape-[1d6] Hit-[1d6+8] Damage-[4d6] Endurance-[8d6] Life-[4d6]
@@ -1318,25 +1337,56 @@ You can replace all the tables in this file with your own and make your own gene
 ;naga lair description
 1,The air is warm and there’s light up ahead.
  Soon, glyphs wriggle on the stone walls spilling lemon light.
-<p>The cavern is a vertical garden.
+[naga garden]
+[naga building]
+[nagas]
+[naga activity]
+[naga quote]
+
+;nagas
+1,<blockquote>[[snakeling name]@name][@name] and other nagas: [undead] [Sleep|Charm]-[2d6] [Culture|Literacy]-[2d6] Earth-[2d6] Plants-[2d6]</blockquote>
+
+;naga garden
+1,<p>The cavern is a vertical garden.
  Yellow globes shine warmly.
  Water drips merrily over mossy terrasses.
  Red and blue fishes are swimming in ponds.
  Giant Green Ferns and bushes with white flowers crowd the space.
-<p>In the middle of it all stands a wooden temple with open sides.
+1,<p>There is a cavern with a small waterfall and a little lake.
+ The air is warm and smells of sweet flowers.
+ Yellow lines shine warm light from above.
+ Around the lake grow bushes bearing heavy flowers.
+ A short stone bridge leads to an island.
+
+;naga building
+1,<p>In the middle of it all stands a wooden temple with open sides.
  Snake guardians made of stone stand guard.
-[nagas]
-<p>Big snake people are reading scrolls, playing a flute or meditating.
+1,<p>In the center stands a large wooden temple with multiple terraces.
+ Snake guardians made of stone stand guard all the corners and all the entrances.
+
+;naga activity
+1,<p>Big snake people are reading scrolls, playing a flute or meditating.
  The intricate patterns on their skin seem to flow as if blown by the softest breeze.
  Their living halberts are never far from their hands.
  Their unblinking eyes are yellow and blue, with vertical pupils. These are snake eyes.
-<blockquote>[@name] says: “The nagas have kept the rivers and forests spirits at bay in Midgard.
+
+;naga quote
+1,<blockquote>[@name] says: “The nagas have kept the rivers and forests spirits at bay in Midgard.
  But now it is us that need your help.
  We need to destroy the evil haunting <a href="#W">[@W]</a>.
  The tide of death must be stopped.”</blockquote>
-
-;nagas
-1,<blockquote>[[snakeling name]@name][@name] and other nagas: [undead] [Sleep|Charm]-[2d6] [Culture|Literacy]-[2d6] Earth-[2d6] Plants-[2d6]</blockquote>
+1,<blockquote>[@name] says: “An old enemy was buried and sealed in <a href="#W">[@W]</a> ages ago
+ but the seal has been broken and our enemy walks these tunnels again.
+ And so it is us whe have to bear this burden.
+ To fight undeath.
+ Will you join us?
+ There is no glory to had, no treasure to be found.
+ But we are the guardians of life and they are the king of death.”</blockquote>
+1,<blockquote>[@name] says: “An evil is spreading in the dark.
+ It is the promise of eternal undeath.
+ It corruption is everywhere, but it’s started <a href="#W">[@W]</a>.
+ We need help clearing it out.
+ Will you be the ones to turn the tide?”</blockquote>
 
 ;salamander lair description
 1,Black boulders lie in this caverns, coated with some sort of organic slime.

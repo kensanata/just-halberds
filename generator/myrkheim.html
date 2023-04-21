@@ -448,6 +448,8 @@ function menu(data) {
 }
 
 function linked(data) {
+  data = data.replaceAll("<", "&lt;");
+  data = data.replaceAll(">", "&gt;");
   data = data.replaceAll(/^;(.*)/mg,
                          (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,

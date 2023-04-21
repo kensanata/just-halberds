@@ -880,10 +880,26 @@ You can replace all the tables in this file with your own and make your own gene
 1,Souls
 
 ;newt lair name
-1,The Water Palace
-1,The Cold Palace
-1,The Watery Grave
-1,The Sunken City
+1,The [newt lair 1 name] [newt lair 2 name]
+
+;newt lair 1 name
+1,Water
+1,Cold
+1,Watery
+1,Sunken
+1,Dark
+1,Slow
+1,Ancient
+1,Old
+
+;newt lair 2 name
+1,Palace
+1,Grave
+1,City
+1,Cave
+1,Cistern
+1,Reservoir
+1,Lake
 
 ;salamander lair name
 1,The Quiet Palace
@@ -1416,7 +1432,7 @@ You can replace all the tables in this file with your own and make your own gene
 [salamanders]
 
 ;salamanders
-1,<blockquote>[salamander name] and their followers: [nightling]</blockquote>
+1,<blockquote>[[salamander name]@name][@name] and their followers: [nightling]</blockquote>
 
 ;salamander name
 1,Kitturru the Toad Face
@@ -1432,22 +1448,48 @@ You can replace all the tables in this file with your own and make your own gene
 # Newts are water salamanders; olms are cave salamanders. They all use the same name list.
 
 ;newt lair description
+1,[newt hall]
+[salamanders]
+[newt activity]
+[newt quote]
+
+;newt hall
 1,Warm waters fill these tunnels. Mist rises from the surface.
  The constant murmur of water falling and endless echoes fill the air.
  Orange light below the surface show humanoids with long tails moving about.
  Some of them have spears.
  This is a meeting ground of newts.
-[salamanders]
 1,Ancient water-filled halls, domed arches, alcoves with orange light pointing up, reflections dancing on the water’s surface.
  Rows of columns support ceilings. Stairs rise up and lead to benches.
  This looks like an ancient cistern, bath or a flooded temple.
  Except that in the water below, newts are moving about.
-[salamanders]
 1,Huge boulders lie here, and between the boulders, the water-filled cracks go deep.
  In the blackness below, pale creatures cling to the walls.
  These are olms. Cave salamanders with external gills.
  They don’t seem to be interested in coming up to the surface.
-[salamanders]
+
+;newt activity
+1,A group of newts stands around a boulder.
+ On it stands a brazier filled with liquid orange light.
+1,Some newts are standing in a stone circle.
+ Drops of orange light float gently from monolith to monolith.
+1,A few newts stand motionless, unblinking, staring over the water.
+ The waves lapping at their feet dance an orange glow.
+
+;newt quote
+1,<blockquote>[@name] says: “Did you know that all these tunnels were once filled with water?
+ Who drained them all?
+ Who built the dams and drains that destroyed our world?
+ It was the dwarves who dug and built their maggot hives.”</blockquote>
+1,<blockquote>[@name] says: “We were the first to settle Myrkheim.
+ We were here before the dwarves came.
+ We will still be here when the dwarves are gone.
+ This is our realm.”</blockquote>
+1,<blockquote>[@name] says: “What is a newt?
+ To have two legs to walk with makes us newts.
+ To have two arms to work with makes us newts.
+ To lay our eggs in the water were we once came from makes us newts.
+ Who are you?”</blockquote>
 
 ;newt court name
 1,The Ten Thousand Guardians
@@ -1474,7 +1516,7 @@ You can replace all the tables in this file with your own and make your own gene
 <p>From here, a tunnel lead to [[@location] neighbours].
 
 ;olms
-1,<blockquote>[salamander name] and her followers: [nightling] Healing-[2d6] Air-[2d6] Water-[2d6]</blockquote>
+1,<blockquote>[[salamander name]@name][@name] and her followers: [nightling] Healing-[2d6] Air-[2d6] Water-[2d6]</blockquote>
 
 ;realm
 1,Muspelheim

@@ -510,7 +510,7 @@ You can replace all the tables in this file with your own and make your own gene
 </div>
 
 <script id="data" type="text/x-generator">
-# The strange type here ↑ means that it won't get executed and no HTML escaping
+# The strange type here ↑ means that it won’t get executed and no HTML escaping
 # is required in here!
 
 # Data
@@ -563,7 +563,7 @@ You can replace all the tables in this file with your own and make your own gene
  Think of it as some sort of <em>Fantasy Traveller</em> with attributes usually in the 2–12 range.
 
 # The map always has the same structure, for the moment.
-# Each location has either three exists, or it's a dead end with just one exit.
+# Each location has either three exists, or it’s a dead end with just one exit.
 #
 #                  S                 T*
 #                    \             /
@@ -585,7 +585,7 @@ You can replace all the tables in this file with your own and make your own gene
 # The single letter + "_type" is the location type.
 # This is done so that the name and content matches the locatino type.
 #
-# Note that names are unique! There must be plenty of alternatives or you'll
+# Note that names are unique! There must be plenty of alternatives or you’ll
 # get recursion "Recursion deeper than 20" errors in the log.
 
 ;map setup
@@ -803,9 +803,10 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;shrine to Mitra name
 1,The Great Underground Flame of Mitra
-1,The [shrine type] of the [Eternal Flame|Glorious Bull|Promises Kept|Loyalty Unwavering|Oath Bound]
+1,The [shrine type] of the [Eternal Flame|Glorious Bull|Oath Bound]
 1,The [shrine type] of the Protector of all [Oaths Sworn|Promises Made|Ties|Frienship|Family|Friends]
 1,The [shrine type] of the Lady of [All Bulls|Underground Loyalty|All Bonding]
+1,The [shrine type] of [Loyalty Unwavering|Promises Kept]
 1,The [shrine type] of [Candles|Fires]
 1,The [shrine type] of [Copper|Brass|Bronze] Braziers
 
@@ -814,7 +815,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,Altar
 
 ;spider lair name
-1,The [Silk|Web|Net] [Spinner|Crafter|Maker|Weaver]'s [Den|Hole|Abode|Hideout|Lair]
+1,The [Silk|Web|Net] [Spinner|Crafter|Maker|Weaver]’s [Den|Hole|Abode|Hideout|Lair]
 1,The [Silky|Webbed|Netted|Many-legged] [Trap|Pit|Chasm|Hole|Shaft]
 1,She-Who-[Waits|Hunts|Preys|Spins]-In-[The-Dark|Silk|Silence]
 1,The Silk Mummies
@@ -1147,15 +1148,13 @@ You can replace all the tables in this file with your own and make your own gene
 1,Belû the Extinguisher
 
 ;shrine to Set description
-1,[set 1]<p>[set 2][Charm@special][[dwarves|snakelings]]
-<p>They serve death and revenge.
-<blockquote>[@name] says:
- “May your enemies rot in hell.
- May your competitors die young.
- May the plague eat their children.”
-</blockquote>
+1,[set shrine]
+[set decoration]
+[Charm@special][[dwarves|snakelings]]
+[set activity]
+[set quote]
 
-;set 1
+;set shrine
 1,Braziers filled with green fire illuminate a pyramid.
  Stairs lead up to a seven-headed snake statue.
  This is Set.
@@ -1167,11 +1166,21 @@ You can replace all the tables in this file with your own and make your own gene
 <blockquote>Make a Dexterity check to avoid [1d4] Damage.</blockquote>
 <p>The courtyard is illuminated by green vapours rising from a great brazier.
 
-;set 2
-1,At the foot of the pyramid are statues of snakelings, one after another.
+;set decoration
+1,<p>At the foot of the pyramid are statues of snakelings, one after another.
  An endless procession of heroes and dignitaries long forgotten.
-1,Two great stone chimaeras stare each other down at the foot of the pyramid.
+1,<p>Two great stone chimaeras stare each other down at the foot of the pyramid.
  Their conflict long forgotten, the symbolism of their [lion|horse|monkey] bodies and their [human|eagle|donkey|bird|dragon] heads lost.
+
+;set activity
+1,<p>They serve death and revenge.
+
+;set quote
+1,<blockquote>[@name] says:
+ “May your enemies rot in hell.
+ May your competitors die young.
+ May the plague eat their children.”
+</blockquote>
 
 ;snakelings
 1,<blockquote>[[snakeling name]@name][@name] and other snakelings: [nightling] Brewing-[2d6] Charm-[2d6]</blockquote>
@@ -1200,22 +1209,68 @@ You can replace all the tables in this file with your own and make your own gene
 1,Urnu the Snake
 
 ;shrine to Pazuzu description
-1,This is a Pazuzu shrine.
+1,[pazuzu shrine]
+[pazuzu people]
+[[Eyes|Spying]@special][dwarves]
+[pazuzu support]
+[pazuzu activity]
+[pazuzu quote]
+
+;pazuzu shrine
+1,<p>In this cavern stands a giant statue of a creature with the beak of a vulture, claws for hands and feet, large insect eyes and four large wings on its back.
+ This is Pazuzu, an ancient demon lord associated with the plague.
+
+;pazuzu people
+1,<p>At it’s feet stands a dwarf fortress.
+ Strong walls to protect against anybody on foot, long spikes to protect against anybody on wings.
+ Light burns in watch towers.
+
+;pazuzu support
+1,<p>If there’s ever a problem, the dwarves have trained war bears with strange beaks to protect them.
+<blockquote>[Beak|Vulture|Eagle|Hawk] Bears: [predator]</blockquote>
+
+;pazuzu activity
+1,<p>The dwarves are here to spread the dominion of their demon lord.
+
+;pazuzu quote
+1,<blockquote>[@name] says:
+ “These lands used to belong to newts and toads.
+ We are draining the swamp.
+ We bring clarity of purpose.
+ We are going to make Myrkheim great again.”</blockquote>
 
 ;shrine to Orcus description
 1,This is an Orcus shrine.
 
 ;shrine to Hecate description
+1,[hecate shrine]
+[hecate people]
+[Eyes@special][dwarves]
+[hecate support]
+[hecate activity]
+[hecate quote]
+
+;hecate shrine
 1,A dark cavern opens before you.
  A fortress lies here, defended by long iron needles embedded into the walls.
  All approaches are guarded by malevolent red-glowing eyes.
-<p>This is a dwarf fortress.
+
+;hecate people
+1,<p>This is a dwarf fortress.
  A grim high priest of Hecate protects all travellers with a bitter grin.
-[Eyes@special][dwarves]
-<p>They have hell hounds to support them.
+
+;hecate support
+1,[hell hound support]
+
+;hell hound support
+1,<p>They have hell hounds to support them.
 <blockquote>Hell hounds: [predator] Fire-[2d6]</blockquote>
-<p>What they value most is the safety of travellers.
-<blockquote>[@name] says:
+
+;hecate activity
+1,<p>What they value most is the safety of travellers.
+
+;hecate quote
+1,<blockquote>[@name] says:
  “The roads must be safe.
  Spiders must be eliminated.
  The wheel turns.
@@ -1223,15 +1278,31 @@ You can replace all the tables in this file with your own and make your own gene
 </blockquote>
 
 ;shrine to Mitra description
+1,[mitra shrine]
+[mitra people]
+[Fire@special][dwarves]
+[mitra support]
+[mitra activity]
+[mitra quote]
+
+;mitra shrine
 1,A great cavern opens up.
  In its middle rises a fortress of massive walls.
  Embrasures point in all directions, the openings glowing little small eyes.
  Behind the walls the flickering light of fire promises comfort and warmth.
-<p>This is a dwarf fortress.
+
+;mitra people
+1,<p>This is a dwarf fortress.
  A high priest of Mitra serves the safekeeper of all oaths and as a keeper of the flame.
-[Fire@special][dwarves]
-<p>What they value most is honesty.
-<blockquote>[@name] says:
+
+;mitra support
+1,[hell hound support]
+ 
+;mitra activity
+1,<p>What they value most is honesty.
+
+;mitra quote
+1,<blockquote>[@name] says:
  “Down here, everybody lies.
  These lies corrode the ties that bind us.
  The fabric of our society is frail.
@@ -1324,7 +1395,8 @@ You can replace all the tables in this file with your own and make your own gene
  There is a rift in the earth up ahead and they have built their rickety bridges across it.
  They have set up nets every now and then, just in case.
  Narrow stairs climb up and down the walls.
-
+1,
+  
 ;goblin homes
 1,<p>The walls are full of small cave entrances.
  They are all connected by ropes, stairs and bridges.
@@ -1608,13 +1680,13 @@ You can replace all the tables in this file with your own and make your own gene
 [spider]
 1,A long corridor littered with the chitin of dead fire beetles.
  The wolf spider waits above the entrance, ready to chase you down.
- You can't outrun it, but a meal may slow it down long enough to reach safety.
+ You can’t outrun it, but a meal may slow it down long enough to reach safety.
 [spider]
 1,Bio-luminescent mushrooms cover the ceiling, a fascinating sight.
  The trapdoor spider pounces out of its burrow to catch the unwary.
  Once the prey has been brought in, the study woven door closes, nigh impossible to open from outside.
 [spider]
-1,A maze of tight squeezes. A single long thread of silk goes through: a spider's lifeline.
+1,A maze of tight squeezes. A single long thread of silk goes through: a spider’s lifeline.
  Does it lead to the exit, or to its owner?
 [spider]
 1,A bottomless sinkhole. Webbed parachutes of silk are suspended next to the entrance.
@@ -1623,14 +1695,14 @@ You can replace all the tables in this file with your own and make your own gene
 1,A wide cavern crisscrossed with thin silk threads. They seem solid enough to be walked on.
  The non-sticky ones do not attract dust, they are barely visible.
 [spiders]
-1,A decaying spiderweb at an intersection. Inside, the giant spider's corpse.
- Slight twitches: the parasitic wasp's larvae are ready to burst out.
+1,A decaying spiderweb at an intersection. Inside, the giant spider’s corpse.
+ Slight twitches: the parasitic wasp’s larvae are ready to burst out.
 [larvae]
 1,A web funnel spun on charred stone walls.
  Mummified victims are interspersed with silk sacks full of water for fire protection.
- This den won't be burnt twice.
+ This den won’t be burnt twice.
 [spider]
-1,A glacial chasm crossed by a cobweb covered in hoarfrost. It's sturdy, but slippery.
+1,A glacial chasm crossed by a cobweb covered in hoarfrost. It’s sturdy, but slippery.
  An open flame is enough to thaw the threads… And warn the ice tarantula that a prey has arrived.
 [ice spider]
 1,A water-filled cavity, too wide to be crossed in a single breath.
@@ -1689,17 +1761,17 @@ You can replace all the tables in this file with your own and make your own gene
 ;myrkheim crown
 1,<h2 id="[@location]">[@[@location]]</h2>
 <p>Beneath the Waterfall of a Thousand Tears lies the Black Pool of Pain.
- Down there is the Cavern of Bones.
+ Down there is the water-filled Cavern of Bones.
  How these leviathans came here to die, nobody knows.
  In this benthic graveyard, with all the bulk of Myrkheim above you, the boundaries between the realms is weakened.
  Gravity flickers.
  The void groans.
- If you managed to bring your own air into the deep, you’ll see the fickle slivers of the phase transition.
+<p>If you managed to bring your own air into the deep, you’ll see the fickle slivers of the phase transition.
  If you know the secret of planeswalking, you can stabilize the gate.
  If you have a ghoul mind, you can make the transition into the Grave of Nagabbiš.
- Here sleeps the Old Master of Myrkheim.
+<p>Here sleeps the Old Master of Myrkheim.
  Here lies his crown, Agê Uzzu, the Crown of Wrath.
- Take it and rule it.
+ Take it and rule Myrkheim.
 <blockquote>The prerequisites:
  Master <a href="#T">Air</a>.
  Master <a href="#V">Planeswalk</a>.

@@ -936,26 +936,28 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;tunnels description
 1,[[@[@location]_condition] tunnels description]
+<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 
 ;wet tunnels description
 1,There’s is water from above somewhere.
  Did it rain or does it always flow through these tunnels?
  You’re knee-deep in muddy water. It’s cold.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The tunnels are flooded. Perhaps you though you could walk, but you cannot.
  Others have faced similar problems over the years. There are old boats to be found.
  Ancient traditions maintain them. You can row through these tunnels.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,Everything is under water. Movement is slow. If you slip, you might drown. You move carefully.
  If only you could see the ground.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 
 ;eel tunnels
-1,There are eels to be found, here.
-1,There are lampreys to be found, here.
+1,There are silver eels to be found, here.
+<blockquote>Silver eels: [nightling]</blockquote>
+1,The electrical eels hate it when you come too close.
+<blockquote>Electrical eels: [nightling] Lightning-[2d6]</blockquote>
+1,The lampreys are waiting for warm blood.
+<blockquote>Lampreys: [nightling] Sneaking-[2d6]</blockquote>
 
 ;crab tunnels
 1,The rocks rising out of the water are full of small animals, waving their claws at you.
@@ -1002,26 +1004,37 @@ You can replace all the tables in this file with your own and make your own gene
  You tie yourselves to the walls when you sleep.
  Small rings have been used for this purpose by a thousand travellers before you.
 <p>[[@[@location]_monster] tunnels]
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
 1,The passage winds and twists, the walls coming closer and closer.
  At last, you squeeze sideways through narrow passages, the weight of the rocks preventing you from taking a deep breath.
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
+<p>[[@[@location]_monster] tunnels]
 1,The passages have been dug by goblins and dwarves.
  First, you stoop. Then you crawl.
  On your ellbows and belly, sliding between wet stones, pulling bags on ropes after you, trusting the signs, praying that you never get stuck.
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
-1,The passage here is a cracks between boulders. Safe passages have been marked by ancient carvings.
+<p>[[@[@location]_monster] tunnels]
+1,The passage here is a crack between boulders. Safe passages have been marked by ancient carvings.
  Three scratches, a humanoid may pass. Avoid the ones with the wavey line and circle: those passages require gills.
  The cracks between boulders go deep. Sometimes you can’t see the bottom. Sometimes you see a thousand skulls.
  Ancient burial grounds of troglodytes? Or discard piles for giant cave owls.
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
+<p>[[@[@location]_monster] tunnels]
 1,Again and again, there are walls to climb.
  The existing holes have been used for stakes and wedges by thousands of travellers before you.
  Each one carefully removing the metal spikes when the last one had gone. They are too valuable to leave behind.
-<p>Roll on the <a href="#random">random encounter table for tunnels</a>.
+<p>[[@[@location]_monster] tunnels]
 
 ;worm tunnels
-1,There are worms to be found, here.
+1,There are terrible annelids to be found, here.
+ They hide in the shadows, laying in wait, cold and lifeless.
+ But vibrations, movement, sound, warm breath – it wakes them up.
+[worm attack]
+[worms]
+
+;worm attack
+1,They sneak up on you as you rest.
+1,The fall from above as you pass beneath them.
+1,They attach themselves as you crawl past them.
+
+;worms
+1,<blockquote>[Rock|Stone|Blood|Bore|Flesh] [Worms|Maggots|Leeches]: [nightling] Sneaking-[2d6]</blockquote>
 
 ;spider tunnels
 1,You crush chitinous husks and thin bones beneath your feet.
@@ -1032,6 +1045,7 @@ You can replace all the tables in this file with your own and make your own gene
 
 ;undead tunnels
 1,There are undead to be found, here.
+[ghouls]
 
 ;human tunnels
 1,There are feral humans to be found, here.
@@ -1115,7 +1129,7 @@ You can replace all the tables in this file with your own and make your own gene
 5,<td>[predator name]s, predators</td><td>[Sneaking|Tactics]-[2d6]</td><td class="c">[1d5+1]</td><td class="c">[1d6+5]</td><td class="c">[1d6+2]</td><td class="c">[1d6+6]</td><td class="c">[2d6]</td><td class="c">[3d6]</td><td class="c">[2d6]</td>
 
 ;predator name
-2,[Cave|Under|Dark|Earth][lion|bear|gator|worm|choker]
+2,[Cave|Under|Dark|Earth] [Lion|Bear|Gator|Worm|Choker]
 1,[Chthonic|Carnivorous|Slow|Deep] [Lion|Bear|Croc|Worm|Choker]
 
 ;undead

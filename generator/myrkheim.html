@@ -727,7 +727,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,spider lair
 1,goblin lair
 1,ghoul lair
-1,mushroom lair
+1,myconid lair
 1,naga lair
 1,salamander lair
 1,newt lair
@@ -842,14 +842,30 @@ You can replace all the tables in this file with your own and make your own gene
 1,The Maggots of the Earth
 1,The Cemetery of Despair
 
-;mushroom lair name
+;myconid lair name
 1,The Garden of Darkness
-1,The Sunless Forest
 1,The Dreamlands
-1,The Great Rot
-1,The Poisoned Lands
+7,The [myconid lair 1 name] [myconid lair 2 name]
 
 # all of these end in “name” so that we don’t get repeats
+
+;myconid lair 1 name
+1,Great
+1,Terrible
+1,Poisoned
+1,Decaying
+1,Sunless
+1,Sulphur
+1,Methane
+
+;myconid lair 2 name
+1,Bog
+1,Rot
+1,Swamp
+1,Garden
+1,Forest
+1,Goo
+1,Land
 
 ;naga lair name
 1,The [naga lair 1 name] of [naga lair 2 name]
@@ -1071,12 +1087,7 @@ You can replace all the tables in this file with your own and make your own gene
 1,<td>[dwarf name] and other dwarves</td><td>[Crafting|Singing|Construction]-[2d6]</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;random myconids
-1,<td>[myconid name], myconids</td><td>Charm-[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
-
-;myconid name
-1,[Red|Blue|Death|Scaly|Club] [Caps|Horns|Toothers]
-1,[Toad|Fly|Panther] [Shrooms|Fungoids]
-1,[Honey|Sulphur|Indigo|Slimy Lead|Luscious] [Shrooms|Fungoids]
+1,<td>[myconid name] and other myconids</td><td>Charm-[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
 
 ;random snakelings
 1,<td>[snakeling name] and other snakelings</td><td>[Charm|Shapeshift|Sleep]-[2d6]</td><td class="c">[2d6]</td><td class="c">[1d6+4]</td><td class="c">[1d6+3]</td><td class="c">[1d6+5]</td><td class="c">[2d6]</td><td class="c">[1d6]</td><td class="c">[1d6]</td>
@@ -1543,8 +1554,83 @@ You can replace all the tables in this file with your own and make your own gene
  Here is where you could learn it.
 <p>From here, a tunnel lead to [[@location] neighbours].
 
-;mushroom lair description
-1,This is a myconid lair
+;myconid lair description
+1,[myconid cave]
+[myconid homes]
+[myconids]
+[myconid activity]
+[myconid quote]
+
+;myconid cave
+1,The stench of rot is hard to miss.
+ This cavern lies at the bottom of one of rifts in the earth.
+ All the dead and dying, all the corpses and all the garbage, where does it all go?
+ It falls and falls and then it splatters on these rocks and starts to decompose.
+1,The stench is mind numbing.
+ This is one of the caverns at end of a long chimney.
+ All the sewage, all the garbage, it runs down the walls, it thickens, it drops, it keeps on flowing.
+ Forever downwards, collecting tributaries of more refuse.
+1,The air is fit for retching.
+ The refuse of all the creatures living in the bowels of Myrkheim collects here.
+ It’s a fermenting swamp of dross, dregs and scum.
+
+;myconid homes
+1,<p>Amidst this apocalyptic landscape stand giant mushrooms, their mycelium suffusing the viscous mud.
+ In fact, some of these are ambulatory myconids, mushroom people.
+1,<p>Along the walls are smaller caves, and from these protective hollows the myconids are watching.
+ These are mushroom people.
+ Their feet rest in the mud.
+1,<p>This goo swamp of decaying material has islands, and on this islands stand congregations of myconids.
+ The mushroom people are staring up into the darkness as if awaiting more gifts from above.
+
+;myconids
+1,<blockquote>[[myconid name]@name][@name] and their followers: [nightling] Charm-[2d6] Healing-[2d6] Sleep-[2d6]</blockquote>
+
+;myconid name
+1,Puṭūru the Mushroom
+1,Qatû the Ender
+1,Diliptu the Restless
+1,Dulpu the Sleepless
+1,Ekēmu the Taker
+1,Ḫiltu the Sleeper
+1,Itūlu the Calm
+1,Maṣallu who Shelters
+1,Nadû the Gardener
+1,Rabbu the Gentle
+1,Reḫû the Overflowing
+1,Ṣālilu the Restful
+1,Ṣallu the Sleeper
+1,Šebû the Satisfied
+1,Šudlupu the Troubled
+1,Tebû the Originator
+
+;myconid activity
+1,<p>They seem to be humming softly, in unison.
+1,<p>As they look at you, little glow-shrooms start pulsating all around you.
+ They are all in sync.
+
+;myconid quote
+1,<blockquote>[@name] says: “We were here before it began.
+ We will be here when it ends.”</blockquote>
+1,<blockquote>[@name] says: “All of death in the plant and animal kingdoms is to our benefit.
+ If it kills you, we are happy.
+ We will eat you, in the end.”</blockquote>
+1,<blockquote>[@name] says: “We cannot be killed.
+ No matter who dies, you or I, the caverns of Myrkheim are full of our spores.
+ Wherever there is a corpse, wherever there is some warmth, we will be there.
+ We are already there, waiting.”</blockquote>
+1,<blockquote>[@name] says: “Don’t worry.
+ We are not here to fight.
+ For if we just wait, we win.
+ Our life is eternal.
+ Our consciousness is one.”</blockquote>
+[@name] says: “We are not afraid.
+ They say that undead is consuming Myrkheim, but even the undead will be digested in the end.
+ We cannot be stopped.
+ No, it is when they stop moving that we win.
+ Our spores already colonise their bodies.
+ Our children already inhabit their pores.
+ We are everywhere.”</blockquote>
 
 ;naga lair description
 1,The air is warm and there’s light up ahead.

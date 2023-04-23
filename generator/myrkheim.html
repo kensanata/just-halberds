@@ -184,7 +184,12 @@ function parse(data) {
       level = 1;
       h.results = {};
     } else if (level > 20) {
-      console.log(`Recursion deeper than 20 for ${table}`);
+      if (table.endsWith(" name")) {
+        console.log(`Tried to get a unique name from ${table} for 20 times and failed`);
+      } else {
+        console.log(`Recursion deeper than 20 for ${table}`);
+      }
+      beep();
       return "…";
     }
     // pick an appropriate item
@@ -419,6 +424,18 @@ function create_map(svg) {
   };
   // circles
   for (let i = 0; i < points.length; i++) { f(points[i].x, points[i].y, i) };
+}
+
+function beep() {
+  var context = new AudioContext();
+  var oscillator = context.createOscillator();
+  oscillator.type = "sine";
+  oscillator.frequency.value = 100;
+  oscillator.connect(context.destination);
+  oscillator.start();
+  setTimeout(function () {
+      oscillator.stop();
+  }, 100);
 }
 
 function slug(s) {

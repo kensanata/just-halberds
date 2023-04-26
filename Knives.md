@@ -94,12 +94,12 @@ surpass you in your best talent, they leave.
 **Familiar**: You befriend a talking animal such as a cat, an owl, or
 a raven.
 
-**Dog**: You find a loyal friend. Damage 2d6; Endurance 3d6; Life 2d6.
-Dogs require food.
+**Dog**: You find a loyal friend. Hit 2d6; Damage 2d6; Endurance 3d6;
+Life 2d6.
 
 **Horse**: Knighthood earns you a loyal mount from your liege. Riding
-a horse allows you to wield a lance. The horse requires care and
-feeding. Damage 3d6; Endurance 6d6; Life 3d6.
+a horse allows you to wield a lance. Hit 2d6; Damage 3d6; Endurance
+6d6; Life 3d6.
 
 **Land**: Saving the life of a noble or winning a war with them might
 get you a grant to a piece of land in the wilderness. Taking

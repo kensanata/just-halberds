@@ -1090,9 +1090,125 @@ You can replace all the tables in this file with your own and make your own gene
 [ghouls]
 
 ;human tunnels
-1,There are feral humans to be found, here.
-1,There are cannibals to be found, here.
-1,There are troglodytes to be found, here.
+1,[human presence]
+[human activity]
+[human quote]
+
+;human presence
+1,<p>There’s a faint smell of smoke in the air.
+ Soon, a flicker of light. A fire is burning somewhere.
+ Murmuring voices. Humans.
+ They seem to be working on something while one of them is reciting a poem.
+<blockquote>[[human name]@name][@name] and their [human style] followers: [human] Craft-[2d6] [Singing|Oratory]-[2d6] [Climbing|Running]-[2d6]</blockquote>
+1,<p>Surprisingly, you hear singing.
+ Humans! Nobody else is known to sing.
+<blockquote>[[human name]@name][@name] and their [human style] followers: [human] [Craft|First Aid|Oratory]-[2d6] Singing-[2d6] [Climbing|Running]-[2d6]</blockquote>
+1,<p>You hear a voice, reciting something. A poem?
+ Humans! Nobody else is known to recite poetry.
+<blockquote>[[human name]@name][@name] and their [human style] followers: [human] Oratory-[2d6] Singing-[2d6] [Climbing|Running]-[2d6]</blockquote>
+1,<p>Above you, some humans have set up a defensive position.
+ They have rocks to throw and they have secured some chimneys with ropes for a retreat.
+<blockquote>[[human name]@name][@name] and their [human style] followers: [human] Climbing-[2d6] [Craft|First Aid|Oratory|Singing]-[2d6] Tactics-[2d6]</blockquote>
+
+;human activity
+1,<p>They have posted guards.
+1,<p>Their camp is guarded by a dog.
+<blockquote>[Loyal|Scrawny|Mangy] dog: Hit-[2d6] Damage-[2d6] Endurance-[3d6] Life-[2d6]</blockquote>
+<p>The dog notices your smell long before you can see it.
+1,<p>The presence of humans has attracted [wild|feral] dogs.
+ The dogs sneak around the human camp, keeping out of the light, waiting for scraps of food.
+<blockquote>[Night|Shadow|Tunnel] [Dog|Wolf|Fox]: [nightling] Running-[1d6+6]</blockquote>
+<p>These dogs notice your smell long before you can see them.
+
+;human quote
+1,<blockquote>[@name] says: “What brings you here?
+ Have you seen any temples worth looting?”</blockquote>
+1,<blockquote>[@name] says: “Are you as lost as we are?
+ We are looking for a way out of Myrkheim.
+ This dark hell is going to kill us unless we make it out of here.”</blockquote>
+1,<blockquote>[@name] says: “The gods have forsaken us.
+ We are the demon worshipping hunters of Myrkheim.”</blockquote>
+1,<blockquote>[@name] says: “Many generations ago, demons tricked our forbears.
+ They promised them a realm of their own.
+ And here we are, in this godforsaken place.”</blockquote>
+1,<blockquote>[@name] says: “Who are you?
+ Servants of Set, Pazuzu, Orcus?
+ Be warned. Demon spawn is not welcome, here.”</blockquote>
+
+;human
+1,Number-[2d6] Attack-[2d6] Escape-[2d6] Hit-[2d6] Damage-[2d6] Endurance-[2d6] Life-[2d6]
+
+;human style
+1,cannibal
+1,feral
+1,troglodyte
+1,downtrodden
+1,rowdy
+1,silent
+1,grumpy
+
+;human name
+1,Ada
+1,Ageric
+1,Agnes
+1,Alard
+1,Alaric
+1,Alice
+1,Amaury
+1,Beatrice
+1,Bela
+1,Bero
+1,Berta
+1,Brunhild
+1,Cecilia
+1,Childeric
+1,Chlodomer
+1,Colin
+1,Dagobert
+1,Drogo
+1,Elena
+1,Emma
+1,Fina
+1,Forwin
+1,Fulk
+1,Gamel
+1,Gararic
+1,Gerard
+1,Gisela
+1,Golda
+1,Grimald
+1,Gunderic
+1,Gundobad
+1,Helen
+1,Hilda
+1,Hugh
+1,Huneric
+1,Ida
+1,Ingomer
+1,Isolda
+1,Joan
+1,Jocelin
+1,Lora
+1,Lothar
+1,Marachar
+1,Maud
+1,Muriel
+1,Norman
+1,Odo
+1,Osbert
+1,Otker
+1,Pepin
+1,Radegund
+1,Ranulf
+1,Sigeric
+1,Sigibert
+1,Sybil
+1,Terric
+1,Thurstan
+1,Vuldretrada
+1,Warin
+1,Wymarc
+1,Ymbert
 
 ;warp tunnels
 1,There is madness to be found, here.
@@ -1951,7 +2067,7 @@ You can replace all the tables in this file with your own and make your own gene
  An open flame is enough to thaw the threads… And warn the ice tarantula that a prey has arrived.
 [ice spider]
 1,A water-filled cavity, too wide to be crossed in a single breath.
- Down below are water spiders hunting olms in these dark depths.
+ Down below are water spiders hunting blind fish in these dark depths.
  They carry large air bubbles between their legs.
  They do not seem keen to share their oxygen tank.
 [spiders]

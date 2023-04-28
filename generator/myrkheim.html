@@ -3,15 +3,49 @@
 <head>
 <meta charset="utf-8">
 <title>Myrkheim</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 @media screen {
+    body {
+        background: #000;
+        color: #dfd;
+        margin-left: clamp(1ex, 5%, 4em);
+    }
     #noprintheader hr {
         background: green;
         border: 0;
         height: 1px;
         margin: 0.25em 0em 1.5em -10em;
+    }
+    blockquote {
+        margin-left: 0;
+        padding-left: 1ex;
+        border-left: 0.5ex solid #cdcd00;
+    }
+    line, circle {
+        stroke: chartreuse;
+        stroke-width: 1.25pt;
+    }
+
+    text {
+        fill: chartreuse;
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-size: 8pt;
+    }
+    circle {
+         fill: black;
+    }
+    a {
+        color: chartreuse;
+        text-decoration: none;
+    }
+    a:visited {
+        color: green;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     address ul {
         display: block;
@@ -27,7 +61,6 @@
         content: ", ";
     }
 }
-
 @media print {
     body {
         background: #fff;
@@ -40,9 +73,13 @@
     #noprintheader {
         display: none;
     }
+    blockquote {
+        break-inside: avoid;
+    }
     a, a:visited {
         color: #000;
         font-style: italic;
+        text-decoration: none;
     }
     address ul {
         padding-left: 0;
@@ -54,90 +91,48 @@
     table#encounters th:first-child + th + th {
         display: none;
     }
+    table#encounters td {
+        vertical-align: top;
+    }
     table#encounters td:first-child + td,
     table#encounters td:first-child + td + td {
         display: inline;
     }
+    table#encounters td:first-child + td {
+        margin-right: 1ex;
+    }
     table#encounters td:first-child + td + td::before {
-        content: "​(";
+        content: "​("; /* ZERO WIDTH SPACE */
     }
     table#encounters td:first-child + td + td::after {
         content: ")";
     }
 }
-
 body {
-    background: #000;
-    color: #dfd;
     font-family: "Iosevka Etoile", Iosevka, "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
     font-size: 12pt;
     margin: 1em;
-    margin-left: clamp(1ex, 5%, 4em);
     hyphens: auto;
 }
-
 #links {
     padding: 0;
     font-size: smaller;
 }
-
 #links li {
     display: inline;
 }
-
 #target {
     white-space: pre-wrap;
     max-width: 800px;
 }
-
-blockquote {
-    margin-left: 0;
-    padding-left: 1ex;
-    border-left: 0.5ex solid #cdcd00;
-}
-
 table {
     margin-top: 1ch;
     border-collapse: collapse;
     width: 100%;
 }
-
-td {
-    padding: 0.5ex;
-}
-
 .c {
     text-align: center;
     min-width: 2em;
-}
-
-a {
-    color: chartreuse;
-    text-decoration: none;
-}
-
-a:visited {
-    color: green;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-line, circle {
-    stroke: chartreuse;
-    stroke-width: 1.25pt;
-}
-
-text {
-    fill: chartreuse;
-    text-anchor: middle;
-    dominant-baseline: central;
-    font-size: 8pt;
-}
-
-circle {
-    fill: black;
 }
 </style>
 

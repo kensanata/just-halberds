@@ -12,7 +12,7 @@
         color: #dfd;
         margin-left: clamp(1ex, 5%, 4em);
     }
-    #noprintheader hr {
+    #noprint hr {
         background: green;
         border: 0;
         height: 1px;
@@ -70,7 +70,7 @@
     #Z, svg {
         display: none;
     }
-    #noprintheader {
+    #noprint {
         display: none;
     }
     h2 {
@@ -127,9 +127,17 @@ body {
 #links li {
     display: inline;
 }
-#target {
-    white-space: pre-wrap;
+#target, #documentation {
     max-width: 800px;
+}
+.example {
+    white-space: pre-wrap;
+}
+.result {
+    white-space: normal;
+}
+.invisible {
+    display: none;
 }
 table {
     margin-top: 1ch;
@@ -151,9 +159,10 @@ function parse(data) {
   h.tables = transform(data);
 
   // Generate text. This function is accessible from the outside.
+  // If start is empty, h.start is used which defaults to the first table.
   h.generate = function(start) {
     h.names = {}; // reset
-    return pick(start);
+    return pick(start || h.start);
   };
 
   // Read data and parse comments, table names and weighted rows.
@@ -163,7 +172,7 @@ function parse(data) {
     data.split("\n").forEach(row => {
       let m;
       if (row.match(/^\s*#/)) { /* Comments */ }
-      else if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; }
+      else if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; h.start ||= row.substring(1); }
       else if ((m = row.match(/^(\d+),(.*)/))) { rows.push([m[2], Number(m[1])]); }
       else if (row.match(/\S/)) { rows[rows.length - 1][0] += row; } // append
     });
@@ -489,15 +498,40 @@ function generate(f) {
   create_map(document.getElementById('map'));
 }
 
+function example () {
+  const data = event.target.parentElement.firstChild.textContent;
+  let html = parse(data).generate();
+  if (event.target.nextElementSibling) {
+    event.target.nextElementSibling.innerHTML = html;
+  } else {
+    const target = event.target.ownerDocument.createElement('blockquote');
+    target.setAttribute("class", "result");
+    target.innerHTML = html;
+    event.target.parentNode.appendChild(target);
+  }
+}
+
+function documentation () {
+  const target = document.getElementById('target');
+  const docs = document.getElementById('documentation');
+  if (docs.getAttribute('class') == 'invisible') {
+    target.setAttribute('class', 'invisible');
+    docs.setAttribute('class', 'visible');
+  } else {
+    docs.setAttribute('class', 'invisible');
+    target.setAttribute('class', 'visible');
+  }
+}
 </script>
 </head>
 <body>
 
 <h1>Myrkheim</h1>
-<div id="noprintheader">
+<div id="noprint">
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
   <button type="button" onclick="generate((data) => menu(data))">List tables</button>
   <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
+  <button type="button" onclick="documentation()">Documentation</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>
@@ -507,38 +541,120 @@ function generate(f) {
   <hr>
 </div>
 
-<div id="target">
-This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
+<div id="target"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
+<p>You can replace all the tables in this file with your own and make your own generators! Please do.
+</div>
+<div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. You can search this file for that name, remove all the names in that list and provide your own, for example.
+<p>Lines beginning with optional whitespace and a <strong>#</strong> are comments.
+<p>Single asterisks like <strong>*some words*</strong> render the text in italics for emphasis.
+<p>Double asterisks like <strong>**some words**</strong> render the text in bold for strong emphasis.
+<p>A line starting with a semicolon like <strong>;some words</strong> begins a table called “some words”.
+There is no space after the semicolon.
+<p>A number and a comma like <strong>1,some words</strong>begin a weighted entry for the current table.
+<p>Here is an example table called “realm”. The three realms have equal chances for coming up (each has a 1 in 3 chance).
+<div class="example"># some norse realms
+;realm
+1,Muspelheim
+1,Jötunheim
+1,Vanaheim
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>In the following table, Midgard is twice as likely as the other realms. Or in other words, Midgard has a 2 in 5 chance for coming up and the other realms have a 1 in 5 chance for coming up.
+<div class="example">;realm
+1,Muspelheim
+1,Jötunheim
+1,Vanaheim
+2,Midgard
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A text in square brackets with options separated by a vertical bar like <strong>[Muspelheim|Jötunheim|Vanaheim]</strong> gets replaced with one of the options. This is a shortcut so you don’t have to write separate small tables. The example given is equivalent to the first “realm” table above. All options have an equal chance for coming up.
+<div class="example">;realm
+1,[Muspelheim|Jötunheim|Vanaheim]
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>Lines that don’t start with a semicolon (beginning a table) or a number and a comma (beginning a weighted entry for the current table) are appended to the current entry. Begin each line with a space if you need one, because newlines are stripped. Newlines are not replaced by a space! Use HTML like <strong>&lt;p&gt;</strong> for new paragraphs or <strong>&lt;br&gt;</strong> for line breaks.
+<div class="example">;travel
+1,We are going to
+ Midgard.
+&lt;p&gt;Yay!
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A text in square brackets like <strong>[some words]</strong> gets replaced with a lookup of table “some words”.
+<p>If a table ends with “ name” then the result is unique. Be sure to use this only for tables that produce enough results!
+<p>Here’s a more complex example:
+<div class="example"># notice the continuation on the next line
+# and the space at the beginning of the next line
+;passage to another realm
+1,This is a passage to Hades.
+ It is guarded by [guardian name], [guardian name] and [guardian name].
 
-You can replace all the tables in this file with your own and make your own generators! Please do.
+;guardian name
+1,the gorgon [Stheno|Euryale|Medusa]
+1,the hero [Heracles|Perseus|Bellerophon|Orion]
+1,the hero [Asclepius|Aristaeus|Jason|Achilles|Odysseus|Hector]
+1,the bronze giant Talos
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A limited form of dice roll notation is recognised and replaced by such a dice roll, e.g. <strong>[2d6]</strong> or <strong>[1d6+3]</strong>.
+<p>Results can be stored in a variable by using the @ sign inside square brackets. The text before the @ sign is stored in the variable named after @ sign. <strong>[[guardian name]@name]</strong> stores a guardian name from the table above in the variable “name”. This assignment itself does not produce any text.
+<p>To insert the value of a variable, start the text inside square brackets with the @ sign. <strong>[@name]</strong> inserts the value stored in the variable “name”.
+<p>In the following example, the human name is generated once and used twice:
+<div class="example">;humans
+1,[[human name]@name][@name] and their followers:
+ Strength-[2d6] Dexterity-[2d6] Endurance-[2d6] Intelligence-[2d6] Education-[2d6] Status-[2d6]
+ [Craft|First Aid|Oratory]-[2d6] Singing-[2d6] [Climbing|Running]-[2d6]
+&lt;p&gt;[@name] will only help people who can sing along.
+
+;human name
+1,Ada
+1,Ageric
+1,Agnes
+1,Alard
+1,Alaric
+1,Alice
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>And finally, there are some advanced features that you hardly ever need unless you’re writing a character creator or something fancy like it.
+<p>You can treat a variable like a list and add terms to it. In that case, use @@ instead of @. <strong>[[event]@@history]</strong> looks up an entry in the “event” table and appends it to the variable “history”. When using the variable, it gets replaced by a comma-separated list of entries: <strong>[@history]</strong>.
+<div class="example">;backstory
+1,“I have been through a lot:
+[[event name]@@history]
+[[event name]@@history]
+[[event name]@@history]
+[[event name]@@history]
+ [@history]. I’ve had enough.”
+
+# unique results because it ends with “name”
+;event name
+1,the [Vampire|Lizard|Wight] Wars
+1,the [Pinega|Yomtsa|Vaga|Uftyuga|Vychegda|Yug|Sukhona] Uprising
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>You can use a variable to count things. Use ++@ instead of @ to do this. <strong>[[talent]@@talents]</strong> looks up an entry in the “talent” table and count it in the “talents” table. When using the variable, it gets replaced by a comma-separated list of entries with the counts: <strong>[@talents]</strong>.
+<p>If you just want the thing with the highest number for a counter variable, use @++ instead of @ to do this: <strong>[@++talents]</strong>.
+<p>If you use list and counter variables to create a character, for example, each character needs a new set of talents. Use ~ to reset a variable: <strong>[~talents]</strong>.
+<div class="example">;human
+1,Strength-[2d6], Dexterity-[2d6], Endurance-[2d6], Intelligence-[2d6], Education-[2d6], Status-[2d6],
+[~talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents]
+ [@talents]
+ Best talent: [@++talents].
+
+;talent
+1,Craft
+1,First Aid
+1,Oratory
+1,Singing
+1,Climbing
+1,Running
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>And finally, in some very simple cases, you can evaluate an expression as Javascript in order to pick one of two options:
+<strong>[x?a:b]</string>. If x is "true" it is replaced with a else with b.
 </div>
 
 <script id="data" type="text/x-generator">
 # The strange type here ↑ means that it won’t get executed and no HTML escaping
 # is required in here!
-
-# Data
-
-# lines beginning with optional whitespace and a '#' are comments
-# '*a*' renders 'a' in italics (emphasis)
-# '**a**' renders 'a' in bold (strong emphasis)
-# ';' begins a table, followed by a name, no space
-# A number and a comma begin a weighted entry for the current table
-# All other lines are appended. Begin them with a space if you need one, because newlines are stripped. Use <p>.
-# /re/to/ at the end replaces regular expression "re" with "to"
-# '[2d6]' or '[1d6+3]' are replaced by dice rolls
-# '[a]' gets replaced with a lookup of table 'a'
-# If a ends with ' name' then the result is unique
-# '[a|b]' gets replaced with 'a' or 'b'
-# '[x?a:b]' evaluates x as JavaScript and if "true" it is replaced with 'a' else with 'b'
-# '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
-# '[a@@b]' appends 'a' to the list 'b'
-# '[a++@b]' increments the key 'a' by one for the map 'b'
-# '[~a]' resets the list or map 'a'
-# '[@b]' uses the value of variable 'b'
-# If b is a list, return a comma-separated list.
-# If b is a map, return a sorted, comma-separated list of key-value pairs
-# '[@++b]' gets replaced by the key with the highest value in map b
 
 ;start
 1,[initial setup]

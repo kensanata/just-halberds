@@ -132,6 +132,7 @@ body {
 }
 .example {
     white-space: pre-wrap;
+    color: #8fd;
 }
 .result {
     white-space: normal;
@@ -324,7 +325,7 @@ function parse(data) {
     if (level === 1) {
       // emphasis
       text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
-      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<em>${a}</em>` });
     }
     return text;
   }
@@ -467,14 +468,16 @@ function linked(data) {
   data = data.replaceAll("<", "&lt;");
   data = data.replaceAll(">", "&gt;");
   data = data.replaceAll(/^;(.*)/mg,
-                         (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
+                         (m, t) => { return `<p>;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
                          (m, t) => {
                            if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
                            if (m.match(/\?.*:/)) return m;
                            return `[<a href="#${slug(t)}">${t}</a>]` });
   data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
-  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<em>${a}</em>` });
+  data = data.replaceAll(/\n+#/g, "<p>");
+  data = data.replaceAll(/\n+/g, "<br>");
   return data;
 }
 
@@ -484,6 +487,8 @@ function show(t) {
 }
 
 function generate(f) {
+  document.getElementById('target').setAttribute('class', 'visible');
+  document.getElementById('documentation').setAttribute('class', 'invisible');
   const data = document.getElementById('data').textContent;
   let html = f(data);
   if (window.location.search) {
@@ -512,15 +517,8 @@ function example () {
 }
 
 function documentation () {
-  const target = document.getElementById('target');
-  const docs = document.getElementById('documentation');
-  if (docs.getAttribute('class') == 'invisible') {
-    target.setAttribute('class', 'invisible');
-    docs.setAttribute('class', 'visible');
-  } else {
-    docs.setAttribute('class', 'invisible');
-    target.setAttribute('class', 'visible');
-  }
+  document.getElementById('target').setAttribute('class', 'invisible');
+  document.getElementById('documentation').setAttribute('class', 'visible');
 }
 </script>
 </head>
@@ -531,7 +529,7 @@ function documentation () {
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
   <button type="button" onclick="generate((data) => menu(data))">List tables</button>
   <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
-  <button type="button" onclick="documentation()">Documentation</button>
+  <button type="button" onclick="documentation()">Help</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>
@@ -544,10 +542,9 @@ function documentation () {
 <div id="target"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
 <p>You can replace all the tables in this file with your own and make your own generators! Please do.
 </div>
-<div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. You can search this file for that name, remove all the names in that list and provide your own, for example.
+<div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether it worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. Search this file for that name, remove all the names in the list and provide your own.
+<h2>The table format</h2>
 <p>Lines beginning with optional whitespace and a <strong>#</strong> are comments.
-<p>Single asterisks like <strong>*some words*</strong> render the text in italics for emphasis.
-<p>Double asterisks like <strong>**some words**</strong> render the text in bold for strong emphasis.
 <p>A line starting with a semicolon like <strong>;some words</strong> begins a table called “some words”.
 There is no space after the semicolon.
 <p>A number and a comma like <strong>1,some words</strong>begin a weighted entry for the current table.
@@ -572,11 +569,14 @@ There is no space after the semicolon.
 1,[Muspelheim|Jötunheim|Vanaheim]
 <button type="button" onclick="example()">Try it</button>
 </div>
+<p>Single asterisks like <strong>*some words*</strong> render the text in italics for emphasis.
+<p>Double asterisks like <strong>**some words**</strong> render the text in bold for strong emphasis.
 <p>Lines that don’t start with a semicolon (beginning a table) or a number and a comma (beginning a weighted entry for the current table) are appended to the current entry. Begin each line with a space if you need one, because newlines are stripped. Newlines are not replaced by a space! Use HTML like <strong>&lt;p&gt;</strong> for new paragraphs or <strong>&lt;br&gt;</strong> for line breaks.
 <div class="example">;travel
-1,We are going to
- Midgard.
-&lt;p&gt;Yay!
+1,This is **Yggdrasil**, the world tree.
+&lt;p&gt;They say that the dragon *Níđhöggr* gnaws at its roots.
+1,This is **Yggdrasil**, the world tree.
+&lt;p&gt;They say that it’s branches connect all the realms.
 <button type="button" onclick="example()">Try it</button>
 </div>
 <p>A text in square brackets like <strong>[some words]</strong> gets replaced with a lookup of table “some words”.
@@ -600,9 +600,9 @@ There is no space after the semicolon.
 <p>To insert the value of a variable, start the text inside square brackets with the @ sign. <strong>[@name]</strong> inserts the value stored in the variable “name”.
 <p>In the following example, the human name is generated once and used twice:
 <div class="example">;humans
-1,[[human name]@name][@name] and their followers:
+1,[[human name]@name][@name], human:
  Strength-[2d6] Dexterity-[2d6] Endurance-[2d6] Intelligence-[2d6] Education-[2d6] Status-[2d6]
- [Craft|First Aid|Oratory]-[2d6] Singing-[2d6] [Climbing|Running]-[2d6]
+ [Craft|First Aid|Oratory]-[1d2] Singing-[1d2+1] [Climbing|Running]-[1d2]
 &lt;p&gt;[@name] will only help people who can sing along.
 
 ;human name
@@ -633,11 +633,14 @@ There is no space after the semicolon.
 <p>You can use a variable to count things. Use ++@ instead of @ to do this. <strong>[[talent]@@talents]</strong> looks up an entry in the “talent” table and count it in the “talents” table. When using the variable, it gets replaced by a comma-separated list of entries with the counts: <strong>[@talents]</strong>.
 <p>If you just want the thing with the highest number for a counter variable, use @++ instead of @ to do this: <strong>[@++talents]</strong>.
 <p>If you use list and counter variables to create a character, for example, each character needs a new set of talents. Use ~ to reset a variable: <strong>[~talents]</strong>.
-<div class="example">;human
+<div class="example">;party
+1,Alice: [human]
+&lt;p&gt;Ada: [human]
+
+;human
 1,Strength-[2d6], Dexterity-[2d6], Endurance-[2d6], Intelligence-[2d6], Education-[2d6], Status-[2d6],
 [~talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents]
- [@talents]
- Best talent: [@++talents].
+ [@talents]. Favourite: [@++talents].
 
 ;talent
 1,Craft
@@ -649,14 +652,10 @@ There is no space after the semicolon.
 <button type="button" onclick="example()">Try it</button>
 </div>
 <p>And finally, in some very simple cases, you can evaluate an expression as Javascript in order to pick one of two options:
-<strong>[x?a:b]</string>. If x is "true" it is replaced with a else with b.
+<strong>[x?a:b]</strong>. If x is "true" it is replaced with a else with b.
 </div>
-
-<script id="data" type="text/x-generator">
-# The strange type here ↑ means that it won’t get executed and no HTML escaping
-# is required in here!
-
-;start
+<!-- The script tag with the unknown type means that it won’t get executed and no HTML escaping is required! -->
+<script id="data" type="text/x-generator">;start
 1,[initial setup]
 [map setup][svg map]
 [tunnels random encounters]
@@ -685,25 +684,10 @@ There is no space after the semicolon.
 # The map always has the same structure, for the moment.
 # Each location has either three exists, or it’s a dead end with just one exit.
 #
-#                  S                 T*
-#                    \             /
-#                      R -- G -- N
-#                    /      |      \
-#                   |       A       |
-#          X*       Q __   / \   __ M       U
-#            \    /      F    B      \   /
-#               P      /        \      O
-#              |      E --- D --- C      |
-#               \   /       |       \   /
-#                 H         J         I
-#                   \_ K _/   \_ L _/
-#                      |         |
-#                      W         V*
-#
 # Each location is defined by a set of variables.
-# The single letter variable we see above contains the unique name.
+# The single letter variable contains the unique name.
 # The single letter + "_type" is the location type.
-# This is done so that the name and content matches the locatino type.
+# This is done so that the name and content matches the location type.
 #
 # Note that names are unique! There must be plenty of alternatives or you’ll
 # get recursion "Recursion deeper than 20" errors in the log.
@@ -1926,7 +1910,7 @@ There is no space after the semicolon.
  All the sewage, all the garbage, it runs down the walls, it thickens, it drops, it keeps on flowing.
  Forever downwards, collecting tributaries of more refuse.
 <p>And then, finally, it all ends here.
- A see of rotting corpses, liquefied flesh, the excrement of the living, the goo of the dead.
+ A sea of rotting corpses, liquefied flesh, the excrement of the living, the goo of the dead.
 1,The air is fit for retching.
  The refuse of all the creatures living in the bowels of Myrkheim collects here.
  It’s a fermenting swamp of dross, dregs and scum.

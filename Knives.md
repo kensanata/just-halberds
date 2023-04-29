@@ -83,11 +83,11 @@ bow.
 
 **Secret Society**: There are secret societies for all walks of life.
 Crime rings look for gangsters and thugs, guilds look for engineers
-and tradespeople, covens look for wizards and witches. This were new
-talents are gained. Prove your worth and join them.
+and tradespeople, covens look for wizards and witches. This is were
+new talents are gained. Prove your worth and join them.
 
-**Companion**: A young apprentice looking to learn from you. Roll 2d6
-each for Strength, Dexterity, Endurance and Intelligence; both
+**Companion**: A young apprentice is looking to learn from you. Roll
+2d6 each for Strength, Dexterity, Endurance and Intelligence; both
 Education and Status are 2. They gain talents, just like you. If they
 surpass you in your best talent, they leave.
 
@@ -177,6 +177,10 @@ With every year that passes, you get to gain new talents. Pick an
 appropriate table to roll on during the winter phase and gain the
 talent or increase the talent if you already have it.
 { #gaining-talents }
+
+When exactly does a year pass? It’s up to the people playing the game.
+If you all agree that the rest of the year is calm and uneventful,
+it’s time for the winter phase.
 
 When you learn “Fighting”, choose a weapon instead: knife, spear,
 halberd, épée, bow, lance. Note that you do not start with the Knife

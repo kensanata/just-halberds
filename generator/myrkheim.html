@@ -653,6 +653,66 @@ There is no space after the semicolon.
 </div>
 <p>And finally, in some very simple cases, you can evaluate an expression as Javascript in order to pick one of two options:
 <strong>[x?a:b]</strong>. If x is "true" it is replaced with a else with b.
+<h2>Tricks</h2>
+<p>You can use rules to generate table names. In the following example, the variable “realm” holds either “Muspelheim” or “Jötunheim” and is then used to get the appropriate monsters and an appropriate description.
+<pre class="example">
+;story
+1,The song is called “The glory of [[realm]@realm][@realm]”.
+ The local [[@realm] monsters] are terrifying.
+ [[@realm] description]
+
+;realm
+1,Muspelheim
+1,Jötunheim
+
+;Muspelheim monsters
+1,fire giants
+
+;Muspelheim description
+1,Everything is on fire!
+
+;Jötunheim monsters
+1,ice giants
+
+;Jötunheim description
+1,Everything is frozen!
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<h2>Troubleshooting</h2>
+<p>The <strong>[x?a:b]</strong> construct is tricky. You might think of it as “pick a <em>or</em> b”, but a more accurate description would be: “expand <em>both</em> a and b, and then pick”. This is important if the expansion of a or b involves the setting of variables. In the following example, first the die is rolled, then both “fire salamander” and “ice salamander” are expanded (and the variable “element” is first set to “fire” and then set to “ice”!) and then the die roll is compared with 3 and the appropriate expansion is picked. The salamanders are red or blue. But no matter what colour they have, the always rule a world of ice. 😔
+<pre class="example">
+;salamander
+1,[[1d6] <= 3?[fire salamander]:[ice salamander]]
+ They rule a world of [@element].
+
+;fire salamander
+1,Red salamanders![fire@element]
+
+;ice salamander
+1,White salamanders![ice@element]
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<p>One way to rewrite this would be to set the element first and <em>then</em> use indirection.
+<pre class="example">
+;salamander
+1,[[[1d6] <= 3?fire:ice]@element]
+[[@element] salamander]
+ They rule a world of [@element].
+
+;fire salamander
+1,Red salamanders!
+
+;ice salamander
+1,White salamanders!
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<footer>
+<address>
+<ul>
+<li><a href="https://alexschroeder.ch/">Alex Schroeder</a>
+</ul>
+</address>
+</footer>
 </div>
 <!-- The script tag with the unknown type means that it won’t get executed and no HTML escaping is required! -->
 <script id="data" type="text/x-generator">;start

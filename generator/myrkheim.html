@@ -149,6 +149,18 @@ table {
     text-align: center;
     min-width: 2em;
 }
+button {
+    color: chartreuse;
+    background: inherit;
+    border: none;
+    font: inherit;
+    font-size: smaller;
+    padding: 0;
+    margin-top: 3pt;
+}
+button:hover {
+    text-decoration: underline;
+}
 </style>
 
 <script>
@@ -503,11 +515,13 @@ function generate(f) {
   create_map(document.getElementById('map'));
 }
 
-function example () {
-  const data = event.target.parentElement.firstChild.textContent;
-  let html = parse(data).generate();
-  if (event.target.nextElementSibling) {
-    event.target.nextElementSibling.innerHTML = html;
+function example (table=false) {
+  const html = table
+    ? parse(document.getElementById('data').textContent).generate(table)
+    : parse(event.target.parentElement.firstChild.textContent).generate();
+  const last = event.target.parentElement.lastElementChild;
+  if (last.tagName == "BLOCKQUOTE" || last.tagName == "SPAN") {
+    last.innerHTML = html;
   } else {
     const target = event.target.ownerDocument.createElement('blockquote');
     target.setAttribute("class", "result");
@@ -541,6 +555,50 @@ function documentation () {
 
 <div id="target"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
 <p>You can replace all the tables in this file with your own and make your own generators! Please do.
+<p>The following are some short cuts you might need at the table.
+<p>
+<button type="button" onclick="example('crab name')" style="display: inline">Crab name</button>
+<button type="button" onclick="example('croc name')" style="display: inline">Croc name</button>
+<button type="button" onclick="example('dwarf name')" style="display: inline">Dwarf name</button>
+<button type="button" onclick="example('fire dragon name')" style="display: inline">Fire dragon name</button>
+<button type="button" onclick="example('ghoul name')" style="display: inline">Ghoul name</button>
+<button type="button" onclick="example('giant name')" style="display: inline">Giant name</button>
+<button type="button" onclick="example('goblin name')" style="display: inline">Goblin name</button>
+<button type="button" onclick="example('human name')" style="display: inline">Human name</button>
+<button type="button" onclick="example('ice dragon name')" style="display: inline">Ice dragon name</button>
+<button type="button" onclick="example('myconid name')" style="display: inline">Myconid name</button>
+<button type="button" onclick="example('nightling name')" style="display: inline">Nightling name</button>
+<button type="button" onclick="example('phase spider name')" style="display: inline">Phase spider name</button>
+<button type="button" onclick="example('predator name')" style="display: inline">Predator name</button>
+<button type="button" onclick="example('salamander name')" style="display: inline">Salamander name</button>
+<button type="button" onclick="example('snakeling name')" style="display: inline">Snakeling name</button>
+<button type="button" onclick="example('undead name')" style="display: inline">Undead name</button>
+<button type="button" onclick="example('worm name')" style="display: inline">Worm name</button>
+<button type="button" onclick="example('ghoul lair name')" style="display: inline">Ghoul lair name</button>
+<button type="button" onclick="example('ghoul lair description')" style="display: inline">Ghoul lair</button>
+<button type="button" onclick="example('goblin lair name')" style="display: inline">Goblin lair name</button>
+<button type="button" onclick="example('goblin lair description')" style="display: inline">Goblin lair</button>
+<button type="button" onclick="example('myconid lair name')" style="display: inline">Myconid lair name</button>
+<button type="button" onclick="example('myconid lair description')" style="display: inline">Myconid lair</button>
+<button type="button" onclick="example('naga lair name')" style="display: inline">Naga lair name</button>
+<button type="button" onclick="example('naga lair description')" style="display: inline">Naga lair</button>
+<button type="button" onclick="example('newt lair name')" style="display: inline">Newt lair name</button>
+<button type="button" onclick="example('newt lair description')" style="display: inline">Newt lair</button>
+<button type="button" onclick="example('salamander lair name')" style="display: inline">Salamander lair name</button>
+<button type="button" onclick="example('salamander lair description')" style="display: inline">Salamander lair</button>
+<button type="button" onclick="example('spider lair name')" style="display: inline">Spider lair name</button>
+<button type="button" onclick="example('spider lair description')" style="display: inline">Spider lair</button>
+<button type="button" onclick="example('shrine to Set name')" style="display: inline">Shrine to Set name</button>
+<button type="button" onclick="example('shrine to Set description')" style="display: inline">Shrine to Set</button>
+<button type="button" onclick="example('shrine to Pazuzu name')" style="display: inline">Shrine to Pazuzu name</button>
+<button type="button" onclick="example('shrine to Pazuzu description')" style="display: inline">Shrine to Pazuzu</button>
+<button type="button" onclick="example('shrine to Orcus name')" style="display: inline">Shrine to Orcus name</button>
+<button type="button" onclick="example('shrine to Orcus description')" style="display: inline">Shrine to Orcus</button>
+<button type="button" onclick="example('shrine to Hecate name')" style="display: inline">Shrine to Hecate name</button>
+<button type="button" onclick="example('shrine to Hecate description')" style="display: inline">Shrine to Hecate</button>
+<button type="button" onclick="example('shrine to Mitra name')" style="display: inline">Shrine to Mitra name</button>
+<button type="button" onclick="example('shrine to Mitra description')" style="display: inline">Shrine to Mitra</button>
+<span style="display: block; padding-top: 1ch"></span>
 </div>
 <div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether it worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. Search this file for that name, remove all the names in the list and provide your own.
 <h2>The table format</h2>
@@ -1209,7 +1267,10 @@ There is no space after the semicolon.
 1,They attach themselves as you crawl past them.
 
 ;worms
-1,<blockquote>[Rock|Stone|Blood|Bore|Flesh] [Worms|Maggots|Leeches]: [nightling] Sneaking-[2d6]</blockquote>
+1,<blockquote>[worm name]: [nightling] Sneaking-[2d6]</blockquote>
+
+;worm name
+1,[Rock|Stone|Blood|Bore|Flesh] [Worms|Maggots|Leeches]
 
 ;spider tunnels
 1,You crush chitinous husks and thin bones beneath your feet.

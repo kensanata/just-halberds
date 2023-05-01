@@ -12,7 +12,7 @@
         color: #dfd;
         margin-left: clamp(1ex, 5%, 4em);
     }
-    #noprint hr {
+    .noprint hr {
         background: green;
         border: 0;
         height: 1px;
@@ -70,7 +70,7 @@
     #Z, svg {
         display: none;
     }
-    #noprint {
+    .noprint {
         display: none;
     }
     h2 {
@@ -528,7 +528,7 @@ function documentation () {
 <body>
 
 <h1>Myrkheim</h1>
-<div id="noprint">
+<div class="noprint">
   <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
   <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
   <button type="button" onclick="documentation()">Help</button>
@@ -543,8 +543,8 @@ function documentation () {
 
 <div id="target"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
 <p>You can replace all the tables in this file with your own and make your own generators! Please do.
-<p>The following are some short cuts you might need at the table.
-<p>
+<p class="noprint">The following are some short cuts you might need at the table.
+<p class="noprint">
 <button type="button" onclick="example('crab name')" style="display: inline">Crab name</button>
 <button type="button" onclick="example('croc name')" style="display: inline">Croc name</button>
 <button type="button" onclick="example('dwarf name')" style="display: inline">Dwarf name</button>

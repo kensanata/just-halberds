@@ -508,13 +508,13 @@ function display(id) {
 function generate(f, id) {
   display('generate');
   const data = document.getElementById('data').textContent;
-  let html = f(data);
+  let html = f(data).toString();
   if (window.location.search) {
     for (let i = 0; i < 50; i++) {
       if (html.match(window.location.search.substr(1))) {
         break;
       }
-      html = f(data);
+      html = f(data).toString();
     }
   }
   document.getElementById(id).innerHTML = html;

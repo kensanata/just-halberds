@@ -127,7 +127,7 @@ body {
 #links li {
     display: inline;
 }
-#target, #documentation {
+#intro, #generate, #documentation {
     max-width: 800px;
 }
 .example {
@@ -161,19 +161,28 @@ button {
 button:hover {
     text-decoration: underline;
 }
+.muted {
+    color: green;
+}
 </style>
 
 <script>
+// Use: parse(data).withStart('start').toString()
 function parse(data) {
   // This is the return of parse().
   let h = {};
 
-  // Save the data so that h can be reused in multiple calls to generate().
+  // Save the data so that h can be reused in multiple calls to toString().
   h.tables = transform(data);
 
-  // Generate text. This function is accessible from the outside.
+  h.withStart = function(start) {
+    h.start = start;
+    return h;
+  }
+
+  // Generate HTML. This function is accessible from the outside.
   // If start is empty, h.start is used which defaults to the first table.
-  h.generate = function(start) {
+  h.toString = function(start) {
     h.names = {}; // reset
     return pick(start || h.start);
   };
@@ -381,7 +390,6 @@ function parse(data) {
     return total + plus;
   }
 
-  // To do anything, call generate().
   return h;
 }
 
@@ -466,6 +474,7 @@ function slug(s) {
 }
 
 function linked(data) {
+  display('tables');
   data = data.replaceAll("<", "&lt;");
   data = data.replaceAll(">", "&gt;");
   data = data.replaceAll(/^;(.*)/mg,
@@ -477,19 +486,27 @@ function linked(data) {
                            return `[<a href="#${slug(t)}">${t}</a>]` });
   data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
   data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<em>${a}</em>` });
-  data = data.replaceAll(/\n+#/g, "<p>");
+  data = data.replaceAll(/\n\n+#/g, "<p>#");
   data = data.replaceAll(/\n+/g, "<br>");
   return data;
 }
 
 function show(t) {
-  generate((data) => parse(data).generate(t)
-  + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`);
+  generate((data) => parse(data).withStart(t)
+  + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`, 'generate');
 }
 
-function generate(f) {
-  document.getElementById('target').setAttribute('class', 'visible');
-  document.getElementById('documentation').setAttribute('class', 'invisible');
+function display(id) {
+  ['intro', 'generate', 'tables', 'documentation'].forEach(function(id) {
+    document.getElementById(id).setAttribute('class', 'invisible');
+    document.getElementById(id + "_btn").removeAttribute('class');
+  });
+  document.getElementById(id).setAttribute('class', 'visible');
+  document.getElementById(id + "_btn").setAttribute('class', 'muted');
+}
+
+function generate(f, id) {
+  display('generate');
   const data = document.getElementById('data').textContent;
   let html = f(data);
   if (window.location.search) {
@@ -500,14 +517,14 @@ function generate(f) {
       html = f(data);
     }
   }
-  document.getElementById('target').innerHTML = html;
+  document.getElementById(id).innerHTML = html;
   create_map(document.getElementById('map'));
 }
 
 function example (table=false) {
   const html = table
-    ? parse(document.getElementById('data').textContent).generate(table)
-    : parse(event.target.parentElement.firstChild.textContent).generate();
+    ? parse(document.getElementById('data').textContent).withStart(table)
+    : parse(event.target.parentElement.firstChild.textContent);
   const last = event.target.parentElement.lastElementChild;
   if (last.tagName == "BLOCKQUOTE" || last.tagName == "SPAN") {
     last.innerHTML = html;
@@ -518,20 +535,16 @@ function example (table=false) {
     event.target.parentNode.appendChild(target);
   }
 }
-
-function documentation () {
-  document.getElementById('target').setAttribute('class', 'invisible');
-  document.getElementById('documentation').setAttribute('class', 'visible');
-}
 </script>
 </head>
 <body>
 
 <h1>Myrkheim</h1>
 <div class="noprint">
-  <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
-  <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
-  <button type="button" onclick="documentation()">Help</button>
+  <button class="muted" type="button" id="intro_btn" onclick="display('intro')">Intro</button>
+  <button type="button" id="generate_btn" onclick="generate((data) => parse(data).withStart('start'), 'generate')">Generate</button>
+  <button type="button" id="tables_btn" onclick="generate((data) => linked(data), 'tables')">Tables</button>
+  <button type="button" id="documentation_btn" onclick="display('documentation')">Help</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>
@@ -541,7 +554,7 @@ function documentation () {
   <hr>
 </div>
 
-<div id="target"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
+<div id="intro"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
 <p>You can replace all the tables in this file with your own and make your own generators! Please do.
 <p class="noprint">The following are some short cuts you might need at the table.
 <p class="noprint">
@@ -588,6 +601,8 @@ function documentation () {
 <button type="button" onclick="example('shrine to Mitra description')" style="display: inline">Shrine to Mitra</button>
 <span style="display: block; padding-top: 1ch"></span>
 </div>
+<div class="invisible" id="generate"><!-- This is where the generated HTML goes! --></div>
+<div class="invisible" id="tables"><!-- This is where the linked tables go! --></div>
 <div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether it worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. Search this file for that name, remove all the names in the list and provide your own.
 <h2>The table format</h2>
 <p>Lines beginning with optional whitespace and a <strong>#</strong> are comments.

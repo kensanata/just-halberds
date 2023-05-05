@@ -1,111 +1,161 @@
-html { hyphens: auto }
-body {
-    font-family: "fbb", "Palatino";
-    font-size: 12pt;
-    line-height: 16pt;
-    text-align: justify;
-}
 @media screen {
-  body {
-    max-width: 80ex;
-  }
+    body {
+        background: #000;
+        color: #dfd;
+        margin-left: clamp(1ex, 5%, 4em);
+    }
+    .noprint hr {
+        background: green;
+        border: 0;
+        height: 1px;
+        margin: 0.25em 0em 1.5em -10em;
+    }
+    blockquote {
+        margin-left: 0;
+        padding-left: 1ex;
+        border-left: 0.5ex solid #cdcd00;
+    }
+    line, circle {
+        stroke: chartreuse;
+        stroke-width: 1.25pt;
+    }
+
+    text {
+        fill: chartreuse;
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-size: 8pt;
+    }
+    circle {
+         fill: black;
+    }
+    a {
+        color: chartreuse;
+        text-decoration: none;
+    }
+    a:visited {
+        color: green;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    address ul {
+        display: block;
+        padding: 0;
+    }
+    address li {
+        display: inline;
+    }
+    address li:first-child::before {
+        content: "Authors: ";
+    }
+    address li::before {
+        content: ", ";
+    }
 }
-.title {
-    text-align: center;
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 10pt;
+    }
+    #Z, svg {
+        display: none;
+    }
+    .noprint {
+        display: none;
+    }
+    h2 {
+        break-after: avoid;
+    }
+    p {
+        break-inside: avoid;
+    }
+    blockquote {
+        break-inside: avoid;
+    }
+    a, a:visited {
+        color: #000;
+        font-style: italic;
+        text-decoration: none;
+    }
+    address ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    address a::after {
+        content: " <" attr(href) ">";
+    }
+    table th:first-child + th + th {
+        display: none;
+    }
+    table td {
+        vertical-align: top;
+    }
+    table td:first-child + td,
+    table td:first-child + td + td {
+        display: inline;
+    }
+    table td:first-child + td {
+        margin-right: 1ex;
+    }
+    table td:first-child + td + td::before {
+        content: "​("; /* ZERO WIDTH SPACE */
+    }
+    table td:first-child + td + td::after {
+        content: ")";
+    }
+}
+body {
+    font-family: "Iosevka Etoile", Iosevka, "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
+    font-size: 12pt;
+    margin: 1em;
+    hyphens: auto;
+}
+#links {
+    padding: 0;
+    font-size: smaller;
+}
+#links li {
+    display: inline;
+}
+#intro, #generate, #documentation {
+    max-width: 800px;
+}
+.example {
+    white-space: pre-wrap;
+    color: #8fd;
+}
+.result {
+    white-space: normal;
+}
+.invisible {
+    display: none;
+}
+table {
+    margin-top: 1ch;
+    border-collapse: collapse;
     width: 100%;
-}
-.title img {
-    width: 70%;
-}
-.pic img {
-    width: 100%;
-    display: block;
-}
-.pic {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-style: italic;
-}
-.small img {
-    width: 25em;
-    margin: auto;
-    margin-top: 1em;
-}
-h1 {
-    z-index: 10;
-    font-family: "Gill Sans", "Gillius ADF", "Helvetica";
-    font-size: 32pt;
-    line-height: 40pt;
-    font-weight: normal;
-    font-style: normal;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-h2 {
-    font-size: 24pt;
-    line-height: 30pt;
-    font-weight: normal;
-    font-style: italic;
-}
-h3 {
-    font-size: 14pt;
-    line-height: 16pt;
-    font-weight: normal;
-    font-style: italic;
-}
-blockquote {
-    margin-left: 0;
-    padding-left: 1.5ex;
-    border-left: 1ex solid #bbb;
-}
-th {
-    padding: 0 1ex;
-    text-align: center;
 }
 td {
-    padding: 0 1ex;
-}
-th:first-child, td:first-child {
-    padding-left: 0;
-}
-th:last-child, td:last-child {
-    padding-right: 0;
-}
-td[align="center"] {
     text-align: center;
-    white-space: nowrap;
-    vertical-align: top;
+    min-width: 2em;
 }
-td[align="left"] {
+td:first-child + td, td:first-child + td + td {
     text-align: left;
 }
-td[align="right"] {
-    text-align: right;
+button {
+    color: chartreuse;
+    background: inherit;
+    border: none;
+    font: inherit;
+    font-size: smaller;
+    padding: 0;
+    margin-top: 3pt;
 }
-.right {
-    float: right;
-    width: 20em;
-    margin-left: 1em;
+button:hover {
+    text-decoration: underline;
 }
-.left {
-    float: left;
-    width: 20em;
-    margin-right: 1em;
+.muted {
+    color: green;
 }
-/* page numbers: set it to zero on the first page and don't show it,
-   thus the second page has the page number 1. */
-@page :first {
-    counter-reset: page;
-    @bottom-center {
-	content: "";
-    }
-}
-@page {
-    @bottom-center {
-	content: counter(page);
-    }
-}
-/* bookmarks, table of contents */
-h1 { bookmark-level: none }

@@ -1727,7 +1727,7 @@ the same side? Let’s play to find out!
 
 ## Reading material
 
-[Generator](https://campaignwiki.org/generator), a generator of characters and a mini-setting
+[Lake Land](https://campaignwiki.org/lake-land), a generator of characters and a mini-setting
 
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 

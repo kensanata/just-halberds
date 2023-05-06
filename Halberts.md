@@ -738,7 +738,7 @@ short, by Guntram von Wolkenstein.
 for the game. I like the
 [Alpine](https://campaignwiki.org/text-mapper/alpine/random) maps.
 
-[Generator](https://campaignwiki.org/generator), a generator of
+[Lake Land](https://campaignwiki.org/lake-land), a generator of
 characters and a mini-setting
 
 [Farnthal Replay](https://alexschroeder.ch/pdfs/Farnthal.pdf) recounts

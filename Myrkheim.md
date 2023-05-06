@@ -6,11 +6,13 @@ neighboring rights to this work.</address>
 Myrkheim
 ========
 
-Myrkheim is a realm of darkness. If you can find [The Crown of
-Darkness](#X), you could be the next ruler of this realm. If you can
-unite the dwarf families, you could bring back peace and prosperity. If
-you can help the nagas to restore life and stem the tide of undeath, you
-could find strong allies for your own struggles elsewhere.
+Myrkheim is a realm of darkness.
+
+If you can find [The Crown of Darkness](#X), you could be the next
+ruler of this realm. If you can unite the dwarf families, you could
+bring back peace and prosperity. If you can help the nagas to restore
+life and stem the tide of undeath, you could find strong allies for
+your own struggles elsewhere.
 
 The stats are for
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), where you start

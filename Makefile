@@ -29,7 +29,7 @@ watch:
 
 # The first sed replaces numbers followed by ¡ with highlights because
 # the old code using {: .highligh} no longer seems to work.
-%.html: lang=$(shell sed -ne 's/<html lang=\(..\)>/\1/p' < $*-prefix)
+%.html: lang=$(shell sed -ne 's/<html lang="\(..\)">/\1/p' < $*-prefix)
 %.html: %-prefix %.md suffix
 	sed 's/\([0-9]*\)¡/<span class="highlight">\1<\/span>/g' < $*.md \
 	| (if test "de" = "$(lang)"; then keine-ligaturen; else cat; fi) \

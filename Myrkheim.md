@@ -1,7 +1,8 @@
-<address>YYYY-MM-DD. Written by Alex Schroeder. Based on random tables
-written by Alex Schroeder and Whidou. To the extent possible under
-law, the authors of this work has waived all copyright and related or
-neighboring rights to this work.</address>
+<address>PDF generated YYYY-MM-DD. Written and adapted by Alex
+Schroeder. Based on random tables written by Alex Schroeder and
+Whidou. To the extent possible under law, the authors of this work has
+waived all copyright and related or neighboring rights to this
+work.</address>
 
 Myrkheim
 ========

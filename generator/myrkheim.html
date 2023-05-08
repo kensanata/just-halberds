@@ -554,7 +554,7 @@ function example (table=false) {
   <hr>
 </div>
 
-<div id="intro"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
+<div id="intro"><p>This is a stand-alone generator. You can save the HTML file locally and it will continue to work. Feel free to use, examine, change and distribute it elsewhere. No strings attached. It is dedicated to the public domain.
 <p>You can replace all the tables in this file with your own and make your own generators! Please do.
 <p class="noprint">The following are some short cuts you might need at the table.
 <p class="noprint">
@@ -1195,6 +1195,18 @@ There is no space after the semicolon.
  Stairs lead further up to tunnels.
  Water drips. Iron creaks.
 <p>[[@[@location]_monster] tunnels]
+1,The stones are covered in yellow deposits.
+ The air stinks of rotten eggs.
+ Everything is full of sulphur.
+ And finally, a boiling mud bath.
+<blockquote>A black stele stands here: “[naga stele message]”</blockquote>
+<p>Around the boiling mud grow strange slimes.
+Further away, brown hyphae drift in the cooler water.
+<p>[[@[@location]_monster] tunnels]
+
+;naga stele message
+1,This gate has been sealed.
+1,Reopening the gate will be punished.
 
 ;eel tunnels
 1,There are silver eels to be found, here.
@@ -1875,6 +1887,7 @@ There is no space after the semicolon.
  
 ;mitra activity
 1,<p>What they value most is honesty.
+1,<p>They don’t want to attract a lot of attention.
 
 ;mitra quote
 1,<blockquote>[@name] says:
@@ -1882,19 +1895,22 @@ There is no space after the semicolon.
  These lies corrode the ties that bind us.
  The fabric of our society is frail.
  Lies fester in our souls.
- Nobody trusts their neighbour anymore.”
-</blockquote>
+ Nobody trusts their neighbour anymore.”</blockquote>
 1,<blockquote>[@name] says:
  “Mitra’s home is Muspelheim, the realm of fire.
  It is by her power that we have light.
  It is by her power that we held it all together.
  She continues to keep us safe, every day.
- Soon, this eternal night will end.”
+ Soon, this eternal night will end.”</blockquote>
 1,<blockquote>[@name] says:
  “The frog god Tsathoggua used to rule Myrkheim but he is gone.
  Have you not seen? There are no more frogs.
  The froglings have left. The toadlings have left.
- The tepid swamps are no more.”
+ The tepid swamps are no more.”</blockquote>
+1,<blockquote>[@name] says:
+ “Mitra is far from here.
+ There is no passage back to Muspelheim.
+ There are no portals to the plane of fire that we know of.”</blockquote>
 
 # needs @special set
 ;dwarves
@@ -2257,6 +2273,10 @@ They are hunting flies as large as cats.
  It corruption is everywhere, but it’s started <a href="#W">[@W]</a>.
  We need help clearing it out.
  Will you be the ones to turn the tide?”</blockquote>
+1,<blockquote>[@name] says: “Centuries ago, we managed to close the last gate to Muspelheim.
+ The incursions of fire giants stopped. No more dragons. No more hydras.
+ And yet, there’s still the occasional fire giant and fire dragon to be found.
+ If you ever find one, let us know.”</blockquote>
 
 ;salamander lair description
 1,Black boulders lie in this caverns, coated with some sort of organic slime.

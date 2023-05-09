@@ -1729,11 +1729,11 @@ the same side? Let’s play to find out!
 
 [Lake Land](https://campaignwiki.org/lake-land), a generator of characters and a mini-setting
 
+[Myrkheim](https://campaignwiki.org/myrkheim), a generator for an underworld mini-setting
+
 [Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 
 [2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf), some thoughts on probabilities
-
-[Knave](https://questingbeast.itch.io/knave), a d20 game
 
 [Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a 2d6 game
 

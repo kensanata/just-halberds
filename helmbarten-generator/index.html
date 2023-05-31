@@ -2,16 +2,16 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Helmbraten Charaktergenerator</title>
+<title>Helmbraten Spielfigurengenerator</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="helmbarten.css">
 <script src="helmbarten.js"></script>
 </head>
 <body>
 
-<h1 id="noprintheader">Helmbarten Charaktergenerator</h1>
+<h1 id="noprintheader">Helmbarten Spielfigurengenerator</h1>
 <div id="noprintheader">
-  <button type="button" onclick="charakter()">Charakter</button>
+  <button type="button" onclick="figur()">Spielfigur</button>
 	<button type="button" onclick="gegend()">Gegend</button>
 	<ul id="links">
 		<li><a href="https://alexschroeder.ch/wiki/Helmbarten">Helmbarten</a>
@@ -24,9 +24,9 @@
 <div id="ziel"></div>
 
 <script>
-function charakter(){
+function figur(){
   const daten = document.getElementById('daten').textContent;
-  document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
+  document.getElementById('ziel').innerHTML = helmbarten(daten).figur().text();
 }
 function gegend(){
   const daten = document.getElementById('daten').textContent;

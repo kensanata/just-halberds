@@ -1,14 +1,14 @@
 /* Helmbarten RPG character generator
    © Alex Schröder 2022
 
-   Charakterbeschreibung: helmbarten(daten).character().text();
+   Figurbeschreibung: helmbarten(daten).character().text();
    Ausgangslage: helmbarten(daten).gegend().text();
 
    Im Fall von Helmbarten sind die Daten im #daten Element der HTML
    Datei gespeichert. Der Aufruf also beispielsweise:
 
    const daten = document.getElementById('daten').textContent;
-   document.getElementById('ziel').innerHTML = helmbarten(daten).charakter().text();
+   document.getElementById('ziel').innerHTML = helmbarten(daten).figur().text();
 
 */
 
@@ -127,10 +127,10 @@ function helmbarten(daten) {
     return total + plus;
   }
 
-  h.charakter = function(reset = true) {
+  h.figur = function(reset = true) {
     if (reset) h.namen = {};
 
-    /* t ist der Charakter */
+    /* t ist die Figur */
     let t = { typ: 'Mensch', };
 
     let karrieren = 0;
@@ -411,7 +411,7 @@ function helmbarten(daten) {
       return "\nStellen\n" + t.stellen.join("\n") + "\n";
     };
 
-    // Charakter als Text
+    // Figur als Text
     t.text = function(hintergrund = true) {
       return (t.gestorben ? '† ' : '')
         + titel() + t.name
@@ -506,7 +506,7 @@ function helmbarten(daten) {
       .map(t => t = h.turm());
     g.personen = Array
       .from(Array(12))
-      .map(() => h.charakter(false))
+      .map(() => h.figur(false))
       .filter(p => !p.gestorben)
       .sort((a, b) => (b.attribute.status - a.attribute.status) || (b.alter - a.alter));
     g.Riesen = Array

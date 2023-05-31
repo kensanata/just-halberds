@@ -26,35 +26,35 @@ Gewürfelt wird, wenn etwas mit spannenden Konsequenzen passiert und
 wir den Ausgang dem Zufall überlassen wollen. Gelingt unseren Personen
 ihr Vorhaben oder nicht? Und was passiert danach?
 
-## Charaktererschaffung
+## Spielfigurenerschaffung
 
 Falls du Spieler oder Spielerin bist, spielst du eine fiktive Person,
-deinen Charakter. Diesen werden wir jetzt gemeinsam erschaffen.
+deine Spielfigur. Diesen werden wir jetzt gemeinsam erschaffen.
 
 Zuerst wählst du deinen Namen, dann würfelst du deine Attribute aus.
 Du hast sechs Attribute: Kraft, Geschick, Ausdauer, Intelligenz,
 Bildung, und Status. Würfle zwei sechsseitige Würfel für jedes
 Attribut, zähle sie zusammen (kurz: 2W6) und notiere es.
 
-> Beispiel: Alex nennt seinen Charakter Adalric und würfelt 8 8 7 9 10
-> 8; Berta nennt ihren Charakter Brunhilde und würfelt 10 6 9 5 4 4.
+> Beispiel: Alex nennt seine Spielfigur Adalric und würfelt 8 8 7 9 10
+> 8; Berta nennt ihre Spielfigur Brunhilde und würfelt 10 6 9 5 4 4.
 
-Dein Charakter ist nun 16 Jahre alt. Nun wählst du eine erste
+Deine Spielfigur ist nun 16 Jahre alt. Nun wählst du eine erste
 Karriere. Zur Auswahl stehen Krieger, Magier, oder Taugenichts. Das
 Vorgehen ist immer gleich: Aufnahmeprüfung, Talente lernen,
 Schicksalsschläge, 4 Jahre älter werden, und dann musst du
-entscheiden, ob dein Charakter das vier weitere Jahre macht, oder ein
-Jahr verwendet, um die Karriere zu wechseln, oder dein Charakter
+entscheiden, ob deine Spielfigur das vier weitere Jahre macht, oder
+ein Jahr verwendet, um die Karriere zu wechseln, oder deine Spielfigur
 bereit für das Abenteurerleben ist.
 
 Je nach Karriere sind andere Attribute von Vorteil. Krieger brauchen
 Kraft oder Ausdauer, Magier brauchen Intelligenz oder Bildung, und
 Taugenichts brauchen Geschick oder Status.
 
-Wenn dein Charakter die Aufnahme für die gewünschte Karriere nicht
+Wenn deine Spielfigur die Aufnahme für die gewünschte Karriere nicht
 schafft, kann die Karriere nicht mehr gewählt werden. Steht keine
-Karriere mehr zur Auswahl, fängt das Abenteurerleben an: würfle auf der
-Belohnungstabelle für jede Karriere!
+Karriere mehr zur Auswahl, fängt das Abenteurerleben an: würfle auf
+der Belohnungstabelle für jede Karriere!
 
 Eine Karriere dauert vier Jahre. Wähle jedes Jahr eine der Tabellen
 deiner Karriere und würfle 1W6. Schreibe dir das Talent mit Wert 1
@@ -63,14 +63,14 @@ lernst. Wenn du „Kämpfen“ lernst, wähle stattdessen eine Waffe:
 Spiess, Helmbarte, Degen, Messer, Armbrust oder Lanze (benötigt
 Reiten-1 und ein Pferd).
 
-Mit jeder Karriere, die dein Charakter gemacht hat, wird die Chance
-höher, dass ein Schicksalsschlag deinen Charakter trifft. Deswegen
-macht es durchaus Sinn, irgendwann mit der Charaktererschaffung
+Mit jeder Karriere, die deine Spielfigur gemacht hat, wird die Chance
+höher, dass ein Schicksalsschlag deine Spielfigur trifft. Deswegen
+macht es durchaus Sinn, irgendwann mit der Spielfigurenererschaffung
 aufzuhören und mit dem Abenteurerleben anzufangen.
 
-Wenn dein Charakter 36 oder älter ist, musst du am Ende deiner
+Wenn deine Spielfigur 36 oder älter ist, musst du am Ende deiner
 Karriere schauen, ob der körperliche Verfall seinen Lauf nimmt. Fällt
-ein Attribut auf null, stirbt der Charakter.
+ein Attribut auf null, stirbt die Spielfigur.
 
 | 1W6 | Alterungstabelle |
 |:---:|-----------------:|
@@ -91,7 +91,7 @@ automatisch Kämpfen-1.
 
 Du verbringst vier Jahre als Krieger und lernst jedes Jahr etwas.
 Wähle jedes Jahr eine der folgenden Tabellen und würfle 1W6. Die
-Tabelle „Offizier“ darfst du nur wählen, wenn dein Charakter 20 oder
+Tabelle „Offizier“ darfst du nur wählen, wenn deine Spielfigur 20 oder
 älter ist.
 
 | 1W6  | Söldner  | Wache     | Reiter     | Offizier   |
@@ -533,7 +533,7 @@ Schlachtfeld (1521), von Urs Graf
 
 ## Weltenbau
 
-Die Welt baut man am besten dort aus, wo die Charaktere sich
+Die Welt baut man am besten dort aus, wo die Spielfiguren sich
 engagieren. Wenn sie nach Norden gehen, wird dort angebaut. Wenn sie
 sich für Bibliotheken interessieren, werden Bücher und Bibliothekare
 wichtig. Wenn sie sich für Geschichte interessieren, werden alte
@@ -547,7 +547,7 @@ tragisches Ende? Eine Liebesgeschichte? Der Besitz einer Burg? Zum
 Ritter geschlagen zu werden? Eine Bande übernehmen? Die Welt zu
 bereisen? Und dann fügt man Helfer, Konkurrenten, Schurken und
 Unruhestifter zur Welt hinzu. Diese Reibung schärft das Profil. Hier
-sehen wir, was unsere Charaktere für Menschen sind.
+sehen wir, was unsere Spielfiguren für Menschen sind.
 
 Konkret empfehle ich, ein Dutzend Personen auszuarbeiten. Alle haben
 einen Namen, Attribute, ein paar Talente, und gehen einer Tätigkeit
@@ -762,8 +762,8 @@ von Guntram von Wolkenstein.
 das Spiel zu erstellen. Mir gefallen die
 [Alpinen](https://campaignwiki.org/text-mapper/alpine/random) Karten.
 
-[Helmbarten Charaktergenerator](https://campaignwiki.org/helmbarten/),
-um schnell ein paar Charaktere oder eine Anfangssituation zu
+[Helmbarten Spielfigurengenerator](https://campaignwiki.org/helmbarten/),
+um schnell ein paar Spielfiguren oder eine Anfangssituation zu
 erstellen.
 
 [Farnthal Replay](https://alexschroeder.ch/pdfs/Farnthal.pdf) erzählt,

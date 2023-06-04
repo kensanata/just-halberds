@@ -11,6 +11,7 @@ upload: $(FILES)
 	(echo ""; tail -n +2 images/Farnthal.svg) | \
 	~/bin/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
 	rsync -ai generator/lake-land.html generator/myrkheim.html sibirocobombus:campaignwiki.org/
+	rsync -ai helmbarten-generator/ sibirocobombus:campaignwiki.org/helmbarten/
 
 watch:
 	@echo Regenerating PDFs whenever the .md or .css files get saved...

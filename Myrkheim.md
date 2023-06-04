@@ -571,8 +571,7 @@ waves lapping at their feet dance an orange glow.
 > and drains that destroyed our world? It was the dwarves who dug and
 > built their maggot hives."
 
-From here, tunnels lead to [The Shrine for the Prince of the
-Underworld](#H).
+From here, tunnels lead to [The Altar of the Great Deceiver](#H).
 
 The Ten Thousand Guardians {#T}
 --------------------------

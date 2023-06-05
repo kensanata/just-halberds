@@ -113,6 +113,22 @@ they are looking at.
 From here, tunnels lead to [The Last Pazuzu Shrine](#F), [The Sunken
 Grave](#G) and [The Maggots of the Earth](#B).
 
+Dabābu Kīnu the Honest has opinions on these options:
+
+> “Muṣârānu the Healer lives in the sunken palace. It is the last
+> remnant of the water kingdom that onces was. If you are interested,
+> Muṣârānu has much to teach you.”
+
+> “The Pazuzu shrine is home to evil dwarves who have fought us
+> creatures of the water for ages with dams and drains. They are old
+> and fearful now, so their war has come to a standstill. Pazuzu is
+> the winged demon lord of pestilence. Surely you would not want to
+> serve him?”
+
+> “Do not go to where the maggots live. It's an ancient necropolis
+> infested with ghouls. Do you want to fight ghouls? They command the
+> forces of life and death.”
+
 The Maggots of the Earth {#B}
 ------------------------
 

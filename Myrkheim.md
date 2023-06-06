@@ -110,8 +110,13 @@ they are looking at.
 > Dabābu Kīnu the Honest says: "Do you know these machines? Do such
 > machines exist where you come from?"
 
-From here, tunnels lead to [The Last Pazuzu Shrine](#F), [The Sunken
-Grave](#G) and [The Maggots of the Earth](#B).
+It's impossible to tell what the machinery was for. A train station?
+Depots? Mining? With Construction, a building, fortifications or a
+watchtowers can be built. With Crafts, the metal can be repurposed for
+spears, halberds, art installations.
+
+From here, tunnels lead to [The Shrine of Loyalty Unwavering](#F),
+[The Sunken Grave](#G) and [The Maggots of the Earth](#B).
 
 Dabābu Kīnu the Honest has opinions on these options:
 
@@ -119,15 +124,23 @@ Dabābu Kīnu the Honest has opinions on these options:
 > remnant of the water kingdom that onces was. If you are interested,
 > Muṣârānu has much to teach you.”
 
-> “The Pazuzu shrine is home to evil dwarves who have fought us
-> creatures of the water for ages with dams and drains. They are old
-> and fearful now, so their war has come to a standstill. Pazuzu is
-> the winged demon lord of pestilence. Surely you would not want to
-> serve him?”
+> “I do not know much about the dwarves and their shrines. The dwarves
+> have brought many strange gods. Some are worse than others. The next
+> shrine is a shrine to a goddess of fire. We do not like it – and the
+> dwarves do not like us.”
 
 > “Do not go to where the maggots live. It's an ancient necropolis
 > infested with ghouls. Do you want to fight ghouls? They command the
 > forces of life and death.”
+
+If pressed for enemies, or more information, Dabābu Kīnu adds:
+
+> “After the shrine to the fire goddess comes another shrine. There,
+> the dwarves pray to a winged bird-man. We do not like dwarves
+> because they are evil. The dwarves have fought us creatures of the
+> water for ages with dams and drains. They are old and fearful now,
+> so their war has come to a standstill. Their winged god is the demon
+> lord of pestilence. Surely you would not want to serve it?”
 
 The Maggots of the Earth {#B}
 ------------------------
@@ -180,7 +193,46 @@ They are hunting flies as large as cats.
 > much laughter.
 
 From here, tunnels lead to [The Shrine of the Serpent King](#D), [The
-Maggots of the Earth](#B) and [The Long Crawlies of Cannibals](#K).
+Maggots of the Earth](#B) and [The Long Crawlies of Cannibals](#K). If
+you can find a way to the bottom of this rift, it leads to [The
+Dreamlands](#Y).
+
+The Dreamlands {#Y}
+--------------
+
+The stench is mind numbing. This is one of the caverns at the bottom
+of a long chimney. All the sewage, all the garbage, it runs down the
+walls, it thickens, it drops, it keeps on flowing. Forever downwards,
+collecting tributaries of more refuse.
+
+And then, finally, it all ends here. A sea of rotting corpses,
+liquefied flesh, the excrement of the living, the goo of the dead.
+
+This goo swamp of decaying material has islands, and on this islands
+stand congregations of myconids. The mushroom people are staring up
+into the darkness as if awaiting more gifts from above.
+
+> Reḫû the Overflowing and their followers: Number-7 Attack-9 Escape-5
+> Hit-7 Damage-10 Endurance-6 Life-2 Charm-7 Healing-3 Sleep-7
+
+As they look at you, little glow-shrooms start pulsating all around
+you. They are all in sync.
+
+> Reḫû the Overflowing says: “This is paradise. There is no need to do
+> anything. Join us. Stand. Wait. Food will come.”
+
+If you spend time to commune with them, if you partake in their wild
+dreams of Father Shroom, Reḫû adds:
+
+> “I have travelled the underworld far and wide. Where have all the
+> swamps gone? Where are my fellow myconids? I can’t find them
+> anymore. The world above has changed and not for the better. The
+> Prince of Dreams has replaced Father Shroom as the giver of dreams
+> and that’s not good. I pity the world above.”
+
+If you can climb the chimney, you’ll either find [The Great
+Market](#C) or [The Home of the Spider Knights](#N) far above,
+depending on which route you take.
 
 The Shrine of the Serpent King {#D}
 ------------------------------
@@ -230,39 +282,43 @@ The dwarves are here to spread the dominion of their demon lord.
 > draining the swamp. We bring clarity of purpose. We are going to make
 > Myrkheim great again."
 
-From here, tunnels lead to [The Cemetery of Despair](#O), [The Last
-Pazuzu Shrine](#F) and [The Shrine of the Serpent King](#D).
+From here, tunnels lead to [The Cemetery of Despair](#O), [The Shrine
+of Loyalty Unwavering](#F) and [The Shrine of the Serpent King](#D).
 
-The Last Pazuzu Shrine {#F}
-----------------------
+The Shrine of Loyalty Unwavering {#F}
+--------------------------------
 
-In this cavern stands a giant statue of a creature with the beak of a
-vulture, claws for hands and feet, large insect eyes and four large
-wings on its back. This is Pazuzu, an ancient demon lord associated with
-the plague.
+A great cavern opens up. In its middle rises a fortress of massive
+walls. Embrasures point in all directions, the openings glowing little
+small eyes. Behind the walls the flickering light of fire promises
+comfort and warmth.
 
-At it's feet stands a dwarf fortress. Strong walls to protect against
-anybody on foot, long spikes to protect against anybody on wings. Light
-burns in watch towers.
+This is a dwarf fortress. A high priest of Mitra serves the safekeeper
+of all oaths and as a keeper of the flame.
 
-> Sólvá the dwarf and their followers: Number-3 Attack-9 Escape-4 Hit-7
-> Damage-9 Endurance-5 Life-3 Brewing-7 Craft-6 Discipline-10 Singing-6
-> Spying-9
+> Ingrún the dwarf and their followers: Number-3 Attack-6 Escape-4
+> Hit-8 Damage-6 Endurance-5 Life-4 Building-8 Contruction-3
+> Discipline-9 Singing-10 Fire-4
 
-If there's ever a problem, the dwarves have trained war bears with
-strange beaks to protect them.
+They have hell hounds to support them.
 
-> Hawk Bears: Number-7 Attack-7 Escape-4 Hit-10 Damage-10 Endurance-11
-> Life-10
+> Hell hounds: Number-6 Attack-10 Escape-3 Hit-11 Damage-8 Endurance-7 Life-5 Fire-8
 
-The dwarves are here to spread the dominion of their demon lord.
+What they value most is honesty. They cannot lie.
 
-> Sólvá says: "These lands used to belong to newts and toads. We are
-> draining the swamp. We bring clarity of purpose. We are going to make
-> Myrkheim great again."
+> Ingrún says: “Mitra is far from here. There is no passage back to
+> Muspelheim. There are no portals to the plane of fire that we know
+> of.”
 
-From here, tunnels lead to [The Refuge of Silence](#Q), [The Shrine for
-the Prince of Dreams](#E) and [The Garden of Peace](#A).
+If pressed, Ingrún adds:
+
+> “There used to be portals. Before this was a world of water-filled
+> tunnels and swamps, these tunnels were filled with liquid fire. You
+> can still see the scorched earth if you know where to dig. This was
+> all Mitra’s realm.”
+
+From here, tunnels lead to [The Refuge of Silence](#Q), [The Shrine
+for the Prince of Dreams](#E) and [The Garden of Peace](#A).
 
 The Sunken Grave {#G}
 ----------------
@@ -332,6 +388,19 @@ won't be burnt twice.
 
 From here, tunnels lead to [The Maggots of the Earth](#B), [The Altar of
 the Great Deceiver](#H) and [The Caves of Night](#J).
+
+Behind the nets is a shaft that goes down. The air stinks of rotten
+eggs. The stone is covered in yellow deposits. It’s sulphur. The air
+gets hot. At the bottom of the shaft is a boiling mud bath.
+ 
+> A black stele stands here: “This gate has been sealed.”
+
+It’s unclear how the seal can be broken except for strong Door magic.
+
+Around the boiling mud grow strange slimes. Further away, brown hyphae
+drift in the cooler water. Perhaps with some Fungi magic, these can be
+enlisted to break the seal. Their fiery death would alert Reḫû the
+Overflowing in the [The Dreamlands](#Y).
 
 The Caves of Night {#J}
 ------------------
@@ -451,7 +520,8 @@ feces is being flung.
 > Have you come to lick my toes?"
 
 From here, tunnels lead to [The Cemetery of Despair](#O), [The Great
-Net](#V) and [The Water Lake](#M).
+Net](#V) and [The Water Lake](#M). If you can find a way to the bottom
+of this rift, it leads to [The Dreamlands](#Y).
 
 The Cemetery of Despair {#O}
 -----------------------
@@ -531,8 +601,15 @@ rites.
 > Eye Tyrant: Number-1 Attack-5 Escape-7 Hit-8 Damage-9 Endurance-11
 > Life-11 Charm-6 Eyes-8 Transmutation-8
 
-From here, tunnels lead to [The Tunnels of Entrails](#P), [The Last
-Pazuzu Shrine](#F) and [The Shrine for the Prince of the
+If pressed, Kitturru admits the following:
+
+> “It is true, this temple was once led by Banupal the old. It was one
+> of the last frog temples. The frog god Tsathoggua used to rule
+> Myrkheim but he is gone. The froglings have left. The toadlings have
+> left. The tepid swamps are no more.”
+
+From here, tunnels lead to [The Tunnels of Entrails](#P), [The Shrine
+of Loyalty Unwavering](#F) and [The Shrine for the Prince of the
 Underworld](#R).
 
 The Shrine for the Prince of the Underworld {#R}

@@ -155,7 +155,12 @@ movement. Ghouls.
 > Ardanānu the Phantom and their followers: Number-5 Attack-7 Escape-4
 > Hit-9 Damage-9 Endurance-12 Life-14 Necromancy-7
 
-If you stop, they'll ask you to come up.
+If you stop, they'll ask you to come up. There are statues standing in
+front of grave caves, white shadows in a blue light that filters in
+from above, a kind of glowing mist. There are narrow passages
+connecting the graves but none of them lead much further up.
+
+There is no straight forward access to the light above.
 
 > Ardanānu the Phantom says: "You want eternal life but no love? You
 > want a kingdom but no light? Everything we once loved has turned to
@@ -164,6 +169,19 @@ If you stop, they'll ask you to come up.
 
 From here, tunnels lead to [The Garden of Peace](#A), [The Many-legged
 Shaft](#I) and [The Great Market](#C).
+
+Ardanānu has opinions.
+
+> The garden is not garden at all but old junk collected by dying
+> society. The salamanders are dead but they don’t know it.
+
+> The spider cover an interesting hole. When we were buried here, this
+> underground world was very different. Oh so very different. It’s
+> hard for me to put it into words. You’ll have to see for yourselves.
+
+> The market is a goblin world. Just like this rift here goes up and
+> we don’t know where it goes, the goblin market is built atop a rift
+> and we don’t know where it goes. It goes deep.
 
 The Great Market {#C}
 ----------------

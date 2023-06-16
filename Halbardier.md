@@ -1,4 +1,6 @@
-<address>Frotz, YYYY-MM-DD</address>
+<address>Frotz, Alex, YYYY-MM-DD. To the extent possible under law,
+the authors of this work has waived all copyright and related or
+neighboring rights to this work.</address>
 
 # Halbardier
 
@@ -28,23 +30,23 @@ six attributes: Strength, Dexterity, Endurance, Intelligence,
 Education, and Status. Roll two six-sided dice for each attribute, add
 them together (short: 2d6) and write it down.
 
-> Example: Alex names his character Aapeli and rolls 8 8 7 9 10
-> 8; Berta names her character Bellatrix and rolls 10 6 9 5 4 4.
+> Example: Alex names his character Aleph and rolls 8 8 7 9 10 8;
+> Berta names her character Bren and rolls 10 6 9 5 4 4.
 
 Your character begins at age 16. Now you choose a first career. The
-choices are Military, Scout, or Citizen. The process is always the
-same: make an admission test if you enter a new career, get an
+choices are Security, Exploration or Trade. The process is always
+the same: make an admission test if you enter a new career, get an
 automatic talent if you are admitted, learn talents, possibly suffer a
-twist of fate, grow older by four years. You then decide if your 
-character continues in the same career for another four years,
-with no admission test and no automatic skill; or if you use one year
-to change careers, risking a new admission test, but also getting a
-new automatic skill; or if your character is ready for a life of
+twist of fate, grow older by four years. You then decide if your
+character continues in the same career for another four years, with no
+admission test and no automatic skill; or if you use one year to
+change careers, risking a new admission test, but also getting a new
+automatic skill; or if your character is ready for a life of
 adventure.
 
-Depending on the career, certain attributes are advantageous. Military
-need Strength or Endurance, Scouts need Intelligence or Education, and
-Citizens need Dexterity or Social.
+Depending on the career, certain attributes are advantageous. Security
+needs Strength or Dexterity, Exploration needs Endurance or Education,
+and Trade needs Intelligence or Status.
 
 If your character doesn't gain admission to the desired career, that
 career can no longer be selected. When there are no more careers to
@@ -54,7 +56,8 @@ each career your character has been admitted to!
 A career lasts for four years. Each year, choose one of your career
 charts and roll 1d6. Write down that talent with a value of 1, or
 increase the value if you learn a talent again. When you learn
-"Fighting", choose a weapon instead: unarmed, melee, or ranged.
+“Fighting”, choose a weapon instead: unarmed, knife, rapier, bow,
+handgun, rifle.
 
 With every career your character completes, the chance for a twist of
 fate increases. Thus it makes perfect sense to stop character
@@ -73,33 +76,33 @@ character dies.
 | 5   |          Lucky! |
 | 6   |          Lucky! |
 
-## Military Career
+## Security Career
 
-**Admission**: Roll 2d6 ≤ Strength or Endurance (your choice). You
+**Admission**: Roll 2d6 ≤ Strength or Dexterity (your choice). You
 automatically learn Fighting-1.
 
-> Example: Bellatrix has Strength 10 and Berta rolls 2. Bellatrix is
-> accepted!
+> Example: Bren has Strength 10 and Berta rolls 2. Bren is accepted!
 
-You spend four years in the Military and learn something every year. 
-Each year choose one of the following tables and roll 1d6. You may
-only roll on the "Officer" table if your character is 20 or older.
+You spend four years in Security and learn something every year. Each
+year, choose one of the following tables and roll 1d6. You may only
+roll on the "Officer" table if your character is 20 or older.
 
-| 1d6 |        Guard |    Transport |  Assault |     Officer |
-|:---:|-------------:|-------------:|---------:|------------:|
-| 1   | Construction |        Pilot |  Vehicle |    Language |
-| 2   |      Gunnery |     Engineer | Sneaking | Bureaucracy |
-| 3   |      Tactics |      Vehicle |  Tactics |     Tactics |
-| 4   |      Medical |     Computer |   Spying |     Society |
-| 5   |       Tinker |      Medical |  Society |    Behavior |
-| 6   |     Fighting |     Fighting | Fighting |    Fighting |
+| 1d6 |        Guard | Transport |  Assault |     Officer |
+|:---:|-------------:|----------:|---------:|------------:|
+| 1   | Construction |     Pilot |  Vehicle |    Language |
+| 2   |      Gunnery |  Engineer | Sneaking | Bureaucracy |
+| 3   |      Tactics |   Vehicle |  Tactics |     Tactics |
+| 4   |      Medical |  Computer |   Spying |     Society |
+| 5   |       Tinker |   Medical |  Society |   Behaviour |
+| 6   |     Fighting |  Fighting | Fighting |    Fighting |
 
 > Example: Berta chooses 2× Guard, 2× Assault, and rolls 3 2 5 1,
-> resulting in Tactics-1, Gunnery-1, Society-1, and Vehicle-1.
-> And Fighting-1!
+> resulting in Tactics-1, Gunnery-1, Society-1, and Vehicle-1. Bren
+> also got Fighting-1 for making it into Security. She picks guns and
+> changes Fighting-1 to Guns-1.
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤ Strength or
-Endurance (your choice) to avoid consequences. Otherwise, you
+Dexterity (your choice) to avoid consequences. Otherwise, you
 determine the consequences with 1d6.
 
 1. Blood Feud: The friends and family of the target of a campaign
@@ -110,11 +113,12 @@ determine the consequences with 1d6.
 3. Life Debt: A comrade saved you during a campaign. Now you owe them 
    for your life. 
 4. Injured: You were injured during a campaign, and received a medical 
-   discharge. The Military career is now denied to you.
-5. Stranded: Your ride left without you or was destroyed, and you are 
-   stranded. Roll on the aging table. Roll 3d6 ≤ an attribute of your 
-   choice to escape. If this fails, another four years pass. Roll again
-   on the aging table and try again – until you succeed or die.
+   discharge. The Security career is now denied to you.
+5. Stranded: Your ride left without you or was destroyed, and you are
+   stranded. Roll on the aging table. Roll 3d6 ≤ an attribute of your
+   choice to escape. If this fails, another four years pass. Roll
+   again on the aging table and try again – until you succeed or die.
+   Gain no new skills during this time.
 6. Missing in Action: During a campaign, your comms were lost, and you 
    were never heard from again.
 
@@ -122,16 +126,15 @@ determine the consequences with 1d6.
 > fate. Bellatrix is now 20 years old. The aging table does not have
 > to be rolled yet.
 
-## Scout Career
+## Exploration Career
 
-**Admission**: Roll 2d6 ≤ Intelligence or Education (your choice). You
+**Admission**: Roll 2d6 ≤ Endurance or Education (your choice). You
 automatically learn Pilot-1.
 
-> Example: Aapeli has Education 10 and Alex rolls 2. Aapeli is
-> accepted!
+> Example: Aleph has Education 10 and Alex rolls 2. Aleph is accepted!
 
-You spend four years as a Scout and learn something every year. 
-Each year choose one of the following tables and roll 1d6.
+You spend four years in Exploration and learn something every year.
+Each year, choose one of the following tables and roll 1d6.
 
 | 1d6 |   Spacer |   Observer |  Researcher |  Surveyor |
 |:---:|---------:|-----------:|------------:|----------:|
@@ -142,55 +145,61 @@ Each year choose one of the following tables and roll 1d6.
 | 5   | Computer | Infiltrate |     Science |  Survival |
 | 6   | Fighting |    Vehicle |     Society |    Tinker |
 
-> Example: Alex chooses 1× Starship, 3× Researcher, and rolls 6 2 2 6,
-> resulting in Fighting-1, Library-2, Society-1. And Pilot-1!
+> Example: Alex chooses 1× Spacer, 3× Researcher, and rolls 6 2 2 6,
+> resulting in Fighting-1, Library-2, Society-1. And Pilot-1 for
+> entering the career! Alex picks knives and changes Fighting-1 to
+> Knives-1.
 
-**Twist of Fate**: Roll 2d6 + number of previous careers ≤
-Intelligence or Education (your choice) to avoid consequences.
-Otherwise, you determine the consequences with 1d6.
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤ Endurance
+or Education (your choice) to avoid consequences. Otherwise, you
+determine the consequences with 1d6.
 
 1. War of Words: You have humiliated a rival's research project. He or
    she will never forgive you for that.
-2. Blackmailed: Someone caught you accessing restricted data. Now 
+2. Blackmailed: Someone caught you accessing restricted data. Now
    they're blackmailing you, and there is no end in sight.
 3. Drawn in: You've become embroiled in career politics and chose a
-   side. Lines were drawn, and now you owe more than just a favor to 
+   side. Lines were drawn, and now you owe more than just a favour to
    the powers-that-be for your faction.
-4. Caught: You were caught falsifying data in the Database and cashiered.
-   The Scout career is now denied to you.
-5. Lost: You are stranded far from civilization. Roll on the aging 
-   table. Roll 3d6 ≤ an attribute of your choice to escape. If this 
+4. Caught: You were caught falsifying data in the database and
+   cashiered. The Exploration career is now denied to you.
+5. Lost: You are stranded far from civilisation. Roll on the aging
+   table. Roll 3d6 ≤ an attribute of your choice to escape. If this
    fails, another four years pass. Roll again on the aging table and
-   try again – until you succeed or die.
-6. No Carrier: You departed on a routine scouting mission, and never 
-   reported your findings.
+   try again – until you succeed or die. Gain no new skills during
+   this time.
+6. No Carrier: You departed on a routine scouting mission and never
+   returned.
 
-> Example: Alex rolls 8 against Education. Aapeli suffers no twist
+> Example: Alex rolls 8 against Education-10. Aapeli suffers no twist
 > of fate and is now 20 years old.
 
-## Citizen Career
+## Trade Career
 
-**Admission**: Roll 2d6 ≤ Dexterity or Status (your choice). You
+**Admission**: Roll 2d6 ≤ Intelligence or Status (your choice). You
 automatically learn Society-1.
 
-> Example: Aapeli has Status 8 and Alex rolls 2. Aapeli is
-> accepted!
+> Example: Aleph switches careers and applies for the Trade career.
+> The switch costs him a year. Aleph Status 8 and Alex rolls 2. Aapeli
+> is accepted!
 
-You spend four years as a Citizen and learn something every year. 
-Each year choose one of the following tables and roll 1d6.
+You spend four years in Trade and learn something every year. Each
+year choose one of the following tables and roll 1d6.
 
-| 1d6 |    Merchant | Technician | Entertainer |  Traveller |
-|:---:|------------:|-----------:|------------:|-----------:|
-| 1   |   Computers |     Tinker |     Society |  Fast Talk |
-| 2   | Bureaucracy |   Robotics |    Behavior | Streetwise |
-| 3   |     Vehicle |    Vehicle |      Tinker |    Society |
-| 4   |  Mercantile |    Medical |    Literacy |   Sneaking |
-| 5   |    Behavior |   Computer |     Perform |    Medical |
-| 6   |       Pilot |    Science |  Mercantile |   Fighting |
+| 1d6 |    Merchant | Technician | Representative |  Traveller |
+|:---:|------------:|-----------:|---------------:|-----------:|
+| 1   |   Computers |     Tinker |        Society |  Fast Talk |
+| 2   | Bureaucracy |   Robotics |      Behaviour | Streetwise |
+| 3   |     Vehicle |    Vehicle |        Vehicle |    Society |
+| 4   |  Mercantile |    Medical |       Literacy |   Sneaking |
+| 5   |    Behavior |   Computer |        Perform |    Medical |
+| 6   |       Pilot |    Science |     Mercantile |   Fighting |
 
-> Example: Alex chooses 2x Entertainer and 2x Traveller, and rolls 6 2 2 6,
-> resulting in Mercantile-1, Behavior-1, Streetwise-1, and Fighting-1. 
-> And Society-1!
+> Example: Alex chooses 2x Representative and 2x Traveller, and rolls
+> 6 2 2 6, resulting in Mercantile-1, Behaviour-1, Streetwise-1, and
+> Fighting-1. And Society-1 for switch career. Alex picks knives again
+> and changes Knives-1 to Knives-2. Society-1 also increases to
+> Society-2.
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Dexterity or Status (your choice) to avoid consequences.
@@ -201,20 +210,21 @@ Otherwise, you determine the consequences with 1d6.
 2. Debt: Plans have gone awry in ways you couldn't imagine. You now
    owe more money than you can ever pay back.
 3. Pulled in: You've accepted help from people, gotten more and more
-   entangled, and now you owe them more than just a favor.
-4. Cancelled: You were accused of something terrible in the public eye. 
-   Everyone knows your face, and no one will associate with you. The Citizen 
-   career is now denied to you.
+   entangled, and now you owe them more than just a favour.
+4. Cancelled: You were accused of something terrible in the public
+   eye. Everyone knows your face, and no one will associate with you.
+   The Trade career is now denied to you.
 5. Detained: The plan has been blown. You got caught. Roll on the
    aging table. Roll 3d6 ≤ an attribute of your choice to escape. If
    this fails, another four years pass. Roll again on the aging table
-   and try again – until you succeed or die.
+   and try again – until you succeed or die. Gain no new skills during
+   this time.
 6. Disappeared: One day you just dropped "off the grid", and your friends
    and family have not heard from you again.
 
-> Example: Alex rolls 8+1 because he already has a career as a Scout
-> behind him. Aapeli suffers no twist of fate and is now 25 years
-> old.
+> Example: Alex rolls 8+1 because he already has a career in
+> Exploration behind him. Aleph suffers no twist of fate and is now 25
+> years old.
 
 ## Talents
 
@@ -256,14 +266,14 @@ A few key words about the individual talents.
 Before you start the adventurous life, there is one more reward. Roll
 for each career on the appropriate table.
 
-| 1d6 |         Military |           Scout |         Citizen |
+| 1d6 |         Security |           Scout |         Citizen |
 |:---:|-----------------:|----------------:|----------------:|
 | 1   |  Intelligence +1 | Intelligence +2 | Intelligence +1 |
 | 2   |     Education +2 |    Education +1 |    Education +2 |
 | 3   |        Status +1 |       Status +2 |       Status +2 |
 | 4   |   Secret Society |  Secret Society |  Secret Society |
 | 5   |           Weapon |   Scout Contact |       Companion |
-| 6   | Military Contact |          Tenure |          Patron |
+| 6   | Security Contact |          Tenure |          Patron |
 
 > Example: Aapeli has had two careers, 1× Scout and 1× Citizen.
 > Alex rolls 4 5, resulting in membership in a Secret Society and a
@@ -284,7 +294,7 @@ Dexterity, Endurance, Intelligence, Education, and Status).
 
 **Weapon**: 
 
-**Military Contact**:
+**Security Contact**:
 
 **Scout Contact**:
 

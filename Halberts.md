@@ -83,7 +83,8 @@ character dies.
 ## Warrior Career
 
 **Suitability**: Roll 2d6 ≤ Strength or Endurance (your choice). You
-automatically learn Fighting-1.
+automatically learn Fighting-1 if you pass. If you don't, you realize
+that killing people is brutal and cold and you are not.
 
 > Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
 > accepted!
@@ -132,7 +133,9 @@ determine the consequences with 1d6.
 ## Mage Career
 
 **Suitability**: Roll 2d6 ≤ Intelligence or Education (your choice).
-You automatically learn Literacy-1.
+You automatically learn Literacy-1 if you pass. If you don't, you
+realize that you don't want to spend the years of your short life in
+dusty libraries studying old books.
 
 > Example: Adalric has Education-9 and Alex rolls 9. Adalric is
 > accepted!
@@ -182,7 +185,9 @@ Otherwise, you determine the consequences with 1d6.
 ## Rapscallion Career
 
 **Suitability**: Roll 2d6 ≤ Dexterity or Status (your choice). You
-automatically learn Running-1.
+automatically learn Running-1 if you pass. If you don't, you realize
+that you can't bear the endless talks, the tiresome reports, the lies
+and the deceit.
 
 > Example: Adalric changes careers (so he is now 21 years old) and
 > wants to become a Rapscallion; he has Status 10 and Alex rolls 7.
@@ -393,7 +398,7 @@ damage they can take; if it drops to zero, they faint; excess damage
 is substracted from life; if it drops to zero, they are mortally
 wounded; attack determines whether they attack in an encounter (2d6 ≤
 attack); hit determines how well they hit (2d6 ≤ hit), and escape
-determines if they attempt to escape when they’re not attacking (2d6 ≤
+determines if they attempt to escape when they're not attacking (2d6 ≤
 escape). If they neither attack nor escape, we talk.
 
 | 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |

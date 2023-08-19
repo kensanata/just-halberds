@@ -116,7 +116,7 @@ opening, they think of you.
 
 Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
 roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then roll 2d6 ≤ attribute - 2. A +1 talent is good
+talent is missing, then roll 2d6 ≤ attribute -2. A +1 talent is good
 enough to do it for a living.
 
 The chance of rolling a target number or less on 2d6:

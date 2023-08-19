@@ -22,8 +22,8 @@ their project or not? And what happens afterwards?
 
 ## Character Creation
 
-If you are a player, you play a fictional person, your character. We
-will now create this together.
+If you are a player, you play a fictional person, your character.
+Create characters together, at the table.
 
 First you choose your name, then you roll your attributes. You have
 six attributes: Strength, Dexterity, Endurance, Intelligence,
@@ -92,12 +92,12 @@ roll on the "Officer" table if your character is 20 or older.
 | 1   | Construction |     Pilot |  Vehicle |    Language |
 | 2   |      Gunnery |  Engineer | Sneaking | Bureaucracy |
 | 3   |      Tactics |   Vehicle |  Tactics |     Tactics |
-| 4   |      Medical |  Computer |   Spying |     Society |
-| 5   |       Tinker |   Medical |  Society |   Behaviour |
+| 4   |      Medical |  Computer |   Spying |     Culture |
+| 5   |   Mechanical |   Medical |  Culture |      People |
 | 6   |     Fighting |  Fighting | Fighting |    Fighting |
 
 > Example: Berta chooses 2× Guard, 2× Assault, and rolls 3 2 5 1,
-> resulting in Tactics-1, Gunnery-1, Society-1, and Vehicle-1. Bren
+> resulting in Tactics-1, Gunnery-1, Culture-1, and Vehicle-1. Bren
 > also got Fighting-1 for making it into Security. She picks guns and
 > changes Fighting-1 to Guns-1.
 
@@ -136,17 +136,17 @@ automatically learn Pilot-1.
 You spend four years in Exploration and learn something every year.
 Each year, choose one of the following tables and roll 1d6.
 
-| 1d6 |   Spacer |   Observer |  Researcher |  Surveyor |
-|:---:|---------:|-----------:|------------:|----------:|
-| 1   |    Pilot |    Library |    Computer |  Computer |
-| 2   | Engineer |     Tinker |     Library |   Vehicle |
-| 3   |  Library |    Medical | Bureaucracy |   Science |
-| 4   |  Gunnery |   Survival |    Language |   Library |
-| 5   | Computer | Infiltrate |     Science |  Survival |
-| 6   | Fighting |    Vehicle |     Society |    Tinker |
+| 1d6 |   Spacer |   Observer |  Researcher |   Surveyor |
+|:---:|---------:|-----------:|------------:|-----------:|
+| 1   |    Pilot |    Library |    Computer |   Computer |
+| 2   | Engineer | Mechanical |     Library |    Vehicle |
+| 3   |  Library |    Medical | Bureaucracy |    Science |
+| 4   |  Gunnery |   Survival |    Language |    Library |
+| 5   | Computer | Infiltrate |     Science |   Survival |
+| 6   | Fighting |    Vehicle |     Culture | Mechanical |
 
 > Example: Alex chooses 1× Spacer, 3× Researcher, and rolls 6 2 2 6,
-> resulting in Fighting-1, Library-2, Society-1. And Pilot-1 for
+> resulting in Fighting-1, Library-2, Culture-1. And Pilot-1 for
 > entering the career! Alex picks knives and changes Fighting-1 to
 > Knives-1.
 
@@ -177,7 +177,7 @@ determine the consequences with 1d6.
 ## Trade Career
 
 **Admission**: Roll 2d6 ≤ Intelligence or Status (your choice). You
-automatically learn Society-1.
+automatically learn Culture-1.
 
 > Example: Aleph switches careers and applies for the Trade career.
 > The switch costs him a year. Aleph Status 8 and Alex rolls 2. Aapeli
@@ -188,18 +188,18 @@ year choose one of the following tables and roll 1d6.
 
 | 1d6 |    Merchant | Technician | Representative |  Traveller |
 |:---:|------------:|-----------:|---------------:|-----------:|
-| 1   |   Computers |     Tinker |        Society |  Fast Talk |
-| 2   | Bureaucracy |   Robotics |      Behaviour | Streetwise |
-| 3   |     Vehicle |    Vehicle |        Vehicle |    Society |
+| 1   |    Computer | Mechanical |        Culture |  Fast Talk |
+| 2   | Bureaucracy |   Robotics |         People | Streetwise |
+| 3   |     Vehicle |    Vehicle |        Vehicle |    Culture |
 | 4   |  Mercantile |    Medical |       Literacy |   Sneaking |
-| 5   |    Behavior |   Computer |        Perform |    Medical |
+| 5   |      People |   Computer |        Perform |    Medical |
 | 6   |       Pilot |    Science |     Mercantile |   Fighting |
 
 > Example: Alex chooses 2x Representative and 2x Traveller, and rolls
-> 6 2 2 6, resulting in Mercantile-1, Behaviour-1, Streetwise-1, and
-> Fighting-1. And Society-1 for switch career. Alex picks knives again
-> and changes Knives-1 to Knives-2. Society-1 also increases to
-> Society-2.
+> 6 2 2 6, resulting in Mercantile-1, People-1, Streetwise-1, and
+> Fighting-1. And Culture-1 for switch career. Alex picks knives again
+> and changes Knives-1 to Knives-2. Culture-1 also increases to
+> Culture-2.
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Dexterity or Status (your choice) to avoid consequences.
@@ -230,57 +230,84 @@ Otherwise, you determine the consequences with 1d6.
 
 We roll checks as follows: 2d6 ≤ attribute + talent. On very hard
 tests: 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then 2d6/3d6 +0.
+talent is missing, then 2d6 or 3d6 ≤ attribute -2.
+
+The chance of rolling a target number or less on 2d6:
+
+| 2    | 3    | 4    | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
+|:----:|:----:|:----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 3%   | 8%   | 17%  | 28%   | 42%   | 58%   | 72%   | 83%   | 92%   | 97%   | 100%  |
+| 1/36 | 3/36 | 6/36 | 10/36 | 15/36 | 21/36 | 26/36 | 30/36 | 33/36 | 35/36 | 36/36 |
 
 A few key words about the individual talents.
-**Behavior**: Analyze the psychology of a single person or group.
 **Bureaucracy**: Understand and work with the ins and outs of red tape.
-**Computer**: Build, maintain, program, or repair computers.
-**Construction**: Build, maintain, or repair structures.
+**Computer**: Build, maintain, program or repair computers.
+**Construction**: Build, maintain, or repair structures such as buildings and defensive positions.
+**Culture**: Know details about cultures, their histories and their norms.
 **Engineer**: Build, maintain, or repair systems on spaceships.
 **Fast Talk**: Convince, trick, or cajole someone into doing something.
-**Fighting**: Understand how to fight with one: Unarmed, melee weapons, or ranged weapons.
-**Gunnery**: Operate weapons mounted on vehicles or spaceships.
-**Infiltrate**: Blend seamlessly into social groups for the purpose of gathering information.
+**Fighting**: Know how to use a personal weapon such as knives, rapiers, bows, handguns or rifles.
+**Gunnery**: Operate weapons mounted on vehicles or spaceships such as machine guns, plasma guns or rail guns.
+**Infiltrate**: Blend seamlessly into social groups.
 **Language**: Understand dialects and languages and their history.
-**Library**: Update and query the Scout service's database.
+**Library**: Use databases and archives in order to find obscure or censored information.
 **Literacy**: Familiarity with classical and popular forms of media.
-**Medical**: Diagnose and treat injuries and ailments.
+**Medical**: Diagnose and treat injuries and ailments, operate medical equipment, familiarity with the medical jargon.
 **Mercantile**: Understand and exploit trade practices and commerce.
-**Perform**: Entertain others for fun or profit.
-**Pilot**: Pilot and astrogate spaceships and Starships.
+**People**: Understand and read individuals and groups.
+**Perform**: Entertain and influence an audience.
+**Pilot**: Piloting and astrogation for spaceships.
 **Robotics**: Build, maintain, program, or repair semi-autonomous creations.
-**Science**: Knowledge of disciplines like mathematics, biology, physics, etc. 
-**Sneaking**: Know how to operate without drawing attention in many scenarios.
-**Society**: Know details about cultures and organizations across space.
-**Spying**: Observe individuals or groups for the purposes of gathering information.
-**Streetwise**: Know details about criminal cultures and organizations across space.
+**Science**: Knowledge of disciplines like geology, biology, chemistry, physics or mathematics. 
+**Sneaking**: Know how to operate without drawing attention, whether remaining undetected, hiding goods or surreptitiously moving assets.
+**Spying**: Observe individuals or groups for the purposes of gathering information, analyse data in search of anomalies or suspicious activities, operating surveillance equipment.
+**Streetwise**: Know details about criminal cultures and organisations across space.
 **Survival**: Know how to keep yourself alive in a variety of hazardous situations.
-**Tactics**: Know how to best deploy assets for maximal benefit in attack or defense.
-**Tinker**: Build, maintain, or repair systems and vehicles apart from spaceships.
-**Vehicle**: Operate air, land, or sea vehicles.
-<div style="break-after: always;"></div>
+**Tactics**: Know how to best deploy assets for maximal benefit in attack or defence.
+**Mechanical**: Build, maintain, or repair systems and vehicles apart from spaceships, computers or robots.
+**Vehicle**: Operate air, land, or sea vehicles: submarines, boats, planes, cars, possibly even tanks, gliders or shuttles.
+
+A few key words about the importance of weapons. **Knife**: Anything
+from small knives to large daggers is a knife. A weapon for the poor.
+Messy. **Rapier**: Anybody in high society is expected to know how to
+use a rapier. Some questions can only be settled by a duel. **Bow**: A
+ranged weapon used in systems without metal. **Handgun**: A ranged
+weapon for everybody for the urban population. **Rifle**: A ranged
+weapon for hunting and war.
+
+Armour makes you hard to hurt. Attacks against armoured opponents are
+always rolled with 3d6. Battle armour is impenetrable for personal
+weapons. Use bigger guns.
 
 ## Reward
 
 Before you start the adventurous life, there is one more reward. Roll
 for each career on the appropriate table.
 
-| 1d6 |         Security |           Scout |         Citizen |
-|:---:|-----------------:|----------------:|----------------:|
-| 1   |  Intelligence +1 | Intelligence +2 | Intelligence +1 |
-| 2   |     Education +2 |    Education +1 |    Education +2 |
-| 3   |        Status +1 |       Status +2 |       Status +2 |
-| 4   |   Secret Society |  Secret Society |  Secret Society |
-| 5   |           Weapon |   Scout Contact |       Companion |
-| 6   | Security Contact |          Tenure |          Patron |
+| 1d6 |        Security |     Exploration |           Trade |
+|:---:|----------------:|----------------:|----------------:|
+| 1   | Intelligence +2 | Intelligence +2 | Intelligence +1 |
+| 2   |    Education +1 |    Education +2 |    Education +2 |
+| 3   |       Status +2 |       Status +1 |       Status +2 |
+| 4   |      Membership |      Membership |      Membership |
+| 5   |          Weapon |         Contact |       Companion |
+| 6   |         Contact |          Tenure |          Patron |
 
-> Example: Aapeli has had two careers, 1× Scout and 1× Citizen.
+> Example: Aleph has had two careers, 1× Exploration and 1× Trade.
 > Alex rolls 4 5, resulting in membership in a Secret Society and a
 > Companion.
 
-**Secret Society**: The referee offers three societies to choose
-from. If necessary, these are the three:
+**Membership** depends on the career involved.
+
+| 1d6 |                 Security |         Exploration |              Trade |
+|:---:|-------------------------:|--------------------:|-------------------:|
+| 1   | Veterans of the last war |          Scout Base | Sector Trade Guild |
+| 2   |        Planetary Militia |  Library Membership | Mutual Aid Society |
+| 3   |         Museum Volunteer |      Wildlife Guide |        Small Droid |
+| 4   |   Secret Service Sleeper | Alumni Organisation |     Secret Retreat |
+| 5   |      Security Consultant |        Spacer Guild | Administrative Job |
+| 6   |                          |    Small Scout Ship |           Workshop |
+
 
 * The Ministry of the Evening Light
 * The Siblings of the Dawn Treader

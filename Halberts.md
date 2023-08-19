@@ -40,23 +40,22 @@ them together (short: 2d6) and write it down.
 
 Your character begins at age 16. Now you choose a first career. The
 choices are Warrior, Mage, or Rapscallion. The process is always the
-same: make an admission test if you enter a new career, get an
-automatic talent if you are admitted, learn talents, possibly suffer a
-twist of fate, grow older by four years. And then you have to decide
-if your character continues in the same career for another four years,
-with no admission test and no automatic skill; or if you use one year
-to change careers, risking a new admission test, but also getting a
-new automatic skill; or if your character is ready for a life of
-adventure.
+same: when you begin a new career, make a test to see if it suits you;
+get an automatic talent if it does, learn talents, possibly suffer a
+twist of fate and grow older by four years. And then you have to
+decide if your character continues in the same career for another four
+years, with no more suitability test and no automatic skill; or if you
+use one year to change careers, risking a new test of suitability, but
+also getting a new automatic skill; or if your character is ready for
+a life of adventure.
 
 Depending on the career, certain attributes are advantageous. Warriors
 need Strength or Endurance, Mages need Intelligence or Education, and
 Rapscallions need Dexterity or Status.
 
-If your character doesn't gain admission to the desired career, that
-career can no longer be selected. When there are no more careers to
-choose from, the adventurous life begins: roll on the reward table for
-each career!
+If your character isn't suited for the desired career, that career can
+no longer be selected. When there are no more careers to choose from,
+the adventurous life begins: roll on the reward table for each career!
 
 A career lasts for four years. Each year, choose one of your career
 charts and roll 1d6. Write down that talent with a value of 1, or
@@ -83,7 +82,7 @@ character dies.
 
 ## Warrior Career
 
-**Admission**: Roll 2d6 ≤ Strength or Endurance (your choice). You
+**Suitability**: Roll 2d6 ≤ Strength or Endurance (your choice). You
 automatically learn Fighting-1.
 
 > Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
@@ -132,8 +131,8 @@ determine the consequences with 1d6.
 
 ## Mage Career
 
-**Admission**: Roll 2d6 ≤ Intelligence or Education (your choice). You
-will automatically learn Literacy-1.
+**Suitability**: Roll 2d6 ≤ Intelligence or Education (your choice).
+You automatically learn Literacy-1.
 
 > Example: Adalric has Education-9 and Alex rolls 9. Adalric is
 > accepted!
@@ -182,7 +181,7 @@ Otherwise, you determine the consequences with 1d6.
 
 ## Rapscallion Career
 
-**Admission**: Roll 2d6 ≤ Dexterity or Status (your choice). You
+**Suitability**: Roll 2d6 ≤ Dexterity or Status (your choice). You
 automatically learn Running-1.
 
 > Example: Adalric changes careers (so he is now 21 years old) and

@@ -739,7 +739,7 @@ There is no space after the semicolon.
 <button type="button" onclick="example()">Try it</button>
 </pre>
 <h2>Troubleshooting</h2>
-<p>The <strong>[x?a:b]</strong> construct is tricky. You might think of it as “pick a <em>or</em> b”, but a more accurate description would be: “expand <em>both</em> a and b, and then pick”. This is important if the expansion of a or b involves the setting of variables. In the following example, first the die is rolled, then both “fire salamander” and “ice salamander” are expanded (and the variable “element” is first set to “fire” and then set to “ice”!) and then the die roll is compared with 3 and the appropriate expansion is picked. The salamanders are red or blue. But no matter what colour they have, the always rule a world of ice. 😔
+<p>The <strong>[x?a:b]</strong> construct is tricky. You might think of it as “pick a <em>or</em> b”, but a more accurate description would be: “expand <em>both</em> a and b, and then pick”. This is important if the expansion of a or b involves the setting of variables. In the following example, first the die is rolled, then both “fire salamander” and “ice salamander” are expanded (and the variable “element” is first set to “fire” and then set to “ice”!) and then the die roll is compared with 3 and the appropriate expansion is picked. The salamanders are red or blue. But no matter what colour they have, they always rule a world of ice. 😔
 <pre class="example">
 ;salamander
 1,[[1d6] <= 3?[fire salamander]:[ice salamander]]

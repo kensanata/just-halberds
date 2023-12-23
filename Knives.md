@@ -57,7 +57,7 @@ the adventurous life begins: roll on the reward table for each career!
 A career lasts for four years. Each year, choose one of your career
 charts and roll 1d6. Write down that talent with a value of 1, or
 increase the value if you learn a talent again. When you learn
-"Fighting", choose a weapon instead: knife, spear, halberd, épée, bow,
+"Fight", choose a weapon instead: knife, spear, halberd, épée, bow,
 lance.
 
 With every career your character completes, the chance for a twist of
@@ -80,7 +80,7 @@ character dies.
 ## Warrior Career
 
 **Suitability**: Roll 2d6 ≤ Strength or Endurance (your choice). You
-automatically learn Fighting-1 if you pass. If you don't, you realize
+automatically learn Fight-1 if you pass. If you don't, you realize
 that killing people is brutal and cold and you are not.
 
 > Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
@@ -90,18 +90,18 @@ You spend four years as a Warrior and learn something every year. Each
 year choose one of the following tables and roll 1d6. You may only
 roll on the "Officer" table if your character is 20 or older.
 
-| 1d6 |    Mercenary |        Guard |    Rider |     Officer |
-|:---:|-------------:|-------------:|---------:|------------:|
-| 1   | Construction |  Bureaucracy |   Riding |    Literacy |
-| 2   |      Running |   Discipline |  Singing | Bureaucracy |
-| 3   |      Tactics | Construction |  Tactics |     Tactics |
-| 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
-| 5   |        Craft |      Brewing |  Culture |    Behavior |
-| 6   |     Fighting |     Fighting | Fighting |    Fighting |
+| 1d6 |    Mercenary |        Guard |   Rider |     Officer |
+|:---:|-------------:|-------------:|--------:|------------:|
+| 1   | Construction |  Bureaucracy |    Ride |    Literacy |
+| 2   |          Run |   Discipline |    Sing | Bureaucracy |
+| 3   |      Tactics | Construction | Tactics |     Tactics |
+| 4   |    First Aid |        Brawl |     Spy |   Diplomacy |
+| 5   |        Craft |         Brew | Culture |   Behaviour |
+| 6   |        Fight |        Fight |   Fight |       Fight |
 
 > Example: Berta chooses 2× Mercenary, 2× Guard, and rolls 3 2 5 1,
-> resulting in Tactics-1, Running-1, Brewing-1, and Bureaucracy-1.
-> And Fighting-1!
+> resulting in Tactics-1, Run-1, Brew-1, and Bureaucracy-1.
+> And she automaticall learned Fight-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤ Strength or
 Endurance (your choice) to avoid consequences. Otherwise, you
@@ -142,16 +142,16 @@ year choose one of the following tables and roll 1d6.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
 |:---:|-----------:|--------:|-------------:|--------------:|
-| 1   |       Fire | Healing |        Charm |    Shapeshift |
-| 2   |        Air |   Sleep |      Singing |    Necromancy |
+| 1   |       Fire |    Heal |        Charm |    Shapeshift |
+| 2   |        Air |   Sleep |         Sing |    Necromancy |
 | 3   |      Water |    Eyes |    Diplomacy | Transmutation |
 | 4   |      Earth |   Doors |     Illusion |        Fusion |
 | 5   |      Storm |  Plants |       People |       Animals |
-| 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
+| 6   |      Fight |    Brew |     Literacy |        Planes |
 
 > Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3
-> 5 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And
-> Literacy-1!
+> 5 2, resulting in Storm-1, Water-1, People-1, and Sing-1. And he
+> automaticall learned Literacy-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Intelligence or Education (your choice) to avoid consequences.
@@ -182,7 +182,7 @@ Otherwise, you determine the consequences with 1d6.
 ## Rapscallion Career
 
 **Suitability**: Roll 2d6 ≤ Dexterity or Status (your choice). You
-automatically learn Running-1 if you pass. If you don't, you realize
+automatically learn Run-1 if you pass. If you don't, you realize
 that you can't bear the endless talks, the tiresome reports, the lies
 and the deceit.
 
@@ -195,15 +195,16 @@ Each year choose one of the following tables and roll 1d6.
 
 | 1d6 |    Thief |      Thug |        Liar |  Murderer |
 |:---:|---------:|----------:|------------:|----------:|
-| 1   | Sneaking |  Fighting |     Culture |  Fighting |
-| 2   |   Spying |  Crafting |    Behavior |   Brewing |
-| 3   |  Running |   Running | Bureaucracy | First Aid |
-| 4   | Climbing | First Aid |    Literacy |  Sneaking |
-| 5   | Distract |   Tactics |     Oratory |  Behavior |
-| 6   |     Pick |   Singing |     Trading |    Tinker |
+| 1   |    Sneak |     Fight |     Culture |     Fight |
+| 2   |      Spy |     Craft |   Behaviour |      Brew |
+| 3   |      Run |       Run | Bureaucracy | First Aid |
+| 4   |    Climb | First Aid |    Literacy |     Sneak |
+| 5   | Distract |   Tactics |     Oratory | Behaviour |
+| 6   |     Pick |      Sing |       Trade |    Tinker |
 
 > Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6,
-> resulting in Pick-1, Brewing-2, Tinker-1. And Running-1!
+> resulting in Pick-1, Brew-2, Tinker-1. And he automaticall
+> learned Run-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Dexterity or Status (your choice) to avoid consequences.
@@ -233,8 +234,10 @@ Otherwise, you determine the consequences with 1d6.
 
 Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
 roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then roll 2d6 ≤ attribute -2. A +1 talent is good
-enough to do it for a living.
+talent is missing, then roll 2d6 ≤ attribute +0. A +1 talent is good
+enough to do it for a living. Sometimes the lack of a talent
+disqualifies you from even trying (a lack of magic talents, for
+example).
 
 The chance of rolling a target number or less on 2d6:
 
@@ -247,44 +250,44 @@ A few key words about the individual talents.
 **Air**: Magic related to wind, movement, and sound.
 **Animals**: Magic related to animals and handling them.
 **Behaviour**: How to behave in noble company.
-**Brawling**: The unarmed force, threats, and infliction of pain.
-**Brewing**: Brew beer, brew potions, mix poison.
+**Brawl**: The unarmed force, threats, and infliction of pain.
+**Brew**: Brew beer, brew potions, mix poison.
 **Bureaucracy**: An understanding of every administrative apparatus and the people who work there.
 **Charm**: Magic that subdues people and controls their emotions.
-**Climbing**: Climbing rocks and walls, moving in the mountains.
-**Construction**: Building houses, castles, siege engines, digging pits and shafts.
+**Climb**: Climb rocks and walls, moving in the mountains.
+**Construction**: Build houses, castles, siege engines, digging pits and shafts.
 **Crafts**: Woodworking, metalworking, filing, sawing, decorating and painting things.
 **Culture**: An understanding of legends, paintings, songs, manners and customs of foreign countries.
-**Diplomacy**: Negotiating treaties, avoiding violence, making peace.
+**Diplomacy**: Negotiate treaties, avoiding violence, making peace.
 **Discipline**: Control over groups of people and oneself against natural instinct.
-**Distract**: Distracting people from something so that something else can be done unnoticed.
+**Distract**: Distract people from something so that something else can be done unnoticed.
 **Doors**: Magic that has to do with locking and opening doors and gates.
 **Earth**: Magic dealing with rocks, tremors, the earth, and everything subterranean.
 **Eyes**: Magic that allows distant or true vision.
-**Fighting**: Weapon handling and killing.
+**Fight**: Weapon handling and killing.
 **Fire**: Magic dealing with flames, explosions and destruction.
-**First Aid**: Cleaning and stitching up wounds, setting bones, caring for the sick.
+**First Aid**: Clean and stitching up wounds, setting bones, caring for the sick.
 **Fusion**: Magic that fuses living beings with other living beings or with inanimate objects.
-**Healing**: Magic that restores power to living beings and breaks curses.
+**Heal**: Magic that restores power to living beings and breaks curses.
 **Illusion**: Magic that makes others believe things that are not true.
-**Literacy**: Reading and writing.
+**Literacy**: Read and write.
 **Necromancy**: Magic that allows resurrection and contact with the dead.
-**Oratory**: Convincing with well-chosen words.
+**Oratory**: Convince with well-chosen words.
 **People**: Magic used to read people’s minds and emotions.
-**Pick**: Opening locks and doors.
-**Planeswalk**: Magic that allows you to contact and visit other realms.
+**Pick**: Open locks and doors.
+**Planes**: Magic that allows you to contact and visit other realms.
 **Plants**: Magic related to plants and their growth.
-**Riding**: Riding on animals, mostly horses.
-**Running**: Long distance running and sprinting, chasing and escaping.
+**Ride**: Ride on animals, mostly horses.
+**Run**: Long distance running and sprinting, chasing and escaping.
 **Shapeshift**: Magic that allows you to change shape.
-**Singing**: Singing songs and playing instruments.
+**Sing**: Sing songs and playing instruments.
 **Sleep**: Magic related to sleep and fainting.
-**Sneaking**: Moving silently and hiding.
-**Spying**: Scouting, tracking, observing.
+**Sneak**: Move silently and hiding.
+**Spy**: Scout, track, observe.
 **Storm**: Magic related to wind, rain, lightning and thunder.
-**Tactics**: Setting up ambushes, using the terrain for combat.
-**Tinker**: Building mechanical devices and using material properties.
-**Trading**: Finding, sourcing, haggling, buying, and selling things.
+**Tactics**: Set up ambushes, using the terrain for combat.
+**Tinker**: Build mechanical devices and using material properties.
+**Trade**: Find, source, haggle, buy and sell things.
 **Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
 
@@ -313,16 +316,18 @@ from. If necessary, these are the three:
 * The Siblings of the Dawn Treader
 * The Descendants of the Frost Giants
 
-**Companion**: A young human who has not made any careers, or an
-intelligent animal such as a cat, an owl, or a raven. If human, name
-your companion and roll the six attributes (2d6 each for Strength,
-Dexterity, Endurance, Intelligence, Education, and Status).
+**Companion**: An apprentice or an intelligent animal such as a cat,
+an owl, or a raven. If an apprentice, name them and roll 2d6 each for
+Strength, Dexterity, Endurance and Intelligence; both Education and
+Status are 2.
 
 **Dog**: A loyal companion that needs to be fed. Damage 2d6; Endurance
-3d6; Life 2d6.
+3d6; Life 2d6; Attack 2d6.
 
-**Horse**: A loyal mount that requires care and feeding. Damage 3d6;
-Endurance 6d6; Life 3d6.
+**Horse**: A loyal mount that requires care and feeding. Endurance
+6d6; Life 3d6. When charging with a lance on horseback, you deal 3d6
+damage, if your attack succeeds. Opponents on foot must use 3d6 for
+their attack rolls against riders.
 
 **Land**: A piece of land in the wilderness that has been granted to
 you. Taking possession of said land is up to you however. Name your
@@ -348,14 +353,6 @@ Education-2 and Status-2.
 Children are playable characters when they're 16 years old. They have
 no talents and the only item of significance they own is a knife.
 
-The world of adventure is a medieval world beyond the reaches of
-empire. There are no taxes to pay, no coins to earn and nothing to
-buy. Everything is a question of *gifts* and *boons*. Make friends and
-perhaps they’ll give you a gift, hoping for a gift in return. Render a
-service to a powerful person and hope to be granted a boon. If you
-find treasure, gift it to somebody with resources. You might make a
-powerful friend.
-
 With every year that passes, you get to gain new talents. When exactly
 does a year pass? It’s up to the people playing the game. You can't
 just focus on a single talent. The year is long, after all. This is
@@ -365,10 +362,18 @@ the talents on the list, but maybe not the one you were hoping for.
 
 All the other rewards you receive through play.
 
+The world of adventure is a medieval world beyond the reaches of
+empire. There are no taxes to pay, no coins to earn and nothing to
+buy. Everything is a question of *gifts* and *boons*. Make friends and
+perhaps they’ll give you a gift, hoping for a gift in return. Render a
+service to a powerful person and hope to be granted a boon. If you
+find treasure, gift it to somebody with resources. You might make a
+powerful friend.
+
 If people want you to have a weapon, they’ll give it to you: join a
-militia and get a spear; go to war get a halberd; join a court and
+militia and get a spear; go to war and get a halberd; join a court and
 your lord or lady gifts you an épée; get knighted and your liege gifts
-a lance and a horse; apprentice with a hunter and get a bow.
+you a lance and a horse; apprentice with a hunter and get a bow.
 
 In order to increase Status and Education, you need to increase it
 in-game.
@@ -401,15 +406,23 @@ the referee an attribute and a talent to use, provided there is a
 suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
 hard, you might have to roll 3d6 ≤ attribute + talent.
 
+Combat is divided into rounds. Everyone may attack, cast magic, or do
+something else once per round. All participants announce their action
+and roll the dice. Everything happens at the same time so it is
+possible for two opponents to take each other out in the same round.
+
+When an advantage is gained through tactics, the result is often a
+surprise round where the opponent cannot strike back.
+
 If you attack successfully, you deal 2d6 damage unless you use a
 halberd. This deals 3d6 damage. You can only attack as many times in a
 fight as you have Endurance.
 
-When you are first hit in combat, you must subtract the damage from a
-random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
-Dexterity, 5–6 is Endurance. For all other hits, you may distribute
-the hit dice yourself among the three physical attributes. You must
-subtract any carryover from another physical attribute.
+When you are hit for the first time in a fight, you must subtract the
+damage from a random physical attribute. Roll 1d6: 1–2 is Strength,
+3–4 is Dexterity, 5–6 is Endurance. For all other hits, you may
+distribute the hit dice yourself among the three physical attributes.
+You must subtract any carryover from another physical attribute.
 
 If one of your attributes drops to 0, you are slightly injured and
 pass out. After 10 minutes you wake up again.
@@ -431,10 +444,15 @@ are fit again in 30 minutes, otherwise the recovery takes 3 days.
 
 If two of your attributes drop to 0, you are severely wounded and pass
 out. You don’t wake up again for 3h and only the attributes from 0
-recover to 1. With First Aid-3 or Healing-3 you can recover in an
+recover to 1. With First Aid-3 or Heal-3 you can recover in an
 infirmary in 5d6 days, otherwise you die.
 
 If three of your attributes drop to 0, you die.
+
+Expect to see half the participants down or dying after the first
+round. War is terrible. Try to avoid it.
+
+### Other creatures
 
 For all other creatures there are only Endurance and Life instead of
 the known six attributes. When Endurance drops to 0, they faint; when
@@ -443,37 +461,14 @@ Life drops to 0, they die.
 > Example: Adalric’s dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
+### Armour
+
 Hitting opponents wearing a metal cuirass is hard: roll 3d6 ≤
 attribute + talent. The reason metal cuirasses are so rare is that
 they are so hard to make. They are kept in armories for times of war.
 You only put them on when marching into battle. They slow you down
 when plundering and when fleeing; they are cumbersome to carry around
 and they give you sores. Soldiers do not like wearing them.
-
-## Combat
-
-Combat is divided into rounds. Everyone may attack, cast magic, or do
-something else once per round. All participants announce their action
-and roll the dice. Everything happens at the same time so it is
-possible for two opponents to take each other out in the same round.
-
-> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9, and
-> Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
-> Escape-4. She turns to fight. First round: Berta rolls a 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6 for the goblins and hits
-> twice since 6 ≤ 9. Berta rolls 6 damage which kills a goblin (both
-> Endurance and Life are reduced to zero), but the other still stands.
-> When Brunhilde takes the first hit, chance decides which attribute
-> to reduce: Berta rolls a 4, which is Dexterity. The goblins deal 3
-> every time they hit (6-3=3). Berta decides to deduct the second hit
-> from Brunhilde’s Endurance (9-3=4).
-
-When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back.
-
-Expect to see half the participants down or dying after the first
-round. War is terrible. Try to avoid it.
 
 ![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
 Battlefield (1521), by Urs Graf
@@ -483,6 +478,8 @@ And with that we come to the end of the player facing rules. The next
 page has an example character sheet for your to use and the rest of
 the book is advice for the referee. If you want to referee a game,
 read on!
+
+<div style="break-after: always;"></div>
 
 ## Character Sheet
 
@@ -495,18 +492,18 @@ read on!
 <tr><td>Education</td><td>__</td><td>Bow</td><td>__</td><td>Patrons</td><td colspan="3">_____________________</td></tr>
 <tr><td>Status</td><td>__</td><td>Lance</td><td>__</td><td></td><td colspan="3">_____________________</td></tr>
 <tr><th style="padding-top: 1em" colspan="4">Mundane Talents</th><th style="padding-top: 1em" colspan="4">Magic Talents</th></tr>
-<tr><td>Behaviour</td><td>__</td><td>Brawling</td><td>__</td><td>Air</td><td>__</td><td>Animals</td><td>__</td></tr>
-<tr><td>Brewing</td><td>__</td><td>Bureaucracy</td><td>__</td><td>Charm</td><td>__</td><td>Doors</td><td>__</td></tr>
-<tr><td>Climbing</td><td>__</td><td>Construction</td><td>__</td><td>Earth</td><td>__</td><td>Eyes</td><td>__</td></tr>
+<tr><td>Behaviour</td><td>__</td><td>Brawl</td><td>__</td><td>Air</td><td>__</td><td>Animals</td><td>__</td></tr>
+<tr><td>Brew</td><td>__</td><td>Bureaucracy</td><td>__</td><td>Charm</td><td>__</td><td>Doors</td><td>__</td></tr>
+<tr><td>Climb</td><td>__</td><td>Construction</td><td>__</td><td>Earth</td><td>__</td><td>Eyes</td><td>__</td></tr>
 <tr><td>Crafts</td><td>__</td><td>Culture</td><td>__</td><td>Fire</td><td>__</td><td>Fusion</td><td>__</td></tr>
-<tr><td>Diplomacy</td><td>__</td><td>Discipline</td><td>__</td><td>Healing</td><td>__</td><td>Illusion</td><td>__</td></tr>
+<tr><td>Diplomacy</td><td>__</td><td>Discipline</td><td>__</td><td>Heal</td><td>__</td><td>Illusion</td><td>__</td></tr>
 <tr><td>Distract</td><td>__</td><td>First Aid</td><td>__</td><td>Necromancy</td><td>__</td><td>People</td><td>__</td></tr>
-<tr><td>Literacy</td><td>__</td><td>Oratory</td><td>__</td><td>Planeswalk</td><td>__</td><td>Plants</td><td>__</td></tr>
-<tr><td>Pick</td><td>__</td><td>Riding</td><td>__</td><td>Shapeshift</td><td>__</td><td>Sleep</td><td>__</td></tr>
-<tr><td>Running</td><td>__</td><td>Singing</td><td>__</td><td>Storm</td><td>__</td><td>Transmutation</td><td>__</td></tr>
-<tr><td>Sneaking</td><td>__</td><td>Spying</td><td>__</td><td>Water</td><td>__</td><td></td><td></td></tr>
+<tr><td>Literacy</td><td>__</td><td>Oratory</td><td>__</td><td>Planes</td><td>__</td><td>Plants</td><td>__</td></tr>
+<tr><td>Pick</td><td>__</td><td>Ride</td><td>__</td><td>Shapeshift</td><td>__</td><td>Sleep</td><td>__</td></tr>
+<tr><td>Run</td><td>__</td><td>Sing</td><td>__</td><td>Storm</td><td>__</td><td>Transmutation</td><td>__</td></tr>
+<tr><td>Sneak</td><td>__</td><td>Spy</td><td>__</td><td>Water</td><td>__</td><td></td><td></td></tr>
 <tr><td>Tactics</td><td>__</td><td>Tinker</td><td>__</td></tr>
-<tr><td>Trading</td><td>__</td><td></td><td></td></tr>
+<tr><td>Trade</td><td>__</td><td></td><td></td></tr>
 </tbody>
 </table>
 
@@ -530,7 +527,7 @@ Dexterity or Endurance).
 If one of your attributes drops to 0, you are lightly wounded and pass
 out. If two of your attributes drop to 0, you are mortally wounded and
 you’ll die unless you are treated by somebody with First Aid-3 or
-Healing-3. If three of your attributes drop to 0, you die.
+Heal-3. If three of your attributes drop to 0, you die.
 
 ## Opponents
 
@@ -631,7 +628,7 @@ the referee to enable such situation.
 
 ### Some notes on particular spell effects
 
-*Summoning*. There is no talent to summon demons or elementals.
+*Summon*. There is no talent to summon demons or elementals.
 Instead, use planeshifting and subjugate some demons in person.
 
 *Charm*. Being forced into doing things you don’t want to do is
@@ -739,41 +736,41 @@ For an example setting, see
 These are the same talents used for character creation, all on one
 page so that it's easy to pick some for the opposition.
 
-Remember that “Fighting” means you choose a weapon instead: knife,
+Remember that “Fight” means you choose a weapon instead: knife,
 spear, halberd, épée, bow, lance.
 
 ### Warriors
 
-| 1d6 | Mercenary    | Guard        | Rider    | Officer     |
-|:---:|--------------|--------------|----------|-------------|
-| 1   | Construction | Bureaucracy  | Riding   | Literacy    |
-| 2   | Running      | Discipline   | Singing  | Bureaucracy |
-| 3   | Tactics      | Construction | Tactics  | Tactics     |
-| 4   | First Aid    | Brawling     | Spying   | Diplomacy   |
-| 5   | Craft        | Brewing      | Culture  | Behaviour   |
-| 6   | Fighting     | Fighting     | Fighting | Fighting    |
+| 1d6 | Mercenary    | Guard        | Rider   | Officer     |
+|:---:|--------------|--------------|---------|-------------|
+| 1   | Construction | Bureaucracy  | Ride    | Literacy    |
+| 2   | Run          | Discipline   | Sing    | Bureaucracy |
+| 3   | Tactics      | Construction | Tactics | Tactics     |
+| 4   | First Aid    | Brawl        | Spy     | Diplomacy   |
+| 5   | Craft        | Brew         | Culture | Behaviour   |
+| 6   | Fight        | Fight        | Fight   | Fight       |
 
 ### Mages
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
 |:---:|------------|---------|--------------|---------------|
-| 1   | Fire       | Healing | Charm        | Shapeshift    |
-| 2   | Air        | Sleep   | Singing      | Necromancy    |
+| 1   | Fire       | Heal    | Charm        | Shapeshift    |
+| 2   | Air        | Sleep   | Sing         | Necromancy    |
 | 3   | Water      | Eyes    | Diplomacy    | Transmutation |
 | 4   | Earth      | Doors   | Illusion     | Fusion        |
 | 5   | Storm      | Plants  | People       | Animals       |
-| 6   | Fighting   | Brewing | Literacy     | Planeswalk    |
+| 6   | Fight      | Brew    | Literacy     | Planes        |
 
 ### Rapscallions
 
 | 1d6 | Thief    | Thug      | Liar        | Murderer  |
 |:---:|----------|-----------|-------------|-----------|
-| 1   | Sneaking | Fighting  | Culture     | Fighting  |
-| 2   | Spying   | Crafting  | Behaviour   | Brewing   |
-| 3   | Running  | Running   | Bureaucracy | First Aid |
-| 4   | Climbing | First Aid | Literacy    | Sneaking  |
+| 1   | Sneak    | Fight     | Culture     | Fight     |
+| 2   | Spy      | Craft     | Behaviour   | Brew      |
+| 3   | Run      | Run       | Bureaucracy | First Aid |
+| 4   | Climb    | First Aid | Literacy    | Sneak     |
 | 5   | Distract | Tactics   | Oratory     | Behaviour |
-| 6   | Pick     | Singing   | Trading     | Tinker    |
+| 6   | Pick     | Sing      | Trade       | Tinker    |
 
 <div style="break-after: always;"></div>
 
@@ -839,7 +836,7 @@ range would be from 1 to 5. An Education-11 Fire-5 Pyromancer is able
 to pass a difficult check with 3d6 ≤ 16 with 98% chance of success.
 Thus the entire span of talents fits into the range from 1 to 5: First
 Aid-1 is good enough to do the job of a field medic, but only a First
-Aid-3 or Healing-3 will save a man doomed to die. Similarly, a
+Aid-3 or Heal-3 will save a man doomed to die. Similarly, a
 sorceress with Fire-5 knows the secrets of Muspelheim and has spoken
 with Sutr, the lord of fire.
 
@@ -1230,7 +1227,7 @@ Questions: Who needs the book? Who opposes this? Other urchins that
 didn’t get the job: Urs the bully, with Status-3 (also an orphan but
 with slightly better Status) and Discipline-1 (which I just assigned).
 He’s not much of a boss, but there’s also Strength-8 (above average)
-and Brawling-1 (also assigned). If Discipline and Brawling are his
+and Brawl-1 (also assigned). If Discipline and Brawl are his
 only talents, he’s 18 years old, two years older than the new
 characters Alex and Berta are going to make.
 
@@ -1363,7 +1360,7 @@ expect some sort of reward and she hadn’t prepared anything so she
 looked at the list of names and picked a name for the stick fighting
 daughter without missing a beat. At the end of the year, the players
 get to pick one talent to increase. There is no stick-fighting talent
-so this is an invitation to have Brunhilde learn Brawling-1, if Berta
+so this is an invitation to have Brunhilde learn Brawl-1, if Berta
 wants to.
 
 Note how neither of the players asked why protection was needed or why
@@ -1411,7 +1408,7 @@ Claudia says, “I think he’s going to try and punch Adalric.”
 Berta says, “And I’m going to punch him!”
 
 Claudia rolls 2d6 and gets 5 which is ≤ 8 + 1; Berta rolls 2d6 and
-gets 8 again, which is ≤ 10 - 2 (no Brawling!) – both Urs and
+gets 8 again, which is ≤ 10 - 2 (no Brawl!) – both Urs and
 Brunhilde hit!
 
 Claudia says, “As you beat Urs with a higher result, you have no
@@ -1489,8 +1486,8 @@ Alex looks at Berta and she shrugs. He says, “OK, we’ll do it.”
 When the players handled Urs, Claudia realised she hadn’t prepared
 much for Ulrike. What sort magic did she have? No time to roll dice.
 That would have to come later. So a quick look at the
-[list](#gaining-talents) and she jotted down Healing, Sleep, Doors,
-Plants, Brewing, Charm, Diplomacy, Illusion, Literacy – classic
+[list](#gaining-talents) and she jotted down Heal, Sleep, Doors,
+Plants, Brew, Charm, Diplomacy, Illusion, Literacy – classic
 Passive and Manipulative careers.
 
 After the game, Claudia picks Ulrike’s age, say 50. So we have about
@@ -1498,8 +1495,8 @@ After the game, Claudia picks Ulrike’s age, say 50. So we have about
 times on the Passive table, four times on the Manipulative table, and
 add each of the talents we listed above at 1. Using 2d6 for
 attributes, this is Ulrike the Beautiful: Strength-8 Dexterity-8
-Endurance-12 Intelligence-6 Education-8 Status-3 Healing-2 Sleep-6
-Eyes-4 Doors-2 Plants-5 Brewing-2 Charm-5 Singing-4 Diplomacy-4
+Endurance-12 Intelligence-6 Education-8 Status-3 Heal-2 Sleep-6
+Eyes-4 Doors-2 Plants-5 Brew-2 Charm-5 Sing-4 Diplomacy-4
 Illusion-3 People-3 Literacy-4. Surprisingly fit! She probably does a
 lot of hiking up here in the mountains. And fantastic Sleep, Plants
 and Charm talents!
@@ -1846,7 +1843,7 @@ to make. Focus on character actions where outcomes need a random
 component.
 
 For a science fiction game like Dune: People like Sardaukar and Fremen
-need Fighting talents: Swords, Knives, Bolters, Unarmed. Is the use of
+need Fight talents: Swords, Knives, Bolters, Unarmed. Is the use of
 Shields or Battledress something to roll for? Are there characters
 that don’t know how to use shields? Perhaps it’s better to just assume
 that without Shields you’re a soft target and bolters deal 5d6 damage.

@@ -91,6 +91,26 @@ make it work when you roll them up.
 5.  
 6.  
 
+Questions
+---------
+
+Regarding non-player characters:
+
+- Intervention: What might they ask of players?
+
+- Reputation: What memorable things have they done in the past? Why
+  are they famous?
+  
+- Any legendary items they have owned or seen?
+
+- Are they visible agents of future change?
+
+Regarding locations:
+
+- What used to be different?
+
+
+
 The Garden of Peace {#A}
 -------------------
 

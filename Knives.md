@@ -1,6 +1,7 @@
-<address>Written by Alex Schroeder. Based on a translation by Frotz
-Self and Peter Fröhlich, YYYY-MM-DD. To the extent possible under law,
-the authors of this work has waived all copyright and related or
+<address>Written and translated by Alex Schroeder, Frotz Self, Peter
+Fröhlich, YYYY-MM-DD. Playtesting by Alex Schroeder, Frotz Self, Peter
+Fröhlich, Robert Freeman-Day (PresGas). To the extent possible under
+law, the authors of this work has waived all copyright and related or
 neighboring rights to this work.</address>
 
 # Knives
@@ -18,12 +19,8 @@ and the referee says how the world reacts, and so it goes on and on.
 The story of these people is our story.
 
 The dice are rolled when something with exciting consequences happens
-and you want to leave the outcome to chance. Do people succeed in
-their project or not?
-
-This is a variant of the *Halberts* game where your character doesn’t
-start fully fleshed out. Instead, you start as a young adult, with
-nothing but a knife. And you’re not trained in knife fighting.
+and we want to leave the outcome to chance. Do our people succeed in
+their project or not? And what happens afterwards?
 
 ## Character Creation
 
@@ -31,86 +28,206 @@ If you are a player, you play a fictional person, your character.
 
 First you choose your name, then you roll your attributes. You have
 six attributes: Strength, Dexterity, Endurance, Intelligence,
-Education, and Status. Roll two six-sided dice for the first four
-attributes, add the two dice together (short: 2d6) and write it down.
-You either inherit Education and Status from your parents (if you’ve
-played them, up to a maximum of 7), or you start as an orphan with
-Education-2 and Status-2.
+Education, and Status. Roll two six-sided dice for each attribute, add
+them together (short: 2d6) and write it down.
 
-> Example: Alex names his character Adalric and rolls 8 8 7 9;
-> Berta names her character Brunhilde and rolls 10 6 9 5.
+> Example: Alex names his character Adalric and rolls 8 8 7 9 10
+> 8; Berta names her character Brunhilde and rolls 10 6 9 5 4 4.
 { #stats }
 
-Your character begins at age 16. You have no special talents. If you
-want to begin the game with more experience, take a look at the
-*Halberts* rules.
+Your character begins at age 16. Now you choose a first career. The
+choices are Warrior, Mage, or Rapscallion. The process is always the
+same: when you begin a new career, make a test to see if it suits you;
+get an automatic talent if it does, learn talents, possibly suffer a
+twist of fate and grow older by four years. And then you have to
+decide if your character continues in the same career for another four
+years, with no more suitability test and no automatic skill; or if you
+use one year to change careers, risking a new test of suitability, but
+also getting a new automatic skill; or if your character is ready for
+a life of adventure.
 
-Your first job will be to make friends and connections.
+Depending on the career, certain attributes are advantageous. Warriors
+need Strength or Endurance, Mages need Intelligence or Education, and
+Rapscallions need Dexterity or Status.
 
-![A warrior looking out at a lake](images/Urs_Graf_Stehender_Reisläufer_vor_Seelandschaft_in_Rückansicht_(1514).jpg)
-A mercenary looking at a lake (1514), by Urs Graf
-{: .pic .small }
+If your character isn't suited for the desired career, that career can
+no longer be selected. When there are no more careers to choose from,
+the adventurous life begins: roll on the reward table for each career!
 
-<div style="break-after: always;"></div>
+A career lasts for four years. Each year, choose one of your career
+charts and roll 1d6. Write down that talent with a value of 1, or
+increase the value if you learn a talent again. When you learn
+"Fighting", choose a weapon instead: knife, spear, halberd, épée, bow,
+lance.
 
-## No money, no items
+With every career your character completes, the chance for a twist of
+fate increases. Thus it makes perfect sense to stop character
+generation at some point and to start adventuring.
 
-The only item of significance you own at first is a knife. In fact,
-the only items of significance in this game are weapons: knife, spear,
-halberd, épée, bow, lance.
+If your character is 36 or older at the end of a career, you'll need
+to check for physical decline. If an attribute falls to zero, the
+character dies.
 
-The world of adventure is a medieval world beyond the reaches of
-empire. There are no taxes to pay, no coins to earn and nothing to
-buy. Everything is a question of *gifts* and *boons*. Make friends and
-perhaps they’ll give you a gift, hoping for a gift in return. Render a
-service to a powerful person and hope to be granted a boon. If you
-find treasure, gift it to somebody with resources. You might make a
-powerful friend.
+| 1d6 |     Aging Table |
+|:---:|----------------:|
+| 1   |     Strength -1 |
+| 2   |    Dexterity -1 |
+| 3   |    Endurance -1 |
+| 4   | Intelligence -1 |
+| 5   |          Lucky! |
+| 6   |          Lucky! |
 
-### Gifts and boons
+## Warrior Career
 
-**Talent**: With every year that passes, you get to gain new talents.
-Naturally you’re not just focusing on a single talent. The year is
-long, after all. This is why you get to pick an appropriate table to
-roll on during the winter phase. You’ll get one of the talents on the
-list, but maybe not the one you were hoping for.
+**Suitability**: Roll 2d6 ≤ Strength or Endurance (your choice). You
+automatically learn Fighting-1 if you pass. If you don't, you realize
+that killing people is brutal and cold and you are not.
 
-**Weapon**: If people want you to have a weapon, they’ll give it to
-you: join a militia and get a spear; go to war get a halberd; join a
-court and your lord or lady gifts you an épée; get knighted and your
-liege gifts a lance and a horse; apprentice with a hunter and get a
-bow.
+> Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
+> accepted!
 
-**Secret Society**: There are secret societies for all walks of life.
-Crime rings look for gangsters and thugs, guilds look for engineers
-and tradespeople, covens look for wizards and witches. This is were
-new talents are gained. Prove your worth and join them.
+You spend four years as a Warrior and learn something every year. Each
+year choose one of the following tables and roll 1d6. You may only
+roll on the "Officer" table if your character is 20 or older.
 
-**Companion**: A young apprentice is looking to learn from you. Roll
-2d6 each for Strength, Dexterity, Endurance and Intelligence; both
-Education and Status are 2. They gain talents, just like you. If they
-surpass you in your best talent, they leave.
+| 1d6 |    Mercenary |        Guard |    Rider |     Officer |
+|:---:|-------------:|-------------:|---------:|------------:|
+| 1   | Construction |  Bureaucracy |   Riding |    Literacy |
+| 2   |      Running |   Discipline |  Singing | Bureaucracy |
+| 3   |      Tactics | Construction |  Tactics |     Tactics |
+| 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
+| 5   |        Craft |      Brewing |  Culture |    Behavior |
+| 6   |     Fighting |     Fighting | Fighting |    Fighting |
 
-**Familiar**: You befriend a talking animal such as a cat, an owl, or
-a raven.
+> Example: Berta chooses 2× Mercenary, 2× Guard, and rolls 3 2 5 1,
+> resulting in Tactics-1, Running-1, Brewing-1, and Bureaucracy-1.
+> And Fighting-1!
 
-**Dog**: You find a loyal friend. Hit 2d6; Damage 2d6; Endurance 3d6;
-Life 2d6.
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤ Strength or
+Endurance (your choice) to avoid consequences. Otherwise, you
+determine the consequences with 1d6.
 
-**Horse**: Knighthood earns you a loyal mount from your liege. Riding
-a horse allows you to wield a lance. Hit 2d6; Damage 3d6; Endurance
-6d6; Life 3d6.
+1. Mortal Enemy: The campaign was a success. For three days you
+   plundered. The survivors will never forgive you for your actions.
+2. Siege: Malnutrition has aged you prematurely. Roll on the aging
+   table.
+3. Campaign: You were ambushed and badly injured. Roll on the aging
+   table.
+4. Lame: After an accident, things never went back to the way they
+   used to be. The Warrior career is now denied to you.
+5. Captivity: The campaign was a fiasco. You have been captured. Roll
+   on the aging table. Roll 3d6 ≤ an attribute of your choice to
+   escape. If you don't succeed, another four years pass. Roll on the
+   aging table again and keep trying to escape – until you succeed or
+   die.
+6. Lost: The campaign was a big mistake. The army was crushed. The
+   fleeing were ridden down. You were never seen again.
 
-**Land**: Saving the life of a noble or winning a war with them might
-get you a grant to a piece of land in the wilderness. Taking
-possession of said land is up to you, of course.
+> Example: Berta rolls 4+0 and Brunhilde does not suffer a twist of
+> fate. Brunhilde is now 20 years old. The aging table does not have
+> to be rolled yet.
 
-**Chair**: Your talents as a mage have been recognised and a sponsor
-offers you a teaching position at a magic school.
+## Mage Career
 
-**Posts**: Your services to a community, be it gangsters or
-administrators of the realm are recognised and once there’s an
-opening, they think of you.
+**Suitability**: Roll 2d6 ≤ Intelligence or Education (your choice).
+You automatically learn Literacy-1 if you pass. If you don't, you
+realize that you don't want to spend the years of your short life in
+dusty libraries studying old books.
+
+> Example: Adalric has Education-9 and Alex rolls 9. Adalric is
+> accepted!
+
+You spend four years as a Mage and learn something every year. Each
+year choose one of the following tables and roll 1d6.
+
+| 1d6 | Aggressive | Passive | Manipulative | Transgressive |
+|:---:|-----------:|--------:|-------------:|--------------:|
+| 1   |       Fire | Healing |        Charm |    Shapeshift |
+| 2   |        Air |   Sleep |      Singing |    Necromancy |
+| 3   |      Water |    Eyes |    Diplomacy | Transmutation |
+| 4   |      Earth |   Doors |     Illusion |        Fusion |
+| 5   |      Storm |  Plants |       People |       Animals |
+| 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
+
+> Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3
+> 5 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And
+> Literacy-1!
+
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤
+Intelligence or Education (your choice) to avoid consequences.
+Otherwise, you determine the consequences with 1d6.
+
+1. Mortal Enemy: You exposed a classmate. You will never be forgiven
+   for that.
+2. Failure: The experiment went wrong and the energy found a way
+   through your body. Roll on the aging table.
+3. Crossing borders: Research has taken you to places that cannot be
+   unseen again. A demon *saw* you and will find you.
+4. Trespass: You ventured too far into the space between the worlds
+   and almost lost your mind. The Mage career is now denied to you.
+5. Lost: You have traveled to foreign worlds and lost yourself there.
+   Roll on the aging table. Roll 3d6 ≤ an attribute of your choice to
+   find your way back. If this is not successful, another four years
+   pass. Roll again on the aging table and try again – until you
+   succeed or die.
+6. A Sacrifice: The rift between the planes was too big, the energy
+   uncontrollable, your friends were almost lost – but then you
+   sacrificed yourself. Those who know the place know where to find
+   you, but your screams are not for the faint of heart.
+
+> Example: Alex rolls 4+0 and Adalric does not suffer a twist of fate.
+> Adalric is now 20 years old. The aging table does not have to be
+> rolled yet.
+
+## Rapscallion Career
+
+**Suitability**: Roll 2d6 ≤ Dexterity or Status (your choice). You
+automatically learn Running-1 if you pass. If you don't, you realize
+that you can't bear the endless talks, the tiresome reports, the lies
+and the deceit.
+
+> Example: Adalric changes careers (so he is now 21 years old) and
+> wants to become a Rapscallion; he has Status 10 and Alex rolls 7.
+> Adalric is accepted!
+
+You spend four years as a Rapscallion and learn something every year.
+Each year choose one of the following tables and roll 1d6.
+
+| 1d6 |    Thief |      Thug |        Liar |  Murderer |
+|:---:|---------:|----------:|------------:|----------:|
+| 1   | Sneaking |  Fighting |     Culture |  Fighting |
+| 2   |   Spying |  Crafting |    Behavior |   Brewing |
+| 3   |  Running |   Running | Bureaucracy | First Aid |
+| 4   | Climbing | First Aid |    Literacy |  Sneaking |
+| 5   | Distract |   Tactics |     Oratory |  Behavior |
+| 6   |     Pick |   Singing |     Trading |    Tinker |
+
+> Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6,
+> resulting in Pick-1, Brewing-2, Tinker-1. And Running-1!
+
+**Twist of Fate**: Roll 2d6 + number of previous careers ≤
+Dexterity or Status (your choice) to avoid consequences.
+Otherwise, you determine the consequences with 1d6.
+
+1. Mortal Enemy: You have humiliated your rival. He or she will never
+   forgive you for that.
+2. Debt: Your plan didn't work out. On the contrary, you have been
+   tricked and now you owe someone more money than you can ever pay
+   back.
+3. Pulled in: You've accepted help from people, gotten more and more
+   entangled, and now you owe them more than just a favor.
+4. Caught: You were caught and pilloried. Everyone knows your face.
+   The Rapscallion career is now denied to you.
+5. Imprisonment: The plan has been blown. You got caught. Roll on the
+   aging table. Roll 3d6 ≤ an attribute of your choice to escape. If
+   this fails, another four years pass. Roll again on the aging table
+   and try again – until you succeed or die.
+6. Disappeared: There was a gang war and you disappeared. They say the
+   street dogs have gotten fat this year.
+
+> Example: Alex rolls 8+1 because he already has a career as a Mage
+> behind him. Adalric suffers no twist of fate and is now 25 years
+> old.
 
 ## Talents
 
@@ -171,65 +288,117 @@ A few key words about the individual talents.
 **Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
 
-## Gaining talents
+## Reward
 
-With every year that passes, you get to gain new talents. Pick an
-appropriate table to roll on during the winter phase and gain the
-talent or increase the talent if you already have it.
+Before you start the adventurous life, there is one more reward. Roll
+for each career on the appropriate table.
+
+| 1d6 |         Warrior |            Mage |     Rapscallion |
+|:---:|----------------:|----------------:|----------------:|
+| 1   | Intelligence +1 | Intelligence +2 | Intelligence +1 |
+| 2   |    Education +2 |   Education + 1 |    Education +2 |
+| 3   |       Status +1 |       Status +2 |       Status +2 |
+| 4   |  Secret Society |  Secret Society |  Secret Society |
+| 5   |           Horse |       Companion |             Dog |
+| 6   |            Land |           Chair |            Post |
+
+> Example: Adalric has had two careers, 1× Mage and 1× Rapscallion.
+> Alex rolls 4 5, resulting in membership in a secret society and a
+> dog.
+
+**Secret Society**: The referee offers three societies to choose
+from. If necessary, these are the three:
+
+* The Ministry of the Evening Light
+* The Siblings of the Dawn Treader
+* The Descendants of the Frost Giants
+
+**Companion**: A young human who has not made any careers, or an
+intelligent animal such as a cat, an owl, or a raven. If human, name
+your companion and roll the six attributes (2d6 each for Strength,
+Dexterity, Endurance, Intelligence, Education, and Status).
+
+**Dog**: A loyal companion that needs to be fed. Damage 2d6; Endurance
+3d6; Life 2d6.
+
+**Horse**: A loyal mount that requires care and feeding. Damage 3d6;
+Endurance 6d6; Life 3d6.
+
+**Land**: A piece of land in the wilderness that has been granted to
+you. Taking possession of said land is up to you however. Name your
+piece of land.
+
+**Chair**: You are welcome in your magic school and can come back at
+any time to teach the young magicians something. Name your sponsor.
+
+**Posts**: There is always a vacancy for you in your town, be it in
+your gang or in the administration. Name your sponsor.
+
+<div style="break-after: always;"></div>
+
+## The Next Generation
+
+If the game stretches over years in-game, this section applies.
+
+When creating characters that are children of other characters, do not
+roll for Education or Status. Instead, children inherit Education and
+Status from their parents up to a maximum of 7. Orphans start with
+Education-2 and Status-2.
+
+Children are playable characters when they're 16 years old. They have
+no talents and the only item of significance they own is a knife.
+
+The world of adventure is a medieval world beyond the reaches of
+empire. There are no taxes to pay, no coins to earn and nothing to
+buy. Everything is a question of *gifts* and *boons*. Make friends and
+perhaps they’ll give you a gift, hoping for a gift in return. Render a
+service to a powerful person and hope to be granted a boon. If you
+find treasure, gift it to somebody with resources. You might make a
+powerful friend.
+
+With every year that passes, you get to gain new talents. When exactly
+does a year pass? It’s up to the people playing the game. You can't
+just focus on a single talent. The year is long, after all. This is
+why you get to pick an appropriate table to roll on. You’ll get one of
+the talents on the list, but maybe not the one you were hoping for.
 { #gaining-talents }
 
-When exactly does a year pass? It’s up to the people playing the game.
-If you all agree that the rest of the year is calm and uneventful,
-it’s time for the winter phase.
+All the other rewards you receive through play.
 
-When you learn “Fighting”, choose a weapon instead: knife, spear,
-halberd, épée, bow, lance. Note that you do not start with the Knife
-talent even though you own a knife.
+If people want you to have a weapon, they’ll give it to you: join a
+militia and get a spear; go to war get a halberd; join a court and
+your lord or lady gifts you an épée; get knighted and your liege gifts
+a lance and a horse; apprentice with a hunter and get a bow.
 
-If you’ve spent the summer doing warrior things, pick one of the
-following tables to roll on.
+In order to increase Status and Education, you need to increase it
+in-game.
 
-| 1d6 | Mercenary    | Guard        | Rider    | Officer     |
-|:---:|--------------|--------------|----------|-------------|
-| 1   | Construction | Bureaucracy  | Riding   | Literacy    |
-| 2   | Running      | Discipline   | Singing  | Bureaucracy |
-| 3   | Tactics      | Construction | Tactics  | Tactics     |
-| 4   | First Aid    | Brawling     | Spying   | Diplomacy   |
-| 5   | Craft        | Brewing      | Culture  | Behaviour   |
-| 6   | Fighting     | Fighting     | Fighting | Fighting    |
+Crime rings look for gangsters and thugs, guilds look for engineers
+and tradespeople, covens look for wizards and witches. Join a secret
+society and increase your Education by +1.
 
-If you’ve spent the summer doing mage things, pick one of the
-following tables to roll on.
+There are always apprentices eager to learn from you. If you find one,
+roll 2d6 each for Strength, Dexterity, Endurance and Intelligence;
+both Education and Status are 2. They gain talents, just like you. If
+they surpass you in your best talent, they leave. Having an apprentice
+join you increases your Status by +1. When they leave on good terms,
+your Status increases by +1 again. You can only have one apprentice at
+a time.
 
-| 1d6 | Aggressive | Passive | Manipulative | Transgressive |
-|:---:|------------|---------|--------------|---------------|
-| 1   | Fire       | Healing | Charm        | Shapeshift    |
-| 2   | Air        | Sleep   | Singing      | Necromancy    |
-| 3   | Water      | Eyes    | Diplomacy    | Transmutation |
-| 4   | Earth      | Doors   | Illusion     | Fusion        |
-| 5   | Storm      | Plants  | People       | Animals       |
-| 6   | Fighting   | Brewing | Literacy     | Planeswalk    |
+Saving the life of a noble or winning a war with them might get you a
+grant to a piece of land in the wilderness. Taking possession of said
+land increases your Status by +1.
 
-If you’ve spent the summer living a life of crime, pick one of the
-following tables to roll on.
+Similarly, chairs and positions are handed out in exchange for
+services rendered. When a sponsor offers you a chair at a magic school
+and a post with gangsters or administrators of the realm, your Status
+increases by +1.
 
-| 1d6 | Thief    | Thug      | Liar        | Murderer  |
-|:---:|----------|-----------|-------------|-----------|
-| 1   | Sneaking | Fighting  | Culture     | Fighting  |
-| 2   | Spying   | Crafting  | Behaviour   | Brewing   |
-| 3   | Running  | Running   | Bureaucracy | First Aid |
-| 4   | Climbing | First Aid | Literacy    | Sneaking  |
-| 5   | Distract | Tactics   | Oratory     | Behaviour |
-| 6   | Pick     | Singing   | Trading     | Tinker    |
-
-Players can also [increase their status](#status-increase) by doing
-appropriate deeds.
-
-## Adventurer’s Life
+## Adventurer's Life
 
 If you want to do something and the outcome is uncertain, discuss with
 the referee an attribute and a talent to use, provided there is a
-suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it’s very
+suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
 hard, you might have to roll 3d6 ≤ attribute + talent.
 
 If you attack successfully, you deal 2d6 damage unless you use a
@@ -343,10 +512,6 @@ read on!
 
 ### Summary of the rules
 
-Character creation: Roll 2d6 for Strength, Dexterity, Endurance and
-Intelligence. Use Education-2 and Status-2 unless you’re inheriting
-from your parents. You start without talents.
-
 Task resolution: Roll 2d6 ≤ attribute + talent to succeed. If it’s
 very hard, you might have to roll 3d6 ≤ attribute + talent. If you do
 not have the talent, then roll 2d6 ≤ attribute - 2.
@@ -369,11 +534,11 @@ Healing-3. If three of your attributes drop to 0, you die.
 
 ## Opponents
 
-People can be described with a few words. If they attempt to do things
-that can succeed or fail and it might result in an interesting plot
-twist, use one of the well-known six attributes: either choose freely
-(the average is 7) or roll for the attribute (2d6). Talents are also
-freely determined (often 1 or 2).
+All other chapters in this book are intended for the referee. So for you!
+
+People can be depicted with the well-known six attributes. You may
+choose these freely (the average is 7) or roll them (2d6). Talents are
+also freely determined (often 1 or 2).
 
 Monsters and animals have different characteristics that describe
 their behaviour: Count determines how many one is most likely to
@@ -435,7 +600,7 @@ an understanding of just how powerful magic is with the players.
 The same applies here: Make a note of what you negotiate and stick to
 it!
 
-> **Lightning**: hits an enemy and what they are carrying for 5d6 damage  
+> **Lightning**: hits an enemy and what they are carrying for 5d6 damage each  
 > **Chain Lightning**: hits up to 5 enemies for 2d6 damage each
 
 Spells can be stronger than weapon attacks but spell casting is not
@@ -445,11 +610,12 @@ today ≤ attribute + talent to succeed. If the check fails, this
 particular talent can no longer be used today.
 
 > Example: Adalric conjures rain for privacy. He has Intelligence-9,
-> Water-1, for a total of 10. Alex rolls 10 + 0 since this was the
-> first spell of the day and it rain because 10 ≤ 10. Chain Lightning
-> follows: Alex rolls 5+1=6 and 6 ≤ 10. For damage he rolls 3+4=7 and
-> that kills five goblins since they have Endurance-1 and Life-5 for a
-> total of 6.
+> Water-1, for a total of 10. Alex rolls 4+6=10 + 0 since this was the
+> first spell of the day and so it rains because 10 ≤ 10. Chain
+> Lightning follows: Alex rolls 2+3=5 +1 since this is the second
+> spell of the day and 6 ≤ 10. The spell goes off! For damage he rolls
+> 3+4=7 and that kills five goblins since they have Endurance-1 and
+> Life-5 for a total of 6.
 
 Magic always leads to discussions. You have to like that – otherwise
 you should skip the Mage career. How long can you breathe underwater?
@@ -473,6 +639,143 @@ nauseating and revolting. When the magic ends, the anger starts.
 
 *Prophecy*. It is not possible to foresee the future. A role-playing
 game is not a saga; fate is not predetermined.
+
+## Worldbuilding
+
+The world is best built where the characters get involved. If they go
+north, there will be cultivation. When they get interested in
+libraries, books and librarians become important. If you are
+interested in history, ancient writings and ruins become important.
+
+The game does not offer a "reward" in the sense of gaining power.
+Finding money is not worth it, there's no special equipment to buy, no
+experience points to gain. That's another reason why it's important to
+find out what interests the players. A tragic end? A love story?
+Owning a castle? To be knighted? Take over a gang? To travel the
+world? And then you add helpers, competitors, villains, and
+troublemakers to the world. This friction sharpens the profile. Here
+we see what kind of people our characters are.
+
+Specifically, I recommend working up a dozen people. All have names,
+attributes, a few talents, and a job. Three of them belong to a secret
+society each, three belong to a temple each, three belong to a castle
+each, and three belong to a magic school each. All of these
+organizations have names and headquarters. People as well as
+organizations want three things each and offer three rewards each. If
+those wishes partly overlap and contradict each other, so much the
+better.
+
+| 1d6 | Activity  | Secret Society 1 | Secret Society 2 | Gods   | Demons   |
+|:---:|-----------|------------------|------------------|--------|----------|
+| 1   | Knight    | Militia          | of the pyramid   | Odin   | Set      |
+| 2   | Bard      | Scribes          | of the moon      | Freya  | Orcus    |
+| 3   | Thief     | Pentarchs        | of the circle    | Thor   | Pazuzu   |
+| 4   | Mage      | Students         | of history       | Mitra  | Nergal   |
+| 5   | Librarian | Servants         | of consciousness | Marduk | Hel      |
+| 6   | Merchant  | Cooperation      | of order         | Ishtar | Zathogga |
+
+The first few names of villages, castles and witch towers can be
+generated with the following tables.
+
+| 1d6 | Castle 1 | Castle 2 | Castle 3 | Village | Magic 1 | Magic 2 | Magic 3 |
+|:---:|----------|----------|----------|---------|---------|---------|---------|
+| 1   | Watch-   | Falcon-  | -fort    | -thrope | Witch-  | Flame-  | -tower  |
+| 2   | Olden-   | Fern-    | -hill    | -dale   | Raven-  | Death-  | -watch  |
+| 3   | Bear-    | Glad-    | -rock    | -wick   | Devil-  | Temple- | -crest  |
+| 4   | New-     | Blade-   | -stone   | -ley    | Fell-   | High-   | -wood   |
+| 5   | Good-    | Ram-     | -ward    | -ton    | Dark-   | Sky-    | -hole   |
+| 6   | Star-    | Frost-   | -hall    | -ford   | Ice-    | Cat-    | -stead  |
+
+For people's names, I like to look up a baby name list online and use
+that for my world. Here are a few tables for names with a Franconian
+touch. Easily add -o, -a or -e at the end, or reverse (Chlodobert,
+Theudebald, Hildebart, Gertrud).
+
+| 1d6 | Name 1 | Name 2  | Name 3 | Name 4 | Name 5 | Name 6 |
+|:---:|--------|---------|--------|--------|--------|--------|
+| 1   | Adal-  | Chlodo- | -ger   | -burg  | Ada    | Chloe  |
+| 2   | Amal-  | Charde- | -man   | -gard  | Berta  | Gregor |
+| 3   | Bald-  | Gunde-  | -mund  | -gund  | Gyso   | Frieda |
+| 4   | Bert-  | Os-     | -ric   | -hild  | Dodo   | Siggo  |
+| 5   | Brun-  | Sigi-   | -hard  | -lind  | Hilde  | Ardo   |
+| 6   | Ger-   | Theude- | -sind  | -trud  | Inge   | Gisela |
+
+Intelligent monsters and mountains should also have names. For giants
+and dragons, I like to use names that indicate forces of nature.
+
+| 1d6 | Name 1 | Dragons  | Giants  | Mountain 1 | Mountain 2 |
+|:---:|--------|----------|---------|------------|------------|
+| 1   | Ice    | -pharynx | -hammer | Needle     | -mount     |
+| 2   | Frost  | -breath  | -smith  | Hell       | -horn      |
+| 3   | Fire   | -spout   | -maker  | Division   | -crag      |
+| 4   | Poison | -needle  | -father | Dark       | -height    |
+| 5   | Plague | -puff    | -mother | Red        | -ridge     |
+| 6   | Shadow | -smoke   | -tooth  | Frozen     | -peak      |
+
+Treasures that these people, giants, and dragons may have and that
+they might want to steal from each other. For this you should make up
+two or three important people from the past: prophets, heroines, and
+so on, as well as the name of a dark lord and his realm. Names matter!
+
+| 1d6 | What    | What for         | Who invented it?                 |
+|:---:|---------|------------------|----------------------------------|
+| 1   | Ring    | of Invisibility  | The Ruler of the Night           |
+| 2   | Sword   | of Invincibility | The Lady of the Lake             |
+| 3   | Crown   | of Power         | The First Judge                  |
+| 4   | Spear   | of Destruction   | from the Last Days of the Empire |
+| 5   | Book    | of the Saint     | (a well-known person)            |
+| 6   | Chalice | of Redemption    | (a god, goddess, or demon)       |
+
+All these things are recorded and hopefully lead to cross-connections
+and inspiration.
+
+For an example setting, see
+[Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf).
+
+<div style="break-after: always;"></div>
+
+## Talents for the opposition
+
+These are the same talents used for character creation, all on one
+page so that it's easy to pick some for the opposition.
+
+Remember that “Fighting” means you choose a weapon instead: knife,
+spear, halberd, épée, bow, lance.
+
+### Warriors
+
+| 1d6 | Mercenary    | Guard        | Rider    | Officer     |
+|:---:|--------------|--------------|----------|-------------|
+| 1   | Construction | Bureaucracy  | Riding   | Literacy    |
+| 2   | Running      | Discipline   | Singing  | Bureaucracy |
+| 3   | Tactics      | Construction | Tactics  | Tactics     |
+| 4   | First Aid    | Brawling     | Spying   | Diplomacy   |
+| 5   | Craft        | Brewing      | Culture  | Behaviour   |
+| 6   | Fighting     | Fighting     | Fighting | Fighting    |
+
+### Mages
+
+| 1d6 | Aggressive | Passive | Manipulative | Transgressive |
+|:---:|------------|---------|--------------|---------------|
+| 1   | Fire       | Healing | Charm        | Shapeshift    |
+| 2   | Air        | Sleep   | Singing      | Necromancy    |
+| 3   | Water      | Eyes    | Diplomacy    | Transmutation |
+| 4   | Earth      | Doors   | Illusion     | Fusion        |
+| 5   | Storm      | Plants  | People       | Animals       |
+| 6   | Fighting   | Brewing | Literacy     | Planeswalk    |
+
+### Rapscallions
+
+| 1d6 | Thief    | Thug      | Liar        | Murderer  |
+|:---:|----------|-----------|-------------|-----------|
+| 1   | Sneaking | Fighting  | Culture     | Fighting  |
+| 2   | Spying   | Crafting  | Behaviour   | Brewing   |
+| 3   | Running  | Running   | Bureaucracy | First Aid |
+| 4   | Climbing | First Aid | Literacy    | Sneaking  |
+| 5   | Distract | Tactics   | Oratory     | Behaviour |
+| 6   | Pick     | Singing   | Trading     | Tinker    |
+
+<div style="break-after: always;"></div>
 
 ## Campaigns
 
@@ -1535,22 +1838,6 @@ Alex says, “The lady-in-waiting is still there, right? We’re not going
 to do anything indecent, that’s for sure. Adalric does pluck a sword
 lily on the way…”
 
-<!-- ### More -->
-
-<!-- This needs tons of ideas for a social setting with lords and ladies, secret societies, magic schools, gangs of thieves, mercenary bands, each with missions you can undertake for them, services you can render for them, big and small. Each comes with rewards. Whenever you roll the Fighting talent, you get granted an appropriate weapon, if you don’t have it already. -->
-
-<!-- * Bring back the horses the men of Amalgard of Bearhall stole. If you do it, roll on the Thief or Mercenary list. -->
-<!-- * Bring these donkeys and their load to Falconthorpe. If you do it, roll on the Guard. If you befriended Chrodotrud, you may roll on the Passive list instead. -->
-<!-- * Go to the ruins of Frosthall and see if you can catch an Owl-wolf for Siggo the Aeromant. If you do it, roll on the Mercenary or Aggressive table. If you decide to spend the winter in Ramdale, receive a dog companion instead. -->
-<!-- * Join the raid against Amalgard of Bearhall. If you do it, roll on the Mercenary table. If you helped steal any horses, you may keep one. -->
-<!-- * Falconthorpe has been struggling with a manipulator. If you manage to drive him away, roll on the Mercenary table. If you decide to spend the winter there, in his house, studying the books, roll on the Manipulative or Transgressive table and tell us what sort of books you read. -->
-
-<!-- What about treasure? If you find the Book of Redemption for Bishop Gregor, you can become a member of the secret society of the Librarian Militia of the Moon. There’s no point in getting rich yourself. The treasure you find allows you to barter for boons: land grants, titles, marriage proposals, memberships in knightly orders, secret societies, and so on. Those would also be part of the setting and adventure book. -->
-
-<!-- Don’t write a setting with a timeline, a map, and names. Instead, write a pamphlet. Describe what to aim for, how to do it, with random tables to help you get started. More names. More missions. More treasure. More monsters. Conflicts with neighbours. Invaders. Unrest. Rebellions. Cultists. Wars. Tables. Tables. An essay or two. More tables. -->
-
-<div style="break-after: always;"></div>
-
 ## Adapting the game
 
 The simplest changes, mechanically, would be to change the list of
@@ -1730,8 +2017,6 @@ the same side? Let’s play to find out!
 [Lake Land](https://campaignwiki.org/lake-land), a generator of characters and a mini-setting
 
 [Myrkheim](https://campaignwiki.org/myrkheim), a generator for an underworld mini-setting
-
-[Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), a very similar game without advancement
 
 [2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf), some thoughts on probabilities
 

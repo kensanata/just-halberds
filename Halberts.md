@@ -2,10 +2,7 @@
 Fröhlich, YYYY-MM-DD. Playtesting by Alex Schroeder, Frotz Self, Peter
 Fröhlich, Robert Freeman-Day (PresGas). To the extent possible under
 law, the authors of this work has waived all copyright and related or
-neighboring rights to this work. The map on the last page uses icons
-by Gregory B. MacKenzie under <a
-href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
-4.0</a>.</address>
+neighboring rights to this work.</address>
 
 # Halberts
 

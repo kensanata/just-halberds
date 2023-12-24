@@ -640,18 +640,19 @@ game is not a saga; fate is not predetermined.
 ## Worldbuilding
 
 The world is best built where the characters get involved. If they go
-north, there will be cultivation. When they get interested in
-libraries, books and librarians become important. If you are
-interested in history, ancient writings and ruins become important.
+somewhere, new things are going to be discovered. When they care about
+something, that thing is going to become important. Don’t ask what the
+players want to see in the world, watch what their characters care
+about.
 
 The game does not offer a "reward" in the sense of gaining power.
 Finding money is not worth it, there's no special equipment to buy, no
 experience points to gain. That's another reason why it's important to
-find out what interests the players. A tragic end? A love story?
+find out what the characters are about. A tragic end? A love story?
 Owning a castle? To be knighted? Take over a gang? To travel the
 world? And then you add helpers, competitors, villains, and
-troublemakers to the world. This friction sharpens the profile. Here
-we see what kind of people our characters are.
+troublemakers to the world. This friction sharpens their profile. This
+is how we see what kind of people our characters are.
 
 Specifically, I recommend working up a dozen people. All have names,
 attributes, a few talents, and a job. Three of them belong to a secret
@@ -725,9 +726,6 @@ so on, as well as the name of a dark lord and his realm. Names matter!
 
 All these things are recorded and hopefully lead to cross-connections
 and inspiration.
-
-For an example setting, see
-[Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf).
 
 <div style="break-after: always;"></div>
 
@@ -2011,13 +2009,15 @@ the same side? Let’s play to find out!
 
 ## Reading material
 
+[Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf), an example setting.
+
 [Lake Land](https://campaignwiki.org/lake-land), a generator of characters and a mini-setting
 
 [Myrkheim](https://campaignwiki.org/myrkheim), a generator for an underworld mini-setting
 
 [2d6 Math](https://alexschroeder.ch/pdfs/2d6-Math.pdf), some thoughts on probabilities
 
-[Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a 2d6 game
+[Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a different 2d6 game
 
 The images used are by Urs Graf. He lived in Solothurn, Switzerland,
 around 1485–1527/28. The images are in the public domain. I got them

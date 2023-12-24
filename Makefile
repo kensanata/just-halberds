@@ -58,8 +58,7 @@ Farnthal.pdf: images/Farnthal.svg
 Helmbarten.pdf: images/Helmbarten.svg Helmbarten.jpg \
     images/Urs_Graf_Schlachtfeld_(1521).jpg \
 
-Halberts.pdf: images/Helmbarten.png Helmbarten.jpg \
-    images/Urs_Graf_Schlachtfeld_(1521).jpg \
+Halberts.pdf: Helmbarten.jpg images/Urs_Graf_Schlachtfeld_(1521).jpg
 
 Knives.pdf: Knives.jpg Knives.css Knives-prefix \
     images/Urs_Graf_Stehender_Reisläufer_vor_Seelandschaft_in_Rückansicht_(1514).jpg \

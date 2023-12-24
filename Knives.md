@@ -2019,9 +2019,10 @@ the same side? Let’s play to find out!
 
 [Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a different 2d6 game
 
-The images used are by Urs Graf. He lived in Solothurn, Switzerland,
-around 1485–1527/28. The images are in the public domain. I got them
-from the [online collection of the Kunstmuseum
+The cover image is by Alex Schroeder. The other images used are by Urs
+Graf. He lived in Solothurn, Switzerland, around 1485–1527/28. The
+images are in the public domain. I got them from the [online
+collection of the Kunstmuseum
 Basel](https://sammlungonline.kunstmuseumbasel.ch/eMP/eMuseumPlus ).
 
 ![Four well armed men playing the flute under a tree](images/Urs_Graf_Zwei_Eidgenossen_und_zwei_Landsknechte_blasen_die_Querpfeife_(1523).jpg)

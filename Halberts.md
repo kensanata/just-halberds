@@ -522,9 +522,9 @@ Battlefield (1521), by Urs Graf
 
 ## Reading material
 
-[Knives](https://alexschroeder.ch/pdfs/Knives.pdf), the same game with a lot of material for referees.
+[Knives](https://alexschroeder.ch/pdfs/Knives.pdf), the same game with a lot of material for referees
 
-[Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf), an example setting.
+[Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf), an example setting
 
 [Lake Land](https://campaignwiki.org/lake-land), a generator of characters and a mini-setting
 
@@ -535,5 +535,15 @@ Battlefield (1521), by Urs Graf
 [Simple Fantasy Adventure](https://winterstargames.itch.io/simple-fantasy-adventure), a different 2d6 game
 
 [Text Mapper](https://campaignwiki.org/text-mapper/) to create maps
-for the game. I like the
-[Alpine](https://campaignwiki.org/text-mapper/alpine/random) maps.
+for the game; I like the
+[Alpine](https://campaignwiki.org/text-mapper/alpine/random) maps
+
+The cover image is by Alex Schroeder. The other images used are by Urs
+Graf. He lived in Solothurn, Switzerland, around 1485–1527/28. The
+images are in the public domain. I got them from the [online
+collection of the Kunstmuseum
+Basel](https://sammlungonline.kunstmuseumbasel.ch/eMP/eMuseumPlus ).
+
+![Bagpiper](images/Urs_Graf_Dudelsackpfeifer_(1525).jpg)
+Bagpiper (1525), by Urs Graf
+{: .pic .small }

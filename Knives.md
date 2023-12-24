@@ -906,12 +906,10 @@ Each link in the chain is a secret to be uncovered, each can be an
 aside learned in an adventure. The adventure is never just about
 learning such a secret. The secret is icing on the cake.
 
-*The short game*. If you’re just interested in a handful of sessions,
-pick *Halberts* and start with older, more powerful characters,
-potential movers and shakers in the world. *Knives* doesn’t have long
-lists of monsters to fight, or magic items to win, or spells to learn.
-Those imply a kind of changing game-play over time. That’s why you
-need to focus on all the other aspects touched upon in this section.
+This game doesn’t have long lists of monsters to fight, or magic items
+to win, or spells to learn. Those imply a kind of changing game-play
+over time. That’s why you need to focus on all the other aspects
+touched upon in this section.
 
 ## Running the game
 
@@ -2008,6 +2006,8 @@ opposing the naga. Does that mean, the elves and the devil are now on
 the same side? Let’s play to find out!
 
 ## Reading material
+
+[Halberts](https://alexschroeder.ch/pdfs/Halberts.pdf), the same game, without the referee material.
 
 [Altenstein](https://alexschroeder.ch/pdfs/Altenstein.pdf), an example setting.
 

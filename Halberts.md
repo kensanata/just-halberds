@@ -473,48 +473,50 @@ Heal-3. If three of your attributes drop to 0, you die.
 All other chapters in this book are intended for the referee. So for you!
 
 People can be depicted with the well-known six attributes. You may
-choose these freely or roll them (2d6). Talents are also freely
-determined (often 1 or 2).
+choose these freely (the average is 7) or roll them (2d6). Talents are
+also freely determined (often 1 or 2).
 
 Monsters and animals have different characteristics that describe
-their behavior: damage determines how much damage they deal if they
-hit; endurance determines how many rounds they will fight and how much
-damage they can take; if it drops to zero, they faint; excess damage
-is substracted from life; if it drops to zero, they are mortally
-wounded; attack determines whether they attack in an encounter (2d6 ≤
-attack); hit determines how well they hit (2d6 ≤ hit), and escape
-determines if they attempt to escape when they're not attacking (2d6 ≤
-escape). If they neither attack nor escape, we talk.
+their behaviour: Count determines how many one is most likely to
+encounter (the number of mounts matches the number of riders); Damage
+determines how much damage they deal if they hit; Endurance determines
+how many rounds they’ll fight and how much damage they can take; if it
+drops to zero, they faint; excess damage is subtracted from Life; if
+it drops to zero, they are mortally wounded; Fight determines whether
+they fight when encountered (2d6 ≤ fight); Attack determines how well
+they hit (2d6 ≤ attack), and Escape determines if they attempt to
+escape when they’re not attacking (2d6 ≤ escape). If they neither
+fight nor escape, they want to talk or interact in some other way.
+{ #opponents }
 
-| 1d6 |  Opponents | Damage | Endurance | Life | Attack | Hit   | Escape |
-|:---:|-----------:|:------:|:---------:|:----:|:------:|:-----:|:------:|
-| 1   | Nightlings | 2d6    | 1d6       | 1d6  | 1d6+4  | 1d6+5 | 1d6+3  |
-| 2   |  Predators | 2d6    | 3d6       | 2d6  | 1d6+5  | 1d6+6 | 1d6+2  |
-| 3   |     Undead | 2d6    | 3d6       | 4d6  | 1d6+6  | 1d6+7 | 1d6+0  |
-| 4   |     Mounts | 3d6    | 6d6       | 3d6  | 1d6+4  | 1d6+4 | 1d6+2  |
-| 5   |     Giants | 4d6    | 8d6       | 4d6  | 1d6+3  | 1d6+8 | 1d6+0  |
-| 6   |    Dragons | 6d6    | 10d6      | 5d6  | 1d6+2  | 1d6+9 | 1d6+0  |
+| 1d6 | Opponents  | Count  | Damage | Endurance | Life | Fight | Attack | Escape |
+|:---:|------------|:------:|:------:|:---------:|:----:|:-----:|:------:|:------:|
+| 1   | Nightlings | 2d6    | 2d6    | 1d6       | 1d6  | 1d6+4 | 1d6+5  | 1d6+3  |
+| 2   | Predators  | 1d6    | 2d6    | 3d6       | 2d6  | 1d6+5 | 1d6+6  | 1d6+2  |
+| 3   | Undead     | 1d6    | 2d6    | 3d6       | 4d6  | 1d6+6 | 1d6+7  | 1d6+0  |
+| 4   | Mounts     | varies | 3d6    | 6d6       | 3d6  | 1d6+4 | 1d6+4  | 1d6+2  |
+| 5   | Giants     | 1      | 4d6    | 8d6       | 4d6  | 1d6+3 | 1d6+8  | 1d6+0  |
+| 6   | Dragons    | 1      | 6d6    | 10d6      | 5d6  | 1d6+2 | 1d6+9  | 1d6+0  |
 
-For each world, the stats will be slightly different. Note down when
-you roll something and stick to it! For the number of enemies, roll
-2d6 for nightlings and predators, or 1d6 for undead. Giants and
-dragons are always loners.
+Note down when you roll something and keep using those numbers. This
+is how players learn about the strengths and weaknesses of the
+opposition.
 
-> Example: Claudia referees the game and needs goblins that
-> ride on giant spiders that ambush the vanguard. There are 7.
-> She uses the line of nightlings and mounts. Goblins:
-> Damage-3, Endurance-1, Life-5, Fight-5, Attack-9, Escape-4.
-> Giant Spiders: Damage-15, Endurance-16, Life-12, Fight-9,
-> Attack-5, Escape-7. In this world, goblins are rather harmless
-> opponents who ride on terrible giant spiders, which,
-> oddly enough, are not very good at hitting things.
+> Example: Claudia referees the game and needs goblins that ride on
+> giant spiders that ambush the vanguard. There are 7. She uses the
+> line of nightlings and mounts. Goblins: Damage-3, Endurance-1,
+> Life-5, Fight-5, Attack-9, Escape-4. Giant Spiders: Damage-15,
+> Endurance-16, Life-12, Fight-9, Attack-5, Escape-7. In this
+> campaign, goblins are rather harmless opponents who ride on terrible
+> giant spiders, which, oddly enough, are not very good at hitting
+> things.
 
 Always announce impending danger clearly, so that the players can
 decide for themselves whether they want to engage in a fight.
 
-> Example: Claudia describes how the car-sized shadows
-> push through the undergrowth, how their acrid smell spreads
-> and the animals in the barn panic.
+> Example: Claudia describes how the car-sized shadows push through
+> the undergrowth, how their acrid smell spreads and the animals in
+> the barn panic.
 
 If possible, the players should roll the dice, not the referee. For
 example, if they want to lure the opponent into an ambush, or notice

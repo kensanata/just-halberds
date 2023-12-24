@@ -399,7 +399,7 @@ services rendered. When a sponsor offers you a chair at a magic school
 and a post with gangsters or administrators of the realm, your Status
 increases by +1.
 
-## Adventurer's Life
+## Dice Rolling and Combat
 
 If you want to do something and the outcome is uncertain, discuss with
 the referee an attribute and a talent to use, provided there is a

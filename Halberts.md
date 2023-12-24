@@ -57,7 +57,7 @@ the adventurous life begins: roll on the reward table for each career!
 A career lasts for four years. Each year, choose one of your career
 charts and roll 1d6. Write down that talent with a value of 1, or
 increase the value if you learn a talent again. When you learn
-"Fighting", choose a weapon instead: knife, spear, halberd, épée, bow,
+"", choose a weapon instead: knife, spear, halberd, épée, bow,
 lance.
 
 With every career your character completes, the chance for a twist of
@@ -80,7 +80,7 @@ character dies.
 ## Warrior Career
 
 **Suitability**: Roll 2d6 ≤ Strength or Endurance (your choice). You
-automatically learn Fighting-1 if you pass. If you don't, you realize
+automatically learn -1 if you pass. If you don't, you realize
 that killing people is brutal and cold and you are not.
 
 > Example: Brunhilde has Strength 10 and Berta rolls 2. Brunhilde is
@@ -90,18 +90,18 @@ You spend four years as a Warrior and learn something every year. Each
 year choose one of the following tables and roll 1d6. You may only
 roll on the "Officer" table if your character is 20 or older.
 
-| 1d6 |    Mercenary |        Guard |    Rider |     Officer |
-|:---:|-------------:|-------------:|---------:|------------:|
-| 1   | Construction |  Bureaucracy |   Riding |    Literacy |
-| 2   |      Running |   Discipline |  Singing | Bureaucracy |
-| 3   |      Tactics | Construction |  Tactics |     Tactics |
-| 4   |    First Aid |     Brawling |   Spying |   Diplomacy |
-| 5   |        Craft |      Brewing |  Culture |    Behavior |
-| 6   |     Fighting |     Fighting | Fighting |    Fighting |
+| 1d6 |    Mercenary |        Guard |   Rider |     Officer |
+|:---:|-------------:|-------------:|--------:|------------:|
+| 1   | Construction |  Bureaucracy |    Ride |    Literacy |
+| 2   |          Run |   Discipline |    Sing | Bureaucracy |
+| 3   |      Tactics | Construction | Tactics |     Tactics |
+| 4   |    First Aid |        Brawl |     Spy |   Diplomacy |
+| 5   |        Craft |         Brew | Culture |    Behavior |
+| 6   |        Fight |        Fight |   Fight |       Fight |
 
 > Example: Berta chooses 2× Mercenary, 2× Guard, and rolls 3 2 5 1,
-> resulting in Tactics-1, Running-1, Brewing-1, and Bureaucracy-1.
-> And Fighting-1!
+> resulting in Tactics-1, Run-1, Brew-1, and Bureaucracy-1.
+> And Fight-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤ Strength or
 Endurance (your choice) to avoid consequences. Otherwise, you
@@ -142,15 +142,15 @@ year choose one of the following tables and roll 1d6.
 
 | 1d6 | Aggressive | Passive | Manipulative | Transgressive |
 |:---:|-----------:|--------:|-------------:|--------------:|
-| 1   |       Fire | Healing |        Charm |    Shapeshift |
-| 2   |        Air |   Sleep |      Singing |    Necromancy |
+| 1   |       Fire |    Heal |        Charm |    Shapeshift |
+| 2   |        Air |   Sleep |         Sing |    Necromancy |
 | 3   |      Water |    Eyes |    Diplomacy | Transmutation |
 | 4   |      Earth |   Doors |     Illusion |        Fusion |
 | 5   |      Storm |  Plants |       People |       Animals |
-| 6   |   Fighting | Brewing |     Literacy |    Planeswalk |
+| 6   |      Fight |    Brew |     Literacy |    Planeswalk |
 
 > Example: Alex chooses 2× Aggressive, 2× Manipulative, and rolls 5 3
-> 5 2, resulting in Storm-1, Water-1, People-1, and Singing-1. And
+> 5 2, resulting in Storm-1, Water-1, People-1, and Sing-1. And
 > Literacy-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
@@ -182,7 +182,7 @@ Otherwise, you determine the consequences with 1d6.
 ## Rapscallion Career
 
 **Suitability**: Roll 2d6 ≤ Dexterity or Status (your choice). You
-automatically learn Running-1 if you pass. If you don't, you realize
+automatically learn Run-1 if you pass. If you don't, you realize
 that you can't bear the endless talks, the tiresome reports, the lies
 and the deceit.
 
@@ -195,15 +195,15 @@ Each year choose one of the following tables and roll 1d6.
 
 | 1d6 |    Thief |      Thug |        Liar |  Murderer |
 |:---:|---------:|----------:|------------:|----------:|
-| 1   | Sneaking |  Fighting |     Culture |  Fighting |
-| 2   |   Spying |  Crafting |    Behavior |   Brewing |
-| 3   |  Running |   Running | Bureaucracy | First Aid |
-| 4   | Climbing | First Aid |    Literacy |  Sneaking |
+| 1   |    Sneak |     Fight |     Culture |     Fight |
+| 2   |      Spy |     Craft |    Behavior |      Brew |
+| 3   |      Run |       Run | Bureaucracy | First Aid |
+| 4   |    Climb | First Aid |    Literacy |     Sneak |
 | 5   | Distract |   Tactics |     Oratory |  Behavior |
-| 6   |     Pick |   Singing |     Trading |    Tinker |
+| 6   |     Pick |      Sing |       Trade |    Tinker |
 
 > Example: Alex chooses 1× Thief, 3× Murderer, and rolls 6 2 2 6,
-> resulting in Pick-1, Brewing-2, Tinker-1. And Running-1!
+> resulting in Pick-1, Brew-2, Tinker-1. And Run-1!
 
 **Twist of Fate**: Roll 2d6 + number of previous careers ≤
 Dexterity or Status (your choice) to avoid consequences.
@@ -231,52 +231,62 @@ Otherwise, you determine the consequences with 1d6.
 
 ## Talents
 
-We roll checks as follows: 2d6 ≤ attribute + talent. On very hard
-tests: 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then +0.
+Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
+roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
+talent is missing, then roll 2d6 ≤ attribute +0. A +1 talent is good
+enough to do it for a living. Sometimes the lack of a talent
+disqualifies you from even trying (a lack of magic talents, for
+example).
+
+The chance of rolling a target number or less on 2d6:
+
+| 2    | 3    | 4    | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
+|:----:|:----:|:----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 3%   | 8%   | 17%  | 28%   | 42%   | 58%   | 72%   | 83%   | 92%   | 97%   | 100%  |
+| 1/36 | 3/36 | 6/36 | 10/36 | 15/36 | 21/36 | 26/36 | 30/36 | 33/36 | 35/36 | 36/36 |
 
 A few key words about the individual talents.
 **Air**: Magic related to wind, movement, and sound.
 **Animals**: Magic related to animals and handling them.
-**Behavior**: How to behave in noble company.
-**Brawling**: The unarmed force, threats, and infliction of pain.
-**Brewing**: Brew beer, concoct herbal tea, brew potions, mix poison.
+**Behaviour**: How to behave in noble company.
+**Brawl**: The unarmed force, threats, and infliction of pain.
+**Brew**: Brew beer, brew potions, mix poison.
 **Bureaucracy**: An understanding of every administrative apparatus and the people who work there.
-**Charm**: Magic that subdues people, controls their emotions.
-**Climbing**: Climbing rocks and walls, moving in the mountains.
-**Construction**: Building houses, castles, siege engines, digging pits and shafts.
+**Charm**: Magic that subdues people and controls their emotions.
+**Climb**: Climb rocks and walls, moving in the mountains.
+**Construction**: Build houses, castles, siege engines, digging pits and shafts.
 **Crafts**: Woodworking, metalworking, filing, sawing, decorating and painting things.
 **Culture**: An understanding of legends, paintings, songs, manners and customs of foreign countries.
-**Diplomacy**: Negotiating treaties, avoiding violence, making peace.
+**Diplomacy**: Negotiate treaties, avoiding violence, making peace.
 **Discipline**: Control over groups of people and oneself against natural instinct.
-**Distract**: Distracting people from something so that something else can be done unnoticed.
+**Distract**: Distract people from something so that something else can be done unnoticed.
 **Doors**: Magic that has to do with locking and opening doors and gates.
 **Earth**: Magic dealing with rocks, tremors, the earth, and everything subterranean.
 **Eyes**: Magic that allows distant or true vision.
-**Fighting**: Weapon handling and killing.
+**Fight**: Weapon handling and killing.
 **Fire**: Magic dealing with flames, explosions and destruction.
-**First Aid**: Cleaning and stitching up wounds, setting bones, caring for the sick.
-**Fusion**: Magic that fuses living things with other living things and things.
-**Healing**: Magic that restores power to living beings and breaks curses.
+**First Aid**: Clean and stitching up wounds, setting bones, caring for the sick.
+**Fusion**: Magic that fuses living beings with other living beings or with inanimate objects.
+**Heal**: Magic that restores power to living beings and breaks curses.
 **Illusion**: Magic that makes others believe things that are not true.
-**Literacy**: Reading and writing.
+**Literacy**: Read and write.
 **Necromancy**: Magic that allows resurrection and contact with the dead.
-**Oratory**: Convincing with well-chosen words.
-**People**: Magic used to read people's minds and emotions.
-**Pick**: Opening locks and doors.
-**Planeswalk**: Magic that has to do with contact with other worlds and transition into them.
+**Oratory**: Convince with well-chosen words.
+**People**: Magic used to read people’s minds and emotions.
+**Pick**: Open locks and doors.
+**Planes**: Magic that allows you to contact and visit other realms.
 **Plants**: Magic related to plants and their growth.
-**Riding**: Riding on animals, mostly horses.
-**Running**: Long Distance Run, Short Distance Run, Rush.
+**Ride**: Ride on animals, mostly horses.
+**Run**: Long distance running and sprinting, chasing and escaping.
 **Shapeshift**: Magic that allows you to change shape.
-**Singing**: Singing songs and playing instruments.
+**Sing**: Sing songs and playing instruments.
 **Sleep**: Magic related to sleep and fainting.
-**Sneaking**: Moving silently and hiding.
-**Spying**: Scouting, tracking, observing.
+**Sneak**: Move silently and hiding.
+**Spy**: Scout, track, observe.
 **Storm**: Magic related to wind, rain, lightning and thunder.
-**Tactics**: Setting up ambushes, using the terrain for combat.
-**Tinker**: Building mechanical devices and using material properties.
-**Trading**: Finding, sourcing, haggling, buying, and selling things.
+**Tactics**: Set up ambushes, using the terrain for combat.
+**Tinker**: Build mechanical devices and using material properties.
+**Trade**: Find, source, haggle, buy and sell things.
 **Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
 
@@ -328,57 +338,135 @@ any time to teach the young magicians something. Name your sponsor.
 **Posts**: There is always a vacancy for you in your town, be it in
 your gang or in the administration. Name your sponsor.
 
-## Adventurer's Life
+## Dice Rolls and Combat
 
 If you want to do something and the outcome is uncertain, discuss with
 the referee an attribute and a talent to use, provided there is a
 suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
 hard, you might have to roll 3d6 ≤ attribute + talent.
 
+Combat is divided into rounds. Everyone may attack, cast magic, or do
+something else once per round. All participants announce their action
+and roll the dice. Everything happens at the same time so it is
+possible for two opponents to take each other out in the same round.
+
+When an advantage is gained through tactics, the result is often a
+surprise round where the opponent cannot strike back.
+
 If you attack successfully, you deal 2d6 damage unless you use a
 halberd. This deals 3d6 damage. You can only attack as many times in a
 fight as you have Endurance.
 
-When you are first hit in combat, you must subtract the damage from a
-random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
-Dexterity, 5–6 is Endurance. For all other hits, you may distribute
-the hit dice yourself among the three physical attributes. You must
-subtract any carryover from another physical attribute.
+When you are hit for the first time in a fight, you must subtract the
+damage from a random physical attribute. Roll 1d6: 1–2 is Strength,
+3–4 is Dexterity, 5–6 is Endurance. For all other hits, you may
+distribute the hit dice yourself among the three physical attributes.
+You must subtract any carryover from another physical attribute.
 
 If one of your attributes drops to 0, you are slightly injured and
 pass out. After 10 minutes you wake up again.
 
-> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9. She
+> Example: Brunhilde has Strength-10, Dexterity-6, Endurance-9. She
 > gets hit for the first time and has to subtract 4+5=9 damage. Berta
 > rolls a 1, so Brunhilde must subtract 9 from Strength (10-9=1). She
-> won't pass out! The second time she has to subtract 2+6=8 hits and
+> won’t pass out! The second time she has to subtract 2+6=8 hits and
 > chooses to subtract 2 from Dexterity (6-2=4) and 6 from Endurance
-> (9-6=3). Now it's getting close…
+> (9-6=3). Now it’s getting close…
 
 After the fight, all attributes recover half of the missing amount
 (round down). If you are being treated by First Aid or a healer, you
-will be fit again in 30 minutes, otherwise the recovery will take 3
-days.
+are fit again in 30 minutes, otherwise the recovery takes 3 days.
 
 > Example: After being treated with First Aid, she recovers.
-> Brunhilde's attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
+> Brunhilde’s attributes: Strength 1+4½=5, Dexterity 4+1=5, Endurance
 > 3+3=6.
 
 If two of your attributes drop to 0, you are severely wounded and pass
-out. You don't wake up again for 3h and only the attributes from 0
-recover to 1. With First Aid-3 or Healing-3 you can recover in an
+out. You don’t wake up again for 3h and only the attributes from 0
+recover to 1. With First Aid-3 or Heal-3 you can recover in an
 infirmary in 5d6 days, otherwise you die.
 
 If three of your attributes drop to 0, you die.
+
+Expect to see half the participants down or dying after the first
+round. War is terrible. Try to avoid it.
+
+### Other creatures
 
 For all other creatures there are only Endurance and Life instead of
 the known six attributes. When Endurance drops to 0, they faint; when
 Life drops to 0, they die.
 
-> Example: Adalric's dog Tix has Endurance 3d6, Life 2d6. Alex rolls
+> Example: Adalric’s dog Tix has Endurance 3d6, Life 2d6. Alex rolls
 > 1+4+5=10 and 5+2=7 and writes down 10/7 for the dog.
 
+### Armour
+
+Hitting opponents wearing a metal cuirass is hard: roll 3d6 ≤
+attribute + talent. The reason metal cuirasses are so rare is that
+they are so hard to make. They are kept in armories for times of war.
+You only put them on when marching into battle. They slow you down
+when plundering and when fleeing; they are cumbersome to carry around
+and they give you sores. Soldiers do not like wearing them.
+
+![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
+Battlefield (1521), by Urs Graf
+{: .pic }
+
+And with that we come to the end of the player facing rules. The next
+page has an example character sheet for your to use and the rest of
+the book is advice for the referee. If you want to referee a game,
+read on!
+
 <div style="break-after: always;"></div>
+
+## Character Sheet
+
+<table>
+<tr><th colspan="2">Attributes</th><th colspan="2">Weapons</th></tr>
+<tr><td>Strength</td><td>__</td><td>Knife</td><td>__</td><td>Secret societies</td><td colspan="3">_____________________</td></tr>
+<tr><td>Dexterity</td><td>__</td><td>Spear</td><td>__</td><td></td><td colspan="3">_____________________</td></tr></tr>
+<tr><td>Endurance</td><td>__</td><td>Halberd</td><td>__</td><td>Allegiances</td><td colspan="3">_____________________</td></tr>
+<tr><td>Intelligence</td><td>__</td><td>Épée</td><td>__</td><td></td><td colspan="3">_____________________</td></tr></tr>
+<tr><td>Education</td><td>__</td><td>Bow</td><td>__</td><td>Patrons</td><td colspan="3">_____________________</td></tr>
+<tr><td>Status</td><td>__</td><td>Lance</td><td>__</td><td></td><td colspan="3">_____________________</td></tr>
+<tr><th style="padding-top: 1em" colspan="4">Mundane Talents</th><th style="padding-top: 1em" colspan="4">Magic Talents</th></tr>
+<tr><td>Behaviour</td><td>__</td><td>Brawl</td><td>__</td><td>Air</td><td>__</td><td>Animals</td><td>__</td></tr>
+<tr><td>Brew</td><td>__</td><td>Bureaucracy</td><td>__</td><td>Charm</td><td>__</td><td>Doors</td><td>__</td></tr>
+<tr><td>Climb</td><td>__</td><td>Construction</td><td>__</td><td>Earth</td><td>__</td><td>Eyes</td><td>__</td></tr>
+<tr><td>Crafts</td><td>__</td><td>Culture</td><td>__</td><td>Fire</td><td>__</td><td>Fusion</td><td>__</td></tr>
+<tr><td>Diplomacy</td><td>__</td><td>Discipline</td><td>__</td><td>Heal</td><td>__</td><td>Illusion</td><td>__</td></tr>
+<tr><td>Distract</td><td>__</td><td>First Aid</td><td>__</td><td>Necromancy</td><td>__</td><td>People</td><td>__</td></tr>
+<tr><td>Literacy</td><td>__</td><td>Oratory</td><td>__</td><td>Planes</td><td>__</td><td>Plants</td><td>__</td></tr>
+<tr><td>Pick</td><td>__</td><td>Ride</td><td>__</td><td>Shapeshift</td><td>__</td><td>Sleep</td><td>__</td></tr>
+<tr><td>Run</td><td>__</td><td>Sing</td><td>__</td><td>Storm</td><td>__</td><td>Transmutation</td><td>__</td></tr>
+<tr><td>Sneak</td><td>__</td><td>Spy</td><td>__</td><td>Water</td><td>__</td><td></td><td></td></tr>
+<tr><td>Tactics</td><td>__</td><td>Tinker</td><td>__</td></tr>
+<tr><td>Trade</td><td>__</td><td></td><td></td></tr>
+</tbody>
+</table>
+
+### Summary of the rules
+
+Task resolution: Roll 2d6 ≤ attribute + talent to succeed. If it’s
+very hard, you might have to roll 3d6 ≤ attribute + talent. If you do
+not have the talent, then roll 2d6 ≤ attribute - 2.
+
+Combat: Roll 2d6 ≤ attribute + weapon to hit. If you do, you deal 2d6
+damage unless you use a halberd. This deals 3d6 damage. You can only
+attack as many times as you have Endurance.
+
+When you are first hit in a fight, you must subtract the damage from a
+random physical attribute. Roll 1d6: 1–2 is Strength, 3–4 is
+Dexterity, 5–6 is Endurance. For all other hits, you may distribute
+the hit dice yourself among the three physical attributes. You must
+subtract any carryover from another physical attribute (Strength,
+Dexterity or Endurance).
+
+If one of your attributes drops to 0, you are lightly wounded and pass
+out. If two of your attributes drop to 0, you are mortally wounded and
+you’ll die unless you are treated by somebody with First Aid-3 or
+Heal-3. If three of your attributes drop to 0, you die.
 
 ## Opponents
 
@@ -449,18 +537,19 @@ it!
 > **Lightning**: hits an enemy and what they are carrying for 5d6 damage each  
 > **Chain Lightning**: hits up to 5 enemies for 2d6 damage each
 
-Since spells are stronger than weapon attacks, one shouldn't be able
-to cast any number of them. With each spell cast, the risk of
-exhaustion increases. Therefore, when casting spells, the modified
-rule applies: roll 2d6 + number of spells cast today ≤ attribute +
-talent to succeed. If the check fails, the talent can no longer be
-used today.
+Spells can be stronger than weapon attacks but spell casting is not
+limited by Endurance. Instead, the risk of exhaustion increases with
+each spell cast. When casting spells, roll 2d6 + number of spells cast
+today ≤ attribute + talent to succeed. If the check fails, this
+particular talent can no longer be used today.
 
-> Example: Adalric conjures rain for privacy. He has Education 9,
-> Water-1, making a total of 10. Alex rolls 10 + 0 since this was the
-> first spell of the day. It's raining because 10 ≤ 10. Chain
-> Lightning follows: Alex rolls 5+1=6 and 6 ≤ 10. That kills five
-> goblins.
+> Example: Adalric conjures rain for privacy. He has Intelligence-9,
+> Water-1, for a total of 10. Alex rolls 4+6=10 + 0 since this was the
+> first spell of the day and so it rains because 10 ≤ 10. Chain
+> Lightning follows: Alex rolls 2+3=5 +1 since this is the second
+> spell of the day and 6 ≤ 10. The spell goes off! For damage he rolls
+> 3+4=7 and that kills five goblins since they have Endurance-1 and
+> Life-5 for a total of 6.
 
 Magic always leads to discussions. You have to like that – otherwise
 you should skip the Mage career. How long can you breathe underwater?
@@ -470,52 +559,20 @@ down the result.
 
 Not all magic talents are equally powerful, or equally useful. You
 also have to live with that. Certain magic talents lend themselves to
-druids, bards, healers.
+druids, bards, healers, necromancers, elementalists and seers. It’s up
+players to find an interesting use for their talents and it is up to
+the referee to enable such situation.
 
-There is no talent for summoning: instead, this is meant to be handled
-with a gate to another plane, or as a planeswalk. You have to
-subjugate every demon yourself and force it to do its deeds.
+### Some notes on particular spell effects
 
-In my games, Charm is always a violent thing: being forced into things
-is nauseating and revolting.
+*Summon*. There is no talent to summon demons or elementals.
+Instead, use planeshifting and subjugate some demons in person.
 
-It is not possible to foresee the future. That would incapacitate
-players. A role-playing game is not a saga; fate is not predetermined.
+*Charm*. Being forced into doing things you don’t want to do is
+nauseating and revolting. When the magic ends, the anger starts.
 
-## Combat
-
-Combat is divided into rounds. Everyone may attack, cast magic, or do
-something else 1×/round. All participants announce their action, roll
-the dice and evaluate. Everything happens at the same time.
-
-> Example: Adalric casts chain lightning and he is protected by the
-> rain. A goblin has seen him anyway and shoots at him with his bow.
-> The goblin has attack 5. Claudia rolls 6 – and 6 ≰ 5: misses!
-
-In some role-playing games, combat tends to be front and center. In
-this game, after one round, perhaps half of those involved are already
-on the ground. War is terrible. Most of the time it's about avoiding
-the fight.
-
-> Example: Brunhilde has Strength 10, Dexterity 6, Endurance 9, and
-> Fighting-1. She tries to reach the farm, but two goblins are hot on
-> her tail, with Damage-3, Endurance-1, Life-5, Fight-5, Attack-9,
-> Escape-4. She turns to fight. First round: Berta rolls 6 and hits
-> because 6 ≤ 10+1. Claudia rolls 5 and 6, two hits for the goblins,
-> since 6 ≤ 9. With the first hit, chance decides which attribute
-> Brunhilde must reduce: Berta rolls a 4, which is Dexterity (6-3=3).
-> The goblins deal 3 every time they hit. The second hit Brunhilde
-> deducts from her Endurance (9-3=4). Berta rolls 6 damage which kills
-> the goblin (both Endurance and Life are reduced to zero), but the
-> other still stands.
-
-When an advantage is gained through tactics, the result is often a
-surprise round where the opponent cannot strike back. That can become
-very important.
-
-![](images/Urs_Graf_Schlachtfeld_(1521).jpg)
-Battlefield (1521), by Urs Graf
-{: .pic }
+*Prophecy*. It is not possible to foresee the future. A role-playing
+game is not a saga; fate is not predetermined.
 
 ## Reading material
 

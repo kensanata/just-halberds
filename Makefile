@@ -9,7 +9,7 @@ clean:
 upload: $(FILES)
 	rsync -ai $^ sibirocobombus:alexschroeder.ch/pdfs/
 	(echo ""; tail -n +2 images/Farnthal.svg) | \
-	~/bin/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
+	~/src/oddmuse/scripts/cli/wikiput -s Update -u Alex -z frodo https://campaignwiki.org/wiki/Helmbarten/Karte
 	rsync -ai generator/lake-land.html generator/myrkheim.html sibirocobombus:campaignwiki.org/
 	rsync -ai helmbarten-generator/ sibirocobombus:campaignwiki.org/helmbarten/
 

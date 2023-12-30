@@ -10,21 +10,26 @@ neighboring rights to this work.</address>
 
 ## What are we even doing?
 
-You have a super simple RPG in front of you. All you need are some
-friends and two regular six-sided dice, maybe some pen and paper, and
-you’re good to go. One of you will referee the game. Is that you? All
-other players think up a person. The referee dreams up a world and
+You have a role-playing game (RPG) in front of you. All you need are
+some friends and two regular six-sided dice, maybe some pen and paper,
+and you’re good to go. One of you will referee the game. Is that you?
+All other players think up a person. The referee dreams up a world and
 situations for these imaginary people; the players say how they react
-and the referee says how the world reacts, and so it goes on and on.
+and the referee says how the world reacts, and so it goes, on and on.
 The story of these people is our story.
 
 The dice are rolled when something with exciting consequences happens
 and we want to leave the outcome to chance. Do our people succeed in
 their project or not? And what happens afterwards?
 
+The first ten pages contain the player facing rules and an example
+character sheet. The rest of the book is advice for the referee.
+Hopefully, this is you!
+
 ## Character Creation
 
-If you are a player, you play a fictional person, your character.
+If you are a player, you play a fictional person, your character. For
+the purposes of this game, your character is “you”.
 
 First you choose your name, then you roll your attributes. You have
 six attributes: Strength, Dexterity, Endurance, Intelligence,
@@ -57,7 +62,7 @@ the adventurous life begins: roll on the reward table for each career!
 A career lasts for four years. Each year, choose one of your career
 charts and roll 1d6. Write down that talent with a value of 1, or
 increase the value if you learn a talent again. When you learn
-"Fight", choose a weapon instead: knife, spear, halberd, épée, bow,
+“Fight”, choose a weapon instead: knife, spear, halberd, épée, bow,
 lance.
 
 With every career your character completes, the chance for a twist of
@@ -88,7 +93,7 @@ that killing people is brutal and cold and you are not.
 
 You spend four years as a Warrior and learn something every year. Each
 year choose one of the following tables and roll 1d6. You may only
-roll on the "Officer" table if your character is 20 or older.
+roll on the “Officer” if your character is 20 or older.
 
 | 1d6 |    Mercenary |        Guard |   Rider |     Officer |
 |:---:|-------------:|-------------:|--------:|------------:|
@@ -233,11 +238,10 @@ Otherwise, you determine the consequences with 1d6.
 ## Talents
 
 Roll checks as follows: 2d6 ≤ attribute + talent. On very hard tests,
-roll 3d6 ≤ attribute + talent. If no talent fits, or the matching
-talent is missing, then roll 2d6 ≤ attribute +0. A +1 talent is good
-enough to do it for a living. Sometimes the lack of a talent
-disqualifies you from even trying (a lack of magic talents, for
-example).
+roll 3d6 ≤ attribute + talent. A +1 talent is good enough to do it for
+a living. Sometimes the lack of a talent might give you a penalty of
+-2 or it might disqualify you from even trying (a lack of magic
+talents, for example).
 
 The chance of rolling a target number or less on 2d6:
 
@@ -291,10 +295,10 @@ A few key words about the individual talents.
 **Transmutation**: Magic that transforms things into other things.
 **Water**: Magic related to water, diving, swimming, and waterwalking.
 
-## Reward
+## Rewards
 
-Before you start the adventurous life, there is one more reward. Roll
-for each career on the appropriate table.
+Before you start the adventurous life, there are rewards to gain for
+all these years. Roll once for each career on the appropriate table.
 
 | 1d6 |         Warrior |            Mage |     Rapscallion |
 |:---:|----------------:|----------------:|----------------:|
@@ -353,12 +357,13 @@ Education-2 and Status-2.
 Children are playable characters when they're 16 years old. They have
 no talents and the only item of significance they own is a knife.
 
-With every year that passes, you get to gain new talents. When exactly
-does a year pass? It’s up to the people playing the game. You can't
-just focus on a single talent. The year is long, after all. This is
-why you get to pick an appropriate table to roll on. You’ll get one of
-the talents on the list, but maybe not the one you were hoping for.
-{ #gaining-talents }
+With every year that passes, you gain a new talent. When exactly does
+a year pass? It’s up to the people playing the game. When the times
+comes, pick an appropriate table to roll on. You’ll get one of the
+talents on the list, but maybe not the one you were hoping for. The
+year is long, after all. You can't just focus on gaining a single
+talent.
+{#gaining-talents}
 
 All the other rewards you receive through play.
 
@@ -396,15 +401,16 @@ land increases your Status by +1.
 
 Similarly, chairs and positions are handed out in exchange for
 services rendered. When a sponsor offers you a chair at a magic school
-and a post with gangsters or administrators of the realm, your Status
+or a post with gangsters or administrators of the realm, your Status
 increases by +1.
 
 ## Dice Rolls and Combat
 
 If you want to do something and the outcome is uncertain, discuss with
-the referee an attribute and a talent to use, provided there is a
-suitable match. Roll 2d6 ≤ attribute + talent to succeed. If it's very
-hard, you might have to roll 3d6 ≤ attribute + talent.
+the referee what to roll. Often you’ll need to roll 2d6 ≤ attribute +
+talent to succeed. If it's very hard, you might have to roll 3d6 ≤
+attribute + talent. If you don’t have the necessary talent, a penalty
+of -2 might apply, or a roll might be impossible.
 
 Combat is divided into rounds. Everyone may attack, cast magic, or do
 something else once per round. All participants announce their action
@@ -452,6 +458,19 @@ If three of your attributes drop to 0, you die.
 Expect to see half the participants down or dying after the first
 round. War is terrible. Try to avoid it.
 
+### Magic
+
+Discuss spell effects with the referee before rolling and write down
+any decisions made.
+
+When casting spells, roll 2d6 + number of spells
+cast today ≤ attribute + talent to succeed. If the check fails, this
+particular talent can no longer be used today.
+
+> Example: Adalric conjures rain. He has Intelligence-9, Water-1, for
+> a total of 10. Alex rolls 4+6=10 + 0 since this was the first spell
+> of the day and so it rains.
+
 ### Other creatures
 
 For all other creatures there are only Endurance and Life instead of
@@ -468,16 +487,12 @@ attribute + talent. The reason metal cuirasses are so rare is that
 they are so hard to make. They are kept in armories for times of war.
 You only put them on when marching into battle. They slow you down
 when plundering and when fleeing; they are cumbersome to carry around
-and they give you sores. Soldiers do not like wearing them.
+and they give you sores. Soldiers do not like wearing them. Everything
+you do is hard when you’re wearing a cuirass, except for fighting.
 
 ![Dead men, knights riding, pikes in close formation, hanged men, a mercenary drinking](images/Urs_Graf_Schlachtfeld_(1521).jpg)
 Battlefield (1521), by Urs Graf
 {: .pic }
-
-And with that we come to the end of the player facing rules. The next
-page has an example character sheet for your to use and the rest of
-the book is advice for the referee. If you want to referee a game,
-read on!
 
 <div style="break-after: always;"></div>
 
@@ -511,7 +526,8 @@ read on!
 
 Task resolution: Roll 2d6 ≤ attribute + talent to succeed. If it’s
 very hard, you might have to roll 3d6 ≤ attribute + talent. If you do
-not have the talent, then roll 2d6 ≤ attribute - 2.
+not have the talent, then there might be a -2 penalty or the task
+might be impossible to attempt (such as using magical talents).
 
 Combat: Roll 2d6 ≤ attribute + weapon to hit. If you do, you deal 2d6
 damage unless you use a halberd. This deals 3d6 damage. You can only
@@ -531,7 +547,8 @@ Heal-3. If three of your attributes drop to 0, you die.
 
 ## Opponents
 
-All other chapters in this book are intended for the referee. So for you!
+All other chapters in this book are intended for the referee. These
+chapters are for you!
 
 People can be depicted with the well-known six attributes. You may
 choose these freely (the average is 7) or roll them (2d6). Talents are
@@ -606,25 +623,23 @@ each spell cast. When casting spells, roll 2d6 + number of spells cast
 today ≤ attribute + talent to succeed. If the check fails, this
 particular talent can no longer be used today.
 
-> Example: Adalric conjures rain for privacy. He has Intelligence-9,
-> Water-1, for a total of 10. Alex rolls 4+6=10 + 0 since this was the
-> first spell of the day and so it rains because 10 ≤ 10. Chain
-> Lightning follows: Alex rolls 2+3=5 +1 since this is the second
-> spell of the day and 6 ≤ 10. The spell goes off! For damage he rolls
-> 3+4=7 and that kills five goblins since they have Endurance-1 and
-> Life-5 for a total of 6.
+> Example: Adalric casts chain lightning. It’s his second spell of the
+> day so Alex has to add +1 to his roll. Adalric has Intelligence-9,
+> Water-1, for a total of 10. Alex rolls 2+3=5 +1 for a total of 6 and
+> the spell goes off! For damage he rolls 3+4=7 and that kills five
+> goblins since they have Endurance-1 and Life-5 for a total of 6.
 
 Magic always leads to discussions. You have to like that – otherwise
-you should skip the Mage career. How long can you breathe underwater?
-Can you do magic underwater? What happens when you cast lightning
-underwater? The important thing is to agree at the table and to write
-down the result.
+you should disallow the Mage career. How long can you breathe
+underwater? Can you do magic underwater? What happens when you cast
+lightning underwater? The important thing is to agree at the table and
+to write down the result.
 
-Not all magic talents are equally powerful, or equally useful. You
-also have to live with that. Certain magic talents lend themselves to
-druids, bards, healers, necromancers, elementalists and seers. It’s up
-players to find an interesting use for their talents and it is up to
-the referee to enable such situation.
+Not all magic talents are equally powerful, or equally useful. Certain
+magic talents lend themselves to druids, bards, healers, necromancers,
+elementalists and seers. It’s up players to find interesting uses for
+their talents and it is up you as the referee to enable such
+situations.
 
 ### Some notes on particular spell effects
 
@@ -643,9 +658,9 @@ The world is best built where the characters get involved. If they go
 somewhere, new things are going to be discovered. When they care about
 something, that thing is going to become important. Don’t ask what the
 players want to see in the world, watch what their characters care
-about.
+about, what the ask about, where they go, what they investigate.
 
-The game does not offer a "reward" in the sense of gaining power.
+The game does not offer a “reward” in the sense of gaining power.
 Finding money is not worth it, there's no special equipment to buy, no
 experience points to gain. That's another reason why it's important to
 find out what the characters are about. A tragic end? A love story?
@@ -653,6 +668,8 @@ Owning a castle? To be knighted? Take over a gang? To travel the
 world? And then you add helpers, competitors, villains, and
 troublemakers to the world. This friction sharpens their profile. This
 is how we see what kind of people our characters are.
+
+### A network of people
 
 Specifically, I recommend working up a dozen people. All have names,
 attributes, a few talents, and a job. Three of them belong to a secret
@@ -672,22 +689,28 @@ better.
 | 5   | Librarian | Servants         | of consciousness | Marduk | Hel      |
 | 6   | Merchant  | Cooperation      | of order         | Ishtar | Zathogga |
 
+### Names for settlements
+
 The first few names of villages, castles and witch towers can be
-generated with the following tables.
+generated with the following tables. Pick a column for the beginning
+of a name and a column for the end of a name. Take a look at local
+maps for inspiration.
 
 | 1d6 | Castle 1 | Castle 2 | Castle 3 | Village | Magic 1 | Magic 2 | Magic 3 |
 |:---:|----------|----------|----------|---------|---------|---------|---------|
-| 1   | Watch-   | Falcon-  | -fort    | -thrope | Witch-  | Flame-  | -tower  |
+| 1   | Watch-   | Falcon-  | -fort    | -thorp  | Witch-  | Flame-  | -tower  |
 | 2   | Olden-   | Fern-    | -hill    | -dale   | Raven-  | Death-  | -watch  |
 | 3   | Bear-    | Glad-    | -rock    | -wick   | Devil-  | Temple- | -crest  |
 | 4   | New-     | Blade-   | -stone   | -ley    | Fell-   | High-   | -wood   |
 | 5   | Good-    | Ram-     | -ward    | -ton    | Dark-   | Sky-    | -hole   |
 | 6   | Star-    | Frost-   | -hall    | -ford   | Ice-    | Cat-    | -stead  |
 
+### Names for people
+
 For people's names, I like to look up a baby name list online and use
 that for my world. Here are a few tables for names with a Franconian
-touch. Easily add -o, -a or -e at the end, or reverse (Chlodobert,
-Theudebald, Hildebart, Gertrud).
+touch. You can add -o, -a or -e at the end, or reverse the two
+elements, e.g. Chlodobert, Theudebald, Hildebart, Gertrud).
 
 | 1d6 | Name 1 | Name 2  | Name 3 | Name 4 | Name 5 | Name 6 |
 |:---:|--------|---------|--------|--------|--------|--------|
@@ -697,6 +720,8 @@ Theudebald, Hildebart, Gertrud).
 | 4   | Bert-  | Os-     | -ric   | -hild  | Dodo   | Siggo  |
 | 5   | Brun-  | Sigi-   | -hard  | -lind  | Hilde  | Ardo   |
 | 6   | Ger-   | Theude- | -sind  | -trud  | Inge   | Gisela |
+
+### Names for monsters
 
 Intelligent monsters and mountains should also have names. For giants
 and dragons, I like to use names that indicate forces of nature.
@@ -709,6 +734,8 @@ and dragons, I like to use names that indicate forces of nature.
 | 4   | Poison | -needle  | -father | Dark       | -height    |
 | 5   | Plague | -puff    | -mother | Red        | -ridge     |
 | 6   | Shadow | -smoke   | -tooth  | Frozen     | -peak      |
+
+### Names for treasures
 
 Treasures that these people, giants, and dragons may have and that
 they might want to steal from each other. For this you should make up
@@ -724,15 +751,11 @@ so on, as well as the name of a dark lord and his realm. Names matter!
 | 5   | Book    | of the Saint     | (a well-known person)            |
 | 6   | Chalice | of Redemption    | (a god, goddess, or demon)       |
 
-All these things are recorded and hopefully lead to cross-connections
-and inspiration.
-
-<div style="break-after: always;"></div>
-
 ## Talents for the opposition
 
 These are the same talents used for character creation, all on one
 page so that it's easy to pick some for the opposition.
+{#opposition}
 
 Remember that “Fight” means you choose a weapon instead: knife,
 spear, halberd, épée, bow, lance.
@@ -1253,72 +1276,10 @@ Trudeberg is looking for a particular fruit, the “Black Eye Grape”. It
 grows in the ruin of Hawk Rock, rumoured to be home to a “wild man”,
 a forest creature that doesn’t speak and hates all humans.
 
-All of these ideas show that some random tables for quick name
-generation are in order because names are important. They allow
-everybody at the table to write down a name and add more information.
-This is how the imaginary world gets fixed in our imagination.
-
-### Secret societies
-
-Secret societies consist of three parts: a pompous prefix, the kind of
-organisation, the word “of” and some sort of political goal or
-aspiration.
-
-Pompous prefixes: Most Agreeable, Almighty, Great, Formidable,
-Invisible, Ever Present.
-
-Kinds of organisations: Association, Brothers and Sisters, Bund,
-Cooperative, Fellows, Fellowship, Friends, Soulmates.
-
-Goals: Daredevils, Everlasting Peace, Health and Longevity, Joy and
-Happiness, Revenge, a Glorious Future, the Imperial Restoration, the
-Rebellion, the Resurrection of the Emperess, the Resurrection of the
-Emperor.
-
-Examples: The Most Agreeable Association of Everlasting
-Peace, The Formidable Friends of the Imperial Restoration. The Ever
-Present Cooperative of a Glorious Future.
-
-### Short names
-
-Women: Ada, Anna, Berta, Chloe, Dora, Elsa, Frieda,
-Gisela, Hilde, Inge, Ulrike.
-
-Men: Ardo, Dodo, Else, Etzel, Gregor, Gundobad, Gyso, Hagen, Iring,
-Otto, Siggo.
-
-### Long names
-
-Long names consist of a prefix and a suffix. You can generate a name
-for a man and append either -a or -e to turn it into a name for a
-woman. Examples: Gerfrieda, Osrate, Sigisinde.
-
-Prefixes: Adal-, Albe-, Amal-, Bald-, Bert-, Bote-, Brun-, Charde-,
-Chari-, Charle-, Childe-, Chilpe-, Chlodo-, Chrodo-, Clot-, Crot-,
-Dago-, Dank-, Ecke-, Gel-, Ger-, Ger-, Gib-, Gisel-, Gote-, Gunde-,
-Gunt-, Hade-, Hel-, Her-, Hilde-, Horn-, Hu-, Ingo-, Krim-, Lude-,
-Man-, Mero-, Nant-, Nor-, Ort-, Os-, Pil-, Ram-, Rich-, Rit-, Ro-,
-Rudi-, Rum-, Schili-, Schru-, Sieg-, Sigi-, Sind-, Theude-, Tris-,
-Ul-, Vorti-, Vulde-, Wal-, Walt-, Werb-, Wich-, Wisi-, Wite-, Wolf-.
-
-Suffixes for women: -berga, -burg, -fled, -gard, -gund, -hild, -lind,
--trud. Examples: Adalberga, Waltburg, Gerfled, Rogund, Sindgard,
-Wolftrud.
-
-Suffixes for men: -ald, -bart, -bert, -boge, -bung, -brand, -chart,
--dung, -fried, -ger, -gang, -gast, -grim, -hard, -her, -land, -lieb,
--lung, -man, -mer, -mund, -mung, -nold, -not, -old, -rat, -ric, -sind,
--tan, -tram, -wart, -wech, -win. Examples: Dagobart, Manhard,
-Tristram.
-
-### Village names
-
-Use a name of a person or an animal and a village suffix to name
-villages.
-
-Suffixes for villages: -ach, -berg, -burg, -en, -gau, -ingen, -lingen.
-Examples: Hornach, Normungen, Ritliebingen, Ulrichen, Eelgau,
-Lioningen, Ravensburg.
+All of these ideas show that random tables for quick name generation
+are necessary because names are important. They allow everybody at the
+table to write down a name and add more information. This is how the
+imaginary world gets fixed in our imagination.
 
 ### Starting the first session
 
@@ -1352,7 +1313,7 @@ have her daughter Gerfled teach you about stick fighting.”
 Berta nods. “Let’s go.”
 
 As you can see, Claudia improvised as she was talking. Berta seemed to
-expect some sort of reward and she hadn’t prepared anything so she
+expect some sort of reward and Claudia hadn’t prepared anything so she
 looked at the list of names and picked a name for the stick fighting
 daughter without missing a beat. At the end of the year, the players
 get to pick one talent to increase. There is no stick-fighting talent
@@ -1482,20 +1443,20 @@ Alex looks at Berta and she shrugs. He says, “OK, we’ll do it.”
 When the players handled Urs, Claudia realised she hadn’t prepared
 much for Ulrike. What sort magic did she have? No time to roll dice.
 That would have to come later. So a quick look at the
-[list](#gaining-talents) and she jotted down Heal, Sleep, Doors,
+[list](#opposition) and she jotted down Heal, Sleep, Doors,
 Plants, Brew, Charm, Diplomacy, Illusion, Literacy – classic
 Passive and Manipulative careers.
 
-After the game, Claudia picks Ulrike’s age, say 50. So we have about
-34 years and therefore 34 dice to roll. Let’s take 4d6 and roll four
-times on the Passive table, four times on the Manipulative table, and
-add each of the talents we listed above at 1. Using 2d6 for
-attributes, this is Ulrike the Beautiful: Strength-8 Dexterity-8
-Endurance-12 Intelligence-6 Education-8 Status-3 Heal-2 Sleep-6
-Eyes-4 Doors-2 Plants-5 Brew-2 Charm-5 Sing-4 Diplomacy-4
-Illusion-3 People-3 Literacy-4. Surprisingly fit! She probably does a
-lot of hiking up here in the mountains. And fantastic Sleep, Plants
-and Charm talents!
+After the game, Claudia picks Ulrike’s age, say 50. So we have a long
+career of 34 years after the age of 16 and therefore 34 dice to roll.
+Let’s take 4d6 and roll four times on the Passive table, four times on
+the Manipulative table, and add each of the talents we listed above
+at 1. Using 2d6 for attributes, this is Ulrike the Beautiful:
+Strength-8 Dexterity-8 Endurance-12 Intelligence-6 Education-8
+Status-3 Heal-2 Sleep-6 Eyes-4 Doors-2 Plants-5 Brew-2 Charm-5 Sing-4
+Diplomacy-4 Illusion-3 People-3 Literacy-4. Surprisingly fit! She
+probably does a lot of hiking up here in the mountains. And fantastic
+Sleep, Plants and Charm talents!
 
 ### Encounters
 
@@ -1509,7 +1470,7 @@ to see how well you’re holding up.”
 
 Alex says, “What happens when we fail?”
 
-Claudia says, “How about you need to send the night because you’re
+Claudia says, “How about you need to spend the night because you’re
 exhausted?”
 
 Alex rolls 10 which is higher than 7. Berta rolls a 12 which is higher

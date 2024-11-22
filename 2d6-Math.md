@@ -41,9 +41,9 @@ compare that sum to total number of possible rolls: 6×6=36.
 
 This is the same table as before. It shows the result of one person
 rolling 2d6, and the occurrences of each result. Thus, to compute the
-odds of rolling a 9 or more simply means adding up the highlighted
-numbers: 6, thus the chances of rolling a 10 or higher is 6:36, i.e.
-1:6 or about 17%.
+odds of rolling a 10 or more simply means adding up the highlighted
+numbers. The sum is 6, thus the chances of rolling a 10 or higher is
+6:36, i.e. 1:6 or about 17%.
 
 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |  10 |  11 |  12 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:---:|:---:|:---:|

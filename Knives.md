@@ -821,11 +821,10 @@ villagers sing their song.
 
 To foreshadow this, make a list of a handful of interventions that
 non-player characters have made, such as: “Thidrek slew the giant Grim
-we the sword Nagelring which the dwarf Alberich had made for Thidrek.”
-It connects two non-player characters that can be met, it introduces
-an important item that can be gained, it establishes a bit of history
-of the setting that promises more to learn – this one sentence pulls a
-lot of weight.
+with the sword Nagelring which the dwarf Alberich had made for
+Thidrek.” It adds two non-player characters that can be met, it
+introduces an important item that can be gained, it establishes a bit
+of history of the setting – this one sentence pulls a lot of weight.
 
 ![A small town with castle and church by a lake](images/Urs_Graf_Stadt_am_Seeufer_(1514).jpg)
 A town by the lake shore (1514), by Urs Graf

@@ -9,39 +9,116 @@
 @media screen {
     body {
         background: #000;
-        color: #fff;
+        color: #dfd;
+        margin-left: clamp(1ex, 5%, 4em);
     }
-    #noprintheader hr {
+    .noprint hr {
         background: green;
         border: 0;
         height: 1px;
         margin: 0.25em 0em 1.5em -10em;
+    }
+    blockquote {
+        margin-left: 0;
+        padding-left: 1ex;
+        border-left: 0.5ex solid #cdcd00;
+    }
+    line, circle {
+        stroke: chartreuse;
+        stroke-width: 1.25pt;
+    }
+
+    text {
+        fill: chartreuse;
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-size: 8pt;
+    }
+    circle {
+         fill: black;
+    }
+    a {
+        color: chartreuse;
+        text-decoration: none;
+    }
+    a:visited {
+        color: green;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    address ul {
+        display: block;
+        padding: 0;
+    }
+    address li {
+        display: inline;
+    }
+    address li:first-child::before {
+        content: "Authors: ";
+    }
+    address li::before {
+        content: ", ";
     }
 }
 @media print {
     body {
         background: #fff;
         color: #000;
+        font-size: 10pt;
     }
-    #noprintheader hr {
+    #Z, svg {
         display: none;
     }
-    #noprintheader {
+    .noprint {
         display: none;
+    }
+    h2 {
+        break-after: avoid;
+    }
+    p {
+        break-inside: avoid;
+    }
+    blockquote {
+        break-inside: avoid;
+    }
+    a, a:visited {
+        color: #000;
+        font-style: italic;
+        text-decoration: none;
+    }
+    address ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    address a::after {
+        content: " <" attr(href) ">";
+    }
+    table#encounters th:first-child + th + th {
+        display: none;
+    }
+    table#encounters td {
+        vertical-align: top;
+    }
+    table#encounters td:first-child + td,
+    table#encounters td:first-child + td + td {
+        display: inline;
+    }
+    table#encounters td:first-child + td {
+        margin-right: 1ex;
+    }
+    table#encounters td:first-child + td + td::before {
+        content: "​("; /* ZERO WIDTH SPACE */
+    }
+    table#encounters td:first-child + td + td::after {
+        content: ")";
     }
 }
 body {
-    background: #000;
-    color: #fff;
-    font-family: "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
+    font-family: "Iosevka Etoile", Iosevka, "Dejavu Sans Mono", Inconsolata, Monaco, Courier, monospace;
     font-size: 12pt;
     margin: 1em;
-    margin-left: clamp(1ex, 5%, 4em);
     hyphens: auto;
-}
-#target {
-    white-space: pre-wrap;
-    max-width: 45em;
 }
 #links {
     padding: 0;
@@ -50,42 +127,64 @@ body {
 #links li {
     display: inline;
 }
+#intro, #generate, #documentation {
+    max-width: 800px;
+}
+.example {
+    white-space: pre-wrap;
+    color: #8fd;
+}
+.result {
+    white-space: normal;
+}
+.invisible {
+    display: none;
+}
 table {
+    margin-top: 1ch;
     border-collapse: collapse;
     width: 100%;
 }
-td {
-    padding: 0.5ex;
-    border: 1px solid grey;
-}
-td:first-child {
+.c {
     text-align: center;
-    width: 4em;
+    min-width: 2em;
 }
-a {
+button {
     color: chartreuse;
-    text-decoration: none;
+    background: inherit;
+    border: none;
+    font: inherit;
+    font-size: smaller;
+    padding: 0;
+    margin-top: 3pt;
 }
-a:visited {
-    color: green;
-}
-a:hover {
+button:hover {
     text-decoration: underline;
+}
+.muted {
+    color: green;
 }
 </style>
 
 <script>
+// Use: parse(data).withStart('start').toString()
 function parse(data) {
   // This is the return of parse().
   let h = {};
 
-  // Save the data so that h can be reused in multiple calls to generate().
+  // Save the data so that h can be reused in multiple calls to toString().
   h.tables = transform(data);
 
-  // Generate text. This function is accessible from the outside.
-  h.generate = function(start) {
+  h.withStart = function(start) {
+    h.start = start;
+    return h;
+  }
+
+  // Generate HTML. This function is accessible from the outside.
+  // If start is empty, h.start is used which defaults to the first table.
+  h.toString = function(start) {
     h.names = {}; // reset
-    return pick(start);
+    return pick(start || h.start);
   };
 
   // Read data and parse comments, table names and weighted rows.
@@ -93,10 +192,11 @@ function parse(data) {
     let table = {};
     let rows;
     data.split("\n").forEach(row => {
-      row.replace(/#.*/, ""); // Comments
       let m;
-      if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; }
+      if (row.match(/^\s*#/)) { /* Comments */ }
+      else if (row.startsWith(";")) { rows = []; table[row.substring(1)] = rows; h.start ||= row.substring(1); }
       else if ((m = row.match(/^(\d+),(.*)/))) { rows.push([m[2], Number(m[1])]); }
+      else if (row.match(/\S/)) { rows[rows.length - 1][0] += row; } // append
     });
     return table;
   }
@@ -116,7 +216,12 @@ function parse(data) {
       level = 1;
       h.results = {};
     } else if (level > 20) {
-      console.log(`Recursion deeper than 20 for ${table}`);
+      if (table.endsWith(" name")) {
+        console.log(`Tried to get a unique name from ${table} for 20 times and failed`);
+      } else {
+        console.log(`Recursion deeper than 20 for ${table}`);
+      }
+      beep();
       return "…";
     }
     // pick an appropriate item
@@ -241,8 +346,7 @@ function parse(data) {
     if (level === 1) {
       // emphasis
       text = text.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
-      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
-      text = text.replaceAll("¶", "<p>");
+      text = text.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<em>${a}</em>` });
     }
     return text;
   }
@@ -280,66 +384,143 @@ function parse(data) {
   // Roll dice.
   function roll(num, sides = 6, plus = 0) {
     let total = 0;
-    for (var i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {
       total += Math.floor(Math.random() * sides + 1);
     }
     return total + plus;
   }
 
-  // To do anything, call generate().
   return h;
+}
+
+function create_map(svg) {
+  if (!svg) return;
+  let svgNs = 'http://www.w3.org/2000/svg';
+  // - Two towns by the lake (A B)
+  // - The first town connects to a main valley with three villages. (A→C→D→E)
+  // - The second town connects to a main valley with two villages. (B→F→G)
+  // - All but the last village of the main valley connect to a secondary valley.
+  // - These secondary valleys have exactly one village. (C→H D→I F→J)
+  // - Total settlements: 2 towns and 8 villages (a total of 10).
+  // - There is a pass between I and J (K). It is guarded by a giant or a dragon.
+  // - There is a swamp between D and E (L). It is guarded by monsters (nightlings, predators, undead).
+  // - There is a hidden shrine off L (U).
+  // - In each of these remote villages of secondary valleys stands a wizard tower (H→M I->N J→O).
+  // - At the end of every valley there is a ruin. (E→P G→Q) They are guarded by monsters.
+  // compute all the points
+  let points = {
+    "A": {x: 100, y: 0},
+    "B": {x: 200, y: -10},
+    "C": {x: 100, y: 100},
+    "D": {x: 100, y: 200},
+    "E": {x: 200, y: 350},
+    "F": {x: 330, y: 20},
+    "G": {x: 420, y: 0},
+    "H": {x: 0, y: 100},
+    "I": {x: 200, y: 250},
+    "J": {x: 300, y: 110},
+    "K": {x: 300, y: 200},
+    "L": {x: 100, y: 300},
+    "M": {x: 0, y: 200},
+    "N": {x: 200, y: 150},
+    "O": {x: 400, y: 100},
+    "P": {x: 300, y: 300},
+    "Q": {x: 500, y: 0},
+    "R": {x: 0, y: 0},
+    "S": {x: 270, y: -60},
+    "T": {x: 180, y: 70},
+    "U": {x: 0, y: 300},
+  }
+  for (var k in points) {
+    p = points[k]
+    p.x += Math.random()*50
+    p.y += Math.random()*50
+  }
+  // draw a line using SVG
+  let line = (key1, key2) => {
+    let l = svg.ownerDocument.createElementNS(svgNs, 'line')
+    l.setAttribute('x1', points[key1].x)
+    l.setAttribute('y1', points[key1].y)
+    l.setAttribute('x2', points[key2].x)
+    l.setAttribute('y2', points[key2].y)
+    svg.appendChild(l)
+  };
+  line("A", "B")
+  line("A", "C")
+  line("A", "R")
+  line("A", "T")
+  line("C", "D")
+  line("D", "L")
+  line("L", "U")
+  line("L", "E")
+  line("E", "P")
+  line("D", "I")
+  line("I", "N")
+  line("I", "K")
+  line("C", "H")
+  line("H", "M")
+  line("B", "S")
+  line("B", "T")
+  line("B", "F")
+  line("F", "G")
+  line("G", "Q")
+  line("F", "J")
+  line("J", "O")
+  line("J", "K")
+  // draw a circle using SVG
+  circle = (p, code) => {
+    let a = svg.ownerDocument.createElementNS(svgNs, 'a');
+    a.setAttribute('href', '#' + code);
+    svg.appendChild(a);
+    let c = svg.ownerDocument.createElementNS(svgNs, 'circle');
+    c.setAttribute('cx', p.x);
+    c.setAttribute('cy', p.y);
+    c.setAttribute('r', '10');
+    a.appendChild(c);
+    let t = svg.ownerDocument.createElementNS(svgNs, 'text');
+    t.setAttribute('x', p.x);
+    t.setAttribute('y', p.y);
+    t.textContent = code;
+    a.appendChild(t);
+  };
+  // circles
+  for (var k in points) {
+    circle(points[k], k)
+  }
+}
+
+function beep() {
+  var context = new AudioContext();
+  var oscillator = context.createOscillator();
+  oscillator.type = "sine";
+  oscillator.frequency.value = 100;
+  oscillator.connect(context.destination);
+  oscillator.start();
+  setTimeout(function () {
+      oscillator.stop();
+  }, 100);
 }
 
 function slug(s) {
   return s.replaceAll(/['"-']+/g, "-").toLowerCase();
 }
 
-function menu(data) {
-  let html = "<ul>\n";
-  data.split("\n").forEach(row => {
-    row.replace(/#.*/, ""); // Comments
-    if (row.startsWith(";")) {
-      let t = row.substring(1);
-      html += `<li><a href="javascript:show('${slug(t)}')">${t}</a>\n`;
-    }
-  });
-  return html;
-}
-
 function linked(data) {
-  data = data.replaceAll(/</g, "&lt;").replaceAll(/>/g, "&gt;").replaceAll(/&/g, "&amp;");
+  display('tables');
+  data = data.replaceAll("<", "&lt;");
+  data = data.replaceAll(">", "&gt;");
   data = data.replaceAll(/^;(.*)/mg,
-                         (m, t) => { return `;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
+                         (m, t) => { return `<p>;<a id="${slug(t)}" href="javascript:show('${slug(t)}')">${t}</a>` });
   data = data.replaceAll(/\[([^@\[\]\|]+)\]/g,
                          (m, t) => {
                            if (m.match(/^\[\d+d\d+(?:\+\d+)?\]$/)) return m;
                            if (m.match(/\?.*:/)) return m;
                            return `[<a href="#${slug(t)}">${t}</a>]` });
   data = data.replaceAll(/\*\*(.*?)\*\*/g, (m, a) => { return `<strong>${a}</strong>` });
-  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<emph>${a}</emph>` });
+  data = data.replaceAll(/\*(.*?)\*/g, (m, a) => { return `<em>${a}</em>` });
+  data = data.replaceAll(/\n\n+#/g, "<p>#");
+  data = data.replaceAll(/\n+/g, "<br>");
   return data;
-}
-
-function paper(data) {
-  data = data.replaceAll(/</g, "&lt;").replaceAll(/>/g, "&gt;").replaceAll(/&/g, "&amp;");
-  let html = "";
-  let n;
-  data.split("\n").forEach(row => {
-    row.replace(/#.*/, ""); // Comments
-    let m;
-    if (row.startsWith(";")) {
-      if (html) html += "</table>\n";
-      html += "<table>\n";
-      html += `<tr><th>Roll</th><th>${row.substring(1)}</th></tr>\n`;
-      n = 1;
-    } else if ((m = row.match(/^(\d+),(.*)/))) {
-      let from = n;
-      let to = n + (Number(m[1]) - 1);
-      n = to + 1;
-      html += `<tr><td>${from == to ? from : from + "-" + to}</td><td>${m[2]}</td></tr>\n`;
-    }
-  });
-  return html;
 }
 
 function show(t) {
@@ -347,21 +528,55 @@ function show(t) {
   + `<p><button type="button" onclick="show('${t}')" title="Reload">🔁</button>`);
 }
 
-function generate(f) {
-  const data = document.getElementById('data').textContent;
-  document.getElementById('target').innerHTML = f(data);
+function display(id) {
+  ['intro', 'generate', 'tables', 'documentation'].forEach(function(id) {
+    document.getElementById(id).setAttribute('class', 'invisible');
+    document.getElementById(id + "_btn").removeAttribute('class');
+  });
+  document.getElementById(id).setAttribute('class', 'visible');
+  document.getElementById(id + "_btn").setAttribute('class', 'muted');
 }
 
+function generate(f, id) {
+  display('generate');
+  const data = document.getElementById('data').textContent;
+  let html = f(data).toString();
+  if (window.location.search) {
+    for (let i = 0; i < 50; i++) {
+      if (html.match(window.location.search.substr(1))) {
+        break;
+      }
+      html = f(data).toString();
+    }
+  }
+  document.getElementById(id).innerHTML = html;
+  create_map(document.getElementById('map'));
+}
+
+function example (table=false) {
+  const html = table
+    ? parse(document.getElementById('data').textContent).withStart(table)
+    : parse(event.target.parentElement.firstChild.textContent);
+  const last = event.target.parentElement.lastElementChild;
+  if (last.tagName == "BLOCKQUOTE" || last.tagName == "SPAN") {
+    last.innerHTML = html;
+  } else {
+    const target = event.target.ownerDocument.createElement('blockquote');
+    target.setAttribute("class", "result");
+    target.innerHTML = html;
+    event.target.parentNode.appendChild(target);
+  }
+}
 </script>
 </head>
 <body>
 
-<h1 id="noprintheader">Lake Land Generator</h1>
-<div id="noprintheader">
-  <button type="button" onclick="generate((data) => parse(data).generate('start'))">Generate</button>
-  <button type="button" onclick="generate((data) => menu(data))">List tables</button>
-  <button type="button" onclick="generate((data) => linked(data))">Show tables</button>
-  <button type="button" onclick="generate((data) => paper(data))">Printable tables</button>
+<h1 class="noprint">Lake Land Generator</h1>
+<div class="noprint">
+  <button class="muted" type="button" id="intro_btn" onclick="display('intro')">Intro</button>
+  <button type="button" id="generate_btn" onclick="generate((data) => parse(data).withStart('start'), 'generate')">Generate</button>
+  <button type="button" id="tables_btn" onclick="generate((data) => linked(data), 'tables')">Tables</button>
+  <button type="button" id="documentation_btn" onclick="display('documentation')">Help</button>
   <ul id="links">
     <li><a href="https://alexschroeder.ch/pdfs/Knives.pdf">Knives</a>
     <li><a href="https://alexschroeder.ch/pdfs/Halberts.pdf">Halberts</a>
@@ -371,51 +586,199 @@ function generate(f) {
   <hr>
 </div>
 
-<div id="target">This is a stand-alone generator. You can save the HTML file locally and
+<div id="intro">This is a stand-alone generator. You can save the HTML file locally and
 it will continue to work. Feel free to use examine, change and distribute
 it elsewhere. No strings attached. It is dedicated to the public domain.
 
 You can replace all the tables in this file with your own and make your
 own generators! Please do.
 </div>
+<div class="invisible" id="generate"><!-- This is where the generated HTML goes! --></div>
+<div class="invisible" id="tables"><!-- This is where the linked tables go! --></div>
 
-<script id="data" type="text/x-generator">
-# The strange type here ↑ means that it won't get executed and no HTML escaping
-# is required in here!
+<div class="invisible" id="documentation"><p>Save this page and open it in a text editor. Make a change, save the file, open it in the browser and check whether it worked. My suggestion is to start with something easy. Maybe you noticed a weird name like “Nadû the Gardener”. Search this file for that name, remove all the names in the list and provide your own.
+<h2>The table format</h2>
+<p>Lines beginning with optional whitespace and a <strong>#</strong> are comments.
+<p>A line starting with a semicolon like <strong>;some words</strong> begins a table called “some words”.
+There is no space after the semicolon.
+<p>A number and a comma like <strong>1,some words</strong>begin a weighted entry for the current table.
+<p>Here is an example table called “realm”. The three realms have equal chances for coming up (each has a 1 in 3 chance).
+<div class="example"># some norse realms
+;realm
+1,Muspelheim
+1,Jötunheim
+1,Vanaheim
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>In the following table, Midgard is twice as likely as the other realms. Or in other words, Midgard has a 2 in 5 chance for coming up and the other realms have a 1 in 5 chance for coming up.
+<div class="example">;realm
+1,Muspelheim
+1,Jötunheim
+1,Vanaheim
+2,Midgard
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A text in square brackets with options separated by a vertical bar like <strong>[Muspelheim|Jötunheim|Vanaheim]</strong> gets replaced with one of the options. This is a shortcut so you don’t have to write separate small tables. The example given is equivalent to the first “realm” table above. All options have an equal chance for coming up.
+<div class="example">;realm
+1,[Muspelheim|Jötunheim|Vanaheim]
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>Single asterisks like <strong>*some words*</strong> render the text in italics for emphasis.
+<p>Double asterisks like <strong>**some words**</strong> render the text in bold for strong emphasis.
+<p>Lines that don’t start with a semicolon (beginning a table) or a number and a comma (beginning a weighted entry for the current table) are appended to the current entry. Begin each line with a space if you need one, because newlines are stripped. Newlines are not replaced by a space! Use HTML like <strong>&lt;p&gt;</strong> for new paragraphs or <strong>&lt;br&gt;</strong> for line breaks.
+<div class="example">;travel
+1,This is **Yggdrasil**, the world tree.
+&lt;p&gt;They say that the dragon *Níđhöggr* gnaws at its roots.
+1,This is **Yggdrasil**, the world tree.
+&lt;p&gt;They say that it’s branches connect all the realms.
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A text in square brackets like <strong>[some words]</strong> gets replaced with a lookup of table “some words”.
+<p>If a table ends with “ name” then the result is unique. Be sure to use this only for tables that produce enough results!
+<div class="example"># notice the continuation on the next line
+# and the space at the beginning of the next line
+;passage to another realm
+1,This is a passage to Hades.
+ It is guarded by [guardian name], [guardian name] and [guardian name].
 
-# Data
+;guardian name
+1,the gorgon [Stheno|Euryale|Medusa]
+1,the hero [Heracles|Perseus|Bellerophon|Orion]
+1,the hero [Asclepius|Aristaeus|Jason|Achilles|Odysseus|Hector]
+1,the bronze giant Talos
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>A limited form of dice roll notation is recognised and replaced by such a dice roll, e.g. <strong>[2d6]</strong> or <strong>[1d6+3]</strong>.
+<p>Results can be stored in a variable by using the @ sign inside square brackets. The text before the @ sign is stored in the variable named after @ sign. <strong>[[guardian name]@name]</strong> stores a guardian name from the table above in the variable “name”. This assignment itself does not produce any text.
+<p>To insert the value of a variable, start the text inside square brackets with the @ sign. <strong>[@name]</strong> inserts the value stored in the variable “name”.
+<p>In the following example, the human name is generated once and used twice:
+<div class="example">;humans
+1,[[human name]@name][@name], human:
+ Strength-[2d6] Dexterity-[2d6] Endurance-[2d6] Intelligence-[2d6] Education-[2d6] Status-[2d6]
+ [Craft|First Aid|Oratory]-[1d2] Singing-[1d2+1] [Climbing|Running]-[1d2]
+&lt;p&gt;[@name] will only help people who can sing along.
 
-# '#' begins a comment
-# '*a*' renders 'a' in italics (emphasis)
-# '**a**' renders 'a' in bold (strong emphasis)
-# ¶ results in a paragraph break (a shorthand for <p>)
-# ';' begins a table, followed by a name, no space
-# A number and a comma begin a weighted entry for the current table
-# /re/to/ at the end replaces regular expression "re" with "to"
-# '[2d6]' or '[1d6+3]' are replaced by dice rolls
-# '[a]' gets replaced with a lookup of table 'a'
-# If a ends with ' name' then the result is unique
-# '[a|b]' gets replaced with 'a' or 'b'
-# '[x?a:b]' evaluates x as JavaScript and if "true" it is replaced with 'a' else with 'b'
-# '[a@b]' stores 'a' as variable 'b' (usage example: [[table]@b])
-# '[a@@b]' does a lookup of table 'a' and appends it to the list 'b'
-# '[a++@b]' increments the key 'a' by one for the map 'b'
-# '[~a]' resets the list or map 'a'
-# '[@b]' uses the value of variable 'b'
-# If b is a list, return a comma-separated list.
-# If b is a map, return a sorted, comma-separated list of key-value pairs
-# '[@++b]' gets replaced by the key with the highest value in map b
+;human name
+1,Ada
+1,Ageric
+1,Agnes
+1,Alard
+1,Alaric
+1,Alice
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>And finally, there are some advanced features that you hardly ever need unless you’re writing a character creator or something fancy like it.
+<p>You can treat a variable like a list and add terms to it. In that case, use @@ instead of @. <strong>[[event]@@history]</strong> looks up an entry in the “event” table and appends it to the variable “history”. When using the variable, it gets replaced by a comma-separated list of entries: <strong>[@history]</strong>.
+<div class="example">;backstory
+1,“I have been through a lot:
+[[event name]@@history]
+[[event name]@@history]
+[[event name]@@history]
+[[event name]@@history]
+ [@history]. I’ve had enough.”
 
-;start
-# 1,[character]
-1,[initial setup][secret societies][powers]¶[map]
+# unique results because it ends with “name”
+;event name
+1,the [Vampire|Lizard|Wight] Wars
+1,the [Pinega|Yomtsa|Vaga|Uftyuga|Vychegda|Yug|Sukhona] Uprising
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>You can use a variable to count things. Use ++@ instead of @ to do this. <strong>[[talent]@@talents]</strong> looks up an entry in the “talent” table and count it in the “talents” table. When using the variable, it gets replaced by a comma-separated list of entries with the counts: <strong>[@talents]</strong>.
+<p>If you just want the thing with the highest number for a counter variable, use @++ instead of @ to do this: <strong>[@++talents]</strong>.
+<p>If you use list and counter variables to create a character, for example, each character needs a new set of talents. Use ~ to reset a variable: <strong>[~talents]</strong>.
+<div class="example">;party
+1,Alice: [human]
+&lt;p&gt;Ada: [human]
+
+;human
+1,Strength-[2d6], Dexterity-[2d6], Endurance-[2d6], Intelligence-[2d6], Education-[2d6], Status-[2d6],
+[~talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents][[talent]++@talents]
+ [@talents]. Favourite: [@++talents].
+
+;talent
+1,Craft
+1,First Aid
+1,Oratory
+1,Singing
+1,Climbing
+1,Running
+<button type="button" onclick="example()">Try it</button>
+</div>
+<p>And finally, in some very simple cases, you can evaluate an expression as Javascript in order to pick one of two options:
+<strong>[x?a:b]</strong>. If x is "true" it is replaced with a else with b.
+<h2>Tricks</h2>
+<p>You can use rules to generate table names. In the following example, the variable “realm” holds either “Muspelheim” or “Jötunheim” and is then used to get the appropriate monsters and an appropriate description.
+<pre class="example">
+;story
+1,The song is called “The glory of [[realm]@realm][@realm]”.
+ The local [[@realm] monsters] are terrifying.
+ [[@realm] description]
+
+;realm
+1,Muspelheim
+1,Jötunheim
+
+;Muspelheim monsters
+1,fire giants
+
+;Muspelheim description
+1,Everything is on fire!
+
+;Jötunheim monsters
+1,ice giants
+
+;Jötunheim description
+1,Everything is frozen!
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<h2>Troubleshooting</h2>
+<p>The <strong>[x?a:b]</strong> construct is tricky. You might think of it as “pick a <em>or</em> b”, but a more accurate description would be: “expand <em>both</em> a and b, and then pick”. This is important if the expansion of a or b involves the setting of variables. In the following example, first the die is rolled, then both “fire salamander” and “ice salamander” are expanded (and the variable “element” is first set to “fire” and then set to “ice”!) and then the die roll is compared with 3 and the appropriate expansion is picked. The salamanders are red or blue. But no matter what colour they have, they always rule a world of ice. 😔
+<pre class="example">
+;salamander
+1,[[1d6] <= 3?[fire salamander]:[ice salamander]]
+ They rule a world of [@element].
+
+;fire salamander
+1,Red salamanders![fire@element]
+
+;ice salamander
+1,White salamanders![ice@element]
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<p>One way to rewrite this would be to set the element first and <em>then</em> use indirection.
+<pre class="example">
+;salamander
+1,[[[1d6] <= 3?fire:ice]@element]
+[[@element] salamander]
+ They rule a world of [@element].
+
+;fire salamander
+1,Red salamanders!
+
+;ice salamander
+1,White salamanders!
+<button type="button" onclick="example()">Try it</button>
+</pre>
+<h2>Testing</h2>
+<p>When opening the file in your browser, you can force the generator to try very hard to generate a passage you’re interested in. By appending “<a href="?moth">?moth</a>” and clicking the “Generate” button, the generator generates up to 20 settings, looking for the word “moth” (a case-sensitive regular expression).
+<footer>
+<address>
+<ul>
+<li><a href="https://alexschroeder.ch/">Alex Schroeder</a>
+</ul>
+</address>
+</footer>
+</div>
+<!-- The script tag with the unknown type means that it won’t get executed and no HTML escaping is required! -->
+<script id="data" type="text/x-generator">;start
+1,[initial setup][secret societies][powers][svg map]<p>[map]
 
 ;initial setup
 1,The land is in turmoil. Old [name] died and now their oldest children are collecting old debts and calling in favours. How are you going to align yourself: [[name] the [Vain|Beautiful|Older]@side A]<a href="#pA">[@side A]</a> or [[name] the [Proud|Silent|Strong|Younger]@side B]<a href="#pB">[@side B]</a>? Or will you take to the woods and find [[name] the [Renewer|Rebel|Green Bandit|Green Knight|Terror|Benefactor]@side C]<a href="#pU">[@side C]</a>?
 1,There is unrest. [[name] the [Wicked|Strict|Terrible|Old|Allmighty|Glorious]@side A]<a href="#pA">[@side A]</a> rules the land but the harvest has been bad and raiders are plaguing the peasants. [[name] the [Proud|Pilgrim|Devout|Fair|Just]@side B]<a href="#pB">[@side B]</a> returned from a pilgrimage to foreign lands and some are whispering that they will right all wrongs. And then of course there is rable rouser [[name] the [Rebel|Old|Young|Wild|Demon|Blessed]@side C]<a href="#pU">[@side C]</a>, always ready to exploit a weakness.
 
 ;secret societies
-1,¶[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
+1,<p>[[secret society name]@secret society 1][[secret society name]@secret society 2][[secret society name]@secret society 3][secret society context]
 
 ;secret society context
 1,Watch out for three secret societies: the [@secret society 1], the [@secret society 2] and the [@secret society 3].
@@ -455,7 +818,15 @@ own generators! Please do.
 1,Daredevils
 
 ;powers
-1,¶[[power name]@power 1][[power name]@power 2][[power name]@power 3]The popular powers in this area are [@power 1], [@power 2] and [@power 3].
+1,<p>[[power name]@power 1][[power name]@power 2][[power name]@power 3]The popular powers in this area are [@power 1], [@power 2] and [@power 3].
+
+;svg map
+1,<h2 id="Z">Map</h2>
+<svg
+  viewBox="-50 -100 650 550"
+  xmlns="http://www.w3.org/2000/svg">
+<g id="map"></g>
+</svg>
 
 # The map always has the same structure, for the moment.
 # - Two towns by the lake (A B)
@@ -474,7 +845,7 @@ own generators! Please do.
 # - So there's roughly the same number of lairs as there are settlements (a total of 11).
 
 ;map
-1,[map names][A@position][lake]¶[town]¶[C@position][village]¶[D@position][village]¶[E@position][village]¶[B@position][town]¶[F@position][village]¶[G@position][village]¶[H@position][village]¶[I@position][village]¶[J@position][village]¶[K@position][pass]¶[L@position][swamp]¶[M@position][tower]¶[N@position][tower]¶[O@position][tower]¶[P@position][ruin]¶[Q@position][ruin]¶[S@position][ruin]¶[T@position][ruin]¶[R@position][island]¶[U@position][shrine]
+1,[map names][A@position][lake]<p>[town]<p>[C@position][village]<p>[D@position][village]<p>[E@position][village]<p>[B@position][town]<p>[F@position][village]<p>[G@position][village]<p>[H@position][village]<p>[I@position][village]<p>[J@position][village]<p>[K@position][pass]<p>[L@position][swamp]<p>[M@position][tower]<p>[N@position][tower]<p>[O@position][tower]<p>[P@position][ruin]<p>[Q@position][ruin]<p>[S@position][ruin]<p>[T@position][ruin]<p>[R@position][island]<p>[U@position][shrine]
 
 ;map names
 1,[[settlement name]@A][[settlement name]@B][[settlement name]@C][[settlement name]@D][[settlement name]@E][[settlement name]@F][[settlement name]@G][[settlement name]@H][[settlement name]@I][[settlement name]@J][[river name]@river A][[river name]@river B][[@river A]@river C][[@river A]@river D][[@river A]@river E][[@river B]@river F][[@river B]@river G][[river name]@river H][[river name]@river I][[river name]@river J][[mountain pass name]@K][[swamp name]@L][[tower name]@M][[tower name]@N][[tower name]@O][[ruin name]@P][[ruin name]@Q][[ruin name]@S][[ruin name]@T][[shrine name]@R][[name]@fisher][[shrine name]@U]
@@ -671,7 +1042,7 @@ own generators! Please do.
 1,Climb
 
 ;town
-1,<h2 id="[@position]">[@[@position]]</h2>¶This town lies at the shores of [@lake name]. [town description]¶[[@side [@position]]@character name][powerful character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2><p>This town lies at the shores of [@lake name]. [town description]<p>[[@side [@position]]@character name][powerful character]<p>[trails]
 
 ;town description
 1,The harbour side of [@[@position]] is built on wooden poles. The calm waters of the [@river [@position]] wash away their sins into the [@lake name].
@@ -679,7 +1050,7 @@ own generators! Please do.
 1,From the shores of [@lake name] the vinyards rise up and around [@[@position]]. It is built at the foot of a sunny hill overlooking the lake. The [@river [@position]] opens into the lake a bit further away.
 
 ;village
-1,<h2 id="[@position]">[@[@position]]</h2>¶This village lies along the [@river [@position]]. [village description]¶[young character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2><p>This village lies along the [@river [@position]]. [village description]<p>[young character]<p>[trails]
 
 ;village description
 1,On both sides of [@river [@position]] stand a few houses. A bridge connects the two sides.
@@ -689,7 +1060,7 @@ own generators! Please do.
 1,The wooden houses were recently rebuilt. You can still see remains of the old village, smashed by an earth slide.
 
 ;tower
-1,<h2 id="[@position]">[@[@position]]</h2>¶This tower was built upon an exposed cliff far above the valley floor. [tower description]¶[mage character]¶[trails]
+1,<h2 id="[@position]">[@[@position]]</h2><p>This tower was built upon an exposed cliff far above the valley floor. [tower description]<p>[mage character]<p>[trails]
 
 ;tower description
 1,The building is black like obsidian, like a hole in reality.
@@ -792,20 +1163,20 @@ own generators! Please do.
 1,Swamp
 
 ;pass
-1,<h2 id="K">[@K]</h2>¶[pass guardian]¶[pass destinations]
+1,<h2 id="K">[@K]</h2><p>[pass guardian]<p>[pass destinations]
 
 ;pass guardian
-1,On this pass sits a massive ruin of a sky fort from the old times. A giant lives here.¶[giant]
-1,On one of the nearby mountains nests a dragon. This pass belongs to its territory and dragons are extremely territorial.¶[dragon]
+1,On this pass sits a massive ruin of a sky fort from the old times. A giant lives here.<p>[giant]
+1,On one of the nearby mountains nests a dragon. This pass belongs to its territory and dragons are extremely territorial.<p>[dragon]
 
 ;swamp
-1,<h2 id="L">[@L]</h2>¶[swamp guardian]¶[swamp destinations]
+1,<h2 id="L">[@L]</h2><p>[swamp guardian]<p>[swamp destinations]
 
 ;swamp guardian
-1,An ancient ruin stands in the middle of this swamp.¶[monster]
+1,An ancient ruin stands in the middle of this swamp.<p>[monster]
 
 ;ruin
-1,<h2 id="[@position]">[@[@position]]</h2>¶[ruin description] [monster]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2><p>[ruin description] [monster]<p>[destinations for [@position]]
 
 ;ruin description
 1,An ancient ruin stands here, shrouded in [shadow|fog].
@@ -813,7 +1184,7 @@ own generators! Please do.
 1,An ancient ruin stands here, the place of some last stand or other.
 
 ;island
-1,<h2 id="[@position]">[@[@position]]</h2>¶[island description] [island monster]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2><p>[island description] [island monster]<p>[destinations for [@position]]
 
 ;island description
 1,This island is overgrown with thorny bushes, making landing very difficult. There is no indication of a holy site on this island.
@@ -821,20 +1192,20 @@ own generators! Please do.
 1,The island is overgrown with tall trees. There is no indication of inhabitation.
 
 ;island monster
-1,A giant lives in a big cave at the center of this island.¶[giant]
-1,A dragon has built a nest, here.¶[dragon]
-1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
-1,The air is cold and and the island is shrouded in fog. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
-1,A simple hut stands here, standing on four long spindly wooden legs.¶[mage character]
+1,A giant lives in a big cave at the center of this island.<p>[giant]
+1,A dragon has built a nest, here.<p>[dragon]
+1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].<p>**[@nightling name]s**<p>[nightling stats] Number-[2d6]
+1,The air is cold and and the island is shrouded in fog. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.<p>**[@undead name]**<p>[undead stats] Number-[2d6]
+1,A simple hut stands here, standing on four long spindly wooden legs.<p>[mage character]
 
 ;shrine
-1,<h2 id="[@position]">[@[@position]]</h2>¶[shrine description]¶[[@side C]@character name][rebel]¶[destinations for [@position]]
+1,<h2 id="[@position]">[@[@position]]</h2><p>[shrine description]<p>[[@side C]@character name][rebel]<p>[destinations for [@position]]
 
 ;shrine description
 1,A peaceful valley, too small to warrant the keeping of animals, but large enough to allow a hermit to survive, perhaps.
 
 ;giant
-1,**[giant name]**¶[giant stats]
+1,**[giant name]**<p>[giant stats]
 
 ;giant name
 1,[giant qualifier] [giant noun]
@@ -862,7 +1233,7 @@ own generators! Please do.
 1,Damage-[4d6] Endurance-[8d6] Life-[4d6] Attack-[1d6+3] Hit-[1d6+8] Escape-[1d6]
 
 ;dragon
-1,**[dragon name]**¶[dragon stats]
+1,**[dragon name]**<p>[dragon stats]
 
 ;dragon name
 1,[dragon qualifier] [dragon noun]
@@ -887,9 +1258,9 @@ own generators! Please do.
 1,Damage-[6d6] Endurance-[10d6] Life-[5d6] Attack-[1d6+2] Hit-[1d6+9] Escape-[1d6]
 
 ;monster
-1,The putrid smell of dead things warns you of the [predator name]s.¶**[@predator name]s**¶[predator stats] Number-[2d6]
-1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].¶**[@nightling name]s**¶[nightling stats] Number-[2d6]
-1,The air is cold and shadows start creeping. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.¶**[@undead name]**¶[undead stats] Number-[2d6]
+1,The putrid smell of dead things warns you of the [predator name]s.<p>**[@predator name]s**<p>[predator stats] Number-[2d6]
+1,If you approach carefully, you can hear [2d6] [nightling name]s [nightling activity].<p>**[@nightling name]s**<p>[nightling stats] Number-[2d6]
+1,The air is cold and shadows start creeping. If you know a thing or two about necromancy: these are the warning signs of [undead name]s.<p>**[@undead name]**<p>[undead stats] Number-[2d6]
 
 ;undead name
 1,[undead qualifier][undead relative]
@@ -962,18 +1333,18 @@ own generators! Please do.
 1,Damage-[2d6] Endurance-[1d6] Life-[1d6] Attack-[1d6+4] Hit-[1d6+5] Escape-[1d6+3]
 
 ;young character
-1,[roll attributes][[1d3] careers]<strong id="p[@position]">[character name]</strong> [short character stats]¶[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
+1,[roll attributes][[1d3] careers]<strong id="p[@position]">[character name]</strong> [short character stats]<p>[@name] is a junior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
 
 ;mage character
-1,[roll mage attributes][[2d4+1] careers]<strong id="p[@position]">[character name]</strong> [short character stats]¶[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
+1,[roll mage attributes][[2d4+1] careers]<strong id="p[@position]">[character name]</strong> [short character stats]<p>[@name] is a senior member of the [@secret society [1d3]] and a supporter of [@side [A|B|C]]. Their patron is [@power [1d3]].
 
 # must set @character name, first
 ;powerful character
-1,[roll attributes][[2d4+3] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]¶[@character name] is a senior member of the [@secret society [1d3]] and their patron is [@power [1d3]].
+1,[roll attributes][[2d4+3] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]<p>[@character name] is a senior member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 # must set @character name, first
 ;rebel
-1,[roll attributes][[2d4+1] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]¶[@character name] is trying to get rid of both <a href="#pA">[@side A]</a> and <a href="#pB">[@side B]</a>. They are also a former member of the [@secret society [1d3]] and their patron is [@power [1d3]].
+1,[roll attributes][[2d4+1] careers]<strong id="p[@position]">[@character name]</strong> [short character stats]<p>[@character name] is trying to get rid of both <a href="#pA">[@side A]</a> and <a href="#pB">[@side B]</a>. They are also a former member of the [@secret society [1d3]] and their patron is [@power [1d3]].
 
 ;character
 1,[roll attributes][[2d5] careers]**[character name]** [character stats]
@@ -982,10 +1353,10 @@ own generators! Please do.
 1,[name][epithet] ([[@gender] sign])
 
 ;short character stats
-1,(age [@age])¶[attributes] [@skills]
+1,(age [@age])<p>[attributes] [@skills]
 
 ;character stats
-1,(age [@age])[roll attributes]¶Attributes: [attributes]¶Careers: [@careers]¶Tables: [@skill tables]¶Skills: [@skills]
+1,(age [@age])[roll attributes]<p>Attributes: [attributes]<p>Careers: [@careers]<p>Tables: [@skill tables]<p>Skills: [@skills]
 # ([@career history]) adds the ages and careers picked
 
 ;roll attributes
@@ -1514,7 +1885,6 @@ own generators! Please do.
 # Local Variables:
 # sgml-basic-offset: 0
 # End:
-
 </script>
 </body>
 </html>
